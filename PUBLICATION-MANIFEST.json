@@ -29554,6 +29554,14 @@
       "published_bytes": 4305,
       "privacy_changed": false,
       "kind": "new static-document verification; no trading-app acceptance claim"
+    },
+    {
+      "path": "docs/pause/git-history-audit.json",
+      "original_sha256": "75004a502637ec6a6ce607a0215974ba604d1b86bb017a30904b531893e5edfe",
+      "published_sha256": "75004a502637ec6a6ce607a0215974ba604d1b86bb017a30904b531893e5edfe",
+      "original_bytes": 857,
+      "published_bytes": 857,
+      "privacy_changed": false
     }
   ]
 }
