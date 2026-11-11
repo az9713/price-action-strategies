@@ -1,0 +1,11 @@
+{
+  "revision": "D040 / RULEBOOK0.20",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "purpose": "Preserve instrument/data-kind context across saved independent and aggregate research; complete existing provenance requirements without changing financial rules or422-case scope.",
+  "context": {"policy_version": 1, "fields": ["dataset_id", "dataset_manifest_hash", "input_kind", "source", "symbols"], "source": "Verified immutable manifest, metadata whitelist only; no prices, actions, arbitrary metadata, local paths or credentials."},
+  "freeze": "API operations freeze before queueing or study registration. Validate against the verified manifest before worker price access, including resume. Study jobs carry exactly the registered context. Do not derive labels from the UI selection.",
+  "outputs": "Every new data-analysis root and account/aggregate report retains the same context. Both common/legacy search diagnostic CSVs include input_kind/data_source/symbols/dataset_manifest_hash; other aggregate CSVs include the same identity columns. Offline decks include exact saved context facts. Symbols serialize as canonical JSON in CSV. Escape formula-leading strings.",
+  "legacy": "Absent context remains absent and is visibly not recorded. Never rewrite old evidence or reconstruct its frozen context from a current dataset. Corrupt present context fails closed.",
+  "labels": "Only explicit synthetic/historical kinds receive those labels. user_import and missing/unrecognized types remain unverified/unknown; preserve the raw supplied kind. A classification is not data-quality or trading-edge certification.",
+  "verification": ["whitelist/malformed context/manifest mismatches", "all analysis creation paths and study registration", "actual workers across independent/aggregate types", "saved-only JSON/CSV/offline parity with removed live manifest", "warm-up/final guards and no future action leakage", "corrupt contexts rejected before prices", "cancel/recovery context parity", "legacy unknown and malicious source escaping", "two desktop saved-result/dataset-switching/export journeys", "independent saved-fact audit, mutation tests, current full regression and unchanged numerical tolerances"]
+}

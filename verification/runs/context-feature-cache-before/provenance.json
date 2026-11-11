@@ -1,0 +1,22 @@
+{
+  "core": "e5d2219868351a4c175d0853a71e03dc884f35e79314d7e3880bba01f58ce504",
+  "source_sha256": {
+    "signals.py": "3229847b65bb92a399bb97fcbd695f5d217acfe3edba44bf108f309f5aa88d54",
+    "service.py": "eb47bad6b9ef0afcdbe697dfe692823f91b1ec94e0b54fc836e910696ea608cd",
+    "evaluation_cache.py": "2911934f26e8df8740665b550f5c3e81efaf6a78a345680706381b1af4a29199"
+  },
+  "context_cfg_fields": [
+    "impulse_atr",
+    "impulse_bars",
+    "level_age",
+    "level_shape",
+    "level_tolerance",
+    "min_touches",
+    "pullback_max",
+    "pullback_min",
+    "reclaim_bars",
+    "retest_window",
+    "sweep_depth",
+    "swing_strength"
+  ]
+}

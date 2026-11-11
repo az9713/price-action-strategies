@@ -1,0 +1,8 @@
+{
+  "reason": "The first explicit relative JUnit argument ascended one directory too far. The wrapper now derives an absolute evidence-run path.",
+  "sha256": "670fb9491ab402a252f62e7cda0d3a0d28398b08f9aacbcd982416a2185dcbb7",
+  "bytes": 20301,
+  "recovered_to": "verification/runs/spread-authored-first-junit-recovered.xml",
+  "original_tests": 31,
+  "original_missing_component_errors": 31
+}

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "source": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "scope": "D046 explicit equities adaptation; the host's private financial execution and duration/barrier precedence are unknown.",
+  "policies": {
+    "barrier_capped_elapsed_v1": "Transport original entry ATR stop/target distances, honor original hard/close-stop trigger clock, stop-first same-bar ambiguity and one-tick-through target; close no later than the exact elapsed cutoff using its original open/close boundary.",
+    "fixed_elapsed_v1": "Ignore barriers for liquidation, retain barrier encounters, and exit at the identical elapsed cutoff boundary. A borrow recall before the cutoff is an explicit failed exact-duration outcome with the actual mandatory liquidation retained."
+  },
+  "financing": {
+    "quantity": "Original whole entry shares, then authoritative split factors; never resize, omit or redraw a candidate because of its outcome.",
+    "initial_cash": "Exogenous diagnostic cash equals max(original capital, original quantity * modeled twin entry fill + entry fee), fixed at entry for either direction.",
+    "meaning": "Independent one-trade diagnostic books. No shared-capital competition, margin maintenance, cash interest or credit cost is inferred. Record any negative cash/equity rather than fabricate additional funding. Report capital top-up and gross exposure; do not treat the aggregate as an executable portfolio or an investment return.",
+    "liquidity": "Respect the original participation setting against the last completed minute's volume. Unavailable prior volume or insufficient capacity produces an explicit failed candidate, not a smaller order or a new draw. The first observed session minute may use the previous session's final completed minute only when supplied and authoritative."
+  },
+  "entry": "Market at the selected observed regular-minute open using original cost settings. Reference must equal that raw opening. Transport distances centered on the modeled filled entry, then round stop away from entry and target away from entry on the tick grid. Publish exact rational planned geometry, filled geometry and rounding residuals.",
+  "ordering": [
+    "Validate the selected instrument, complete expected regular-minute clock, exact entry/cutoff and strictly earlier liquidity reference; no missing-minute sliding.",
+    "At observed opens accrue prior marked short notional across elapsed calendar time, apply splits before ex-date entitlements, pay due receivables, and update opening marks.",
+    "Recall liquidation precedes opening barrier checks. On the exact opening cutoff, duration liquidation precedes barriers of the new opening bar. The preceding completed bar's close stage retains its earlier chronological priority even at the same UTC timestamp. Recall retains its reason and fixed-duration status is complete only if it occurs at that same cutoff boundary.",
+    "New entries receive no entitlement for the opening ex-date. Availability is checked before entry. Stop-first same-bar OHLC is conservative; targets require one tick through; close stops act only at complete original trigger boundaries.",
+    "At closes accrue borrow to the close. On the exact closing cutoff, check that bar's hard stop/target/close-stop first for the barrier-capped policy, then liquidate a remaining position for duration. Fixed-duration exits only for recall or exact cutoff.",
+    "Structural, flat-at-close and chart-bar maximum-hold signals are not regenerated: the realized source duration is the cap. These differences are disclosed rather than silently transporting a new strategy signal.",
+    "After early exit retain subsequent observed sessions through the frozen cutoff for dividend payments and book equity. Unpaid receivables remain marked. No invented post-window payment session."
+  ],
+  "accounting": "Original commission minimum, per-share commission, per-order fee, sell-value charge, spread, slippage, adverse stop tick, splits, dividends and changing calendar-time borrow are applied. Reconcile net profit to final cash plus receivables minus initial cash. Persist complete trade, cash ledger, session equity, rejection, diagnostic and geometry values.",
+  "precision_and_failures": "Internal financial books retain Decimal amounts, including large-capital fractional cents. Persist these amounts as canonical decimal strings and sum profits before any explicit checked display conversion. A nonpositive modeled execution or arithmetic failure is an explicit computation failure; the durable consumer must retain the failed candidate/attempt and must not redraw, omit it or grade a successful subset. The internal kernel alone does not establish durable failure retention.",
+  "money_working_bounds": {
+    "canonical_text_characters": 1024,
+    "absolute_adjusted_and_tuple_decimal_exponents": 4096,
+    "sum_terms": 20000,
+    "meaning": "Initial explicit finite representation bounds. Exponent-span-safe sums preserve every supported original trade and candidate amount. A bound violation is an explicit failed computation, never rounding, omission, resizing or a successful subset. These are not measured full-history resource guarantees."
+  },
+  "verification": "Author an independent Decimal oracle before production execution. It must not import production numerical code. Hand-calculated cases, full-value parity, boundary and fault cases, deterministic randomized books, actual guard mutations and unchanged numerical coverage gates are required. The kernel is not durable/API/UI/10000-set completion."
+}

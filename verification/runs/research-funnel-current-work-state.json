@@ -1,0 +1,1647 @@
+{
+  "scope": "Research-funnel implementation handoff; observations are historical, never substitute for live handle checks.",
+  "observed_at_utc": "2026-11-11T04:00:52.449187+00:00",
+  "goal": "paused at explicit user request; documentation/privacy/publication only",
+  "user_ui_constraint": "Never take over the desktop or existing browser windows. Use hidden in-app browser for web checks. No native Codex/desktop automation.",
+  "source_root": "data/dev027/research-src",
+  "source_core": "e5d001c544a0bbc1a4d577d04c9228d9ce30c71e928c0eccc5e8e47372705128",
+  "declared_numerical_modules": 51,
+  "origin": "verification/runs/research-stage-origin.json",
+  "origin_receipt": "20261110T033627555365Z-research-funnel-source-only-branch-exact-origin-and-frozen-regression-preservation",
+  "copied_authored_files": 297,
+  "credentials_user_data_or_main_database_copied": false,
+  "frozen_earlier_subjects": [
+    "data/dev026/src",
+    "data/dev026/next-src",
+    "data/dev026/evidence-src"
+  ],
+  "implemented": [
+    "Additive FunnelStudy with strict ISO dates, primary/replica distinction and two ordered disjoint discovery eras inside discovery, before chronological validation/final",
+    "Detached frozen registration specification with source/adaptation labels",
+    "Complete equal-weight family means retaining all frozen versions, losses, zeros and explicit unavailable accounts",
+    "Exact rational marked and exit-day-compatible daily means with separate Sharpe conventions and stable finite statistical arithmetic",
+    "Whole-calendar/source/core/cost/capital/configuration consistency, undefined/insolvent/missing outcomes and cancellation",
+    "Actual engine-account integration with unequal trade counts, fees/losses and independent Decimal daily aggregation",
+    "Original saved-family reader: complete frozen membership, original input/root/part/trial/attempt/checkpoint/event and closing authority; two passes of bounded live report objects",
+    "Durable family_analysis reservation with one research_family occurrence, owned atomic checkpoint/publication, original computation event, source-bound saved inspection and no financial recomputation",
+    "Family API creation, bounded member/daily pages, full JSON and exact rational CSV exports; strict local session and fixed thresholds",
+    "Actual Results UI queue, failed-job resume, all-version membership/daily pagination, convention comparison, full downloads, reload/error/stale-response handling",
+    "Internal frozen research-funnel registration: five development arms, two all-version final arms, explicit source/threshold adaptation labels, shared/separate manifests, union final protection and refusal of basic screen/final bypass; no arm accounts queued yet",
+    "Five original independent-account arm jobs reserved atomically with original study/cohort/manifest/context/role bindings, concurrency reuse and corrupt-map refusal; actual two-version accounts on all five axes verified",
+    "Worker primary/replica-only symbol selection, report arm context, and before/after-work registration/protected-scope checks",
+    "Generic worker result publication prepares a private unique candidate, verifies ownership/cancellation/current source in a transaction, promotes original bytes and binds result/trials atomically; derived result view publication now receives worker owner",
+    "Account checkpoint publication is owned and atomic across files/derived sidecar/original trial events; reuse requires original committed attempt/start/checkpoint authority. Unfinished output is recomputed; a lost derived sidecar is repaired without new finance.",
+    "Original primary-only funnel discovery accounts now preserve evaluated symbols when reading and reserving D046 controls, without accessing unrelated protected replica dates.",
+    "Complete original five-arm qualification reducer with all frozen version rows, observed signal/trade/profit/Sharpe/era/replication/chronological gates, whole-family results, strict both-interpretation controls and attrition.",
+    "Read-only original qualification snapshot retains source-study/arm/report identities and refuses changed original parts/checkpoints/publications; no financial regeneration, new jobs or final consumption.",
+    "Prespecified same-family/setup-chart one-active-coordinate stability retains losses/zeros/missing neighbors, effective trigger aliases, exact profit means/sample variances and actual sampled membership; descriptive only.",
+    "Truthful attrition separates whole-cohort passing/measured failure/unavailable/not-required/terminal-ineligible assessments and a confirmed-passing prefix. Completed original ineligible plans reject candidates without endless waiting; original failed/canceled/missing/partial work still needs recovery. Scheduling policy freezes before outcomes.",
+    "First owned funnel_qualification module implemented but not yet verified: one original study reservation, five original account dependencies, preliminary/report analysis occurrences, original saved witnesses, scoped D046 child reservations, queued waiting without starvation, atomic candidate/family freeze and saved inspection.",
+    "Store claim now skips qualification whose original dependencies are nonterminal; worker yields ownership on waiting instead of falsely completing. Trial registry distinguishes descriptive research_funnel occurrences.",
+    "Owned two-phase qualification is implemented and passes first9 contracts and expanded43 original/source/lifecycle cases: same original reservation, complete original dependencies, preliminary/report occurrences, original-part witnesses, scoped control creation, waiting without queue starvation and atomic candidate/family freeze.",
+    "Six actual subprocess deaths recover original checkpoints and the same original control ID. They execute zero diagnostic financial sets and do not certify the still-open completed-control path.",
+    "Dedicated saved inspection and Lab.result routing verify original qualification/freeze/source authority without regenerating math; public result-summary now uses the same strict inspector and a49152-byte bound.",
+    "Publication rechecks shutdown/cancel immediately before commit; source authority is rechecked after derived-view build on new/reused results; uncommitted files are preserved as orphans.",
+    "Evidence provenance accurately distinguishes the derived source-row locator used for D046 linkage from original authority; authored SQLite copies now explicitly close both backup connections.",
+    "Dedicated funnel_final implemented: one original qualification-bound reservation, all2*N strategy account occurrences plus one aggregate, zero-candidate/all-version final cohort, two declared instruments, one consumption before first final evaluation, same-job recovery and independent per-arm original account checkpoints.",
+    "Actual first5 final contracts passed; current final inspector binds complete accounts, frozen candidate/family flags, original aggregate occurrence, all-version family means and source qualification.",
+    "After five actual counterexamples, final chronology now requires reservation before consumption before account starts and account checkpoints before aggregate. Generic final summary/rows/report routes use strict original authority and explicit instrument windows.",
+    "Public complete-funnel registration (explicit and server-generated), original generation provenance, bounded workflow/dependency API, dedicated workflow UI, same-source qualification/final reservation, original dependency resume/cancel, complete JSON/account downloads and source-video adaptations. Current85 selected backend cases and three actual desktop/mobile browser journeys pass; all12 downloads reconcile with originals. Synthetic empty-signal accounts only, not final acceptance."
+  ],
+  "component_verification": {
+    "authored_absence_red": "20261110T034620766185Z-research-funnel-authored-absence-before-era-replication-and-all-version-family-kernel",
+    "current_66_cases": "20261110T035630477689Z-research-funnel-current-family-actual-accounts-complete-calendars-and-finite-extreme-gates",
+    "actual_database_gate": "20261110T035934994077Z-research-family-current-actual-database-100-statements-and-branches",
+    "statements": "165/165",
+    "branches": "62/62",
+    "exclusions": 0,
+    "mutations": "20261110T040033781864Z-research-family-eight-actual-assertion-mutations-with-original-account-fixture",
+    "green_mutation_baseline_cases": 59,
+    "actual_assertion_killed_mutations": 8,
+    "failed_attempts_retained": [
+      "20261110T035139930974Z-research-funnel-actual-engine-loss-accounts-complete-equal-weight-and-independent-daily-reference: authored signals reused id known; production audit correctly refused duplicate trade IDs",
+      "20261110T035600244747Z-research-funnel-complete-family-calendar-insolvency-scaled-statistics-and-declared-module-regression: test incorrectly expected an annualized8.4e308 value to be finite; corrected separate finite/overflow cases",
+      "20261110T035936994876Z-research-family-eight-actual-era-calendar-weighting-and-statistical-assertion-mutations: mutation-copy harness omitted original execution-reference-contract.json; not counted as a kill",
+      "20261110T042446234170Z: historical raw numeric payload test wrongly expected completed publication; worker already refused identity mismatch",
+      "20261110T042851415261Z: corrected refusal assertions passed except over-specific domain-message regex; public reader wraps refusal safely",
+      "20261110T043422212485Z: real nested write transaction issue in record=False Guard.access, 10 failures; fixed by read transaction for read-only scope checks",
+      "20261110T045929748588Z: registration fixture tried to mutate inactive min_touches for change_of_character; validated Strategy correctly refused. Replaced fixture mutation with active direction field; no production relaxation.",
+      "20261110T052049397324Z: all 91 other cases passed; changed manifest was refused earlier by its integrity guard and safely wrapped, so over-specific error regex was removed",
+      "20261110T052544654499Z: read-only installed health harness required --expected-pid; corrected invocation passed without restarting server",
+      "20261110T064215762621Z: broad regression selected nonexistent tests/test_jobs.py; no tests ran. Replaced with verified tests/test_store.py in next run",
+      "20261110T072820661031Z:132 passed; two legacy portfolio cases required derived-sidecar recovery after original account commitment; added original-evidence-authorized repair",
+      "20261110T073511725801Z:19 passed; sidecar recovery succeeded without new finance, but two old fixture assertions still expected unnecessary recomputation. Strengthened tests to preserve original attempts/events/bytes and verify repaired sidecar",
+      "20261110T073848650939Z:416 passed; one corrupt-checkpoint assertion expected modified in error text. Actual corruption was already refused; restored legacy wording and reran42 focused cases successfully"
+    ],
+    "current_151_cases": "20261110T044606519200Z-research-family-current-original-reservation-membership-closing-recovery-and-api-regression",
+    "current_three_module_database_gate": "20261110T045111858941Z-research-family-current-three-module-actual-database-gates-after-real-recovery-and-original-boundary-tests",
+    "current_measured_modules": {
+      "research_funnel": {
+        "statements": "166/166",
+        "branches": "62/62"
+      },
+      "research_family_source": {
+        "statements": "159/165",
+        "branches": "58/64"
+      },
+      "research_family_jobs": {
+        "statements": "174/175",
+        "branches": "53/54"
+      },
+      "research_funnel_registration": {
+        "statements": "34/34",
+        "branches": "6/6"
+      },
+      "research_funnel_arms": {
+        "statements": "103/103",
+        "branches": "22/22"
+      },
+      "account_checkpoints": {
+        "statements": "100/100",
+        "branches": "48/48"
+      }
+    },
+    "actual_deaths": {
+      "count": 5,
+      "receipt": "20261110T044044807933Z-research-family-five-actual-process-deaths-and-eight-cancel-shutdown-boundaries",
+      "also_cancel_shutdown_cases": 8,
+      "all_included_in_current_151": true
+    },
+    "actual_browser": {
+      "receipt": "20261110T044754002079Z-research-family-actual-isolated-desktop-mobile-ui-complete-downloads-reload-and-response-ownership",
+      "viewports": [
+        1920,
+        1280,
+        390
+      ],
+      "journeys": 3,
+      "versions": 51,
+      "complete_json_and_csv_downloads_each": true,
+      "owned_http_and_worker_retired": true,
+      "synthetic_empty_signal_accounts": true,
+      "detector_validation": false
+    },
+    "isolated_production_bundle": "20261110T044448545686Z-research-family-isolated-ui-typescript-and-production-bundle",
+    "workflow_mutations": {
+      "receipt": "20261110T045340768273Z-research-family-eight-actual-original-authority-workflow-mutations",
+      "positive_baseline_cases": 8,
+      "actual_assertion_kills": 8,
+      "errors_or_skips_counted": false
+    },
+    "fresh_directory_restoration": {
+      "receipt": "20261110T045508249650Z-research-family-source-archive-fresh-directory-original-account-restoration-and-view-repair",
+      "versions": 51,
+      "source_and_original_root_verified": true,
+      "derived_view_repair_without_finance": true,
+      "dependencies_reused": true,
+      "fresh_machine_install_tested": false
+    },
+    "registration_76_cases": "20261110T050101280904Z-research-funnel-current-complete-two-instrument-frozen-axes-final-scopes-and-threshold-labels",
+    "registration_actual_database_gate": "20261110T050333239778Z-research-funnel-current-registration-kernel-actual-database-gates",
+    "current_93_arm_cases": "20261110T052343057841Z-research-funnel-current-original-five-arm-identity-semantic-and-actual-account-gates",
+    "arm_registration_actual_database_gate": "20261110T052543315927Z-research-funnel-five-arm-current-actual-database-numerical-gates",
+    "pre_publication_fix_317_case_combined_regression": "20261110T052714810188Z-research-current-five-arm-saved-family-and-existing-study-complete-selected-regression",
+    "late_publication_actual_red": {
+      "receipt": "20261110T053242978324Z-research-funnel-actual-late-root-publication-cancel-shutdown-and-reclaimed-owner-counterexamples",
+      "actual_failures": 3,
+      "description": "Cancel/shutdown after root encoding still published; a legitimate reclaimed owner completed original job but stale owner added a second result event"
+    },
+    "late_publication_first_fix_17_passed": "20261110T063953536090Z-research-funnel-fixed-atomic-owned-root-publication-three-actual-counterexamples",
+    "current_357_selected_regression": "20261110T064239641047Z-research-current-owner-fenced-publication-family-arm-store-and-basic-study-regression",
+    "current_five_module_database_gate": "20261110T064945475400Z-research-current-five-component-actual-database-gates-after-owned-publication-regression",
+    "actual_arm_process_deaths": {
+      "receipt": "20261110T071555973466Z-research-five-actual-arm-deaths-original-checkpoint-reuse-and-unfinished-artifact-counterexamples",
+      "original_failures": 1,
+      "original_passes": 4,
+      "bug": "Part and sidecar existed before checkpoint commitment; old recovery reused uncommitted output and an interrupted attempt"
+    },
+    "first_atomic_part_33_passed": "20261110T072454851009Z-research-original-account-checkpoint-atomic-publication-and-five-real-death-regression",
+    "current_checkpoint_42_passed": "20261110T074918584339Z-current-account-checkpoint-corruption-message-compatibility-original-repair-and-real-death-verification",
+    "current_checkpoint_actual_database_gate": "20261110T075459699010Z-current-account-checkpoint-original-repair-and-actual-process-death-database-gates",
+    "primary_scope_bridge_fixed": "20261110T081606664086Z-research-funnel-original-trade-twin-frozen-primary-scope-and-protected-replica-fixed",
+    "qualification_72": "20261110T082826953667Z-research-qualification-current-original-accounts-independent-432-grid-family-losses-and-strict-control-boundaries",
+    "qualification_kernel_actual_database": "20261110T083101361698Z-research-qualification-kernel-current-original-database-reconciliation-after-72-complete-contracts",
+    "qualification_kernel_measured": {
+      "statements": "164/165",
+      "branches": "89/94",
+      "exclusions": 0,
+      "global_gate": false
+    },
+    "stability_actual_capacity": {
+      "receipt": "20261110T083036259984Z-frozen-stability-actual-1000-10000-100000-versions-independent-all-output-moments-and-measured-memory",
+      "versions": [
+        1000,
+        10000,
+        100000
+      ],
+      "all_outputs_independently_checked": true,
+      "largest_reduction_seconds": 71.30354690004606,
+      "largest_process_peak_through_reduction_bytes": 906031104,
+      "original_financial_accounts": 0,
+      "not_global_search_or_financial_capacity": true
+    },
+    "qualification_first_run_65_passed_2_failed": "20261110T082351561817Z: inactive-coordinate fixture accidentally used unchanged default; test SQL addressed attempts by missing job_id rather than joining original trials. Corrected fixtures; no production relaxation.",
+    "qualification_actual_assertion_mutations": {
+      "receipt": "20261110T083453648312Z-research-qualification-eight-actual-assertion-mutations-strict-counts-family-losses-and-frozen-neighbors",
+      "kills": 8,
+      "baseline_and_mutant_errors_or_skips": 0,
+      "source_precedes_attrition_category_change": true
+    },
+    "qualification_actual_positive_accounts": {
+      "receipt": "20261110T084241518639Z-research-qualification-actual-positive-five-arm-accounts-original-pending-controls-and-protected-final-boundary",
+      "actual_executed_trades": {
+        "primary_discovery": 172,
+        "era_one": 82,
+        "era_two": 90,
+        "instrument_replication": 172,
+        "chronological_validation": 174
+      },
+      "complete_financial_control_sets": 0,
+      "candidate_ids": [],
+      "state": "awaiting_controls",
+      "original_full_reports_preserved": true,
+      "detectors_or_investment_edge_verified": false
+    },
+    "selected_466_failed": "20261110T083510480758Z:465 passed/1failed; old test expected replacement finance after deleting a committed original account, contradicting current original-evidence contract.",
+    "actual_retry_and_restoration_2_passed": "20261110T084554079095Z-original-account-loss-refusal-restoration-and-real-uncommitted-attempt-two-current-contracts",
+    "selected_468_passed": {
+      "receipt": "20261110T084657684014Z-research-current-48-module-positive-original-qualification-family-source-and-corrected-recovery-regression",
+      "passed": 468,
+      "seconds": 376.81,
+      "full_backend_regression": false,
+      "source_precedes_attrition_category_change": true
+    },
+    "attrition_actual_counterexamples": {
+      "receipt": "20261110T084916495606Z-research-qualification-attrition-counterexamples-pending-and-unassessed-controls-are-not-statistical-failures",
+      "failures": 2,
+      "issue": "Unconfirmed controls counted as removals; complete-cohort failures/unavailable/not-required states were absent.",
+      "implemented_fix": "Separate complete-cohort observations and confirmed-passing prefix; freeze control scheduling adaptation; current verification running."
+    },
+    "qualification_current_80": "20261110T085907271305Z-research-qualification-current-80-contracts-truthful-ineligible-attrition-and-positive-original-pending-controls",
+    "qualification_current_kernel_actual_database": "20261110T095255510824Z-qualification-kernel-current155-original-coverage-database-reconciliation-after-owned-workflow-integration",
+    "qualification_kernel_current_measured": {
+      "statements": "182/183",
+      "branches": "101/106",
+      "exclusions": 0,
+      "minimums_unchanged": "95/90",
+      "global_gate": false
+    },
+    "qualification_source_current_open_coverage": {
+      "statements": "64/92",
+      "branches": "18/40",
+      "coverage_gate_passed": false,
+      "remaining": "Actual completed positive-set original control reader branches, original set/source/summary/closing faults; do not replace with supplied totals."
+    },
+    "qualification_terminal_ineligible_red": "20261110T085729775534Z-research-qualification-terminal-original-ineligible-matching-plan-cannot-wait-forever-counterexample",
+    "owned_qualification_absence": {
+      "receipt": "20261110T090119333234Z-owned-qualification-authored-absence-before-original-reservation-dependencies-and-candidate-freeze",
+      "expected_absence_assertion": true,
+      "implemented": false,
+      "authored_contracts": "verification/runs/research-owned-qualification-contracts.py"
+    },
+    "owned_first_9": "20261110T091202274181Z-owned-qualification-first-actual-original-reservation-queue-dependencies-zero-candidate-and-positive-pending-controls",
+    "owned_publication_three_actual_red": "20261110T092034297266Z-owned-qualification-actual-shutdown-and-post-view-source-counterexamples-with-authored-store-fixture-fixed",
+    "owned_43_passed": {
+      "receipt": "20261110T092256028810Z-owned-qualification-current-original-faults-shutdown-reclaimed-child-guard-and-six-real-deaths",
+      "passed": 43,
+      "actual_process_deaths": 6,
+      "warnings": 70,
+      "warning_reason": "Authored backup helper used SQLite transaction context without closing connections; subsequently corrected.",
+      "source_precedes_provenance_and_summary_fixes": true
+    },
+    "owned_current_7_resource_strict": {
+      "receipt": "20261110T093616511905Z-owned-qualification-current-original-deaths-and-truthful-provenance-with-explicit-sqlite-closure",
+      "passed": 7,
+      "resource_warnings_are_errors": true,
+      "actual_process_deaths": 6,
+      "warnings": 0,
+      "source_precedes_summary_route_fix": true
+    },
+    "provenance_actual_red": "20261110T092834951495Z-qualification-actual-derived-source-locator-provenance-must-distinguish-original-authority-counterexample",
+    "public_summary_actual_red": "20261110T094145502410Z-owned-qualification-generic-public-summary-cannot-bypass-original-candidate-freeze-counterexample",
+    "owned_current_155": {
+      "receipt": "20261110T094425903256Z-owned-qualification-current-public-authority-original-witnesses-and-verified-study-store-regression",
+      "passed": 155,
+      "failures_errors_skips": 0,
+      "resource_warnings_are_errors": true,
+      "warnings": 1,
+      "warning_reason": "Starlette TestClient/httpx library deprecation, retained without dependency changes.",
+      "full_backend_regression": false
+    },
+    "current_155_measured_open_gates": {
+      "research_funnel_jobs": {
+        "statements": "223/247",
+        "branches": "69/106",
+        "gate_passed": false
+      },
+      "research_qualification_source": {
+        "statements": "89/127",
+        "branches": "33/64",
+        "gate_passed": false
+      },
+      "research_qualification": {
+        "statements": "182/183",
+        "branches": "101/106",
+        "actual_database_gate_passed": true
+      },
+      "exclusions": 0,
+      "global49_gate_passed": false
+    },
+    "final_workflow_absence": {
+      "receipt": "20261110T095040914956Z-funnel-final-authored-absence-before-both-instrument-all-version-one-time-final-workflow",
+      "implemented": false,
+      "contracts": "verification/runs/research-funnel-final-contracts.py",
+      "route": "verification/runs/research-funnel-final-execution-route.md"
+    },
+    "retained_harness_failures": [
+      "20261110T091843341034Z:three setup errors from missing authored-copy parent directory; no product counterexamples counted.",
+      "20261110T094354418903Z:nonexistent tests/test_study_index.py selected; no tests ran. Corrected to verified tests/test_study_status_index.py for155-case run."
+    ],
+    "final_first_5": "20261110T100235171143Z-funnel-final-first-actual-both-instrument-all-version-one-time-consumption-and-same-job-recovery",
+    "final_actual_5_red": "20261110T100930063075Z-funnel-final-original-event-order-and-public-summary-row-report-route-counterexamples"
+  },
+  "full_financial_regression": {
+    "source_root": "data/dev026/evidence-src",
+    "core": "bf2fd8254c614a5d003dbde38e37eabb790ed33650046ad4c0cd83958476b416",
+    "receipt_prefix": "20261110T032534536748Z-trade-twins-current-complete-backend-and-all-saved-evidence-forty-module-regression",
+    "exec_session_id": 80469,
+    "last_state": "terminal failure:3136 passed,1 failed,5715.49s; original failed run retained",
+    "last_observed_test_process": {
+      "pid": 1664,
+      "cpu_seconds": 4244.3125,
+      "working_set_bytes": 398831616,
+      "observed_at_utc": "2026-11-10T04:49:32Z"
+    },
+    "not_future_liveness_proof": true,
+    "terminal_exit_code": 1,
+    "source_changes_during_run": false,
+    "missing_dependency": "Four historical catalog receipt files omitted from isolated source-only copy",
+    "dependency_restore_receipt": "20261110T050320436356Z-restore-four-original-catalog-receipt-test-dependencies-without-source-changes",
+    "targeted_catalog_three_pass_receipt": "20261110T050321788797Z-trade-twins-original-catalog-preservation-check-with-restored-historical-receipts",
+    "all_green_full_regression": false,
+    "measured_declared_module_gaps": {
+      "trade_twin_parts": {
+        "statements": "343/403",
+        "branches": "128/188"
+      },
+      "trade_twin_source": {
+        "statements": "221/245",
+        "branches": "113/138"
+      },
+      "trade_twin_views": {
+        "statements": "420/448",
+        "branches": "159/186"
+      },
+      "trade_twin_worker": {
+        "statements": "98/103",
+        "branches": "33/40"
+      }
+    }
+  },
+  "installed_app": {
+    "url": "http://127.0.0.1:8767",
+    "version": "0.25 unchanged",
+    "managed_session": 89764,
+    "last_read_only_http_asset_receipt": "20261110T052551914614Z-installed025-readonly-current-health-exact-assets-and-recorded-managed-pid",
+    "isolated_browser_access_observed": true,
+    "browser": "ChatGPT in-app browser iab / browserID2; temporary hidden tab1 was read-only",
+    "native_process_to_port_identity_certified": false
+  },
+  "original_acceptance_scope": "83 requirements /422 mandatory cases /120 baseline combinations; no reductions",
+  "final_product_acceptance_certified": false,
+  "active_selected_regression": {
+    "exec_session_id": null,
+    "last_state": "Terminal pass:60 manifest, owned-part and live-control cases; corrected portable fixture and per-reuse verification assertion. Recorded elapsed includes observed100m20.7s Modern Standby.",
+    "receipt": "20261110T155951599290Z-manifest-proof-portable-current-part-and-live-control-regression",
+    "not_full_backend_regression": true
+  },
+  "global_46_module_gate_certified": false,
+  "active_mutations": {
+    "exec_session_id": 42169,
+    "last_state": "terminal green eight actual assertion kills, no errors/skips",
+    "receipt": "20261110T083453648312Z-research-qualification-eight-actual-assertion-mutations-strict-counts-family-losses-and-frozen-neighbors"
+  },
+  "global_48_module_gate_certified": false,
+  "owned_qualification_execution_route": "verification/runs/research-owned-qualification-execution-route.md",
+  "final_execution_route": "verification/runs/research-funnel-final-execution-route.md",
+  "global_49_module_gate_certified": false,
+  "public_funnel_api": {
+    "implemented": [
+      "explicit_registration",
+      "server_generated_frozen_cohort",
+      "qualification_start",
+      "protected_final_start",
+      "bounded_original_dependency_navigation"
+    ],
+    "current_65_cases": "20261110T105204009475Z-funnel-complete-current-public-api-original-index-and-final-inspection-regression",
+    "first_18_cases": "20261110T104323032525Z-funnel-public-original-registration-seeded-generation-full-worker-final-and-http-boundaries",
+    "first_result": "16 passed,2 failed: duplicate registration correctly refused protected overlap; missing generation news calendar was generic500 and fixed with typed validation",
+    "corrected_60_cases": "20261110T104503938988Z-funnel-public-current-original-full-worker-final-validated-news-and-protected-repeat",
+    "acceptance_scope_reduced": false,
+    "current_85_cases": "20261110T105808063001Z-funnel-current-complete-generation-original-navigation-grid-and-registration-boundary-regression",
+    "current_original_database_gate": "20261110T110158133851Z-funnel-current-registration-generation-navigation-actual-original-coverage-db-gate"
+  },
+  "public_funnel_ui": {
+    "implemented": true,
+    "installed": false,
+    "current_bundle_receipt": "20261110T105646924386Z-funnel-current-ui-utf8-restored-and-production-build-before-repeated-actual-browser-journeys",
+    "first_browser_receipt": "20261110T105204020043Z-funnel-complete-actual-isolated-desktop-mobile-registration-qualification-final-downloads-reload-and-source-errors",
+    "first_browser_result": "3 failed rendered text assertions after real qualification/final complete: local text read/write encoding corruption. Harness also failed printing unicode; original child/sanitized results preserved. Owned HTTP/worker retired.",
+    "fix": "Reversed two exact cp1252/UTF8 misdecodes in App and ResearchFunnel source, rebuilt, and enforced UTF8 harness output. Use python -X utf8 and explicit file encodings.",
+    "browser_running_handle": null,
+    "no_native_screen_or_browser_takeover": true,
+    "full_browser_verified": false,
+    "full_csv_offline_exports_implemented": false,
+    "browser_terminal_handle": 29523,
+    "browser_receipt": "20261110T110147925546Z-funnel-current-actual-browser-and-independent-original-downloads-with-complete-cleanup-receipts",
+    "workflow_browser_verified": true,
+    "viewport_widths": [
+      1920,
+      1280,
+      390
+    ],
+    "actual_workflow_journeys": 3,
+    "independently_reconciled_downloads": 12,
+    "owned_http_and_worker_retired": true,
+    "exact_original_app_text_restoration_receipt": "20261110T110104544329Z-funnel-ui-exact-pre-integration-original-text-byte-reconciliation-after-utf8-restoration",
+    "prior_three_browser_pass_harness_failure": "20261110T105700172442Z: all3 browser journeys passed; original-download helper wrongly requested entry_trace instead of actual entry_traces. Fixed helper and reran the complete process; no product relaxation.",
+    "empty_signal_fixture_scope_only": true,
+    "actual_detector_or_completed_controls_certified": false
+  },
+  "current_selected_checks_running": false,
+  "numerical_module_count": 51,
+  "saved_cohort_exports": {
+    "implemented_unverified": [
+      "all_complete_tables",
+      "streamed_csv",
+      "standalone_offline_html",
+      "phase_zip_with_all_original_accounts_and_hash_manifest",
+      "original_and_closing_authority",
+      "temporary_and_post_transfer_cleanup"
+    ],
+    "first_contract_handle": null,
+    "post_build_cancellation_counterexample_handle": null,
+    "source_frozen_during_recorded_checks": true,
+    "frontend_draft": "verification/runs/FunnelEvidence.tsx.pending",
+    "integrated_frontend": true,
+    "global_acceptance_certified": false,
+    "first_contract_receipt": "20261110T111621237751Z-funnel-complete-saved-original-csv-zip-offline-and-authority-export-contracts",
+    "first_contract_result": "24passed before cancellation/reader fixes; component coverage174/177 statements87/94 branches, zero exclusions; not current global acceptance",
+    "post_build_cancellation_counterexample": "20261110T112043515368Z-funnel-export-actual-post-build-http-cancellation-private-artifact-cleanup-counterexample",
+    "cleanup_implementation": "Owned TemporaryEvidenceResponse finally removes delivered/canceled output; post-build cancellation also removes the completed file.",
+    "terminated_run": "20261110T112657368736Z: terminated exact verified owned pytest PID50376 after25 progress dots, child4294967295. Last mock ASGI2.0 receive returned immediately forever and starved send. No completed26-case claim; fixture corrected to explicit ASGI2.4 plus fair ASGI2.0 disconnect.",
+    "first_export_browser": "20261110T112918517489Z:2passed/1failed; desktop1280 original-table request exceeded10s. Failed export set also exposed helper error accounting; now missing files are recorded separately. Owned cleanup/source before checks retained.",
+    "current_bundle_receipt": "20261110T122941363029Z-current-cohort-complete-summary-and-version-abort-production-ui",
+    "bounded_reader_counterexample": "20261110T114818006428Z-original-saved-family-reader-small-file-512mib-read-allocation-counterexample",
+    "bounded_reader_and_cancellation11": "20261110T115118769184Z-current-original-reader-bounded-allocations-same-bytes-limits-and-http-cancellation-protocols",
+    "old_new_io_measurement": "20261110T115243139483Z-original-saved-reader-actual-isolated-old-new-byte-equivalence-and-measured-memory",
+    "old_new_peak_rss_bytes": [
+      635158528,
+      98586624
+    ],
+    "same_complete_decoded_bytes_and512mib_limits": true,
+    "measurement_is_not_global_capacity": true,
+    "first_actual_mixed_gains_losses": "20261110T112707750389Z-funnel-complete-export-actual-both-instrument-gains-losses-and-independent-exact-family-means",
+    "current_regression_handle": null,
+    "current_browser_handle": null,
+    "current_browser_terminal_handle": 24827,
+    "current_browser_result": "20261110T115352381617Z:1passed/2failed under unchanged10s page and15s download limits; desktop1920 family_daily HTTP200 at9995.452ms; mobile390 CSV completed but ZIP download exceeded15s. All current browser failures remain open. Complete raw cleanup/partial-export accounting retained.",
+    "current_actual_gain_loss_receipt": "20261110T115506419721Z-current-bounded-reader-actual-gain-loss-final-accounts-complete-export-arithmetic",
+    "current_actual_gain_loss_result": "1passed;4 original final accounts,176actual long/short trades,2gains/2losses, independent exact family means and complete ZIP",
+    "pending_ui_latency_action": "After94306 is terminal, stop workflow polling when all selected jobs/dependencies are terminal; resume via existing explicit command/reload. Abort superseded evidence fetches and propagate read cancellation through the existing async saved-operation boundary. Preserve full original before/closing authority and unchanged browser timing budgets. Then rebuild and rerun complete browser/export regressions.",
+    "saved_read_profile": "20261110T113845220733Z: native pre-fix4-account CSV6.656s,34 original object loads,11256 read_bytes calls; no financial work or original-state changes. Source read allocation is fixed; repeated full-cohort original binding remains a larger-workload concern.",
+    "capacity_concerns_not_yet_certified": [
+      "Original per-account operations can repeat whole-cohort input/plan checks; profile actual100/1000 before scale.",
+      "Final aggregate stores full per-version metrics/daily arrays; measure real-history archive/root bounds rather than assuming metadata/stability stress proves financial capacity."
+    ],
+    "affected141_receipt": "20261110T115352468835Z-current-complete-cohort-exports-original-family-reader-recovery-and-cancellation-regression",
+    "affected141_result": "141passed before subsequent summary/page abort plumbing; export module174/177 statements87/94 branches, reader141/170 statements47/68 branches on that selected scope. Original stage reader boundary cases must be included for its full component gate.",
+    "last_browser_receipt": "20261110T144709239495Z-current-cache-browser-short-evidence-paths",
+    "last_browser_result": "3 passed,21 original downloads and12 phase accounts reconciled; short private paths168chars; source unchanged and owned servers retired. This certifies the prior92b24901 core, before currentStore/manifest changes.",
+    "last_browser_cleanup_verified": true,
+    "current_owned_read_cancellation": "20261110T122931759721Z-current-cohort-owned-summary-final-pages-and-complete-read-cancellation",
+    "current_owned_read_cancellation_result": "8passed: post-build cancellation, streamed-body ASGI2.4, fair ASGI2.0 disconnect, abandoned evidence page, qualified/final summary and final-version cancellation, exact normal-route equivalence.",
+    "read_request_cancellation_implemented": true,
+    "summary_verification_status_visible": true,
+    "whole_browser_gate_certified": true,
+    "all_summary_and_final_page_fetches_abort_superseded_work": true,
+    "browser_gate_open": true,
+    "strict_table_seconds": 10,
+    "strict_download_seconds": 15,
+    "pending_backend_selected_cases": [
+      "verification/runs/research-funnel-export-contracts.py",
+      "verification/runs/research-funnel-export-api-cancellation.py",
+      "verification/runs/research-family-bounded-read-counterexample.py",
+      "verification/runs/research-family-bounded-read-contracts.py",
+      "tests/test_research_family_source.py",
+      "tests/test_research_family_source_boundaries.py",
+      "tests/test_study_status_index.py",
+      "tests/test_trade_twins.py::test_trade_twin_core_joins_the_unchanged_numerical_gate"
+    ],
+    "pending_backend_coverage_modules": [
+      "backend.lab.research_family_source",
+      "backend.lab.research_funnel_exports"
+    ],
+    "backend_checks_wait_for_native_browser_terminal": true,
+    "read_only_connection_prototype": {
+      "receipt": "20261110T131101300122Z-current-saved-read-same-query-readonly-connection-reuse-ABBA-exact-summary-prototype",
+      "original_median_seconds": 4.5034248500014655,
+      "prototype_median_seconds": 9.476993049960583,
+      "summary_identical": true,
+      "original_state_unchanged": true,
+      "production_reuse_implemented": false,
+      "decision": "No measured speed benefit; do not adopt this prototype."
+    },
+    "saved_source_boundary_check_receipt": "20261110T133824536069Z-saved-source-boundaries-actual-same-timestamp-edits-thread-cancellation-and-original-api-regression",
+    "saved_source_boundary_result": "34 passed; actual same-size/timestamp edits, before/closing source hashes, nested and inherited-context isolation, canceled HTTP reads and exact original-route equality.",
+    "source_boundary_prototype": {
+      "receipt": "20261110T133524543080Z-repeated-native-saved-read-original-source-boundaries-no-result-cache-prototype",
+      "original_median_seconds": 3.201513900014106,
+      "boundary_median_seconds": 1.450115600018762,
+      "complete_summary_equal": true,
+      "original_state_unchanged": true
+    },
+    "current_199_gate_receipt": "20261110T140832579911Z-current-199-case-original-database-export-and-reader-numerical-module-gates",
+    "current_199_reader_coverage": {
+      "statements": "164/170",
+      "branches": "62/68",
+      "gate_pass": true
+    },
+    "current_199_exports_coverage": {
+      "statements": "175/178",
+      "branches": "87/94",
+      "gate_pass": true
+    },
+    "last_browser_core": "92b24901da709b2d6785da54918d18f9b87e6e0c3b54ec8fb226419dbb5d9c70",
+    "current_source_browser_verified": false
+  },
+  "positive_control_preflight": {
+    "receipt": "20261110T130800333443Z-small-positive-original-both-side-funnel-full-matching-plan-preflight-before-20000-financial-sets",
+    "result": "1 passed; actual both-side source plan eligible; intentionally canceled before financial-set execution. This is not completed 20000-control evidence.",
+    "financial_sets_executed": 0,
+    "full_control_proof_complete": false
+  },
+  "source_core_is_historical": false,
+  "prepared_full_control_harness": "verification/runs/research-funnel-small-positive-full.py",
+  "positive_full_run": {
+    "handle": null,
+    "terminal": true,
+    "run": "20261110T142749128172Z-bounded-preparation-complete-original-positive-both-10000-policies-through-frozen-two-instrument-final",
+    "authored_store": "data/dev027/funnel-positive/e4930345acd847bba17352f24c6565d7",
+    "job_id": "b6d29c1d3f6e4d9bbc426637c8ae8ca9",
+    "result": "Normally canceled after live sampling proved severe decoded-cache/prefix revalidation cost. Complete-run receipt remains failed/canceled, never a control pass.",
+    "financial_parts_preserved": 6,
+    "financial_sets_checkpointed": 288,
+    "total_required_sets": 20000,
+    "final_consumptions": 0,
+    "full_control_proof_complete": false,
+    "cancellation_receipt": "20261110T151121786212Z-cancel-owned-thrashing-control-run"
+  },
+  "twin_preparation_performance": {
+    "profile_receipt": "20261110T135908490282Z-twenty-original-authored-twin-books-exact-replay-and-native-call-profile",
+    "actual_replayed_books": 20,
+    "all_exact_book_results_equal": true,
+    "inputs_seconds": 5.351629,
+    "execute_seconds": 5.4526538,
+    "measured_component": "98 percent of profiled execute time in repeated preparation;20-book microprofile, not capacity.",
+    "prototype_receipt": "20261110T140836014011Z-both-policy-both-side-exact-original-book-equal-frame-pure-preparation-cache-prototype",
+    "prototype_distinct_books": 16,
+    "prototype_total_replayed_books": 64,
+    "prototype_both_policies_and_sides": true,
+    "prototype_median_original_seconds": 1.2724396999983583,
+    "prototype_median_transforms_seconds": 0.5410966000054032,
+    "production_optimization_implemented": true,
+    "preserved_reference": "verification/runs/trade-twin-execution-before-preparation-optimization.py",
+    "next_action": "Implement bounded explicit pure-preparation reuse only after reviewing its memory and mutation boundaries; preserve every financial and per-observation check, prove actual original-book equality and invalid-input/change rejection, then repeat actual full20000 controls on the final stable source. Avoid time-based/result caches.",
+    "production_details": "Explicit per-FinancialParts thread-owned cache. At most4 pure-transform entries/64MiB conservative retained estimate; exact frame equality before every hit; detached outputs, unknown-object fallback, no financial outcome/authority/validation cache.",
+    "current_contract_receipt": "20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation",
+    "current_contract_result": "209 passed, no failures/errors/skips; original kernel and independent reference; input/return mutation, eviction, byte/entry limits, dtype/index/timeframe changes, unknown-object fallback, cancellation and thread isolation.",
+    "current_actual_database_gate": "20261110T142652922446Z-bounded-preparation-209-case-actual-database-execution-module-numerical-gate",
+    "current_module_coverage": {
+      "statements": "252/255",
+      "branches": "129/132",
+      "exclusions": 0,
+      "minimum_statements": 95,
+      "minimum_branches": 90,
+      "gate_pass": true
+    },
+    "production_measurement_receipt": "20261110T142513032961Z-production-bounded-preparation-192-exact-original-book-replays-four-isolated-time-memory-measurements",
+    "production_measurements": {
+      "distinct_original_books": 48,
+      "actual_replays": 192,
+      "all_exact_complete_books_equal": true,
+      "both_policies_and_sides": true,
+      "original_store_counts_unchanged": true,
+      "median_original_seconds": 10.21879384998465,
+      "median_optimized_seconds": 4.693743200041354,
+      "original_peak_working_sets": [
+        211464192,
+        210944000
+      ],
+      "optimized_peak_working_sets": [
+        211050496,
+        211279872
+      ],
+      "scope": "Four fresh-process authored48-book microbenchmarks, not full20000-set or market-scale capacity."
+    }
+  },
+  "full_regression_launcher": {
+    "path": "verification/runs/launch-research-complete-regression.py",
+    "state": "Prepared, not run; includes complete base tests plus32 current research suites, original source/frozen-stage snapshots and real pytest progress plugin. Add future optimization contracts before execution.",
+    "wrapper": "verification/runs/check-research-funnel-full-stage.py",
+    "progress_plugin": "verification/runs/research_regression_progress.py"
+  },
+  "global_51_module_gate_certified": false,
+  "last_goal_turn_progress": "Implemented saved-only complete source-hash boundaries and demand-selected optional evidence tables;34 targeted and199 affected cases passed; actual database reader/export gates pass; full three-viewport browser and21 download audit pass. Measured/canceled impractically slow full controls with144 original sets preserved and recorded a64-replay exact-book preparation prototype.",
+  "previous_canceled_positive_full_run": {
+    "handle": null,
+    "terminal": true,
+    "run": "20261110T134531961238Z-complete-original-positive-both-10000-control-policies-through-frozen-two-instrument-final",
+    "authored_store": "data/dev027/funnel-positive/72bda7bd74694a9b82d3a8a9facd1c9d",
+    "job_id": "0bb4e66743e1473cb6c344f54fcfef8f",
+    "result": "Intentional normal Store.cancel after measured excessive runtime; original full test is terminal failed/canceled, never a complete control pass.",
+    "financial_parts_preserved": 3,
+    "financial_sets_checkpointed": 144,
+    "total_required_sets": 20000,
+    "final_consumptions": 0,
+    "full_control_proof_complete": false,
+    "cancellation_receipt": "20261110T140601082404Z-normal-cancellation-authored-slow-control-run-preserving-original-parts-and-unconsumed-final"
+  },
+  "control_physical_identity": {
+    "implemented": true,
+    "contract_receipt": "20261110T151807873799Z-physical-control-identity-fresh-query-ownership-cancellation-and-path-regression",
+    "tests_passed": 19,
+    "measurement_receipt": "20261110T152230909740Z-fresh-control-120000-sql-polls-physical-identity-old-new",
+    "actual_polls": 120000,
+    "actual_fresh_sql_queries": 120000,
+    "median_original_seconds": 14.328069149982184,
+    "median_current_seconds": 4.3188838999776635,
+    "scope": "Control polling microbenchmark only; no numerical or market-capacity claim."
+  },
+  "manifest_digest_reuse": {
+    "implemented": true,
+    "max_digest_pairs": 16384,
+    "contract_receipt": "20261110T155951599290Z-manifest-proof-portable-current-part-and-live-control-regression",
+    "tests_passed": 60,
+    "portable_fixture_capture": "20261110T155644746269Z-portable-authored-manifest-fixture",
+    "portable_fixture": "verification/runs/authored-original-twin-manifest-books.json",
+    "original_failed_assertion_receipt": "20261110T154929680338Z-pure-manifest-reuse-current-hashes-tampering-eviction-and-original-part-recovery",
+    "correction": "The manifest creator performs its own verification. Assert that every reuse adds one fresh verification, rather than incorrectly expecting only2 total checks. No product gate weakened."
+  },
+  "live_worker_profiles": [
+    "20261110T143624838106Z-live-owned-authorized-full-control-worker-sampled-stack-bottleneck-no-locals",
+    "20261110T145004120145Z-control-part6-live-profile"
+  ],
+  "verification_clock": {
+    "standby_receipt": "20261110T175751662785Z-observed-verification-standby-clock",
+    "observed_standby_seconds": 6020.712168,
+    "recorded_command_wall_seconds": 6618.137134,
+    "wall_less_observed_standby_seconds": 597.424966,
+    "human_active_work_or_cpu_time_inferred": false
+  },
+  "verification_runner": {
+    "progress_fixed": true,
+    "actual_totals_and_power_request_receipt": "20261110T175753682962Z-actual-progress-total-and-temporary-power-request",
+    "actual_collected": 19,
+    "actual_passed": 19,
+    "power_request_released": true,
+    "persistent_power_plan_changed": false,
+    "source_core_changed_by_runner": false
+  },
+  "projection_reader_checkpoint": {
+    "implemented": true,
+    "previous_goal_turn_classification": "no progress: status-only response; this turn resumed implementation and produced actual evidence",
+    "six_actual_parts_receipt": "20261110T183323847812Z-original-six-part-projections-production-unit-totals-fresh-sql-and-warm-faults",
+    "six_actual_parts_cases": 2,
+    "actual_partial_set_occurrences": 1200,
+    "warm_two_prefix_original_hashes": 12,
+    "warm_two_prefix_fresh_attempt_sql_reads": 2400,
+    "warm_two_prefix_gzip_decodes": 0,
+    "late_fault_and_retry_receipt": "20261110T182456928423Z-warm-original-publication-rebinding-late-byte-change-and-retry",
+    "late_cases": 2,
+    "retained_canceled_harness_receipt": "20261110T182206252253Z-original-part-projections-six-actual-parts-warm-faults-eviction-and-original-reader",
+    "cancellation_receipt": "20261110T183216714697Z-cancel-identified-synthetic-projection-harness-inefficient-outside-unit-loop",
+    "fresh_market_sample_receipt": "20261110T183600198891Z-fresh-provider-benchmark-sample-without-user-cache-database-or-credential-copies",
+    "fresh_market_benchmark_root": "data/dev027/capacity-market/f00ea201d8ad4776ace124d08f704cf7",
+    "actual_market_100_repeat_receipt": "20261110T183827003915Z-current-fresh-real-market-100-configuration-capacity-and-exact-repeat",
+    "market_100_seconds": [
+      89.82314110000152,
+      62.02019880001899
+    ],
+    "market_100_max_peak_working_set_bytes": 182038528,
+    "sessions_last_polled_live_not_a_replacement_for_rechecking": {},
+    "full_positive_receipt_in_progress": "20261110T183759920710Z-original-projection-reader-full-both-10000-policies-candidate-freeze-two-instrument-final-and-exports",
+    "full_positive_authored_store": "data/dev027/funnel-positive/e58de6783305457f86fa8fd07bf48e28",
+    "full_positive_child": "be79eae61d8147df8b6f36428b7e12b4",
+    "full_positive_worker_pid_last_verified": 18708,
+    "full_positive_worker_creation_utc": "2026-11-10T18:38:00.9762800Z",
+    "completed_single_source_receipt_in_progress": "20261110T184019093000Z-actual-complete-single-source-both-10000-policies-original-records-and-financial-reader-coverage",
+    "complete_control_or_final_acceptance_proven": false,
+    "installed_source_unchanged": true,
+    "reference_fixture_correction": {
+      "misnamed_reference": "verification/runs/trade-twin-parts-before-part-projections.py",
+      "misnamed_reference_sha256": "c08612534d324eb4d6329b382ab8a275b1d38e03c3d109f35ef172cce42707c8",
+      "invalidated_scope": "The earlier original_reader_equal claim compared the optimized module to itself; other actual counts/totals/live-hash/SQL/corruption checks remain as measured.",
+      "exact_historical_reference": "verification/runs/trade-twin-parts-original-pre-projection-verified.py",
+      "historical_sha256": "62039d8e540fa922c1baffbe4b40921d01724f38876b6b7b141e7c39883c73b3",
+      "historical_subject_receipt": "20261110T155951599290Z-manifest-proof-portable-current-part-and-live-control-regression",
+      "reconstructed_bytes_exactly_equal_historical_sha": true,
+      "corrected_reference_rerun_session": 9002,
+      "corrected_reference_equality_verified": true,
+      "corrected_reference_receipt": "20261110T185141773707Z-original-six-part-reader-exact-historical-source-sha-corrected-reference-and-all-warm-faults",
+      "corrected_reference_cases": 2,
+      "source_core_at_that_comparison": "3dc03bd1e2ce5f8ae2f16a50c64323d4aa8a43cb2e958516114d80ab73d44688"
+    },
+    "current_full_profile_receipt": "20261110T184302967307Z-original-projection-full-control-first-part-live-readonly-profile-no-locals",
+    "current_original_compatibility": {
+      "receipt": "20261110T182818630881Z-part-projections-current-original-financial-parts-manifest-and-control-regression",
+      "passed": 60,
+      "exit_code": 0,
+      "seconds": 1093.51,
+      "global_gate": false,
+      "source_core_at_check": "3dc03bd1e2ce5f8ae2f16a50c64323d4aa8a43cb2e958516114d80ab73d44688"
+    },
+    "actual_market_1000": {
+      "receipt": "20261110T184211605115Z-current-fresh-real-market-1000-configuration-capacity",
+      "passed": true,
+      "worker_complete_seconds": 688.3272950999672,
+      "complete_original_read_seconds": 696.2815880000126,
+      "peak_working_set_bytes": 206606336,
+      "original_trials": 1000,
+      "signals": 286,
+      "trades": 137,
+      "session_count": 1,
+      "regular_minute_rows": 390,
+      "concurrent_owned_verification_was_running": true,
+      "source_core_at_check": "3dc03bd1e2ce5f8ae2f16a50c64323d4aa8a43cb2e958516114d80ab73d44688"
+    },
+    "full_positive_last_observed_committed_parts": 6,
+    "full_positive_last_observed_elapsed_seconds": 1022.1567694999976,
+    "single_source_last_observed_committed_parts": 33,
+    "single_source_original_child": "13a4ffa4da364697948122a69e4db209",
+    "next_actions": [
+      "Finish corrected historical-reference contracts; receipt must bind exact62039d8e source, not the mislabeled c086 optimized copy.",
+      "Observe the currently live full controls and benchmark through their original handles; do not assume terminal from old state files.",
+      "Collect real10000 capacity fixed900-second result and profile the actual worker if slow; retain any failure without weakening budget.",
+      "Complete original both-policy10000 controls/final/export path, global51 coverage and full regression; current-only component coverage remains below95/90 in parts.",
+      "Actual100000 financial stress, locked install,83/422/120 final conformance and final installation/journey remain required."
+    ],
+    "continuation_handoff": "verification/runs/current-capacity-and-reference-next.md",
+    "actual_market_10000_profile_receipt": "20261110T190255828169Z-actual-market-10000-live-numerical-worker-readonly-profile-no-locals",
+    "full_positive_observed_unique_committed_books": 6636,
+    "full_positive_observed_first_six_encoded_book_bytes": 42868614,
+    "full_positive_original_pool_memberships": 4601,
+    "full_positive_max_distinct_policy_books": 9202,
+    "remaining_measured_bottleneck": "Actual10000 profile: repeated whole-plan verify/serialization during account_checkpoints.publish_checkpoint; gather terminal budget result and retain all original checks before any fix."
+  },
+  "checkpoint_lock_fix": {
+    "scope": "Current uninstalled code; full acceptance remains open. All83/422/120 and51 numerical95/90 gates unchanged.",
+    "exact_baseline_provenance": "verification/runs/checkpoint-lock-before/provenance.json",
+    "defect_receipt": "20261110T185801749844Z-current-fresh-real-market-10000-configuration-capacity-fixed-budget",
+    "defect": "106/10000 market configurations before budget stop; job-heartbeat SQLITE_BUSY raised an unhandled exception. Partial originals retained.",
+    "canceled_controls_receipt": "20261110T192029519617Z-normally-cancel-owned-original-controls-preserving-parts-before-checkpoint-lock-fix",
+    "canceled_full_41_source": {
+      "receipt": "20261110T183759920710Z-original-projection-reader-full-both-10000-policies-candidate-freeze-two-instrument-final-and-exports",
+      "original_parts": 7,
+      "completed_control": false
+    },
+    "canceled_full_single_source": {
+      "receipt": "20261110T184019093000Z-actual-complete-single-source-both-10000-policies-original-records-and-financial-reader-coverage",
+      "original_parts": 41,
+      "completed_control": false
+    },
+    "red_contracts": {
+      "receipt": "20261110T192852203457Z-checkpoint-lock-actual-10000-plan-and-real-heartbeat-contention-before-fix",
+      "failures": 3,
+      "errors": 1
+    },
+    "first_fix_retained_failure": {
+      "receipt": "20261110T193221637357Z-checkpoint-lock-first-fix-actual-10000-live-original-rows-and-bounded-heartbeat",
+      "passed": 43,
+      "failed": 1,
+      "cause": "1000ms heartbeat wait measured2.062s; current default500ms preserves2s gate."
+    },
+    "current_integrity": {
+      "receipt": "20261110T194555615552Z-checkpoint-lock-bounded-waits-live-plan-mutations-canonical-fallback-thread-eviction-and-transactions",
+      "passed": 25,
+      "full_original_planned_rows_per_check": 10000,
+      "two_warm_full_verifications_seconds": 0.16375710000284016,
+      "fresh_full_row_aggregates": 2,
+      "repeated_large_python_identities": 0,
+      "executed_financial_accounts_in_this_probe": 0
+    },
+    "current_real_lease_boundaries": {
+      "receipt": "20261110T195446947123Z-original-verifier-and-real-writer-lock-renewal-strictly-after-observed-contention",
+      "passed": 5,
+      "original_algorithm_AST_exact": true,
+      "real_transient_and_persistent_writer_locks": true,
+      "no_unhandled_thread_warning": true
+    },
+    "code_changes": [
+      "Coherent SQL savepoints; bounded thread/database-bound immutable expected anchor/complete-row projection hashes; fresh complete original event/payload/row reads on every success; original verifier retained unchanged and used cold/on mismatch; spread bypasses memo.",
+      "Heartbeat bounded connection/lock waits; retry only BUSY/LOCKED within10s (lease15s); signal unsafe ownership on persistent/nonbusy/unexpected failure; init exceptions close DB connections.",
+      "Cold FinancialParts constructor uses existing scoped control reader; every SQL cancellation and physical-file check retained."
+    ],
+    "current_market_100": {
+      "receipt": "20261110T195508314166Z-checkpoint-fixed-current-real-market-100-configuration-capacity-exact-repeat",
+      "passed": true,
+      "worker_seconds": [
+        109.14084850001382,
+        26.91046899999492
+      ],
+      "peak_working_set_bytes": 183468032,
+      "exact_original_part_repeat": true
+    },
+    "old_timed_benchmark_queue_canceled": "20261110T194718264254Z-preserve-timed-out-original-10000-benchmark-and-cancel-queued-old-core-continuation",
+    "new_current_market_1000_launch_cell": "622",
+    "full_current_control_or_global_gate_proven": false,
+    "next": "Finish current1000 benchmark, then actual10000 fixed budget on stable current code before another long full-control run; extend/verify any measured remaining bottleneck without weakening checks. Full base/research regression/all51 gates, full controls/final/export/UI, actual100000 financial stress, locked install,83/422/120 and journey remain.",
+    "installed_v025_unchanged": true,
+    "new_current_market_1000_launch_cell_closed": true,
+    "current_market_1000_session": 14017,
+    "current_market_1000_receipt": "20261110T200739769503Z-checkpoint-fixed-current-real-market-1000-configuration-capacity",
+    "current_source_handoff": "verification/runs/current-capacity-and-reference-next.md",
+    "current_market_1000": {
+      "receipt": "20261110T200739769503Z-checkpoint-fixed-current-real-market-1000-configuration-capacity",
+      "passed": true,
+      "worker_complete_seconds": 259.5144669999718,
+      "complete_original_read_seconds": 275.5671638000058,
+      "peak_working_set_bytes": 204660736,
+      "trial_attempts": 1000,
+      "signals": 286,
+      "trades": 137,
+      "original_parts_all_verified": true
+    },
+    "current_market_1000_session_terminal": true,
+    "current_market_10000": {
+      "session": 46087,
+      "receipt": "20261110T201330197321Z-checkpoint-fixed-current-real-market-10000-configuration-capacity-fixed-budget",
+      "fixed_wall_budget_seconds": 900,
+      "status": "TERMINAL FAILED EARLY; status running/checkpoint116; about265s, not900s budget expiry",
+      "process_cpu_seconds_last_progress": 40.21875,
+      "peak_working_set_bytes_last_progress": 273215488,
+      "original_job": "799e8a921b214f92bd5eeb345ef1a527",
+      "retired_preserving_originals_receipt": "20261110T204807741808Z-retire-expired-owned-116-account-capacity-original-with-digests-preserved"
+    }
+  },
+  "shared_main_background_lease_fix": {
+    "current_source_core": "7e6d698ff8742a65f889291d2c778ae7dc71e5418d59d25b1b59cac7da5b3caa",
+    "red_receipt": "20261110T203623678483Z-valid-main-progress-renewal-while-background-busy-before-shared-lease-fix",
+    "counterexample": "Background-only deadline stopped while successful real main progress kept14.8570585 actual lease seconds remaining.",
+    "before_source": "verification/runs/shared-lease-before/provenance.json",
+    "plans_updated_before_fix": true,
+    "implementation": "Store heartbeat captures renewal after writer acquisition/owner validation, invokes optional observer only after COMMIT and only if uncanceled; Worker main/background share a locked per-job/owner monotonic maximum.10s guard/15s lease unchanged. Incomplete capacity diagnostic now records safe failure kind/code/resources/elapsed.",
+    "focused_receipt": "20261110T204314791857Z-shared-committed-main-background-lease-renewals-real-locks-and-owner-boundaries",
+    "focused_passed": 6,
+    "current_integrity_observer_session": 76139,
+    "current_integrity_observer_status": "TERMINAL PASSED30 cases",
+    "performance_jobs_active": false,
+    "next": "Collect current30-case integrity/observer run; rerun original account checkpoint recovery/owner/source controls and current benchmarks100/1000/10000 before another full control proof. Full actual100000 financial stress/global51 gates/83-422-120/browser/fresh install/final delivery remain.",
+    "no_full_control_capacity_or_final_gate_proven": true,
+    "installed_main_v025_unchanged": true,
+    "current_integrity_observer_receipt": "20261110T204906426700Z-current-shared-lease-observers-original-plan-integrity-and-lock-regression",
+    "current_integrity_observer_passed": 30,
+    "current_market100_session": 7664,
+    "current_market100_status": "TERMINAL PASSED exact repeat",
+    "current_market100_receipt": "20261110T205151317197Z-shared-renewal-fixed-current-real-market-100-capacity-exact-repeat",
+    "current_market100_seconds": [
+      20.70471809996525,
+      23.72659370000474
+    ]
+  },
+  "current_scale_contention_investigation": {
+    "source_core": "7e6d698ff8742a65f889291d2c778ae7dc71e5418d59d25b1b59cac7da5b3caa",
+    "actual1000_failure": {
+      "receipt": "20261110T205303469702Z-shared-renewal-fixed-current-real-market-1000-capacity",
+      "session_terminal": 59649,
+      "checkpoint": 748,
+      "elapsed_seconds": 213.04402820003452,
+      "guard": {
+        "kind": "renewal_timeout",
+        "sqlite_code": 5,
+        "seconds_since_committed_renewal": 11.75446909997845
+      },
+      "peak_working_set_bytes": 196231168,
+      "completed_capacity": false
+    },
+    "first_partial_diagnostic": {
+      "receipt": "20261110T210047650307Z-separate-instrumented-real100-of10000-original-writer-hold-and-verification-diagnostic",
+      "planned": 10000,
+      "executed": 100,
+      "elapsed_seconds": 21.345497099973727,
+      "cold_verifications": 1,
+      "capacity_certificate": false
+    },
+    "second_partial_diagnostic": {
+      "receipt": "20261110T210512841598Z-separate-instrumented-real1000-of10000-writer-lock-stall-and-cache-diagnostic",
+      "planned": 10000,
+      "executed": 1000,
+      "elapsed_seconds": 281.25425950001227,
+      "guard": null,
+      "cold_verifications": 1,
+      "peak_working_set_bytes": 328200192,
+      "longest_measured_writer_seconds": 2.001499900012277,
+      "capacity_certificate": false
+    },
+    "aggregate_observations": {
+      "artifact_bytes": 19102669,
+      "observations": 51229,
+      "heartbeat_update_seconds": 45.36640040070051,
+      "heartbeat_select_seconds": 18.64457900018897,
+      "heartbeat_begin_seconds": 15.034217099251691,
+      "full_original_projection_seconds": 21.914746700553223,
+      "payload_read_seconds": 14.001948200340848
+    },
+    "production_source_changed_this_continuation": false,
+    "next_action": "Resolve intermittent SQLite contention and prove fresh complete1000/10000 resource-budget runs before full controls and release gates. No check currently running.",
+    "active_recovery_session": 48362,
+    "active_recovery_job": "eda4e80c7e794d2fa8f858b8582c385b",
+    "active_recovery_helper": "verification/runs/recover-real-original-748-accounts.py",
+    "active_recovery_status": "TERMINAL PASSED; original 748 committed accounts preserved; all1000 completed;1001 attempts; recovery175.2748s. Recovery proof only, not a capacity pass.",
+    "no_other_check_expected_active": true,
+    "active_recovery_session_terminal": true,
+    "recovery_receipt": "20261110T212154164612Z-genuine-748-original-real-account-recovery-without-committed-recomputation"
+  },
+  "heartbeat_covering_closure": {
+    "source_core": "9040d7a4ef8d276efc6e1b8f9b6c57f585e97a1b7cf3030de5badfc5d9976474",
+    "red_receipt": "20261110T212911205488Z-heartbeat-covering-actual-query-before-change",
+    "passed_89_receipt": "20261110T212933199879Z-heartbeat-covering-original-equivalence-real-writers-and-plan-integrity",
+    "query_probe_receipt": "20261110T213039441911Z-heartbeat-covering-synthetic-original-row-query-measurement",
+    "query_probe_not_capacity": true,
+    "actual1000_pass_receipt": "20261110T213158641822Z-covering-heartbeat-current-real-market-1000-capacity",
+    "actual1000_seconds": 136.5073982999893,
+    "complete_original_read_seconds": 137.84777769999346,
+    "peak_working_set_bytes": 203870208,
+    "attempts": 1000,
+    "no_user_data_or_credentials_copied": true
+  },
+  "main_progress_retry_closure": {
+    "source_core": "7ac7b05eba40515c896b4d23fd462545dd9e8942f56f404bf666eddaceca0c52",
+    "red_receipt": "20261110T213430522098Z-actual-main-progress-transient-writer-before-retry-fix",
+    "focused_6_pass_receipt": "20261110T213622754260Z-main-progress-real-transient-persistent-writer-shutdown-owner-and-nonbusy-faults",
+    "implementation": "Main progress and background retry only SQLite busy/locked against the same atomically observed10s committed-renewal deadline; fresh owned transactions,15s lease unchanged. Shutdown and nonbusy faults fail closed.",
+    "active_regression_session": 18801,
+    "regression_expected_collected": 143,
+    "active_regression_status": "TERMINAL PASSED143; one third-party Starlette deprecation warning, zero failures/errors/skips",
+    "no_current_capacity_claim": true,
+    "installed_v025_unchanged": true,
+    "regression_passed": 143,
+    "regression_receipt": "20261110T213704041172Z-main-progress-retry-original-store-trials-runtime-and-all-lease-contracts",
+    "active_regression_session_terminal": true
+  },
+  "current_capacity_series": {
+    "source_core": "7ac7b05eba40515c896b4d23fd462545dd9e8942f56f404bf666eddaceca0c52",
+    "session": 37620,
+    "status": "TERMINAL FAILED10000 at unchanged900s budget;100/repeat and1000 passed on prior7ac source",
+    "helper": "verification/runs/run-main-retry-real-capacity-series.py",
+    "current_original_job": "13cf6441184f4b2d9aa6f2837be8c545",
+    "observed_checkpoint": "244 / 10000 configurations saved.",
+    "passed100_receipt": "20261110T213930374938Z-main-retry-current-real-market-100-capacity",
+    "passed100_worker_seconds": [
+      13.826573900005314,
+      13.195269299962092
+    ],
+    "current1000_run": "20261110T214002786205Z-main-retry-current-real-market-1000-capacity",
+    "wall_budget_per_count_seconds": 900,
+    "peak_budget_bytes": 3221225472,
+    "output_budget_bytes": 2147483648,
+    "automatic_retries": 0,
+    "next": "Poll the same session; do not restart after observation timeout. On failure preserve incomplete originals; no full capacity/control/release claim.",
+    "passed1000_receipt": "20261110T214002786205Z-main-retry-current-real-market-1000-capacity",
+    "passed1000_worker_seconds": 482.7719167000032,
+    "passed1000_complete_original_read_seconds": 484.51296540000476,
+    "passed1000_peak_working_set_bytes": 204582912,
+    "passed1000_financial_attempts": 1000,
+    "current10000_run": "20261110T214811540835Z-main-retry-current-real-market-10000-capacity",
+    "no_other_check_expected_active": true,
+    "source_and_plans_frozen_until_terminal": true,
+    "session_terminal": true,
+    "current10000_receipt": "20261110T214811540835Z-main-retry-current-real-market-10000-capacity",
+    "current10000_elapsed_seconds": 900.5246798999724,
+    "current10000_checkpoint": 4408,
+    "current10000_peak_working_set_bytes": 332279808,
+    "current10000_process_cpu_seconds": 800.03125,
+    "retired_preserving_originals_receipt": "20261110T220522577334Z-retire-terminal-900s-benchmark-queued-continuation-preserving-4408-originals",
+    "retained_originals": 4408,
+    "owned_queued_continuation_state": "canceled after process exit; all original rows/attempts/file digests preserved",
+    "no_current_source_capacity_proven": true
+  },
+  "bounded_account_publication": {
+    "source_core": "e5d001c544a0bbc1a4d577d04c9228d9ce30c71e928c0eccc5e8e47372705128",
+    "implemented": true,
+    "uninstalled": true,
+    "maximum_accounts_per_unit": 8,
+    "maximum_canonical_encoded_bytes": 8388608,
+    "encoded_bound_not_rss_guarantee": true,
+    "single_publisher_exact_prior_ast_retained": true,
+    "whole_plan_fresh_per_exclusive_writer_snapshot": true,
+    "source_owner_cancel_closing_checks": true,
+    "no_financial_rules_changed": true,
+    "profile_receipt": "20261110T215106991510Z-current-main-retry-market10000-short-readonly-nonblocking-profile-no-locals",
+    "red_contract_receipt": "20261110T220349743154Z-bounded-account-publication-real-original-behavior-before-batch",
+    "red_failed": 10,
+    "red_passed": 6,
+    "first_18_pass_receipt": "20261110T221051712970Z-bounded-account-publication-all-originals-rollback-controls-and-encoded-limits",
+    "financial_first_harness_failure_receipt": "20261110T222201253261Z-bounded-batch-actual-financial-books-original-byte-parity-8-9-16-and-oversized",
+    "harness_failure": "Four assertions incorrectly compared separate original job IDs; raw account part bytes matched. Corrected to assert each original identity and compare every remaining root field and every byte.",
+    "financial_and_real_deaths_pass_receipt": "20261110T222715876672Z-bounded-batch-financial-parity-distinct-original-identities-and-real-deaths",
+    "financial_and_deaths_passed": 9,
+    "actual_process_death_boundaries": 5,
+    "financial_books": "8/9/16 account batches and oversized fallback exactly equal to SHA-bound prior loop; gains/losses/zeros retained",
+    "reference_source": "verification/runs/account-publication-batch-before/provenance.json",
+    "active_selected_regression": {
+      "run": "20261110T223715615104Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression",
+      "collected": 199,
+      "last_observed_passed": 199,
+      "last_observed_failed": 0,
+      "watch_session": 18289,
+      "actual_record_process_id": 24120,
+      "actual_record_process_created_utc": "2026-11-10T22:37:12.549384Z",
+      "actual_process_identity_revalidated": true,
+      "launcher_returned_early_due_to_os_execv": true,
+      "do_not_restart": true,
+      "next": "Both launchers corrected to wait and propagate child status.",
+      "last_observed_reported": 199,
+      "last_pytest_progress": {
+        "scope": "Actual pytest collection/report progress only; not product acceptance.",
+        "observed_at_utc": "2026-11-10T22:49:29.280746+00:00",
+        "collected": 199,
+        "reported": 88,
+        "passed": 88,
+        "failed": 0,
+        "skipped": 0,
+        "errors": 0,
+        "elapsed_seconds": 728.0316846999922,
+        "terminal": false,
+        "exit_code": null
+      },
+      "status": "terminal passed",
+      "watch_session_terminal": true,
+      "receipt": "20261110T223715615104Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression"
+    }
+  },
+  "complete_suite_audit": {
+    "inventory": "verification/runs/external-contract-suite-inventory-pending-audit.json",
+    "exact_function_audit": "verification/runs/external-contract-exact-function-audit.json",
+    "initial_external_unclassified": 19,
+    "classification_not_complete": true,
+    "full_original_positive_funnel_added_to_complete_launcher": true,
+    "frozen_saved_evidence_supplements_need_current_source_port": true,
+    "no_all_suites_or_release_claim": true
+  },
+  "latest_current_stage_checks": {
+    "receipts": {
+      "regression": "20261110T223715615104Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression",
+      "coverage": "20261110T225917608988Z-batched-current-original-account-checkpoint-module-coverage",
+      "pilot": "20261110T225444894171Z-batched-current-real-market-100-capacity-repeat",
+      "failed": "20261110T225917514768Z-batched-current-real-market-1000-capacity",
+      "profile": "20261110T230946994963Z-current-batched-market1000-nonblocking-profile-no-locals",
+      "preserved": "20261110T231841856407Z-retire-failed-batched-capacity-queue-preserving-736-originals",
+      "accounting": "20261110T225325248812Z-current-development-journey-clock-and-usage-reconciliation",
+      "collection": "20261110T225707784863Z-current-release-additional-checkpoint-and-saved-evidence-suite-collection"
+    },
+    "checkpoint_coverage": {
+      "statements": [
+        151,
+        154
+      ],
+      "branches": [
+        84,
+        88
+      ]
+    },
+    "pilot_count": 100,
+    "pilot_repeat_exact": true,
+    "thousand_capacity_failed": true,
+    "thousand_originals_preserved": 736,
+    "thousand_elapsed_seconds": 989.6423000000068,
+    "thousand_cpu_seconds": 107.65625,
+    "ten_thousand_started": false,
+    "capacity_series_session": 85539,
+    "capacity_series_terminal": true,
+    "suite_collection_only": 64,
+    "journey": "DEVELOPMENT-JOURNEY-3.md",
+    "candidate_map": "verification/runs/current-stage-implementation-map-candidate.json"
+  },
+  "active_clean_build": {
+    "session": 10226,
+    "run": "20261110T231939436225Z-current-research-stage-clean-locked-dependencies-build-and-api-smoke",
+    "owned_source": "data/dev027/clean-builds/20261110T231939436225Z",
+    "script": "verification/runs/verify-research-stage-locked-build.py",
+    "scope": "Current-stage clean dependency install, frontend rebuild and two API smoke cases",
+    "status": "terminal failed in output encoder",
+    "session_terminal": true,
+    "exit_code": 1,
+    "correction": "Harness now encodes stdout and stderr as UTF-8. Retain original failed receipt. Python and npm install and frontend build returned zero. Smoke was not run."
+  },
+  "active_numerical_comparison": {
+    "session": 70967,
+    "run": "20261110T232806952347Z-numerical-loop-candidate-authored-signal-and-cash-account-parity",
+    "candidate": "data/dev027/numerical-loop-candidate",
+    "checks": "30 authored detector cases, full cash account equality, cancellation, and interleaved timings",
+    "last_observation": "Exact candidate comparison passed. Code is in candidate source directory. Adopt after stage-recording checks finish and rerun exact numerical and capacity gates.",
+    "status": "terminal passed",
+    "session_terminal": true,
+    "receipt": "20261110T232806952347Z-numerical-loop-candidate-authored-signal-and-cash-account-parity",
+    "identical_signal_cases": 30,
+    "identical_cash_accounts": 4,
+    "cancellation_matches": true,
+    "old_cpu_seconds_per_30": [
+      7.203125,
+      7.046875
+    ],
+    "candidate_cpu_seconds_per_30": [
+      2.4375,
+      2.25
+    ],
+    "adopted_exact_candidate": true,
+    "original_files": "data/dev027/numerical-loop-original"
+  },
+  "active_writer_diagnostic": {
+    "session": 79314,
+    "run": "20261110T233508791848Z-current-batched-writer-phases-64-of-real-10000-plan",
+    "checks": "SQLite writer acquisition, statement and hold times on the first 64 evaluations of the real 10,000-plan fixture. Owned diagnostic, not capacity.",
+    "last_observation": "Exited 0. First 64 accounts completed; own queued continuation canceled. No renewal guard failure. Slowest heartbeat UPDATE took 4.57 seconds. Diagnostic only.",
+    "status": "terminal passed",
+    "session_terminal": true,
+    "receipt": "20261110T233508791848Z-current-batched-writer-phases-64-of-real-10000-plan",
+    "elapsed_seconds": 111.597823
+  },
+  "sqlite_heartbeat_synthetic": {
+    "artifact": "verification/runs/sqlite-heartbeat-inline-versus-split-synthetic.json",
+    "payload_bytes": 8575239,
+    "inline_wal_bytes": [
+      8652032,
+      8652032,
+      4152,
+      4152,
+      4152,
+      4152
+    ],
+    "split_wal_bytes": [
+      4152,
+      4152,
+      4152,
+      4152,
+      4152,
+      4152
+    ],
+    "scope": "Shows that some updates rewrite overflow pages and others incur extra time even with identical WAL size. Does not establish the cause of multi-second production stalls."
+  },
+  "active_numerical_regression": {
+    "session": 21473,
+    "run": "20261111T000341444138Z-adopted-numerical-locked-120-matrix-independent-reference-confirmation-cache",
+    "scope": "Full 120-case matrix and existing reference execution, exits, properties, confirmations and evaluation cache suites using the workspace locked Python environment.",
+    "first_failed_receipt": "20261111T000217227342Z-adopted-numerical-120-matrix-independent-reference-confirmation-cache",
+    "first_failure": "Global Python lacked exchange_calendars. Test collection never started.",
+    "status": "terminal pytest passed, artifact argument failure corrected through reconciliation",
+    "session_terminal": true,
+    "pytest_exit_code": 0,
+    "managed_shell_exit_code": 1,
+    "passed": 659,
+    "elapsed_test_seconds": 895.55,
+    "discrepancy": "Two unnecessary --artifact arguments addressed workspace-root paths. Recorder automatically indexed the actual files in the run. The reconciliation independently verified them and all 120 matrix records.",
+    "reconciliation_receipt": "20261111T001936513161Z-adopted-numerical-120-case-matrix-evidence-reconciliation",
+    "reconciled_matrix_cases": 120,
+    "junit_suite_counts": {
+      "confirmation_filters": 247,
+      "evaluation_cache": 143,
+      "strategy_matrix": 120,
+      "reference_properties": 96,
+      "reference_execution": 34,
+      "reference_exits": 19
+    }
+  },
+  "active_retained_clean_clone_smoke": {
+    "session": 65644,
+    "run": "20261111T000413827734Z-retained-clean-clone-api-smoke-after-log-encoding-failure",
+    "scope": "Two API smoke cases in the earlier isolated lock-built clone. Does not replace full fresh reproduction on final source.",
+    "status": "terminal passed",
+    "session_terminal": true,
+    "passed": 2,
+    "deselected": 29,
+    "elapsed_test_seconds": 43.4
+  },
+  "adopted_numerical_core_sha256": "e5d2219868351a4c175d0853a71e03dc884f35e79314d7e3880bba01f58ce504",
+  "active_adopted_publication_regression": {
+    "session": 58618,
+    "run": "20261111T000737317787Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression",
+    "scope": "Original checkpoint, publication, death recovery, trial registry and lease regression on the adopted source.",
+    "status": "terminal failed",
+    "last_progress": {
+      "observed_at_utc": "2026-11-11T00:34:39.655008+00:00",
+      "collected": 199,
+      "reported": 199,
+      "passed": 196,
+      "failed": 3,
+      "skipped": 0,
+      "errors": 0,
+      "terminal": true
+    },
+    "session_terminal": true,
+    "exit_code": 1,
+    "passed": 196,
+    "failed": 3,
+    "receipt": "20261111T000737317787Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression",
+    "failures": [
+      "Entry-point console interrupt test timed out at the 30-second startup limit.",
+      "Parent crash test got empty startup stdout before child readiness. Its failure path left Popen pipes open.",
+      "Later same-transaction owner-corruption case reported three unclosed FileIO pipes. Allocation site is unconfirmed from the failed run."
+    ]
+  },
+  "next_capacity_action": {
+    "stage_core": "e5d2219868351a4c175d0853a71e03dc884f35e79314d7e3880bba01f58ce504",
+    "after_sessions": [
+      21473,
+      58618
+    ],
+    "sequence": [
+      100,
+      1000,
+      10000
+    ],
+    "strategy": "Run same real-data gates sequentially, inspect any failed receipt before continuing. Benchmark runner checks owned registry for competing jobs before starting every replica. Prior read-only owned registry query found none.",
+    "contract": "verification/runs/capacity-real-sample-contract.json",
+    "coordination_session": 23111,
+    "status": "Terminal 10,000 budget failure, all 6,440 originals preserved, queued continuation canceled. No active benchmark.",
+    "launcher": "verification/runs/launch-adopted-numerical-capacity.py",
+    "coordinator_terminal": true,
+    "next": "Collect focused Windows test evidence, execute the bounded stress harness smoke in an owned store, rerun the full publication suite, and launch original capacity sequence.",
+    "prerequisite_run": "20261111T025645177335Z-actual-arm-five-death-boundaries-with-owned-phase-clock-and-timeout-retirement",
+    "previous_coordinator_terminal": true,
+    "previous_coordinator_exit_code": 1,
+    "allowed_snapshot_delta": [
+      "PLAN.md",
+      "VERIFICATION_PLAN.md",
+      "tests/test_runtime_ownership.py"
+    ],
+    "previous_coordinator_session": 86816,
+    "coordinator_exit_code": 1
+  },
+  "bounded_financial_stress_harness": {
+    "runner": "verification/runs/measure-bounded-financial-stress.py",
+    "runner_sha256": "4058a18343d0b54ea934493b23cf56822ab3812fe4dea03fb72645fe543a16d7",
+    "contract": "verification/runs/bounded-financial-stress-contract.json",
+    "contract_sha256": "e4aefc43248c362013d15a94055378ae20b8a29663d09e2910599a4539ef5dc1",
+    "case": "PERF-001-C02",
+    "required_accounts": 100000,
+    "smoke_accounts": 60,
+    "verified_now": "Runner parses. Catalog scope, frozen count, all 60 strata, and nonoverlapping authored minute windows checked.",
+    "next": "Execute recorded 60-account harness smoke when publication testing is terminal. Execute 100,000 original accounts after the agreed real-data capacity gates.",
+    "audit_checks_normal_saved_result_index": true,
+    "smoke": {
+      "session": 1753,
+      "receipt": "20261111T004346953637Z-bounded-financial-stress-harness-60-original-account-smoke",
+      "exit_code": 0,
+      "completed": 60,
+      "attempts": 60,
+      "signals": 6,
+      "trades": 3,
+      "zero_trade_accounts": 59,
+      "worker_seconds": 68.65757270000177,
+      "audit_seconds": 70.20005320000928,
+      "full_stress_completed": false
+    }
+  },
+  "next_clean_build_harness": {
+    "script": "verification/runs/verify-research-stage-locked-build.py",
+    "sha256": "41bcbf9e9502a95490123d5fb19faf0bdd24ed4d39c502fcfaa4f3436f2f0c02",
+    "changes": "UTF-8 output. Include all 48 current JSON fixtures. Check both snapshots. Execute mirrored long and short accounts in current-stage and fresh locked environments with external Python sockets blocked. Verify original saved exports after restart, actual worker retirement and exact scientific output parity.",
+    "status": "Both verification scripts parse. The fresh current-source run remains pending.",
+    "offline_scenario": "verification/runs/clean-reproduction-offline-scenario.py",
+    "offline_scenario_sha256": "1fb8edbb412585f850a239f4fd60be088aed5ba3ad2e05bb259160e377942481",
+    "license_inventory_component": "The earlier isolated clone yielded declared or packaged license metadata for all 47 locked Python distributions. The corrected clean build will retain both Python and npm metadata and license document hashes.",
+    "full_required_backend_suite": "--release-suite runs all prescribed backend contracts on stage source byte-checked to the clean clone, using the new locked interpreter. It binds the exact stage snapshot and actual nested receipt.",
+    "clean_interpreter_test_plugin_probe": "Verified coverage and Hypothesis plugin loading with automatic plugin discovery disabled in the earlier locked clone.",
+    "offline_probe_waits": "120-second harness allowance for fresh worker setup and each authored offline account, consistent with observed Windows import times. The 15-second crash-exit test and capacity budgets remain separate release gates."
+  },
+  "active_windows_ownership_probe": {
+    "session": 68381,
+    "status": "terminal passed",
+    "harness_sha256": "2bcfcf24430b77e72977bc14352a5d54ba8dea8fcdb09dbc4ed608f7c33a081b",
+    "archived_harness": "verification/runs/runtime-ownership-harness-before/test_runtime_ownership.py",
+    "changes": "120s test-only import and worker readiness allowance. Deterministically close all Popen pipes and capture stderr on missing readiness. Keep actual 15-second parent-crash worker exit, exit17 and lease reacquisition assertions.",
+    "run": "20261111T003749513221Z-current-windows-runtime-ownership-startup-pipe-and-recovery-regression",
+    "last_progress": {
+      "scope": "Actual pytest collection/report progress only; not product acceptance.",
+      "observed_at_utc": "2026-11-11T00:39:37.779354+00:00",
+      "collected": 8,
+      "reported": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "errors": 0,
+      "elapsed_seconds": 105.59348380001029,
+      "terminal": false,
+      "exit_code": null
+    },
+    "session_terminal": true,
+    "exit_code": 0,
+    "passed": 8,
+    "receipt": "20261111T003749513221Z-current-windows-runtime-ownership-startup-pipe-and-recovery-regression",
+    "whole_console_probe_seconds": 58.845,
+    "whole_parent_crash_probe_seconds": 57.986
+  },
+  "active_publication_regression_after_harness_fix": {
+    "session": 22032,
+    "run": "20261111T004732796862Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression",
+    "status": "terminal observer error",
+    "session_terminal": true,
+    "child_exit_code": 3,
+    "tests_passed_before_abort": 19,
+    "tests_failed_before_abort": 0,
+    "receipt": "20261111T004732796862Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression",
+    "cause": "Windows denied atomic replacement of live progress JSON while a reader held it. Pytest progress hook raised PermissionError."
+  },
+  "verified_progress_observer_correction": {
+    "receipt": "20261111T010030277343Z-actual-windows-progress-file-reader-cannot-interrupt-pytest",
+    "source": "verification/runs/research_regression_progress.py",
+    "previous_source": "verification/runs/research_regression_progress-before-windows-replace-fix.py",
+    "actual_windows_lock": true,
+    "observed_denied_replacements": 1,
+    "pytest_passed": 2,
+    "pytest_exit_code": 0
+  },
+  "active_publication_regression_after_observer_fix": {
+    "session": 47216,
+    "run": "20261111T010111337273Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression",
+    "status": "terminal failed",
+    "session_terminal": true,
+    "exit_code": 1,
+    "passed": 197,
+    "failed": 2,
+    "receipt": "20261111T010111337273Z-bounded-publication-original-checkpoint-arm-deaths-runtime-trials-and-lease-regression",
+    "failures": [
+      "research-arm recovery after_first_checkpoint exceeded combined 90s subprocess limit",
+      "research-arm recovery after_part_receipt exceeded combined 90s subprocess limit"
+    ]
+  },
+  "original_plan_byte_witness": {
+    "materialization_probe_receipt": "20261111T010517987636Z-owned-frozen-10000-plan-hash-text-versus-bytes",
+    "samples_wall_seconds": {
+      "text": [
+        0.13309,
+        0.0625672,
+        0.0578229
+      ],
+      "blob": [
+        0.0502855,
+        0.0438251,
+        0.0367553
+      ]
+    },
+    "identical_raw_digests": true,
+    "owned_original_rows": 10000,
+    "candidate": "data/dev027/plan-byte-witness-candidate/trials.py",
+    "candidate_sha256": "f69d299496970cc2f7e1e4ada31b011966e6ed945f1e2b05c74dfa3e3fda9488",
+    "candidate_session": 1589,
+    "candidate_run": "20261111T010815617942Z-compare-byte-witness-candidate-full-original-plan-checks",
+    "status": "terminal component pass; candidate not adopted",
+    "candidate_session_terminal": true,
+    "candidate_receipt": "20261111T010815617942Z-compare-byte-witness-candidate-full-original-plan-checks",
+    "exact_original_plan_proof": true,
+    "original_six_checks_wall_seconds": [
+      0.3353314,
+      0.3454716
+    ],
+    "candidate_six_checks_wall_seconds": [
+      0.2406734,
+      0.2487803
+    ],
+    "original_six_checks_cpu_seconds": [
+      0.34375,
+      0.328125
+    ],
+    "candidate_six_checks_cpu_seconds": [
+      0.234375,
+      0.234375
+    ],
+    "compatibility": [
+      "UTF-8 and UTF-16le",
+      "noncanonical JSON with Unicode",
+      "changed immutable trial refused",
+      "nontext warm payload refused"
+    ],
+    "next": "Collect current publication and original capacity. If measured evidence warrants adopting the candidate, update the plan and run actual full original-plan corruption, publication/recovery and fresh capacity gates on the new source.",
+    "existing_integrity_contracts": {
+      "session": 44191,
+      "run": "20261111T011246588141Z-candidate-byte-witness-original-plan-integrity-contracts",
+      "status": "terminal passed",
+      "scope": "Existing immutable-row, coherent rewrite, Unicode/whitespace, thread/eviction, savepoint and database identity assertions executed with the exact candidate in an isolated process.",
+      "production_stage_changed": false,
+      "session_terminal": true,
+      "exit_code": 0,
+      "passed": 22,
+      "receipt": "20261111T011246588141Z-candidate-byte-witness-original-plan-integrity-contracts"
+    }
+  },
+  "historical_initial_not_implemented_yet": [
+    "Both-instrument final all-version execution and original one-time consumption/recovery/saved authority. Authored contracts and execution route are ready; implementation is the next action.",
+    "Public funnel registration/cohort generation/qualification/final workflow routes, bounded dependency/rows/family/stability/attrition UI and complete JSON/CSV/offline exports. Only strict generic saved result/summary integration currently exists.",
+    "Actual completed10000-set D046 outcomes through the original qualifier/control reader, positive candidate/full workflow integration and unchanged95/90 gates for new persistence/reader modules.",
+    "Current integrated full regression and original D046 coverage gaps, real-market100/1000/10000 financial resource workloads, separate global100000 stress, fresh locked install and complete83/422/120 acceptance."
+  ],
+  "historical_initial_next_actions": [
+    "Read verification/runs/financial-part-read-performance-next.md; implement bounded compact original-part projections and per-unit immutable book retrieval to remove repeated JSON/whole-book validation after decoded-cache eviction. Preserve every fresh original file/input/index/trial/attempt/event and closing-authority check.",
+    "Prove original complete-book/row equality and cache-eviction-boundary scaling on actual small owned parts; add corruption, rehashed metadata, mid-unit changes, cancellation, recovery and memory bounds. Do not merely enlarge a decoded cache or reduce20000 sets.",
+    "Only then repeat both original10000 policies through positive qualification freeze, both-instrument all-version final and exports; run complete base/research regression with all51-module actual coverage gates, market/resource100000stress, current UI, fresh installation,83/422/120 final audit, installation and journey/accounting."
+  ],
+  "current_checkpoint": {
+    "current_stage": "data/dev027/research-src",
+    "current_core": "010175e4f595a2ff53a8306a85a097d4448bfbf2bbd6d6981dec318ec311b1ac",
+    "installed_version": "0.25",
+    "implemented_pending_release": [
+      "Public research-funnel registration, frozen cohort generation, qualification and both-instrument all-version final workflow.",
+      "Bounded saved result inspection, exports and research UI.",
+      "Batched original-account checkpoint publication and exact numerical optimizations."
+    ],
+    "component_evidence": {
+      "numerical_regression_passed": 659,
+      "matrix_cases_reconciled": 120,
+      "focused_windows_lifecycle_passed": 8,
+      "actual_financial_stress_smoke_accounts": 60,
+      "byte_witness_candidate_existing_integrity_cases": 22,
+      "context_numerical_regression_passed": 675
+    },
+    "live_processes": {},
+    "release_gates_still_required": [
+      "Complete fresh-interpreter full backend regression, including original control/final workflow and 51-module actual coverage.",
+      "Current 10,000 capacity run. Current 100/repeat and 1,000 gates passed.",
+      "Both complete original 10,000-set control policies through frozen qualification, both final instruments, all original versions and exports.",
+      "Actual 100,000-configuration deterministic financial stress.",
+      "Complete backend regression and actual source-coherent 51-module 95/90 coverage gates.",
+      "Current browser, offline, export and fresh locked-install reproduction checks.",
+      "Final case-level proof for all 83 requirements and 422 mandatory cases, installed release and updated journey/accounting."
+    ],
+    "candidate_not_adopted": "data/dev027/plan-byte-witness-candidate/trials.py",
+    "final_product_acceptance_certified": false,
+    "interpretation": "Current checkpoint is authoritative. Older run and route entries remain as historical evidence.",
+    "status": "paused_by_user"
+  },
+  "case_traceability_draft": {
+    "path": "verification/runs/current-case-traceability-draft.json",
+    "catalog_cases": 422,
+    "assertion_reviewed": 131,
+    "assertion_partially_reviewed": 17,
+    "release_acceptance_passes": 0,
+    "purpose": "Explicit per-case assertion and evidence audit. Broader test-file mappings do not silently prove a case."
+  },
+  "retained_source_provenance": {
+    "receipt": "20261111T013158775591Z-retained-source-video-screenshot-provenance-and-linked-reference-audit",
+    "source_representations": 3,
+    "screenshots": 37,
+    "local_reference_links_resolve": true,
+    "external_availability_checked": false,
+    "individual_visual_review_of_every_frame_claimed": false,
+    "first_harness_failure": "20261111T013054985871Z-retained-source-video-screenshot-provenance-and-reference-audit",
+    "correction": "Recognize the findings document's link to VIDEO_REVIEW and the manifest as its source reference."
+  },
+  "active_arm_death_phase_probe": {
+    "session": 95974,
+    "run": "20261111T025645177335Z-actual-arm-five-death-boundaries-with-owned-phase-clock-and-timeout-retirement",
+    "status": "terminal passed",
+    "cases": 6,
+    "scope": "All five original arm death/recovery cases plus actual controlled timeout. Native multiprocessing handle owns the interpreter, with 120s startup and original 90s boundary allowance.",
+    "session_terminal": true,
+    "exit_code": 0,
+    "passed": 6,
+    "receipt": "20261111T025645177335Z-actual-arm-five-death-boundaries-with-owned-phase-clock-and-timeout-retirement",
+    "phase_reconciliation_receipt": "20261111T030435725966Z-reconcile-actual-owned-arm-deaths-and-phase-timings"
+  },
+  "current_adopted_capacity": {
+    "session": 23111,
+    "pilot_receipt": "20261111T030337215053Z-adopted-numerical-real-market-100-capacity",
+    "pilot_counts": [
+      100,
+      100
+    ],
+    "pilot_seconds": [
+      27.632362000003923,
+      26.292031099961605
+    ],
+    "pilot_original_bytes_repeat_equal": true,
+    "active_count": 10000,
+    "active_run": "20261111T030636680106Z-adopted-numerical-real-market-10000-capacity",
+    "status": "terminal failed 10,000 time budget",
+    "thousand_receipt": "20261111T030449040977Z-adopted-numerical-real-market-1000-capacity",
+    "thousand_worker_seconds": 93.59341739997035,
+    "thousand_original_read_seconds": 95.22364059998654,
+    "thousand_peak_bytes": 199110656,
+    "thousand_signals": 286,
+    "thousand_trades": 137,
+    "session_terminal": true,
+    "ten_thousand_receipt": "20261111T030636680106Z-adopted-numerical-real-market-10000-capacity",
+    "ten_thousand_saved_accounts": 6440,
+    "ten_thousand_elapsed_seconds": 901.6132002999657,
+    "ten_thousand_lease_failure": null,
+    "ten_thousand_original_preservation": "20261111T032256611351Z-retire-failed-current10000-preserving-6440-original-accounts"
+  },
+  "provider_acceptance_gap_tests": {
+    "path": "verification/runs/provider-release-acceptance-contracts.py",
+    "sha256": "fa5a0df2192f5ccd97f3c9e8aea5be09b3180bd9a3296651804ed542c7bab1fc",
+    "status": "terminal passed",
+    "cases": [
+      "DATA-001-C01",
+      "DATA-001-C03",
+      "DATA-003-C01",
+      "DATA-003-C02",
+      "DATA-003-C03"
+    ],
+    "scope": "Synthetic 401/403 secret redaction; exact five-request and 15-second authored retry bound for 429/503/timeout; cancel, retained page chain, resumed pages and exact cached reread.",
+    "passed": 6,
+    "receipt": "20261111T032256611367Z-provider-auth-retry-cancel-and-original-page-chain-acceptance"
+  },
+  "detector_context_cache_work": {
+    "status": "675-case numerical regression passed; real capacities active.",
+    "provenance": "verification/runs/context-feature-cache-before/provenance.json",
+    "reason": "Current 194-sample profile shows contexts as a material repeated cost. Same deterministic context depends on only 12 declared configuration fields.",
+    "profile_receipt": "20261111T031805764588Z-current-optimized-market10000-short-nonblocking-profile",
+    "benchmark_included_short_nonblocking_profile": true,
+    "preserve": "Full original evaluations/attempts, current source/price/manifest/protected scope validation, 128MiB LRU, copy isolation and cancellation.",
+    "current_core": "d2f1e593bc3d0477af06b37fc4fa5e2c2362eeba4cbbedf6dc7b42d10445eaa8",
+    "source_files": [
+      "backend/lab/signals.py",
+      "backend/lab/evaluation_cache.py",
+      "backend/lab/service.py"
+    ],
+    "test": "verification/runs/context-feature-cache-contracts.py",
+    "first_smoke": {
+      "receipt": "20261111T032909969144Z-detector-context-cache-first-complete-account-and-authority-smoke",
+      "passed": 3
+    },
+    "active_session": 43112,
+    "active_run": "20261111T033215777965Z-detector-context-complete-dependency-copy-cancel-and-all-numerical-regression",
+    "pending": "Collect all 675 actual results and reconcile matrix. Then measure original current-source real 100/repeat, 1,000, 10,000. Do not treat earlier e5d capacity passes as current-source results.",
+    "regression_receipt": "20261111T033215777965Z-detector-context-complete-dependency-copy-cancel-and-all-numerical-regression",
+    "regression_terminal": true,
+    "regression_passed": 675,
+    "matrix_reconciliation_receipt": "20261111T033553140999Z-context-cache-120-matrix-case-evidence-reconciliation"
+  },
+  "current_context_capacity": {
+    "session": 45641,
+    "core": "d2f1e593bc3d0477af06b37fc4fa5e2c2362eeba4cbbedf6dc7b42d10445eaa8",
+    "pilot_receipt": "20261111T033557118841Z-adopted-numerical-real-market-100-capacity",
+    "pilot_seconds": [
+      11.005430400022306,
+      8.440010000020266
+    ],
+    "pilot_original_bytes_equal": true,
+    "thousand_receipt": "20261111T033630122479Z-adopted-numerical-real-market-1000-capacity",
+    "thousand_seconds": 65.67829940002412,
+    "active_run": "20261111T033747231640Z-adopted-numerical-real-market-10000-capacity",
+    "active_count": 10000,
+    "status": "terminal failed original 900-second budget",
+    "elapsed_seconds": 903.8531483999686,
+    "committed_accounts": 5488,
+    "lease_failure": null,
+    "session_terminal": true,
+    "exit_code": 1,
+    "preservation_receipt": "20261111T035330416176Z-retire-current-context-capacity-preserving-5488-original-accounts",
+    "included_short_nonblocking_profile": "20261111T035009757567Z-current-context-market10000-short-nonblocking-profile"
+  },
+  "active_clean_release_dispatch": {
+    "session": 6756,
+    "status": "terminal prerequisite failed; fresh install and global regression not started",
+    "script": "verification/runs/launch-clean-release-after-capacity.py",
+    "capacity_prerequisite": "20261111T033747231640Z-adopted-numerical-real-market-10000-capacity",
+    "full_suite_contains_both_original_10000_policies_and_final": true,
+    "session_terminal": true,
+    "exit_code": 1
+  },
+  "large_unit_connection_work": {
+    "core": "010175e4f595a2ff53a8306a85a097d4448bfbf2bbd6d6981dec318ec311b1ac",
+    "status": "implemented; first focused regression active, no passing claim",
+    "session": 64372,
+    "provenance": "verification/runs/large-account-unit-before/provenance.json",
+    "preserved_small_unit": 8,
+    "large_job_unit": 64,
+    "encoded_limit_bytes": 8388608,
+    "changed_files": [
+      "backend/lab/store.py",
+      "backend/lab/worker.py",
+      "backend/lab/trials.py",
+      "backend/lab/account_checkpoints.py"
+    ],
+    "source_checks_removed": false,
+    "byte_witness_candidate_adopted": true,
+    "pending": [
+      "Collect actual new/old original financial, transaction, full-plan and scoped connection results.",
+      "Add actual large-unit subprocess-death/recovery cases.",
+      "Run current numerical/matrix/lease/recovery regressions then actual original capacities.",
+      "All complete controls, 100000 financial stress, clean/full51/browser/offline/422/install/journey gates remain."
+    ]
+  },
+  "candidate_not_adopted": "Historical: byte-witness trials candidate adopted into current large-unit stage; prior isolated receipts remain component evidence.",
+  "pause_state": "PAUSE_STATE.json",
+  "pause_observation": {
+    "status": "paused_by_user",
+    "paused_at_utc": "2026-11-11T04:17:17+00:00",
+    "objective_complete": false,
+    "installed_checkpoint": "0.25 development checkpoint; package manifest 0.1.0",
+    "source_root": "data/dev027/research-src",
+    "original_local_core": "010175e4f595a2ff53a8306a85a097d4448bfbf2bbd6d6981dec318ec311b1ac",
+    "active_project_verification_processes_observed_after_shutdown": 0,
+    "stop_method": "Ctrl+C to managed session 82463; terminal exit 1; subsequent matching-process inventory empty",
+    "fresh_final_release_certified": false,
+    "focused_regression": {
+      "receipt": "20261111T035958480941Z-large-account-unit-scoped-connection-original-financial-and-plan-integrity-first-regression",
+      "passed": 86,
+      "seconds": 244.93
+    },
+    "interrupted_regression": {
+      "run": "20261111T040430487076Z-large-unit-complete-numerical-owned-deaths-and-lease-regression",
+      "collected": 829,
+      "reported": 787,
+      "passed": 787,
+      "failed_reported": 0,
+      "observer_at_utc": "2026-11-11T04:16:38.541863+00:00",
+      "terminal_receipt": false,
+      "interpretation": "Interrupted; unreported outcomes unknown; not a passing full suite"
+    },
+    "news_acceptance": {
+      "receipt": "20261111T041324289367Z-explicit-news-overnight-prefix-matched-denominators-version-and-actual-death-acceptance",
+      "passed": 24,
+      "failed": 3,
+      "reason": "Two HTML fixtures absent from stage; crash paths were not reached",
+      "missing_fixtures": [
+        "news-bls-2022-01.html",
+        "news-fomc.html"
+      ],
+      "clean_clone_copies_only_json": true,
+      "fix_applied": false
+    },
+    "latest_capacity": {
+      "receipt": "20261111T033747231640Z-adopted-numerical-real-market-10000-capacity",
+      "core": "d2f1e593bc3d0477af06b37fc4fa5e2c2362eeba4cbbedf6dc7b42d10445eaa8",
+      "status": "failed",
+      "committed": 5488,
+      "requested": 10000,
+      "seconds": 903.8531483999686,
+      "lease_failure": null,
+      "preservation_receipt": "20261111T035330416176Z-retire-current-context-capacity-preserving-5488-original-accounts"
+    },
+    "acceptance": {
+      "requirements": 83,
+      "cases": 422,
+      "baseline_combinations": 120,
+      "numerical_modules": 51,
+      "statement_threshold_percent": 95,
+      "branch_threshold_percent": 90,
+      "assertion_reviewed": 145,
+      "assertion_partial": 28,
+      "assertion_pending": 249,
+      "final_certified": 0
+    },
+    "resume_requires": "Explicit user instruction; do not auto-launch historical coordinators",
+    "remaining": [
+      "Repair declared fixture inventory and clean clone fixture inclusion; rerun actual news deaths.",
+      "Complete numerical/recovery/lease regression and matrix proof on frozen source.",
+      "Pass real 100/repeat, 1000, 10000 original resource gates.",
+      "Complete both original 10000-set controls, qualification, freeze, both-instrument/all-version final and exports.",
+      "Execute actual 100000 financial stress.",
+      "Full base/research suite and actual 51-module 95/90 coverage reconciliation.",
+      "Current browser/mobile/keyboard/accessibility/security/privacy/offline/export/restart/locked-install checks.",
+      "422-case evidence audit, verified installation and final journey/accounting."
+    ]
+  }
+}

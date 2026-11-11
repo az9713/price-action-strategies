@@ -1,0 +1,71 @@
+{
+  "status": "paused_by_user",
+  "paused_at_utc": "2026-11-11T04:17:17+00:00",
+  "objective_complete": false,
+  "installed_checkpoint": "0.25 development checkpoint; package manifest 0.1.0",
+  "source_root": "data/dev027/research-src",
+  "original_local_core": "010175e4f595a2ff53a8306a85a097d4448bfbf2bbd6d6981dec318ec311b1ac",
+  "active_project_verification_processes_observed_after_shutdown": 0,
+  "stop_method": "Ctrl+C to managed session 82463; terminal exit 1; subsequent matching-process inventory empty",
+  "fresh_final_release_certified": false,
+  "focused_regression": {
+    "receipt": "20261111T035958480941Z-large-account-unit-scoped-connection-original-financial-and-plan-integrity-first-regression",
+    "passed": 86,
+    "seconds": 244.93
+  },
+  "interrupted_regression": {
+    "run": "20261111T040430487076Z-large-unit-complete-numerical-owned-deaths-and-lease-regression",
+    "collected": 829,
+    "reported": 787,
+    "passed": 787,
+    "failed_reported": 0,
+    "observer_at_utc": "2026-11-11T04:16:38.541863+00:00",
+    "terminal_receipt": false,
+    "interpretation": "Interrupted; unreported outcomes unknown; not a passing full suite"
+  },
+  "news_acceptance": {
+    "receipt": "20261111T041324289367Z-explicit-news-overnight-prefix-matched-denominators-version-and-actual-death-acceptance",
+    "passed": 24,
+    "failed": 3,
+    "reason": "Two HTML fixtures absent from stage; crash paths were not reached",
+    "missing_fixtures": [
+      "news-bls-2022-01.html",
+      "news-fomc.html"
+    ],
+    "clean_clone_copies_only_json": true,
+    "fix_applied": false
+  },
+  "latest_capacity": {
+    "receipt": "20261111T033747231640Z-adopted-numerical-real-market-10000-capacity",
+    "core": "d2f1e593bc3d0477af06b37fc4fa5e2c2362eeba4cbbedf6dc7b42d10445eaa8",
+    "status": "failed",
+    "committed": 5488,
+    "requested": 10000,
+    "seconds": 903.8531483999686,
+    "lease_failure": null,
+    "preservation_receipt": "20261111T035330416176Z-retire-current-context-capacity-preserving-5488-original-accounts"
+  },
+  "acceptance": {
+    "requirements": 83,
+    "cases": 422,
+    "baseline_combinations": 120,
+    "numerical_modules": 51,
+    "statement_threshold_percent": 95,
+    "branch_threshold_percent": 90,
+    "assertion_reviewed": 145,
+    "assertion_partial": 28,
+    "assertion_pending": 249,
+    "final_certified": 0
+  },
+  "resume_requires": "Explicit user instruction; do not auto-launch historical coordinators",
+  "remaining": [
+    "Repair declared fixture inventory and clean clone fixture inclusion; rerun actual news deaths.",
+    "Complete numerical/recovery/lease regression and matrix proof on frozen source.",
+    "Pass real 100/repeat, 1000, 10000 original resource gates.",
+    "Complete both original 10000-set controls, qualification, freeze, both-instrument/all-version final and exports.",
+    "Execute actual 100000 financial stress.",
+    "Full base/research suite and actual 51-module 95/90 coverage reconciliation.",
+    "Current browser/mobile/keyboard/accessibility/security/privacy/offline/export/restart/locked-install checks.",
+    "422-case evidence audit, verified installation and final journey/accounting."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "at_utc": "2026-11-11T03:55:09.949444+00:00",
+  "core": "d2f1e593bc3d0477af06b37fc4fa5e2c2362eeba4cbbedf6dc7b42d10445eaa8",
+  "files": [
+    {
+      "path": "backend/lab/store.py",
+      "sha256": "1d5dae609f966332df4b90b4309b059fe7df8a651be35e467a6927c05689f735",
+      "bytes": 24089
+    },
+    {
+      "path": "backend/lab/worker.py",
+      "sha256": "6c7893e8d5f6051e9d350767a89b537973177cb8a2d44f74d2647cd8036eb1f6",
+      "bytes": 53344
+    },
+    {
+      "path": "backend/lab/trials.py",
+      "sha256": "bfa8d3967219e25c695a1be2c1aafb0b5c5226b371d250e489b231c1960b50b2",
+      "bytes": 30087
+    },
+    {
+      "path": "backend/lab/account_checkpoints.py",
+      "sha256": "88c81ab4a768d6c4420e8f3c797e7bda72712f423c4939a229a42863c43a4968",
+      "bytes": 12019
+    }
+  ],
+  "failed_capacity": "20261111T033747231640Z-adopted-numerical-real-market-10000-capacity",
+  "original_preservation": "20261111T035330416176Z-retire-current-context-capacity-preserving-5488-original-accounts"
+}

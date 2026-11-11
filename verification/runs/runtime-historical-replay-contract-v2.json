@@ -1,0 +1,23 @@
+{
+  "scope": "Current-source saved replay audit after verifier used a nonexistent single-study GET route. Reuse the exact already completed main study/job; no new registration, screening, final access or gate changes.",
+  "original_contract_sha256": "94bd50b81e8160ba438f4df560a21434cc68a1c5e79d97320d4dcc8febbcf7f4",
+  "dataset_id": "01347b6ff897a8ff3dced036",
+  "baseline_store": "data/portfolio-historical-instance-v2",
+  "baseline_screen_job_id": "289877d716c24bca957bdd10334ee1e8",
+  "expected_state": "no_candidates",
+  "allowed_report_differences": [
+    "core_hash",
+    "numerical_contract",
+    "study_context"
+  ],
+  "study_context_required_equal": [
+    "study_mode",
+    "phase",
+    "candidate_hash",
+    "selection_unit_id"
+  ],
+  "poll_budget_seconds": 240,
+  "current_study_id": "7ae59bf0285546d68f232e4980ef2d30",
+  "current_screen_job_id": "9b7e2f8d260e4283b1a9efc67d00c583",
+  "first_failed_receipt": "20261108T201100191762Z-runtime-capacity-current-main-prespecified-historical-joint-account-replay"
+}

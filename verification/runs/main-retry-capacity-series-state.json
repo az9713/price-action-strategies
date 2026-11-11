@@ -1,0 +1,19 @@
+{
+  "scope": "Sequential original real100/repeat,1000,10000 checks; unchanged per-count budgets.",
+  "entries": [
+    {
+      "count": 100,
+      "exit_code": 0
+    },
+    {
+      "count": 1000,
+      "exit_code": 0
+    },
+    {
+      "count": 10000,
+      "exit_code": 1
+    }
+  ],
+  "next_count": null,
+  "final_capacity_certified": false
+}

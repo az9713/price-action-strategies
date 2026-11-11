@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "scope": "All actual staged Git blobs",
+  "audited_at_utc": "2026-11-11T04:48:53.114101+00:00",
+  "staged_files": 3695,
+  "unique_blob_objects": 2615,
+  "total_blob_bytes": 78349570,
+  "reachable_commit_count": 0,
+  "reachable_commits": [],
+  "generic_git_author_and_committer": false,
+  "emails_permitted": true,
+  "populated_env_read_only_for_in_memory_matching": true,
+  "populated_env_copied_hashed_or_reported": false,
+  "live_credentials_or_known_private_identifiers_found": 0,
+  "forbidden_data_paths_found": 0,
+  "limitations": [
+    "Known-value and structural checks, not a proof against arbitrary undisclosed private facts.",
+    "Authored synthetic credentials/user paths and public license/source attribution remain."
+  ]
+}

@@ -1,0 +1,737 @@
+{
+  "scope": "Capture three authored original books as a portable, non-market test fixture.",
+  "input_kind": "synthetic",
+  "market_edge_claimed": false,
+  "complete_control_comparison": false,
+  "original_job_id": "b6d29c1d3f6e4d9bbc426637c8ae8ca9",
+  "original_part": 0,
+  "original_part_event_id": 210,
+  "original_part_sha256": "b242023f852d7e7de54631f410a5136fd9e433fe6da1bd12d27f32a6abe6cea6",
+  "books": [
+    {
+      "book": {
+        "accounting_residual": "0.000",
+        "encounters": [],
+        "equity": [
+          {
+            "cash": "99987.550",
+            "date": "2026-10-22",
+            "equity": "99987.550",
+            "gross_exposure": "0",
+            "receivables": "0",
+            "timestamp": "2026-10-22T13:47:00+00:00"
+          }
+        ],
+        "failure": null,
+        "final_cash": "99987.550",
+        "final_receivables": "0",
+        "financing": {
+          "capital_top_up": "0.0",
+          "entry_notional": "24904.98",
+          "initial_cash": "100000.0",
+          "liquidity_reference_at": "2026-10-22T13:44:00+00:00",
+          "liquidity_reference_volume": "10000.0",
+          "participation_limit": 500
+        },
+        "geometry": {
+          "entry_fill": "100.02",
+          "entry_reference": "100.0",
+          "planned_stop": "62372256500193936913/625000000000000000",
+          "planned_target": "62627743499806063087/625000000000000000",
+          "stop": "99.81",
+          "stop_rounding_residual": "-0.0056104003102990608",
+          "target": "100.23",
+          "target_rounding_residual": "0.0056104003102990608"
+        },
+        "ledger": [
+          {
+            "cash_after": "75093.775",
+            "cash_before": "100000.0",
+            "cash_change": "-24906.225",
+            "fee": "1.245",
+            "kind": "entry",
+            "price": "100.02",
+            "quantity": "249",
+            "timestamp": "2026-10-22T13:45:00+00:00"
+          },
+          {
+            "cash_after": "99987.550",
+            "cash_before": "75093.775",
+            "cash_change": "24893.775",
+            "fee": "1.245",
+            "kind": "exit",
+            "price": "99.98",
+            "quantity": "249",
+            "reason": "elapsed_cutoff",
+            "timestamp": "2026-10-22T13:47:00+00:00"
+          }
+        ],
+        "net_profit": "-12.450",
+        "rejected": [],
+        "status": "complete",
+        "trade": {
+          "borrow": "0",
+          "distributions": "0",
+          "entry_at": "2026-10-22T13:45:00+00:00",
+          "entry_price": "100.02",
+          "entry_quantity": "249",
+          "exit_at": "2026-10-22T13:47:00+00:00",
+          "exit_price": "99.98",
+          "exit_quantity": "249",
+          "exit_reason": "elapsed_cutoff",
+          "fees": "2.490",
+          "gross_pnl": "-9.96",
+          "id": "positive-2026-10-19-0-SPY",
+          "net_pnl": "-12.450",
+          "net_r": "-0.23809523809523809523809523809523809523809523809523809523809523809523809523809524",
+          "side": 1,
+          "split_adjusted_entry": "100.02",
+          "stop": "99.81",
+          "symbol": "SPY",
+          "target": "100.23"
+        }
+      },
+      "evidence": {
+        "arrays": {
+          "encounters": [],
+          "equity": [
+            "a14675d17aff35b43eb8ea403baeaf2e03600239edc77a27c968eb337bce9177"
+          ],
+          "ledger": [
+            "57c83ff2b08987ae10c1bd34ca21bc6f37cdbe5f859098fb1df2c477b9107caf"
+          ],
+          "rejected": []
+        },
+        "book_sha256": "9e17a8dc06fb9d9f7d0f811fee69ef49be559131a77300a839c72463824d18b5",
+        "chunk_records": 25,
+        "counts": {
+          "encounters": 0,
+          "equity": 1,
+          "ledger": 2,
+          "rejected": 0
+        },
+        "scalar_fields": {
+          "accounting_residual": "0.000",
+          "failure": null,
+          "final_cash": "99987.550",
+          "final_receivables": "0",
+          "financing": {
+            "capital_top_up": "0.0",
+            "entry_notional": "24904.98",
+            "initial_cash": "100000.0",
+            "liquidity_reference_at": "2026-10-22T13:44:00+00:00",
+            "liquidity_reference_volume": "10000.0",
+            "participation_limit": 500
+          },
+          "geometry": {
+            "entry_fill": "100.02",
+            "entry_reference": "100.0",
+            "planned_stop": "62372256500193936913/625000000000000000",
+            "planned_target": "62627743499806063087/625000000000000000",
+            "stop": "99.81",
+            "stop_rounding_residual": "-0.0056104003102990608",
+            "target": "100.23",
+            "target_rounding_residual": "0.0056104003102990608"
+          },
+          "net_profit": "-12.450",
+          "status": "complete",
+          "trade": {
+            "borrow": "0",
+            "distributions": "0",
+            "entry_at": "2026-10-22T13:45:00+00:00",
+            "entry_price": "100.02",
+            "entry_quantity": "249",
+            "exit_at": "2026-10-22T13:47:00+00:00",
+            "exit_price": "99.98",
+            "exit_quantity": "249",
+            "exit_reason": "elapsed_cutoff",
+            "fees": "2.490",
+            "gross_pnl": "-9.96",
+            "id": "positive-2026-10-19-0-SPY",
+            "net_pnl": "-12.450",
+            "net_r": "-0.23809523809523809523809523809523809523809523809523809523809523809523809523809524",
+            "side": 1,
+            "split_adjusted_entry": "100.02",
+            "stop": "99.81",
+            "symbol": "SPY",
+            "target": "100.23"
+          }
+        },
+        "version": 1
+      },
+      "evidence_sha256": "84d3df29181f759da5805431a192466cd27652938efdc43159c97c5826261b57",
+      "inputs": {
+        "actions_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "core_hash": "92b24901da709b2d6785da54918d18f9b87e6e0c3b54ec8fb226419dbb5d9c70",
+        "costs": {
+          "borrow_annual": 0.03,
+          "borrow_available": true,
+          "borrow_scenario": null,
+          "commission_per_share": 0.005,
+          "fixed_fee_per_order": 0.0,
+          "minimum_commission": 0.0,
+          "sell_fee_per_dollar": 0.0,
+          "slippage_bps": 1.0,
+          "spread_bps": 1.0
+        },
+        "dataset_manifest_hash": "1b3107d6043e2e363ff63faa6229812d23e5b41c55f7f2dc99638989710ddf2c",
+        "job_id": "b6d29c1d3f6e4d9bbc426637c8ae8ca9",
+        "match": {
+          "atr": "0.20038196048009896",
+          "candidate_key": "SPY|2026-10-22T13:45:00+00:00",
+          "cutoff_at": "2026-10-22T13:47:00+00:00",
+          "entry_at": "2026-10-22T13:45:00+00:00",
+          "entry_reference": "100.0",
+          "exit_boundary": "close",
+          "holding_minutes": 2,
+          "quantity": 249,
+          "side": 1,
+          "source_id": "positive-2026-10-19-0-SPY",
+          "stop": "62372256500193936913/625000000000000000",
+          "symbol": "SPY",
+          "target": "62627743499806063087/625000000000000000"
+        },
+        "news_hash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "parent_authority_hash": "de533827c8c5df3685d1749a9f2ad0889ee41b0d0dabdac881e1bccfbc63f36f",
+        "payload_hash": "4f9bc7b9efc92953b7659ec1e7cb01fe22f7e27e0d504ce134a5b02d69bd1204",
+        "plan_hash": "d884ac68aacd94b534a5ea008f7c380a56b3304359ef71f95e729efba19b088f",
+        "policy": "barrier_capped_elapsed_v1",
+        "portfolio": {
+          "capital": 100000.0,
+          "participation": 0.05,
+          "risk_fraction": 0.005,
+          "symbol_exposure": 0.25,
+          "tick_size": 0.01,
+          "total_exposure": 1.0
+        },
+        "strategy": {
+          "confirmation": "none",
+          "confirmation_window": 3,
+          "direction": "both",
+          "entry": "next_open",
+          "family": "change_of_character",
+          "flat_at_close": false,
+          "fresh_breakout": false,
+          "gap_confluence": false,
+          "impulse_atr": 1.5,
+          "impulse_bars": 2,
+          "level_age": 96,
+          "level_shape": "line",
+          "level_tolerance": 0.25,
+          "limit_expiry": 3,
+          "max_hold": 24,
+          "min_touches": 1,
+          "news": "trade",
+          "pullback_max": 3.0,
+          "pullback_min": 0.0,
+          "reclaim_bars": 3,
+          "retest_window": 24,
+          "session_filter": "core",
+          "skip_choppy": false,
+          "skip_run_days": 0,
+          "stop_buffer": 0.0,
+          "stop_kind": "hard",
+          "stop_reference": "swing",
+          "structure_exit": false,
+          "sweep_depth": 0.0,
+          "sweep_required": false,
+          "swing_strength": 3,
+          "target": "1R",
+          "timeframe": "1m",
+          "trend_filter": "none",
+          "trigger_timeframe": null
+        }
+      },
+      "key": "7b1667a5f2c9673a04ed33deb84e17868e51b051aa4667b845c8f352bc93d1a8",
+      "sha256": "9e17a8dc06fb9d9f7d0f811fee69ef49be559131a77300a839c72463824d18b5"
+    },
+    {
+      "book": {
+        "accounting_residual": "7.854E-75",
+        "encounters": [],
+        "equity": [
+          {
+            "cash": "99987.49714611872146118721461187214611872146118721461187214611872146118721461188",
+            "date": "2026-10-21",
+            "equity": "99987.49714611872146118721461187214611872146118721461187214611872146118721461188",
+            "gross_exposure": "0",
+            "receivables": "0",
+            "timestamp": "2026-10-21T14:12:00+00:00"
+          }
+        ],
+        "failure": null,
+        "final_cash": "99987.49714611872146118721461187214611872146118721461187214611872146118721461188",
+        "final_receivables": "0",
+        "financing": {
+          "capital_top_up": "0.0",
+          "entry_notional": "24995.00",
+          "initial_cash": "100000.0",
+          "liquidity_reference_at": "2026-10-21T14:09:00+00:00",
+          "liquidity_reference_volume": "10000.0",
+          "participation_limit": 500
+        },
+        "geometry": {
+          "entry_fill": "99.98",
+          "entry_reference": "100.0",
+          "planned_stop": "125283497097243943391/1250000000000000000",
+          "planned_target": "124716502902756056609/1250000000000000000",
+          "stop": "100.21",
+          "stop_rounding_residual": "0.0032023222048452872",
+          "target": "99.75",
+          "target_rounding_residual": "-0.0032023222048452872"
+        },
+        "ledger": [
+          {
+            "cash_after": "124993.750",
+            "cash_before": "100000.0",
+            "cash_change": "24993.750",
+            "fee": "1.250",
+            "kind": "entry",
+            "price": "99.98",
+            "quantity": "250",
+            "timestamp": "2026-10-21T14:10:00+00:00"
+          },
+          {
+            "cash_after": "124993.74857305936073059360730593607305936073059360730593607305936073059360730594",
+            "cash_before": "124993.750",
+            "cash_change": "-0.0014269406392694063926940639269406392694063926940639269406392694063926940639269406",
+            "kind": "borrow",
+            "timestamp": "2026-10-21T14:11:00+00:00"
+          },
+          {
+            "cash_after": "124993.74714611872146118721461187214611872146118721461187214611872146118721461188",
+            "cash_before": "124993.74857305936073059360730593607305936073059360730593607305936073059360730594",
+            "cash_change": "-0.0014269406392694063926940639269406392694063926940639269406392694063926940639269406",
+            "kind": "borrow",
+            "timestamp": "2026-10-21T14:12:00+00:00"
+          },
+          {
+            "cash_after": "99987.49714611872146118721461187214611872146118721461187214611872146118721461188",
+            "cash_before": "124993.74714611872146118721461187214611872146118721461187214611872146118721461188",
+            "cash_change": "-25006.250",
+            "fee": "1.250",
+            "kind": "exit",
+            "price": "100.02",
+            "quantity": "250",
+            "reason": "elapsed_cutoff",
+            "timestamp": "2026-10-21T14:12:00+00:00"
+          }
+        ],
+        "net_profit": "-12.502853881278538812785388127853881278538812785388127853881278538812785388127854",
+        "rejected": [],
+        "status": "complete",
+        "trade": {
+          "borrow": "0.0028538812785388127853881278538812785388127853881278538812785388127853881278538812",
+          "distributions": "0",
+          "entry_at": "2026-10-21T14:10:00+00:00",
+          "entry_price": "99.98",
+          "entry_quantity": "250",
+          "exit_at": "2026-10-21T14:12:00+00:00",
+          "exit_price": "100.02",
+          "exit_quantity": "250",
+          "exit_reason": "elapsed_cutoff",
+          "fees": "2.500",
+          "gross_pnl": "-10.00",
+          "id": "positive-2026-10-19-1-SPY",
+          "net_pnl": "-12.502853881278538812785388127853881278538812785388127853881278538812785388127854",
+          "net_r": "-0.21744093706571371848322414135398054397458804844153265832837006154457018066309311",
+          "side": -1,
+          "split_adjusted_entry": "99.98",
+          "stop": "100.21",
+          "symbol": "SPY",
+          "target": "99.75"
+        }
+      },
+      "evidence": {
+        "arrays": {
+          "encounters": [],
+          "equity": [
+            "5308df3b2a110ea5156b3b8460bbe7287c3fdd380bfc32e2f31618cb909a2273"
+          ],
+          "ledger": [
+            "7f7aef536b3c773919062b06a23e7372a61a16bd018c360b1a30024d52f85eae"
+          ],
+          "rejected": []
+        },
+        "book_sha256": "f64f6a129a3cf67d618517a74629458947264b9fcbf92e16473d8a5478b9b38e",
+        "chunk_records": 25,
+        "counts": {
+          "encounters": 0,
+          "equity": 1,
+          "ledger": 4,
+          "rejected": 0
+        },
+        "scalar_fields": {
+          "accounting_residual": "7.854E-75",
+          "failure": null,
+          "final_cash": "99987.49714611872146118721461187214611872146118721461187214611872146118721461188",
+          "final_receivables": "0",
+          "financing": {
+            "capital_top_up": "0.0",
+            "entry_notional": "24995.00",
+            "initial_cash": "100000.0",
+            "liquidity_reference_at": "2026-10-21T14:09:00+00:00",
+            "liquidity_reference_volume": "10000.0",
+            "participation_limit": 500
+          },
+          "geometry": {
+            "entry_fill": "99.98",
+            "entry_reference": "100.0",
+            "planned_stop": "125283497097243943391/1250000000000000000",
+            "planned_target": "124716502902756056609/1250000000000000000",
+            "stop": "100.21",
+            "stop_rounding_residual": "0.0032023222048452872",
+            "target": "99.75",
+            "target_rounding_residual": "-0.0032023222048452872"
+          },
+          "net_profit": "-12.502853881278538812785388127853881278538812785388127853881278538812785388127854",
+          "status": "complete",
+          "trade": {
+            "borrow": "0.0028538812785388127853881278538812785388127853881278538812785388127853881278538812",
+            "distributions": "0",
+            "entry_at": "2026-10-21T14:10:00+00:00",
+            "entry_price": "99.98",
+            "entry_quantity": "250",
+            "exit_at": "2026-10-21T14:12:00+00:00",
+            "exit_price": "100.02",
+            "exit_quantity": "250",
+            "exit_reason": "elapsed_cutoff",
+            "fees": "2.500",
+            "gross_pnl": "-10.00",
+            "id": "positive-2026-10-19-1-SPY",
+            "net_pnl": "-12.502853881278538812785388127853881278538812785388127853881278538812785388127854",
+            "net_r": "-0.21744093706571371848322414135398054397458804844153265832837006154457018066309311",
+            "side": -1,
+            "split_adjusted_entry": "99.98",
+            "stop": "100.21",
+            "symbol": "SPY",
+            "target": "99.75"
+          }
+        },
+        "version": 1
+      },
+      "evidence_sha256": "56534ec00683af2059effa94da2a476bb86dc1a717fcd5ce76d748dded4d8e5c",
+      "inputs": {
+        "actions_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "core_hash": "92b24901da709b2d6785da54918d18f9b87e6e0c3b54ec8fb226419dbb5d9c70",
+        "costs": {
+          "borrow_annual": 0.03,
+          "borrow_available": true,
+          "borrow_scenario": null,
+          "commission_per_share": 0.005,
+          "fixed_fee_per_order": 0.0,
+          "minimum_commission": 0.0,
+          "sell_fee_per_dollar": 0.0,
+          "slippage_bps": 1.0,
+          "spread_bps": 1.0
+        },
+        "dataset_manifest_hash": "1b3107d6043e2e363ff63faa6229812d23e5b41c55f7f2dc99638989710ddf2c",
+        "job_id": "b6d29c1d3f6e4d9bbc426637c8ae8ca9",
+        "match": {
+          "atr": "0.22235066450505364",
+          "candidate_key": "SPY|2026-10-21T14:10:00+00:00",
+          "cutoff_at": "2026-10-21T14:12:00+00:00",
+          "entry_at": "2026-10-21T14:10:00+00:00",
+          "entry_reference": "100.0",
+          "exit_boundary": "close",
+          "holding_minutes": 2,
+          "quantity": 250,
+          "side": -1,
+          "source_id": "positive-2026-10-19-1-SPY",
+          "stop": "125283497097243943391/1250000000000000000",
+          "symbol": "SPY",
+          "target": "124716502902756056609/1250000000000000000"
+        },
+        "news_hash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "parent_authority_hash": "de533827c8c5df3685d1749a9f2ad0889ee41b0d0dabdac881e1bccfbc63f36f",
+        "payload_hash": "4f9bc7b9efc92953b7659ec1e7cb01fe22f7e27e0d504ce134a5b02d69bd1204",
+        "plan_hash": "d884ac68aacd94b534a5ea008f7c380a56b3304359ef71f95e729efba19b088f",
+        "policy": "barrier_capped_elapsed_v1",
+        "portfolio": {
+          "capital": 100000.0,
+          "participation": 0.05,
+          "risk_fraction": 0.005,
+          "symbol_exposure": 0.25,
+          "tick_size": 0.01,
+          "total_exposure": 1.0
+        },
+        "strategy": {
+          "confirmation": "none",
+          "confirmation_window": 3,
+          "direction": "both",
+          "entry": "next_open",
+          "family": "change_of_character",
+          "flat_at_close": false,
+          "fresh_breakout": false,
+          "gap_confluence": false,
+          "impulse_atr": 1.5,
+          "impulse_bars": 2,
+          "level_age": 96,
+          "level_shape": "line",
+          "level_tolerance": 0.25,
+          "limit_expiry": 3,
+          "max_hold": 24,
+          "min_touches": 1,
+          "news": "trade",
+          "pullback_max": 3.0,
+          "pullback_min": 0.0,
+          "reclaim_bars": 3,
+          "retest_window": 24,
+          "session_filter": "core",
+          "skip_choppy": false,
+          "skip_run_days": 0,
+          "stop_buffer": 0.0,
+          "stop_kind": "hard",
+          "stop_reference": "swing",
+          "structure_exit": false,
+          "sweep_depth": 0.0,
+          "sweep_required": false,
+          "swing_strength": 3,
+          "target": "1R",
+          "timeframe": "1m",
+          "trend_filter": "none",
+          "trigger_timeframe": null
+        }
+      },
+      "key": "081a9354e08893d673c9d9734059070ef3f0e4fa5f9c366cb41c52d00e67ef2a",
+      "sha256": "f64f6a129a3cf67d618517a74629458947264b9fcbf92e16473d8a5478b9b38e"
+    },
+    {
+      "book": {
+        "accounting_residual": "0.000",
+        "encounters": [],
+        "equity": [
+          {
+            "cash": "99987.450",
+            "date": "2026-10-19",
+            "equity": "99987.450",
+            "gross_exposure": "0",
+            "receivables": "0",
+            "timestamp": "2026-10-19T14:26:00+00:00"
+          }
+        ],
+        "failure": null,
+        "final_cash": "99987.450",
+        "final_receivables": "0",
+        "financing": {
+          "capital_top_up": "0.0",
+          "entry_notional": "25105.02",
+          "initial_cash": "100000.0",
+          "liquidity_reference_at": "2026-10-19T14:23:00+00:00",
+          "liquidity_reference_volume": "10000.0",
+          "participation_limit": 500
+        },
+        "geometry": {
+          "entry_fill": "100.02",
+          "entry_reference": "100.0",
+          "planned_stop": "249393404406867056803/2500000000000000000",
+          "planned_target": "250606595593132943197/2500000000000000000",
+          "stop": "99.77",
+          "stop_rounding_residual": "-0.0073617627468227212",
+          "target": "100.27",
+          "target_rounding_residual": "0.0073617627468227212"
+        },
+        "ledger": [
+          {
+            "cash_after": "74893.725",
+            "cash_before": "100000.0",
+            "cash_change": "-25106.275",
+            "fee": "1.255",
+            "kind": "entry",
+            "price": "100.02",
+            "quantity": "251",
+            "timestamp": "2026-10-19T14:24:00+00:00"
+          },
+          {
+            "cash_after": "99987.450",
+            "cash_before": "74893.725",
+            "cash_change": "25093.725",
+            "fee": "1.255",
+            "kind": "exit",
+            "price": "99.98",
+            "quantity": "251",
+            "reason": "elapsed_cutoff",
+            "timestamp": "2026-10-19T14:26:00+00:00"
+          }
+        ],
+        "net_profit": "-12.550",
+        "rejected": [],
+        "status": "complete",
+        "trade": {
+          "borrow": "0",
+          "distributions": "0",
+          "entry_at": "2026-10-19T14:24:00+00:00",
+          "entry_price": "100.02",
+          "entry_quantity": "251",
+          "exit_at": "2026-10-19T14:26:00+00:00",
+          "exit_price": "99.98",
+          "exit_quantity": "251",
+          "exit_reason": "elapsed_cutoff",
+          "fees": "2.510",
+          "gross_pnl": "-10.04",
+          "id": "positive-2026-10-19-2-SPY",
+          "net_pnl": "-12.550",
+          "net_r": "-0.2",
+          "side": 1,
+          "split_adjusted_entry": "100.02",
+          "stop": "99.77",
+          "symbol": "SPY",
+          "target": "100.27"
+        }
+      },
+      "evidence": {
+        "arrays": {
+          "encounters": [],
+          "equity": [
+            "9a3b12ad55d45569fea66ba197a5753ba92cc1428082fc09f7d1f150b3bd814d"
+          ],
+          "ledger": [
+            "e6d0b54eacd4d988db269b50b392ba6609b7b874ec74d422bd132ade5e44a4db"
+          ],
+          "rejected": []
+        },
+        "book_sha256": "c69f660b24caf54f369630452632ba069ec0e7eed84521bdab1b70e37b3398bb",
+        "chunk_records": 25,
+        "counts": {
+          "encounters": 0,
+          "equity": 1,
+          "ledger": 2,
+          "rejected": 0
+        },
+        "scalar_fields": {
+          "accounting_residual": "0.000",
+          "failure": null,
+          "final_cash": "99987.450",
+          "final_receivables": "0",
+          "financing": {
+            "capital_top_up": "0.0",
+            "entry_notional": "25105.02",
+            "initial_cash": "100000.0",
+            "liquidity_reference_at": "2026-10-19T14:23:00+00:00",
+            "liquidity_reference_volume": "10000.0",
+            "participation_limit": 500
+          },
+          "geometry": {
+            "entry_fill": "100.02",
+            "entry_reference": "100.0",
+            "planned_stop": "249393404406867056803/2500000000000000000",
+            "planned_target": "250606595593132943197/2500000000000000000",
+            "stop": "99.77",
+            "stop_rounding_residual": "-0.0073617627468227212",
+            "target": "100.27",
+            "target_rounding_residual": "0.0073617627468227212"
+          },
+          "net_profit": "-12.550",
+          "status": "complete",
+          "trade": {
+            "borrow": "0",
+            "distributions": "0",
+            "entry_at": "2026-10-19T14:24:00+00:00",
+            "entry_price": "100.02",
+            "entry_quantity": "251",
+            "exit_at": "2026-10-19T14:26:00+00:00",
+            "exit_price": "99.98",
+            "exit_quantity": "251",
+            "exit_reason": "elapsed_cutoff",
+            "fees": "2.510",
+            "gross_pnl": "-10.04",
+            "id": "positive-2026-10-19-2-SPY",
+            "net_pnl": "-12.550",
+            "net_r": "-0.2",
+            "side": 1,
+            "split_adjusted_entry": "100.02",
+            "stop": "99.77",
+            "symbol": "SPY",
+            "target": "100.27"
+          }
+        },
+        "version": 1
+      },
+      "evidence_sha256": "170739898bb7005ccd97b98267b2fb60982c7eac798cc3ea5d84753f817eacf3",
+      "inputs": {
+        "actions_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "core_hash": "92b24901da709b2d6785da54918d18f9b87e6e0c3b54ec8fb226419dbb5d9c70",
+        "costs": {
+          "borrow_annual": 0.03,
+          "borrow_available": true,
+          "borrow_scenario": null,
+          "commission_per_share": 0.005,
+          "fixed_fee_per_order": 0.0,
+          "minimum_commission": 0.0,
+          "sell_fee_per_dollar": 0.0,
+          "slippage_bps": 1.0,
+          "spread_bps": 1.0
+        },
+        "dataset_manifest_hash": "1b3107d6043e2e363ff63faa6229812d23e5b41c55f7f2dc99638989710ddf2c",
+        "job_id": "b6d29c1d3f6e4d9bbc426637c8ae8ca9",
+        "match": {
+          "atr": "0.23788062475801694",
+          "candidate_key": "SPY|2026-10-19T14:24:00+00:00",
+          "cutoff_at": "2026-10-19T14:26:00+00:00",
+          "entry_at": "2026-10-19T14:24:00+00:00",
+          "entry_reference": "100.0",
+          "exit_boundary": "close",
+          "holding_minutes": 2,
+          "quantity": 251,
+          "side": 1,
+          "source_id": "positive-2026-10-19-2-SPY",
+          "stop": "249393404406867056803/2500000000000000000",
+          "symbol": "SPY",
+          "target": "250606595593132943197/2500000000000000000"
+        },
+        "news_hash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "parent_authority_hash": "de533827c8c5df3685d1749a9f2ad0889ee41b0d0dabdac881e1bccfbc63f36f",
+        "payload_hash": "4f9bc7b9efc92953b7659ec1e7cb01fe22f7e27e0d504ce134a5b02d69bd1204",
+        "plan_hash": "d884ac68aacd94b534a5ea008f7c380a56b3304359ef71f95e729efba19b088f",
+        "policy": "barrier_capped_elapsed_v1",
+        "portfolio": {
+          "capital": 100000.0,
+          "participation": 0.05,
+          "risk_fraction": 0.005,
+          "symbol_exposure": 0.25,
+          "tick_size": 0.01,
+          "total_exposure": 1.0
+        },
+        "strategy": {
+          "confirmation": "none",
+          "confirmation_window": 3,
+          "direction": "both",
+          "entry": "next_open",
+          "family": "change_of_character",
+          "flat_at_close": false,
+          "fresh_breakout": false,
+          "gap_confluence": false,
+          "impulse_atr": 1.5,
+          "impulse_bars": 2,
+          "level_age": 96,
+          "level_shape": "line",
+          "level_tolerance": 0.25,
+          "limit_expiry": 3,
+          "max_hold": 24,
+          "min_touches": 1,
+          "news": "trade",
+          "pullback_max": 3.0,
+          "pullback_min": 0.0,
+          "reclaim_bars": 3,
+          "retest_window": 24,
+          "session_filter": "core",
+          "skip_choppy": false,
+          "skip_run_days": 0,
+          "stop_buffer": 0.0,
+          "stop_kind": "hard",
+          "stop_reference": "swing",
+          "structure_exit": false,
+          "sweep_depth": 0.0,
+          "sweep_required": false,
+          "swing_strength": 3,
+          "target": "1R",
+          "timeframe": "1m",
+          "trend_filter": "none",
+          "trigger_timeframe": null
+        }
+      },
+      "key": "25dd9ecc5582fd8b13e0f6463228931b5e84dd9566401e1ebb19cdae4b0ebc64",
+      "sha256": "c69f660b24caf54f369630452632ba069ec0e7eed84521bdab1b70e37b3398bb"
+    }
+  ]
+}

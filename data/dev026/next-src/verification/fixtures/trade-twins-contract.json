@@ -1,0 +1,52 @@
+{
+  "revision": "D046, authored before implementation",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "source_frame": "research/screenshots/prompt_page_12.png",
+  "scope": "Implement the existing source-funnel obligation without replacing the current 2-200 conditional signal-account controls or weakening any of the 83 requirements, 422 mandatory cases and 120 combinations.",
+  "source_observed": {
+    "sets": 10000,
+    "cohort": "One twin for every actual executed real trade, preserving direction, random entry minute in the same 30-minute time-of-day bin, ATR stop/target distances, holding time and costs.",
+    "decision": "Strictly fewer than 5% of complete sets make at least the real version's profit. Ties count against the real version."
+  },
+  "declared_equity_choices": [
+    "Use the frozen complete original executed-trade cohort and original account/part/input/price/news/core hashes. Do not substitute signals, unmatched subsets, winners or a newly amended account. Missing entry-time ATR/stop/target authority requires a new explicitly identified account with immutable entry traces; never infer an entry stop from a split-adjusted exit stop.",
+    "Match the original instrument and the actual executed entry timestamp's New York wall-clock bin, starting at 09:30. Random entries use regular-session minute opens. Exclude all original cohort entry moments. New York DST, holidays and early closes use the existing frozen calendar dependency. The source does not define these stock-specific choices.",
+    "Use the original realized elapsed UTC-minute holding duration, including closed sessions, as a conditioning variable. Freeze whether the original exit was an opening or closing execution boundary; require that exact type of observed boundary at candidate entry plus the duration and a complete expected regular-session minute clock. Do not slide a cutoff to a favorable later bar. Zero-duration real trades, absent pools or nonpositive transported geometry make the whole cohort ineligible, rather than dropping trades.",
+    "Use each candidate's entry-open reference and strictly prior, already available ATR in raw entry-price units. Transfer positive stop and target distances in ATR from original immutable entry geometry. Geometry is exact rational arithmetic on the canonical finite input decimals, serialized as integer or numerator/denominator strings; no Decimal context rounding affects eligibility. The later execution layer discloses tick rounding and resulting distance residuals. Eligibility/ranking never consume candidate future OHLC, P&L, win/exit labels or any other outcome.",
+    "Draw independently with replacement for each original trade, using an unbiased rejection-sampled SHA-256 integer stream keyed by policy, frozen plan, master seed, set ordinal, trade identity and rejection counter. Preserve every trade even when two draw the same minute. Overlapping twins are separately financed diagnostic trades, not a newly executable shared-capital strategy. This is an explicit adaptation; the source does not specify replacement, overlap or capital rules.",
+    "Carry original whole entry-share quantity into the diagnostic, with corporate actions, short availability/recall and calendar-time borrow accounting under the unchanged frozen execution-cost model. Equal cost settings do not imply identical dollar fees at different prices. Never silently redraw an unavailable short, rejected fill or missing outcome.",
+    "Implement barrier_capped_elapsed_v1 as the explicitly adapted primary diagnostic: preserve transported stop/target barriers and cap duration at the real realized elapsed time; an earlier barrier/recall can shorten actual holding. Also report fixed_elapsed_v1, which exits at the identical elapsed duration and records barriers without using them for liquidation. Both require 10000 complete sets. The screen leaves simultaneous barrier/holding precedence unresolved; neither interpretation proves identical host outcomes. The exact-duration comparison is a sensitivity report, not a replacement or hidden extra candidate gate.",
+    "The source-style raw fraction is exceedances/10000 and strict decision is 20*exceedances<10000. Publish a separately labeled plus-one Monte Carlo diagnostic and finite-simulation uncertainty. Failed, partial, empty or undefined sets make the source-style decision undefined; never use only successful sets as its denominator. These conditional diagnostics are not independent markets, search-adjusted evidence or a live profitability certificate."
+  ],
+  "implementation_order": [
+    "Freeze this contract, strict time/geometry/clock/cohort models, deterministic complete-pool construction and streamed set draws in isolated source. Verify them with an independently implemented pool/geometry/random-stream oracle before account integration.",
+    "Freeze immutable original entry traces and complete original-account authority. Independently verify both numerical execution interpretations, every trade/ledger/corporate-action/borrow/cost field and tick residual, including failed and zero-duration cases. This is not completed by a matching-plan test.",
+    "Add durable original owned plan/part/trial authority, resume/cancel/process-death handling, bounded seek status and child uniqueness; guard protected dates and verify originals before new/reused work and publication. Stream all sets without a 10000-times-trade-count in-memory array.",
+    "Expose original-parent continuation, explicit assumptions, progress/controls, complete JSON/CSV/offline reports and source differences through API/UI. Run actual 10000-set numerical workloads, coverage/mutations/oracles/browser/mobile/accessibility/privacy/resource/recovery checks, then integrate under an owned idle restart. Era/replication/stability/ensemble and final plan-wide certification remain mandatory."
+  ],
+  "verification": [
+    "Retain authored assertion failures before implementation; do not count collection/import failures as mutation kills or numerical tests.",
+    "Strict schema/type/finite/minute/timezone/side/geometry/quantity/seed/ordinal and original identity validation. Reject ignored fields, duplicate trade/moment/clock identities, missing source clocks and incomplete expected sessions.",
+    "Independent Decimal/Fraction pool and unrounded geometry oracle for long/short, differing ATR/prices, same-bin boundaries, DST, early close, holiday/weekend and cutoff boundaries; future candidate outcome fields must be rejected, not silently used.",
+    "All-or-none complete real cohort, original entry exclusion, deterministic sorting and source/moment request-order invariance, frozen plan identities sensitive to every input, seed changes and prefix/resume stability with no dependence on requested set count.",
+    "Actual hash rejection branch, equal-domain random-coordinate oracle, collision retention and replacement semantics; streaming memory bound with actual 10000 plans, cancellation before preparation and between draws, and immutable detached snapshots.",
+    "Exactly 10000 ordinal-unique complete outcome sets for grading; fewer/more/duplicate/bool/missing/failure/nonfinite/trade-count/identity mismatches reject or leave explicit undefined outcome as specified. Verify 499 passes, 500 fails, ties count and all losses retained, with separately labeled raw and plus-one fractions.",
+    "Original account/price/entry trace integrity, both complete execution oracles, actual worker deaths, API/UI/exports, actual 10000 numerical sets and resource bounds, critical guard mutations and unchanged 95% statement/90% branch gates remain separately required before workflow completion."
+  ],
+  "initial_core_limits": {
+    "source_trades": 20000,
+    "matching_edges": 2000000,
+    "candidate_assessments": 2000000,
+    "candidate_features": 2000000,
+    "total_execution_clock_minutes": 2000000,
+    "meaning": "Explicit initial matching working bounds; reject visibly without subsampling. These bounds are not an executed or measured full numerical operating envelope."
+  },
+  "uncertainty_reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats._result_classes.BinomTestResult.proportion_ci.html; exact two-sided 95% Clopper-Pearson interval, conditional on the frozen independent set-draw model, separate from the source raw-fraction decision and wider research/model uncertainty.",
+  "original_source_reader": [
+    "Accept only an original completed independent experiment or one selected original search/spread-account ordinal. Verify prespecified input/plan authority, the entire plan's terminal state, the actual current trial/attempt computation and artifact hashes, original start/checkpoint events, saved root and selected part/sidecar and source identity. Derived result views cannot replace original computation authority. Final/shared-portfolio/control books are not independent discovery-version parents.",
+    "Preserve original serialized report assumption hashes, including JSON0 versus0.0, while validating financial values against frozen inputs. Do not rebuild an original digest by revalidating defaults through a newer model instance.",
+    "Require an exact complete trade/trace/entry-ledger cohort and raw entry geometry/signal/cost/account bindings. Retain empty/loss/zero-duration cases honestly; never infer missing legacy traces or omit a real trade even when its profit is zero. Reconcile closed-trade and marked-account profit at the unchanged1e-7 accounting tolerance.",
+    "Recheck price bytes, manifest/news/borrow inputs, date guards, root/part and original registry authority before returning. A new or reused numerical consumer must call the original reader again; a returned boolean is not a lasting permission token. The reader creates no financial jobs, signals, probes, viewed-date records or repaired caches.",
+    "Historical original attempts remain retained. Bind a selected checkpoint to the original computation-start event of the current attempt, excluding earlier checkpoint events from that attempt's event range. Missing/duplicate/contradictory current events refuse authorization. An actual owned fault/retry test preserves the first artifact bytes and distinguishes both original attempts."
+  ]
+}

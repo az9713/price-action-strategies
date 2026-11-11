@@ -1,0 +1,64 @@
+{
+  "revision": "D044 / RULEBOOK0.24",
+  "status": "Normative before implementation; no cache acceptance claimed",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "scope": "Job-scoped memoization of verified prepared price windows and base candle aggregation. No context/detector/signal/result/account memoization and no numerical formula change.",
+  "measured_reason": {
+    "actual_1000_seconds": 155.29591879999498,
+    "actual_1000_peak_rss": 197996544,
+    "profile": "verification/receipts/20261109T075624765399Z-numerical-capacity-current-instrumented-repeat-pilot-profile.json",
+    "interpretation": "Repeated aggregation and preparation are measured costs; profiled times are not throughput certification.",
+    "first_cached_1000_seconds": 119.31197769998107,
+    "complete_account_parity_receipt": "verification/receipts/20261109T082855126775Z-evaluation-cache-exact-1200-complete-cached-uncached-account-and-input-parity.json"
+  },
+  "budgets": {
+    "default_accounted_cache_bytes": 134217728,
+    "integrity_chunk_bytes": 65536,
+    "original_10000_wall_seconds": 900,
+    "original_process_peak_rss_bytes": 3221225472,
+    "original_job_output_bytes": 2147483648
+  },
+  "invariants": [
+    "Verify current manifest identity/expected frozen manifest, dataset/window eligibility, borrowing inputs and protected-date access before any cache access.",
+    "Verify complete current price-file bytes on cache hits; no size/mtime shortcut, no stale-byte certification, no suppressed original-file errors.",
+    "Keys bind complete manifest/input/source identity and exact warmup/end window; base charts also bind instrument/timeframe. News/costs/risk/candidates/final ownership and all source/account provenance remain independently evaluated.",
+    "Cache only prepared windows and base session aggregation. Run configuration-specific contexts, detectors, signals, order/accounting/metrics and trial recording each time.",
+    "Scope by worker job and owning execution context/root. Clear on normal completion, failure, cancellation and context exit; isolate nested/thread/root scopes. Do not retain price frames between jobs.",
+    "Evict by accounted byte budget; zero/oversized entries fall back to original calculation without any new dataset, instrument or configuration limit. Working frames and process RSS remain separate measurements.",
+    "Full chart rows, availability/partial-session/split factors, signal events, trades, quantities, rejected orders, ledgers, daily equity and unrounded metrics must match uncached paths.",
+    "Keep source/part/input hashes, immutable trial authority, exact attempted/reused counters, before-work/publication validation, cancellation and final-date guards."
+  ],
+  "required_evidence": [
+    "Authored failing cache integration, current source corruption, before-cache protected/manifest checks, context isolation/cleanup and byte-eviction contracts before implementation.",
+    "All six base-chart cache parities; discriminating all ten families/six charts/both sides where existing authored fixtures permit; complete cached/uncached report parity.",
+    "Actual worker cache active only during a job and cleaned on successful/failed/canceled/recovered exits.",
+    "Compare complete actual100/1000 saved account payloads against the0.23 uncached baseline; explicitly validate and isolate expected source-version provenance differences.",
+    "Repeat actual100/1000 then actual10000 under unchanged900s/3GiB/2GiB budgets; record actual native process memory, wall execution, output files and every original part/trial attempt. Do not infer10000/100000 success from metadata or smaller counts.",
+    "Affected execution/data/research/recovery/browser/export controls; critical isolated mutations and final coherent regression/coverage/acceptance evidence.",
+    "Authored live-control connection tests: one connection for repeated reads, fresh cross-connection cancel/owner/status changes, read-only enforcement, no raw payload reads, root/thread/nested isolation and cleanup before implementing connection reuse. Repeat actual100/1000 and complete original account parity after this change."
+  ],
+  "references": [
+    "https://docs.python.org/3/library/contextvars.html",
+    "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.memory_usage.html"
+  ],
+  "implementation_detail": "Job-local read-only SQLite connection reuse for live cancellation checks. Query current owner/status/cancel flag on every call in autocommit mode; no state memoization, transaction snapshot, TTL, raw payload access or relaxed cancellation/ownership checks. Isolate roots/threads/nested contexts and close on every exit.",
+  "first_10000_failure": {
+    "receipt": "verification/receipts/20261109T084649710750Z-numerical-capacity-current-10000-real-one-session-execution.json",
+    "wall_budget_seconds": 900,
+    "completed_checkpoints": 4663,
+    "status_after_stop": "queued",
+    "passed": false
+  },
+  "covering_index_decision": {
+    "probe": "verification/receipts/20261109T090703137202Z-numerical-capacity-owned-covering-index-statistics-versus-explicit-plan-probe.json",
+    "index": "jobs_live_control(id,status,owner,cancel_requested)",
+    "reason": "Small live fields follow large payloads in the SQLite row. The owned16MiB fixture shows slow primary-key reads; default planning and ANALYZE retain that plan. Lock only the two finalized live-control/owner SELECTs to the verified covering index as a regression requirement.",
+    "source": "https://sqlite.org/lang_indexedby.html",
+    "invariants": [
+      "Create the index transactionally for new/existing stores without rewriting original input values, rowids, lifecycle events, parts or durability settings.",
+      "Keep every per-configuration progress and trial write; do not throttle, skip or fabricate checkpoints.",
+      "Prove actual query plans cover live fields and missing-index use fails closed; preserve fresh cancellation/owner visibility and rollback/cleanup.",
+      "Repeat actual100/1000/input/complete scientific-account parity and fresh10000 under unchanged resource limits. Preserve the first failed run and its artifacts."
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "passed automated allowlist and known-personal-value checks",
+  "generated_at_utc": "2026-11-11T04:43:00.583150+00:00",
+  "files": 3693,
+  "redaction_counts": {
+    "personal_name_occurrences": 1463,
+    "temporary_username_occurrences": 6,
+    "device_occurrences": 0,
+    "other_profile_occurrences": 1,
+    "path_device_or_chat_occurrences": 49
+  },
+  "emails_permitted": true,
+  "live_credential_values_reported": false,
+  "populated_environment_file_copied_or_hashed": false,
+  "original_market_cache_or_user_database_copied": false,
+  "raw_logs_traces_or_source_video_copied": false,
+  "original_private_evidence_retained_locally": true,
+  "public_receipts": "privacy-derived historical copies; original artifact hashes remain historical, not a certificate for redacted source",
+  "git_history_audit": "Pending: inspect staged tree and all reachable blobs after creating the first commit.",
+  "limitations": [
+    "Known-value and structural scanning is not an inference engine for every possible private fact.",
+    "Authored synthetic secrets, public source attribution and license author names are not live owner credentials.",
+    "Historical receipt references can identify local artifacts that are intentionally excluded from publication."
+  ],
+  "staged_git_audit": {
+    "passed": true,
+    "scope": "All actual staged Git blobs",
+    "audited_at_utc": "2026-11-11T04:48:53.114101+00:00",
+    "staged_files": 3695,
+    "unique_blob_objects": 2615,
+    "total_blob_bytes": 78349570,
+    "reachable_commit_count": 0,
+    "reachable_commits": [],
+    "generic_git_author_and_committer": false,
+    "emails_permitted": true,
+    "populated_env_read_only_for_in_memory_matching": true,
+    "populated_env_copied_hashed_or_reported": false,
+    "live_credentials_or_known_private_identifiers_found": 0,
+    "forbidden_data_paths_found": 0,
+    "limitations": [
+      "Known-value and structural checks, not a proof against arbitrary undisclosed private facts.",
+      "Authored synthetic credentials/user paths and public license/source attribution remain."
+    ]
+  }
+}

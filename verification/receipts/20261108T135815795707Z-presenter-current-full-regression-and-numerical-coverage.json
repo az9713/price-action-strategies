@@ -1,0 +1,1574 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T13:58:15.796465+00:00",
+  "finished_at_utc": "2026-11-08T14:09:41.656098+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "7e5d618883eb60e64ccbf1b50a80473f036ac477188871f9374dbf3362fb7b3b",
+    "verification_plan_sha256": "ab8776df81fb51ede94011964e2353185616329edc25bfcdca5ca1667ee438f4",
+    "catalog_sha256": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+    "source_files": {
+      "PLAN.md": "7e5d618883eb60e64ccbf1b50a80473f036ac477188871f9374dbf3362fb7b3b",
+      "VERIFICATION_PLAN.md": "ab8776df81fb51ede94011964e2353185616329edc25bfcdca5ca1667ee438f4",
+      "RULEBOOK.md": "44ce2bb9472b5e408bcd1d4854c3659b603f53f6d25c134f88349765daaf6643",
+      "decisions.md": "080770d4ad7d6fe34ccc01ea70b015c4c7a117af7fc9aa750f9ec27b66065293",
+      "README.md": "2c2530fa2c68d5e11e916f17522bb505bef6dc746c9893ef650fb4a20e85d720",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+      "verification/implementation-map.json": "f7f690438eb5f410e76cfaab4888a0022bbbe2daa4b1bdcc2a01790eead0b102",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "bdd08fe7635697033f4498f918e59bd3f46161e1754bb73c7465b5bceb66a8d0",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "bd3c9ee49903523c30f3e931477b5d806eaeed0788d85a8639246f9bc5450341",
+      "backend/lab/api.py": "5933f8534beb7aee000b2ff41727a7318c8cd2cb2f329876c00f11b22ac77a84",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "b0036ca1f581a5f46999146d438879f02af13bc8d46f87583d35542b421133c4",
+      "backend/lab/presentation_audit.py": "19b3c2ee9656d941fc33d851a0c0c8fe79fd7766ca039a5b01f4699f7808752a",
+      "backend/lab/presenter.py": "762e086d4d15bddba8cf49e0233783c5dd4a68075c2c015facc7f07e8179b336",
+      "backend/lab/presenter_assets.py": "4ec1ff7c7b8d518b7da30122685cdde9497e89d9042a6ec9f01bb55d1c965a36",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "cf58fb89ec7688d18b22078d9d6e9e3cecefbe2e1a712ff35ae04758e6f97834",
+      "backend/lab/signals.py": "86b765196cd7b3321eb22b7d702bc3816c85298a7a491c0325e513c29180714d",
+      "backend/lab/store.py": "403243fef566a9643623e7b4e92c1a5cfe211a8a165ee76002eb27149df620a2",
+      "backend/lab/trials.py": "156fcd610ba232962ea2647d37cbd8aafa78383675759f52772d97fdc478afba",
+      "backend/lab/worker.py": "32b60b4761598f8fcb156161cab48d7eab070a1f2b5d0f3df2e7cbbc21310d21",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "a886581d65237b5de0db2391eaee52fe96a19163bb633ed3d3a507b75f8faeae",
+      "tests/test_confirmation_filters.py": "dd45f55af7dd00bef2f4d273e439f1f4208c6762751995ac4d6fbd341da59a1a",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_data_service_boundaries.py": "35e020ccd1559c0e398302cbecb580169fc4051f98df4b61c684b66c5e045565",
+      "tests/test_evidence_recorder.py": "a9bc5bc156ac4910d007d042a16b28913dee479125655443baa39ae031240a6a",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_frontend_capture_privacy.py": "d7c1a4450d00db59e74b68555b66f12efd123cb392324839f8aae94793da33c2",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_presenter.py": "faaa77a3137090327df4e57a847edd8af78684a6590a2f19d350317ce34f0d68",
+      "tests/test_presenter_api.py": "d72aa8ebdbbc04c4013b373b8e5a317412c4d24902eb77596367d42a98db79f4",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_trace_privacy.py": "e3b961683f2f46d7ef9c87934bd47f6aacd10e6dc7f045f3e072165cbe647a00",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "694ce459cecd19de0b52428e0e031b10fcef0bbf3f39739d81bc3685ef1ae8b2",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "a3765093ec276a5a92f2f45100ee5ed2f0611831f52b0a9242b5289971b3589e",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/critical_signal_mutations.py": "78e211a657abd997d68b111bbd5d2968d2b90d86c2957152aa947c0bbfc744ee",
+      "verification/frontend_check.py": "b601066f5ff30a86efaa1420071c45c8c56caab8a8c418170d7899bca4b30c7a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/presenter_reference_run.py": "a70dc854626bc318a0ca1d7361094f4a00f8422fca06b8debe15f6d0cd197666",
+      "verification/real_reference_run.py": "b15fa2af1ce322c2eff6c1a187d8e0062c53c45470e4553169ba801c6959a70f",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "verification/trace_privacy.py": "2a13f99d022e285f49d98b4d3d963c501a61b3f2b9b12c05fe3c89e63add96dc",
+      "frontend/src/Ablations.tsx": "6b3d0c37349cc2419070f851b4086269bf29555951be971ed681c670f5848ef3",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "9d97a8d12eca374e1a5dab4700163dac88f5d7e1654ee303deb55b150a8d8e00",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/PresenterExport.tsx": "1d7e89bd9e71f0ecd8210d3dc0b7dd6c66a759992e9ad7278c62e868d73d1901",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/presenter.spec.ts": "2b89a903d3faca8636dce9f9e51de09e9f5a8133b1db8eb682acebcf2b0a3d15",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "e008b55d234807d1a58d8a26acbc515f0b7e0c4bff6a4a1b6f0d28c80ceb6e8e",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "44ce2bb9472b5e408bcd1d4854c3659b603f53f6d25c134f88349765daaf6643"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/ablation-contract.json",
+        "sha256": "ed1d4901833a475b18cb3210d92e24a8af2869c48693e641ce2acf6fae4220d5"
+      },
+      {
+        "path": "verification/fixtures/behavior-contract.json",
+        "sha256": "42c534ebf0c68724863ed5ae0d7a80f756ab91aee0e41f61a971940065dc6410"
+      },
+      {
+        "path": "verification/fixtures/benchmark-contract.json",
+        "sha256": "83acf2b95309e0e5cfb2f42e347668137b1f1f06e6d0dc379c75819ce2493ead"
+      },
+      {
+        "path": "verification/fixtures/catalog-v4-original351.json",
+        "sha256": "da886c4b84a8f42ab68c34ec838d468188cefb7a6c955984e6656fff9499c86b"
+      },
+      {
+        "path": "verification/fixtures/catalog-v5-prior378.json",
+        "sha256": "8ff192fbe2b8acb1194a073fec1562596f3cd3e50773bb64aee0f11cbd14b096"
+      },
+      {
+        "path": "verification/fixtures/confirmation-filter-contract.json",
+        "sha256": "41a3b4363bdff94a35e8290f41e468222ad45d67a9feffb03f80087428f5a76b"
+      },
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      },
+      {
+        "path": "verification/fixtures/execution-reference-contract.json",
+        "sha256": "2ce26087a4d3f18320960c7fbbdd5a8bc405d1a0bf88f4f0abeb4c4fc88d59fa"
+      },
+      {
+        "path": "verification/fixtures/family-boundaries.json",
+        "sha256": "39590c7cfcac361e2c3d7ac2ba5863c2195465d4e54761d8c54dddc0b10be39d"
+      },
+      {
+        "path": "verification/fixtures/overlap-priority.json",
+        "sha256": "9ed417c04e3c9aed2a52b6930fe1ce48fe1713f6bb7ec5905c111cda95bcbabf"
+      },
+      {
+        "path": "verification/fixtures/portfolio-contract.json",
+        "sha256": "c4af4f530fe086b919374e3502da9db1c8bb42d08efca8d22444c40513d08f7a"
+      },
+      {
+        "path": "verification/fixtures/presenter-contract.json",
+        "sha256": "0a55b56fa17d08ee5b8ff73e3902bc93b45ae0f4816d43e66f62328a867528e9"
+      },
+      {
+        "path": "verification/fixtures/prior351-catalog.json",
+        "sha256": "39074bd06fd140232d33537ac42d316c073132c2f4cedcfc15e06d147c8b055f"
+      },
+      {
+        "path": "verification/fixtures/random-controls-contract.json",
+        "sha256": "26c6a3c8bfc18f642ddf3f8f883fb5d351801671cb221b223e626c9aeb854218"
+      },
+      {
+        "path": "verification/fixtures/reference-exits-contract.json",
+        "sha256": "2da992ff80aeea8f6ebeb121d17440da0be7b8156993490c3176f8bd0cb1842c"
+      },
+      {
+        "path": "verification/fixtures/reference-random-domain.json",
+        "sha256": "5e87b118902ae878fe49c86210ef8c074a9b966345a5cad04128b5bd233384a2"
+      },
+      {
+        "path": "verification/fixtures/statistics-fixtures.json",
+        "sha256": "b55d2e81d5d52b1c411140a3a354e42488e1642c2711a10a9db6623213ca1003"
+      },
+      {
+        "path": "verification/fixtures/strategy-baselines.json",
+        "sha256": "c70313e231c02097a4d3782536da07897cc4fa3016544899e949fcb540dff05d"
+      },
+      {
+        "path": "verification/fixtures/trace-privacy-contract.json",
+        "sha256": "9f17b4fc2d40b5053cb2cb2944b74cb42c08797e67a9f66c2807d0d473e429a9"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      "./.venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--cov=backend.lab",
+      "--cov-branch",
+      "--cov-report=json:verification/runs/presenter-full-coverage.json",
+      "--junitxml=verification/runs/presenter-full-junit.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 1,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/stdout.log",
+      "sha256": "bc9c26bcefdc5a32f9988657567869a7e7d170b0c9c2fa090947053cef98a279",
+      "bytes": 7108,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/artifacts/verification/runs/presenter-full-coverage.json",
+      "sha256": "005d4e402c3a2a1746e27befe4a1c2de44a2cd0780d3b6adbfee1d5fc626f194",
+      "bytes": 315455,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/artifacts/verification/runs/presenter-full-junit.xml",
+      "sha256": "14c0b556b417eec7f7cd4a3ea4632a9dd4a35370d1b676eb8c7429e07243ea04",
+      "bytes": 158846,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-000.json",
+      "sha256": "3f3ac2b88146ba434844f755533de5002400d0c322e4e45db4386cde096e917e",
+      "bytes": 74463,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-001.json",
+      "sha256": "8a14761e218935dc461e65aaa74973c8e7b0dd914dd147c22de87afd32fb0de5",
+      "bytes": 83735,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-002.json",
+      "sha256": "7e51186a4c900c9d43e294984c3751fe43f0e14101e7bcb47f38b7a105d9290d",
+      "bytes": 76480,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-003.json",
+      "sha256": "015982f8b73558ff0dbf7941199871493ec8cee31449fa472f3bec5a6099b49b",
+      "bytes": 67540,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-004.json",
+      "sha256": "c226e296f34dcfd29b36cd45808c846b12c64a694360689ded095da6b409bdb3",
+      "bytes": 64221,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-005.json",
+      "sha256": "07c66059ba37f23ada0d37e7c8f25c9d2870badb433fe5a15208f6396bd3ae80",
+      "bytes": 64172,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-006.json",
+      "sha256": "e5fea2199efae8e065f5e615fdd9db3530402c88baf0d1fb8c54d7111db92556",
+      "bytes": 74284,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-007.json",
+      "sha256": "c36c9249b0dfb1a5e8203b167862586cde115a8fb57ade1a81580fc1e4f360dd",
+      "bytes": 67685,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-008.json",
+      "sha256": "934360bcc92fa66c28c4528baadcc3acf202f7e5e4ddf7b90bcc769412de6fde",
+      "bytes": 91347,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-009.json",
+      "sha256": "ff13050f34e137e301157149f7793a1bf516f28ac1feed986e8b3ae197663bf3",
+      "bytes": 87289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-010.json",
+      "sha256": "08dec3447973843aacf3c94e9212c107e7fd9f5cd9779aff0ce1cdfafe8c5d05",
+      "bytes": 100280,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-011.json",
+      "sha256": "b483b338b0fea9b4053ee5d80faf906bf14715f76642f0c6eda9f203c87a070d",
+      "bytes": 67615,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-012.json",
+      "sha256": "a9b52105caf4fa12038593c14951d6fa65c36489f26998ef3696448f9cc188bc",
+      "bytes": 117028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-013.json",
+      "sha256": "a800c9c8c56fbe10a5c6bca29ee1ddf4ed3092b106b493b2a17be5332cf8eea0",
+      "bytes": 81808,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-014.json",
+      "sha256": "0d240e44911d65e803849d351816a7a31622210e17a870b3ba63972018e95b1c",
+      "bytes": 77705,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-015.json",
+      "sha256": "0644da90b750bcb9fa7a84c1f8387ad5d40f748d857be4ce0c41c4bdca45ab52",
+      "bytes": 70671,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-016.json",
+      "sha256": "40fc1296d5eee710506933a3c5a1bd27f3cfc25a4efa519c48b5998ba2198c3d",
+      "bytes": 74291,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-017.json",
+      "sha256": "b9a8ad42a67654efc89896e6dbec2bf54fa2a0bf346f8eace895c3815f9f8a00",
+      "bytes": 67297,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-018.json",
+      "sha256": "874ac5873dce41aafd8084cc82919675dd5b4205f82d16a6e0744fb7aafce3f8",
+      "bytes": 84599,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-019.json",
+      "sha256": "0616c01aa6b64139a8d5a42695a793a8b767e2c092d1a3b4bb056d06a5788b0a",
+      "bytes": 86581,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-020.json",
+      "sha256": "d43983c1b8488de922b5abd66cab7aee3fb11103305336a2002a03b7092d746e",
+      "bytes": 151638,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-021.json",
+      "sha256": "9ce9c5c51e5c114341aaa394a30335c83be078483ddff4e8a8c557eb29c086fe",
+      "bytes": 77290,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-022.json",
+      "sha256": "70531cc27b9a54cb37acbb660062f72f22c4edabc8a8e82e98c3f3576d9e31ec",
+      "bytes": 67555,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-023.json",
+      "sha256": "084dab130dce5f51510cddbbff7b131eb18e5040b2acc8bfb4c16b84c6def331",
+      "bytes": 70927,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-024.json",
+      "sha256": "cf7a84f0bed1f8bc4e92f61079ebc021d63269cd6e52b9c553552a7bfecf8d11",
+      "bytes": 71031,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-025.json",
+      "sha256": "7d0d8ea50b9c4d7a4dc28a0dfa00cd736ba55214a7c0af43984b92411e4b146c",
+      "bytes": 96430,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-026.json",
+      "sha256": "8dddda4bcd7bb987e0f094ae7bddf479258f3a229a0e40f3b476b5346a3133c8",
+      "bytes": 74364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-027.json",
+      "sha256": "901577589436ff45eff3cf641b9ac069ae1a88364c8430aabd2f277f47170868",
+      "bytes": 84162,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-028.json",
+      "sha256": "82eff1f5f67519766197c3cb3bc2082a5d2cec1843ff48665b8558aa19a820e5",
+      "bytes": 84837,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-029.json",
+      "sha256": "143b37f43891a7278b0d705b0fddc068d1b789db9d7729d0734031015bc7d9ca",
+      "bytes": 82336,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-030.json",
+      "sha256": "b9e897aaceee1e7a2393cf613e7a71065657c86658c2c7e6fa3b4266619a7e16",
+      "bytes": 74184,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-031.json",
+      "sha256": "b36d0e66e269c4f7900b8d19f1244e0936f283e757460d1b3c4103663f724bcf",
+      "bytes": 67718,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-032.json",
+      "sha256": "54817a7a8e0c75999b6ee32cfe0b78e5870a0f9fff5afe427a3a0820a0a964f4",
+      "bytes": 71029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-033.json",
+      "sha256": "e1803cb992d8525bd02a630ba8b0151a71f32223a35e86d4b52bff7b8216a29b",
+      "bytes": 71185,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-034.json",
+      "sha256": "618b8f0e4eda2f77d5fe51c5245fabb0965c1a8781527f5696a4546b4a5c87aa",
+      "bytes": 67531,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-035.json",
+      "sha256": "3b6e2501d2b47b196974b62126be5f4c684d7ada76fb0589a78937bce60787fb",
+      "bytes": 70655,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-036.json",
+      "sha256": "f1a19e61bae4a3b2a05022d22915c0e52e2043d947f97ca4e4e715e467202324",
+      "bytes": 81008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-037.json",
+      "sha256": "31d11924eff6eaaa2c9d7aebdeb811d9893dd3e694ef24eb70b7d70f22961e8d",
+      "bytes": 94812,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-038.json",
+      "sha256": "ffeeb8e419c4c896ce179142e59ae18d6ff33ed937179c231d418f478c376b57",
+      "bytes": 74399,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-039.json",
+      "sha256": "caeafcd62da5e47ed9164689f97dc726951c4b6bc3b01362cba185e541aa6975",
+      "bytes": 105498,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-040.json",
+      "sha256": "2adda6c73da2ef5ab4e92538acdb498b6482b6f2b91c1676545b1e49e1f7a8ce",
+      "bytes": 117226,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-041.json",
+      "sha256": "ffaf362fdda2e5641f55ab3c7e1b0cdabf20374b49171bae3e9d2d54ee3106f6",
+      "bytes": 101196,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-042.json",
+      "sha256": "013b9b44505efec4aa8fbb2a3d0564eff3c43802300eec477604e48cf585e947",
+      "bytes": 116724,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-043.json",
+      "sha256": "4205a492bc87210b5b0326c15655e7a6740c3ebd31660fb4bbd32b492b8e7fcc",
+      "bytes": 118487,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-044.json",
+      "sha256": "8e6d321aecfe484d5c37be27f8946e1e855b08d99bd838c7b45d8e9ebc172aa6",
+      "bytes": 124766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-045.json",
+      "sha256": "335f662936154b779bf564e412bc435e3e61dcb6b037989117a76d34cd4f2c5f",
+      "bytes": 88390,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-046.json",
+      "sha256": "26d21fc450407cf2ca22104041e60e4cbff291299ae258b050206bf763322cac",
+      "bytes": 84207,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-047.json",
+      "sha256": "0a159d13d10464c10ccc06fe69491f26730680612cfd7355dec786e4e13081f6",
+      "bytes": 99518,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-048.json",
+      "sha256": "a511ab4dc8cbb1d8a6b56572564e82d3d1aa56678f073f1a32b139827df101c0",
+      "bytes": 108952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-049.json",
+      "sha256": "231b61e30f9a0c68f3726884c18faad9558669d8de6ce3294aed81c8a9841512",
+      "bytes": 74273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-050.json",
+      "sha256": "637dc0decb32926f850c9ed2f4a852b608fd8c06ca474bf94c6cd763a1f0836b",
+      "bytes": 101266,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-051.json",
+      "sha256": "49efe4a8dfab37705beb7e76e02cc29703cfb03699dabc78075238626dd31eb5",
+      "bytes": 73980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-052.json",
+      "sha256": "314dba50f76fb5eb4ce47548553eac10f7a50ccb85096896520385505799facc",
+      "bytes": 74397,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-053.json",
+      "sha256": "e8cb690be9306062d2777d9db2c31af0130b2429314db5e265457632af5068b0",
+      "bytes": 61030,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-054.json",
+      "sha256": "8d37b4b748a724b5566e8445686ffaf5f2ef6b20ee12633a896d387b48e72df9",
+      "bytes": 94516,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-055.json",
+      "sha256": "a3fff8c6d2c204a6ec1c65b5cb443515f4ad9803c616a45c7bc8fc51614ec1cc",
+      "bytes": 114342,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-056.json",
+      "sha256": "77255038deeeef5d669ff13b084359dd4783ad87f31ee096afa4cc18aff35302",
+      "bytes": 70789,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-057.json",
+      "sha256": "7018986af9c453a89149680d55ae70ea1ab7381994612e0f39b27c0fc669a9e7",
+      "bytes": 107405,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-058.json",
+      "sha256": "f16bf1e0605b9ca9478b188bbd0bea853150bc6b8696200151d77c60f1f1a09e",
+      "bytes": 84472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-059.json",
+      "sha256": "72e6c4700a389a564364f7e91a25cecf873df0920c528a48a0e3469085593c48",
+      "bytes": 64190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-060.json",
+      "sha256": "7be4cfb7688dde5d3b6a2b982e17ab366708ae2694451b9ded5d4af1e12d79d4",
+      "bytes": 124576,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-061.json",
+      "sha256": "20481d1868172cbbf23100aa2433ae188ae51b905f5b7c645bf87d6091955197",
+      "bytes": 76247,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-062.json",
+      "sha256": "89e2ee4840b5a3db8521f80008d708d2b719f4172d86b7828f0a41c9188b0a49",
+      "bytes": 98302,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-063.json",
+      "sha256": "18fd374ed0b66ee8be923459a42aaab22240b4938dfce2da91d278e9824dc0be",
+      "bytes": 89443,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-064.json",
+      "sha256": "fd527270a8ce4f8683e107f89eb68d4e6d6ba0db3193e3b910b2153a13bde5f2",
+      "bytes": 92587,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-065.json",
+      "sha256": "1f97b9d90324df89af49f8804db2aef1c01e793f33010d5131be6261908a8e05",
+      "bytes": 121338,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-066.json",
+      "sha256": "e3b630fc002a362150ef921e67664dce7a4ee3fdcf15e20c383f78ca5ebde5cf",
+      "bytes": 67526,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-067.json",
+      "sha256": "470b8b48cf0fd3762012b9e40dceb0b46b09a091f80d3fb9c5ae62a9405b7ad4",
+      "bytes": 67613,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-068.json",
+      "sha256": "9bb8fa42f8d7f3de6e663a27cf8a1ea11170f24164cd64eb7c34e539d20b694f",
+      "bytes": 77824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-069.json",
+      "sha256": "7779e6a7c6910ed2c558caee2053b88e9005b3554a34da86668c2d5dad655c35",
+      "bytes": 74359,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-070.json",
+      "sha256": "a227273e64796c53d5562d34368b9335d21e3dacd66053e4a0af509bc56c8b74",
+      "bytes": 93215,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-071.json",
+      "sha256": "7e5b741c265d1ab330f09ce9f3f8712dad1dde2c561a9d3cf78aca085c6da63f",
+      "bytes": 84574,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-072.json",
+      "sha256": "0d4c3fd3dacbded9ab304ab823fdca8974e5a85a9b90c8a572868786ce1e9750",
+      "bytes": 81156,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-073.json",
+      "sha256": "50eda51677bfc1f69e39c30e95d5932da323594722af700999af0c38484b45a6",
+      "bytes": 70780,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-074.json",
+      "sha256": "603581574ed8894b21bca5a1e6156f22d6d44634987b93763131aa6ec391b5f2",
+      "bytes": 96078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-075.json",
+      "sha256": "4e2ac6dc40ba1fa4aaf69aa68cb85de166ece0064b63bcc2c157dad49463b209",
+      "bytes": 107863,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-076.json",
+      "sha256": "18a27c64ce5399ff2fe1a3032f1b976d6de9bff544dd06d565232e87029a66a3",
+      "bytes": 114537,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-077.json",
+      "sha256": "d20628117383bb9fd59ef408c3353c3b894194955781205a586f805926b29f71",
+      "bytes": 130598,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-078.json",
+      "sha256": "4fa7d7ce0d447281e0b25481ae1db593c352b449aefc8b3cb666c0ae7d8801ee",
+      "bytes": 74101,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-079.json",
+      "sha256": "28fb0d162cee76e3bb6648a45ef8f51be1f6f847e7c6c331e56592635d945c86",
+      "bytes": 112956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-080.json",
+      "sha256": "ec8d5e7eb833b7e9cafcd3a45fc619af9d10402a2a4a908c9593c6fb31698d6b",
+      "bytes": 77505,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-081.json",
+      "sha256": "adc22ccb17b947c76c5e3d6d7048579241b321dbcd2e6c4af840ff27609b2468",
+      "bytes": 98423,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-082.json",
+      "sha256": "9aa03c2ff106d5ac9a47df79fcab5dc500365e66783397bc330531d10b51f717",
+      "bytes": 116461,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-083.json",
+      "sha256": "b964b96d74c3b92101c24f1be2aabbe6da1637c10b6f2d15f2a53b87be99e0e6",
+      "bytes": 77670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-084.json",
+      "sha256": "45c3399307ce1c98f66a2c592699dfa6810d42591845fec422b0e876ecce6b53",
+      "bytes": 75366,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-085.json",
+      "sha256": "3ebc1f24e4b49bed1c2dfe9e854ea91b4743b577254e8df815cbbc212fa41f79",
+      "bytes": 64139,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-086.json",
+      "sha256": "2a16de5dadc2f254d9b9a0a51b868cb10afc069ba4c1ec0e52356181e381df15",
+      "bytes": 119479,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-087.json",
+      "sha256": "660513c0e985f3e176f6d6fb582b683944df693cbae6758a35e237b67367e376",
+      "bytes": 93904,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-088.json",
+      "sha256": "cc4dbaf8f3e7cc6f39e9592cb389c2d7279f829e9ebde2d774aee949595c53c1",
+      "bytes": 142053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-089.json",
+      "sha256": "c3543d4614d017c57962135f7a86e674dd213a568d32530d6a28b9dd00411a1d",
+      "bytes": 87117,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-090.json",
+      "sha256": "79431b1bdcfadc44dc600f1391672a6e08fab979e1629478457df6e6d5a90a82",
+      "bytes": 67424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-091.json",
+      "sha256": "093f3105302daa256193150729f0d63545865f2e916724f3be4d45c0c6586405",
+      "bytes": 70852,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-092.json",
+      "sha256": "fbc828a26c34ecaa6692283d4b0106fd3bb06f8f1009b6370a131e974487d2cb",
+      "bytes": 122361,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-093.json",
+      "sha256": "7fbe57d65cd20054a2513f4dfd6365e7984af4da6f04ca2faa193920100f81e2",
+      "bytes": 117828,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-094.json",
+      "sha256": "fa85f4aea17195caa462b883cd988bc4a9c241313f77ec388641535d95cd9b94",
+      "bytes": 129078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/reference-properties/seed-095.json",
+      "sha256": "c2bf07a075d3d0eef2424d6b85e0dbe47fff7a759c753c4074bf23db8db0fe07",
+      "bytes": 101761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-15m-long.json",
+      "sha256": "dbcd6d9b9c1b7740d8e8fde92c99396182d1ce87dbd3bbbc38fccf5d77a70b74",
+      "bytes": 3028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-15m-short.json",
+      "sha256": "f90e5e184682b629736140562b613f5fd5d375234a120fe19ef4b58f859335d3",
+      "bytes": 3054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-1d-long.json",
+      "sha256": "8c0868460adf32c679d8e62b04a30862019e200ea2d5809239742c81a7743991",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-1d-short.json",
+      "sha256": "f1dead33416f268938ce3f6baf8d6721eac7138cebe423c42eb7b1463e1340f2",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-1h-long.json",
+      "sha256": "0dbbb69e1940fb297abc851c915c6f7b82ccd8b5c0f77cb7cdeae268c9828a49",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-1h-short.json",
+      "sha256": "bb30c4153704a4a06b72605160bf34d0e10ec0316a722b078ec5f3dbd0d66aae",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-1m-long.json",
+      "sha256": "e052c2d06595579a360e1fc21650205e2b9e97710a8989c967d5d288a1ade3d1",
+      "bytes": 3024,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-1m-short.json",
+      "sha256": "ed62d06cc7b96b1f6d15506af6aa667bdce43309fda193a25bac5764f2374b68",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-4h-long.json",
+      "sha256": "7088e10ca3f0fb55d8317638f7fc4717468fd296b6912d37ecd83904633587b5",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-4h-short.json",
+      "sha256": "f32e9df0b807af75abb6e2d4957f5807a4bcc0140e16ca5a5c8692e581746b52",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-5m-long.json",
+      "sha256": "39e134228418407c5cd5ca1374776ac6a107f96a149d1b595d6a2f5209fd307d",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-break_of_structure-5m-short.json",
+      "sha256": "602832eccf4dc18e6515da14294d482eb8ee12adc4eea61bafa9b30a148a71a2",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-15m-long.json",
+      "sha256": "142b51e51b1b65a73681c869f8341bb79e07a7b06dca612fd72071457650c9c5",
+      "bytes": 2948,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-15m-short.json",
+      "sha256": "45558b2237ca69227e5b42bf1cf6cc79c4780e971f488fac6b459ad527ee1047",
+      "bytes": 2976,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-1d-long.json",
+      "sha256": "f014e666113c85ab413fa09b2f1302b236457f14a5682d5229f711f7109af1a5",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-1d-short.json",
+      "sha256": "913bb0a5992ec5b9ed0779f86025aea7a12732404eb8162e9986825fedd838c4",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-1h-long.json",
+      "sha256": "9e023c7d5a0c8d113ffebd300139ac3edbfa7bf4a7a0335f8af513d98d512628",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-1h-short.json",
+      "sha256": "3f75fc5088f4900f0fc31a8c129666f79cc18db3df5bb768c236b368ae7fc054",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-1m-long.json",
+      "sha256": "820b39e4e4aa447f08dcaa127fb4646089950066a4a84d4af6521d5d63aa21c5",
+      "bytes": 2944,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-1m-short.json",
+      "sha256": "9ed9180866800d9850f3c5e57f48b89a38b08dd60a4f64ff0ec621be64165fd0",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-4h-long.json",
+      "sha256": "ebd1e92dc6d54e372cb3ecaef737c599063ad6e8c496e9d84e7375b0786c45e4",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-4h-short.json",
+      "sha256": "ffd51136ad1039ae7f99164a129b137c9c30011b448c69b14b1ceb1138200b85",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-5m-long.json",
+      "sha256": "608cea852a6f92a9c675906fb495b393e5b382ba0cb6b2566ccb5abb9893777d",
+      "bytes": 2945,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-breakout-5m-short.json",
+      "sha256": "00e1b4d338a522ebbcf540e883eeffa03756dc3a811b4cb41aa732450acf256e",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-15m-long.json",
+      "sha256": "1a0e12f2d290b3bce4032057a5e10c3777a01f37fad84217c430943af3b68e5e",
+      "bytes": 2985,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-15m-short.json",
+      "sha256": "20465d5d792652c7e1c4dac9203d8e42264662843d0f47d0be93d5dc721d0400",
+      "bytes": 3005,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-1d-long.json",
+      "sha256": "7ec5e269376406d31f27d713a61d73635f03003017028b278687233860699359",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-1d-short.json",
+      "sha256": "3a000d91611f39cee0d4280bcd355e279725ed0a836594a21ecc13abaa4c3205",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-1h-long.json",
+      "sha256": "e301ca4951e6c3938ac48862958fca9cba2a28cc2d5b1ae49be1df4d84b8fc11",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-1h-short.json",
+      "sha256": "791937c3715c225632e80cf1e285018e725911eb9dc0ca77d89b144561411f61",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-1m-long.json",
+      "sha256": "95e7c613e801f9cec83ef612aac24fe1e5bcc09d7a065114cb8e6a6d44092a1c",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-1m-short.json",
+      "sha256": "cd098b0154a1d55be305eb360a8df4b4b3028cbf15f97e1c2f8498f54b871518",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-4h-long.json",
+      "sha256": "385173228f16333ebb17abf71111c614f6a4c8790a1255a33a3387a64865b445",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-4h-short.json",
+      "sha256": "8e6f7fb32211d1e7e45e999b5320308cd781284856a00cc903a1687712e538f9",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-5m-long.json",
+      "sha256": "508aa3de50564792a0e9a2580adb3dd80022de20f0bd06a1e1e6337cc5b44917",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-change_of_character-5m-short.json",
+      "sha256": "d3073ca06e96b46ed45b7d0e3ed8514d2781bf7c36270cd54bc732bd1084109f",
+      "bytes": 3004,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-15m-long.json",
+      "sha256": "8d563df89f81c57454caebcc94f529b003c80c2c5445f09703095f620a982c3d",
+      "bytes": 3020,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-15m-short.json",
+      "sha256": "bc68c49869147ac3afef2d9958ec52eb815459b0fb919699eab559279f1f3664",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-1d-long.json",
+      "sha256": "fbbdb4cc8d8a2b41beb0ee9b158b359016f792706ba4e1cf1eb3157ec19d7852",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-1d-short.json",
+      "sha256": "1238a76e0defa51633a2937db90956808093e24e8a4e3e7e2df44565a9e1785e",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-1h-long.json",
+      "sha256": "0eac583e1398ecc6ebea0b71c9a7e3ae9f2f30159a9d79d4db52a4284e0c5595",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-1h-short.json",
+      "sha256": "18fafb9f18f5a912df923d5940625914d1cd057ccbe66a1f83bb30f9fdb418a9",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-1m-long.json",
+      "sha256": "6cf1d7179971d7b6c18fb95e4a8f3cc3504ef834e41a2594848326c028c9827a",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-1m-short.json",
+      "sha256": "7162c42652989309dc2a18556eb88b58115d7c5845cc4312f9b361b34a3f71d2",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-4h-long.json",
+      "sha256": "601880e992e7f673dc02449ae0afda2a81c1a4595f19d1c3a84b7979c451d52c",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-4h-short.json",
+      "sha256": "72a7e96de3a97dfcc2ff3ed7ed9f6bbae528132e2e928d74bfdbe9fd3c0ad5d6",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-5m-long.json",
+      "sha256": "6fa67d750507074b86188ff67ac54ce2a5a0b5038a9536084d6728f60789450a",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-fair_value_gap-5m-short.json",
+      "sha256": "5cab98ec28594ce48bab79716ad7c88744f4c7b5759a37ace43b1795ab19d425",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-15m-long.json",
+      "sha256": "49b44383db37f060f78cfd4f1c8bd2ae3024abaa5744c44db5e7b18f319d3af0",
+      "bytes": 2956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-15m-short.json",
+      "sha256": "a8c09f93f8454e2285a780852317553ebcc588ce7a54887b5d2902a9cfa5e7a0",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-1d-long.json",
+      "sha256": "8a0d4fd52fe670e3d53ec88298d0f0dbbd6d44905489ced32cde274d7e64b0eb",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-1d-short.json",
+      "sha256": "0323dbea49c6f0fa640dfc565960777c0588d426b56fe4c61dc7aec0be93ede8",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-1h-long.json",
+      "sha256": "15f9fd26c43da91c76a47e6c71fcb1676cd6e78d9a208d58da8427166599897f",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-1h-short.json",
+      "sha256": "094de79af5763af34c6b21ba002a149d0b9badf2927a1be2e40dc5d267414a4c",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-1m-long.json",
+      "sha256": "3d2b72d58970655c7ab4f0c0ef09ce29af0a806b3659eee94d7e464ff28564cc",
+      "bytes": 2952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-1m-short.json",
+      "sha256": "7eb368269a838b8e53a5a069b91714e5585db452ba35447a7c69a9d885205745",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-4h-long.json",
+      "sha256": "2dacf41d8fc7ba1a5e43681d207fb2d4821028436402a329d4583aae60a73a14",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-4h-short.json",
+      "sha256": "d787b650c074e70f2359f32e7849c8936a4028e58d38c2a3c3341b463fb91160",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-5m-long.json",
+      "sha256": "095989c9a2c305aac39f28f0389f4a7529f5fd297d056a46289a1ebbb468f971",
+      "bytes": 2953,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-flip_zone-5m-short.json",
+      "sha256": "f9ed75374e7313bdc542391a7b129a67de605ddd0d86e5506017acc764345b50",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-15m-long.json",
+      "sha256": "3f7abbd8a6050c49d546e470082a8ba8d847d4b40763d80b1e256c490204b70b",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-15m-short.json",
+      "sha256": "01a96520c895ea2225ac9b020a97899b889754ec3c04933d415a1debb1c11552",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-1d-long.json",
+      "sha256": "c76899987c4e7a8f69e3806b5cc622f9f714f505a30917758a323aa2cec66616",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-1d-short.json",
+      "sha256": "6994f2d6d5c57e262e4df24893a1da2952094aadf8ce5de028804ca1424040de",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-1h-long.json",
+      "sha256": "b00ce3124807178402dc54c58cf09d9e5254068c3de26cf3d206f266ef411b35",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-1h-short.json",
+      "sha256": "82f540923a0740199aeb5b272269f60d8b87a0e3edde29343e959a14dcd63f27",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-1m-long.json",
+      "sha256": "2c17235dc2612632d892a24111a0c698ad24f4d7609e63488c4cd63efdde8a6b",
+      "bytes": 2977,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-1m-short.json",
+      "sha256": "4ec12ed7ca43b9b3e16af33dbfb59cd1ddbc850424b77ca1493f55efd2f9b407",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-4h-long.json",
+      "sha256": "572fa787fe7d8a47ac67e2bb2d3976647e2a2bde54e20f0bdaa3b63d52e5f209",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-4h-short.json",
+      "sha256": "fe71d9b164b04ada9cea07fc64fb6df63511061ef2201e6eb1359e35d5ddd30c",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-5m-long.json",
+      "sha256": "07f6c9e2454ecf8d53aada4c510a22c0b618d372e9ae9629f9c949aaf9cbc265",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-level_bounce-5m-short.json",
+      "sha256": "8f6000e8ffee2daae852487a001a75645d3bcda7857d86fbae1239d5f62be105",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-15m-long.json",
+      "sha256": "66453b6626dc3bba2c84d98b8011bfce74517c7b6e7d62cf513cd35e6b491603",
+      "bytes": 3029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-15m-short.json",
+      "sha256": "6609b299bede0a37b2fb2a6e3cea0458c407503f09c6f7b0ded1adc31a3fd041",
+      "bytes": 3056,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-1d-long.json",
+      "sha256": "1b70cfff80c7aa0356739ba824b6f279ff8e823f5035a5449b476ea3c00c4c5f",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-1d-short.json",
+      "sha256": "e604a22b42d6dc1bbe6e132e81ed88847a62628be04c556dbbc0975d530a61d5",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-1h-long.json",
+      "sha256": "cf40febd004e0e0dc99b7f9cd9f91e655972101abff379901b79752a5133bb80",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-1h-short.json",
+      "sha256": "c236f54fc172f1e176077d6105fa7b7d83e358d530c22ac7b70b7ca4fafcd7f3",
+      "bytes": 3049,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-1m-long.json",
+      "sha256": "7cee48d8410a85db91d801e0dd7562ea6924076545762365169aa0c7d4d4031f",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-1m-short.json",
+      "sha256": "b501927094ec342a2d7142cd8d43a0183d9118d5767c253226387ac48c5fb183",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-4h-long.json",
+      "sha256": "56ecddaab5a9f2239855bff967c82805629d8fc070573c8e8bd534d4fc4b3e51",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-4h-short.json",
+      "sha256": "a687ae13e1c8cc8a86092cf368e1547b2b4ef24c2b100357ed8666755fcd4456",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-5m-long.json",
+      "sha256": "8e9e978d1e7fc190d7d2108f733ff5f3ad005ab6b9020fef158e699b889e57bd",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-supply_demand-5m-short.json",
+      "sha256": "bfa07cfdf7173ea25909869395157a2a32df5aab8ddc8b5c3ae0f5c7f312c6ed",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-15m-long.json",
+      "sha256": "7d1334f55b60e6f767e4a2e990abbcbb447bc69e4070342046cb714ec838be04",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-15m-short.json",
+      "sha256": "f2123c59bf2e93dd806de4a28796c18f4ccb67a40317dd0292623daf2863eb16",
+      "bytes": 3008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-1d-long.json",
+      "sha256": "9ff649693f1d37a178b95b9912ebb04a53d3b606bcd034a27bce2267ff4b0a0f",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-1d-short.json",
+      "sha256": "eec0c945de8c7fbc713f0dde82351af6b7dfb1fc5650c0c2117b0b37623c4846",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-1h-long.json",
+      "sha256": "bcf3e9cb4121f64f4d1e9fac34a6ab13f55847f2be085ba710fd1701c9ca28a3",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-1h-short.json",
+      "sha256": "ee1a256f11a1de8eb868849fe6e6824414e410e8ad941700c86d4a6a966274ee",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-1m-long.json",
+      "sha256": "92b8fc24a96f980a76dd2cd0545d77c9df5bcb9a7e9b3adde75ce45ae6c0e33d",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-1m-short.json",
+      "sha256": "a8757d820502a8ac670be2e61ddbd1257fa2dbb616ec2e8135fa71ed01963b95",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-4h-long.json",
+      "sha256": "5ccf54ab0a028596d67442572027c0c064eed66d9c5123742280e6e06a822561",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-4h-short.json",
+      "sha256": "529cb3aa005e1fbe5122ff64b77472171cb2c4c16df7c40ec8a7153e40ef6ae9",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-5m-long.json",
+      "sha256": "4755486f09255db94b824e177315f65872419b055c4a5b0f72b0ca822cae9911",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-sweep_reclaim-5m-short.json",
+      "sha256": "c884602d6ff35052ad19d2ba4ce51b54b9e0ba3670818a0e235e2e2b690fbd20",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-15m-long.json",
+      "sha256": "7f5c3e6253681e700d45cf523bddccab0fc7db103dc52466622c4de3ffb3f4c7",
+      "bytes": 2967,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-15m-short.json",
+      "sha256": "19a56001ca72f19eb8ead6aca3a00312f4371b936a31739f172768f4f19991b8",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-1d-long.json",
+      "sha256": "ab92411520d721f46764689f7998b386a926375940db33f0641793d30c744420",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-1d-short.json",
+      "sha256": "9a405b2f67cbd72c765d4b72afdb87d63058d36094d6628b34f7cf1e158c58e7",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-1h-long.json",
+      "sha256": "154877b6d8f442f152bae759e89fa1cd259cd255a49ffefe4d104c08ef2bd81c",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-1h-short.json",
+      "sha256": "9e5a1abc98edcd5f718a815caea49c194c0cc5937ce915fc4081ef2c285ad70b",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-1m-long.json",
+      "sha256": "ccd78f72c9fc91d5c4e685c75ab1e0f8023980711e62951f796c515b52851782",
+      "bytes": 2963,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-1m-short.json",
+      "sha256": "29323111467f62d2b12c0bb1773809f52adf11d6d38f912a7dd277f96ee85c66",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-4h-long.json",
+      "sha256": "f53862c0b6a13dccdaeb02d11d7d6fc2cced3fe36c22ce8a51c0a07b34663078",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-4h-short.json",
+      "sha256": "e00a7b32bafee26b0d8b00c3c399de62856a549d103b14db8ee541b84990db5f",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-5m-long.json",
+      "sha256": "55ee7a8149ca8e8be24a6f7916847cf226a378506ae381ff2490cb4de8981a3a",
+      "bytes": 2964,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_line-5m-short.json",
+      "sha256": "180933dd059d14e72bc2a1281f31deb39838a12c63339ea74d1c0f749dd1d9e7",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-15m-long.json",
+      "sha256": "9d1df7bca5f21359393f192029ee2656ddc71728bfcf3cfe2109e052be924cc4",
+      "bytes": 3050,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-15m-short.json",
+      "sha256": "4cb556e8682a15f48b7725c85d77794b98f9c55dff323c71a7bb6d866e6bc65e",
+      "bytes": 3074,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-1d-long.json",
+      "sha256": "a7387968a0172a47bd9b680601881fa36ba30eabd42b39a37f79121af93506a4",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-1d-short.json",
+      "sha256": "a7b5445365ff6ea2875ef9085ab742d4706466940a2deec3325604b7f013f16d",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-1h-long.json",
+      "sha256": "0fbd94509ad04e8d00e7af42a6c3c4e913ddcbaf295db80e91a7906b54b67318",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-1h-short.json",
+      "sha256": "7eeca8359fe521a3447bb6100ae4467f366e9e4cad961645d912dedf66546f98",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-1m-long.json",
+      "sha256": "8482295a2c7ce46f516224cf8a3c52fc210c951d0aa2b5961d95f22507809aa6",
+      "bytes": 3046,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-1m-short.json",
+      "sha256": "fa70ce9ac87800c812df15a1674b84f9cd43ea1d7067867aedf56d72f854f36c",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-4h-long.json",
+      "sha256": "77f88104ec1b9f229a53f51b73c88da469e6a5d41ac5a27cedbf11d239e2224f",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-4h-short.json",
+      "sha256": "28fb885f8afb2c6261ca703a4faafe8341c8749a74d95b92ee4a7fdaaa023ef7",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-5m-long.json",
+      "sha256": "2de4e26345df1e609d0ebe6aeb2bf61b7c52230b5a0e8b668d3b757cc893cb14",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135815795707Z-presenter-current-full-regression-and-numerical-coverage/strategy-matrix/MATRIX-trend_pullback-5m-short.json",
+      "sha256": "b573d46f93f03c99dbf405f1b4ca3030ad2aafc49e1607ea974378f09befcef9",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

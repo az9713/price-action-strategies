@@ -1,0 +1,92 @@
+import {test,expect} from '@playwright/test';
+import {readFile,writeFile} from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+
+test('four real borrowing accounts survive cancel and resume and retain account exports and offline facts',async({page,context},info)=>{
+  test.setTimeout(420000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  await expect.poll(async()=>{const h=await(await page.request.get('/api/health')).json();return h.source_current&&h.worker_ready;},{timeout:60000}).toBe(true);
+  await page.goto('/');await page.getByRole('button',{name:'03 Experiments',exact:true}).click();
+  await page.getByRole('combobox',{name:'Dataset',exact:true}).selectOption('90f347229b2fb03ec112ee71');
+  await page.getByText('Execution costs and short borrowing',{exact:true}).click();
+  const original={name:'Sensitivity '+info.project.name+' <img src=x onerror=globalThis.rateProbe=1>',start:'2022-01-03',end:'2022-01-31',symbols:['AAPL','IWM','MSFT','QQQ','SPY'],complete:true,mode:'synthetic',note:'Original event rate is forty percent. The flat account override determines applied charges.',events:[{symbol:'MSFT',effective_at:'2022-01-21T14:31:00Z',annual_rate:.4,available:true,recall:false}]};
+  await page.getByLabel('Import borrowing scenario JSON',{exact:true}).setInputFiles({name:'rate-inputs.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(original))});
+  await expect(page.getByRole('region',{name:'Changing short borrowing',exact:true}).getByRole('status')).toContainText('Applied borrowing scenario');
+  await page.getByRole('button',{name:'06 Validation',exact:true}).click();
+  const region=page.getByRole('region',{name:'Borrowing cost comparison',exact:true});
+  const queue=page.waitForResponse(r=>r.url().endsWith('/api/borrow-sensitivity')&&r.request().method()==='POST');
+  await region.getByRole('button',{name:'Run four borrowing-rate accounts',exact:true}).click();
+  const response=await queue;expect(response.status()).toBe(202);const created=await response.json();
+  const jid=created.id;expect(created.payload.costs.borrow_scenario.note).toBe(original.note);
+  await region.getByRole('button',{name:'Cancel borrowing comparison',exact:true}).click();
+  await expect.poll(async()=>(await(await page.request.get('/api/jobs/'+jid)).json()).status,{timeout:60000}).toBe('canceled');
+  await expect(region.getByRole('status')).toContainText('canceled');
+  await expect(region.getByTestId('borrow-sensitivity-output')).toHaveCount(0);
+  await page.screenshot({path:info.outputPath('sensitivity-canceled.png'),fullPage:true});
+  await region.getByRole('button',{name:'Resume borrowing comparison',exact:true}).click();
+  await expect.poll(async()=>(await(await page.request.get('/api/jobs/'+jid)).json()).status,{timeout:240000}).toBe('completed');
+  const report=await(await page.request.get('/api/jobs/'+jid+'/report')).json();
+  expect(report.arms.map((a:any)=>a.annual_rate)).toEqual([0,.03,.1,.3]);
+  expect(report.arms.every((a:any)=>a.short_trades>0)).toBe(true);
+  await expect(region.getByTestId('borrow-sensitivity-output')).toHaveAttribute('data-job-id',jid);
+  await expect(region.getByRole('table',{name:'Borrowing rate account outcomes',exact:true}).locator('tbody tr')).toHaveCount(4);
+  const frozen=(await(await page.request.get('/api/jobs/'+jid)).json()).payload;expect(frozen).toEqual(created.payload);
+  const books=[];
+  for(let part=0;part<4;part++){
+    const annual=[0,3,10,30][part];await region.getByRole('button',{name:'Inspect '+annual+'% account',exact:true}).click();
+    await expect(region.getByTestId('borrow-sensitivity-account')).toHaveAttribute('data-part',String(part));
+    const book=await(await page.request.get('/api/jobs/'+jid+'/report?part='+part)).json();books.push(book);
+    expect(book.costs.borrow_annual).toBe(annual/100);expect(book.costs.borrow_scenario.events[0].annual_rate).toBe(annual/100);
+    expect(book.costs.borrow_scenario.note).toBe(original.note);
+    await expect(region.getByRole('region',{name:'Applied borrowing rate override',exact:true})).toContainText(annual+'% annually');
+    const daily=region.getByRole('table',{name:'Daily borrowing cost differences',exact:true});
+    await expect(daily.locator('tbody tr')).toHaveCount(report.daily_differences[part].rows.length);
+    const download=page.waitForEvent('download');await region.getByRole('link',{name:'Download selected borrowing-account JSON',exact:true}).click();
+    const path=info.outputPath('account-'+part+'.json');await(await download).saveAs(path);expect(JSON.parse(await readFile(path,'utf8'))).toEqual(book);
+    const tradeCsv=await page.request.get('/api/jobs/'+jid+'/export/csv?part='+part);expect(tradeCsv.status()).toBe(200);await writeFile(info.outputPath('account-'+part+'.csv'),await tradeCsv.body());
+  }
+  await region.getByRole('button',{name:'Show borrowing comparison trial records',exact:true}).click();
+  const ledger=page.getByTestId('trial-ledger-output');await expect(ledger).toHaveAttribute('data-job-id',jid);
+  await expect(ledger.getByTestId('trial-occurrences').locator('tbody tr')).toHaveCount(4);
+  const registry=await(await page.request.get('/api/trial-registry?job_id='+jid)).json();expect(registry.totals.roles.borrow_sensitivity).toEqual({occurrences:4,distinct_configurations:4});
+  await writeFile(info.outputPath('trial-registry.json'),JSON.stringify(registry,null,2));
+  await page.screenshot({path:info.outputPath('sensitivity-four-outcomes.png'),fullPage:true});
+  const aggregate=page.waitForEvent('download');await region.getByRole('link',{name:'Download borrowing comparison JSON',exact:true}).click();
+  const aggregatePath=info.outputPath('comparison.json');await(await aggregate).saveAs(aggregatePath);expect(JSON.parse(await readFile(aggregatePath,'utf8'))).toEqual(report);
+  const csv=page.waitForEvent('download');await region.getByRole('link',{name:'Download borrowing comparison CSV',exact:true}).click();await(await csv).saveAs(info.outputPath('comparison.csv'));
+  const html=page.waitForEvent('download');await region.getByRole('link',{name:'Download borrowing comparison presentation',exact:true}).click();
+  const htmlPath=info.outputPath('sensitivity-presentation.html');await(await html).saveAs(htmlPath);
+  await region.getByRole('button',{name:'Open selected account and trade inspector',exact:true}).click();
+  await expect(page.getByRole('heading',{name:'Results',exact:true,level:1})).toBeVisible();
+  await expect(page.getByRole('region',{name:'Applied borrowing rate override',exact:true})).toContainText('30% annually');
+  await page.getByRole('button',{name:'05 Trade inspector',exact:true}).click();await expect(page.locator('.trades-table tbody tr')).toHaveCount(books[3].trades.length);
+  await page.locator('.trades-table tbody tr').getByRole('button',{name:'Inspect trade',exact:true}).first().click();
+  await expect(page.getByRole('heading',{name:'Trade cash ledger',exact:true})).toBeVisible();
+  await page.screenshot({path:info.outputPath('sensitivity-selected-account-trade.png'),fullPage:true});
+  await page.getByRole('button',{name:'07 Reports',exact:true}).click();await expect(page.getByRole('region',{name:'Applied borrowing rate override',exact:true})).toContainText('30% annually');
+  const partHtml=page.waitForEvent('download');await page.getByRole('link',{name:'Download current presentation',exact:true}).click();await(await partHtml).saveAs(info.outputPath('selected-account-presentation.html'));
+  // A real delayed account response must not undo a user's later navigation.
+  let held=false;await page.route('**/api/jobs/'+jid+'/report?part=0',async route=>{held=true;await new Promise(resolve=>setTimeout(resolve,1200));await route.continue();});
+  await page.getByRole('button',{name:'06 Validation',exact:true}).click();
+  await page.getByRole('region',{name:'Borrowing cost comparison',exact:true}).getByRole('button',{name:'Inspect 0% account',exact:true}).click();
+  await expect.poll(()=>held).toBe(true);await page.getByRole('button',{name:'07 Reports',exact:true}).click();
+  await page.waitForTimeout(1500);await expect(page.getByRole('heading',{name:'Reports',exact:true,level:1})).toBeVisible();
+  await page.unroute('**/api/jobs/'+jid+'/report?part=0');
+  await page.reload();await page.getByRole('button',{name:'06 Validation',exact:true}).click();
+  await page.getByRole('combobox',{name:'Saved borrowing-cost comparison',exact:true}).selectOption(jid);
+  await expect(page.getByTestId('borrow-sensitivity-output')).toHaveAttribute('data-job-id',jid);
+  expect(await page.evaluate(()=>(globalThis as any).rateProbe)).toBeUndefined();expect(await page.locator('img[onerror]').count()).toBe(0);
+  const workspace=page;page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await workspace.close();
+  await context.setOffline(true);const network:string[]=[];page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url());});
+  await page.goto(pathToFileURL(htmlPath).href);const deck=JSON.parse((await page.locator('#presentation-manifest').textContent())!);
+  for(let part=0;part<4;part++)expect(Object.values(deck.facts).some((f:any)=>f.path.join('.')==='comparison_rows.'+part+'.net_profit'&&f.value===books[part].metrics.net_profit)).toBe(true);
+  const layouts=[];
+  for(let n=0;n<deck.pages.length;n++){
+    if(n)await page.keyboard.press('ArrowRight');await expect(page.locator('#stage')).toHaveAttribute('data-page',String(n+1));
+    const issues=await page.evaluate(()=>{const r=document.getElementById('stage')!.getBoundingClientRect(),s=r.width/1920,issues:string[]=[];
+      for(const e of document.querySelectorAll('#slide h1,#slide .subtitle,#slide .conclusion,#slide .stat,#slide .concept p,#slide .chart,#slide .notes p')){const b=e.getBoundingClientRect();if(b.x<r.x-.5||b.y<r.y-.5||b.right>r.right+.5||b.bottom>r.bottom+.5)issues.push('outside stage');if(b.right>r.x+1400*s+.5&&b.bottom>r.y+712*s+.5)issues.push('camera overlap');}
+      const c=document.querySelector<HTMLElement>('.concept');if(c&&c.getBoundingClientRect().bottom>r.y+820*s+.5)issues.push('concept overlaps conclusion');if(document.documentElement.scrollWidth>innerWidth)issues.push('horizontal scroll');return issues;});
+    expect.soft(issues,'Sensitivity presenter page '+(n+1)).toEqual([]);layouts.push(issues);await page.screenshot({path:info.outputPath('sensitivity-presentation-'+(n+1)+'.png')});
+  }
+  expect(network).toEqual([]);expect(errors).toEqual([]);expect(await page.evaluate(()=>(globalThis as any).rateProbe)).toBeUndefined();
+  await writeFile(info.outputPath('sensitivity-observations.json'),JSON.stringify({job_id:jid,viewport:page.viewportSize(),browser:context.browser()?.version(),rates:report.comparison_rows,pages:deck.pages.length,facts:Object.keys(deck.facts).length,layouts,networkRequests:network,consoleErrors:errors,scope:'Historical cached stock/ETF prices with authored synthetic lending conditions; complete per-rate accounts, not observed historical lending or strategy-edge certification.'},null,2));
+});

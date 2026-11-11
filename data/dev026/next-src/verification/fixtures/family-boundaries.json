@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "input_kind": "synthetic_fixture",
+  "cases": {
+    "distinct_detectors": "At the authored candidate point, bounce21 is not flip; unvisited swing-break19 is BOS but not clustered-level breakout; first flip20 is not a new breakout; pullback20 is not projected-line17; BOS19 and CHoCH27 have different structural direction; gap16 is not a two-body demand return.",
+    "impulse_requirement": "Zeroing body20 preserves high/low three-candle gap21 but removes the two-body demand zone; gap return22 remains and demand return22 disappears.",
+    "gap_equality": "Setting low15 equal to high13 removes the bullish gap, so there is no long gap return16.",
+    "penetration_requirement": "Low20=111.0 never penetrates support110.9: bounce20 may qualify, long sweep20 cannot.",
+    "touch_counts": {
+      "first_indices": {
+        "1": 21,
+        "2": 23,
+        "3": 25,
+        "4": 27
+      },
+      "reason": "Separated visits to110.9 at21/23/25/27 count; intervening away bars and tied later extrema prevent new pivot clusters."
+    },
+    "adjacent_touch": "Two adjacent candles in the same level visit emit only its first qualifying bounce, not another fresh order candidate.",
+    "expiry": "The support born19 is still eligible at21 for age2, but expired at a new23 visit. Age96 retains it.",
+    "tolerance": "A112.1 wick is outside the0.1ATR band around110.9 but inside0.5ATR;112.3 close is on the support side.",
+    "line_zone": "Close120.2 crosses the120.1 line but remains inside its0.25ATR upper zone edge.",
+    "sweep_prerequisite": "Common CHoCH27 has no recent short reclaim. A128.5 wick at26 with119 close supplies it; a3ATR depth rejects the0.4 penetration. A reclaim at25 is outside the1-bar prerequisite window at27 but inside3 bars.",
+    "gap_confluence": "High26=126 and high27=126 prevent a new bearish gap while older bearish gaps are used/invalidated; CHoCH27 remains, so a separate-gap requirement must reject it.",
+    "nonapplicable_confluence": "Requiring the fair-value gap itself as additional gap confluence is tautological; reject that nondefault parameter instead of presenting it as an independent filter.",
+    "delayed_zone_expiry": "Demand born21 and gap born15 have age3 at delayed returns24/18: age2 rejects, age96 admits. The away demand candles have open=close134 so they cannot extend the original impulse and create a newer eligible zone. An earlier fixture used positive0.02 bodies and accidentally created another demand zone at22; correcting that geometry does not change the expiry rule."
+  }
+}

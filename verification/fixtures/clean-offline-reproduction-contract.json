@@ -1,0 +1,35 @@
+{
+  "scope": "Current0.24 synthetic offline saved-result/API restart and original-versus-fresh-install exact complete account comparison; no final acceptance or graphical-browser claim.",
+  "fixture": {
+    "sessions": [
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06"
+    ],
+    "input_kind": "synthetic",
+    "strategies": "break_of_structure/1m/strength2, separate long and short, next-open entry, level stop,2R target,24-bar maximum hold; unchanged default account/cost assumptions",
+    "symbols": [
+      "SPY",
+      "QQQ"
+    ],
+    "path": "Existing independently authored strategy-baselines common_closes, padded to full session with200; second instrument reflected about300. Separate candle open=close-.02/high=close+.1/low=close-.1 avoids adjacent shared extrema."
+  },
+  "network": "Install a Python audit guard before importing backend modules; reject external getaddrinfo and tuple socket.connect in the script and its spawned workers, allow loopback. Prove both rejections with owned positive controls. Report only blocked counts, never private targets or credentials. This is process-local fault injection, not a machine firewall.",
+  "assertions": [
+    "Execute two actual worker jobs with positive signals and trades; persist original datasets/strategies/reports.",
+    "Stop via actual API lifespan, verify worker exited/store lease released, restart a new spawned worker on the same explicitly owned synthetic store.",
+    "Reopen complete reports and JSON/CSV/HTML/presentation exports; require original bytes to remain identical after restart and zero external network attempts during the saved workflow.",
+    "Construct the read-only provider with explicit nonsecret fixture credentials in a .txt fixture, force uncached external transport denial and require its clear ProviderError; do not access the actual .env or use live Alpaca credentials.",
+    "Repeat under original and fresh isolated environments/source roots with identical numerical core; require entire manifest/report JSON equality without excluded financial or provenance fields.",
+    "Retain actual exit codes, failures and safe derived evidence; do not modify production source or real protected data."
+  ],
+  "retention": "Per-run original logs remain under private-evidence; derive sanitized review logs with whole-file before/after hashes. Full synthetic reports remain reviewable. Both owned stores persist for audit; no server left running.",
+  "remaining": [
+    "Graphical browser offline journey",
+    "Actual clean final-release suite and422-case certification",
+    "OS-level network-firewall test and real-provider entitlement test"
+  ],
+  "retained_first_failure": "The first random/shared-open fixture produced zero primary signals and the required positive-account assertion failed; no production formula/gate change. Replace with preexisting authored strict-pivot positive geometry before rerun."
+}

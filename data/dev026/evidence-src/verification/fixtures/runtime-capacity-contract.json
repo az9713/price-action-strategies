@@ -1,0 +1,36 @@
+{
+  "revision": "D037 / RULEBOOK0.17",
+  "requirements": [
+    "ENV-002",
+    "JOB-001",
+    "JOB-002",
+    "JOB-003",
+    "JOB-004",
+    "PERF-001",
+    "PERF-002",
+    "ACCT-002"
+  ],
+  "scope": "Single live API/worker per resolved store, clean managed process lifecycle, and execution overhead reduction without changing numerical rules.",
+  "runtime": [
+    "Hold a noninherited OS byte/flock lease for the whole worker-enabled API lifespan; another port cannot bypass the store lease. Separate explicit stores remain possible for verification and must be retired after use.",
+    "Use finally cleanup for normal/exceptional lifespan exit and failed worker startup. Lease release follows worker shutdown. Stale lock-file existence never means live ownership.",
+    "Spawned worker ignores console SIGINT; parent handles Ctrl+C through shared stop and durable job release. Existing parent-death watcher remains.",
+    "No generic Python-process termination or stale PID-file based ownership. Existing unrelated listeners are never killed by application startup."
+  ],
+  "performance": [
+    "Stream the already timestamp/symbol sorted execution rows once; preserve exact timestamp grouping, row order, sparse symbols, all bar events and cancellation checkpoints. No empty-account or price/guard bypass.",
+    "Hash immutable full job payload once per many-part evaluation; preserve per-part configuration/content hashes and original pre-execution/pre-publication plan checks.",
+    "Cancellation and heartbeat read only lifecycle columns, with live owner/state validation and immediate cancellation; never deserialize full plans per check. Losing ownership cannot mark another worker job or final study failed."
+  ],
+  "verification": [
+    "Preserve first failed contract execution before fixes.",
+    "OS ownership and exceptional startup/shutdown tests, including actual spawn, duplicate rejection, restart and abrupt owner release.",
+    "SQL authorizer denies payload reads during lifecycle checks. Unknown/wrong/terminal owners reject.",
+    "Actual search full-payload reads/hashes stay bounded independently of part count; cancel/shutdown/owner-loss/corruption still protect committed work.",
+    "Streaming multi-symbol/sparse/reversed-input execution reconciles every trade/ledger/equity/rejection to separate Decimal implementation; batched row conversion is bounded.",
+    "Fresh full regression and unchanged15-module95/90 gates; actual current main browser/worker/offline and independent account checks.",
+    "Repeat frozen real sample100 and1000; compare every old/new complete report field except core_hash/numerical_contract. Report actual wall/memory/storage; profiling times remain separate.10000/100000 remain required and cannot be inferred."
+  ],
+  "numerical_tolerances": "All existing frozen tolerances unchanged. No strategy formulas, costs, gates, data protection, receipts or baseline cases removed.",
+  "source_adaptation": "Operational reliability extension to the AI Pathways YouTube recreation, not a claim about the host private pipeline."
+}

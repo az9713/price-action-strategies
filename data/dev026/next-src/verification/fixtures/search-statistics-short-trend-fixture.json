@@ -1,0 +1,23 @@
+{
+  "input_kind": "synthetic",
+  "scope": "Authored nonempty short-rule integration control, not historical evidence or strategy optimization. Frozen before executing this geometry. Original six-session jump geometry is retained as a zero-trade control.",
+  "days": [
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-12"
+  ],
+  "symbol": "SPY",
+  "minutes_per_day": 390,
+  "geometry": {
+    "close": "1000 - 40 * day_index - 0.1 * minute + 8 * sin(2*pi*minute/64)",
+    "open_offset": 0.02,
+    "high_offset": 0.2,
+    "low_offset": -0.1,
+    "volume": 10000
+  },
+  "rationale": "The first four seed42 BOS minute rules include short configurations with strength8/either and strength5/rejection. Descending unique swings and red upper-wick candles provide actual eligible short triggers; no profit sign or model score is required.",
+  "unchanged": "Seed42, original sampled configurations, thresholds, account/cost assumptions and independent tolerances."
+}

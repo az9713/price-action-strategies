@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source_receipt": "verification/receipts/20261108T083402678603Z-full-backend-matched-controls-coverage.json",
+  "catalog_version": 4,
+  "requirements": 80,
+  "cases": 351,
+  "sha256": "da886c4b84a8f42ab68c34ec838d468188cefb7a6c955984e6656fff9499c86b",
+  "purpose": "Preserve the prior normative catalog byte for byte when projecting the behavior expansion back to its original351 cases.",
+  "line_ending": "\r\n",
+  "final_newline": false
+}

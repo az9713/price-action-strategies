@@ -1,0 +1,11 @@
+{
+  "managed_session": 23305,
+  "observed_terminal_exit": 1,
+  "server_pid_before_stop": 30840,
+  "worker_pid_before_stop": 45704,
+  "all_database_jobs_before_stop": 338,
+  "pending_before_stop": 0,
+  "http_responding_after_stop": false,
+  "native_process_absence_certified": false,
+  "observed_at": "2026-11-09T08:04:35.689189+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "input_kind": "synthetic",
+  "fixture_tag": "RB",
+  "date_sessions": [
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-12"
+  ],
+  "profiles": [
+    "desktop1920",
+    "desktop1280"
+  ],
+  "symbols_policy": "Twenty explicitly synthetic RBA01..20 or RBB01..20 instruments for the0.17 actual-main replay; no real historical data relabeled.",
+  "geometry": "The canonical frontend/tests/portfolio-study.spec.ts and frozen portfolio-study contract define complete minute geometry and controls."
+}

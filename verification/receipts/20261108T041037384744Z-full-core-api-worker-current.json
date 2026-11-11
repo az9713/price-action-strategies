@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T041037384744Z-full-core-api-worker-current",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T04:10:37.385141+00:00",
+  "finished_at_utc": "2026-11-08T04:14:01.260624+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+    "verification_plan_sha256": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+    "catalog_sha256": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+    "source_files": {
+      "PLAN.md": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+      "VERIFICATION_PLAN.md": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+      "RULEBOOK.md": "35e2aab111fe55b3287385d9038286314cb997e8886e59d8b97368212e2eaf40",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7d8001366efca0e352d3c755f7006cc3d9cc07a157f17cfd87d88cce3289af44",
+      "verification/catalog.json": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+      "verification/record_check.py": "0aa9087b134cb82009157f2dae86ce378a1c1abac7d8da262438afd66574199b",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "299c64856bbf4dcd27db916744a12055b6cb15bcef42d1be6b7e644cc6849d8f",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "dfaddf81c1561e1d4743df0cb10ae2ba5f1aad3746459d7b78edaace0b7c8a42",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "487b81921afd63a879c797aba0be42150e269ca1ab8b7222ab7a6a1c7a88fbb4",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "f404420ad3f33585262f784000731d9f080c5511dc3c12b3adda7f7f2c42bfb2",
+      "backend/lab/models.py": "21a8d31403e2e71e4a4706cee0dd261cb21c2a30a4b43aafc2d3e8374ebc9dfd",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "637b3bd069e4b0a9c99102a37830f70bdb1a18298f6067c37d195d32f8046320",
+      "backend/lab/service.py": "ccc6099bea0c0988f7da12eb00e3b9a788de3a9eb8589ed9721f21a44430ba87",
+      "backend/lab/signals.py": "f2a115e2fbde7cfdb7be0abc9f11c9f2f7c7ed6c623fe6b0bf14a6816f2499b7",
+      "backend/lab/store.py": "6f971486b5a1f9e3eb4f4f376ab62e2db37d62616fc7d83cace0f83318ca3f09",
+      "backend/lab/worker.py": "56b9cfcbf8ee459f4f4d1b5b12a5d75efa93986713f26bb1a4e761e1eb0a37fd",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "e6f2b4187601d61360bfbe2d225c500d944e675ade4e778e76dea1e2b5d5893e",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_research_service.py": "ecbdbec3cc9a433d3b306f1dfde299d4fbef54407b2410fc0d9702aacc8ae224",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "997d8a77a162730d74dd627e1f553c8793bcbe906d8f75e0b7c3665442ad60f5",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "verification/build_catalog.py": "0a9243c13d63cfe2b3116ef160d78b7a435323d7accc8637aff6ab62deb48349",
+      "verification/check_evidence.py": "2c439b461b3e5907a7d33b4389f7c29686dc21fdbb932d33ac41db2f90df4a7d",
+      "verification/frontend_check.py": "d7067e9895dc5e8217e6bce13a4a93933b151f4c5f163d0756ec55437555d7ad",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "4dc31fd89865168f0d210a1d68012ed697f28e58d870dd0303ad1a21b53fae80",
+      "frontend/src/Charts.tsx": "d19681e97616cc53e85221d9e10537c215814cb1ef5fb83c04f33fba01d447cc",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/style.css": "c4f3c1b3f7b3cd729a9ee71c36d555f434f7bf4076241b9e155e872b0bf72d04",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/package.json": "465a675d7232b0254f650e53263c37d9f166497282cedddf34f69f414beee28a",
+      "frontend/package-lock.json": "001b91cb1e6b31703f8dd1c733f2f64b33893c6578c30068d8e2e757f62e593f",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "35e2aab111fe55b3287385d9038286314cb997e8886e59d8b97368212e2eaf40"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "001b91cb1e6b31703f8dd1c733f2f64b33893c6578c30068d8e2e757f62e593f"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=verification/runs/current-junit.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 1,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T041037384744Z-full-core-api-worker-current/stdout.log",
+      "sha256": "18a1f580cbde4b4e00463f000256f9fb965c58c72eb7cad8e207bd94db8c7f16",
+      "bytes": 2242,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T041037384744Z-full-core-api-worker-current/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/current-junit.xml",
+      "sha256": "f85cdc7c543238f958c0733ad6e515c39d0508cf00be37bc69651625133e701f",
+      "bytes": 16025,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

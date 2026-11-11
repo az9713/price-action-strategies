@@ -1,0 +1,10 @@
+{
+  "scope": "Read-only aggregate Windows host pressure; no app names, command lines, credentials or user data read. Not a capacity pass.",
+  "observed_at_utc": "2026-11-10T21:46:25.996153+00:00",
+  "sample_wall_seconds": 0.5160590999876149,
+  "logical_cpu_count": 12,
+  "aggregate_busy_percent": 66.06217616580311,
+  "physical_memory_total_bytes": 34011766784,
+  "physical_memory_available_bytes": 6011011072,
+  "physical_memory_load_percent": 82
+}

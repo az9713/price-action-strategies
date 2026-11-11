@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T034739496859Z-loopback-api-worker",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T03:47:39.497188+00:00",
+  "finished_at_utc": "2026-11-08T03:47:55.116852+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+    "verification_plan_sha256": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+    "catalog_sha256": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+    "source_files": {
+      "PLAN.md": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+      "VERIFICATION_PLAN.md": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+      "RULEBOOK.md": "35e2aab111fe55b3287385d9038286314cb997e8886e59d8b97368212e2eaf40",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7d8001366efca0e352d3c755f7006cc3d9cc07a157f17cfd87d88cce3289af44",
+      "verification/catalog.json": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+      "verification/record_check.py": "09cafa8431a4d5a2862e89c89aeede1801266b8d4763d146505218210b97f23b",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "69f53dda62ce26dc6c8998547b8bbe830cfcaf8a9b595d71ca4f9171d9648875",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "dfaddf81c1561e1d4743df0cb10ae2ba5f1aad3746459d7b78edaace0b7c8a42",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "487b81921afd63a879c797aba0be42150e269ca1ab8b7222ab7a6a1c7a88fbb4",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "f404420ad3f33585262f784000731d9f080c5511dc3c12b3adda7f7f2c42bfb2",
+      "backend/lab/models.py": "21a8d31403e2e71e4a4706cee0dd261cb21c2a30a4b43aafc2d3e8374ebc9dfd",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "ac29579b6f9afa752b0a5f0a66bbda385741f1eedcd5344b6c53d657f312541c",
+      "backend/lab/service.py": "7a595f3314d40f220bd9885094a4b3f58ec42328ba4c052176b6ae0421460b43",
+      "backend/lab/signals.py": "f2a115e2fbde7cfdb7be0abc9f11c9f2f7c7ed6c623fe6b0bf14a6816f2499b7",
+      "backend/lab/store.py": "6f971486b5a1f9e3eb4f4f376ab62e2db37d62616fc7d83cace0f83318ca3f09",
+      "backend/lab/worker.py": "f721038ec47bdd9daa60ba6d871b426095aabd9d7b27d55b3c4784d9f54a16df",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "21968bc92b8c0d6247a21e1e21ec183a6248b710cced2c74d8d972ff4e6c2de6",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_research_service.py": "ecbdbec3cc9a433d3b306f1dfde299d4fbef54407b2410fc0d9702aacc8ae224",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "35e2aab111fe55b3287385d9038286314cb997e8886e59d8b97368212e2eaf40"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=verification/runs/api-junit.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T034739496859Z-loopback-api-worker/stdout.log",
+      "sha256": "c19fe09a03e6843329b18ad2efbd7659e38e7319b66c5d8a2bfdcdc41d91e338",
+      "bytes": 647,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T034739496859Z-loopback-api-worker/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/api-junit.xml",
+      "sha256": "3554d0dce1718e8d583f1c26f2ef2388b61645bdf0c632fd74bdf20862409cfb",
+      "bytes": 14398,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

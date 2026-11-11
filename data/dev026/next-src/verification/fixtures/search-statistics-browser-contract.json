@@ -1,0 +1,11 @@
+{
+  "revision": "D038 initial historical browser fixture",
+  "dataset_id": "90f347229b2fb03ec112ee71",
+  "window": "Entire saved January 2022 window; already viewed, not holdout",
+  "count": 6,
+  "seed": 42,
+  "families": ["change_of_character", "break_of_structure"],
+  "timeframes": ["1h", "15m"],
+  "statistics": {"effective_trials": [1, 2, 4], "dispersion_mode": "assumed", "trial_sharpe_std": 0.25},
+  "required": "Both desktop profiles; actual worker; at least one trade and defined score, without any profit requirement. Invalid settings must not queue a job. Preserve all six accounts, all eighteen scenario rows and exact JSON/CSV/HTML facts. Every offline page has no network/runtime error or camera overlap. Independently reconcile all saved accounts and statistics. Failures remain receipts; do not change seed or thresholds to obtain profitable results."
+}

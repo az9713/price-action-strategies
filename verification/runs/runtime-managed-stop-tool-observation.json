@@ -1,0 +1,15 @@
+{
+  "kind": "bounded_tool_observation_not_a_subprocess_receipt",
+  "operation": "Ctrl+C through the managed main execution session",
+  "session_id": 83988,
+  "observed_tool_exit_code": 1,
+  "application_messages": [
+    "Shutting down",
+    "Waiting for application shutdown.",
+    "Application shutdown complete.",
+    "Finished server process [30100]"
+  ],
+  "worker_keyboard_interrupt_traceback_observed": false,
+  "independent_postcondition_receipt": "verification/receipts/20261108T203512561967Z-runtime-main-clean-managed-stop-all-owned-objects-exited-and-lease-released.json",
+  "restart_receipt": "verification/receipts/20261108T203545872728Z-runtime-main-after-clean-managed-restart-current-assets-and-duplicate-refusal.json"
+}

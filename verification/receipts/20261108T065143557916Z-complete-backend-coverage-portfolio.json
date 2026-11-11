@@ -1,0 +1,1487 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T065143557916Z-complete-backend-coverage-portfolio",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T06:51:43.558357+00:00",
+  "finished_at_utc": "2026-11-08T06:56:05.748804+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+    "verification_plan_sha256": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+    "catalog_sha256": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+    "source_files": {
+      "PLAN.md": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+      "VERIFICATION_PLAN.md": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+      "RULEBOOK.md": "652236a36af3b2a1b80ea6652fd7aef6afe777516a79221859cd2272dc17983c",
+      "decisions.md": "58a31a2134e10417c9b52a6e83d5a80acb82e57698a377b7a08d0b26db3d2988",
+      "README.md": "8fede02caa0f65c6598275a0ba2f25ed7e521b302c509bb3d4948172294791d0",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+      "verification/implementation-map.json": "b5ba5bb5e2516e7595324b0bf262b6f5d2b393f13db64be031cd241ce8105ced",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "4d5917981ea70dbcab398905d85755b4136103f7596fce634eca930bbf5b4bfd",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "f404420ad3f33585262f784000731d9f080c5511dc3c12b3adda7f7f2c42bfb2",
+      "backend/lab/models.py": "b2134732214dd8943f06bb3d0cee200b141604c040768a1e8f5e801ca81d1d2a",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "9f0289324f3da4aaab97d7232911e99819ac89b4fc3022df4fd15facc45489c7",
+      "backend/lab/signals.py": "5c73050b477d2223b39ddfea3573a906029bfa0971bc7bcc56d1c9267179d7c9",
+      "backend/lab/store.py": "6f971486b5a1f9e3eb4f4f376ab62e2db37d62616fc7d83cace0f83318ca3f09",
+      "backend/lab/worker.py": "b854a8d966d81197891cb569cf801e97b76e7b078a49ab8a7227c7dafd1cd199",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "verification/build_catalog.py": "0a9243c13d63cfe2b3116ef160d78b7a435323d7accc8637aff6ab62deb48349",
+      "verification/check_browser_outputs.py": "51c816739be5c5be51731bd6d62b0d04470fea7b016a56dc66a2ac6f7d563a3b",
+      "verification/check_evidence.py": "2c439b461b3e5907a7d33b4389f7c29686dc21fdbb932d33ac41db2f90df4a7d",
+      "verification/frontend_check.py": "7511aa0d086a7cf838ddca152e54daf1af28a689a4d615f4b466057f371cfb1a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "5b4f624a41d8008b8749c3da80d93968dd6117f6fe89951172e644707c2241b1",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "fef9ea1721d9e8ea0b05d0259ddd515a7911ed1e37eccfe623e64c18f2dc8014",
+      "frontend/src/Charts.tsx": "09085bab0fa6c2d5f0505f6829425a0d60b9741d112cd944dd721ef637963e17",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/style.css": "2ecb631f2a5a091824bf326cf303ff41b7160dea5bc3d8feb02aadb9b1f15278",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/portfolio.spec.ts": "f197eaaef5640c5a47e0b5f5c3eb87bfe09883e6e090b48b7d78dc946670d156",
+      "frontend/tests/research.spec.ts": "7bc003868113e9a580ce1f7cc7f441aae40732687b5881bc452cf628c634bb95",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "2ecef479b765c21e88a7ab3107d0419ecf296480bfa2a709dfc16229e945998a",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "652236a36af3b2a1b80ea6652fd7aef6afe777516a79221859cd2272dc17983c"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/portfolio-contract.json",
+        "sha256": "c4af4f530fe086b919374e3502da9db1c8bb42d08efca8d22444c40513d08f7a"
+      },
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      },
+      {
+        "path": "verification/fixtures/execution-reference-contract.json",
+        "sha256": "2ce26087a4d3f18320960c7fbbdd5a8bc405d1a0bf88f4f0abeb4c4fc88d59fa"
+      },
+      {
+        "path": "verification/fixtures/reference-random-domain.json",
+        "sha256": "5e87b118902ae878fe49c86210ef8c074a9b966345a5cad04128b5bd233384a2"
+      },
+      {
+        "path": "verification/fixtures/reference-exits-contract.json",
+        "sha256": "2da992ff80aeea8f6ebeb121d17440da0be7b8156993490c3176f8bd0cb1842c"
+      },
+      {
+        "path": "verification/fixtures/strategy-baselines.json",
+        "sha256": "c70313e231c02097a4d3782536da07897cc4fa3016544899e949fcb540dff05d"
+      },
+      {
+        "path": "verification/fixtures/family-boundaries.json",
+        "sha256": "39590c7cfcac361e2c3d7ac2ba5863c2195465d4e54761d8c54dddc0b10be39d"
+      },
+      {
+        "path": "verification/fixtures/overlap-priority.json",
+        "sha256": "9ed417c04e3c9aed2a52b6930fe1ce48fe1713f6bb7ec5905c111cda95bcbabf"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-o",
+      "junit_family=legacy",
+      "--cov=backend.lab",
+      "--cov-branch",
+      "--cov-report=json:verification/runs/portfolio-coverage.json",
+      "--cov-report=term-missing:skip-covered",
+      "--junitxml=verification/runs/portfolio-full.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/stdout.log",
+      "sha256": "bcf35b5b940a1679efa778ec0e9398c6c2408d64a025e23b152120ce45480eab",
+      "bytes": 3852,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/artifacts/verification/runs/portfolio-full.xml",
+      "sha256": "b208fb0639420fb26a63504e26c54d29c8782aba570f3113356d101a1b0876fe",
+      "bytes": 85398,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/artifacts/verification/runs/portfolio-coverage.json",
+      "sha256": "f185e9edfad1e71aee83094df5fc04db07e70c9c12197f01347cfdbca0dad07e",
+      "bytes": 188246,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-000.json",
+      "sha256": "3f3ac2b88146ba434844f755533de5002400d0c322e4e45db4386cde096e917e",
+      "bytes": 74463,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-001.json",
+      "sha256": "8a14761e218935dc461e65aaa74973c8e7b0dd914dd147c22de87afd32fb0de5",
+      "bytes": 83735,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-002.json",
+      "sha256": "7e51186a4c900c9d43e294984c3751fe43f0e14101e7bcb47f38b7a105d9290d",
+      "bytes": 76480,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-003.json",
+      "sha256": "015982f8b73558ff0dbf7941199871493ec8cee31449fa472f3bec5a6099b49b",
+      "bytes": 67540,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-004.json",
+      "sha256": "c226e296f34dcfd29b36cd45808c846b12c64a694360689ded095da6b409bdb3",
+      "bytes": 64221,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-005.json",
+      "sha256": "07c66059ba37f23ada0d37e7c8f25c9d2870badb433fe5a15208f6396bd3ae80",
+      "bytes": 64172,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-006.json",
+      "sha256": "e5fea2199efae8e065f5e615fdd9db3530402c88baf0d1fb8c54d7111db92556",
+      "bytes": 74284,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-007.json",
+      "sha256": "c36c9249b0dfb1a5e8203b167862586cde115a8fb57ade1a81580fc1e4f360dd",
+      "bytes": 67685,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-008.json",
+      "sha256": "934360bcc92fa66c28c4528baadcc3acf202f7e5e4ddf7b90bcc769412de6fde",
+      "bytes": 91347,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-009.json",
+      "sha256": "ff13050f34e137e301157149f7793a1bf516f28ac1feed986e8b3ae197663bf3",
+      "bytes": 87289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-010.json",
+      "sha256": "08dec3447973843aacf3c94e9212c107e7fd9f5cd9779aff0ce1cdfafe8c5d05",
+      "bytes": 100280,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-011.json",
+      "sha256": "b483b338b0fea9b4053ee5d80faf906bf14715f76642f0c6eda9f203c87a070d",
+      "bytes": 67615,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-012.json",
+      "sha256": "a9b52105caf4fa12038593c14951d6fa65c36489f26998ef3696448f9cc188bc",
+      "bytes": 117028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-013.json",
+      "sha256": "a800c9c8c56fbe10a5c6bca29ee1ddf4ed3092b106b493b2a17be5332cf8eea0",
+      "bytes": 81808,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-014.json",
+      "sha256": "0d240e44911d65e803849d351816a7a31622210e17a870b3ba63972018e95b1c",
+      "bytes": 77705,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-015.json",
+      "sha256": "0644da90b750bcb9fa7a84c1f8387ad5d40f748d857be4ce0c41c4bdca45ab52",
+      "bytes": 70671,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-016.json",
+      "sha256": "40fc1296d5eee710506933a3c5a1bd27f3cfc25a4efa519c48b5998ba2198c3d",
+      "bytes": 74291,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-017.json",
+      "sha256": "b9a8ad42a67654efc89896e6dbec2bf54fa2a0bf346f8eace895c3815f9f8a00",
+      "bytes": 67297,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-018.json",
+      "sha256": "874ac5873dce41aafd8084cc82919675dd5b4205f82d16a6e0744fb7aafce3f8",
+      "bytes": 84599,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-019.json",
+      "sha256": "0616c01aa6b64139a8d5a42695a793a8b767e2c092d1a3b4bb056d06a5788b0a",
+      "bytes": 86581,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-020.json",
+      "sha256": "d43983c1b8488de922b5abd66cab7aee3fb11103305336a2002a03b7092d746e",
+      "bytes": 151638,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-021.json",
+      "sha256": "9ce9c5c51e5c114341aaa394a30335c83be078483ddff4e8a8c557eb29c086fe",
+      "bytes": 77290,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-022.json",
+      "sha256": "70531cc27b9a54cb37acbb660062f72f22c4edabc8a8e82e98c3f3576d9e31ec",
+      "bytes": 67555,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-023.json",
+      "sha256": "084dab130dce5f51510cddbbff7b131eb18e5040b2acc8bfb4c16b84c6def331",
+      "bytes": 70927,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-024.json",
+      "sha256": "cf7a84f0bed1f8bc4e92f61079ebc021d63269cd6e52b9c553552a7bfecf8d11",
+      "bytes": 71031,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-025.json",
+      "sha256": "7d0d8ea50b9c4d7a4dc28a0dfa00cd736ba55214a7c0af43984b92411e4b146c",
+      "bytes": 96430,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-026.json",
+      "sha256": "8dddda4bcd7bb987e0f094ae7bddf479258f3a229a0e40f3b476b5346a3133c8",
+      "bytes": 74364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-027.json",
+      "sha256": "901577589436ff45eff3cf641b9ac069ae1a88364c8430aabd2f277f47170868",
+      "bytes": 84162,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-028.json",
+      "sha256": "82eff1f5f67519766197c3cb3bc2082a5d2cec1843ff48665b8558aa19a820e5",
+      "bytes": 84837,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-029.json",
+      "sha256": "143b37f43891a7278b0d705b0fddc068d1b789db9d7729d0734031015bc7d9ca",
+      "bytes": 82336,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-030.json",
+      "sha256": "b9e897aaceee1e7a2393cf613e7a71065657c86658c2c7e6fa3b4266619a7e16",
+      "bytes": 74184,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-031.json",
+      "sha256": "b36d0e66e269c4f7900b8d19f1244e0936f283e757460d1b3c4103663f724bcf",
+      "bytes": 67718,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-032.json",
+      "sha256": "54817a7a8e0c75999b6ee32cfe0b78e5870a0f9fff5afe427a3a0820a0a964f4",
+      "bytes": 71029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-033.json",
+      "sha256": "e1803cb992d8525bd02a630ba8b0151a71f32223a35e86d4b52bff7b8216a29b",
+      "bytes": 71185,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-034.json",
+      "sha256": "618b8f0e4eda2f77d5fe51c5245fabb0965c1a8781527f5696a4546b4a5c87aa",
+      "bytes": 67531,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-035.json",
+      "sha256": "3b6e2501d2b47b196974b62126be5f4c684d7ada76fb0589a78937bce60787fb",
+      "bytes": 70655,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-036.json",
+      "sha256": "f1a19e61bae4a3b2a05022d22915c0e52e2043d947f97ca4e4e715e467202324",
+      "bytes": 81008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-037.json",
+      "sha256": "31d11924eff6eaaa2c9d7aebdeb811d9893dd3e694ef24eb70b7d70f22961e8d",
+      "bytes": 94812,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-038.json",
+      "sha256": "ffeeb8e419c4c896ce179142e59ae18d6ff33ed937179c231d418f478c376b57",
+      "bytes": 74399,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-039.json",
+      "sha256": "caeafcd62da5e47ed9164689f97dc726951c4b6bc3b01362cba185e541aa6975",
+      "bytes": 105498,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-040.json",
+      "sha256": "2adda6c73da2ef5ab4e92538acdb498b6482b6f2b91c1676545b1e49e1f7a8ce",
+      "bytes": 117226,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-041.json",
+      "sha256": "ffaf362fdda2e5641f55ab3c7e1b0cdabf20374b49171bae3e9d2d54ee3106f6",
+      "bytes": 101196,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-042.json",
+      "sha256": "013b9b44505efec4aa8fbb2a3d0564eff3c43802300eec477604e48cf585e947",
+      "bytes": 116724,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-043.json",
+      "sha256": "4205a492bc87210b5b0326c15655e7a6740c3ebd31660fb4bbd32b492b8e7fcc",
+      "bytes": 118487,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-044.json",
+      "sha256": "8e6d321aecfe484d5c37be27f8946e1e855b08d99bd838c7b45d8e9ebc172aa6",
+      "bytes": 124766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-045.json",
+      "sha256": "335f662936154b779bf564e412bc435e3e61dcb6b037989117a76d34cd4f2c5f",
+      "bytes": 88390,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-046.json",
+      "sha256": "26d21fc450407cf2ca22104041e60e4cbff291299ae258b050206bf763322cac",
+      "bytes": 84207,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-047.json",
+      "sha256": "0a159d13d10464c10ccc06fe69491f26730680612cfd7355dec786e4e13081f6",
+      "bytes": 99518,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-048.json",
+      "sha256": "a511ab4dc8cbb1d8a6b56572564e82d3d1aa56678f073f1a32b139827df101c0",
+      "bytes": 108952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-049.json",
+      "sha256": "231b61e30f9a0c68f3726884c18faad9558669d8de6ce3294aed81c8a9841512",
+      "bytes": 74273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-050.json",
+      "sha256": "637dc0decb32926f850c9ed2f4a852b608fd8c06ca474bf94c6cd763a1f0836b",
+      "bytes": 101266,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-051.json",
+      "sha256": "49efe4a8dfab37705beb7e76e02cc29703cfb03699dabc78075238626dd31eb5",
+      "bytes": 73980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-052.json",
+      "sha256": "314dba50f76fb5eb4ce47548553eac10f7a50ccb85096896520385505799facc",
+      "bytes": 74397,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-053.json",
+      "sha256": "e8cb690be9306062d2777d9db2c31af0130b2429314db5e265457632af5068b0",
+      "bytes": 61030,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-054.json",
+      "sha256": "8d37b4b748a724b5566e8445686ffaf5f2ef6b20ee12633a896d387b48e72df9",
+      "bytes": 94516,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-055.json",
+      "sha256": "a3fff8c6d2c204a6ec1c65b5cb443515f4ad9803c616a45c7bc8fc51614ec1cc",
+      "bytes": 114342,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-056.json",
+      "sha256": "77255038deeeef5d669ff13b084359dd4783ad87f31ee096afa4cc18aff35302",
+      "bytes": 70789,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-057.json",
+      "sha256": "7018986af9c453a89149680d55ae70ea1ab7381994612e0f39b27c0fc669a9e7",
+      "bytes": 107405,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-058.json",
+      "sha256": "f16bf1e0605b9ca9478b188bbd0bea853150bc6b8696200151d77c60f1f1a09e",
+      "bytes": 84472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-059.json",
+      "sha256": "72e6c4700a389a564364f7e91a25cecf873df0920c528a48a0e3469085593c48",
+      "bytes": 64190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-060.json",
+      "sha256": "7be4cfb7688dde5d3b6a2b982e17ab366708ae2694451b9ded5d4af1e12d79d4",
+      "bytes": 124576,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-061.json",
+      "sha256": "20481d1868172cbbf23100aa2433ae188ae51b905f5b7c645bf87d6091955197",
+      "bytes": 76247,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-062.json",
+      "sha256": "89e2ee4840b5a3db8521f80008d708d2b719f4172d86b7828f0a41c9188b0a49",
+      "bytes": 98302,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-063.json",
+      "sha256": "18fd374ed0b66ee8be923459a42aaab22240b4938dfce2da91d278e9824dc0be",
+      "bytes": 89443,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-064.json",
+      "sha256": "fd527270a8ce4f8683e107f89eb68d4e6d6ba0db3193e3b910b2153a13bde5f2",
+      "bytes": 92587,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-065.json",
+      "sha256": "1f97b9d90324df89af49f8804db2aef1c01e793f33010d5131be6261908a8e05",
+      "bytes": 121338,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-066.json",
+      "sha256": "e3b630fc002a362150ef921e67664dce7a4ee3fdcf15e20c383f78ca5ebde5cf",
+      "bytes": 67526,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-067.json",
+      "sha256": "470b8b48cf0fd3762012b9e40dceb0b46b09a091f80d3fb9c5ae62a9405b7ad4",
+      "bytes": 67613,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-068.json",
+      "sha256": "9bb8fa42f8d7f3de6e663a27cf8a1ea11170f24164cd64eb7c34e539d20b694f",
+      "bytes": 77824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-069.json",
+      "sha256": "7779e6a7c6910ed2c558caee2053b88e9005b3554a34da86668c2d5dad655c35",
+      "bytes": 74359,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-070.json",
+      "sha256": "a227273e64796c53d5562d34368b9335d21e3dacd66053e4a0af509bc56c8b74",
+      "bytes": 93215,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-071.json",
+      "sha256": "7e5b741c265d1ab330f09ce9f3f8712dad1dde2c561a9d3cf78aca085c6da63f",
+      "bytes": 84574,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-072.json",
+      "sha256": "0d4c3fd3dacbded9ab304ab823fdca8974e5a85a9b90c8a572868786ce1e9750",
+      "bytes": 81156,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-073.json",
+      "sha256": "50eda51677bfc1f69e39c30e95d5932da323594722af700999af0c38484b45a6",
+      "bytes": 70780,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-074.json",
+      "sha256": "603581574ed8894b21bca5a1e6156f22d6d44634987b93763131aa6ec391b5f2",
+      "bytes": 96078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-075.json",
+      "sha256": "4e2ac6dc40ba1fa4aaf69aa68cb85de166ece0064b63bcc2c157dad49463b209",
+      "bytes": 107863,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-076.json",
+      "sha256": "18a27c64ce5399ff2fe1a3032f1b976d6de9bff544dd06d565232e87029a66a3",
+      "bytes": 114537,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-077.json",
+      "sha256": "d20628117383bb9fd59ef408c3353c3b894194955781205a586f805926b29f71",
+      "bytes": 130598,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-078.json",
+      "sha256": "4fa7d7ce0d447281e0b25481ae1db593c352b449aefc8b3cb666c0ae7d8801ee",
+      "bytes": 74101,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-079.json",
+      "sha256": "28fb0d162cee76e3bb6648a45ef8f51be1f6f847e7c6c331e56592635d945c86",
+      "bytes": 112956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-080.json",
+      "sha256": "ec8d5e7eb833b7e9cafcd3a45fc619af9d10402a2a4a908c9593c6fb31698d6b",
+      "bytes": 77505,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-081.json",
+      "sha256": "adc22ccb17b947c76c5e3d6d7048579241b321dbcd2e6c4af840ff27609b2468",
+      "bytes": 98423,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-082.json",
+      "sha256": "9aa03c2ff106d5ac9a47df79fcab5dc500365e66783397bc330531d10b51f717",
+      "bytes": 116461,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-083.json",
+      "sha256": "b964b96d74c3b92101c24f1be2aabbe6da1637c10b6f2d15f2a53b87be99e0e6",
+      "bytes": 77670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-084.json",
+      "sha256": "45c3399307ce1c98f66a2c592699dfa6810d42591845fec422b0e876ecce6b53",
+      "bytes": 75366,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-085.json",
+      "sha256": "3ebc1f24e4b49bed1c2dfe9e854ea91b4743b577254e8df815cbbc212fa41f79",
+      "bytes": 64139,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-086.json",
+      "sha256": "2a16de5dadc2f254d9b9a0a51b868cb10afc069ba4c1ec0e52356181e381df15",
+      "bytes": 119479,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-087.json",
+      "sha256": "660513c0e985f3e176f6d6fb582b683944df693cbae6758a35e237b67367e376",
+      "bytes": 93904,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-088.json",
+      "sha256": "cc4dbaf8f3e7cc6f39e9592cb389c2d7279f829e9ebde2d774aee949595c53c1",
+      "bytes": 142053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-089.json",
+      "sha256": "c3543d4614d017c57962135f7a86e674dd213a568d32530d6a28b9dd00411a1d",
+      "bytes": 87117,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-090.json",
+      "sha256": "79431b1bdcfadc44dc600f1391672a6e08fab979e1629478457df6e6d5a90a82",
+      "bytes": 67424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-091.json",
+      "sha256": "093f3105302daa256193150729f0d63545865f2e916724f3be4d45c0c6586405",
+      "bytes": 70852,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-092.json",
+      "sha256": "fbc828a26c34ecaa6692283d4b0106fd3bb06f8f1009b6370a131e974487d2cb",
+      "bytes": 122361,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-093.json",
+      "sha256": "7fbe57d65cd20054a2513f4dfd6365e7984af4da6f04ca2faa193920100f81e2",
+      "bytes": 117828,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-094.json",
+      "sha256": "fa85f4aea17195caa462b883cd988bc4a9c241313f77ec388641535d95cd9b94",
+      "bytes": 129078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/reference-properties/seed-095.json",
+      "sha256": "c2bf07a075d3d0eef2424d6b85e0dbe47fff7a759c753c4074bf23db8db0fe07",
+      "bytes": 101761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-15m-long.json",
+      "sha256": "0d5c11c52a4ec1d873e4c3297ae4898d50eef6ae393b2466949c8ca6f148369d",
+      "bytes": 3028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-15m-short.json",
+      "sha256": "029a5cff0d7352a540f8be9277a5011b6d35e1ef545e0e74f503512b0aec977f",
+      "bytes": 3054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-1d-long.json",
+      "sha256": "bf957615e2a0c393bfb309c333496d5f9118db89755675a6a676daedc01b4831",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-1d-short.json",
+      "sha256": "d6b7c06ccd6f299c5e632202b868d726542aba5fcfdb938bb8cfdb6547641df3",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-1h-long.json",
+      "sha256": "e6c1b807b8b5ea8fe8aa713507203ec1003ab30bb4edd335e6dd1ecf289f8952",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-1h-short.json",
+      "sha256": "09c126d7071f07c5a83ca725d10d0ff0f3893ef28be010603dbc829bafe9475a",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-1m-long.json",
+      "sha256": "63368b328dfbb02c9c155e4b055b81559355139bfab64cbad898b5aa87eb8923",
+      "bytes": 3024,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-1m-short.json",
+      "sha256": "acacb1bd9d160d12e4c56a68db2eff27686c96d5d37c86b4df4041cc1d330580",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-4h-long.json",
+      "sha256": "b3c4b0d61fe7efb8b4d9aa71ddc52617f5879073830f5b3553e4ec71125109cd",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-4h-short.json",
+      "sha256": "58639b16cc98b4a6726836c377b7aa80d2ebba888d162ab700ec45de8677294a",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-5m-long.json",
+      "sha256": "dbb707e9eea579616498a0adb665889d18cd746e2d2863d75b9f1b33c37eb550",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-break_of_structure-5m-short.json",
+      "sha256": "1764967e6d3def00d7f8af8b6e0dcb123de3559aa393a67a5ca223c3a14b894d",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-15m-long.json",
+      "sha256": "24b3b2a0f4949950e57d1be6ff9ae91a4c0855cccf92e4171fb1f6d6b7049d32",
+      "bytes": 2948,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-15m-short.json",
+      "sha256": "f009a06d7711adee3d8e6391ca0a4bcbf1381ededa74647ad262baa008d3850b",
+      "bytes": 2976,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-1d-long.json",
+      "sha256": "b6cf5408d52a2cdc7d11f9c09f52a574a04a9c80489cbc7d3d149024ed189b1e",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-1d-short.json",
+      "sha256": "26c98be2bcaccc4770ea9978b08cc77463fa3f3cc940ab800bd8a6d956fdbbfb",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-1h-long.json",
+      "sha256": "d000a5035a3dd2eaf8d33e3adedc2c51153ebc161ead304f0844e16e3514fa8b",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-1h-short.json",
+      "sha256": "08d21731459cf420ceaa1273186272a5a7b3a1adc57e060e99cdb5b3713fbe29",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-1m-long.json",
+      "sha256": "aaf0e208328fa25b57b73eef52d2c65790ff1cf720526f8d3e057d49dfce448b",
+      "bytes": 2944,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-1m-short.json",
+      "sha256": "627864673d9db72e50196fb132e3669bc63fc56b09bb4b547d1ea9884d0fa7e5",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-4h-long.json",
+      "sha256": "f448174869aab076eda52602482d705c33e847fa67a62f6cd743f094e70b8e56",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-4h-short.json",
+      "sha256": "687ec9c3333652719270b3abc006489ceaa09ea3205556b96d16ce755db9a2bc",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-5m-long.json",
+      "sha256": "a20318002c91a7b94e9d47a8c7725e0ab7598b8981ce81d3be8b2c38d484eeae",
+      "bytes": 2945,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-breakout-5m-short.json",
+      "sha256": "01827dd407b215dc66fd8f9c10a64ebb22ad90f6e3fd1ebd3d9e3aa15f055247",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-15m-long.json",
+      "sha256": "ba6ff0827bd3afc8f8f7dee636d1d13d06ef5bf01ad248cb94a211b1ef8a7ac6",
+      "bytes": 2985,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-15m-short.json",
+      "sha256": "cc54470414ca8c6c6b73e394091142c0e6a9dda37b4382cd804305bf13984a01",
+      "bytes": 3005,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-1d-long.json",
+      "sha256": "c4928d739897ee6cb7246940d5c819060c571d8a760bfb3276329ec39428c04c",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-1d-short.json",
+      "sha256": "ebf01b857aa65a882b94ba3580e37450c8471779ca93c3fbc6e1d31cf9743da1",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-1h-long.json",
+      "sha256": "5afa29efea6040a9e7ad41cc11d5aeec2ea5bb066df274d14ca2c8a9d3bbd387",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-1h-short.json",
+      "sha256": "c4c8266526df8787d22d781a902b1fa5c1fa5348bcfcd7be2598207e13b114d0",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-1m-long.json",
+      "sha256": "1e6c55cadf4081b9bc0759d4be6898339f342d97943e3d48a0f4c3b006603c25",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-1m-short.json",
+      "sha256": "d66761546fa1238a5c253532a98b07d97c1397419c11f3e821f3f0c769b0d7c3",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-4h-long.json",
+      "sha256": "f83207797e664c59503b7a140e25990f6c73f8274e2101176645c06e6c591d08",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-4h-short.json",
+      "sha256": "1ff1044dbba9ba16f4a8df9ab6fabb04718a264068415eb3b31d7fe10959fc4e",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-5m-long.json",
+      "sha256": "31986ca81c596617c839ef1ba87ca228bf085de0524a0964409dab939df87005",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-change_of_character-5m-short.json",
+      "sha256": "4440b4ae5c8762a6846a56c03812fab02d7c1a2a894a7fc5dae2f8642bb1a7d8",
+      "bytes": 3004,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-15m-long.json",
+      "sha256": "5ea4f454e7ad9c743b4172f54b831b75e647424fae32cfdc890719c98e700890",
+      "bytes": 3020,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-15m-short.json",
+      "sha256": "f5451dcbd009d4f9c3cd9cd38dcde2b96724f9c76af36b525264d6eefd609bda",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-1d-long.json",
+      "sha256": "0aa10f6a1032b74f2e41f61451ee0df54d1a426a2c64373c92c417ee89dca6fb",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-1d-short.json",
+      "sha256": "32f80ed109798bb2236ed65131538ee3623ec90b2d0957542eb44a8ac0f894b3",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-1h-long.json",
+      "sha256": "25010431979f2b9605d35993d925c5ec0e2a588c3b14b80da7721abf123a824e",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-1h-short.json",
+      "sha256": "80ad01d573166970820de108a592d1e155ca84bc455d30c5bfea3e94b5b60e93",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-1m-long.json",
+      "sha256": "df5fe27dde00f99d797dbbb9e869a6528f5311b7aa0b81c6e0cb378baa8b3ee0",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-1m-short.json",
+      "sha256": "c8e2c5e0ae9991d8b8b96eaa961945ed829e19f5f7b05073b188a7705979ebe9",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-4h-long.json",
+      "sha256": "5cadb75c55076525ef1ddc1d254d29809098e3a74c7c564d0504fc394b827dd0",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-4h-short.json",
+      "sha256": "6cdf3d5b3a9fbb6a84eb49e9cf2abeb15a4b574f4e80220a1c81ab6b8f1628ed",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-5m-long.json",
+      "sha256": "3eea73448d9ce4ae347a833e0a24cf2020f7ba3156c12076f71ccb13f6caca3c",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-fair_value_gap-5m-short.json",
+      "sha256": "2333533bf237bcc525da58d4c5a3f3d3e829f94e85074dc9b52ebf8736131b51",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-15m-long.json",
+      "sha256": "be549ec1c7e694af4833a65f4c90bf0623099c551956623acfa3ab754ed2a182",
+      "bytes": 2956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-15m-short.json",
+      "sha256": "5a648a30056897d86a249efe5a96f110867a83fd5ee041f1827330e6ab71f8e3",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-1d-long.json",
+      "sha256": "c4f649127b71a0b21a489520c4effae364c2be2b1d8053f4756712af0cd78aca",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-1d-short.json",
+      "sha256": "b96856f00592f13b8fc2ba46ff1d142dccb15a6e34c805c9cef2c62292fa09cd",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-1h-long.json",
+      "sha256": "f66338c59ba9f234acc8ba1fa487b35b4b7e2237e0bc56a9a4440d38fd044168",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-1h-short.json",
+      "sha256": "f53922bfdfcc9d85fc8c29967090e2f3fa5a5bf8cca7930df56a766e6b94551e",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-1m-long.json",
+      "sha256": "c59e9c7ee67f113b5c0526f9d716905d3366da86cf20429eb43490bbe9ae4096",
+      "bytes": 2952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-1m-short.json",
+      "sha256": "b824a511ce19954820fb21aff53143441116adcb9c6a856b9fc19ccf672765f5",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-4h-long.json",
+      "sha256": "1d72c986df8302ef1a3b5d724f26ff1995bfae33c00c4b986100183b6fd0db7b",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-4h-short.json",
+      "sha256": "0bcd7702136f26e44e19003f9795e72ccc00d63a45d7ac014562763ccacfea40",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-5m-long.json",
+      "sha256": "a6e6c406458c8fd078ca6b389c6c1a4ad421d4be4cc80eb2edbde5c50253903c",
+      "bytes": 2953,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-flip_zone-5m-short.json",
+      "sha256": "a0a95a683b45334bdc2e4e228d14920d73b3fe59210fcc07f098a20b5fad3a92",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-15m-long.json",
+      "sha256": "bc1a3d7e0b1bb11583a396e76372de982321672b0aef255fbaaaf6007ec09f9f",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-15m-short.json",
+      "sha256": "e6e82b5a3167d0e1b50fe7279e5b6c9ce35bf0157bb743018bee768072184b8c",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-1d-long.json",
+      "sha256": "665f7c6692b54f75f95efa1dab5334dc6d4591b8882497b9becf144cda22bd60",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-1d-short.json",
+      "sha256": "68fe24736c54f5662f552f15700c26f43e743570a91533f251f2a17445ac4e04",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-1h-long.json",
+      "sha256": "de2515deede79c251eabef3c4e129eec62ab1ccb66daaf32dd0e36f998a7810b",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-1h-short.json",
+      "sha256": "4a076b4ba81ce93919a947f8403fb660d7a29519b001fa9711a1677b8789ceea",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-1m-long.json",
+      "sha256": "e6c5396405bab69d08a58927ce980b2d97f3fc942f86c652cb39b6ba35b4056b",
+      "bytes": 2977,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-1m-short.json",
+      "sha256": "520007e7a1d34db946269fc5b59a8b62c4a26d1003a2fd7e47a1311a6d6a59a6",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-4h-long.json",
+      "sha256": "e4a91d68a3ab34086598b3ea01ba4c2780e4e8ff9022e42cba1283de341c2924",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-4h-short.json",
+      "sha256": "701decb92092ce3bf22d12947f96dcdbf7ae86be5d702a0205bc4b28012c5bb9",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-5m-long.json",
+      "sha256": "45f9b33c39a880ba904329839f7994756927f23b661a1b431c5824b72a06e101",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-level_bounce-5m-short.json",
+      "sha256": "5c1c885c014845cf2fe4db7697fbd0b26b0a02377c29515ddecd587a3722bafd",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-15m-long.json",
+      "sha256": "32bc372a0d0e7c5cde5e140abbc856e4450ca030db878f2cd8232fbdb03b4d04",
+      "bytes": 3029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-15m-short.json",
+      "sha256": "3d0b88e23d56099c5682502af6d1848ffc14c4a60c70c802b8dd233eff3614db",
+      "bytes": 3056,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-1d-long.json",
+      "sha256": "972447eab24617edb704ab93f280f2d0fbf4d74c3b648b1ca8d6d1cd53d86c7b",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-1d-short.json",
+      "sha256": "8af3546469287f37b3dff172ca6ba5a644e1e81e39a0544e3ee64ed1a65ec614",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-1h-long.json",
+      "sha256": "7fc6b39ba05d883f4c44ea5a07654a5bf581031577ecb5016d285f21831f7084",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-1h-short.json",
+      "sha256": "c5c7465e3dc6b850b212650916193a3b8506a122c7429929ab46fcc0a54390b4",
+      "bytes": 3049,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-1m-long.json",
+      "sha256": "10da02d89e214fedb1a7afc9437252d570ab3d529ab21b9fad357fb733dd86e1",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-1m-short.json",
+      "sha256": "1c180dfa74c4ad4b190646125650a783c6632b6399e20879050fff40cafeb8e2",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-4h-long.json",
+      "sha256": "9ebce3eaea257a4159ed3fb4cfaeed61b6a8f26af0acef2aff7a3835d83b4842",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-4h-short.json",
+      "sha256": "ab772eeea5656d2ff5a96ff5a780f9130486b7805ca08ff36e9eb08aff100f8d",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-5m-long.json",
+      "sha256": "7555051edc7e8e5da06c99c52c6d1ad8d7467a19de28317c686009ba730a7542",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-supply_demand-5m-short.json",
+      "sha256": "4dd0efa4d281aa362d6a64bd4156a220a451ddb1f697a418e3c73761866b42e4",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-15m-long.json",
+      "sha256": "ebf0aaed2819d57492083926c38edd26135e30618d5bae8dc02c1d59b02c68cd",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-15m-short.json",
+      "sha256": "929c7e7bf82265232de5b483b68a8a5774b87f7d25bcfa464782ad3dd104ccf0",
+      "bytes": 3008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-1d-long.json",
+      "sha256": "119b32da93489385b686fdde7f786356b62b78790e826ac3ef435b8a488f58f3",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-1d-short.json",
+      "sha256": "7136e18ef541b9227194bb25573a31ae2ce05fde41718802dab6b971fade0561",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-1h-long.json",
+      "sha256": "c767977187fa3f70e43791be9e4d1c6279b99a45f97766cdcedf28a39b51750f",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-1h-short.json",
+      "sha256": "06892d4e43488418e2abc6dc4e3ab080a9f112d39da45754f5404e5bb7963434",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-1m-long.json",
+      "sha256": "c50237aa958a848f955ac097d00ee17c06c922d01acf5de078f8ae1f753f7fb1",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-1m-short.json",
+      "sha256": "c1599bbe84be1295135e2d2cda925343c32fe5cbb2b7f25291914e9e2434931b",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-4h-long.json",
+      "sha256": "73a753d93fe315b6bb9377a63b052899adf14df3cacfc9157ac07904a064b876",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-4h-short.json",
+      "sha256": "2736069f0d4457184194bfeb3fbbcb04a817d9295b2503704229374e6080b576",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-5m-long.json",
+      "sha256": "26918eddfee781f8315a3d160d827e8d2480bdb3fb910eb68f14544d7477d922",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-sweep_reclaim-5m-short.json",
+      "sha256": "8f2b8b416dc247eef71ab4c80e3b1bb346d85aadc5ee4ee588a54361814c2fbf",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-15m-long.json",
+      "sha256": "ec1399f5fc12567d9437a6f0754b4d3e227eef02d2b9b2c70db7549aaed60b6e",
+      "bytes": 2967,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-15m-short.json",
+      "sha256": "20988d80ea1d1d8b118d3e5dc91f87dd442af162e89b4d11610b4b5261d12e8a",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-1d-long.json",
+      "sha256": "a9d70a6eff9c334bcfcaee0a3db6c161d803b60b757342a12b44b06d5a6d9a74",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-1d-short.json",
+      "sha256": "fcd1c5d847ef709c59650256f1c6c8c5a4835f1f1feba5c106c342e2fb2acdbc",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-1h-long.json",
+      "sha256": "6b4391376114678ffd532176483a213bee2bd5844ee334585d19e63edc6075e7",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-1h-short.json",
+      "sha256": "248d243caf8aa140f841cdc963f5f5be6338196ede02f0c1011d38e5dd76bc42",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-1m-long.json",
+      "sha256": "b8b093cb1178c63fd8fa71226acef5d0378902d33a30879b5bcb56c542c7d36e",
+      "bytes": 2963,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-1m-short.json",
+      "sha256": "a16771902c1b8820b0d260201e56e694718779d53dbba219c797d6f54c605392",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-4h-long.json",
+      "sha256": "6c2de4365b925f31887f62ea1c7f56acdcc022df2f13219e05974f7365c93a6c",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-4h-short.json",
+      "sha256": "c39414898020cc7066b34d20d445c14da6f2ac4ae5cb27ed5681eb862708233f",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-5m-long.json",
+      "sha256": "160eec1f381467d5cfb5b3a70a7b5e43c3256ad3b8edf9377a60a2c74a288dcb",
+      "bytes": 2964,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_line-5m-short.json",
+      "sha256": "d0c7a5630a2bac5599815eee41aa35c255f8587969dcf80c04a9a0ebb4647456",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-15m-long.json",
+      "sha256": "bfdbe13f6b318efd2b977981ef93453096f13e90e328fbe8859ac38820918b8b",
+      "bytes": 3050,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-15m-short.json",
+      "sha256": "d13f370f0839d8a3b6516f9a303a9e22c9bbe045e1298b985c694c83289f0fb7",
+      "bytes": 3074,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-1d-long.json",
+      "sha256": "8a28ca965055828676acf2f9ee874fa34d06975baebe8094e799509986272d2c",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-1d-short.json",
+      "sha256": "41c77eb55ec8a44c989fdf072e5e6b68c6d01dc580af5807f85a88f37f09a62d",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-1h-long.json",
+      "sha256": "bec41b5768ab5f6591c0774acd9364d1dfc082dc4fb7a98a95a7c49834ab7cb6",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-1h-short.json",
+      "sha256": "1a411bff7db264681417a1d813ab73607febbee62da02ce540b6cceb8c053068",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-1m-long.json",
+      "sha256": "cca7cf9b199d886b202185eadfb30da2d5b8c070eb1edf1ed1eb3e824e41c23d",
+      "bytes": 3046,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-1m-short.json",
+      "sha256": "b13c62445c227645cb96e545459248204cd9e65d9fd11f09698e8e59cba1c453",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-4h-long.json",
+      "sha256": "dfd70f3b662215bec0630ac2df6a5eee97a0c306a44e75e12461d16eda684330",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-4h-short.json",
+      "sha256": "645560b5a03c66c44763a05644b7b0659b19899a848412ad96be68bf91b0ebfc",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-5m-long.json",
+      "sha256": "7f2f417a2649cf18b779610cc3d643aa1a849f3d83d3144bcf1dc3332b929409",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/strategy-matrix/MATRIX-trend_pullback-5m-short.json",
+      "sha256": "726ef873f321c8d9ae256e3c1b2d0ae28b13bb07cde2de626a02a7bd504a61f9",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

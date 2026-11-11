@@ -1,0 +1,14 @@
+{
+  "original_subject_receipt": "20261110T195446947123Z-original-verifier-and-real-writer-lock-renewal-strictly-after-observed-contention",
+  "files": [
+    {
+      "path": "backend/lab/worker.py",
+      "sha256": "aea3f2204e07a88170e34ba02f7019c9b08c9a637c241a996dc31c91b595d32d"
+    },
+    {
+      "path": "backend/lab/store.py",
+      "sha256": "73688a9be272e3926f3604b2336d3c34570097e7fdd3172ab61f972baaeebef6"
+    }
+  ],
+  "actual_before_change_bytes": true
+}

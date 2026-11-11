@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "authorship": "Expected values and priority/timing rules specified before production fixes; reference uses supplied signals, not production detector logic.",
+  "tolerances": {"price_dollars": 1e-9,"quantity_shares":1e-9,"money_dollars":1e-7,"other_finite":1e-7,"discrete":"exact"},
+  "rounding": "Decimal input text; adverse/outward tick rounding; cash and borrowing retain fractional cents until display.",
+  "cases": {
+    "changing_short_notional": {"quantity":19,"minute_open_prices":[100,101,102],"annual_borrow":0.365,"expected_borrow":"0.003997916666666666666666666666666666666667","reason":"19 * (100+101+102) * 0.365 / (365*1440); each minute uses the opening mark known at its start."},
+    "last_session_minute": {"quantity":19,"first_close_borrow":"0.001319444444444444444444444444444444444444","reason":"One exposed trading minute at 19*$100; charge is present in that session's daily equity, before the overnight interval."},
+    "large_per_share_fees": {"risk_budget":100,"entry_price":100,"stop_fill":97.99,"fee_per_share_each_side":1,"quantity":24,"net_profit":-48,"reason":"(2.01+1+1)*24=96.24 <=100; 25 costs100.25 and is infeasible."},
+    "older_pending_first": {"winner_symbol":"BBB","quantity":50,"reason":"BBB's older limit and AAA's newer market order become fillable together; signal availability precedes symbol in portfolio order priority."},
+    "configuration_priority": {"reason":"Equal-time/equal-symbol candidates sort by configuration identity, then signal identity. Reversing opaque signal IDs cannot reverse the configuration priority."},
+    "same_close_mark": {"quantity":50,"reason":"At the close, $10,000 equity with a 50% symbol cap permits 50 shares marked at100. An earlier open110 is not the closing risk mark."},
+    "same_close_other_position": {"new_symbol_quantity":31,"reason":"25 BBB shares rise from100 to200, so equity is12500 at the close; a 25% AAA cap permits floor3125/100=31 shares."},
+    "new_limit_gap": {"quantity":49,"exit_price":94.99,"net_profit":-245.49,"reason":"Conservative limit entry100 with opening market95 has its stop98 already breached. Exit at opening95 less one adverse cent, rather than inventing an executable97.99 stop fill."},
+    "nonpositive_rounded_target": {"expected":"reject","reason":"A short at0.08 with stop0.13 and1.5R produces0.005 before rounding and0.00 on a0.01 grid; zero is not a tradable target."},
+    "liquidity_decimal_boundary":{"quantity":29,"reason":"100 prior shares * participation0.29 = exactly29, not28."},
+    "exposure_decimal_boundary":{"quantity":29,"reason":"Capital100 * exposure0.29 permits29 shares marked at1.00."},
+    "target_exact_trade_through":{"entry":100.01,"stop":99.01,"target":101.01,"high":101.02,"reason":"High is exactly one cent through target, so it qualifies; binary addition must not require another cent."},
+    "limit_price_grid":{"level":100.015,"long_limit":100.01,"short_limit":100.02,"reason":"A buy must not exceed its declared maximum and a sell must not undershoot its minimum; round their limit toward the permissible side of the grid."}
+  }
+}

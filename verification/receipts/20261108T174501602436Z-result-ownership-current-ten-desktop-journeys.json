@@ -1,0 +1,1745 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T174501602436Z-result-ownership-current-ten-desktop-journeys",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T17:45:01.602773+00:00",
+  "finished_at_utc": "2026-11-08T17:49:38.771689+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "3eb9b68cfbd057f54ed442759fc837d007d3c344101674fdbc729e3b698d2ffa",
+    "verification_plan_sha256": "482bdde366d64ed9145f03f510ca831e6fa86288917fefa5677827928a6c4fa0",
+    "catalog_sha256": "7b651e3c1c1b505c7d265862f80e39d32616d62d99535b6a95b6b37381a362ad",
+    "source_files": {
+      "PLAN.md": "3eb9b68cfbd057f54ed442759fc837d007d3c344101674fdbc729e3b698d2ffa",
+      "VERIFICATION_PLAN.md": "482bdde366d64ed9145f03f510ca831e6fa86288917fefa5677827928a6c4fa0",
+      "RULEBOOK.md": "243275fa468002cec5f7c878bd6cc10f44727aa81562b8031b419360c0b05487",
+      "decisions.md": "34843cb1cbea4018242a7858291783b356338b084e5b2bb160244a6429aa8061",
+      "README.md": "5199ddbb11be2b9a3c6e1a9fad19a4c272ffbd7e21b87f3b4e2b643e2583575c",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "7b651e3c1c1b505c7d265862f80e39d32616d62d99535b6a95b6b37381a362ad",
+      "verification/implementation-map.json": "237c30e00ade6ed20b6ebc7bc0f0df7b4bb32dd1c4a3d6de56c0c5f7ce7dec9f",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "e0f48a9dae50ec3fefcd6d71a9ff6041524f9323cade250ec630b7f701c18bd3",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "9d7fca651dcc6e82dbb5514ee4ac6e3ac023c90ba0d368503624ffa7934a3202",
+      "backend/lab/api.py": "416fd3d74332afc27f8631b03d70581bf7319a7f5385952d325abcd54d9f513c",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/borrow.py": "761e6c44eeb6b555285a7af8f2b8848fe0b4483010bd081077baee5b03cce328",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "68ee337ee2706584c1818413afc406b35f37b26df6293c612f25ab81dc002458",
+      "backend/lab/controls.py": "b1402b07f8d400af47b9b7fa6a8f39facb1e50666182f2a18ce9aabfb8918879",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "ef1fd10bcc12b8030d56a00bc0c07d8ffa58dac5eb375386d9287408f0430b79",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "ccf7a810550c1ab644be6bbdd07f1757c602df4f25be1acb1de031f7af1a3f13",
+      "backend/lab/news.py": "445e8a74121ddb670b2941281272f81f3f3f23b9eb11dbcc2380465f6796064c",
+      "backend/lab/presentation_audit.py": "6756b2af38141a831de145a79c51cf6c9b5744dc8af430da88799ec334794345",
+      "backend/lab/presenter.py": "abf20ae35059986b6851a4daba8349a21d0f78fe26817550d9f7b0d20663f3bd",
+      "backend/lab/presenter_assets.py": "5818619b27374c0edaf3488229235a1b3bb8e2925d575504de2213493f84096c",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "ea2e88f36fd6d035eb8072713b0f45c8b152bee459c116798e6ba4d59dc8d188",
+      "backend/lab/sensitivity.py": "b9b8eee5e228eed82acb9526ef278083ece1ebc04282c665ebb3de375a620e08",
+      "backend/lab/service.py": "6d9d37ecdbd940fa7dcee82b407dbfde6b46f8f84b5f80ab9fb010fe6605b70e",
+      "backend/lab/signals.py": "cffdbdee98486c28fa703d60471bf679de0b11af1c8f05803a222176b6b08aff",
+      "backend/lab/store.py": "f8fdf58374ecd9218e2104d752ad0ee5f1f0d337be6475c06917f177ad292271",
+      "backend/lab/trials.py": "3546ed424331825e279c2d5d393f4c90f5234be1f9fd63c38ab9f1470253a0a6",
+      "backend/lab/worker.py": "65cb3baf10482734b844a7d0cac79655bde762dd3f103468f50d68c000a9ea7e",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_borrow.py": "b9bf4101f0447927269a9a153c9ceb5ee3201a1a6f99b90c913d6c766647c23b",
+      "tests/test_borrow_integration.py": "5d26da810461382ae4b8afc6109ec37f1e616971713ce81a429a9e2837c93020",
+      "tests/test_borrow_properties.py": "ec659e2f796b88423772cf5a1fc0551041724db4f40f7a0d04f6c33c3c10742d",
+      "tests/test_borrow_sensitivity.py": "5125550badba231e86360c007cd02ddf933446d8f1953caa280e3707ba8c0b66",
+      "tests/test_borrow_sensitivity_integration.py": "f247d0482d32e3b3707d5d618d1ff841f3239c6c5a10b4171816ca158d7fd71c",
+      "tests/test_borrow_sensitivity_presenter.py": "c11788f09687edfaccc53c3b747bcd1659be2cb009385bfd68706eb499176ad1",
+      "tests/test_catalog_generation.py": "0573978ee2cdedf17164d2f4134e33c49970ce834203b284724d0c4c37c02902",
+      "tests/test_confirmation_filters.py": "dd45f55af7dd00bef2f4d273e439f1f4208c6762751995ac4d6fbd341da59a1a",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_data_service_boundaries.py": "35e020ccd1559c0e398302cbecb580169fc4051f98df4b61c684b66c5e045565",
+      "tests/test_evidence_recorder.py": "a9bc5bc156ac4910d007d042a16b28913dee479125655443baa39ae031240a6a",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_frontend_capture_privacy.py": "d7c1a4450d00db59e74b68555b66f12efd123cb392324839f8aae94793da33c2",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_news.py": "087a4b67386bcd42271bccef772491b7fe03dba41896d7634537f68d07e62285",
+      "tests/test_news_acquisition.py": "03529224d25beee545b3f73b186e26f8f786ba8a968fd8ee3d7c0a75950b3104",
+      "tests/test_news_faults.py": "420e7794a5279f02d740ac5ebee3fcf4156eaaed0d6478407f70ccd4c003516c",
+      "tests/test_news_integration.py": "82c0e04ed1e26e95f7ea654dbdb88c6c65e1211d0cc158ce8a0aae2ef6a0e73b",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_presenter.py": "faaa77a3137090327df4e57a847edd8af78684a6590a2f19d350317ce34f0d68",
+      "tests/test_presenter_api.py": "d72aa8ebdbbc04c4013b373b8e5a317412c4d24902eb77596367d42a98db79f4",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "259c69e8f27b665e2d93a4899fdc8c99775bdc7e3949466b8af7c0fd950931dc",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_trace_privacy.py": "e3b961683f2f46d7ef9c87934bd47f6aacd10e6dc7f045f3e072165cbe647a00",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "ff56c5802b49ce6b342c7a442f01701eeaab33d0d8df5124faa10db849dbdb37",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "65cb256b32af7cc465f08cfb6306cdbe0063352bcefdae9525b03decd3080bdf",
+      "verification/check_numerical_coverage.py": "7d40878875dd120f9575c6d2405bc2d3d75e23edd66ffbb781bbd01525b41748",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/critical_borrow_mutations.py": "b7b6c10212da2bb90a6aef883a3657887de8e1b32d7a491cc4bd978d3cbfa82c",
+      "verification/critical_sensitivity_mutations.py": "9bf3267ac51b9c835e614964be4b5ccf4f3888d8fc765633d46fe649afaf5725",
+      "verification/critical_signal_mutations.py": "78e211a657abd997d68b111bbd5d2968d2b90d86c2957152aa947c0bbfc744ee",
+      "verification/frontend_check.py": "b601066f5ff30a86efaa1420071c45c8c56caab8a8c418170d7899bca4b30c7a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/presenter_reference_run.py": "a70dc854626bc318a0ca1d7361094f4a00f8422fca06b8debe15f6d0cd197666",
+      "verification/real_reference_run.py": "b15fa2af1ce322c2eff6c1a187d8e0062c53c45470e4553169ba801c6959a70f",
+      "verification/reference_execution.py": "7f45a52422d0538f91fb0cdc79b04bbd9a0fbae66a5e572fac69fe528936fecf",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "verification/trace_privacy.py": "2a13f99d022e285f49d98b4d3d963c501a61b3f2b9b12c05fe3c89e63add96dc",
+      "frontend/src/Ablations.tsx": "de34081bf2c6fdce8cb0f3fcaddba4f4e8fd06f603b625bb1b05f9a7ade7ffb9",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "b9072ba469c9b089bca89e7aa2d17d8247df1a229b78d5946611fb07adc483ed",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Borrowing.tsx": "54c7e6687905fae3cd821841fef3ed0dd90ae67f7aa29d730f71a74a85c1f099",
+      "frontend/src/BorrowSensitivity.tsx": "03d5d7a9107b5f77b87d7393d16a9b581633fe8f636b2e7b0e49b3406b31134c",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/NewsCalendars.tsx": "78d92df0110f4c8d96ca7fe1fbf58857fcfa858dd728f80c3d342aa98cf6c1cb",
+      "frontend/src/PresenterExport.tsx": "e67b5d193af29e0410c0cd0194ee9ecd782928c8bbed3674bf6d758ff01a48ab",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/borrow-sensitivity.spec.ts": "eed50e8d0c39187392359a39a4a938fe2ad5818d7257c6f9d10fd6aeafc329c8",
+      "frontend/tests/borrowing.spec.ts": "57cb2ab116ed23debf515cc7d96b667699077d9ca9b79bee8f00d3879f8377ab",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/news.spec.ts": "32da553c6dcc99894f6ab5f3d70502e16cf94f2242b0feac0eea681539b90af5",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/presenter.spec.ts": "8e80011871fc850154d48ed60973de62273e75799b82e2aa3477705639a0115c",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/tests/result-ownership.spec.ts": "9e8cee992fb4f760ff18b1a349e2f13c17009565a89be18d16c5a66f34a3fa88",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "e008b55d234807d1a58d8a26acbc515f0b7e0c4bff6a4a1b6f0d28c80ceb6e8e",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "243275fa468002cec5f7c878bd6cc10f44727aa81562b8031b419360c0b05487"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/runs/sensitivity_browser_app.py",
+        "sha256": "a579ca7f0d4eda2b9fefdc35ca4ff95d68883e1401e3a169dfc9d52735cc4419"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      "./.venv/Scripts/python.exe",
+      "verification/frontend_check.py",
+      "browser",
+      "result-ownership.spec.ts",
+      "borrow-sensitivity.spec.ts",
+      "borrowing.spec.ts",
+      "news.spec.ts",
+      "research.spec.ts"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/stdout.log",
+      "sha256": "708396bce5a3d6170c25a4c03f0638b35e1b9f5902fe9deddfe95f417362c18c",
+      "bytes": 1904,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/stderr.log",
+      "sha256": "dae04ab6eae85474499db184fdf4297eba1134c3259d1b5ff5380b6102da5657",
+      "bytes": 331,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/.last-run.json",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "bytes": 45,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/account-0.csv",
+      "sha256": "7b08c2edc0959d2a9e8a7e68b0119ea427d385c53798352918a43c855d2f6016",
+      "bytes": 3355,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/account-0.json",
+      "sha256": "eb1a45cb73591d7a8868dbe18fec6569349187990e4b6da304e824e6a2dffde7",
+      "bytes": 157725,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/account-1.csv",
+      "sha256": "c6d6c4022f3a3761d1da0cea3dc917c9c7889b2510c59fb991a3af7354d79d0e",
+      "bytes": 3370,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/account-1.json",
+      "sha256": "1c0ab6f5a0178f7fce1d6e926eb18a4580bc8782c35d9e29a1ef1da1f0bf7461",
+      "bytes": 241190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/account-2.csv",
+      "sha256": "a85862923553bcf0045cc3bb15a899bf95df30c3633fec41631d8784d3300e59",
+      "bytes": 3372,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/account-2.json",
+      "sha256": "f193e07682fee3ef0c14ae2cb5d89232d7d2afb64c7317c62fd4dba517f36861",
+      "bytes": 241116,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/account-3.csv",
+      "sha256": "5ead7e208450b9160dcb1eec75ab0e030f402539cbbbdc8ef912c698caf7e452",
+      "bytes": 3371,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/account-3.json",
+      "sha256": "066fa4c8dca1a852baa6021fc0d5ed253b3626581c2c5d54b47d508d85e051d6",
+      "bytes": 240796,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/comparison.csv",
+      "sha256": "198c8016cdc3c7cb11cc0d7c82e90afb75e3fa13865f9a2bd5dda60d6d89e32d",
+      "bytes": 1240,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/comparison.json",
+      "sha256": "4a85616fdb8aeb7a6cdd5e2fe2b8c77dc7db5d5e65888509c8d13aba9dd10234",
+      "bytes": 25755,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/selected-account-presentation.html",
+      "sha256": "cf41bfaa926c26c0e4693ebc44dac68388e20cadea7903cbdaf0921d8ec07a6b",
+      "bytes": 51270,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-canceled.png",
+      "sha256": "4169a2b7123226ad54028535b7b8587588c4636eb9f668309883c30a6b101e5a",
+      "bytes": 521496,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-four-outcomes.png",
+      "sha256": "bbd57a670f4705c5d3475f7df9c86e0d642e0b0c8a052a66522380e381d77e78",
+      "bytes": 537434,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-observations.json",
+      "sha256": "9de4f61fea7258541a34488bd3ed640ed9604461d23b7b5e1365cc5d1bf8ea9c",
+      "bytes": 3265,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-1.png",
+      "sha256": "ff11a9eecf977044662bdcbe02cdaa5956e70b47af5b492d357582636c4ae9a4",
+      "bytes": 40714,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-10.png",
+      "sha256": "953b43655cfda99ec725bc7204d3c80c8b319db3a93c93bfcf7f8bffac412214",
+      "bytes": 43630,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-11.png",
+      "sha256": "8f6ccb08d96156fe0917fb73c96fdc97b21baa50b0bcea251fa7503557fced32",
+      "bytes": 40245,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-12.png",
+      "sha256": "6371a6c49cc83c1294143b9e84e3cfc36b3a1e7f5ccb837cd0cbe50134220e2f",
+      "bytes": 40497,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-13.png",
+      "sha256": "f45f30d915db349d59845229a21a614b24d8d44efdb61205902b6120edacaa7c",
+      "bytes": 33631,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-14.png",
+      "sha256": "377ad58cf2914b4ce737284ce5263d19afeeb4438ee732c57fd77b91fd9a86a7",
+      "bytes": 33072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-15.png",
+      "sha256": "7f5c025d4bdb65a429af6510001e3e82e4706d03bcede257f3a2fe0e0eb0cf6e",
+      "bytes": 37084,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-16.png",
+      "sha256": "55815f4b1b7e6d8be8c064d4a5f6c7f09b2f1b72c6badfd1aa2e136d4cb9cb40",
+      "bytes": 37949,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-17.png",
+      "sha256": "d04edf5cc5a3aa201c1e60dd6cd074d11276cc03cf62f613eaac483ef551e757",
+      "bytes": 31230,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-18.png",
+      "sha256": "d5c21b78abe6ae5d2c57d75e40b0d4c634cbce99c0d48f7755946db84c6bbc00",
+      "bytes": 34510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-19.png",
+      "sha256": "0221b889ed21f55194790495ed42fcd9caefc57289538094b58cd9f2f1a06ae0",
+      "bytes": 31310,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-2.png",
+      "sha256": "902b964d5471484d4d38b110d91877b401d4ed738682395ab2cce16acc1e310c",
+      "bytes": 33627,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-20.png",
+      "sha256": "00844d7175b9a4c01ecbc5fdd6d96ddc5fbe733ff3ffbb2cf015ffa12606a7ab",
+      "bytes": 31827,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-21.png",
+      "sha256": "063f8c8d54a962e40a058411147f8f68499eec87440291ccb65bfa5cf82fd290",
+      "bytes": 43129,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-22.png",
+      "sha256": "c5e89192bbed868e0a0567607ea066df5c29132f2a300e59ec5a5a71464cac6d",
+      "bytes": 40463,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-23.png",
+      "sha256": "014980e90017823380e45c0c14c53b687a324fe76329d794c1c0b1508d1e46d6",
+      "bytes": 40501,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-24.png",
+      "sha256": "902b964d5471484d4d38b110d91877b401d4ed738682395ab2cce16acc1e310c",
+      "bytes": 33627,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-25.png",
+      "sha256": "377ad58cf2914b4ce737284ce5263d19afeeb4438ee732c57fd77b91fd9a86a7",
+      "bytes": 33072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-26.png",
+      "sha256": "7f5c025d4bdb65a429af6510001e3e82e4706d03bcede257f3a2fe0e0eb0cf6e",
+      "bytes": 37084,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-27.png",
+      "sha256": "55815f4b1b7e6d8be8c064d4a5f6c7f09b2f1b72c6badfd1aa2e136d4cb9cb40",
+      "bytes": 37949,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-28.png",
+      "sha256": "d04edf5cc5a3aa201c1e60dd6cd074d11276cc03cf62f613eaac483ef551e757",
+      "bytes": 31230,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-29.png",
+      "sha256": "d5c21b78abe6ae5d2c57d75e40b0d4c634cbce99c0d48f7755946db84c6bbc00",
+      "bytes": 34510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-3.png",
+      "sha256": "377ad58cf2914b4ce737284ce5263d19afeeb4438ee732c57fd77b91fd9a86a7",
+      "bytes": 33072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-30.png",
+      "sha256": "0221b889ed21f55194790495ed42fcd9caefc57289538094b58cd9f2f1a06ae0",
+      "bytes": 31310,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-31.png",
+      "sha256": "b1b40b50ddbefbaff8f40241e6af8f7873861005cc9d85be67a7a4ec90bed307",
+      "bytes": 31796,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-32.png",
+      "sha256": "de38b6a867e3b75086204cebf4961eb81ab48c40f3e562ce98518fd3c6abde82",
+      "bytes": 42843,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-33.png",
+      "sha256": "25ea65137e792be3f43d7ed41c0164f01d08c0ad88c8a1f679c5de7f8a870da7",
+      "bytes": 40712,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-34.png",
+      "sha256": "d6cc0488d29f7b4ba7ba5828ff3f00f5f4a69e1e2aa656aaaf707ccf31ec7e9d",
+      "bytes": 40440,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-35.png",
+      "sha256": "4c89d5447f8b41da9876d650b9dfe91b15ac5424323910feb02142e912ad50ad",
+      "bytes": 33604,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-36.png",
+      "sha256": "377ad58cf2914b4ce737284ce5263d19afeeb4438ee732c57fd77b91fd9a86a7",
+      "bytes": 33072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-37.png",
+      "sha256": "7f5c025d4bdb65a429af6510001e3e82e4706d03bcede257f3a2fe0e0eb0cf6e",
+      "bytes": 37084,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-38.png",
+      "sha256": "55815f4b1b7e6d8be8c064d4a5f6c7f09b2f1b72c6badfd1aa2e136d4cb9cb40",
+      "bytes": 37949,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-39.png",
+      "sha256": "d04edf5cc5a3aa201c1e60dd6cd074d11276cc03cf62f613eaac483ef551e757",
+      "bytes": 31230,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-4.png",
+      "sha256": "7f5c025d4bdb65a429af6510001e3e82e4706d03bcede257f3a2fe0e0eb0cf6e",
+      "bytes": 37084,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-40.png",
+      "sha256": "d5c21b78abe6ae5d2c57d75e40b0d4c634cbce99c0d48f7755946db84c6bbc00",
+      "bytes": 34510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-41.png",
+      "sha256": "0221b889ed21f55194790495ed42fcd9caefc57289538094b58cd9f2f1a06ae0",
+      "bytes": 31310,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-42.png",
+      "sha256": "bbaa7e10f18a4d513647203e667ebb7df90d9dac5185c6140aced2d88136426b",
+      "bytes": 31814,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-43.png",
+      "sha256": "c46bf137a90f37300ccd8c01f21e1c286c90363a50c7d7b0a0ae03c55ca3b9b6",
+      "bytes": 43498,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-44.png",
+      "sha256": "eaf3fefe590b8fd87e69ace44aeca5f2b7de4ebc206dd82a0ece9552c354fa63",
+      "bytes": 40537,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-45.png",
+      "sha256": "8426a05b7ea3aac421b1322d5627036c661e6b84f0071f935f8eca44050a5ecb",
+      "bytes": 40490,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-46.png",
+      "sha256": "500d6649f48baf9aa3d7a93ef0612ae865362eaf90ff9f3fefa4c47b8942f81f",
+      "bytes": 33652,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-47.png",
+      "sha256": "377ad58cf2914b4ce737284ce5263d19afeeb4438ee732c57fd77b91fd9a86a7",
+      "bytes": 33072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-48.png",
+      "sha256": "7f5c025d4bdb65a429af6510001e3e82e4706d03bcede257f3a2fe0e0eb0cf6e",
+      "bytes": 37084,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-49.png",
+      "sha256": "55815f4b1b7e6d8be8c064d4a5f6c7f09b2f1b72c6badfd1aa2e136d4cb9cb40",
+      "bytes": 37949,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-5.png",
+      "sha256": "55815f4b1b7e6d8be8c064d4a5f6c7f09b2f1b72c6badfd1aa2e136d4cb9cb40",
+      "bytes": 37949,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-50.png",
+      "sha256": "d04edf5cc5a3aa201c1e60dd6cd074d11276cc03cf62f613eaac483ef551e757",
+      "bytes": 31230,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-51.png",
+      "sha256": "d5c21b78abe6ae5d2c57d75e40b0d4c634cbce99c0d48f7755946db84c6bbc00",
+      "bytes": 34510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-52.png",
+      "sha256": "0221b889ed21f55194790495ed42fcd9caefc57289538094b58cd9f2f1a06ae0",
+      "bytes": 31310,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-53.png",
+      "sha256": "3f02085f412f00e688d0be67d77d60aa8da8946fead5efd095afad1e16b4ab3f",
+      "bytes": 31806,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-6.png",
+      "sha256": "d04edf5cc5a3aa201c1e60dd6cd074d11276cc03cf62f613eaac483ef551e757",
+      "bytes": 31230,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-7.png",
+      "sha256": "d5c21b78abe6ae5d2c57d75e40b0d4c634cbce99c0d48f7755946db84c6bbc00",
+      "bytes": 34510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-8.png",
+      "sha256": "0221b889ed21f55194790495ed42fcd9caefc57289538094b58cd9f2f1a06ae0",
+      "bytes": 31310,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-9.png",
+      "sha256": "9e1bd4ca3128cfaa80c36ef9425e162862dc1fad788e6dcd0930e84c73054ee9",
+      "bytes": 31856,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation.html",
+      "sha256": "405c637a47977b07441a92315e0a8c179367bc6182594e7981747573462512ae",
+      "bytes": 137033,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-selected-account-trade.png",
+      "sha256": "593f083bdf2a15a9afbb33dfc7d6c71b58395adc1745cf73112b8baae4dc234c",
+      "bytes": 188791,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/test-finished-1.png",
+      "sha256": "3f02085f412f00e688d0be67d77d60aa8da8946fead5efd095afad1e16b4ab3f",
+      "bytes": 31806,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/trace.zip",
+      "sha256": "edc1c79d310e6e7acf86f4ae9bbfbdf32f2d603b57c062734caf58f7c4161235",
+      "bytes": 7217422,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/trial-registry.json",
+      "sha256": "e7209fe4a14f691a773f2960fdc3ab3bf37f7ec16872433e77fb928540bef496",
+      "bytes": 6409,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/account-0.csv",
+      "sha256": "7b08c2edc0959d2a9e8a7e68b0119ea427d385c53798352918a43c855d2f6016",
+      "bytes": 3355,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/account-0.json",
+      "sha256": "afc076778eed72929a2dfbaf24b479584b66a47e5fb7a9f982f00743e0913b2b",
+      "bytes": 157725,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/account-1.csv",
+      "sha256": "c6d6c4022f3a3761d1da0cea3dc917c9c7889b2510c59fb991a3af7354d79d0e",
+      "bytes": 3370,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/account-1.json",
+      "sha256": "bc56277e003bd17c57449eb6d811197f53709701585d98c7e47e341449b46a7f",
+      "bytes": 241190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/account-2.csv",
+      "sha256": "a85862923553bcf0045cc3bb15a899bf95df30c3633fec41631d8784d3300e59",
+      "bytes": 3372,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/account-2.json",
+      "sha256": "086e993929403f7eb7d2c1bca0a428a0616778e1bd11afa0841031751e67c102",
+      "bytes": 241116,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/account-3.csv",
+      "sha256": "5ead7e208450b9160dcb1eec75ab0e030f402539cbbbdc8ef912c698caf7e452",
+      "bytes": 3371,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/account-3.json",
+      "sha256": "31e73797f442e893058cb469e3b0a724a6224e3bcabf73478db0f88a02250f50",
+      "bytes": 240796,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/comparison.csv",
+      "sha256": "c2f011fc6ba419788015fe6070a581482231cc78dba3b2c32725e7925b42166e",
+      "bytes": 1240,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/comparison.json",
+      "sha256": "7d586f6f84d02124cc42249071f73313226d6f0d76a50e33231868536fc3d33c",
+      "bytes": 25755,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/selected-account-presentation.html",
+      "sha256": "c543c91efc768217238333ccefd90dd382fd57ce48d1a3dd118ed94cfe26168c",
+      "bytes": 51270,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-canceled.png",
+      "sha256": "e26da28e4466209dff2bc6afe67580d7f0ec83fa5fdd7f4998e727cad5431523",
+      "bytes": 505585,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-four-outcomes.png",
+      "sha256": "9712b54b7480ca288f5e361097dd8c557a9a08da12a8bc5fccced48b88b374ed",
+      "bytes": 536927,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-observations.json",
+      "sha256": "50ea52f9fbf258af428a30194d77a7b9d2e5a208d7419f4512bdba9697b2fbb3",
+      "bytes": 3266,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-1.png",
+      "sha256": "b12731f0d706d21ab3c0c15c80d883e5969467a436d55a8dd509eabb21393821",
+      "bytes": 85655,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-10.png",
+      "sha256": "06806e564fae306b1c22fa94f21c997553e1ff9e44ed316d4856e5552078364e",
+      "bytes": 82498,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-11.png",
+      "sha256": "c4e5a2e74977741abe5f146849cf4796eb720976c03dbe5ae86ea4fd3f64502f",
+      "bytes": 77861,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-12.png",
+      "sha256": "9f2dca4cc97a8b48f4f467c8e4d158e6e357c8f2ad0f5a09b0b24c7e0faacf78",
+      "bytes": 85636,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-13.png",
+      "sha256": "036b2c652a4906f6897778127ab89b7d5552023cd446dab08261f456b7cf8515",
+      "bytes": 70376,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-14.png",
+      "sha256": "7f1a6aeb84d9fbaf93af2315e77a4bd729dd8c7a172d05c34a369cd11851c240",
+      "bytes": 67929,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-15.png",
+      "sha256": "9a8cf207bb8b9d07a0840663358e06c7aaad1b90387e8045f59bb6a7eea67021",
+      "bytes": 78067,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-16.png",
+      "sha256": "e172c0140d3a7d95dc224f8bdaa5be97cd48011b739492415a80bbb1fb007e21",
+      "bytes": 80482,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-17.png",
+      "sha256": "a6665d14bf6567dd2a012b087223f8a62ab0aa71ee7b48c135e3b3724c9c2aeb",
+      "bytes": 63763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-18.png",
+      "sha256": "8823df518a69f2724011de03d793bfbd8ff465e926b250a3a7dac227fccfb058",
+      "bytes": 69861,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-19.png",
+      "sha256": "e93cc1db2640497fd5a911cdb93a5a0857d26ab2503e32f710cbd6fa4aebfd7b",
+      "bytes": 61490,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-2.png",
+      "sha256": "8913e6c71776fb40aa1f51428293d0a252580b7602842d341960fef90d3aada4",
+      "bytes": 70754,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-20.png",
+      "sha256": "f5d2803d118185cdde4649f4b873a20cbf53a9bad96790556a6206943979b772",
+      "bytes": 63743,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-21.png",
+      "sha256": "22e73609162c9c4b178faef9cf5b9348ba1c135a09ed1afa956def5388c2b767",
+      "bytes": 84267,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-22.png",
+      "sha256": "9cbddac507ea026ab2532555cae6dda3bba7e65e0458de985233cdbbd8d8dd07",
+      "bytes": 78240,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-23.png",
+      "sha256": "2b02713e0133afa1c8ad1a2b5f3a2b7521540094b8e734bc2fd1d784f3990fba",
+      "bytes": 85627,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-24.png",
+      "sha256": "8913e6c71776fb40aa1f51428293d0a252580b7602842d341960fef90d3aada4",
+      "bytes": 70754,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-25.png",
+      "sha256": "7f1a6aeb84d9fbaf93af2315e77a4bd729dd8c7a172d05c34a369cd11851c240",
+      "bytes": 67929,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-26.png",
+      "sha256": "9a8cf207bb8b9d07a0840663358e06c7aaad1b90387e8045f59bb6a7eea67021",
+      "bytes": 78067,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-27.png",
+      "sha256": "e172c0140d3a7d95dc224f8bdaa5be97cd48011b739492415a80bbb1fb007e21",
+      "bytes": 80482,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-28.png",
+      "sha256": "a6665d14bf6567dd2a012b087223f8a62ab0aa71ee7b48c135e3b3724c9c2aeb",
+      "bytes": 63763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-29.png",
+      "sha256": "8823df518a69f2724011de03d793bfbd8ff465e926b250a3a7dac227fccfb058",
+      "bytes": 69861,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-3.png",
+      "sha256": "7f1a6aeb84d9fbaf93af2315e77a4bd729dd8c7a172d05c34a369cd11851c240",
+      "bytes": 67929,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-30.png",
+      "sha256": "e93cc1db2640497fd5a911cdb93a5a0857d26ab2503e32f710cbd6fa4aebfd7b",
+      "bytes": 61490,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-31.png",
+      "sha256": "7db5c606b0ff50b3a225ea4011da5a32740ba0a7867e49b719923f9143ed8811",
+      "bytes": 64044,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-32.png",
+      "sha256": "a75a054c9921d14780f7243b9f86a3779ef4a15637dd7d821f340bbab940b427",
+      "bytes": 83200,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-33.png",
+      "sha256": "10f6eaddf22d0b5f2c83e80b1d0820c77efdcf5d1edd8a1964acbff4fd8dc203",
+      "bytes": 78695,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-34.png",
+      "sha256": "90a2232b743a8aa01ac78e12e5fe7fd402449c66e3ae990ca342638febd82643",
+      "bytes": 85321,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-35.png",
+      "sha256": "810e04b7f4989923a61bffcd8dfbfb1001daef7715ee2be2e075656f594ffc0e",
+      "bytes": 70926,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-36.png",
+      "sha256": "7f1a6aeb84d9fbaf93af2315e77a4bd729dd8c7a172d05c34a369cd11851c240",
+      "bytes": 67929,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-37.png",
+      "sha256": "9a8cf207bb8b9d07a0840663358e06c7aaad1b90387e8045f59bb6a7eea67021",
+      "bytes": 78067,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-38.png",
+      "sha256": "e172c0140d3a7d95dc224f8bdaa5be97cd48011b739492415a80bbb1fb007e21",
+      "bytes": 80482,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-39.png",
+      "sha256": "a6665d14bf6567dd2a012b087223f8a62ab0aa71ee7b48c135e3b3724c9c2aeb",
+      "bytes": 63763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-4.png",
+      "sha256": "9a8cf207bb8b9d07a0840663358e06c7aaad1b90387e8045f59bb6a7eea67021",
+      "bytes": 78067,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-40.png",
+      "sha256": "8823df518a69f2724011de03d793bfbd8ff465e926b250a3a7dac227fccfb058",
+      "bytes": 69861,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-41.png",
+      "sha256": "e93cc1db2640497fd5a911cdb93a5a0857d26ab2503e32f710cbd6fa4aebfd7b",
+      "bytes": 61490,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-42.png",
+      "sha256": "3b1ee0636e65c1ba062dc55746911ecc040f458d8999f12c68142a176f012ea3",
+      "bytes": 63841,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-43.png",
+      "sha256": "21963c09c00ca9d3761202b013535c77223d8b92e72e050a76403b51388e236c",
+      "bytes": 84726,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-44.png",
+      "sha256": "a4364d5cdfde72c174c43b44df17c0c3cb608e060c6aedd1370350e576e0af92",
+      "bytes": 78748,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-45.png",
+      "sha256": "6fe33614de22443b57a43f10259f5dea8a5950424ce7f49f7c34c2f4f4e5b999",
+      "bytes": 85635,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-46.png",
+      "sha256": "f72f19a21d6010b162729234af044e09344dbe6a4615f23b1d61ac2f893ee3f8",
+      "bytes": 71174,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-47.png",
+      "sha256": "7f1a6aeb84d9fbaf93af2315e77a4bd729dd8c7a172d05c34a369cd11851c240",
+      "bytes": 67929,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-48.png",
+      "sha256": "9a8cf207bb8b9d07a0840663358e06c7aaad1b90387e8045f59bb6a7eea67021",
+      "bytes": 78067,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-49.png",
+      "sha256": "e172c0140d3a7d95dc224f8bdaa5be97cd48011b739492415a80bbb1fb007e21",
+      "bytes": 80482,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-5.png",
+      "sha256": "e172c0140d3a7d95dc224f8bdaa5be97cd48011b739492415a80bbb1fb007e21",
+      "bytes": 80482,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-50.png",
+      "sha256": "a6665d14bf6567dd2a012b087223f8a62ab0aa71ee7b48c135e3b3724c9c2aeb",
+      "bytes": 63763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-51.png",
+      "sha256": "8823df518a69f2724011de03d793bfbd8ff465e926b250a3a7dac227fccfb058",
+      "bytes": 69861,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-52.png",
+      "sha256": "e93cc1db2640497fd5a911cdb93a5a0857d26ab2503e32f710cbd6fa4aebfd7b",
+      "bytes": 61490,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-53.png",
+      "sha256": "24ba1a9d1732b04701a10c87261fb850f1b28afb7914f46b27fe216fb3462979",
+      "bytes": 64157,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-6.png",
+      "sha256": "a6665d14bf6567dd2a012b087223f8a62ab0aa71ee7b48c135e3b3724c9c2aeb",
+      "bytes": 63763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-7.png",
+      "sha256": "8823df518a69f2724011de03d793bfbd8ff465e926b250a3a7dac227fccfb058",
+      "bytes": 69861,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-8.png",
+      "sha256": "e93cc1db2640497fd5a911cdb93a5a0857d26ab2503e32f710cbd6fa4aebfd7b",
+      "bytes": 61490,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation-9.png",
+      "sha256": "f241f8a6c17b2442746dce61632838d6f3844678b46957e162ca7a6de61efe86",
+      "bytes": 64032,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-presentation.html",
+      "sha256": "f9696d1bcd76007c452179d15bfb2ee83ab20415483d21ff2236cc5a3b3cc6af",
+      "bytes": 137033,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/sensitivity-selected-account-trade.png",
+      "sha256": "0da84fc0c5448605dcc47c249043b7b1663b3d79b9b337d83cd8654ff16a8e02",
+      "bytes": 194470,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/test-finished-1.png",
+      "sha256": "24ba1a9d1732b04701a10c87261fb850f1b28afb7914f46b27fe216fb3462979",
+      "bytes": 64157,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/trace.zip",
+      "sha256": "c56077bb0e0968e652b4fbc9f07b95f0e21cb008462ddd70fa419915e7b5d0a7",
+      "bytes": 6095701,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1920/trial-registry.json",
+      "sha256": "04890ae43e49a59ae03bfdd2ba8c6c77c3987c419aa3914c06ebaa7c896f1ac0",
+      "bytes": 6136,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-applied-editor.png",
+      "sha256": "b6bff540e04f94ab1c7a63fcb37a2719b27f88a176a7935796a67c1028213df6",
+      "bytes": 395920,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-invalid-import.png",
+      "sha256": "f90dab0127ad3e9245eff896bfd5e9650aaf509f54c7d16750bfde3bb8e3b5e3",
+      "bytes": 330905,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-observations.json",
+      "sha256": "c7d71fa1a5aa49a1e98d32e86eb05dfbc588b32a2dc8e7189a8627942a6b9c11",
+      "bytes": 1693,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-1.png",
+      "sha256": "9022734cc6823ceb2c632fe3910f7300f5b223435e7c58eeeebb9d3e7d6a36c1",
+      "bytes": 36187,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-10.png",
+      "sha256": "6072f4926f8c6f8e4c0cf33018391056cb56f76437c7f198d403f19bcf9659bc",
+      "bytes": 46767,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-2.png",
+      "sha256": "be3e272250178ed130a1da5889f95455cf549847c3cb22dec9a58d9774a5b31d",
+      "bytes": 38167,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-3.png",
+      "sha256": "55815f4b1b7e6d8be8c064d4a5f6c7f09b2f1b72c6badfd1aa2e136d4cb9cb40",
+      "bytes": 37949,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-4.png",
+      "sha256": "f987dfa84b6f5d93a3d1d46b692b2e2c6149123df8f92fb1131fa897bf0979dd",
+      "bytes": 31539,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-5.png",
+      "sha256": "d5c21b78abe6ae5d2c57d75e40b0d4c634cbce99c0d48f7755946db84c6bbc00",
+      "bytes": 34510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-6.png",
+      "sha256": "0221b889ed21f55194790495ed42fcd9caefc57289538094b58cd9f2f1a06ae0",
+      "bytes": 31310,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-7.png",
+      "sha256": "418b670dc0682f1eaf537e32da08d2f269073779a7ab6ef48f9f3db5ef362a52",
+      "bytes": 45424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-8.png",
+      "sha256": "97b24996561a876a1c882427f137de055f1ef1daf17b9d82b5016db0463c223e",
+      "bytes": 46200,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation-9.png",
+      "sha256": "251f92faf7ef10ab3d87882582b72ecff6bef94d2a865667685fb6e753de5c78",
+      "bytes": 31732,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-presentation.html",
+      "sha256": "6f0ce950ea41fe97e1eff1776b63cad0574322c263623d6b231ce4f60b5df090",
+      "bytes": 49079,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/borrow-recall-trade-and-ledger.png",
+      "sha256": "e0e93e2aba210e8819008e512cf52921b022107063b4f07f9315789647a42dbf",
+      "bytes": 1181034,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/downloaded-borrow-account.json",
+      "sha256": "a5497d05f3cb7cccd93b233d839adb0546b830946bc5f436d73ebbbe9baacd97",
+      "bytes": 240824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/downloaded-borrow-scenario.json",
+      "sha256": "9b9531d735239247ccb6c373d12e2775dc19ef4863a28074f507eeda2ce76c1d",
+      "bytes": 870,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/test-finished-1.png",
+      "sha256": "6072f4926f8c6f8e4c0cf33018391056cb56f76437c7f198d403f19bcf9659bc",
+      "bytes": 46767,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1280/trace.zip",
+      "sha256": "51aab8c95602574daea99ee93538211bec0cc96c460066b63b612cbcf1f355e0",
+      "bytes": 4332155,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-applied-editor.png",
+      "sha256": "ca7c2ddefe82bc3906d3dfa43541559a1ca31d7dc7c11961a083ec9a5d84d4a3",
+      "bytes": 357630,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-invalid-import.png",
+      "sha256": "c07c98922ec24b427984fc3be63adcd623282ac42dbd01060d5488f6e457c6e6",
+      "bytes": 294486,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-observations.json",
+      "sha256": "705adb1a939b0991c58d5523df9623af894e8e866470cfda53a95a1b44b7b6d8",
+      "bytes": 1694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-1.png",
+      "sha256": "a8ed3191d9ee59836a49c401e900fff4fbe1354ea34ee81746c0bc0d54284f07",
+      "bytes": 75453,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-10.png",
+      "sha256": "f027fff273c89276a25f15b9a716c07b7fd4b471525761f628a629bf6d1bf110",
+      "bytes": 87002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-2.png",
+      "sha256": "d4e33cf08525bfcfab748556c5f8a26138a5789ec414866ac66c9c4f8b566daa",
+      "bytes": 82529,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-3.png",
+      "sha256": "e172c0140d3a7d95dc224f8bdaa5be97cd48011b739492415a80bbb1fb007e21",
+      "bytes": 80482,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-4.png",
+      "sha256": "169ebfcc2f64aa9ec13714aed9d953a801feba4bf40f7b0ece2da410f06cfefd",
+      "bytes": 64959,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-5.png",
+      "sha256": "8823df518a69f2724011de03d793bfbd8ff465e926b250a3a7dac227fccfb058",
+      "bytes": 69861,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-6.png",
+      "sha256": "e93cc1db2640497fd5a911cdb93a5a0857d26ab2503e32f710cbd6fa4aebfd7b",
+      "bytes": 61490,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-7.png",
+      "sha256": "0d9bd9ab14c32008ce3c25f634e9fabf56081cef773203c59ddae2323c53d095",
+      "bytes": 98796,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-8.png",
+      "sha256": "9f5835b7cb450f53c20e3244bc3e691a51c1e60dc49140bcf1d496073ee51d7c",
+      "bytes": 82646,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation-9.png",
+      "sha256": "08fb11f361631a82f04058dc695b5ac88284ab90d7c9cac015122a21dfa7f7b7",
+      "bytes": 58977,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-presentation.html",
+      "sha256": "9758a57ed23ec4807e904e5820ff3c55a98d39bad0b4f31e8ad3d26a809946bb",
+      "bytes": 49079,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/borrow-recall-trade-and-ledger.png",
+      "sha256": "0ae3e703d5d566b6ae7ff02ab4285334a4126a58d35b221414f26ff06d2d7708",
+      "bytes": 1248074,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/downloaded-borrow-account.json",
+      "sha256": "49d097f7c42a4be802ad10145c1376a85623c0c0b3d265e3bcbf552cd60cff47",
+      "bytes": 240824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/downloaded-borrow-scenario.json",
+      "sha256": "90f4a50b8fea3e377ec509712f651adbf5c37001b57874c6ea226e5a6f9464f4",
+      "bytes": 870,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/test-finished-1.png",
+      "sha256": "f027fff273c89276a25f15b9a716c07b7fd4b471525761f628a629bf6d1bf110",
+      "bytes": 87002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/borrowing-changing-borrowi-b49ba-d-recall-into-saved-exports-desktop1920/trace.zip",
+      "sha256": "bdea6e91986f6ea88d4950938a657af39d6d58888f170b481676b06b3c1099a5",
+      "bytes": 3127919,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/downloaded-news-account.json",
+      "sha256": "4f80de185e188bfb6de138dca65ba59d882e543d7cbf721b3194c1bd0fd074c7",
+      "bytes": 240570,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/downloaded-news-calendar.json",
+      "sha256": "1cc76be7027f3c4f7c90125bedcd77ba9ae5a0e349113c170476150b898b1f0e",
+      "bytes": 582,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-account-report.png",
+      "sha256": "6d1ad6d0f015d020430e0a659463cf3917e8f59d90078c9380fc7d15bec42c2b",
+      "bytes": 163928,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-imported-scenario.png",
+      "sha256": "74f4ae72a5b0d28a39cf99f6af093329d9b09bfa4344debfcd65686910a6a152",
+      "bytes": 367493,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-invalid-import.png",
+      "sha256": "9617c4b934c03cb0ddb662edf264516ec9624381f415ec3dad98a89ced20c4f7",
+      "bytes": 374791,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-observations.json",
+      "sha256": "0a2e8173b5e2eb44408e575e6b4b534e7d9b8df22dc108add64403e335fc9d97",
+      "bytes": 761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-1.png",
+      "sha256": "46cae1b6e531b926025fc5545d34afea1320374b63561414ce29186bc902b437",
+      "bytes": 40883,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-2.png",
+      "sha256": "902b964d5471484d4d38b110d91877b401d4ed738682395ab2cce16acc1e310c",
+      "bytes": 33627,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-3.png",
+      "sha256": "f3c7a56f5cead3b870e7d01a6bd9eeea9519c8a22e0dfaa79cb834b25d574158",
+      "bytes": 45478,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-4.png",
+      "sha256": "f0e04fa07d06ea1c35e495084a595b5ec58662e1cabe96fab622158fb2ef7fd0",
+      "bytes": 31592,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-5.png",
+      "sha256": "bf0c890807c897b1efc09e21f28d87f56d8d41e0d90c51e6cc706a6c2da2b7e7",
+      "bytes": 45094,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation.html",
+      "sha256": "79ec49c98f74728b244b3bf8a6a68e400602b06205bcc28d1f8441ac71513ce4",
+      "bytes": 38747,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/official-news.png",
+      "sha256": "e99df5b72576f812197cf2760684099fa8c5c91229146e8715d501f0a90badc0",
+      "bytes": 353670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/test-finished-1.png",
+      "sha256": "bf0c890807c897b1efc09e21f28d87f56d8d41e0d90c51e6cc706a6c2da2b7e7",
+      "bytes": 45094,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/trace.zip",
+      "sha256": "b4661edd603b22407aa11d4e136fbc83bba1c66f0c69478bf6effea6b8aa0c43",
+      "bytes": 2890739,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/downloaded-news-account.json",
+      "sha256": "731103f5219883df1467d6eb83669746321c9763c49d2836e29f42c3cd2b7a3f",
+      "bytes": 240570,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/downloaded-news-calendar.json",
+      "sha256": "a2831fd17474f203744e7135b3c5e5edd12271bd8882e93923f263ae7d897369",
+      "bytes": 582,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-account-report.png",
+      "sha256": "1c6143135df1a6205e01855afe3b47576d122446ae3d546072e6bdff87ef90e7",
+      "bytes": 164549,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-imported-scenario.png",
+      "sha256": "4fc0ced43f2ef5ae503c0051e9be4797533553fb97695cbf3a8c7d90feae094b",
+      "bytes": 336179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-invalid-import.png",
+      "sha256": "e772ca28e9b91944a7d99076e86ed81835c008c24f02a87a8982635732e6a3c7",
+      "bytes": 342488,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-observations.json",
+      "sha256": "d4d9437dc7106d9956de35e6ae5957d18594151af2436b99c825ef617d69c313",
+      "bytes": 762,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-1.png",
+      "sha256": "beb5c5df68eca93162b69745b58cfff435876be6861dd6248d9589ce427cbd32",
+      "bytes": 87679,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-2.png",
+      "sha256": "8913e6c71776fb40aa1f51428293d0a252580b7602842d341960fef90d3aada4",
+      "bytes": 70754,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-3.png",
+      "sha256": "6dd19a3192614eb8d2aa013b05ae923cb7fb9f13057ce14a296e8f0fd02b0e76",
+      "bytes": 81698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-4.png",
+      "sha256": "d9c79bdb366ea492ba97c8e12753cc7a6b364cb33a78d896fd40a152359339b1",
+      "bytes": 58200,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-5.png",
+      "sha256": "7eac2948d2c1a6feac9f07ebfe3988d1038c9a735933cc5b63bb4776d71bf7de",
+      "bytes": 85723,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation.html",
+      "sha256": "a8ae5a3b2cc6ef4196779b98c7ad0da236825a5b351aaa90ee6d1df5aa34b9bd",
+      "bytes": 38747,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/official-news.png",
+      "sha256": "0cbd68b2eae64538cf883e0cd881f0faac6c9e783f5a94a07abdc6fe8745d491",
+      "bytes": 320860,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/test-finished-1.png",
+      "sha256": "7eac2948d2c1a6feac9f07ebfe3988d1038c9a735933cc5b63bb4776d71bf7de",
+      "bytes": 85723,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/trace.zip",
+      "sha256": "9970c0c44ec38ed91a29b0254c1a8c0341d28a76222860f69d12eb2cffdd9f4d",
+      "bytes": 2339107,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/data.png",
+      "sha256": "c063b588a87e689e933ccd684e7bec8f694c9c341f558761858234d6b7b2f358",
+      "bytes": 313930,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/downloaded-report.json",
+      "sha256": "de72e95b163e8bf67b189fbe9393dec2923e7e23835a7385f3c133f5ee767c40",
+      "bytes": 239940,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/experiment.png",
+      "sha256": "285fc28c0455900dd149b865c31e8ddddc89ec577e5e3be9da54bb077fdd887f",
+      "bytes": 321321,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/observations.json",
+      "sha256": "78f9d2c22b46119266d1e291c560bb7a0d59892468a7e158789bb2b6a2ab5735",
+      "bytes": 821,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/reports.png",
+      "sha256": "ed1df51eeff9bb031a84211e80a154ca2d8713c244161932bc9db88e03bce1c7",
+      "bytes": 154416,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/results.png",
+      "sha256": "ece27050ea9e3e87b9a0044bd3b8d702c857130c5e51db8aec12e2355a5b695b",
+      "bytes": 123212,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/strategies.png",
+      "sha256": "3cf89cef38df9b8ac595f89cacf302b723925ef7d1e67870a49008f6a1ae3147",
+      "bytes": 122011,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/test-finished-1.png",
+      "sha256": "4957b1a2f3af3cc0160c347a07c09572cbdb756f623b7db1ff74bb5e692e10ec",
+      "bytes": 80426,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trace.zip",
+      "sha256": "3b540d00fa63786d1af48fc75d1091e2d8cb0e9998eca871c43506282dca2b4a",
+      "bytes": 2144285,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-chart.png",
+      "sha256": "dfee6c1dbf98bdecc825b1e9582169eab4d4ffcc0020b99570e8a92dbd757b46",
+      "bytes": 14177,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-inspector.png",
+      "sha256": "95fa42054a570329477f197a035a44492ec11f53e53342d4f9d6636d932391b4",
+      "bytes": 141638,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/validation.png",
+      "sha256": "aa21daefd4e4db13cf6dd31d9a5c7b3384a8a680a0dcb8538a623f4801f8ca44",
+      "bytes": 515459,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/data.png",
+      "sha256": "99c0a739c44063905b644f97e1b91ef4929eae4bead1b6c153f589f300a13a50",
+      "bytes": 280670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/downloaded-report.json",
+      "sha256": "de72e95b163e8bf67b189fbe9393dec2923e7e23835a7385f3c133f5ee767c40",
+      "bytes": 239940,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/experiment.png",
+      "sha256": "8ce254693f462c17d41b6c68d987a2f67bdb9610aaabf2cab1bffa9c3636c9a6",
+      "bytes": 289504,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/observations.json",
+      "sha256": "45dd9d50b076256db624efe08b9a107895b8972776946ff79d859d9c9cd75bf1",
+      "bytes": 825,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/reports.png",
+      "sha256": "af22af66b0a08dcf1c43dd06a020c3b1f950bf7e0f95538bd70643b02d6c2d5b",
+      "bytes": 154880,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/results.png",
+      "sha256": "b0ec878ecfe7779916065aa89e45e20c55cb02351f748f3f3e618bf6fb97200d",
+      "bytes": 133258,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/strategies.png",
+      "sha256": "d13d093522e1f1d95a7fcb9da0c67575a444f4089d1a1fd6f108f4ad44d5a2cb",
+      "bytes": 113589,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/test-finished-1.png",
+      "sha256": "d65428b54036eb2e66e34ff4eca0c9f5187fb6d2f3bd9e2d22110926c1c7344d",
+      "bytes": 107275,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trace.zip",
+      "sha256": "26b7a192134a878c3bf46a1413a2510535efb34253546cd0b34e9eea3bcdbbc9",
+      "bytes": 1987767,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-chart.png",
+      "sha256": "0d4b64445e7a83e384e03755fd571e88f8ac8e50c6784ab1a27d31968450af1f",
+      "bytes": 16203,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-inspector.png",
+      "sha256": "0dd6f2914d06c4a4df9bb6cf9e9365c05e21a24ecc9f5b6b17ccc90cc18992a5",
+      "bytes": 147597,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/validation.png",
+      "sha256": "3b532fe06e2593a08d077528f4b1ec23782d76921a50a1e14cfd1b025081f0a2",
+      "bytes": 499325,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1280/result-ownership-current_failure.png",
+      "sha256": "437f0574d8e40716e909a4200b743950cf0d1438ddcee1f614a6851891f9761b",
+      "bytes": 127666,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1280/result-ownership-observations.json",
+      "sha256": "4dce397885375e9b4a1d6bed8ce4d05068492201770c868c8eb2084b8c9bcd0b",
+      "bytes": 784,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1280/result-ownership-stale_failure.png",
+      "sha256": "8f558700356685528ec8e4028780fffa38ff78cf71ae54d62c630bbb1f1abd01",
+      "bytes": 154226,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1280/result-ownership-stale_success.png",
+      "sha256": "bea43cb95a7a2ab20ee0bd51331292fb767cb4cbe3bfcb12f2e679733b8615b3",
+      "bytes": 154226,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1280/test-finished-1.png",
+      "sha256": "a3d05458793cf0f00a170e018af84e96b12ecd88dcafc0ee09956d79591e2b21",
+      "bytes": 53982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1280/trace.zip",
+      "sha256": "c0f78c6e80eede1dcc19ad3a220cab16149609437b992a008b0fb7ead13cf611",
+      "bytes": 1624538,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1920/result-ownership-current_failure.png",
+      "sha256": "dd44d6c322bb57ef7b663548025f3740e8fcc5676dbe7f654b660d850f696ba8",
+      "bytes": 129252,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1920/result-ownership-observations.json",
+      "sha256": "b0b7fa3d60ffc9fda743876313bbbd80003a3688772d5a9b320396603b275262",
+      "bytes": 784,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1920/result-ownership-stale_failure.png",
+      "sha256": "3d9341ab4a476b8c6367ac2427fe05f57d5bb748cbb0b48f339904b5e25f1f4c",
+      "bytes": 154821,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1920/result-ownership-stale_success.png",
+      "sha256": "bb528c9f67f626ddfc77087e1ada9af279ae99f4c037cc31cff9cb8dbfa6e3cb",
+      "bytes": 154820,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1920/test-finished-1.png",
+      "sha256": "dde5ec15cddbc204c5cb947b7ea0761397643101e591d29bcbe9dfdbfc8d01bc",
+      "bytes": 59921,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1920/trace.zip",
+      "sha256": "0db10ceb02da2e7e3a2e9488b7032f4a2d6e8f400b605c7e09c38e72432fabcc",
+      "bytes": 1621902,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/capture-metadata.json",
+      "sha256": "4c29c58a47a6dc81f973acc26e8efb2f47a1e2e6570f97ae76958cce1ca06b3e",
+      "bytes": 341,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/junit.xml",
+      "sha256": "e51dd8e674345573b1babb352dfdf978e8b3267a427534a8bac415842c27b038",
+      "bytes": 6203,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/privacy-derivation.json",
+      "sha256": "4ef6d1d9596863c14b0514ccd7368c74ff1acf40d8f64bfe99c75a8b38eac67b",
+      "bytes": 129734,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/results.json",
+      "sha256": "63cced02626b0e6ac8a2780936f1a459ca1e1daf88d4bb9a902b9d7ac7e21ae0",
+      "bytes": 13970,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/runner-stderr.log",
+      "sha256": "dae04ab6eae85474499db184fdf4297eba1134c3259d1b5ff5380b6102da5657",
+      "bytes": 331,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T174501602436Z-result-ownership-current-ten-desktop-journeys/browser/runner-stdout.log",
+      "sha256": "0ee15461d496151043972bb8f18226381324f18790e70a604844712f97c0e271",
+      "bytes": 1690,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

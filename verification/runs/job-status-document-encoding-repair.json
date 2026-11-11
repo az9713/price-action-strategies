@@ -1,0 +1,18 @@
+[
+  {
+    "path": "STATUS.md",
+    "invalid_bytes_repaired": [
+      151
+    ],
+    "before_sha256": "ea47828e61da2156d595e8b3d2d0a772fd0f8a180720a08d65d4eae0d7c4d532",
+    "after_sha256": "85d0e75f13b7e53856299811ec4d4652da94c4124798a520a44a4d238d686d17"
+  },
+  {
+    "path": "verification/evidence-index.md",
+    "invalid_bytes_repaired": [
+      151
+    ],
+    "before_sha256": "5f1968903906241530752357d0bf41dfc7f7bcb1ff1fb64b864a97c52f7e4f0c",
+    "after_sha256": "0250e9011806d1b0c8e08922505e2f3687c54eafde1c64cf25fcbc6229b69734"
+  }
+]

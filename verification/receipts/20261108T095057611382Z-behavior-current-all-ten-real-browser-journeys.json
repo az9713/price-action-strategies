@@ -1,0 +1,879 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T09:50:57.611719+00:00",
+  "finished_at_utc": "2026-11-08T09:57:50.450092+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "6e0ed28ca4c12eb166309613e27e5419b6d0f9441c75d361c89d5fd756cc2467",
+    "verification_plan_sha256": "6790863d2b3b8833e4dc0c02cf744b8319e667eeb9bd3417ce2d349d52c372b8",
+    "catalog_sha256": "8ff192fbe2b8acb1194a073fec1562596f3cd3e50773bb64aee0f11cbd14b096",
+    "source_files": {
+      "PLAN.md": "6e0ed28ca4c12eb166309613e27e5419b6d0f9441c75d361c89d5fd756cc2467",
+      "VERIFICATION_PLAN.md": "6790863d2b3b8833e4dc0c02cf744b8319e667eeb9bd3417ce2d349d52c372b8",
+      "RULEBOOK.md": "b68d56f05fd887c3b54e656865e13a23b45a8f29025147a31cc1664d204da4a2",
+      "decisions.md": "f18ca00adeac2e227245c5a7c470640453ef53376b29dc7a24fefa064c620dc9",
+      "README.md": "671f4b714066058a126503a4441fa6f1f5f71cd642ce67c7e1ab873b12efb9e6",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "8ff192fbe2b8acb1194a073fec1562596f3cd3e50773bb64aee0f11cbd14b096",
+      "verification/implementation-map.json": "bdd9f28be9fadc5bc1c2fdaf25b6a4fb7516616ce8313ec2b3030e67700c5e13",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "c3f9ffb86f1ad12786641fdd749212fa77d509c79ce950593d11f216e30a892e",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "449f0c4bc4a078d03d35f67c2b247438011b556b2b2f3d767d1231927a4d4be4",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "bd46c34e2d0ce022eb6c4136b9942a2c89588711b68f52b33610ea579ee8f8cc",
+      "backend/lab/signals.py": "c5132d046e7aa1e0c923a6a7f5b0ad1890122d0a075e75fbb8110fe30295670e",
+      "backend/lab/store.py": "812ee8aa68c2fc0d45d0fcbe5bc649eea831a0e240c955905e14f6eb80b6abda",
+      "backend/lab/worker.py": "417162b359cbafce1698961faca5a6e5c49a56d4c96dc1ff401b6c682cd484b4",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "137fb3125f5f3aa7f0533c830257d1e4ce749d33e36d00e02022cac688a19098",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "ff11d8ef9d50547b79630e1297c6f88dfa1ed1e9294ff5c670f658bbf1863cd6",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "7c0fbe1b6a2e3689da15b348c96467f12ac11e2631ee28702240936c473aa970",
+      "verification/check_behavior_browser.py": "2af862bd35d22563ac396e11a87e77339a50c6b60b6a6c2ddbfce6d4cebad9d1",
+      "verification/check_browser_outputs.py": "03007de821a6a045884836413205b257cc3b24a59e22a3c1bdb0c778bf97af32",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "ad210513bc337af346dc2312cd1fc906dfaba4de0ab8afa0023ddc82dddeebcb",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/frontend_check.py": "4e753e85952d263924d6fd3140bf8ddfdeb63f43e5964395fcaa2dcfe23490ca",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "5b4f624a41d8008b8749c3da80d93968dd6117f6fe89951172e644707c2241b1",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "527dea80607027217ee57fd60e8faa4c281e5a5f23c16866ba3f7d113e02bf89",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "1e22a19a14d3fa55be5fe35f4416c341975d925458548fc6d7044feb5b3dabfc",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "b68d56f05fd887c3b54e656865e13a23b45a8f29025147a31cc1664d204da4a2"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".\\.venv\\Scripts\\python.exe",
+      "verification/frontend_check.py",
+      "browser"
+    ],
+    "cwd": ".",
+    "exit_code": 1,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/stdout.log",
+      "sha256": "647406ae2d2f41db8bc5300840522682e6ae9f05fbf81c37f6e08fe2b8ce824e",
+      "bytes": 8554,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/stderr.log",
+      "sha256": "c9d4f1a39d49c21097f1052c23ffb67904ec486f9ac0e3a8daddfca6149c7316",
+      "bytes": 664,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/.last-run.json",
+      "sha256": "047707c47e0867291f8a02251fa07162ec9c84e6cdd0f8f1aab2a13ebd456d09",
+      "bytes": 145,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-bos_forward.csv",
+      "sha256": "250456911f5eac34bb2f9fcc829e31faabf20c42196b969f0f2aee9e2db34f4d",
+      "bytes": 6676,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-chart.json",
+      "sha256": "1a503cfdf7e4ce93b9a17fbd6b7db5f3bb46a6d76e19e6317ab963ab24c5069c",
+      "bytes": 12028424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-choch_forward.csv",
+      "sha256": "f39f2f0d97466457edc0cf2d3764f91119f3ff085d806a51c87f29bd7646d6bb",
+      "bytes": 6635,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-engulfing_at_levels.csv",
+      "sha256": "964c4fbb2e4b3ff4eaa4f535c79bf3aaa78f24089da9d70bce411ab0c0fb28f7",
+      "bytes": 5304,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-flip_zones.csv",
+      "sha256": "109ad9b5fddb8cf25f4ba4fe3686c3d07bc5a55dac4a6f11a0051f8a35ec3c98",
+      "bytes": 3959,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-gap_hold_fill.csv",
+      "sha256": "259e72e322df57dba4611ec86fbcd54e718e4b7da054d82da4c26825f2a3ce27",
+      "bytes": 6781,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-levels_vs_shifted.csv",
+      "sha256": "dfff56febadcff3adbdb5b91b0501c51a16908c26e34ec11f5c30f8aa18999a3",
+      "bytes": 4477,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-line_vs_zone.csv",
+      "sha256": "2a96de8dfe3b1b16de77de280223a1a4f7939e3eb9552e56c7a6b092b15d67a0",
+      "bytes": 9010,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-panel.png",
+      "sha256": "54c65a9a06d943fa03150112d5ad25a6cb36aec4bf5c34a97be5acd313688fb8",
+      "bytes": 88538,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-price-chart.png",
+      "sha256": "833c6437b0a50046ca110dc5c5e1f6098ab9a1acf12fb6f3c226887db2178a3a",
+      "bytes": 12641,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-pullback_depth.csv",
+      "sha256": "8b584bf1962f71f023f9f6a1d803477b69f8fd664def9f297c0a425562808186",
+      "bytes": 24277,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-rejection_at_levels.csv",
+      "sha256": "ff446dc8fbe5e23285746adfdeb4f941bd4408f6bf65f5ddb74f2a4df13b6721",
+      "bytes": 6646,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-shrinking_bounces.csv",
+      "sha256": "07fac1fbb8487a55ea3d8893c1ac14e3654577ab07ab079cd9e02b479483a409",
+      "bytes": 5567,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-study.json",
+      "sha256": "b658750cb7806d02c0237fad06efa6446c3018c81bfe53de9c6046d74b1ffe2e",
+      "bytes": 431807,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-supply_demand_returns.csv",
+      "sha256": "53e60fa871cfc4ea9454560afbda03d3744ce9b0831fffaf1d69e28ed9b6d10b",
+      "bytes": 8410,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-sweep_started_trends.csv",
+      "sha256": "34bcf74584532d89f53b243285d776c526856722b7273d7107d3d861e81a2de5",
+      "bytes": 13486,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-sweep_vs_close.csv",
+      "sha256": "f143724129796c88d1853685790c43cf726b6fd7608224da733d5e24b6596624",
+      "bytes": 13515,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-touch_count.csv",
+      "sha256": "b4971b17402431a0cdd82b2a117cc78b6dff7b4b86239a98ffdeae0eb44c88aa",
+      "bytes": 13760,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-trend_lines.csv",
+      "sha256": "e548cc905eabbe8112710ba9fd5893b9614d820ec7fa5b25676210114014114b",
+      "bytes": 4320,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-validation.png",
+      "sha256": "fc6e524c7366bd30afa1a5373e18b978855abdfd0674f3b978c8b9bcec7ef549",
+      "bytes": 247942,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-wall_target.csv",
+      "sha256": "7d4a2318d7b31ec25a2c4e998e5758efcaf8a33004f32196510935c8e277bbb7",
+      "bytes": 21277,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/behavior-wick_vs_close.csv",
+      "sha256": "bdb48426954195f21c37cb5814a0a91993fbd9fb6470d1816e296336f0726634",
+      "bytes": 13641,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/observations.json",
+      "sha256": "3c82e98d93d805be363afd7b5dbda7acd823e080792967fc1309183311282bd5",
+      "bytes": 2142,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/test-finished-1.png",
+      "sha256": "ff9b1f35350e51949455535550c842c65e92b734fd954b17848342d9d8f18118",
+      "bytes": 65373,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1280/trace.zip",
+      "sha256": "3ebb24f302a1967a82a11b831d3c3cb84d03ecdc8c28ea298684aabed54d039b",
+      "bytes": 9493317,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-bos_forward.csv",
+      "sha256": "250456911f5eac34bb2f9fcc829e31faabf20c42196b969f0f2aee9e2db34f4d",
+      "bytes": 6676,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-chart.json",
+      "sha256": "1a503cfdf7e4ce93b9a17fbd6b7db5f3bb46a6d76e19e6317ab963ab24c5069c",
+      "bytes": 12028424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-choch_forward.csv",
+      "sha256": "f39f2f0d97466457edc0cf2d3764f91119f3ff085d806a51c87f29bd7646d6bb",
+      "bytes": 6635,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-engulfing_at_levels.csv",
+      "sha256": "964c4fbb2e4b3ff4eaa4f535c79bf3aaa78f24089da9d70bce411ab0c0fb28f7",
+      "bytes": 5304,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-flip_zones.csv",
+      "sha256": "109ad9b5fddb8cf25f4ba4fe3686c3d07bc5a55dac4a6f11a0051f8a35ec3c98",
+      "bytes": 3959,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-gap_hold_fill.csv",
+      "sha256": "259e72e322df57dba4611ec86fbcd54e718e4b7da054d82da4c26825f2a3ce27",
+      "bytes": 6781,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-levels_vs_shifted.csv",
+      "sha256": "dfff56febadcff3adbdb5b91b0501c51a16908c26e34ec11f5c30f8aa18999a3",
+      "bytes": 4477,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-line_vs_zone.csv",
+      "sha256": "2a96de8dfe3b1b16de77de280223a1a4f7939e3eb9552e56c7a6b092b15d67a0",
+      "bytes": 9010,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-panel.png",
+      "sha256": "c8ac30dffb4ed2f7856194ba5e30eaf999d16b987a3021a38bbabc827fede5e1",
+      "bytes": 85273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-price-chart.png",
+      "sha256": "f66ebb2359ff870630f0c5c2be357808ef83e9ed6aaeb2fee8a7642318cbbff0",
+      "bytes": 16146,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-pullback_depth.csv",
+      "sha256": "8b584bf1962f71f023f9f6a1d803477b69f8fd664def9f297c0a425562808186",
+      "bytes": 24277,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-rejection_at_levels.csv",
+      "sha256": "ff446dc8fbe5e23285746adfdeb4f941bd4408f6bf65f5ddb74f2a4df13b6721",
+      "bytes": 6646,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-shrinking_bounces.csv",
+      "sha256": "07fac1fbb8487a55ea3d8893c1ac14e3654577ab07ab079cd9e02b479483a409",
+      "bytes": 5567,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-study.json",
+      "sha256": "b658750cb7806d02c0237fad06efa6446c3018c81bfe53de9c6046d74b1ffe2e",
+      "bytes": 431807,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-supply_demand_returns.csv",
+      "sha256": "53e60fa871cfc4ea9454560afbda03d3744ce9b0831fffaf1d69e28ed9b6d10b",
+      "bytes": 8410,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-sweep_started_trends.csv",
+      "sha256": "34bcf74584532d89f53b243285d776c526856722b7273d7107d3d861e81a2de5",
+      "bytes": 13486,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-sweep_vs_close.csv",
+      "sha256": "f143724129796c88d1853685790c43cf726b6fd7608224da733d5e24b6596624",
+      "bytes": 13515,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-touch_count.csv",
+      "sha256": "b4971b17402431a0cdd82b2a117cc78b6dff7b4b86239a98ffdeae0eb44c88aa",
+      "bytes": 13760,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-trend_lines.csv",
+      "sha256": "e548cc905eabbe8112710ba9fd5893b9614d820ec7fa5b25676210114014114b",
+      "bytes": 4320,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-validation.png",
+      "sha256": "3f97b2c636af4abcadda446e1274238e349bcdc50e6d3f3fdd881269b0a4f4c5",
+      "bytes": 245577,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-wall_target.csv",
+      "sha256": "7d4a2318d7b31ec25a2c4e998e5758efcaf8a33004f32196510935c8e277bbb7",
+      "bytes": 21277,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/behavior-wick_vs_close.csv",
+      "sha256": "bdb48426954195f21c37cb5814a0a91993fbd9fb6470d1816e296336f0726634",
+      "bytes": 13641,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/observations.json",
+      "sha256": "0197b1946b5cd881fa09b1e6a51f19e691eed9efb28fa162437285dacc522acc",
+      "bytes": 2145,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/test-finished-1.png",
+      "sha256": "f0f1f53174d6586e5a7582d8d6d533d7ae4586bf6efce89a621a88baa00f7004",
+      "bytes": 102551,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/behavior-historical-behavi-78c66-certainty-and-saved-records-desktop1920/trace.zip",
+      "sha256": "acc51fec91d375efc82429dca5c362f6811ce8d2b3db65636d1493981b09d4bc",
+      "bytes": 8645413,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-panel.png",
+      "sha256": "f0dbec19d9372695bb5194c2a06bb610691a0d1e18ba28caba5c821fa6623603",
+      "bytes": 101835,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-report.json",
+      "sha256": "70ae524f28e5cd05467a79353a902a49c8162ba364453d39aea3120a92d8dcdc",
+      "bytes": 19145,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-trades.csv",
+      "sha256": "514c1561ef6daf1f534b53ce17321010c9fdbe8a359157af1fd7499b7f0806c6",
+      "bytes": 1069,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-validation.png",
+      "sha256": "44488b0209cbb9acbcc57cc1b6ff9fa88e2db70c42af939423affe7ac932b682",
+      "bytes": 281144,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/incompatible-report.json",
+      "sha256": "e38d7e7841f8a74a17962668cae582654ca399f4f302e1554135d1d7fde48c3d",
+      "bytes": 27609,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/observations.json",
+      "sha256": "97f92f2d12b29d7857d8ca4fb196b1ba57dd230069ecdacdb07315b5f8e2153b",
+      "bytes": 813,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/test-finished-1.png",
+      "sha256": "1d0b3d5a59e729b94fbd18912404657813ff0010ecc28324fe7eb41f09e0afbe",
+      "bytes": 62027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/trace.zip",
+      "sha256": "f83ae4e3afedf9f31a48c29fa8c13b2e77f22144cc5fe2c80ecae966d63c281d",
+      "bytes": 2295987,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-panel.png",
+      "sha256": "a1f414807bd8540d6a7d6cf6d9a3e6673cbd07f1f04104c0de6d5d6b05345da0",
+      "bytes": 108397,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-report.json",
+      "sha256": "70ae524f28e5cd05467a79353a902a49c8162ba364453d39aea3120a92d8dcdc",
+      "bytes": 19145,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-trades.csv",
+      "sha256": "514c1561ef6daf1f534b53ce17321010c9fdbe8a359157af1fd7499b7f0806c6",
+      "bytes": 1069,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-validation.png",
+      "sha256": "47a41f37b53d3dac549cdd78d5866cc769fd40551a9e7744aac484bd65e06b6a",
+      "bytes": 288246,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/incompatible-report.json",
+      "sha256": "e38d7e7841f8a74a17962668cae582654ca399f4f302e1554135d1d7fde48c3d",
+      "bytes": 27609,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/observations.json",
+      "sha256": "490b6744b7e16390e1e03a9d0e97a5be76a8bea86263b5deac4fbb196a55d602",
+      "bytes": 814,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/test-finished-1.png",
+      "sha256": "1bf187db88e341c153300821ea4557b9a04e3a99754cb39ee913f832745c86f4",
+      "bytes": 90314,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/trace.zip",
+      "sha256": "17f4729b094ea58a3508a00fe23c7edb5908b31a5b46d19a039caf7580d12762",
+      "bytes": 1699060,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/control-account.json",
+      "sha256": "0f089fa21c93613f8d8a7e8f977b0f3a4a2fa51d4a72537c3cea98b2dc8dc804",
+      "bytes": 1022416,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/control-study.json",
+      "sha256": "a4e0c1661d1310a7595d3c9b63fe4547fc838b64c2716fb4e40dca50f84f7aaa",
+      "bytes": 25774,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/control-trade-chart.png",
+      "sha256": "d7cec0b718a95724ac0f93afeeaa46f245823bf5dee38d6d3bd0fec9295e8570",
+      "bytes": 13432,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/control-trades.csv",
+      "sha256": "ba59edfdb4a631e417e7dea02ec7bf7a91af23695af47b00536fd7734ed1865a",
+      "bytes": 3106,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/controls-panel.png",
+      "sha256": "53ae74ae408f5ff4abad7113c0c89c8a1dd0f1cd71374515f15bb876d7d536b7",
+      "bytes": 155513,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/controls-validation.png",
+      "sha256": "fb8c03467d429183dd48fe1edc34ef43b69b066634837084d20671634ead95cd",
+      "bytes": 321676,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/observations.json",
+      "sha256": "aecabd6505ebc42d2f924ce386379de31cafd5957fd6b12049973b24369e5bbe",
+      "bytes": 892,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/test-finished-1.png",
+      "sha256": "ff323428318ad122def5fbcf6be4551c2558c5e893f048bc347ca5c3abc37a05",
+      "bytes": 62020,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/trace.zip",
+      "sha256": "0da74e91654330a44eff883220a14d625b75be5966cd4aa4a04608262a33dc84",
+      "bytes": 2074746,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/control-account.json",
+      "sha256": "0f089fa21c93613f8d8a7e8f977b0f3a4a2fa51d4a72537c3cea98b2dc8dc804",
+      "bytes": 1022416,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/control-study.json",
+      "sha256": "a4e0c1661d1310a7595d3c9b63fe4547fc838b64c2716fb4e40dca50f84f7aaa",
+      "bytes": 25774,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/control-trade-chart.png",
+      "sha256": "f6a6d015d0df8251d8bb72e350ea20ee8a76cc554a14196b9032fa14711e0177",
+      "bytes": 15005,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/control-trades.csv",
+      "sha256": "ba59edfdb4a631e417e7dea02ec7bf7a91af23695af47b00536fd7734ed1865a",
+      "bytes": 3106,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/controls-panel.png",
+      "sha256": "7ec3e24a7ca127b088465e49489f218cc52082ef34922a9d10458bcb5c88187c",
+      "bytes": 165182,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/controls-validation.png",
+      "sha256": "112b7ef1f1d289cc0d4113c354fbbb53eb8bef31f9e9966f2ffcd0f685450b2f",
+      "bytes": 333658,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/observations.json",
+      "sha256": "00d928dcd8c0ad04cae5f01f0467eea968d363768bbef7d23d7d002fd98a0131",
+      "bytes": 893,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/test-finished-1.png",
+      "sha256": "f013451a5535bd90ed4163cc9a3941811112c24927b3bdd7992686104929d4b0",
+      "bytes": 90226,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/trace.zip",
+      "sha256": "34b3593cd8cda558d1d91f9e2bbb32c8e25967adf73effdbd7cc540dcdacc4d3",
+      "bytes": 1716812,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/error-context.md",
+      "sha256": "0c732b54444c41affbff0918f7e5248a277691b4327c887914be4cc86345d53b",
+      "bytes": 19115,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-inputs.png",
+      "sha256": "247df4cef6d282b46b02cab103c217c0511aeeba934d8d268d5fbfd966e3f1dc",
+      "bytes": 851335,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/test-failed-1.png",
+      "sha256": "e90244762b1342fd42359391297b1369b81e0620b69c1eaa2b2a71a94fadf881",
+      "bytes": 59771,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/trace.zip",
+      "sha256": "3d978567ad1195d3545d0fb11f21655ef010c4fb7a5b75e08b4d8f62ee97290a",
+      "bytes": 2530030,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/error-context.md",
+      "sha256": "eec75fe9448278456494f7b7a2057a89f62553c04be60633cd7d70cc85ac47b7",
+      "bytes": 18677,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-inputs.png",
+      "sha256": "010afbdc3dfd764cd487456e09a72c289734c20ee512cc98215b0efe9a502a72",
+      "bytes": 789181,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/test-failed-1.png",
+      "sha256": "d3c4fb09a9784133d778ff68078f79731d8bbb1378410f9770ff7819fbd6d6f9",
+      "bytes": 89620,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/trace.zip",
+      "sha256": "0e8d7ffc69316b08543d1bdd7406f96720fe72e8b4e73e109f841333b029e17b",
+      "bytes": 2095403,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/data.png",
+      "sha256": "f0029e82c79e86a5822cebd27487a41ae251e789e8469bf13231f124d57252fe",
+      "bytes": 659849,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/downloaded-report.json",
+      "sha256": "c0abdf5ae8128acd2af889767154edb30f52c4ffd0701a4d73cc5ae51bbc8b88",
+      "bytes": 239148,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/experiment.png",
+      "sha256": "ac7936bcc209274095d1d585acb2f7d9fc52dff02ae3ffe3584e3480f6dc144f",
+      "bytes": 827617,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/observations.json",
+      "sha256": "c2c3adc35d2cd86b19f6af63dda489aa1483078d217e133267aa738eb0d65dcb",
+      "bytes": 822,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/reports.png",
+      "sha256": "8e690c854e506662a4dd9b4bb73deb62447912707b943b94ce5ea89cebdef9d5",
+      "bytes": 119261,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/results.png",
+      "sha256": "b5122cae2696daa6ca007e5e9c9433b82f76cb667fa9e4517b3f885b1ae705cb",
+      "bytes": 124499,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/strategies.png",
+      "sha256": "9340fe8c4ee1cbb8b379057eef7ac897736c692a45e58f6c16d9beb2c200a6fd",
+      "bytes": 332320,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/test-finished-1.png",
+      "sha256": "51e60d5bbdf5963d2d5a901c4f42f42f1662d97ed2bed257191418c2780f6ebb",
+      "bytes": 70880,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trace.zip",
+      "sha256": "f80758a31060111252a941db26c833c204832a8396c2d7896f16b8adda3f8ea6",
+      "bytes": 2215687,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-chart.png",
+      "sha256": "dfee6c1dbf98bdecc825b1e9582169eab4d4ffcc0020b99570e8a92dbd757b46",
+      "bytes": 14177,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-inspector.png",
+      "sha256": "38592dd5b84ad02b727de03bb0c3b2c065aa4574ea516bdfd240220d2e1ea5a7",
+      "bytes": 143781,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/validation.png",
+      "sha256": "cee4c7c428cda00a999f7b5c4e42eaeec89e5ae22076f864af23adde4b2e2371",
+      "bytes": 196077,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/data.png",
+      "sha256": "911f99ea3e7ca4e8bcd3ddcdf670be3b984e75d45215e16eaaead35fe10d811a",
+      "bytes": 606669,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/downloaded-report.json",
+      "sha256": "c0abdf5ae8128acd2af889767154edb30f52c4ffd0701a4d73cc5ae51bbc8b88",
+      "bytes": 239148,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/experiment.png",
+      "sha256": "f5bfb7f4fc8f4d259c44af8b1005c12d41e3acc6f9b398235da7a4bc642d303b",
+      "bytes": 774342,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/observations.json",
+      "sha256": "86fa81abc365006b5ca1a0eedcc0f0d445724ab7c23ec56743d52b116241e8b4",
+      "bytes": 824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/reports.png",
+      "sha256": "fb675265846b2a192000d41a445b9c86cb9c2fc3505833c924e59b1d79b0b5fe",
+      "bytes": 120371,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/results.png",
+      "sha256": "9b2bd45d5d21d6717f5ac615236c1201463a81a6a87182ccd8a3e76c021160fe",
+      "bytes": 134362,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/strategies.png",
+      "sha256": "fffe284a5700fc0b79da480d3398646f3a5066f6a27feabba1cf5f6c05d38bfd",
+      "bytes": 260298,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/test-finished-1.png",
+      "sha256": "f1c558ca692a2044f0590251558b988f0164a19145be1c290108ed4668f8021b",
+      "bytes": 98282,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trace.zip",
+      "sha256": "807da1f06af76945fac31437238e8023d1519eaf633bbc724eeffa9368501d97",
+      "bytes": 1563375,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-chart.png",
+      "sha256": "0d4b64445e7a83e384e03755fd571e88f8ac8e50c6784ab1a27d31968450af1f",
+      "bytes": 16203,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-inspector.png",
+      "sha256": "171568d2496413a4748f932282042590a860b26358da55c661ef76d9de7b2a00",
+      "bytes": 150114,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/validation.png",
+      "sha256": "cc22fbb315999c266c800ccfe63c8451715bfd258863831594b626cb8667005a",
+      "bytes": 194947,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/junit.xml",
+      "sha256": "b1fd77159352189f71397e8049332ed768ad4d308dc6a5323fb57fe63c4e6446",
+      "bytes": 13259,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T095057611382Z-behavior-current-all-ten-real-browser-journeys/browser/results.json",
+      "sha256": "5c1cc49a4e3a1d07b3e77fe4f5335d2365f4bf87fa48e4d6e593fe3c549f33a2",
+      "bytes": 37827,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "source": "data/dev027/research-src/backend/lab/store.py",
+  "sha256": "1f8aebb4ad18733ed7333c285c3814ccafb5a6bded25431aa9825158f75c341c",
+  "source_core": "7e6d698ff8742a65f889291d2c778ae7dc71e5418d59d25b1b59cac7da5b3caa",
+  "scope": "Exact original heartbeat before covering-read change; source-only, no data or credentials."
+}

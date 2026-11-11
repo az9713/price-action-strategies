@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "scope": "Frozen final workflow for one prespecified shared-capital portfolio; existing independent-rule studies remain distinct. Extends the existing RES-001/002/003/004, ACCT-002 and UI-004 cases without removing any of the422 acceptance cases.",
+  "policy": {
+    "study_mode": [
+      "independent",
+      "portfolio"
+    ],
+    "default": "independent",
+    "portfolio_unit": "One fixed set of one to64 unique complete Strategy configurations, canonicalized by configuration hash before registration. Screen discovery and validation as two complete shared-capital accounts. The whole unchanged set is either the sole candidate or no candidate; never screen members separately then recombine survivors.",
+    "gates": "Apply the existing minimum-trades, positive-net-profit and defined minimum marked-Sharpe gates to each complete joint account. Gates do not certify a trading edge. Exact trade/Sharpe boundaries pass, profit must be strictly positive, both windows are required, and malformed/nonfinite metrics reject. The pure truth-table fixtures are gate tests, not trading accounts.",
+    "freeze": "Registration event binds complete initial study inputs including mode, rule membership, windows, dataset/core, costs, account, seed and exact calendar. Candidate event binds the later candidate hash/count. Detect hash-consistent input amendment before job creation, before reuse and before final consumption.",
+    "final": "Consume final dates once before any final raw-price read. Only the exact frozen set and frozen account inputs may run. A canceled/failed job can continue under its original job ID without consuming again; new final job or amended set is forbidden.",
+    "ledger": "Portfolio screening has exactly two portfolio-role account occurrences at part0/discovery and part0/validation. Final has one portfolio-role occurrence at part0/report. Configuration identity is the whole ordered rule set, not a count of independent member strategies.",
+    "saved_outputs": "Each account saves study ID, mode, phase, original input hash and final candidate hash where applicable; full configurations, per-rule charts, attribution, trades, marks, ledger, costs, calendar, borrowing, dataset and core. Root screening/final rows identify a portfolio without pretending it is a single family. JSON/CSV/presenter and saved inspection never reread protected prices.",
+    "recovery": "Complete part/content hashes and trial attempts/reuses remain durable. Reject altered committed parts/results/inputs/calendar/manifest before reuse or prices; reconstruct only uncommitted work. Cover interruption before consumption, after consumption, between accounts, after part publication and after root publication. No partial successful comparison or false final completion.",
+    "ui": "Choose independent rules or shared portfolio before registration, select immutable saved members, display exact frozen membership, show screening/final account labels, candidate unit/count, consumed status and audit events, inspect mixed-rule charts/trades and export complete results. Cover both desktop sizes, stale selection/navigation, empty/losing/no-candidate and actual cancel/resume flows.",
+    "reservation": "Portfolio queueing atomically reserves reserved_final_job_id and a portfolio_final_reserved event. This lifecycle field is excluded from initial input hashing, while the immutable reservation event binds it to the original candidate hash. A queued cancellation still resumes that same job; reservation is not final-date consumption. Independent-study semantics remain otherwise unchanged."
+  },
+  "authored_positive_geometry": "Six complete SPY regular sessions2026-10-05/06/07/08/09/12. Reuse authored strategy-baselines common_closes through minute20, then open/high/low/close199.98/200.1/199.9/200 through the close. BOS1m,long,strength2,level stop,zero buffer,no timeout; targets4R and5R. Zero explicit fees/spread/slippage/borrowing; documented stop tick remains. Capital10000,risk0.1,symbol/total exposure1,participation1. Both rules compete for the same cash. Discovery05-06,validation07-08,final09-12. Independent stdlib Decimal execution must reconcile every window; no injected winning metrics or candidates.",
+  "negative_geometry": "The same original common_closes plus remaining session at96 is a genuine losing/no-candidate alternative. Flat prices provide a genuine no-trade/no-candidate outcome.",
+  "verification": [
+    "Strict modes, portfolio bounds, duplicates, canonical membership/order and complete registration identity; legacy independent mode behavior.",
+    "Actual successful joint screening/final with independent Decimal accounts and exact allocation/attribution reconciliation; separate independent-rule results are not summed.",
+    "Real no-trade/losing/no-candidate outcomes; defined/undefined and exact gate boundaries remain visible.",
+    "Atomic registration, duplicate queued work, membership/cost/window/core/dataset/news/borrow tampering and pre-price guards across ordinary routes and aliases.",
+    "Final consumption/continuation/failure/restart/cancel/corrupt/orphan and cached-result guards with unchanged tolerances and retained first failures.",
+    "Portfolio-role registry identity/occurrences/attempts/reuse, full saved JSON/CSV, per-rule inspection and offline source facts.",
+    "Actual API/worker and both desktop journeys including real screening, final access, audit records and every offline page; synthetic source evidence is labeled.",
+    "Affected regression, numerical95% statement/90% branch gates, isolated mutations, receipt/source integrity and final422-case conformance remain mandatory."
+  ],
+  "fixture_revision": "The original1R/5R positive-fixture assumption was wrong: validation honestly failed because an early warm-up-context BOS lost more than a later1R target earned. An explicit minute14 high excursion also did not make the joint account pass, and its failure remains retained. The authored positive fixture now uses4R/5R targets with the original early path: the later5.88 price-risk target gains at least23.52 per share, rather than5.88, after an early approximately7.01-per-share loss. The minute21 opening above both targets permits the declared conservative target exits. This is a synthetic positive-control geometry, not a researched strategy improvement. No gate, model result or candidate is injected; all three accounts must still reconcile to the separate Decimal engine. The original1R/5R diagnostic and original losing geometry remain negative evidence."
+}

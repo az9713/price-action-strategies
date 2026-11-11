@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "reviewed_at_utc": "2026-11-08T06:31:04.064Z",
+  "method": "Actual assistant visual inspection using view_image; the recording command only checks image integrity.",
+  "scope": "Three saved current browser screenshots, not all states/viewport/accessibility cases.",
+  "capture_receipt": "verification/receipts/20261108T062138740029Z-browser-after-stale-worker-cleanup.json",
+  "status": "bounded_review_with_open_findings",
+  "images": [
+    {
+      "path": "verification/runs/20261108T062138740029Z-browser-after-stale-worker-cleanup/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-inspector.png",
+      "sha256": "7602fa432cc7538748f3b9ba8f8f73f94a676c8fa13ef048da42e8cc2ff3c9d9",
+      "width": 1920,
+      "height": 2090,
+      "viewport_profile": "desktop1920",
+      "state": "trade-inspector"
+    },
+    {
+      "path": "verification/runs/20261108T062138740029Z-browser-after-stale-worker-cleanup/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-inspector.png",
+      "sha256": "6bf034dd054820808b16f701a187f4613d937bc3177a865c59937c46c0272a9d",
+      "width": 1280,
+      "height": 2071,
+      "viewport_profile": "desktop1280",
+      "state": "trade-inspector"
+    },
+    {
+      "path": "verification/runs/20261108T062138740029Z-browser-after-stale-worker-cleanup/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/results.png",
+      "sha256": "70a1b76a9f9d10246b0f89e7b43983b38643956dd8df4175be2cd6ede948a380",
+      "width": 1280,
+      "height": 1548,
+      "viewport_profile": "desktop1280",
+      "state": "results"
+    }
+  ],
+  "observations": [
+    "Current results show333.68 net profit,10 trades,60% win rate and labeled historical data, with daily marked equity and uncertainty/cost notes. Machine-readable parity is checked separately.",
+    "Candles fill the trade chart with readable price/time axes and entry/stop/target levels at both tested desktop widths. The ledger and actual exit price are displayed below.",
+    "The1280 full-page trade capture preserves the page scroll state; the fixed sidebar appears at that document offset. Further viewport/mobile/keyboard checks remain required."
+  ],
+  "open_findings": [
+    {
+      "id": "VIS-001",
+      "area": "Trade exit annotation",
+      "finding": "The above-bar Exit marker can crowd the horizontal Target annotation; present the actual exit price distinctly and verify it against saved trade data."
+    },
+    {
+      "id": "VIS-002",
+      "area": "Scrolled trade table",
+      "finding": "Selecting the last trade scrolls its table, leaving the column headings out of view; preserve readable column labels during row selection/scrolling."
+    }
+  ],
+  "acceptance_cases_certified": []
+}

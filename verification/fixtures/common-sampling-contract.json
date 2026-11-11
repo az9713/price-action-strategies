@@ -1,0 +1,31 @@
+{
+  "revision": "D039 / RULEBOOK0.19",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "source_pages": [
+    "research/screenshots/prompt_page_04.png",
+    "research/screenshots/prompt_page_05.png",
+    "research/screenshots/prompt_page_10.png",
+    "research/screenshots/prompt_page_11.png",
+    "research/screenshots/prompt_page_12.png"
+  ],
+  "scope": "Add complete explicit equities common-grid and40/40/20 common-random generation and initial discovery grading. The source's outcome-qualified40000-version balanced spread (4000 per setup;400 proposals per greedy step), exact private14016 grid/six named presets,10000 trade twins, eras, replication and family ensembles remain mandatory separate work.",
+  "policy": {
+    "modes": "legacy retains its exact former stream; common_grid enumerates its entire declared grid and requires count to equal preview; common_random fills deterministic family quotas, with largest-remainder40/40/20 zero/one/two active filter groups within each family. Canonical family/chart order makes common modes independent of input ordering. One master seed, stable per-family/filter-slot proposal streams. No duplicate configurations.",
+    "common_grid": "Strength3/both/same setup trigger(daily1h), hard0.1ATR stop,96 bars, no structure/session-flat exit. Reaction entries limit-none or next_open with close_back/rejection/engulfing; breakout/BOS/CHoCH next_open-none or limit-none. Stops level/swing; targets1R/2R/3R/swing; filter none/setup-trend/open, plus skip-news only when explicitly enabled with a frozen calendar.",
+    "grid_variants": "Level families line/zone x1..4 touches; CHoCH sweep off/on; sweep depth0/.25 x reclaim1/3; pullback(0,3)/(.25,1.5)/(.5,2); supply-demand impulse2..5 x1.5/2/3ATR; other families default. Tolerance.25. These are our published equities variants, not an assertion of the hidden host grid. All ten families/all six charts yield24480 configurations without news,32640 with it.",
+    "random_domains": "Publish the complete finite draw catalog. Conditional trigger/confirmation/gap-stop/sweep/flat/filter applicability is enforced before output. Skip inapplicable or meaningless dependent dials via canonical defaults. News filter group is available only when explicitly enabled and its calendar is frozen; existing base-strategy news mode is rejected for common modes rather than silently ignored.",
+    "filter_groups": "trend_filter, session_filter, news, skip_run_days, skip_choppy, fresh_breakout, gap_confluence. Count groups, never two values of one group. Core/trade/none/zero/false are neutral. Fresh and gap applicability follows Strategy. Count zero/one/two in accepted unique configurations, not rejected draws.",
+    "history": "Every draw retains its full proposed configuration, ordinal, stable stream key, family/chart/filter slot, classification and reason where invalid; accepted/duplicate IDs are verified by the existing transactional registry. No price read, outcome or gate changes generation. Bound random generation to200000 proposals; exhaustion persists honest failed partial plans and never runs partial search accounts.",
+    "grading": "Freeze minimum signals40, executed trades30, net profit strictly greater than0 and marked-equity Sharpe at least.5 by default; permit explicit strict finite thresholds in the API. Record signal count separately from executed trades in each saved search row. Preserve every account including too-few-signals, zero trades, losses and undefined Sharpe. Report separate flags plus cumulative funnel counts and family/chart denominators. These are initial discovery gates only: twins/eras/replication/final stages remain not_run, and no candidate/final unlock is created.",
+    "compatibility": "Existing legacy sampling choices and all account numerical fields remain unchanged. New sampler settings, recipe/domain hash and generated proposals freeze in the original payload and trial identities before prices. Cached recovery uses existing authoritative parts; changing policy/configuration/history must refuse execution/reuse.",
+    "product": "Read-only recipe preview uses no dataset, raw price or credentials and shows actual grid size/variants. UI exposes common modes, news opt-in only with a calendar, exact grid count and initial gates separately from final validation. Complete saved JSON/CSV and offline aggregate facts retain counts, settings and scope. Do not claim host count, profits, exact recipes or full funnel completion.",
+    "signal_window": "Count available_at by New York session date inside the requested discovery dates; retain but exclude warm-up signals. Preserve zero-generated frozen family/chart cells explicitly."
+  },
+  "verification": [
+    "Independent combinatorial count of every family/chart common-grid cell; exhaustive grid uniqueness/Strategy validity; exact source-common defaults and equity next-open adaptation; no14016 claim.",
+    "Independent Hamilton quotas for nonmultiples of5, small totals and all families; exact accepted filter cardinalities, applicability, every finite catalog value reachable, canonical ordering/seed repeat/different-seed changes; full draws/duplicate/invalid history and stable per-slot streams.",
+    "Actual API/worker nonempty and honest zero-trade/loss searches, frozen registry/settings/news, unsupported requests before prices, cancel/resume/shutdown/corruption/source/owner guards and failed generation without partial accounts.",
+    "Signal/trade/profit/Sharpe threshold boundaries, ties/null/NaN/bool/malformed rows, cumulative and per-family/chart denominators; independent table/CSV/fact reread with exact source-part hashes.",
+    "Real two-desktop flows, complete downloads and every bounded offline page; numerical source mutation assertions; full current regression and add sampling.py to unchanged95% statement/90% branch numerical gate. All83/422/120 scope remains unchanged."
+  ]
+}

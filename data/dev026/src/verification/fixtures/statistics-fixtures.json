@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "provenance": "Hand-authored contracts and primary-paper rounded worked values; not generated from production outputs.",
+  "tolerances": {"money_absolute": 1e-9, "ratio_absolute": 1e-12, "published_rounded_probability_absolute": 0.00005},
+  "equity_paths": [
+    {"name": "zero_then_recovery", "capital": 100, "equity": [0, 10], "daily_pnl": [-100, 10], "daily_returns": [-1, null], "net_profit": -90, "total_return": -0.9, "max_drawdown": 1, "marked_sharpe": null},
+    {"name": "negative_equity", "capital": 100, "equity": [80, -10, -5], "daily_pnl": [-20, -90, 5], "daily_returns": [-0.2, -1.125, null], "net_profit": -105, "total_return": -1.05, "max_drawdown": 1.1, "marked_sharpe": null}
+  ],
+  "published_dsr": {
+    "source": "https://davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+    "version": "2014-07-31", "pages": [9, 10], "annual_sharpe": 2.5,
+    "observations_per_year": 250, "observations": 1250, "annual_cross_trial_sharpe_variance": 0.5,
+    "examples": [
+      {"trials": 100, "skewness": -3, "raw_kurtosis": 10, "probability": 0.9004},
+      {"trials": 46, "skewness": -3, "raw_kurtosis": 10, "probability": 0.9505},
+      {"trials": 88, "skewness": 0, "raw_kurtosis": 3, "probability": 0.9505}
+    ]
+  }
+}

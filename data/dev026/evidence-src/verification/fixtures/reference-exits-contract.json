@@ -1,0 +1,17 @@
+{
+  "version":1,
+  "input_kind":"synthetic_fixture",
+  "expected": {
+    "five_minute_close_stop":"2026-11-04T14:35:00+00:00",
+    "strict_equal_then_beyond_close_stop":"2026-11-04T14:40:00+00:00",
+    "normal_session_flat":"2026-11-04T21:00:00+00:00",
+    "early_session_flat":"2026-11-27T18:00:00+00:00",
+    "twenty_four_completed_minutes":"2026-11-04T14:55:00+00:00",
+    "twenty_four_trading_minutes_over_overnight":"2026-11-05T14:45:00+00:00",
+    "opposite_structure_break":"Bar27 closes through the confirmed index23 low115.9 (or its decimal mirror); exit is at bar27 close.",
+    "limit_expiry":"Age equal to expiry rejects before testing a possible fill; a longer expiry permits that exact same price path.",
+    "weekend_limit_expiry":"Friday signal expires before Monday's return under the declared elapsed wall-clock policy."
+  },
+  "priority":"Hard touch precedes target; target precedes close/structure/session/timeout exits; boundary liquidation follows those rules.",
+  "limitations":"Supplied-signal execution fixtures, not independent verification of all ten strategy detectors."
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "source": "research/screenshots/prompt_page_08.png; AI Pathways source video, prompt 2, 16:14–16:21",
+  "source_defaults": {"replicas": 20, "time_bucket_minutes": 30},
+  "equity_adaptation": {
+    "volatility": "Prior completed setup-chart ATR divided by current completed trigger close; fixed lower boundaries 0,0.0025,0.005,0.01,0.02,0.04, with equality in the higher band.",
+    "matching": "Same symbol, chart/trigger duration, direction, 30-minute New York close-time bucket and volatility band. Exclude all actual signal moments. Freeze a maximum-cardinality source subset; every replica assigns distinct control moments to that same subset.",
+    "geometry": "Conditional randomization: transfer source level offset, stop distance and applicable swing target in source ATR units to the matched moment's own completed close and prior ATR. Preserve source size weight and all engine entry/exit/cost/account rules. This is a retrospective conditional comparison, not a new executable trading strategy.",
+    "randomness": "Rank edges by SHA-256 of master seed, configuration identity, source identity, replica index and candidate identity; never rank on future outcomes. Independent replica streams retain prefixes when replica count increases.",
+    "denominators": "Full real account is separate from the matched-source real account. Compare all control accounts with that matched-source account, not a larger full sample. Signal counts and executed trades are separate.",
+    "uncertainty": "Dollar P&L differences use aligned complete sessions and circular five-session blocks,2000 resamples. Exceedance=(1+controls with net profit>=matched real)/(replicas+1); descriptive only, not a search-adjusted global significance level. No eligible comparison when real or any control account has no executed trades."
+  },
+  "geometry_examples": [
+    {"side": 1, "source_close": 100, "source_atr": 1, "source_level": 99, "source_stop": 98, "source_target": 104, "candidate_close": 200, "candidate_atr": 2, "expected_level": 198, "expected_stop": 196, "expected_target": 208},
+    {"side": -1, "source_close": 100, "source_atr": 1, "source_level": 101, "source_stop": 102, "source_target": 96, "candidate_close": 200, "candidate_atr": 2, "expected_level": 202, "expected_stop": 204, "expected_target": 192}
+  ],
+  "tolerances": {"price_absolute": 1e-9, "money_absolute": 1e-7}
+}

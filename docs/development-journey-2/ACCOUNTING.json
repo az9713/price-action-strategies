@@ -1,0 +1,56 @@
+{
+  "scope": "Entire owning chat including documentation and later implementation; frozen before writing this continuation. Not build-only billing.",
+  "cutoff_utc": "2026-11-10T02:45:57Z",
+  "previous_cutoff_utc": "2026-11-09T18:36:32.512Z",
+  "thread_created_at_utc": "2026-11-08T00:32:52.534Z",
+  "last_usage_at_utc": "2026-11-10T02:45:50.657Z",
+  "response_records": 3326,
+  "duplicate_response_ids": 0,
+  "sum_matches_cumulative": true,
+  "calendar_seconds": 180784.466,
+  "calendar_elapsed": "2d 02h 13m 04s",
+  "turn_union_seconds": 177111.99,
+  "turn_union": "2d 01h 11m 52s",
+  "closed_turn_union_seconds": 170161.36,
+  "closed_turn_union": "1d 23h 16m 01s",
+  "completed_or_aborted_intervals": 42,
+  "open_intervals_clipped_to_cutoff": [
+    {
+      "turn_id": "01a1c2ee-fe59-73e1-b3a2-9f28de78aeaf",
+      "start": "2026-11-10T00:50:06.370000+00:00",
+      "end": "2026-11-10T02:45:57+00:00"
+    },
+    {
+      "turn_id": "01a1c335-7096-73a0-bac7-164ecefc32ef",
+      "start": "2026-11-10T02:07:01.837000+00:00",
+      "end": "2026-11-10T02:45:57+00:00"
+    }
+  ],
+  "tokens": {
+    "input_tokens": 769475553,
+    "cached_input_tokens": 763599488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4741365,
+    "reasoning_output_tokens": 2762750,
+    "total_tokens": 774216918
+  },
+  "uncached_input_tokens": 5876065,
+  "uncached_input_plus_output_tokens": 10617430,
+  "change_since_original": {
+    "input_tokens": 129397730,
+    "cached_input_tokens": 128132352,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 905718,
+    "reasoning_output_tokens": 546741,
+    "total_tokens": 130303448
+  },
+  "dollar_cost": null,
+  "dollar_cost_reason": "No attributable project invoice, Codex credit debit ledger or applicable rate allocation. Token usage alone is insufficient.",
+  "private_ledger_sha256": "bf93a48ad70d527e81e9da5243350ee8df21e87472dc7875c4ee8006d95b97e0",
+  "limitations": [
+    "Cached input is contained in input. Reasoning output is contained in output. Do not add either twice.",
+    "Wall/turn clocks include tool waits and can include machine standby. No CPU or person-hour claim.",
+    "Two task-start records lack terminal events before this cutoff. The all-turn envelope clips them to cutoff; it can overstate activity. Closed-only union is reported separately.",
+    "Later documentation and implementation cannot be reliably separated by this thread ledger; this newer total explicitly includes both."
+  ]
+}

@@ -1,0 +1,1475 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T075441882576Z-full-backend-statistics-passive-coverage",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T07:54:41.882912+00:00",
+  "finished_at_utc": "2026-11-08T07:58:24.320434+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "6ea8e4706df0a02e13ed80a8badbaa7c1a720879609a761a27d232e4fffb187e",
+    "verification_plan_sha256": "092d697072ea8a7a33c922920becbff11e36a8813e268d1512e3edace1950783",
+    "catalog_sha256": "360fe4014a7a7cf01ca333c2d48dd7677c12635bf616a85c6eb4e6fede39e37a",
+    "source_files": {
+      "PLAN.md": "6ea8e4706df0a02e13ed80a8badbaa7c1a720879609a761a27d232e4fffb187e",
+      "VERIFICATION_PLAN.md": "092d697072ea8a7a33c922920becbff11e36a8813e268d1512e3edace1950783",
+      "RULEBOOK.md": "3dacb52e93770fdc0307e805e2a4902b0404f8063e0dab39357896212cbe8e85",
+      "decisions.md": "f4a4d100ea3bdd7a2dfa7caecfcc82ab2ac2345df69a4ef01ee770000b06e917",
+      "README.md": "71e9f80a261b8500649f1d5ec2b53f4e888214cc88e0c56f98943a99701d0ed8",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "360fe4014a7a7cf01ca333c2d48dd7677c12635bf616a85c6eb4e6fede39e37a",
+      "verification/implementation-map.json": "92b0063fefb47f1f98f9685eb592f5b6c49929252bc8192e8a1a24ed138455a7",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "59f89e80f2c5ac2e2250a0a6aca93e72f148cc63b6a8217df265d8131aa381a3",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "57f2e8dc24c406604e9b0937436d45ff030aa238afc4a1606989635e2eaf00f5",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "530ca0d37b3ebb8af28d819c65b7144eea3293361a244ffd325326ee14cdbfb3",
+      "backend/lab/signals.py": "5c73050b477d2223b39ddfea3573a906029bfa0971bc7bcc56d1c9267179d7c9",
+      "backend/lab/store.py": "306862273288f8679d028bab55e3235ab3e9069dc6b4783e1c3fa2e1ab40a356",
+      "backend/lab/worker.py": "645a807ecd58516fe6b155d1e60484677dc8acaa7469a28eb85e66402a0d6518",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_benchmarks.py": "90fbe1c29e34099be8cca439e75436c3aa6e6a987f2efcfaf4bebd3b642f6715",
+      "tests/test_catalog_generation.py": "e1c328b53b6fbb9a162406af7cb6ecdaebd15e0cb34d0a2706bb96e18c1cf3d7",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "verification/build_catalog.py": "48770387fd521d066177ab68ca9e8f68a3a46e90e3a4fcda0934c6315f9c2c29",
+      "verification/check_browser_outputs.py": "fa9006d5b1993d5dbfea799d47e67e7000cb06c098591c73ad11512badb4788f",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "d054921b2a40c47699782c04c5a23fe55af730a0a4dfaa850a29f461e846e520",
+      "verification/frontend_check.py": "7511aa0d086a7cf838ddca152e54daf1af28a689a4d615f4b466057f371cfb1a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "5b4f624a41d8008b8749c3da80d93968dd6117f6fe89951172e644707c2241b1",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "dcc1721dae61fcd992058727f1ba6633bc67ed3643d73a9fff5de116cd4273b6",
+      "frontend/src/Benchmarks.tsx": "f342cea58df243fa028ada351c9a817ae0ce1ae1c6a7e51d6e038366e99158d5",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/benchmarks.spec.ts": "d39a34e9b83c65065accac90cb7560b8c481eb4e1d6536009545d2ff737bf1cd",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "1e22a19a14d3fa55be5fe35f4416c341975d925458548fc6d7044feb5b3dabfc",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "3dacb52e93770fdc0307e805e2a4902b0404f8063e0dab39357896212cbe8e85"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      },
+      {
+        "path": "verification/fixtures/statistics-fixtures.json",
+        "sha256": "b55d2e81d5d52b1c411140a3a354e42488e1642c2711a10a9db6623213ca1003"
+      },
+      {
+        "path": "verification/fixtures/benchmark-contract.json",
+        "sha256": "83acf2b95309e0e5cfb2f42e347668137b1f1f06e6d0dc379c75819ce2493ead"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--cov=backend/lab",
+      "--cov-branch",
+      "--cov-report=json:verification/runs/research-coverage.json",
+      "--junitxml=verification/runs/research-full.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/stdout.log",
+      "sha256": "f64f89af104ee12c243c2f61331f4c5455c792649d83e043233af21d03f4b5fc",
+      "bytes": 2091,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/artifacts/verification/runs/research-coverage.json",
+      "sha256": "67f7ded8bd09ce294b0ba2f7a475de7d26c2f51b5180de031860dbe17a2ebd60",
+      "bytes": 200574,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/artifacts/verification/runs/research-full.xml",
+      "sha256": "cecce02d09dfc0cef77ec663700ada85831a98627856cdcf8393b7f137e1b10e",
+      "bytes": 76552,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-000.json",
+      "sha256": "3f3ac2b88146ba434844f755533de5002400d0c322e4e45db4386cde096e917e",
+      "bytes": 74463,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-001.json",
+      "sha256": "8a14761e218935dc461e65aaa74973c8e7b0dd914dd147c22de87afd32fb0de5",
+      "bytes": 83735,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-002.json",
+      "sha256": "7e51186a4c900c9d43e294984c3751fe43f0e14101e7bcb47f38b7a105d9290d",
+      "bytes": 76480,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-003.json",
+      "sha256": "015982f8b73558ff0dbf7941199871493ec8cee31449fa472f3bec5a6099b49b",
+      "bytes": 67540,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-004.json",
+      "sha256": "c226e296f34dcfd29b36cd45808c846b12c64a694360689ded095da6b409bdb3",
+      "bytes": 64221,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-005.json",
+      "sha256": "07c66059ba37f23ada0d37e7c8f25c9d2870badb433fe5a15208f6396bd3ae80",
+      "bytes": 64172,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-006.json",
+      "sha256": "e5fea2199efae8e065f5e615fdd9db3530402c88baf0d1fb8c54d7111db92556",
+      "bytes": 74284,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-007.json",
+      "sha256": "c36c9249b0dfb1a5e8203b167862586cde115a8fb57ade1a81580fc1e4f360dd",
+      "bytes": 67685,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-008.json",
+      "sha256": "934360bcc92fa66c28c4528baadcc3acf202f7e5e4ddf7b90bcc769412de6fde",
+      "bytes": 91347,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-009.json",
+      "sha256": "ff13050f34e137e301157149f7793a1bf516f28ac1feed986e8b3ae197663bf3",
+      "bytes": 87289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-010.json",
+      "sha256": "08dec3447973843aacf3c94e9212c107e7fd9f5cd9779aff0ce1cdfafe8c5d05",
+      "bytes": 100280,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-011.json",
+      "sha256": "b483b338b0fea9b4053ee5d80faf906bf14715f76642f0c6eda9f203c87a070d",
+      "bytes": 67615,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-012.json",
+      "sha256": "a9b52105caf4fa12038593c14951d6fa65c36489f26998ef3696448f9cc188bc",
+      "bytes": 117028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-013.json",
+      "sha256": "a800c9c8c56fbe10a5c6bca29ee1ddf4ed3092b106b493b2a17be5332cf8eea0",
+      "bytes": 81808,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-014.json",
+      "sha256": "0d240e44911d65e803849d351816a7a31622210e17a870b3ba63972018e95b1c",
+      "bytes": 77705,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-015.json",
+      "sha256": "0644da90b750bcb9fa7a84c1f8387ad5d40f748d857be4ce0c41c4bdca45ab52",
+      "bytes": 70671,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-016.json",
+      "sha256": "40fc1296d5eee710506933a3c5a1bd27f3cfc25a4efa519c48b5998ba2198c3d",
+      "bytes": 74291,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-017.json",
+      "sha256": "b9a8ad42a67654efc89896e6dbec2bf54fa2a0bf346f8eace895c3815f9f8a00",
+      "bytes": 67297,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-018.json",
+      "sha256": "874ac5873dce41aafd8084cc82919675dd5b4205f82d16a6e0744fb7aafce3f8",
+      "bytes": 84599,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-019.json",
+      "sha256": "0616c01aa6b64139a8d5a42695a793a8b767e2c092d1a3b4bb056d06a5788b0a",
+      "bytes": 86581,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-020.json",
+      "sha256": "d43983c1b8488de922b5abd66cab7aee3fb11103305336a2002a03b7092d746e",
+      "bytes": 151638,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-021.json",
+      "sha256": "9ce9c5c51e5c114341aaa394a30335c83be078483ddff4e8a8c557eb29c086fe",
+      "bytes": 77290,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-022.json",
+      "sha256": "70531cc27b9a54cb37acbb660062f72f22c4edabc8a8e82e98c3f3576d9e31ec",
+      "bytes": 67555,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-023.json",
+      "sha256": "084dab130dce5f51510cddbbff7b131eb18e5040b2acc8bfb4c16b84c6def331",
+      "bytes": 70927,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-024.json",
+      "sha256": "cf7a84f0bed1f8bc4e92f61079ebc021d63269cd6e52b9c553552a7bfecf8d11",
+      "bytes": 71031,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-025.json",
+      "sha256": "7d0d8ea50b9c4d7a4dc28a0dfa00cd736ba55214a7c0af43984b92411e4b146c",
+      "bytes": 96430,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-026.json",
+      "sha256": "8dddda4bcd7bb987e0f094ae7bddf479258f3a229a0e40f3b476b5346a3133c8",
+      "bytes": 74364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-027.json",
+      "sha256": "901577589436ff45eff3cf641b9ac069ae1a88364c8430aabd2f277f47170868",
+      "bytes": 84162,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-028.json",
+      "sha256": "82eff1f5f67519766197c3cb3bc2082a5d2cec1843ff48665b8558aa19a820e5",
+      "bytes": 84837,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-029.json",
+      "sha256": "143b37f43891a7278b0d705b0fddc068d1b789db9d7729d0734031015bc7d9ca",
+      "bytes": 82336,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-030.json",
+      "sha256": "b9e897aaceee1e7a2393cf613e7a71065657c86658c2c7e6fa3b4266619a7e16",
+      "bytes": 74184,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-031.json",
+      "sha256": "b36d0e66e269c4f7900b8d19f1244e0936f283e757460d1b3c4103663f724bcf",
+      "bytes": 67718,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-032.json",
+      "sha256": "54817a7a8e0c75999b6ee32cfe0b78e5870a0f9fff5afe427a3a0820a0a964f4",
+      "bytes": 71029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-033.json",
+      "sha256": "e1803cb992d8525bd02a630ba8b0151a71f32223a35e86d4b52bff7b8216a29b",
+      "bytes": 71185,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-034.json",
+      "sha256": "618b8f0e4eda2f77d5fe51c5245fabb0965c1a8781527f5696a4546b4a5c87aa",
+      "bytes": 67531,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-035.json",
+      "sha256": "3b6e2501d2b47b196974b62126be5f4c684d7ada76fb0589a78937bce60787fb",
+      "bytes": 70655,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-036.json",
+      "sha256": "f1a19e61bae4a3b2a05022d22915c0e52e2043d947f97ca4e4e715e467202324",
+      "bytes": 81008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-037.json",
+      "sha256": "31d11924eff6eaaa2c9d7aebdeb811d9893dd3e694ef24eb70b7d70f22961e8d",
+      "bytes": 94812,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-038.json",
+      "sha256": "ffeeb8e419c4c896ce179142e59ae18d6ff33ed937179c231d418f478c376b57",
+      "bytes": 74399,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-039.json",
+      "sha256": "caeafcd62da5e47ed9164689f97dc726951c4b6bc3b01362cba185e541aa6975",
+      "bytes": 105498,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-040.json",
+      "sha256": "2adda6c73da2ef5ab4e92538acdb498b6482b6f2b91c1676545b1e49e1f7a8ce",
+      "bytes": 117226,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-041.json",
+      "sha256": "ffaf362fdda2e5641f55ab3c7e1b0cdabf20374b49171bae3e9d2d54ee3106f6",
+      "bytes": 101196,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-042.json",
+      "sha256": "013b9b44505efec4aa8fbb2a3d0564eff3c43802300eec477604e48cf585e947",
+      "bytes": 116724,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-043.json",
+      "sha256": "4205a492bc87210b5b0326c15655e7a6740c3ebd31660fb4bbd32b492b8e7fcc",
+      "bytes": 118487,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-044.json",
+      "sha256": "8e6d321aecfe484d5c37be27f8946e1e855b08d99bd838c7b45d8e9ebc172aa6",
+      "bytes": 124766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-045.json",
+      "sha256": "335f662936154b779bf564e412bc435e3e61dcb6b037989117a76d34cd4f2c5f",
+      "bytes": 88390,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-046.json",
+      "sha256": "26d21fc450407cf2ca22104041e60e4cbff291299ae258b050206bf763322cac",
+      "bytes": 84207,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-047.json",
+      "sha256": "0a159d13d10464c10ccc06fe69491f26730680612cfd7355dec786e4e13081f6",
+      "bytes": 99518,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-048.json",
+      "sha256": "a511ab4dc8cbb1d8a6b56572564e82d3d1aa56678f073f1a32b139827df101c0",
+      "bytes": 108952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-049.json",
+      "sha256": "231b61e30f9a0c68f3726884c18faad9558669d8de6ce3294aed81c8a9841512",
+      "bytes": 74273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-050.json",
+      "sha256": "637dc0decb32926f850c9ed2f4a852b608fd8c06ca474bf94c6cd763a1f0836b",
+      "bytes": 101266,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-051.json",
+      "sha256": "49efe4a8dfab37705beb7e76e02cc29703cfb03699dabc78075238626dd31eb5",
+      "bytes": 73980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-052.json",
+      "sha256": "314dba50f76fb5eb4ce47548553eac10f7a50ccb85096896520385505799facc",
+      "bytes": 74397,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-053.json",
+      "sha256": "e8cb690be9306062d2777d9db2c31af0130b2429314db5e265457632af5068b0",
+      "bytes": 61030,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-054.json",
+      "sha256": "8d37b4b748a724b5566e8445686ffaf5f2ef6b20ee12633a896d387b48e72df9",
+      "bytes": 94516,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-055.json",
+      "sha256": "a3fff8c6d2c204a6ec1c65b5cb443515f4ad9803c616a45c7bc8fc51614ec1cc",
+      "bytes": 114342,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-056.json",
+      "sha256": "77255038deeeef5d669ff13b084359dd4783ad87f31ee096afa4cc18aff35302",
+      "bytes": 70789,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-057.json",
+      "sha256": "7018986af9c453a89149680d55ae70ea1ab7381994612e0f39b27c0fc669a9e7",
+      "bytes": 107405,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-058.json",
+      "sha256": "f16bf1e0605b9ca9478b188bbd0bea853150bc6b8696200151d77c60f1f1a09e",
+      "bytes": 84472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-059.json",
+      "sha256": "72e6c4700a389a564364f7e91a25cecf873df0920c528a48a0e3469085593c48",
+      "bytes": 64190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-060.json",
+      "sha256": "7be4cfb7688dde5d3b6a2b982e17ab366708ae2694451b9ded5d4af1e12d79d4",
+      "bytes": 124576,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-061.json",
+      "sha256": "20481d1868172cbbf23100aa2433ae188ae51b905f5b7c645bf87d6091955197",
+      "bytes": 76247,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-062.json",
+      "sha256": "89e2ee4840b5a3db8521f80008d708d2b719f4172d86b7828f0a41c9188b0a49",
+      "bytes": 98302,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-063.json",
+      "sha256": "18fd374ed0b66ee8be923459a42aaab22240b4938dfce2da91d278e9824dc0be",
+      "bytes": 89443,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-064.json",
+      "sha256": "fd527270a8ce4f8683e107f89eb68d4e6d6ba0db3193e3b910b2153a13bde5f2",
+      "bytes": 92587,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-065.json",
+      "sha256": "1f97b9d90324df89af49f8804db2aef1c01e793f33010d5131be6261908a8e05",
+      "bytes": 121338,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-066.json",
+      "sha256": "e3b630fc002a362150ef921e67664dce7a4ee3fdcf15e20c383f78ca5ebde5cf",
+      "bytes": 67526,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-067.json",
+      "sha256": "470b8b48cf0fd3762012b9e40dceb0b46b09a091f80d3fb9c5ae62a9405b7ad4",
+      "bytes": 67613,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-068.json",
+      "sha256": "9bb8fa42f8d7f3de6e663a27cf8a1ea11170f24164cd64eb7c34e539d20b694f",
+      "bytes": 77824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-069.json",
+      "sha256": "7779e6a7c6910ed2c558caee2053b88e9005b3554a34da86668c2d5dad655c35",
+      "bytes": 74359,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-070.json",
+      "sha256": "a227273e64796c53d5562d34368b9335d21e3dacd66053e4a0af509bc56c8b74",
+      "bytes": 93215,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-071.json",
+      "sha256": "7e5b741c265d1ab330f09ce9f3f8712dad1dde2c561a9d3cf78aca085c6da63f",
+      "bytes": 84574,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-072.json",
+      "sha256": "0d4c3fd3dacbded9ab304ab823fdca8974e5a85a9b90c8a572868786ce1e9750",
+      "bytes": 81156,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-073.json",
+      "sha256": "50eda51677bfc1f69e39c30e95d5932da323594722af700999af0c38484b45a6",
+      "bytes": 70780,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-074.json",
+      "sha256": "603581574ed8894b21bca5a1e6156f22d6d44634987b93763131aa6ec391b5f2",
+      "bytes": 96078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-075.json",
+      "sha256": "4e2ac6dc40ba1fa4aaf69aa68cb85de166ece0064b63bcc2c157dad49463b209",
+      "bytes": 107863,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-076.json",
+      "sha256": "18a27c64ce5399ff2fe1a3032f1b976d6de9bff544dd06d565232e87029a66a3",
+      "bytes": 114537,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-077.json",
+      "sha256": "d20628117383bb9fd59ef408c3353c3b894194955781205a586f805926b29f71",
+      "bytes": 130598,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-078.json",
+      "sha256": "4fa7d7ce0d447281e0b25481ae1db593c352b449aefc8b3cb666c0ae7d8801ee",
+      "bytes": 74101,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-079.json",
+      "sha256": "28fb0d162cee76e3bb6648a45ef8f51be1f6f847e7c6c331e56592635d945c86",
+      "bytes": 112956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-080.json",
+      "sha256": "ec8d5e7eb833b7e9cafcd3a45fc619af9d10402a2a4a908c9593c6fb31698d6b",
+      "bytes": 77505,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-081.json",
+      "sha256": "adc22ccb17b947c76c5e3d6d7048579241b321dbcd2e6c4af840ff27609b2468",
+      "bytes": 98423,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-082.json",
+      "sha256": "9aa03c2ff106d5ac9a47df79fcab5dc500365e66783397bc330531d10b51f717",
+      "bytes": 116461,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-083.json",
+      "sha256": "b964b96d74c3b92101c24f1be2aabbe6da1637c10b6f2d15f2a53b87be99e0e6",
+      "bytes": 77670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-084.json",
+      "sha256": "45c3399307ce1c98f66a2c592699dfa6810d42591845fec422b0e876ecce6b53",
+      "bytes": 75366,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-085.json",
+      "sha256": "3ebc1f24e4b49bed1c2dfe9e854ea91b4743b577254e8df815cbbc212fa41f79",
+      "bytes": 64139,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-086.json",
+      "sha256": "2a16de5dadc2f254d9b9a0a51b868cb10afc069ba4c1ec0e52356181e381df15",
+      "bytes": 119479,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-087.json",
+      "sha256": "660513c0e985f3e176f6d6fb582b683944df693cbae6758a35e237b67367e376",
+      "bytes": 93904,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-088.json",
+      "sha256": "cc4dbaf8f3e7cc6f39e9592cb389c2d7279f829e9ebde2d774aee949595c53c1",
+      "bytes": 142053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-089.json",
+      "sha256": "c3543d4614d017c57962135f7a86e674dd213a568d32530d6a28b9dd00411a1d",
+      "bytes": 87117,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-090.json",
+      "sha256": "79431b1bdcfadc44dc600f1391672a6e08fab979e1629478457df6e6d5a90a82",
+      "bytes": 67424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-091.json",
+      "sha256": "093f3105302daa256193150729f0d63545865f2e916724f3be4d45c0c6586405",
+      "bytes": 70852,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-092.json",
+      "sha256": "fbc828a26c34ecaa6692283d4b0106fd3bb06f8f1009b6370a131e974487d2cb",
+      "bytes": 122361,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-093.json",
+      "sha256": "7fbe57d65cd20054a2513f4dfd6365e7984af4da6f04ca2faa193920100f81e2",
+      "bytes": 117828,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-094.json",
+      "sha256": "fa85f4aea17195caa462b883cd988bc4a9c241313f77ec388641535d95cd9b94",
+      "bytes": 129078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/reference-properties/seed-095.json",
+      "sha256": "c2bf07a075d3d0eef2424d6b85e0dbe47fff7a759c753c4074bf23db8db0fe07",
+      "bytes": 101761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-15m-long.json",
+      "sha256": "fa9f3fcf40f8255ef627e11c1ba7d67069d26a07fb00658783fdcfd6d57ad2e0",
+      "bytes": 3028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-15m-short.json",
+      "sha256": "16a91222a488bbd830b416eb468aa19a87aca4ee361b1bef48769a4d228e61b5",
+      "bytes": 3054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-1d-long.json",
+      "sha256": "196816ad63c13090321ea78fb909fd2b48b5fd926d9e95936f4eebcd5c8a6484",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-1d-short.json",
+      "sha256": "9b46cd0d4d16dc010e6dc00d19365fb2578e4069c8c100f4506e51efe64d6124",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-1h-long.json",
+      "sha256": "ed17c6a5e61c95a34daa748e39972a231b24156085cb8588baadb742e3899127",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-1h-short.json",
+      "sha256": "dcc4edfe5044119538ba0b7ee56ec3f7f857917cac98929b2bbd19d70db5cd6b",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-1m-long.json",
+      "sha256": "23f9fbfa15dbc61c79e8f331250b12ca699efcc5ab22cbc446461680aea53e34",
+      "bytes": 3024,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-1m-short.json",
+      "sha256": "a153c752b2300cbd0a627e504a31c8099fe424f7886caacb967bfefdbf4dacc1",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-4h-long.json",
+      "sha256": "085334d6f961d13ede2fdb4d204f85cef595a9bcf88ebd300673af87bf73bf5e",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-4h-short.json",
+      "sha256": "74ed2282d68c136e3d91b059934352972da867ad3702ac4740ba4102d2f646e0",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-5m-long.json",
+      "sha256": "2989b75c7755eea8877b6aa0ba65a67f3e69a20146046251597f6801ea63fc1b",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-break_of_structure-5m-short.json",
+      "sha256": "397c59f51e1d8b4264f61c1753c0102279aa6ef0dec9f44ab897f11e1f3d0594",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-15m-long.json",
+      "sha256": "2b53705849f4fbd696adaf4b00e8edde16115ac51d6c19bb884a110e04edd31f",
+      "bytes": 2948,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-15m-short.json",
+      "sha256": "17ca4e633c71ecc65c66db65f7c3d946b0fe9701e71f30a1890450886b554050",
+      "bytes": 2976,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-1d-long.json",
+      "sha256": "a4fd505e61b548398702f4253f4064264d14a8f80a1a411d71741dc7ed1f49d4",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-1d-short.json",
+      "sha256": "c2e7125c604b5efb58dd011bc1320769fc908cef94e5841f31feda921218790a",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-1h-long.json",
+      "sha256": "6072f98419d8336425664295bb8554f36be600c0554a9245526a83220a2db58c",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-1h-short.json",
+      "sha256": "05d1190e229e0638a273433ce986cf00ece0bd752301a75ba6be7aab2d2e3af5",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-1m-long.json",
+      "sha256": "d97e31e2f16df9106f6300abc0457ab5c48821204016d0e5bc04eac939968728",
+      "bytes": 2944,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-1m-short.json",
+      "sha256": "775f325227ac2a00ba1b1de301c0649b7d52125257291c0d6eceb261019a7cb8",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-4h-long.json",
+      "sha256": "f305b9033a5aba6cd0c1147d244104290975e21bf52376277a9d3582a60adb22",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-4h-short.json",
+      "sha256": "6d19b1fce7fc5a991f77a8ffc199bb29694b2b0473aa566e06b6026b3de68a27",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-5m-long.json",
+      "sha256": "b1164023c377b674f270ec438c3254c1fe2c6d18aebc1b757114b7d8b7a551b3",
+      "bytes": 2945,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-breakout-5m-short.json",
+      "sha256": "f8a3da05dc9143f35c3eee862540409397e8de3864c1d358402bf57ac111209b",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-15m-long.json",
+      "sha256": "72afb8a29542c986dfdce42d2e7b055463e63bf773eddc05141af40c85314422",
+      "bytes": 2985,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-15m-short.json",
+      "sha256": "39212a814fd952646a83b6cee00741afa7a108c6de693c3641c207e67ce23a75",
+      "bytes": 3005,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-1d-long.json",
+      "sha256": "b34a46383dad86e54dd42673821081a5b63629f188205e18d8ad4595c83d14af",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-1d-short.json",
+      "sha256": "f1cce5a9f0144fac3df6092d1f7b1253656ee98f1f7ad7e8fc5711c4192721f5",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-1h-long.json",
+      "sha256": "dd8eda1b7fe521812e5b278c1eb239c10b6a35e2bea4e0a854c4f8d0d32bf1e9",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-1h-short.json",
+      "sha256": "57c4b7b0d37102649e7e86d89b55cc318d366ebd0b9e9ce3c8b0d2dcb170dcff",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-1m-long.json",
+      "sha256": "3e9b7a5465ff8e97eb8762b96f638f178799140985de64b3c02ce9cc35303860",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-1m-short.json",
+      "sha256": "22051919a5effba9fd92240be363e1b2e4eb5ffc8ac98fcc19a86fa9f20f08ed",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-4h-long.json",
+      "sha256": "4fbe357a14e827143705abd9a91ecb8bdbb16ab24b9fcb4bb256ce3bf1aff1f8",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-4h-short.json",
+      "sha256": "262e023fd8119385fb647165eb173ab2a8ce43060e9e96c2707b5ed7483768d3",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-5m-long.json",
+      "sha256": "7cc8bb2f1a09c720e868817a07da6caa9243a0e39942b995fc3ecc1f9ea363bb",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-change_of_character-5m-short.json",
+      "sha256": "c63078718fef74e5d0df1e63556c5ddb34ee3558761205bd3bd9d7e5046b577b",
+      "bytes": 3004,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-15m-long.json",
+      "sha256": "ade94df5c809f0b7077dff64eb8f2899e657b365aa60df21a3375633d3cf1a52",
+      "bytes": 3020,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-15m-short.json",
+      "sha256": "4476bdd7b711b010f8d91e61487f84bb51f6a20eafa4998bd1e4a32b14f1b46a",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-1d-long.json",
+      "sha256": "22e8bbf399bdaeafbbdedeed9a735952a4de417b6d1155f470268098c800102c",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-1d-short.json",
+      "sha256": "eadfc29e136af83081f08e6b181ea8862047b53580ac358e425cdf0d8a171662",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-1h-long.json",
+      "sha256": "40032ebdf5c43302e0ba8813dc516bb573963e4982d73f1911fd9d8a5978adaf",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-1h-short.json",
+      "sha256": "c828722bbd9f9128353e816fed30103cb19db8df4360c91bc2d704ec26ab2cfb",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-1m-long.json",
+      "sha256": "ecdb6c7047ddc01eb6ee557c2ca974543b422d2f2d638bd2d3edbdb67d9e378b",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-1m-short.json",
+      "sha256": "d33a094dd0809cfe646cd9111f27ddfc0e86325f8b63ae44380d5bbf27a15b48",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-4h-long.json",
+      "sha256": "f06d84c3b928a3a87077e1b55b2a001b011b8a6aa0cf5a68cf5a906c2a5035c0",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-4h-short.json",
+      "sha256": "6f19a386d881b74b8022753a69b2dd19e4330638850fd678793b91a2e4b494c2",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-5m-long.json",
+      "sha256": "fba5490886c3e349f97c011681203b1ef8e7962a0b4660fbbef384f80baa490d",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-fair_value_gap-5m-short.json",
+      "sha256": "03acc07d3c3ec7ac3d5e5cd258af6b16013df730a1599ad326ebcfccb351c40f",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-15m-long.json",
+      "sha256": "b0cbc8fa1ce56e8e62ec5bf1fdb156d971f5fa29253c3e44f7ab35324bb15d91",
+      "bytes": 2956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-15m-short.json",
+      "sha256": "ce33d0fc0e9c6731139a1948c7036393e4302b18088060dfa77bc662f189bf86",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-1d-long.json",
+      "sha256": "8cd28c824ccffc16a981a196779e9283d47c8d9e421b9dd08e5aa616c3582b79",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-1d-short.json",
+      "sha256": "ed270568f544bb9c7a7e0fc74319719f3984e4c01fab9a404740b472886a5dfd",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-1h-long.json",
+      "sha256": "50afb6ec6794d09fef9e3e252c68269ff1953c5be81fb0bf6c76f746ef721e8e",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-1h-short.json",
+      "sha256": "c5441cc9698057c8107358c7d70e982eb2f3c0491c33dac60dc0b89ec5d49b42",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-1m-long.json",
+      "sha256": "09d89b9ca944f2128d2e909f6b8723cc3bd89a81e1680289b15803e6e22e94f5",
+      "bytes": 2952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-1m-short.json",
+      "sha256": "ff5633753fc8de663bb7cd6e78565f69844587e4afe90ea62c30453805c9513d",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-4h-long.json",
+      "sha256": "b80f1bd00d49de149b209b5c6c5a52fc526fa969cf1168ff160299acf4c490e2",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-4h-short.json",
+      "sha256": "48218d86d69b33cec63f52cb012b494440c6d80013f57e5b08e380ccadfad191",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-5m-long.json",
+      "sha256": "33a35b7190cd9a468d41c0f55dc9c239296a4c9164211b0f7f12d9e48d43288d",
+      "bytes": 2953,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-flip_zone-5m-short.json",
+      "sha256": "ff1701b6aa0a9935fe721a6d00cf9eb7d28891f1906eb13eee6cffae5bdc0338",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-15m-long.json",
+      "sha256": "15605cce1d6034e6a8e2ef661b8187c94778c45dead6383624fa64835d338aa3",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-15m-short.json",
+      "sha256": "d60265177eec2e7be4bc29c871f82ae5061d7c72a2a079863002ec4aa951788a",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-1d-long.json",
+      "sha256": "93f0598d05de31d58c7834bb33fe500708a5900fc3c58a7c6ec4b393bda39007",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-1d-short.json",
+      "sha256": "391893510dfb79e42e5155499f3f9509acb7285f69b434e97d5ad0aff2d56b36",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-1h-long.json",
+      "sha256": "9b17dfa9c4a608e8adc22e9c84f973d95aceb80e4edf51daf2b0468d4b508644",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-1h-short.json",
+      "sha256": "b5b759f00d4637ce4cf8b359068c920bf0aeebfd8249a250ac494b7e837fcc21",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-1m-long.json",
+      "sha256": "786c168a2a670bf0558714ae0bff76f91a20e358f2d936200fd9f34847022b41",
+      "bytes": 2977,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-1m-short.json",
+      "sha256": "35882e3fb0e140c519f99558cdbf0986933e9be83018936a897fa192f785f16a",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-4h-long.json",
+      "sha256": "f0197f458498cf2e328757ae2034fae122a517c4a98138a2fbc8818951d500ca",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-4h-short.json",
+      "sha256": "6c34778eb38eef1b66b66580370e3f629522fbe87c2fffdd8bb12347d1080b33",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-5m-long.json",
+      "sha256": "e158b0b016dc99505d37f942fe0b553a21591fbc3dee8f9b77e1bf122048afb7",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-level_bounce-5m-short.json",
+      "sha256": "636bf9b5f3a637541f142d2ab5d62838229e4ad81b8fbcc2dfe305693445be99",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-15m-long.json",
+      "sha256": "11d4d6b9e668c0086992d0964c46bc2a99060196f6c6b8dd05e958a1328a9a91",
+      "bytes": 3029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-15m-short.json",
+      "sha256": "5a94e4f89b91065e31db07170c5fd0d9b25203ab6c787e8bfbeef48ad56675e4",
+      "bytes": 3056,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-1d-long.json",
+      "sha256": "0b473a66043e5b50b389cd9fc25361dfc7267bdca8158ffd0669fe43802e30f4",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-1d-short.json",
+      "sha256": "ed4b2a857ed03848cdb88982730cfeaf69e3078a884f839566bbb9312805b3e8",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-1h-long.json",
+      "sha256": "ff10bc22c5dc6ae40551baa435d2c50e246d557a717baed2d8d92b5cd7462985",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-1h-short.json",
+      "sha256": "86fd004390982e30d4858f265e85bcea7bbc2c788bc9db85eeec6045f2fa559b",
+      "bytes": 3049,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-1m-long.json",
+      "sha256": "3e87944e0f9b64a0c31abbfc8230b167801a779ccc322f931a4a2467127761b0",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-1m-short.json",
+      "sha256": "6f9e429b7d55f22ca318bb6e20772ea87f9dbaf606a15edd6cd91076607b4f6e",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-4h-long.json",
+      "sha256": "f7c76415c89f8f1eb93fec196d5481bcc3cd269f9375c08e9e4a6711e873e5f0",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-4h-short.json",
+      "sha256": "be1ed5fd97b9399930fc280080a1274f88fd48bd5adea6e79e6ec4d62c9573ef",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-5m-long.json",
+      "sha256": "176bb9b94e9219abf52d6fa85a4bc38cdf82b468b15b3e0347ee0e1728f7c734",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-supply_demand-5m-short.json",
+      "sha256": "d420cc32fd026216d955cb0d77a8a086016aae2175f2aea74b8a8e56e134931b",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-15m-long.json",
+      "sha256": "5bacad13d37d692c231de2e022afa0800de4f0954225d9f61592546a6b137179",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-15m-short.json",
+      "sha256": "7f3b2fb323064475351396cc53b3e082a5e2651cdffb8a72d94580aebc51887a",
+      "bytes": 3008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-1d-long.json",
+      "sha256": "df91bbdc67feceeac65e50b3e2a1aef82fc4b9fd1ca126dca441afcb461fd5bb",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-1d-short.json",
+      "sha256": "41d0593d6a7344052e17b8f0e15a81917f0f98b9805d3f5cb435bb08bde91f0d",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-1h-long.json",
+      "sha256": "9eac501bf9ae87ad0e9aa68e3f3e99d489f5e6ac0613dc232cd7cb8e470eba39",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-1h-short.json",
+      "sha256": "3031782b549306c6d98d168e893e57c5ba042743d4eaf651848b66c0c5380c32",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-1m-long.json",
+      "sha256": "3d04edbe71cecc18a527d82c753e200a43c4301b0df70637922725b3d27fe144",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-1m-short.json",
+      "sha256": "6f17841c960c69ae42e0567ab1c10183b3009ce85f77ba5209c7fa135132dbb2",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-4h-long.json",
+      "sha256": "87556c270d11000270770f2e25087ee879768990c51109a1c52b7f5fc6d11385",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-4h-short.json",
+      "sha256": "e41a1c8cc2bdbd7877fece5d3631032cfda61ec9f8d59c1bd7f86f8db7e44575",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-5m-long.json",
+      "sha256": "9617495550c62af9f4154ae3e5e008aaa2cc040db70f7401c7bd30f48e731034",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-sweep_reclaim-5m-short.json",
+      "sha256": "febba41e20a153e1733077aebeb4d849b059abc5b9c9f9b12b067d43c9946258",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-15m-long.json",
+      "sha256": "df0cb64191fbe0b20977eb564311e3b283911ff39753acc498827bdc1ec3b83e",
+      "bytes": 2967,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-15m-short.json",
+      "sha256": "2a32e5adaeb331b46ca10bfee3f707548e4d719e373f7d9eea479b3c2b9fbb8b",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-1d-long.json",
+      "sha256": "50ab9b357b388e9bb3c3ea2716cd3f0022b3d4765b3700444665e6b6e58bc092",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-1d-short.json",
+      "sha256": "3773ecce5a2894a586ffdd750c90aecd8e9929cc6d1f8b97e49adf7671c1d25b",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-1h-long.json",
+      "sha256": "47cffb8048d47ebe76a45e41a88ca8283f59837127670c391347fcbcf257955f",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-1h-short.json",
+      "sha256": "ae0f20ffa1e351a5fdca3beddba8188941f5344b04fb68d4d397d43d46278e72",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-1m-long.json",
+      "sha256": "d5b08060fc220182dff0e4e79efe1379cdff8c84156f2cb5bb5e376b725f83ff",
+      "bytes": 2963,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-1m-short.json",
+      "sha256": "1cfce314d49ea2f18acff7e67e2cab65447237bea9e400c3d7a1ddd2c8f4a0b8",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-4h-long.json",
+      "sha256": "f1b8fe4857cd8f115c0dc57c763605507ad8717ba90ce21fa5ac7310c4652789",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-4h-short.json",
+      "sha256": "f94ab17875388fae3cfbc35bc67249ea662cc30e2f815f64a82b5190e8964f98",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-5m-long.json",
+      "sha256": "5a54c7110ae64b6b39593cc8f4dc5687f3cf20c32aca73fae1e812ec42c0401d",
+      "bytes": 2964,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_line-5m-short.json",
+      "sha256": "8e8457308a6c600bdbfe8f51a2935dddafcf8761a6d9b22eb11bcd62e635f6ec",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-15m-long.json",
+      "sha256": "639d73d95f284c2a3fe0ee9f0bb7a40d2792bb8f1f351812672a26abeb7e4d1c",
+      "bytes": 3050,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-15m-short.json",
+      "sha256": "61867b091325b2aab68158e359fbe989e0177e282e8bec6c5b4c4369c0a95561",
+      "bytes": 3074,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-1d-long.json",
+      "sha256": "02de7833868d62d39c71e7e0255b7beb57af1aeb62e625d2745ac18ffab2d63f",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-1d-short.json",
+      "sha256": "aabfbc0c006fd2c3e8014f293c1421ad61b88d5ccc1d09a0c226a9cb40ca86bd",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-1h-long.json",
+      "sha256": "3993fc32a23c3182b3e8a4822c64ae9f30f8ec1ec7c61f0acc41bf6bb3b96c14",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-1h-short.json",
+      "sha256": "08922fb718d6ef752cd20a16c1ae701c70fc806dfef3d850029a1efa8aa7c04c",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-1m-long.json",
+      "sha256": "3aca15eecee85935aeae9e496c0c299ee0191d97e08e495046964e74e3a00dc4",
+      "bytes": 3046,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-1m-short.json",
+      "sha256": "4e72094ce2e3a124e52c309bb0ec6484cc93fccd96293ff89b0acd44e301c7aa",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-4h-long.json",
+      "sha256": "4ec53287ccb1da2978e21895566a60dce8fd05a78ed130dab1c9379b2a1b50a2",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-4h-short.json",
+      "sha256": "510048198726d8a690a22f6cb2c25f57696234d5fbe382234fade88b551b5aeb",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-5m-long.json",
+      "sha256": "d2097ab3df2cda51461696330e53a07f61d25e8ab767b2e980d995b5ea3d0ec2",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T075441882576Z-full-backend-statistics-passive-coverage/strategy-matrix/MATRIX-trend_pullback-5m-short.json",
+      "sha256": "ccb3b2e04a212b81621271160d71b2ab0d91b4520ef8b83fea0702502667695d",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

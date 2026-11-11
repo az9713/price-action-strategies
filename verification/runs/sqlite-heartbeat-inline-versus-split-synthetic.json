@@ -1,0 +1,66 @@
+{
+  "scope": "Isolated SQLite test with synthetic data sized to the 8575239-byte owned diagnostic job payload. WAL autocheckpoint disabled for per-transaction measurement.",
+  "sqlite": "3.49.1",
+  "observations": {
+    "inline": {
+      "synchronous": 2,
+      "writes": [
+        {
+          "seconds": 0.04727919999277219,
+          "wal_bytes": 8652032
+        },
+        {
+          "seconds": 0.04623799998080358,
+          "wal_bytes": 8652032
+        },
+        {
+          "seconds": 0.0214774000342004,
+          "wal_bytes": 4152
+        },
+        {
+          "seconds": 0.02144629997201264,
+          "wal_bytes": 4152
+        },
+        {
+          "seconds": 0.021264600043650717,
+          "wal_bytes": 4152
+        },
+        {
+          "seconds": 0.022127000032924116,
+          "wal_bytes": 4152
+        }
+      ],
+      "synthetic_payload_hash_verified": true
+    },
+    "split": {
+      "synchronous": 2,
+      "writes": [
+        {
+          "seconds": 0.001185600005555898,
+          "wal_bytes": 4152
+        },
+        {
+          "seconds": 0.0010863000061362982,
+          "wal_bytes": 4152
+        },
+        {
+          "seconds": 0.0008745999657548964,
+          "wal_bytes": 4152
+        },
+        {
+          "seconds": 0.0010146000422537327,
+          "wal_bytes": 4152
+        },
+        {
+          "seconds": 0.0012434999807737768,
+          "wal_bytes": 4152
+        },
+        {
+          "seconds": 0.0009527999791316688,
+          "wal_bytes": 4152
+        }
+      ],
+      "synthetic_payload_hash_verified": true
+    }
+  }
+}

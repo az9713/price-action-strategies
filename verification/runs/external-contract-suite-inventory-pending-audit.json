@@ -1,0 +1,196 @@
+{
+  "scope": "Inventory only; unselected investigation/historical contracts need review before any final all-suite claim. No case certification.",
+  "included_suite_count": 50,
+  "external_test_files_needing_classification": [
+    {
+      "path": "verification/runs/evaluation-cache-legacy-report-contract-tests.py",
+      "test_functions": 2,
+      "tests": [
+        "test_legacy_direct_part_remains_exact_without_building_a_view",
+        "test_legacy_direct_request_rejects_bad_identity_window_and_artifact"
+      ]
+    },
+    {
+      "path": "verification/runs/research-funnel-small-positive-full.py",
+      "test_functions": 1,
+      "tests": [
+        "test_actual_full_both_policy_controls_candidate_freeze_and_both_final_instruments"
+      ]
+    },
+    {
+      "path": "verification/runs/spread-double-link-loss-authored.py",
+      "test_functions": 1,
+      "tests": [
+        "test_both_parent_side_relationship_records_lost_still_preserve_original_child"
+      ]
+    },
+    {
+      "path": "verification/runs/spread-empty-and-interrupted-boundaries.py",
+      "test_functions": 1,
+      "tests": [
+        "test_valid_empty_status_interrupted_batch_and_duplicate_trial_are_distinct"
+      ]
+    },
+    {
+      "path": "verification/runs/spread-link-repair-authored.py",
+      "test_functions": 4,
+      "tests": [
+        "test_missing_cache_repair_is_offline_idempotent_and_preserves_original_child",
+        "test_repair_cannot_invent_originals_replace_accounts_or_hide_corruption",
+        "test_repair_api_returns_only_original_child_without_accepting_override",
+        "test_dropped_cache_table_concurrent_repair_reuses_one_original_relationship"
+      ]
+    },
+    {
+      "path": "verification/runs/spread-public-schema-authored.py",
+      "test_functions": 1,
+      "tests": [
+        "test_spread_schemas_are_published_in_saved_contract_and_live_schema"
+      ]
+    },
+    {
+      "path": "verification/runs/spread-read-repair-boundary-supplement.py",
+      "test_functions": 3,
+      "tests": [
+        "test_saved_status_projection_link_and_total_byte_boundaries",
+        "test_selected_record_size_structure_index_and_request_boundaries",
+        "test_repair_wrong_kind_binding_missing_result_and_decode_boundaries"
+      ]
+    },
+    {
+      "path": "verification/runs/spread-reverse-index-supplement.py",
+      "test_functions": 2,
+      "tests": [
+        "test_reverse_index_rejects_malformed_child_id_before_any_account_work",
+        "test_reverse_index_returns_at_most_two_child_reservations_from_a_larger_corrupt_set"
+      ]
+    },
+    {
+      "path": "verification/runs/spread_account_handoff_authored.py",
+      "test_functions": 4,
+      "tests": [
+        "test_complete_parent_freezes_all_selected_financial_trials_and_original_assumptions_before_pnl",
+        "test_unqualified_or_corrupt_parent_creates_zero_financial_trials",
+        "test_repeated_and_concurrent_continuations_return_the_one_original_child",
+        "test_secondary_protected_dates_remain_unread_during_selected_accounts"
+      ]
+    },
+    {
+      "path": "verification/runs/spread_selection_paging_authored.py",
+      "test_functions": 7,
+      "tests": [
+        "test_actual_saved_selection_page_is_complete_and_never_opens_prices_or_root",
+        "test_selection_pages_do_not_read_raw_inputs_or_unrelated_large_journal_bodies",
+        "test_changed_or_missing_selected_original_never_becomes_a_plausible_empty_page",
+        "test_selection_page_has_a_real_partial_seek_index_and_rejects_its_loss",
+        "test_selection_page_api_rejects_unbounded_requests",
+        "test_saved_parent_status_exposes_original_child_without_reverifying_prices",
+        "test_parent_child_metadata_corruption_is_visible_and_cannot_offer_a_replacement"
+      ]
+    },
+    {
+      "path": "verification/runs/test_trade_twin_decimal_grading_prototype.py",
+      "test_functions": 8,
+      "tests": [
+        "test_exact_large_profit_comparison_keeps_sub_float_differences",
+        "test_noncanonical_or_numeric_shortcuts_cannot_erase_precision",
+        "test_source_threshold_ties_and_conditional_interval_remain_exact",
+        "test_original_identity_and_failure_denominators_are_not_weakened",
+        "test_partial_and_cancelled_financial_results_cannot_pass",
+        "test_cohort_baseline_sum_does_not_depend_on_default_decimal_context",
+        "test_exact_finite_sum_retains_small_trades_and_cancellation",
+        "test_nonfinite_amount_cannot_enter_a_complete_sum"
+      ]
+    },
+    {
+      "path": "verification/runs/test_trade_twin_execution_draft.py",
+      "test_functions": 10,
+      "tests": [
+        "test_financial_twin_execution_is_implemented",
+        "test_reference_has_no_production_numerical_imports",
+        "test_hand_elapsed_accounts",
+        "test_barrier_precedence_and_diagnostic_encounters",
+        "test_every_fee_and_transport_centered_on_cost_adjusted_entry",
+        "test_failed_candidates_are_preserved_and_never_resized",
+        "test_diagnostic_funding_and_participation_boundary",
+        "test_short_recall_retains_liquidation_and_failed_duration",
+        "test_split_fractional_shares_dividend_entitlement_and_unpaid_cash",
+        "test_calendar_borrow_spans_weekend_and_dst_with_changing_rate"
+      ]
+    },
+    {
+      "path": "verification/runs/test_trade_twin_features_prototype.py",
+      "test_functions": 9,
+      "tests": [
+        "test_setup_chart_completed_asof_and_independent_wilder",
+        "test_random_ohlc_completed_wilder_and_future_suffix_invariance",
+        "test_setup_atr_not_trigger_atr_and_no_signal_or_news_filter",
+        "test_split_units_at_next_open_are_known_before_new_chart_close",
+        "test_dst_weekend_and_early_close_clock",
+        "test_refuse_unknown_or_corrupt_source_without_selecting_a_subset",
+        "test_cancel_before_symbol_during_minutes_and_before_return",
+        "test_empty_original_cohort_is_not_fabricated",
+        "test_long_setup_charts_have_positive_independently_verified_warmup"
+      ]
+    },
+    {
+      "path": "verification/runs/twin-evidence-manifest-boundary-cases.py",
+      "test_functions": 4,
+      "tests": [
+        "test_complete_book_schema_cannot_be_replaced_by_a_partial_summary",
+        "test_actual_failed_liquidity_book_keeps_all_rejection_evidence",
+        "test_even_hash_consistent_bound_manifests_must_have_complete_financial_semantics",
+        "test_cancellation_during_chunking_and_after_complete_validation_returns_no_manifest"
+      ]
+    },
+    {
+      "path": "verification/runs/twin-owned-publication-authority-cases.py",
+      "test_functions": 1,
+      "tests": [
+        "test_owned_resume_never_replaces_missing_or_changed_original_publication"
+      ]
+    },
+    {
+      "path": "verification/runs/twin-publication-metadata-cases.py",
+      "test_functions": 5,
+      "tests": [
+        "test_empty_unpublished_state_and_other_jobs_do_not_fabricate_publication",
+        "test_lost_atomic_publication_or_oversized_original_events_refuse_replacement",
+        "test_original_publication_shape_and_hashes_are_strict_and_not_coerced",
+        "test_original_pair_and_file_are_both_checked_against_the_frozen_marker",
+        "test_original_root_serialization_guard_checks_disk_and_expansion_before_json"
+      ]
+    },
+    {
+      "path": "verification/runs/twin-saved-evidence-guard-cases.py",
+      "test_functions": 4,
+      "tests": [
+        "test_hash_consistent_original_metadata_and_preparation_faults_cannot_authorize_a_view",
+        "test_derived_views_and_requested_rows_cannot_replace_the_complete_original",
+        "test_closing_guard_rejects_originals_changed_after_the_requested_row_was_verified",
+        "test_unknown_policy_and_array_refuse_before_any_original_or_cached_access"
+      ]
+    },
+    {
+      "path": "verification/runs/twin-saved-evidence-positive.py",
+      "test_functions": 4,
+      "tests": [
+        "test_all_20000_actual_original_outcomes_are_returned_in_bounded_api_pages",
+        "test_actual_members_and_every_array_match_complete_original_books",
+        "test_complete_positive_zip_csv_and_standalone_report_have_no_missing_originals",
+        "test_rehashed_derived_views_and_damaged_originals_are_refused"
+      ]
+    },
+    {
+      "path": "verification/runs/twin-saved-evidence-serialization-cases.py",
+      "test_functions": 5,
+      "tests": [
+        "test_original_compressed_file_size_hash_and_expansion_are_independent_requirements",
+        "test_cached_chunk_wrong_type_or_compressed_size_is_refused",
+        "test_cached_chunk_expansion_bound_and_complete_roundtrip",
+        "test_response_bound_retains_canonical_amounts_and_refuses_oversized_full_page",
+        "test_direct_saved_page_number_boundary_has_no_coercion"
+      ]
+    }
+  ]
+}

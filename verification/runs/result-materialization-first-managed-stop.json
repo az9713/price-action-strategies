@@ -1,0 +1,9 @@
+{
+  "responding": false,
+  "error_type": "URLError",
+  "managed_session": 69587,
+  "observed_terminal_exit": 1,
+  "pending_jobs_before_stop": 0,
+  "native_process_absence_certified": false,
+  "at": "2026-11-09T07:04:49.661583+00:00"
+}

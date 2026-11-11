@@ -1,0 +1,14 @@
+{
+  "scope": "Direct visual inspection of both real browser viewport screenshots",
+  "screenshots": [
+    "verification/runs/20261109T031540293137Z-job-status-desktop-download-cancel-resume-and-derived-cache-repair-first-browser/browser/artifacts/job-status-full-saved-inpu-e425f-esume-cache-repair-controls-desktop1280/test-finished-1.png",
+    "verification/runs/20261109T031540293137Z-job-status-desktop-download-cancel-resume-and-derived-cache-repair-first-browser/browser/artifacts/job-status-full-saved-inpu-e425f-esume-cache-repair-controls-desktop1920/test-finished-1.png",
+    "verification/runs/20261109T031540293137Z-job-status-desktop-download-cancel-resume-and-derived-cache-repair-first-browser/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1280/test-finished-1.png",
+    "verification/runs/20261109T031540293137Z-job-status-desktop-download-cancel-resume-and-derived-cache-repair-first-browser/browser/artifacts/result-ownership-latest-sa-b0d03-failure-and-current-failure-desktop1920/test-finished-1.png"
+  ],
+  "observations": [
+    "Stored inputs links and Resume/Open results controls are visible in both desktop widths.",
+    "No visible horizontal overflow or control overlap in the captured job queue region.",
+    "This is a bounded visual observation, not mobile/accessibility or final-plan certification."
+  ]
+}

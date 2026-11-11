@@ -1,0 +1,25 @@
+{
+  "revision": "D045 durable integration, authored before implementation",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "requirements": "Existing83 requirements/422 cases/120 combinations remain binding; this completes the staged spread workflow rather than redefining it as callbacks.",
+  "preparation": {
+    "freeze": "Queue immutable settings, source/context/news hashes, costs/account and initial gates before preparation. Every bounded proposal must be saved before first signals. Preparation uses only source code/settings, not market prices.",
+    "checkpoints": "Save deterministic independently compressed batches outside the final proposal directory. Flush and atomically publish each batch, then commit its hash/count/coordinate through an owned durable journal. Validate every committed checkpoint before generating new batches on restart. Missing, changed, reordered, duplicate or incompatible committed records fail closed.",
+    "orphans": "An artifact written before its commit is uncommitted. Preserve its exact bytes separately before deterministic regeneration; do not treat it as a completed batch or numerical probe. Never replace a committed checkpoint silently.",
+    "seal": "Concatenate verified batch gzip members into each existing canonical family JSONL.gz file; record complete byte hashes and exact proposal inventory. Seal the complete manifest and original journal anchor before qualification. A restart after manifest write but before its journal commit verifies the deterministic result before committing it. Completed and interrupted preparation must produce identical final bytes for the same source/settings/binding. Resuming preparation must not redo committed draws.",
+    "resources": "Retained batch artifacts duplicate compressed final proposal bytes and add per-batch files. Preview exact planned batch/proposal counts; measure file bytes/time/memory on bounded fixtures. Full default32million-proposal resources remain unmeasured until actually executed; no ETA inferred from tiny fixtures."
+  },
+  "journal_and_registry": {
+    "ownership": "Every journal append requires current running owner and original payload/source binding in a single transaction. Persist sequence/previous hash/event hash and a transactional bounded head/count projection; detect event/head/payload corruption and deleted tails before any signal or replay.",
+    "phases": "Proposal draws, primary signal probes and subsequent financial accounts have distinct denominators. Initial spread preparation has zero financial trial occurrences. Register each chosen signal occurrence before computation, linked to the frozen proposal coordinate and plan identity. Each interrupted/retried signal computation has a distinct ordinal and retained state. Preserve original generic frozen-plan events; staged additions must have their own anchored provenance, not rewrite the original plan.",
+    "evidence": "Persist complete signal artifacts before committing probe_completed. Verify full saved artifact bytes, canonical signal evidence hash, exact config/context/source and signal counts before new/reused decisions. A persisted matching signal result is reused without recomputation; an uncommitted computation may rerun with a new recorded attempt. Missing/corrupt committed evidence fails, never silently re-computes as trusted.",
+    "publication": "Only a complete selected-set manifest may authorize the following prespecified P&L search. Preserve partial/exhausted sets and all failed/duplicate/unprobed proposals with explicit unfinished status. Freeze all selected financial configurations and original costs/account/gates before P&L. API callers cannot replace the selection or assumptions between phases."
+  },
+  "product": "Bounded status/history/progress/cancel/resume/reopen, full original input/evidence exports, explicit primary instrument/seed/budget/news controls, and real API/UI workflows remain required. Keep the verified main app running during isolated development; integrate only after owned idle shutdown and focused checks.",
+  "verification": [
+    "Authored failing contracts before each component; actual filesystem crashes before/after batch commit, during assembly and manifest commit; exact bytes/no-redraw recovery, incompatible settings/source/binding, symlinks/foreign files, committed corruption and preserved orphan evidence.",
+    "Actual worker queue/claim/owner loss/cancel/shutdown/lease recovery; journal transaction rollback/tail corruption; distinct planned/started/computed/reused counters and original registry event preservation.",
+    "Synthetic actual primary40-signal qualification and selected-account P&L; protected dates, news/current source hashes and unselected instruments remain guarded before new/reused prices. Financial formulas/tolerances unchanged.",
+    "API/UI/download/paging/errors/offline/source-fact evidence, critical isolated mutations, current regression/95-90 numerical gates and a coherent reconstructible integration checkpoint. Component tests never certify full422-case acceptance or actual40000/100000 source-scale execution."
+  ]
+}

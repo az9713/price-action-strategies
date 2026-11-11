@@ -1,0 +1,556 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T08:00:57.669204+00:00",
+  "finished_at_utc": "2026-11-08T08:02:18.687592+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "6ea8e4706df0a02e13ed80a8badbaa7c1a720879609a761a27d232e4fffb187e",
+    "verification_plan_sha256": "092d697072ea8a7a33c922920becbff11e36a8813e268d1512e3edace1950783",
+    "catalog_sha256": "360fe4014a7a7cf01ca333c2d48dd7677c12635bf616a85c6eb4e6fede39e37a",
+    "source_files": {
+      "PLAN.md": "6ea8e4706df0a02e13ed80a8badbaa7c1a720879609a761a27d232e4fffb187e",
+      "VERIFICATION_PLAN.md": "092d697072ea8a7a33c922920becbff11e36a8813e268d1512e3edace1950783",
+      "RULEBOOK.md": "3dacb52e93770fdc0307e805e2a4902b0404f8063e0dab39357896212cbe8e85",
+      "decisions.md": "f4a4d100ea3bdd7a2dfa7caecfcc82ab2ac2345df69a4ef01ee770000b06e917",
+      "README.md": "71e9f80a261b8500649f1d5ec2b53f4e888214cc88e0c56f98943a99701d0ed8",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "360fe4014a7a7cf01ca333c2d48dd7677c12635bf616a85c6eb4e6fede39e37a",
+      "verification/implementation-map.json": "92b0063fefb47f1f98f9685eb592f5b6c49929252bc8192e8a1a24ed138455a7",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "59f89e80f2c5ac2e2250a0a6aca93e72f148cc63b6a8217df265d8131aa381a3",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "57f2e8dc24c406604e9b0937436d45ff030aa238afc4a1606989635e2eaf00f5",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "530ca0d37b3ebb8af28d819c65b7144eea3293361a244ffd325326ee14cdbfb3",
+      "backend/lab/signals.py": "5c73050b477d2223b39ddfea3573a906029bfa0971bc7bcc56d1c9267179d7c9",
+      "backend/lab/store.py": "306862273288f8679d028bab55e3235ab3e9069dc6b4783e1c3fa2e1ab40a356",
+      "backend/lab/worker.py": "645a807ecd58516fe6b155d1e60484677dc8acaa7469a28eb85e66402a0d6518",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "e1c328b53b6fbb9a162406af7cb6ecdaebd15e0cb34d0a2706bb96e18c1cf3d7",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "verification/build_catalog.py": "48770387fd521d066177ab68ca9e8f68a3a46e90e3a4fcda0934c6315f9c2c29",
+      "verification/check_browser_outputs.py": "fa9006d5b1993d5dbfea799d47e67e7000cb06c098591c73ad11512badb4788f",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "d054921b2a40c47699782c04c5a23fe55af730a0a4dfaa850a29f461e846e520",
+      "verification/frontend_check.py": "7511aa0d086a7cf838ddca152e54daf1af28a689a4d615f4b466057f371cfb1a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "5b4f624a41d8008b8749c3da80d93968dd6117f6fe89951172e644707c2241b1",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "b1df7a46cfd57d3a71e16bfd84e680445a74c374396119af3e86afc3066a75d3",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "1e22a19a14d3fa55be5fe35f4416c341975d925458548fc6d7044feb5b3dabfc",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "3dacb52e93770fdc0307e805e2a4902b0404f8063e0dab39357896212cbe8e85"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "data/datasets/90f347229b2fb03ec112ee71/manifest.json",
+        "sha256": "bcbff02ea4930a68abcc4c92a6170cfd7ff98379638460cd6fb696ff102fde0f"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".\\.venv\\Scripts\\python.exe",
+      "verification/frontend_check.py",
+      "browser"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/stdout.log",
+      "sha256": "d5df0f7adbecda9c2e9055a6758a31cbb228fa629a863993c2398a50d8f10a19",
+      "bytes": 913,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/stderr.log",
+      "sha256": "5470ff1319b6b0daca1c806d5fd66655b8ff576abab53f76f48e4fcf69f8bc39",
+      "bytes": 332,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/.last-run.json",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "bytes": 45,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-panel.png",
+      "sha256": "516f9cd6ada4972320031fecb1785be6b7bcbbae3dadb25dc03eb42e50295f2a",
+      "bytes": 101837,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-report.json",
+      "sha256": "025908fe9447c04a796d83e9f44e66969e772267974acdceb5dd7b72b5cdf40a",
+      "bytes": 18959,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-trades.csv",
+      "sha256": "514c1561ef6daf1f534b53ce17321010c9fdbe8a359157af1fd7499b7f0806c6",
+      "bytes": 1069,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-validation.png",
+      "sha256": "29c4f5aa304bac2fc1ea949e8127f182e74aeefd41ee3246d71927bab51018c9",
+      "bytes": 208574,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/incompatible-report.json",
+      "sha256": "5a6924668e8e64ff4ca3b34a0b350c25fdbb2a4159e79157103225f583236b98",
+      "bytes": 27407,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/observations.json",
+      "sha256": "25a153204a20324d84808f6a9df591c8a9088566194b211deaa2bd852a17d4cc",
+      "bytes": 813,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/test-finished-1.png",
+      "sha256": "0273b63a49ce7c49291b3c85fecd9615e585851f8cfd1c5704f182a36a8146a1",
+      "bytes": 61710,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/trace.zip",
+      "sha256": "bed5a83741ccb9f3f34131dd1139e545a8eb7e7f9a2327b456f586092a08e682",
+      "bytes": 2187759,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-panel.png",
+      "sha256": "f4126cd8b262b56f504c184a61e1f9cab75831f3d1c3c2e030348701f375fb49",
+      "bytes": 108403,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-report.json",
+      "sha256": "025908fe9447c04a796d83e9f44e66969e772267974acdceb5dd7b72b5cdf40a",
+      "bytes": 18959,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-trades.csv",
+      "sha256": "514c1561ef6daf1f534b53ce17321010c9fdbe8a359157af1fd7499b7f0806c6",
+      "bytes": 1069,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-validation.png",
+      "sha256": "919ed894d1c6e7e54c639861b5005eb7e43a195cdfbaaf621d47c25840f985df",
+      "bytes": 219365,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/incompatible-report.json",
+      "sha256": "5a6924668e8e64ff4ca3b34a0b350c25fdbb2a4159e79157103225f583236b98",
+      "bytes": 27407,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/observations.json",
+      "sha256": "3a7e57fcdc4e5b5873ae62193325602bb8cbfcb957582c3a01d49f5b43360b47",
+      "bytes": 814,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/test-finished-1.png",
+      "sha256": "fda38946cb091e9600e366a3e2bcd27f7c12f068a5d6ff993d0bfec80a8522a9",
+      "bytes": 91113,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/trace.zip",
+      "sha256": "1b0243c857d8019e51aa2c335a3bcd9f8b011f0b11b9753eea9ecec244c55d5b",
+      "bytes": 1700489,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/chart-7632a5dbca.png",
+      "sha256": "efee8c65d44dcd91adf15911f2f34209e5b1f02bfa416e1eea73d35a7b739a1c",
+      "bytes": 14635,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/chart-bc36250c1f.png",
+      "sha256": "27441d183c080b5b061c68e346756a6cbbe27d463f532dc5f5d97c9e67a2430b",
+      "bytes": 13040,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/downloaded-report.json",
+      "sha256": "4e1888ab57f22e71ff3e4606dda477e592377be0fee7b8cad9fb9f3a655f585d",
+      "bytes": 3439535,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/downloaded-trades.csv",
+      "sha256": "4db6358bb2b65d1c4c28a0db906351cb479f48380ce975b44b83801ab1d9c91c",
+      "bytes": 20756,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/observations.json",
+      "sha256": "40746b557f056391dfcd3ada52668a0efbe72d82c258cd8f45a6b80e996ccf58",
+      "bytes": 1365,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-inputs.png",
+      "sha256": "d0a39ea5d8c252bb81f2ee94f8e8a9a446ed1782a3c2db1224d36c4e6d8326f1",
+      "bytes": 488513,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-reports.png",
+      "sha256": "c654da9a2c70fd90700868589527d20643357ce4be987acf13858923788c1c26",
+      "bytes": 118648,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-results.png",
+      "sha256": "6ae3fcb31e6607770cd06ab6e674666b96976f5ffde3d065ad416d226c5f781a",
+      "bytes": 157568,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-trade-7632a5dbca.png",
+      "sha256": "f241f6e231251b995661b53d220810b935018494c9d8791f850409bd9205e08d",
+      "bytes": 284090,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-trade-bc36250c1f.png",
+      "sha256": "dd8e7255fe0aac60e533675fb31f9699f24da633819d023346ad79e2251f6007",
+      "bytes": 282650,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/test-finished-1.png",
+      "sha256": "f785505ba0083c5f2f3f7f8b61428871c19a83815e6972b40d6682e1e62bb82c",
+      "bytes": 70472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/trace.zip",
+      "sha256": "2418f5796b7f15922b3642448d3cb8c1e29deaccfa55c06f07b7b9985d27b626",
+      "bytes": 3347968,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/chart-7632a5dbca.png",
+      "sha256": "32970a106a7ff756f23bce249406807a2c94ca72ff8a48a4a61007c0b5bb33c9",
+      "bytes": 16702,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/chart-bc36250c1f.png",
+      "sha256": "e937855de26cd4a3c81dd055a152b8f0ce6e6087abdd4432a7a823a835353d96",
+      "bytes": 15969,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/downloaded-report.json",
+      "sha256": "4e1888ab57f22e71ff3e4606dda477e592377be0fee7b8cad9fb9f3a655f585d",
+      "bytes": 3439535,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/downloaded-trades.csv",
+      "sha256": "4db6358bb2b65d1c4c28a0db906351cb479f48380ce975b44b83801ab1d9c91c",
+      "bytes": 20756,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/observations.json",
+      "sha256": "50a40aa9f6707a0a62fd986cbd2216f49ebe3134ff722bdb571b5a36c5229ee7",
+      "bytes": 1371,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-inputs.png",
+      "sha256": "398979913e9c65ae7d04ca26b0846cf59a99ee4126f1e80c5ed0e6eca89d0e58",
+      "bytes": 449818,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-reports.png",
+      "sha256": "39564e5321bf76143be87696d3561e30259ac7a49f9ad52357c6f45346f91b78",
+      "bytes": 120133,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-results.png",
+      "sha256": "c2a12c9fe83f8ab654234577f17c79abf5953def211de6fba66dbad7df381bc6",
+      "bytes": 167890,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-trade-7632a5dbca.png",
+      "sha256": "041b0ded4a1313b9a5e253d8cf9e6fcd6ba9e481dc565be7db44889b206fdec6",
+      "bytes": 297538,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-trade-bc36250c1f.png",
+      "sha256": "1291513a54e27821b7d92ac2b869c4f6e3f9a6d80274bd6ea4222b368d1eaa2c",
+      "bytes": 296900,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/test-finished-1.png",
+      "sha256": "77996ce1c969d6e9131ca14f7deaf39d9359cf22f33ac135a32d09793bd822e9",
+      "bytes": 98200,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/trace.zip",
+      "sha256": "60826007fa9aaa27449ee0a9ef9c7169a7df4a2583b8cad2443c0ff656da8ad7",
+      "bytes": 2968304,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/data.png",
+      "sha256": "7baefa64f7cad9acc20cc92533a80312d4640eea921d938d0af116573a155721",
+      "bytes": 364510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/downloaded-report.json",
+      "sha256": "3cb1df79cf2165fa4d7d73467ab8cf5fe6608c79d62556385e5cd251a6d96ac3",
+      "bytes": 238962,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/experiment.png",
+      "sha256": "a0b4d05563db38eba87944914fe016238e1266020b392c732f3294f2279f4ed6",
+      "bytes": 480036,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/observations.json",
+      "sha256": "795a43b01ba3b1391b8215db410a5a83f1ed5b0242886f322cc82debebb40d7c",
+      "bytes": 821,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/reports.png",
+      "sha256": "0e3132b0d0862e302161a625a5622b4494edcd404465814b48f0269f9e452742",
+      "bytes": 118166,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/results.png",
+      "sha256": "4e68301a9a2c8b8f716cb754ec6da24cb903f858d258dafec9aa99da6d3eb150",
+      "bytes": 122734,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/strategies.png",
+      "sha256": "a66f1a15ed9128d6392718cdf9c63ff1ad6257acf89e368cdd9c842707863c67",
+      "bytes": 253951,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/test-finished-1.png",
+      "sha256": "7439d228d4755d505fa4c7d2bb5fac48a797247dd97b704f131ae1f20d32c4bb",
+      "bytes": 69993,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trace.zip",
+      "sha256": "c9226ca48b7fb507a326d83f46b3c1a6fc3589cdf5755ce6a6dd1983c73fa806",
+      "bytes": 2218081,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-chart.png",
+      "sha256": "dfee6c1dbf98bdecc825b1e9582169eab4d4ffcc0020b99570e8a92dbd757b46",
+      "bytes": 14177,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-inspector.png",
+      "sha256": "15009d94fba22457a6ae74705ebdb421472175ddaded7e0569479212a8cfcc72",
+      "bytes": 141328,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/validation.png",
+      "sha256": "c3e47187bd37ccabf2158672f9a659f0b6480063d3c0aece82f66cfc780572d8",
+      "bytes": 123579,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/data.png",
+      "sha256": "429f91b99e7a48edf5072b8fe11e91bff418023255dc961e65f03279a2713eeb",
+      "bytes": 329821,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/downloaded-report.json",
+      "sha256": "3cb1df79cf2165fa4d7d73467ab8cf5fe6608c79d62556385e5cd251a6d96ac3",
+      "bytes": 238962,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/experiment.png",
+      "sha256": "576e7fb8c2a5e7faca62f109dbe6943774595f1a608476c4f272c47b80b7d0f6",
+      "bytes": 442004,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/observations.json",
+      "sha256": "bc0c427c5b4f1712345c0836dec5b393617a465eefcfa7bd4418c283b7f991b8",
+      "bytes": 824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/reports.png",
+      "sha256": "c268ccf3c8a87632ae41bf64d8837c4b5fdb9efeb1e79d04ea1c0b11b1a731db",
+      "bytes": 119730,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/results.png",
+      "sha256": "2bdf7c17f9bb5bcfc74e7949f06e99d9cb5af1eb389836abc5b01bddfb5740c6",
+      "bytes": 133166,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/strategies.png",
+      "sha256": "894d3dcf8366372d62f99e22aba9a35359218978401a92fc69802eb6d24e57b2",
+      "bytes": 207883,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/test-finished-1.png",
+      "sha256": "b290867d4dfccde76d3f70a3f507d1f9a730f8571dd01691b20479d86bf32bb9",
+      "bytes": 97816,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trace.zip",
+      "sha256": "477f9628421fab466089915d4b89c84ff23b446a05334f5015076c3b18b69fa1",
+      "bytes": 1902951,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-chart.png",
+      "sha256": "0d4b64445e7a83e384e03755fd571e88f8ac8e50c6784ab1a27d31968450af1f",
+      "bytes": 16203,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-inspector.png",
+      "sha256": "3b7b14af6ecf1452ddbdcb0f6deee724fc4225dc1d848e092e1e96046623bd52",
+      "bytes": 147658,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/validation.png",
+      "sha256": "695c425807fd231687b8668374aed6fa5780fbc62cc58e6e039c12ed10973523",
+      "bytes": 126369,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/junit.xml",
+      "sha256": "7f83fcb2bdbc77736209ce0545352d8ad32907e551b5f366ddea284a681e35f4",
+      "bytes": 3641,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/results.json",
+      "sha256": "33615ac82421472e0314441a4e841920dcd6a1c822aef2e72b055c4acbd7f1ab",
+      "bytes": 17183,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

@@ -1,0 +1,1043 @@
+{
+  "strategy": {
+    "additionalProperties": false,
+    "properties": {
+      "family": {
+        "default": "change_of_character",
+        "enum": [
+          "level_bounce",
+          "breakout",
+          "flip_zone",
+          "trend_pullback",
+          "trend_line",
+          "break_of_structure",
+          "change_of_character",
+          "sweep_reclaim",
+          "supply_demand",
+          "fair_value_gap"
+        ],
+        "title": "Family",
+        "type": "string"
+      },
+      "timeframe": {
+        "default": "1h",
+        "enum": [
+          "1m",
+          "5m",
+          "15m",
+          "1h",
+          "4h",
+          "1d"
+        ],
+        "title": "Timeframe",
+        "type": "string"
+      },
+      "trigger_timeframe": {
+        "anyOf": [
+          {
+            "enum": [
+              "1m",
+              "5m",
+              "15m",
+              "1h",
+              "4h",
+              "1d"
+            ],
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Trigger Timeframe"
+      },
+      "direction": {
+        "default": "both",
+        "enum": [
+          "both",
+          "long",
+          "short"
+        ],
+        "title": "Direction",
+        "type": "string"
+      },
+      "swing_strength": {
+        "default": 3,
+        "enum": [
+          2,
+          3,
+          5,
+          8
+        ],
+        "title": "Swing Strength",
+        "type": "integer"
+      },
+      "level_tolerance": {
+        "default": 0.25,
+        "enum": [
+          0.1,
+          0.25,
+          0.5
+        ],
+        "title": "Level Tolerance",
+        "type": "number"
+      },
+      "min_touches": {
+        "default": 1,
+        "maximum": 4,
+        "minimum": 1,
+        "title": "Min Touches",
+        "type": "integer"
+      },
+      "level_shape": {
+        "default": "line",
+        "enum": [
+          "line",
+          "zone"
+        ],
+        "title": "Level Shape",
+        "type": "string"
+      },
+      "level_age": {
+        "default": 96,
+        "maximum": 1000,
+        "minimum": 2,
+        "title": "Level Age",
+        "type": "integer"
+      },
+      "confirmation": {
+        "default": "none",
+        "enum": [
+          "none",
+          "close_back",
+          "rejection",
+          "engulfing",
+          "either",
+          "lower_bos"
+        ],
+        "title": "Confirmation",
+        "type": "string"
+      },
+      "confirmation_window": {
+        "default": 3,
+        "maximum": 24,
+        "minimum": 1,
+        "title": "Confirmation Window",
+        "type": "integer"
+      },
+      "entry": {
+        "default": "next_open",
+        "enum": [
+          "next_open",
+          "same_close",
+          "limit"
+        ],
+        "title": "Entry",
+        "type": "string"
+      },
+      "limit_expiry": {
+        "default": 3,
+        "maximum": 96,
+        "minimum": 1,
+        "title": "Limit Expiry",
+        "type": "integer"
+      },
+      "stop_reference": {
+        "default": "swing",
+        "enum": [
+          "swing",
+          "level",
+          "wick",
+          "gap"
+        ],
+        "title": "Stop Reference",
+        "type": "string"
+      },
+      "stop_kind": {
+        "default": "hard",
+        "enum": [
+          "hard",
+          "close"
+        ],
+        "title": "Stop Kind",
+        "type": "string"
+      },
+      "stop_buffer": {
+        "default": 0.1,
+        "enum": [
+          0.0,
+          0.1,
+          0.25
+        ],
+        "title": "Stop Buffer",
+        "type": "number"
+      },
+      "target": {
+        "default": "1R",
+        "enum": [
+          "1R",
+          "1.5R",
+          "2R",
+          "3R",
+          "4R",
+          "5R",
+          "swing"
+        ],
+        "title": "Target",
+        "type": "string"
+      },
+      "structure_exit": {
+        "default": false,
+        "title": "Structure Exit",
+        "type": "boolean"
+      },
+      "max_hold": {
+        "default": 96,
+        "enum": [
+          0,
+          24,
+          96
+        ],
+        "title": "Max Hold",
+        "type": "integer"
+      },
+      "flat_at_close": {
+        "default": false,
+        "title": "Flat At Close",
+        "type": "boolean"
+      },
+      "trend_filter": {
+        "default": "none",
+        "enum": [
+          "none",
+          "setup",
+          "higher",
+          "daily"
+        ],
+        "title": "Trend Filter",
+        "type": "string"
+      },
+      "session_filter": {
+        "default": "core",
+        "enum": [
+          "core",
+          "open"
+        ],
+        "title": "Session Filter",
+        "type": "string"
+      },
+      "skip_run_days": {
+        "default": 0,
+        "enum": [
+          0,
+          3,
+          5
+        ],
+        "title": "Skip Run Days",
+        "type": "integer"
+      },
+      "skip_choppy": {
+        "default": false,
+        "title": "Skip Choppy",
+        "type": "boolean"
+      },
+      "fresh_breakout": {
+        "default": false,
+        "title": "Fresh Breakout",
+        "type": "boolean"
+      },
+      "news": {
+        "default": "trade",
+        "enum": [
+          "trade",
+          "skip",
+          "half"
+        ],
+        "title": "News",
+        "type": "string"
+      },
+      "sweep_required": {
+        "default": false,
+        "title": "Sweep Required",
+        "type": "boolean"
+      },
+      "sweep_depth": {
+        "default": 0.0,
+        "maximum": 3,
+        "minimum": 0,
+        "title": "Sweep Depth",
+        "type": "number"
+      },
+      "reclaim_bars": {
+        "default": 3,
+        "maximum": 12,
+        "minimum": 1,
+        "title": "Reclaim Bars",
+        "type": "integer"
+      },
+      "retest_window": {
+        "default": 24,
+        "maximum": 96,
+        "minimum": 1,
+        "title": "Retest Window",
+        "type": "integer"
+      },
+      "pullback_min": {
+        "default": 0.0,
+        "maximum": 5,
+        "minimum": 0,
+        "title": "Pullback Min",
+        "type": "number"
+      },
+      "pullback_max": {
+        "default": 3.0,
+        "exclusiveMinimum": 0,
+        "maximum": 10,
+        "title": "Pullback Max",
+        "type": "number"
+      },
+      "impulse_bars": {
+        "default": 2,
+        "maximum": 5,
+        "minimum": 2,
+        "title": "Impulse Bars",
+        "type": "integer"
+      },
+      "impulse_atr": {
+        "default": 1.5,
+        "enum": [
+          1.5,
+          2.0,
+          3.0
+        ],
+        "title": "Impulse Atr",
+        "type": "number"
+      },
+      "gap_confluence": {
+        "default": false,
+        "title": "Gap Confluence",
+        "type": "boolean"
+      }
+    },
+    "title": "Strategy",
+    "type": "object"
+  },
+  "costs": {
+    "$defs": {
+      "BorrowEvent": {
+        "additionalProperties": false,
+        "properties": {
+          "symbol": {
+            "title": "Symbol",
+            "type": "string"
+          },
+          "effective_at": {
+            "title": "Effective At",
+            "type": "string"
+          },
+          "available": {
+            "title": "Available",
+            "type": "boolean"
+          },
+          "annual_rate": {
+            "maximum": 5,
+            "minimum": 0,
+            "title": "Annual Rate",
+            "type": "number"
+          },
+          "recall": {
+            "title": "Recall",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "symbol",
+          "effective_at",
+          "available",
+          "annual_rate",
+          "recall"
+        ],
+        "title": "BorrowEvent",
+        "type": "object"
+      },
+      "BorrowScenario": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Name",
+            "type": "string"
+          },
+          "start": {
+            "title": "Start",
+            "type": "string"
+          },
+          "end": {
+            "title": "End",
+            "type": "string"
+          },
+          "symbols": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 1000,
+            "minItems": 1,
+            "title": "Symbols",
+            "type": "array"
+          },
+          "complete": {
+            "default": false,
+            "title": "Complete",
+            "type": "boolean"
+          },
+          "mode": {
+            "default": "assumed",
+            "enum": [
+              "assumed",
+              "synthetic"
+            ],
+            "title": "Mode",
+            "type": "string"
+          },
+          "note": {
+            "default": "",
+            "maxLength": 1000,
+            "title": "Note",
+            "type": "string"
+          },
+          "events": {
+            "items": {
+              "$ref": "#/$defs/BorrowEvent"
+            },
+            "maxItems": 10000,
+            "title": "Events",
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "start",
+          "end",
+          "symbols"
+        ],
+        "title": "BorrowScenario",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "commission_per_share": {
+        "default": 0.005,
+        "maximum": 1,
+        "minimum": 0,
+        "title": "Commission Per Share",
+        "type": "number"
+      },
+      "minimum_commission": {
+        "default": 0,
+        "maximum": 100,
+        "minimum": 0,
+        "title": "Minimum Commission",
+        "type": "number"
+      },
+      "fixed_fee_per_order": {
+        "default": 0,
+        "maximum": 100,
+        "minimum": 0,
+        "title": "Fixed Fee Per Order",
+        "type": "number"
+      },
+      "sell_fee_per_dollar": {
+        "default": 0,
+        "maximum": 0.01,
+        "minimum": 0,
+        "title": "Sell Fee Per Dollar",
+        "type": "number"
+      },
+      "spread_bps": {
+        "default": 1,
+        "maximum": 1000,
+        "minimum": 0,
+        "title": "Spread Bps",
+        "type": "number"
+      },
+      "slippage_bps": {
+        "default": 1,
+        "maximum": 1000,
+        "minimum": 0,
+        "title": "Slippage Bps",
+        "type": "number"
+      },
+      "borrow_annual": {
+        "default": 0.03,
+        "maximum": 5,
+        "minimum": 0,
+        "title": "Borrow Annual",
+        "type": "number"
+      },
+      "borrow_available": {
+        "default": true,
+        "title": "Borrow Available",
+        "type": "boolean"
+      },
+      "borrow_scenario": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/BorrowScenario"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "title": "Costs",
+    "type": "object"
+  },
+  "portfolio": {
+    "additionalProperties": false,
+    "properties": {
+      "capital": {
+        "default": 100000,
+        "exclusiveMinimum": 0,
+        "maximum": 10000000000.0,
+        "title": "Capital",
+        "type": "number"
+      },
+      "risk_fraction": {
+        "default": 0.005,
+        "exclusiveMinimum": 0,
+        "maximum": 0.1,
+        "title": "Risk Fraction",
+        "type": "number"
+      },
+      "symbol_exposure": {
+        "default": 0.25,
+        "exclusiveMinimum": 0,
+        "maximum": 1,
+        "title": "Symbol Exposure",
+        "type": "number"
+      },
+      "total_exposure": {
+        "default": 1,
+        "exclusiveMinimum": 0,
+        "maximum": 1,
+        "title": "Total Exposure",
+        "type": "number"
+      },
+      "participation": {
+        "default": 0.05,
+        "exclusiveMinimum": 0,
+        "maximum": 1,
+        "title": "Participation",
+        "type": "number"
+      },
+      "tick_size": {
+        "default": 0.01,
+        "exclusiveMinimum": 0,
+        "maximum": 10,
+        "title": "Tick Size",
+        "type": "number"
+      }
+    },
+    "title": "Portfolio",
+    "type": "object"
+  },
+  "applicability": {
+    "gap_confluence": [
+      "break_of_structure",
+      "breakout",
+      "change_of_character",
+      "flip_zone",
+      "level_bounce",
+      "supply_demand",
+      "sweep_reclaim",
+      "trend_line",
+      "trend_pullback"
+    ],
+    "min_touches": [
+      "breakout",
+      "flip_zone",
+      "level_bounce"
+    ],
+    "level_shape": [
+      "breakout",
+      "flip_zone",
+      "level_bounce"
+    ],
+    "retest_window": [
+      "flip_zone"
+    ],
+    "pullback_min": [
+      "trend_pullback"
+    ],
+    "pullback_max": [
+      "trend_pullback"
+    ],
+    "impulse_bars": [
+      "supply_demand"
+    ],
+    "impulse_atr": [
+      "supply_demand"
+    ],
+    "sweep_depth": [
+      "change_of_character",
+      "sweep_reclaim"
+    ],
+    "reclaim_bars": [
+      "change_of_character",
+      "sweep_reclaim"
+    ]
+  },
+  "spread_settings": {
+    "additionalProperties": false,
+    "properties": {
+      "families": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 10,
+        "minItems": 1,
+        "title": "Families",
+        "type": "array"
+      },
+      "timeframes": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 6,
+        "minItems": 1,
+        "title": "Timeframes",
+        "type": "array"
+      },
+      "seed": {
+        "default": 42,
+        "maximum": 2147483647,
+        "minimum": 0,
+        "title": "Seed",
+        "type": "integer"
+      },
+      "per_family": {
+        "default": 4000,
+        "maximum": 100000,
+        "minimum": 1,
+        "title": "Per Family",
+        "type": "integer"
+      },
+      "batch_size": {
+        "default": 400,
+        "maximum": 400,
+        "minimum": 1,
+        "title": "Batch Size",
+        "type": "integer"
+      },
+      "max_batches_per_family": {
+        "default": 8000,
+        "maximum": 100000,
+        "minimum": 1,
+        "title": "Max Batches Per Family",
+        "type": "integer"
+      },
+      "minimum_signals": {
+        "default": 40,
+        "maximum": 1000000,
+        "minimum": 40,
+        "title": "Minimum Signals",
+        "type": "integer"
+      },
+      "include_news": {
+        "default": false,
+        "title": "Include News",
+        "type": "boolean"
+      }
+    },
+    "title": "SpreadSettings",
+    "type": "object"
+  },
+  "spread_run": {
+    "$defs": {
+      "BorrowEvent": {
+        "additionalProperties": false,
+        "properties": {
+          "symbol": {
+            "title": "Symbol",
+            "type": "string"
+          },
+          "effective_at": {
+            "title": "Effective At",
+            "type": "string"
+          },
+          "available": {
+            "title": "Available",
+            "type": "boolean"
+          },
+          "annual_rate": {
+            "maximum": 5,
+            "minimum": 0,
+            "title": "Annual Rate",
+            "type": "number"
+          },
+          "recall": {
+            "title": "Recall",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "symbol",
+          "effective_at",
+          "available",
+          "annual_rate",
+          "recall"
+        ],
+        "title": "BorrowEvent",
+        "type": "object"
+      },
+      "BorrowScenario": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Name",
+            "type": "string"
+          },
+          "start": {
+            "title": "Start",
+            "type": "string"
+          },
+          "end": {
+            "title": "End",
+            "type": "string"
+          },
+          "symbols": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 1000,
+            "minItems": 1,
+            "title": "Symbols",
+            "type": "array"
+          },
+          "complete": {
+            "default": false,
+            "title": "Complete",
+            "type": "boolean"
+          },
+          "mode": {
+            "default": "assumed",
+            "enum": [
+              "assumed",
+              "synthetic"
+            ],
+            "title": "Mode",
+            "type": "string"
+          },
+          "note": {
+            "default": "",
+            "maxLength": 1000,
+            "title": "Note",
+            "type": "string"
+          },
+          "events": {
+            "items": {
+              "$ref": "#/$defs/BorrowEvent"
+            },
+            "maxItems": 10000,
+            "title": "Events",
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "start",
+          "end",
+          "symbols"
+        ],
+        "title": "BorrowScenario",
+        "type": "object"
+      },
+      "Costs": {
+        "additionalProperties": false,
+        "properties": {
+          "commission_per_share": {
+            "default": 0.005,
+            "maximum": 1,
+            "minimum": 0,
+            "title": "Commission Per Share",
+            "type": "number"
+          },
+          "minimum_commission": {
+            "default": 0,
+            "maximum": 100,
+            "minimum": 0,
+            "title": "Minimum Commission",
+            "type": "number"
+          },
+          "fixed_fee_per_order": {
+            "default": 0,
+            "maximum": 100,
+            "minimum": 0,
+            "title": "Fixed Fee Per Order",
+            "type": "number"
+          },
+          "sell_fee_per_dollar": {
+            "default": 0,
+            "maximum": 0.01,
+            "minimum": 0,
+            "title": "Sell Fee Per Dollar",
+            "type": "number"
+          },
+          "spread_bps": {
+            "default": 1,
+            "maximum": 1000,
+            "minimum": 0,
+            "title": "Spread Bps",
+            "type": "number"
+          },
+          "slippage_bps": {
+            "default": 1,
+            "maximum": 1000,
+            "minimum": 0,
+            "title": "Slippage Bps",
+            "type": "number"
+          },
+          "borrow_annual": {
+            "default": 0.03,
+            "maximum": 5,
+            "minimum": 0,
+            "title": "Borrow Annual",
+            "type": "number"
+          },
+          "borrow_available": {
+            "default": true,
+            "title": "Borrow Available",
+            "type": "boolean"
+          },
+          "borrow_scenario": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/BorrowScenario"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "title": "Costs",
+        "type": "object"
+      },
+      "Portfolio": {
+        "additionalProperties": false,
+        "properties": {
+          "capital": {
+            "default": 100000,
+            "exclusiveMinimum": 0,
+            "maximum": 10000000000.0,
+            "title": "Capital",
+            "type": "number"
+          },
+          "risk_fraction": {
+            "default": 0.005,
+            "exclusiveMinimum": 0,
+            "maximum": 0.1,
+            "title": "Risk Fraction",
+            "type": "number"
+          },
+          "symbol_exposure": {
+            "default": 0.25,
+            "exclusiveMinimum": 0,
+            "maximum": 1,
+            "title": "Symbol Exposure",
+            "type": "number"
+          },
+          "total_exposure": {
+            "default": 1,
+            "exclusiveMinimum": 0,
+            "maximum": 1,
+            "title": "Total Exposure",
+            "type": "number"
+          },
+          "participation": {
+            "default": 0.05,
+            "exclusiveMinimum": 0,
+            "maximum": 1,
+            "title": "Participation",
+            "type": "number"
+          },
+          "tick_size": {
+            "default": 0.01,
+            "exclusiveMinimum": 0,
+            "maximum": 10,
+            "title": "Tick Size",
+            "type": "number"
+          }
+        },
+        "title": "Portfolio",
+        "type": "object"
+      },
+      "SearchStatistics": {
+        "additionalProperties": false,
+        "properties": {
+          "effective_trials": {
+            "anyOf": [
+              {
+                "items": {
+                  "maximum": 100000,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "maxItems": 16,
+                "minItems": 1,
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Effective Trials"
+          },
+          "dispersion_mode": {
+            "default": "empirical",
+            "enum": [
+              "empirical",
+              "assumed"
+            ],
+            "title": "Dispersion Mode",
+            "type": "string"
+          },
+          "trial_sharpe_std": {
+            "anyOf": [
+              {
+                "maximum": 1000,
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Trial Sharpe Std"
+          }
+        },
+        "title": "SearchStatistics",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "dataset_id": {
+        "pattern": "^[0-9a-f]{24}$",
+        "title": "Dataset Id",
+        "type": "string"
+      },
+      "name": {
+        "default": "Strategy experiment",
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Name",
+        "type": "string"
+      },
+      "costs": {
+        "$ref": "#/$defs/Costs"
+      },
+      "portfolio": {
+        "$ref": "#/$defs/Portfolio"
+      },
+      "start": {
+        "format": "date",
+        "title": "Start",
+        "type": "string"
+      },
+      "end": {
+        "format": "date",
+        "title": "End",
+        "type": "string"
+      },
+      "seed": {
+        "default": 42,
+        "maximum": 2147483647,
+        "minimum": 0,
+        "title": "Seed",
+        "type": "integer"
+      },
+      "news_dates": {
+        "anyOf": [
+          {
+            "items": {
+              "format": "date",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "News Dates"
+      },
+      "news_calendar_id": {
+        "anyOf": [
+          {
+            "pattern": "^[a-f0-9]{64}$",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "News Calendar Id"
+      },
+      "primary_symbol": {
+        "pattern": "^[A-Z][A-Z0-9.\\-]{0,14}$",
+        "title": "Primary Symbol",
+        "type": "string"
+      },
+      "settings": {
+        "additionalProperties": true,
+        "title": "Settings",
+        "type": "object"
+      },
+      "minimum_trades": {
+        "default": 30,
+        "maximum": 1000000,
+        "minimum": 1,
+        "title": "Minimum Trades",
+        "type": "integer"
+      },
+      "minimum_sharpe": {
+        "default": 0.5,
+        "maximum": 10,
+        "minimum": 0,
+        "title": "Minimum Sharpe",
+        "type": "number"
+      },
+      "statistics": {
+        "$ref": "#/$defs/SearchStatistics"
+      }
+    },
+    "required": [
+      "dataset_id",
+      "start",
+      "end",
+      "primary_symbol"
+    ],
+    "title": "SpreadExperiment",
+    "type": "object"
+  },
+  "spread_continuation": {
+    "additionalProperties": false,
+    "description": "The complete parent supplies every assumption; no override fields exist.",
+    "properties": {},
+    "title": "SpreadContinuation",
+    "type": "object"
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "scope": "Actual instrumented backend coverage. Does not certify acceptance or assume subprocess CLI coverage. Current numerical source checked against the executed receipt.",
+  "receipt": "verification/receipts/20261108T065143557916Z-complete-backend-coverage-portfolio.json",
+  "coverage_artifact": {
+    "path": "verification/runs/20261108T065143557916Z-complete-backend-coverage-portfolio/artifacts/verification/runs/portfolio-coverage.json",
+    "sha256": "f185e9edfad1e71aee83094df5fc04db07e70c9c12197f01347cfdbca0dad07e",
+    "bytes": 188246,
+    "purpose": "Check output artifact"
+  },
+  "modules": [
+    {
+      "path": "backend/lab/config.py",
+      "source_sha256": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "source_matches_tested_receipt": true,
+      "line_percent": 98.95833333333333,
+      "branch_percent": 91.66666666666667,
+      "required_line_percent": 95,
+      "required_branch_percent": 90,
+      "gate_pass": true,
+      "missing_lines": [
+        92
+      ],
+      "missing_branches": [
+        [
+          91,
+          92
+        ],
+        [
+          95,
+          -73
+        ]
+      ]
+    },
+    {
+      "path": "backend/lab/data.py",
+      "source_sha256": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "source_matches_tested_receipt": true,
+      "line_percent": 98.0295566502463,
+      "branch_percent": 80.3030303030303,
+      "required_line_percent": 95,
+      "required_branch_percent": 90,
+      "gate_pass": false,
+      "missing_lines": [
+        33,
+        72,
+        77,
+        229
+      ],
+      "missing_branches": [
+        [
+          32,
+          33
+        ],
+        [
+          37,
+          -35
+        ],
+        [
+          48,
+          -47
+        ],
+        [
+          55,
+          -47
+        ],
+        [
+          57,
+          -47
+        ],
+        [
+          59,
+          -47
+        ],
+        [
+          64,
+          71
+        ],
+        [
+          147,
+          -146
+        ],
+        [
+          184,
+          190
+        ],
+        [
+          197,
+          -192
+        ],
+        [
+          209,
+          -202
+        ],
+        [
+          226,
+          -223
+        ],
+        [
+          228,
+          229
+        ]
+      ]
+    },
+    {
+      "path": "backend/lab/engine.py",
+      "source_sha256": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "source_matches_tested_receipt": true,
+      "line_percent": 98.47328244274809,
+      "branch_percent": 90.98360655737704,
+      "required_line_percent": 95,
+      "required_branch_percent": 90,
+      "gate_pass": true,
+      "missing_lines": [
+        177,
+        178,
+        191,
+        264
+      ],
+      "missing_branches": [
+        [
+          21,
+          -16
+        ],
+        [
+          66,
+          -54
+        ],
+        [
+          71,
+          -54
+        ],
+        [
+          142,
+          139
+        ],
+        [
+          146,
+          145
+        ],
+        [
+          155,
+          154
+        ],
+        [
+          170,
+          168
+        ],
+        [
+          176,
+          177
+        ],
+        [
+          190,
+          191
+        ],
+        [
+          262,
+          264
+        ],
+        [
+          272,
+          270
+        ]
+      ]
+    },
+    {
+      "path": "backend/lab/metrics.py",
+      "source_sha256": "f404420ad3f33585262f784000731d9f080c5511dc3c12b3adda7f7f2c42bfb2",
+      "source_matches_tested_receipt": true,
+      "line_percent": 100,
+      "branch_percent": 83.33333333333333,
+      "required_line_percent": 95,
+      "required_branch_percent": 90,
+      "gate_pass": false,
+      "missing_lines": [],
+      "missing_branches": [
+        [
+          43,
+          -30
+        ]
+      ]
+    },
+    {
+      "path": "backend/lab/signals.py",
+      "source_sha256": "5c73050b477d2223b39ddfea3573a906029bfa0971bc7bcc56d1c9267179d7c9",
+      "source_matches_tested_receipt": true,
+      "line_percent": 92.98245614035088,
+      "branch_percent": 82.87671232876713,
+      "required_line_percent": 95,
+      "required_branch_percent": 90,
+      "gate_pass": false,
+      "missing_lines": [
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        231,
+        232,
+        239,
+        240,
+        242,
+        243,
+        244,
+        245
+      ],
+      "missing_branches": [
+        [
+          127,
+          130
+        ],
+        [
+          131,
+          137
+        ],
+        [
+          192,
+          -191
+        ],
+        [
+          195,
+          -191
+        ],
+        [
+          204,
+          194
+        ],
+        [
+          210,
+          -191
+        ],
+        [
+          217,
+          209
+        ],
+        [
+          220,
+          222
+        ],
+        [
+          224,
+          225
+        ],
+        [
+          224,
+          232
+        ],
+        [
+          231,
+          224
+        ],
+        [
+          231,
+          232
+        ],
+        [
+          232,
+          209
+        ],
+        [
+          232,
+          233
+        ],
+        [
+          235,
+          209
+        ],
+        [
+          237,
+          209
+        ],
+        [
+          238,
+          239
+        ],
+        [
+          240,
+          209
+        ],
+        [
+          240,
+          241
+        ],
+        [
+          241,
+          242
+        ],
+        [
+          244,
+          209
+        ],
+        [
+          244,
+          245
+        ],
+        [
+          245,
+          209
+        ],
+        [
+          245,
+          246
+        ],
+        [
+          250,
+          209
+        ]
+      ]
+    },
+    {
+      "path": "backend/lab/service.py",
+      "source_sha256": "9f0289324f3da4aaab97d7232911e99819ac89b4fc3022df4fd15facc45489c7",
+      "source_matches_tested_receipt": true,
+      "line_percent": 94.66666666666667,
+      "branch_percent": 73.46938775510205,
+      "required_line_percent": 95,
+      "required_branch_percent": 90,
+      "gate_pass": false,
+      "missing_lines": [
+        32,
+        73,
+        74,
+        75,
+        76,
+        78,
+        79,
+        80,
+        82,
+        99,
+        100,
+        175
+      ],
+      "missing_branches": [
+        [
+          31,
+          32
+        ],
+        [
+          36,
+          -29
+        ],
+        [
+          52,
+          35
+        ],
+        [
+          69,
+          -67
+        ],
+        [
+          72,
+          73
+        ],
+        [
+          73,
+          74
+        ],
+        [
+          73,
+          77
+        ],
+        [
+          75,
+          73
+        ],
+        [
+          75,
+          76
+        ],
+        [
+          77,
+          78
+        ],
+        [
+          81,
+          82
+        ],
+        [
+          88,
+          87
+        ],
+        [
+          117,
+          -115
+        ],
+        [
+          123,
+          -115
+        ],
+        [
+          166,
+          -164
+        ],
+        [
+          174,
+          175
+        ],
+        [
+          180,
+          -178
+        ],
+        [
+          188,
+          -186
+        ],
+        [
+          194,
+          -186
+        ],
+        [
+          234,
+          -222
+        ],
+        [
+          241,
+          -222
+        ],
+        [
+          280,
+          -272
+        ],
+        [
+          286,
+          -283
+        ],
+        [
+          289,
+          -283
+        ],
+        [
+          293,
+          -283
+        ],
+        [
+          294,
+          -283
+        ]
+      ]
+    }
+  ],
+  "numerical_coverage_gate_pass": false
+}

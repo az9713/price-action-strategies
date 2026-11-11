@@ -1,0 +1,8 @@
+{
+  "version":1,"input_kind":"synthetic_fixture",
+  "policy":"Prefer the newest qualifying level/zone/anchor. If equally new qualifying candidates point in opposite directions, reject the ambiguous setup for both directions. Same-side equal-age candidates use the closest candidate price to the completed close. This policy precedes the direction filter.",
+  "gap_context":"Gap confluence tests existence of any known same-direction valid gap, including a return that completes now; an opposite gap cannot erase that existence.",
+  "line_anchors":{"highs":[[5,110],[11,108]],"lows":[[8,100],[14,102]],"at":19,"expected_side":1,"expected_level":"103.6666666666666666666666666666666667","reason":"At19 both projected lines qualify, but low14 is newer than high11. Reflecting all prices about300 must reflect the selected direction and price."},
+  "equal_anchor":"Both high8/14 and low8/14 are confirmed outside-bar pivots. If both lines or both bounce levels qualify from equal-age anchors at19, no direction is preferred.",
+  "opposite_gaps":{"bullish":[100.1,105],"bearish":[106,110],"line_at_23":105,"reason":"At23 price105.5 remains between the untouched bullish and bearish gaps. The long projected-line candidate must retain its bullish-gap confluence even though a newer bearish gap also exists."}
+}

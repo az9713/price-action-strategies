@@ -1,0 +1,2349 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T13:51:15.284269+00:00",
+  "finished_at_utc": "2026-11-08T13:53:22.339825+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "7e5d618883eb60e64ccbf1b50a80473f036ac477188871f9374dbf3362fb7b3b",
+    "verification_plan_sha256": "ab8776df81fb51ede94011964e2353185616329edc25bfcdca5ca1667ee438f4",
+    "catalog_sha256": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+    "source_files": {
+      "PLAN.md": "7e5d618883eb60e64ccbf1b50a80473f036ac477188871f9374dbf3362fb7b3b",
+      "VERIFICATION_PLAN.md": "ab8776df81fb51ede94011964e2353185616329edc25bfcdca5ca1667ee438f4",
+      "RULEBOOK.md": "6cc0c3625e5df448732bff880bc202e0cdab9e2e2dccb404182ea1f8f4289f0f",
+      "decisions.md": "ae2dbf0d40470972479b6e6ab2d4e57e3eda757a0fd5e746048304241c88e800",
+      "README.md": "53b696342ec2b1cc35e4bb94f96e63fbe65dc9f1c30ee9e8acb654f72151ceb0",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+      "verification/implementation-map.json": "dfc9e9abd5fa2077a80785dddbf1888a20b4ca10778d59f5ee9612589faf3088",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "bdd08fe7635697033f4498f918e59bd3f46161e1754bb73c7465b5bceb66a8d0",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "bd3c9ee49903523c30f3e931477b5d806eaeed0788d85a8639246f9bc5450341",
+      "backend/lab/api.py": "5933f8534beb7aee000b2ff41727a7318c8cd2cb2f329876c00f11b22ac77a84",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "b0036ca1f581a5f46999146d438879f02af13bc8d46f87583d35542b421133c4",
+      "backend/lab/presentation_audit.py": "b73f8eb645df27f31b03127363fa42363d80cf8d6d5b1496f16071f033be109b",
+      "backend/lab/presenter.py": "d9aed48d5021559f98190499b7161a90ac5b9720765919f836fc6b958c22a161",
+      "backend/lab/presenter_assets.py": "229a15c8baa12657d01bc7685f92cab500c2466fdc57d9ce6eb8a7549bfdb830",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "cf58fb89ec7688d18b22078d9d6e9e3cecefbe2e1a712ff35ae04758e6f97834",
+      "backend/lab/signals.py": "86b765196cd7b3321eb22b7d702bc3816c85298a7a491c0325e513c29180714d",
+      "backend/lab/store.py": "403243fef566a9643623e7b4e92c1a5cfe211a8a165ee76002eb27149df620a2",
+      "backend/lab/trials.py": "156fcd610ba232962ea2647d37cbd8aafa78383675759f52772d97fdc478afba",
+      "backend/lab/worker.py": "32b60b4761598f8fcb156161cab48d7eab070a1f2b5d0f3df2e7cbbc21310d21",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "a886581d65237b5de0db2391eaee52fe96a19163bb633ed3d3a507b75f8faeae",
+      "tests/test_confirmation_filters.py": "dd45f55af7dd00bef2f4d273e439f1f4208c6762751995ac4d6fbd341da59a1a",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_data_service_boundaries.py": "35e020ccd1559c0e398302cbecb580169fc4051f98df4b61c684b66c5e045565",
+      "tests/test_evidence_recorder.py": "a9bc5bc156ac4910d007d042a16b28913dee479125655443baa39ae031240a6a",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_frontend_capture_privacy.py": "d7c1a4450d00db59e74b68555b66f12efd123cb392324839f8aae94793da33c2",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_presenter.py": "4771e301cbd6a439c3d782d289167f409a51068712e2355a5983b95759e9f41e",
+      "tests/test_presenter_api.py": "d72aa8ebdbbc04c4013b373b8e5a317412c4d24902eb77596367d42a98db79f4",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_trace_privacy.py": "e3b961683f2f46d7ef9c87934bd47f6aacd10e6dc7f045f3e072165cbe647a00",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "694ce459cecd19de0b52428e0e031b10fcef0bbf3f39739d81bc3685ef1ae8b2",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "a3765093ec276a5a92f2f45100ee5ed2f0611831f52b0a9242b5289971b3589e",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/critical_signal_mutations.py": "78e211a657abd997d68b111bbd5d2968d2b90d86c2957152aa947c0bbfc744ee",
+      "verification/frontend_check.py": "b601066f5ff30a86efaa1420071c45c8c56caab8a8c418170d7899bca4b30c7a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/presenter_reference_run.py": "a70dc854626bc318a0ca1d7361094f4a00f8422fca06b8debe15f6d0cd197666",
+      "verification/real_reference_run.py": "b15fa2af1ce322c2eff6c1a187d8e0062c53c45470e4553169ba801c6959a70f",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "verification/trace_privacy.py": "2a13f99d022e285f49d98b4d3d963c501a61b3f2b9b12c05fe3c89e63add96dc",
+      "frontend/src/Ablations.tsx": "6b3d0c37349cc2419070f851b4086269bf29555951be971ed681c670f5848ef3",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "9d97a8d12eca374e1a5dab4700163dac88f5d7e1654ee303deb55b150a8d8e00",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/PresenterExport.tsx": "1d7e89bd9e71f0ecd8210d3dc0b7dd6c66a759992e9ad7278c62e868d73d1901",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/presenter.spec.ts": "60ad2079fc2cdbf44d62eb60ba54cb8bfff6f2afaf1e7262b392424656a5af29",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "e008b55d234807d1a58d8a26acbc515f0b7e0c4bff6a4a1b6f0d28c80ceb6e8e",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "6cc0c3625e5df448732bff880bc202e0cdab9e2e2dccb404182ea1f8f4289f0f"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/presenter-contract.json",
+        "sha256": "0a55b56fa17d08ee5b8ff73e3902bc93b45ae0f4816d43e66f62328a867528e9"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      "./.venv/Scripts/python.exe",
+      "verification/frontend_check.py",
+      "browser",
+      "presenter.spec.ts"
+    ],
+    "cwd": ".",
+    "exit_code": 1,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/stdout.log",
+      "sha256": "f4d06d00a603b0a72bc45a35f44a67c060600fc18ee5ad590d37f9cda818ae80",
+      "bytes": 29362,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/stderr.log",
+      "sha256": "1d62c33b5a56f3b13896295c63ed292b537d219b3ae723211cac520c0e23b734",
+      "bytes": 332,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/.last-run.json",
+      "sha256": "9aae0b353c5bb9a7416f94a17135cba9e13eeddf810a9cfd46d5a51d5a48e0b3",
+      "bytes": 145,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/error-context.md",
+      "sha256": "9c32675ed12deff990b0096f0f544b41327b2a5c2911123eb0b5ad2d687cdc9d",
+      "bytes": 13392,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-001.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-002.png",
+      "sha256": "b97e49c2160d7965ad23edf4dc559078eb125d815286f228c1f1ff0cef818d75",
+      "bytes": 46570,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-003.png",
+      "sha256": "e343bccba238984544e49670454e0d2191bb4f5c64ccaaf8c297e1f4aae851b6",
+      "bytes": 31731,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-004.png",
+      "sha256": "f77bc1e87a751407e6e75dc61ab1e957c6992a02a0157e954d33b10b72b70805",
+      "bytes": 46253,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-005.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-006.png",
+      "sha256": "7d190a559c6b6cb361bfe22392221416146d251faf06b45d6bca476a63d9ec24",
+      "bytes": 50435,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-007.png",
+      "sha256": "872d0d284beb9a03a60ba65f335ce610009f481f86737295a600bbf9ab46d14d",
+      "bytes": 31227,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-008.png",
+      "sha256": "36328cbd4487765ae33e9c9624bc7892a917b5195b3aa659725e32b414342772",
+      "bytes": 49835,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-009.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-010.png",
+      "sha256": "8d902ae6cd5bd964c44e74c8f701274b63c280d191d194ca31233dec4eba2db4",
+      "bytes": 36121,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-011.png",
+      "sha256": "459260d62fdba282d844737e0eb4fa30f8b5a20679cf98fd33639571920c24ed",
+      "bytes": 29648,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-012.png",
+      "sha256": "5706943cfbd80830fdce0f52aed1f6e65e28346bb9f3496ff4f3e0d0383c3504",
+      "bytes": 37905,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-013.png",
+      "sha256": "3c2c50948f4f6f958e4bc5d59dd179262d051b5d0bb2bc511fe011d9b7fc1fc6",
+      "bytes": 47407,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-014.png",
+      "sha256": "9865af00e82b7f336b73595dbee87db793957299fb1467179aae1a884dac0b50",
+      "bytes": 30608,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-015.png",
+      "sha256": "4075edeea8c1d424344dab7a9b3347481eb7e38f6cf49693dc3e86c00adc97a2",
+      "bytes": 47520,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-016.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-017.png",
+      "sha256": "4266190dc46d66f14dcc046f5ff734044734b0401324a76fc7f22297b33a1bf7",
+      "bytes": 39129,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-018.png",
+      "sha256": "6a29f2d0a3df987611777d7da6b05de801502914ce51fc93ebbe9c606b873cc5",
+      "bytes": 33432,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-019.png",
+      "sha256": "8b9585c816cb0b47680730c804b2683bc81e640c5c7b818458089b6d6a1ba38d",
+      "bytes": 65373,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-020.png",
+      "sha256": "933cb122de8d57fd2805f6d07ce9f7135f198416a6bfc10024768f3e3dc5c534",
+      "bytes": 67952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-021.png",
+      "sha256": "24372be53569c6231a1e9e0ec7822dc99f6f915015e5fc22eaed22045efdacd2",
+      "bytes": 67291,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-022.png",
+      "sha256": "b4f3badb4dbb5385d5d7538a45dfdd252a1bccc2146687477f238bcd27fee10c",
+      "bytes": 68477,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-023.png",
+      "sha256": "c02a6e914102240f347a31986e60b8fae64a6451aae98bf07fc69dd2945b0f41",
+      "bytes": 67624,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-024.png",
+      "sha256": "ca98fd9eae324ef40bfa8da5ca44b89f0874351256c26312dc8176ab90ec2a19",
+      "bytes": 64740,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-025.png",
+      "sha256": "c41e3c99580408c14f235f86946b5d7b3bdd486b735ea1ae886590dc850d3191",
+      "bytes": 66484,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-026.png",
+      "sha256": "844b1f7bcbd431709f7c686b627a250713fa2bb4ae932d1b7412a6c270515c1a",
+      "bytes": 67287,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-027.png",
+      "sha256": "d04da994d851a4c42e9ff52d9a7906e4b6d4137fd1426cee2bb2561e5d8085ac",
+      "bytes": 68357,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-028.png",
+      "sha256": "d8ad2a826ad90512a3b67750f9f5779f1d50fc20ec845f2f9d4749efe39e1299",
+      "bytes": 68891,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-029.png",
+      "sha256": "56a05cf837e572aa72be6a66d4c386f42066e960baedce8f5333fed76a5b1737",
+      "bytes": 71863,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-030.png",
+      "sha256": "fb97bcd905166a0cd514915d1cb8b189bca4dd3a913522151af35355ca591837",
+      "bytes": 74093,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-031.png",
+      "sha256": "692db11f54aaf0549f4d21a2f618fd4960e79590a6551b29bbdf5937739de926",
+      "bytes": 74210,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-032.png",
+      "sha256": "c922f38630e8d5eadb0f92d4386be6490acab23e810ff3f0e9b47da2f842d940",
+      "bytes": 73754,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-033.png",
+      "sha256": "4a9bf333a865764b2bf5dc87cf946931948cf1d3a0aba145e53a69f15252d228",
+      "bytes": 47731,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-034.png",
+      "sha256": "aa5bacb40c67e82e907b40981ef0d84b32754a73667ba7c303886dcec2a6d27b",
+      "bytes": 68519,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-035.png",
+      "sha256": "208a8a2b85009f12500bc23e749e0f9615ae0460c0d82db88f2fc613b7ca653b",
+      "bytes": 70484,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-036.png",
+      "sha256": "7c85f01281f88c5ddd0c0797d0db4356920606f89ee5ea7812a49466f63874d6",
+      "bytes": 69609,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-037.png",
+      "sha256": "963df1502d578e64c32e30637ea1ad9ab92301bebdfa358da73ff29d039115c6",
+      "bytes": 37938,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-038.png",
+      "sha256": "48713b1dd1a0c6d4b5fff004ff7c9315af624877c794e24753c20177f02f848f",
+      "bytes": 59698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-039.png",
+      "sha256": "d207d2222bd4e8527afad30310baff4d44a9cb82e22fb7819d98218e0077651b",
+      "bytes": 62440,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-040.png",
+      "sha256": "1be2c1c4d6a135f510c9a712284d27cb2d8014d368b7d57bb4aa20caf5e99c4d",
+      "bytes": 63375,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-041.png",
+      "sha256": "46e2bca0e8009d02cc231272fead94134064278ee79c4008ab9ee17a63f625d0",
+      "bytes": 64186,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-042.png",
+      "sha256": "d5a550d8ec2d7e73019de0c4d536b20df382b2a9230cbf2a07e69bad50c34a2c",
+      "bytes": 61225,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-043.png",
+      "sha256": "3cdc7ad38f876148a2acc7a61b8890ac5863e21799362565398e3f07bf232874",
+      "bytes": 62359,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-044.png",
+      "sha256": "d434d73d75c91699fd48d8436edf6c60f8e59ae41d79aa918b1725728744ea02",
+      "bytes": 63909,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-045.png",
+      "sha256": "6d1e4a81d248e8a1886a9d68ff580f39d36c2dc986e3ba763e4ad7eac6d74fa2",
+      "bytes": 67564,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-046.png",
+      "sha256": "6dbb2e8dadd910b96681939b980008a74b8e9e51b7008f49978076bc36b9dadf",
+      "bytes": 39768,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-047.png",
+      "sha256": "733a5a90cc27a127801a87cfc8c4df62152111a45ab26a006be53220699596ee",
+      "bytes": 60479,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-048.png",
+      "sha256": "54acdd00bb55b80496c19230c5b26c27c6da75bceddf2c25cc930c5e7ae65510",
+      "bytes": 62700,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-049.png",
+      "sha256": "c2de27fde664a99bf11484b182f3735eb64f2904dd65c22c83e60783841af0c4",
+      "bytes": 62446,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-050.png",
+      "sha256": "9d396898267be54392ed679fa1f5fdeacc2d108f8fb49d063fc08e29ee1764ef",
+      "bytes": 63326,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-051.png",
+      "sha256": "c4ae3ee318417875adb5c3c146c62b7f115c28d4cbd0b6b5bb72abb1fdcdd996",
+      "bytes": 64662,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-052.png",
+      "sha256": "cd9c4e188629e330b04a067de175b02f279a5f85e7da1f1127993dc7fad88dd5",
+      "bytes": 63877,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-053.png",
+      "sha256": "0039a0e2369e4f594cbd880cfb5b40ed506210dd22a54c1f654715cd017e5884",
+      "bytes": 49599,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-054.png",
+      "sha256": "70e1385644fafacea24b390bae08be7fc2b3f337dbe3448628d7d7a88d801f7c",
+      "bytes": 68444,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-055.png",
+      "sha256": "51b9d4f85f20245a4510954dfe4be24a99905c93d09ccba873da5107a977c1a3",
+      "bytes": 68512,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-056.png",
+      "sha256": "228b39cfd9d44b5729cf4db4f8884c1eb7db975c51c1fcfc9cad1e66ae835038",
+      "bytes": 68549,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-057.png",
+      "sha256": "ed452b4f0f4f5b03d190c0e0c258d0c39b7f22827fa095a61f628e4921704767",
+      "bytes": 68715,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-058.png",
+      "sha256": "94ee028f90c053ef6ed64bf7d455174e62291e5e8ff46ba8557d78dd5c63e929",
+      "bytes": 70354,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-059.png",
+      "sha256": "96949453afc743b8f54f005c631fc874c42a676f1b97b09894dbdd5771364f42",
+      "bytes": 69805,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-060.png",
+      "sha256": "c14adc6834f7485c5e5165692353022c0c6ad4fa7cbd1b159dd0113444ff17c9",
+      "bytes": 71359,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-061.png",
+      "sha256": "a4b2d753badadf582a6a02960739583719fa52f652c895c89f100a5eed1f52c2",
+      "bytes": 70779,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-062.png",
+      "sha256": "30dfe9e833f0a249acd7c0fd7bcc7d71a076f4bf2db9c83299db7cd7aca60e84",
+      "bytes": 71610,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-063.png",
+      "sha256": "d7997118f6f804674223ca510ff1247453afcd6a2ce64fef20b93214035415fd",
+      "bytes": 71032,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-064.png",
+      "sha256": "3191b9aedf88ddd130c8733419cea8019f7454035323eecb9f5d37bc3ca73e08",
+      "bytes": 71589,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-065.png",
+      "sha256": "6af597e6afffe6c1a70483daac5db0a141bc0e77b276cbfdaef3233a94cfafa7",
+      "bytes": 71539,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-066.png",
+      "sha256": "1b3b4c28ee6605a7ef8a9d73ca85bc3e3292bd62d7fecdda250ddd25b8b769ed",
+      "bytes": 71121,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-067.png",
+      "sha256": "030720e47f322957efa174c186eae931f72f5fa64fa49da0bd5fe47a184bff1a",
+      "bytes": 70926,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-068.png",
+      "sha256": "54669f6ee3f0d626c629f6bd63e6f31a43230cff1681c4ad93e7b47243d5f14c",
+      "bytes": 70293,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-069.png",
+      "sha256": "2d157293b277a9c79447ca7b9aae5fd0d2ee6465f688f0dc033b629332c01ebd",
+      "bytes": 72940,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-070.png",
+      "sha256": "e9e8dda16d4f2f26a0d477a4c0b4bfcc687417cdd08ac28a66d8d7250a1f0385",
+      "bytes": 65976,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-071.png",
+      "sha256": "e2ba8c3bec7b0d3e97347563a5c57ad252d58e0f5bbceb98ba4a9b6385bbfc36",
+      "bytes": 70789,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-072.png",
+      "sha256": "24a1c665218d67b18efc24b1a4487a8f38f2c98995468851f03d9d7430ca049f",
+      "bytes": 70407,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-073.png",
+      "sha256": "d2124520ff425cb4199255bbb3a6081a08253f07f22073abc2f09e9c54fe5138",
+      "bytes": 47269,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-074.png",
+      "sha256": "662612665ae087245c548e6aad62ff15f5d36d876aec59dec00a8326cc997043",
+      "bytes": 66156,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-075.png",
+      "sha256": "b6c46824249aca72af8b272aba1b47fb896c76d0de444f39ebfd1e402affe43f",
+      "bytes": 67795,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-076.png",
+      "sha256": "ce462c8ddd0b2c159ffb7d1879b901771bafff788d43c64b44fa60e4b22956f0",
+      "bytes": 68525,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-077.png",
+      "sha256": "b9f350296d38bcf2d0fe9adad1da036200c9f1be26ae8e24278950df8c5cc513",
+      "bytes": 69609,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-078.png",
+      "sha256": "988ba852028b296c484c1099fa946e6087b394fcf4c3d4f7ca388f597d7c3788",
+      "bytes": 71007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-079.png",
+      "sha256": "83febd07ea96fda53be207104b3ad510fda1c6b47205fedc0ba32d9c84304720",
+      "bytes": 75041,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-080.png",
+      "sha256": "a3114ce0ebbc41ab65395120fd40d71e789af068bab2c6d48612d903163a0f6c",
+      "bytes": 75612,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-081.png",
+      "sha256": "501d9118241eaf8d0c8a92be081fe98d9ac53511b37a14fdbd5bee94b3515d45",
+      "bytes": 75757,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-082.png",
+      "sha256": "e59a81353cbf264078ca90ddff189a95df16236756ed16efd9412901684904a4",
+      "bytes": 76099,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-083.png",
+      "sha256": "fba7fc55e47d620f8cbf42e7a486c53e1e44a961312db80d273c67c8bcd65795",
+      "bytes": 51179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-084.png",
+      "sha256": "39dd763234b1bb57f310fad40f07e030c0114ee5cb4f00a40db95407c7c36985",
+      "bytes": 66038,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-085.png",
+      "sha256": "2aaa4980ec8b8fcc36d3bf4583fd02918be3db2344b33606f4dd4205da483556",
+      "bytes": 71260,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-086.png",
+      "sha256": "054eb99c0c4f7efd2029f041ac04a1d0fef49c72e18c41070147f65d4188281f",
+      "bytes": 68937,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-087.png",
+      "sha256": "0e91f48e64608d2b862b3c96becbd76948fe11ef5acba5e0e30062e72da3a7a8",
+      "bytes": 72696,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-088.png",
+      "sha256": "f3d7b97242fc4a80d12d52387bef0282bae59c62534a4bfce10466bca36c1bb7",
+      "bytes": 71002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-089.png",
+      "sha256": "4e0c1f6937322841fbac5556a237fa5a3a50a7bfab04ce5cbd372495af71eafb",
+      "bytes": 67897,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-090.png",
+      "sha256": "26769dab85628293110ec3eb167f16e02e5352317743d2e00337d838ea900ef1",
+      "bytes": 55843,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-091.png",
+      "sha256": "24405840ad7f921f0003d38a3182508c7e3c7c350b4aa7e7e5d1ad7bd5206af0",
+      "bytes": 70344,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-092.png",
+      "sha256": "b6b7a353d5d73d9dd4190ec9bc18a4e65755dfbaa16c660a98e02ccf6126a271",
+      "bytes": 70753,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-093.png",
+      "sha256": "21ef12eb8577152b83148275f168bdb2ad5689ff31be0f3e9fcfadd6be4ce34e",
+      "bytes": 70473,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-094.png",
+      "sha256": "696d385f038af472c75994e973c7edc692be2f0dbf90a5d0e66d14c11f185de8",
+      "bytes": 75184,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-095.png",
+      "sha256": "8afec8cf1342ca5f104fb061cd952c4770510a442eab0e5d8a2dcbbb39016ab6",
+      "bytes": 71023,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-096.png",
+      "sha256": "a7ee886ec06d45158dd5e0a50497c98359c674ded70ab91e004cd1357839eb0b",
+      "bytes": 74450,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-097.png",
+      "sha256": "f84dbf9feae25568b0b0d99c923dd5580d5d6132748666fbbca5b3eab733b950",
+      "bytes": 73580,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-098.png",
+      "sha256": "6e222edb2f5b99c7d9f447dcfff508f8efe73b361530c02627c110223b59a6fa",
+      "bytes": 73581,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-099.png",
+      "sha256": "67f45a68df1b62fdc0195093b82387fe6426908ce1e46b240c88c948775f8b9e",
+      "bytes": 71319,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-100.png",
+      "sha256": "4ac6ef8b24e5e2d458b4f4ef8a268ea1798baccc274840e1cb94ff53470c66a8",
+      "bytes": 75400,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-101.png",
+      "sha256": "3a4e358da8013a5b6e20c8070c03bfcb9f9e3585c25f327fb6c39f6efc38df01",
+      "bytes": 68101,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-102.png",
+      "sha256": "46e045c26f023dc84afb0a8a8ae2ebdcc84adde8bf94b2b287fdd2ce2ee6209d",
+      "bytes": 67620,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-103.png",
+      "sha256": "8f4f97fd5c3485667bf57441a398dccaf09c686f2fb13d6c4f460f7cb53e6c7c",
+      "bytes": 70061,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-104.png",
+      "sha256": "99f7a4ceaca9cee7601cea17da058adf933ccd3b204817f5eb94215c52e1a63f",
+      "bytes": 69600,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-105.png",
+      "sha256": "e305bb183cb5ad0bac95ded81f374bf26351d879806ff83b95e66996d468987e",
+      "bytes": 70998,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-106.png",
+      "sha256": "835e9d5c230e6e5311d2b01e8e64ad836c7bc7532e7b40071e382b65d9499073",
+      "bytes": 70756,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-107.png",
+      "sha256": "aabdd2e8f09abdfbeedc52d8056667338125b13d72ab92fbbd2933025fcb5819",
+      "bytes": 69334,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-108.png",
+      "sha256": "a7d85b573e47b12af76f588f11550682a3fd14384216613e415cc6b7ce1ad516",
+      "bytes": 73002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-109.png",
+      "sha256": "28556db31734d5d2c5b3fd13081880843db96e2802d01bb1d8fab74d42d9ca1f",
+      "bytes": 68858,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-110.png",
+      "sha256": "239a23808c3d70e343e9ddf79dc2d9ed86445a7788b1f6d477f7e6791f877e0e",
+      "bytes": 69667,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-111.png",
+      "sha256": "fe3a10a9b8f429a2fa48e5ca27917cc33d55f9d71d17e73f1101717688138d95",
+      "bytes": 63233,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-112.png",
+      "sha256": "df272b8905495155ce9e9539cb165114b19741d35687daee6e6878b00184b6be",
+      "bytes": 65648,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-113.png",
+      "sha256": "11b5484917f0cef6e39ee13b76ab1de398b96dbac050e62cbe07b9b7137d5526",
+      "bytes": 65871,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-114.png",
+      "sha256": "3f3767dd7451bed2372dfc7444bba2acb6da664f64cecfe0a80db793c29d8b13",
+      "bytes": 67914,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-115.png",
+      "sha256": "e6b9ab4c92835c4ad943dacbe186acc893e4bc9df66cc896da4dee9c887dc6cb",
+      "bytes": 65320,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-116.png",
+      "sha256": "8b1a4c9bd460230e0551bdbbd52ef895db0816f9af0d789333cf4b1111200910",
+      "bytes": 66291,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-117.png",
+      "sha256": "636614e8ec77108572616ce4124d02a9eb66a904c60b4fcc0315de3a54481da5",
+      "bytes": 68389,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-118.png",
+      "sha256": "be32cfc8928277b858264f7bcd5ac367c5ab70db91794caae78c53cb87a8182e",
+      "bytes": 68242,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-119.png",
+      "sha256": "9318dd70f7ca4adeb7a2adbb9a5e6197be2f4f66dc01537f1e916a6db2495b61",
+      "bytes": 67982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-120.png",
+      "sha256": "1f56eb76c163c77b7eec5cfd9bb48b24cef942f8b414989dd2df6c8262127849",
+      "bytes": 70484,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-121.png",
+      "sha256": "1c890b0fd7f4cb462576d5fe9df11655436e3cd99ddf1fd4b61e158cb9674fd4",
+      "bytes": 64089,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-122.png",
+      "sha256": "9e80dd32e48668e5572121ed9f7f1d10361c26e9fd000f67043aeebbd43af4c0",
+      "bytes": 67259,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-123.png",
+      "sha256": "81541fd1e94861eb5fd3e4eb71c561858c3cf747a69a854e9ce6eb15b2aee0ee",
+      "bytes": 53289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-124.png",
+      "sha256": "69354caafd37413578a97203015ecc1bbd9a9d870235bd9515568f062ab46a85",
+      "bytes": 61282,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-125.png",
+      "sha256": "5b01796e1b1585c4ea014902f4191f50117771a7b7a253b677a5144084d88efe",
+      "bytes": 65383,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-126.png",
+      "sha256": "4ce8de95d198c3594dc52b5b7c37bbc403c8a566b515df52008bbae6692704e5",
+      "bytes": 65478,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-127.png",
+      "sha256": "edc0e77298e16fc1390da3359d200d3d8ee20479e1f654e8acd77ceb8a170843",
+      "bytes": 37844,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-128.png",
+      "sha256": "60650fdbb6404a78f0ad982c78ac1710f7574691846484a03203518afb13a0f9",
+      "bytes": 64817,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-129.png",
+      "sha256": "a507846cb803a459f0fbd990d1ce77f27725f2fcae9b38dec589af012102933c",
+      "bytes": 67057,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-130.png",
+      "sha256": "76fc12cb905f8b1213b90f765755a951f2dfbdd94248f91f9b6fd0345fcfb1c3",
+      "bytes": 68821,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-131.png",
+      "sha256": "425c96308369ae0b4932f23936cea0c0c006a74b0e5e8096053b7be75f9f7a46",
+      "bytes": 68216,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-132.png",
+      "sha256": "0014754e6dc3f070e3b44297239b0d17c868d2f57b610e133df8b804696e41b9",
+      "bytes": 69281,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-133.png",
+      "sha256": "22d2f65b18bcc5a2a8643bd9002188ade13b32ed4051e2e25cc0eb112ff02533",
+      "bytes": 71122,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-134.png",
+      "sha256": "537ed028c1cba63968cb920b7ed3d3bb0cf6c9fed938f487523959f82c01da35",
+      "bytes": 67711,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-135.png",
+      "sha256": "156fb1a0705660e3917c04c92800abfaaeec30a67fa95bcf75e6568be6d738c6",
+      "bytes": 68491,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-136.png",
+      "sha256": "3a01da38fc13e6cae2dde31f51ba7fa9c61a61a38be1e559b0d1ec3e258debd8",
+      "bytes": 68459,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-137.png",
+      "sha256": "05d03bd29021bb09daae19ba34b048ff7360acdfa2b3ede0ab92d673d6c019b2",
+      "bytes": 69980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-138.png",
+      "sha256": "ff6c3a98f0d440611ac884a1fb6fb7e9fc1a5c90440d8628779896d5cbdf498e",
+      "bytes": 67811,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-139.png",
+      "sha256": "6ad795f1d885e0ae7a93f46642f05fd232ba10e30888bd5cf61896ac0c61ac84",
+      "bytes": 71053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-140.png",
+      "sha256": "2a7b450ec2955e002730abd5c6ec73ff951a0b7038fdeddc3040b27de3bbe010",
+      "bytes": 69890,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-141.png",
+      "sha256": "a402dc3b1229ade82852e12ec76522ab47901edb5dd6514d4beb006a6ba53340",
+      "bytes": 69487,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-142.png",
+      "sha256": "f44fcf86f2de8654db0b466dc5dd8e13dcb9340641ca129a0139ed95fe19e4fb",
+      "bytes": 72475,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-143.png",
+      "sha256": "57d2049616158d5c76432b48da295c5bc2679be103ba48b6a9dec049f9b57d87",
+      "bytes": 66553,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-144.png",
+      "sha256": "a9822989da48ebcb2abb72d2f59b2d50650d15dcb87fec8cc0748518f40fda74",
+      "bytes": 66938,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-145.png",
+      "sha256": "7b4fe0cce468d7fc7e774cdc67fbe7c711d13ca1a145a633f538006b9fb2c64b",
+      "bytes": 69337,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-146.png",
+      "sha256": "27a5e24cdc0ebf46e1b0f8716759dc33a66217a6b0ae296dc213b465c8dc9d43",
+      "bytes": 69919,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-147.png",
+      "sha256": "d259398b025be51941ea3fb0fb1874fdc8982b4b76e88a6b4c5a1bce7283ad6b",
+      "bytes": 67299,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-148.png",
+      "sha256": "875e3b274e8ed8e928cd8d2616838cb765901fbdfb6c5a495d51a50a610412e3",
+      "bytes": 68244,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-149.png",
+      "sha256": "bf10812582f9714083ab6f9b1c4a7ef1bdfe7a444587975c274c8f164ebdb6cc",
+      "bytes": 69499,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-150.png",
+      "sha256": "993f3a616d53808e3c9f771dbef0ba3068888c0f20689dd759a27e1413fc70ae",
+      "bytes": 69532,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-151.png",
+      "sha256": "fa5c90bab91e6a8c370352916b4417bdb42eadfc9deceedd10309445ca62a084",
+      "bytes": 71099,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-152.png",
+      "sha256": "8e2524cf6a188da6740f4029475141110161ffe59558f1d8bcbb9431ba5dede6",
+      "bytes": 69818,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-153.png",
+      "sha256": "c70df4125c078c4558e2b34746af86fde301072a1694ccde042e2dc0a0395d22",
+      "bytes": 69583,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-154.png",
+      "sha256": "a7a6667f6db57f1ce4fc80e8aa09cd20b58ec61dda10208ca7e0c50918b5bbe3",
+      "bytes": 71777,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-155.png",
+      "sha256": "cff81239f4b906af6d740c46443026aab900943e8ad32ac44fad66fe21842774",
+      "bytes": 68461,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-156.png",
+      "sha256": "4e91609bde0bda6c229062863f3d60c1659200faf05ec6a66377e7816f1fd6c8",
+      "bytes": 68686,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-157.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-158.png",
+      "sha256": "0073544dcdc751dc28ffaeaba0bc9c4416b033e09503b2b2ce19bc85ecf351ec",
+      "bytes": 36601,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-159.png",
+      "sha256": "e554d86f982f22fdd4d6fc1f7e87f1f7ab0c53e6f658527a77143eeff733bdb6",
+      "bytes": 36227,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-160.png",
+      "sha256": "c803e70a39d1b80c04194a53a934884aec30c09c11f6f081b0946adfe5947980",
+      "bytes": 36788,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-161.png",
+      "sha256": "46e25c466d2978c562ff67ee43fea8a5e1d994d10cf4f9e735d005c04313b734",
+      "bytes": 36041,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-162.png",
+      "sha256": "d82e0372677708762189d85994c93955ddec2b024cafaaacb7709784f1db9778",
+      "bytes": 36329,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-163.png",
+      "sha256": "0aad2fcb2f14cc86bfc08eb9298a81bc89339166940ebb09254a05b38c6b98c8",
+      "bytes": 36296,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-164.png",
+      "sha256": "8481dac8edfbea3bb683b8667252781992f5c80fb94ad80558134a6ee73a34dd",
+      "bytes": 36318,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-165.png",
+      "sha256": "1223656f2061572ea5a96aefbbf9d573832901e6a93dbe6d029e757695b81519",
+      "bytes": 36421,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-166.png",
+      "sha256": "89ba8bcc9ca260813bb4bf9c0cd4fcd04f0c684fcf71c07f05c8d872f1d8882b",
+      "bytes": 36349,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-167.png",
+      "sha256": "6914c3aeed0d1a6305d12455fa466b518a4acb6d8b3712a24cf96df549566f79",
+      "bytes": 36399,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-168.png",
+      "sha256": "cd9ef77064e93b6622132c76214753cd0df0cd6a73741fbd3dc229c45c7d43a5",
+      "bytes": 36399,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-169.png",
+      "sha256": "15eb477a23c2210a5917c933d5cf5870f87731ff00a6854a1353951ec9b9a18b",
+      "bytes": 36316,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/presenter-export.png",
+      "sha256": "4477c7db41f672cec932d93fda5763bebe4314c7738d0c7a843eff3dd02bb327",
+      "bytes": 149126,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/presenter-menu.png",
+      "sha256": "86c9dde68887fb017eee405d56626f43c5be044558ce2d869a4e74afb560045d",
+      "bytes": 52688,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/saved-research-presentation.html",
+      "sha256": "f52bacc39ac02a9eca292091fc4a9cb857602f2599da6ce52ea8ae792ce4ae96",
+      "bytes": 2863125,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/test-failed-1.png",
+      "sha256": "53bad6190ee23630fb2ee4932e8dc8bfce152907c7f05be4360294c33f43a367",
+      "bytes": 51691,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/trace.zip",
+      "sha256": "11f326324839d58fa450ddf86e5fd44eb594c2ed3c7a255ba340158dd40f7507",
+      "bytes": 15257094,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/downloaded-presentation-provenance.json",
+      "sha256": "59cfe677884412df85e2f0fbac6c318b2663aa678ba1014f76bb25625bc8a357",
+      "bytes": 4948793,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/error-context.md",
+      "sha256": "0b6566da2c904109f6f192fb3f5d210c90e593713a71427ee2397e31028210ce",
+      "bytes": 13500,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-001.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-002.png",
+      "sha256": "fcf050a86151f5384dd91a87303b48b222f156f1bdc29eead06146a386e29168",
+      "bytes": 83388,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-003.png",
+      "sha256": "fe9379d14024de4597dc83c0f15916e2a26d6def1b954ea2195cfe1822a9acaf",
+      "bytes": 58974,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-004.png",
+      "sha256": "7c432da1c97980ff681dd5a54bf9c1aeb3246ef94028791b203841079cc24d0d",
+      "bytes": 85764,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-005.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-006.png",
+      "sha256": "9f3b0d2d791b019379147e5679d2adeed7b60a110898393000cfc1aea208c2d6",
+      "bytes": 90511,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-007.png",
+      "sha256": "65c08b2765742e3056510aa3c113088abda589cc7addaa1f73699982dcaf0510",
+      "bytes": 59054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-008.png",
+      "sha256": "c8eaba481fc32e6993b7bf5a1e843133fb6be5f22d2553da88c9753cacfc64ac",
+      "bytes": 94069,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-009.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-010.png",
+      "sha256": "edde467f8c9dd15002438dbd1283ee94423f09b022c8fdc10ccf7f280f5a885b",
+      "bytes": 65243,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-011.png",
+      "sha256": "c81d3e98cccb23ab0a070a8e36babc83b28b3f947cd3e59ae98439b7514a3458",
+      "bytes": 56828,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-012.png",
+      "sha256": "bedbbf5e66e85837a47f9aa71779b4d2ab69a66217200f44b8f3d866efe94ffe",
+      "bytes": 72835,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-013.png",
+      "sha256": "79356ef5f86caec3d9e2420fef74aac7fabf0cd6ea46b945553125235e7bafc2",
+      "bytes": 84563,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-014.png",
+      "sha256": "95f0f5bfa790cc7e4a0f15c907b1145f660c645e7f6f5b91ac59000c010e3924",
+      "bytes": 58177,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-015.png",
+      "sha256": "8497b07d1ac9af545f309e379a9a22207b735767f27d5c37ece94185e8bb2c4c",
+      "bytes": 89873,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-016.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-017.png",
+      "sha256": "df3a2953a7474916d0532855a0bad7258986267fda3adf1a0c7d868f1da94dfe",
+      "bytes": 80983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-018.png",
+      "sha256": "67d21deca09c42fb4a34496413b4dc79431568ea841a101cfcd6c0ec30b1e35d",
+      "bytes": 68472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-019.png",
+      "sha256": "236d7a592556df5cab1022dcb6d2250b3ed42d2b2f8001627d805840b13323a6",
+      "bytes": 93732,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-020.png",
+      "sha256": "a1cee1ff9074165241d0aeddf783ab67faf4b1c97504ae02b919d97dddea0059",
+      "bytes": 96179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-021.png",
+      "sha256": "2564d3b69d935456e2139a6f917f8f3d6275af2d0b8246c41af4e9dec7597aaa",
+      "bytes": 95559,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-022.png",
+      "sha256": "65a696334bde39ccea1d48a702f6e21dc1a27bd4c89936d4a5db787066ff2f2e",
+      "bytes": 96343,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-023.png",
+      "sha256": "11cbc3ef2dfd28d837258d1fd7925943b2db33434fdc30905e5688f0f64edb75",
+      "bytes": 95357,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-024.png",
+      "sha256": "ffbcde0dcc569b21242af828e823d1db70c74a6c5d386e2b14aba59409b39dad",
+      "bytes": 95717,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-025.png",
+      "sha256": "fee263ed259c66a1fae866620dfc72791f7892045e6aa3092f2a65087eb6fb7e",
+      "bytes": 95834,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-026.png",
+      "sha256": "504132ba67e3a5a82f6e2d2af598611d774dd70013903fe3dc7fa068efac33ab",
+      "bytes": 96478,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-027.png",
+      "sha256": "e6a0f444dc60682108fb3508a4bd21c49f35467b13ffad39227f03157fb4f995",
+      "bytes": 97635,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-028.png",
+      "sha256": "68fb71d1f8385858e7f467397aca86efd7ae5be13776d1c63335a5f181b8ec94",
+      "bytes": 97108,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-029.png",
+      "sha256": "8052e98ab22d4b4afbf96bb54737d6db4bcae13f39b5af0c12ce7e6c6b155d15",
+      "bytes": 100519,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-030.png",
+      "sha256": "f7566dd9dca508ed968bc1b95af1de4ffa169f1ab8343518da82cd92d53b9323",
+      "bytes": 102681,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-031.png",
+      "sha256": "fd73a213a349c473810ae8889f04e7eade143aec3b60b26d0a4ecb96f6fe6f0c",
+      "bytes": 101971,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-032.png",
+      "sha256": "44b39284aa0e876fcbb9abfde7d63fd6c9c494cd9a5b8c7bc6cc2f9323e815aa",
+      "bytes": 100847,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-033.png",
+      "sha256": "9d63832bf7d4c562b1ae9af5e0a7ddb4cb5d2e7605a5b61620cb317cef4f589d",
+      "bytes": 72448,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-034.png",
+      "sha256": "8d1dd71570fcb245b9b0d894fbc6759200618d6147006a665713731d5315b8fe",
+      "bytes": 95117,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-035.png",
+      "sha256": "61515fd53f17aa13e5ea5952e3b60ca8efa723e0722a1ef17525eddc4ef18e1d",
+      "bytes": 96851,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-036.png",
+      "sha256": "f841d402107f3d587783f9c576dfbd69b52ce598a917ad8aa6ff10df1270c550",
+      "bytes": 96020,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-037.png",
+      "sha256": "b8cb31d386a74f945545bbf29018a00a13dc9dc2ee73d16987b76c71a95495cb",
+      "bytes": 60891,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-038.png",
+      "sha256": "ef203e41bb474f941bc6e2b29cceedbee82b2a5140a1024e20f287a1c3d20fdc",
+      "bytes": 88906,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-039.png",
+      "sha256": "236023c50482b40ab354e7d153821db44476f5224fea9bcb9984447f6cb00ee1",
+      "bytes": 91127,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-040.png",
+      "sha256": "436616bad30917a6d7688c3d61ac9156c2b7a951c7e4625e3ccfbc3957e594e5",
+      "bytes": 91664,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-041.png",
+      "sha256": "add03114afab5a8036ce71c4be7e817b6ca797f7bb77ee5f42a881a799e36dd5",
+      "bytes": 92798,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-042.png",
+      "sha256": "43893048c0c25e58bbd3ecd7258ab626847f39665172f8cf8727178f2a65674f",
+      "bytes": 90523,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-043.png",
+      "sha256": "ce77edcc57f61ee149a88f7034e82d92f272ddd6c2b76a62963feb712d996570",
+      "bytes": 92356,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-044.png",
+      "sha256": "0dc8c4b80ebe03a2b559e8cd598962498f028e92f15cd55c43948c52a7371791",
+      "bytes": 93423,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-045.png",
+      "sha256": "08b89ad4700912537d3225169b7f5a0b2f01ab745a8168bb5a4d7aaa7fa0bc39",
+      "bytes": 95737,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-046.png",
+      "sha256": "849e928d830cf8b0d05ca9190f3f088e808d4a6671ba7851abb02e40bb3afb25",
+      "bytes": 63989,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-047.png",
+      "sha256": "36885c361ab0cb99b00aae5f4e365421e17fca495f4ac790452eb7318f224ba6",
+      "bytes": 90510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-048.png",
+      "sha256": "968a523f6be442ab2d47b49dc1d6a1a7fdc326024c39dbe0dc1ee8f4eaae7cff",
+      "bytes": 91641,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-049.png",
+      "sha256": "b1178f024c5182e322163c2892b5b38102b3cf3cfcfc41c23ce655b5b6103bca",
+      "bytes": 91277,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-050.png",
+      "sha256": "e16f5153ac156c4310b8a6d0525583e835eff7be63313b6c3f526c2d2edc8f2f",
+      "bytes": 92517,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-051.png",
+      "sha256": "9f717d5b269232b2aca4973fc0e1f026cf38be42265dfa513e17a5079c83d528",
+      "bytes": 92991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-052.png",
+      "sha256": "2af8fb5d47294e2af9aaca6e2d652fd284266fbe4f7147deb9dd890142dec185",
+      "bytes": 93110,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-053.png",
+      "sha256": "ca2ee8b4ba5cd2dad19ee150994fbe830ad865833f3658dd4d1288e6f1418c15",
+      "bytes": 75758,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-054.png",
+      "sha256": "6b14e0f58f11818206968e84ad0f7e68f3ab61e9e642fb50d5ffe019897c5113",
+      "bytes": 95866,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-055.png",
+      "sha256": "597110bbaba5cf09cb9e3ce1d99ef573f1e65fcc6e477c1ee3b46a424d5305ba",
+      "bytes": 95026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-056.png",
+      "sha256": "7347a7d9ea90b260e1306b21d2a2659dedd27e3c862456587d13fdbb50968c4e",
+      "bytes": 96276,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-057.png",
+      "sha256": "9b6411703c368394b683b71d587926badcdbec4427f39cd0f7745c3509caf87d",
+      "bytes": 96785,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-058.png",
+      "sha256": "1a40d8ec30568d589e0cf8acf2f5ef58d9b511768ccdba13736ea96f922b1d77",
+      "bytes": 97517,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-059.png",
+      "sha256": "525861799f38d25b9b7fac06cfd5586e066cb458e7adf6105cedba68d5e4e17d",
+      "bytes": 98762,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-060.png",
+      "sha256": "c1af0be2c3e7b0afcabf855c2911740a43a42d708ca6901c9d56b2c9032ab55c",
+      "bytes": 98495,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-061.png",
+      "sha256": "a8dcf8bd58c631c2004203e1331eb47a72abc6609e111d6afb1009849721a3d3",
+      "bytes": 96909,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-062.png",
+      "sha256": "3c7407728c1d0f00022419fdd2bcccf9da23bf52edd81c33f66753e74c0e1196",
+      "bytes": 97529,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-063.png",
+      "sha256": "30dde12a0df617a98a73678a9e466f68e9d33eea0b7983c65db850bb7cbed73a",
+      "bytes": 97894,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-064.png",
+      "sha256": "5fbec6aff1e1e731b4c6d54cad4fb0218de39af37253ab6d58e2c83b66047257",
+      "bytes": 98817,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-065.png",
+      "sha256": "0ff24ea1ea0b6e13c67b51202e597aa14f3b807691864664748332d9a37fa79d",
+      "bytes": 98041,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-066.png",
+      "sha256": "6ea2b3e021f479594d898a6644c9f39d80238a15ef574746efe5b1b9f208dfe4",
+      "bytes": 97877,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-067.png",
+      "sha256": "1ee104e93d8ece92d15708b780cb5e452058e389a5d8a2d0697320810beacb8e",
+      "bytes": 97382,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-068.png",
+      "sha256": "56dfac4e80affd865bee183c3c202f5d6eac135f2cc6db926a164d8c3afa36fe",
+      "bytes": 96580,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-069.png",
+      "sha256": "6618ef06f21d7c20b5e2e546d800f293723663006311172cd6fc979f5babc624",
+      "bytes": 99639,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-070.png",
+      "sha256": "b0971c1f246e57e03cfaa9544ce217f2b1d266b4ef486220f1555c2dbae851ac",
+      "bytes": 93489,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-071.png",
+      "sha256": "745f33a7dc7bf1761c8c672bd4285a48485563b1bc0370c1f849977a52017e5a",
+      "bytes": 97717,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-072.png",
+      "sha256": "088db25d9a3f44a266e4ab748e54886b8db874ee09c276a41903f69f5aa33e15",
+      "bytes": 96607,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-073.png",
+      "sha256": "884fde933c00fbaab10a212d090a09bc9ead5e1706d78e9c1ee6b9f57b13a736",
+      "bytes": 72530,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-074.png",
+      "sha256": "6859615982afe017eb941b7dd682b615e958b96b8ef8c66f355e531e70a0cc40",
+      "bytes": 96635,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-075.png",
+      "sha256": "6a564e5d5752de04afcd2663130e575a39cd47e0b526dcf2fa1ee690ac2582ec",
+      "bytes": 97526,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-076.png",
+      "sha256": "06be676d10afdcf92d4bd029ee896ca2ddf1f553d868987cf748adb6af2141c4",
+      "bytes": 97721,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-077.png",
+      "sha256": "1898f11b753a8dba808e68263d44dc06950dbd2fe73daa56ecbe663743ec9b3b",
+      "bytes": 99447,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-078.png",
+      "sha256": "5645e3686a6faa116f26773574a0996f12d2add704580f2709aa42559851fcb9",
+      "bytes": 100179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-079.png",
+      "sha256": "b1b83a74006a0ea2bc0d9c916d33097c82c05ecd9719ed7be5e18e233e5372c1",
+      "bytes": 102304,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-080.png",
+      "sha256": "66578a8865b4ef77c85acdff71aeba1d40722d55f77958957b6bdfaed4943952",
+      "bytes": 102257,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-081.png",
+      "sha256": "8f2142d111b417a68c424b2eca201de60599afc90877d266f443a39b5b6d40e0",
+      "bytes": 102438,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-082.png",
+      "sha256": "abec040d0851cfe4c1ee7640b563c1e67e4e3b6d161516f1965f24de935f4d9c",
+      "bytes": 104082,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-083.png",
+      "sha256": "132a7c3d413cbc3b606ba163348f556a86ead1a828fd1af7410503d9f4624d6b",
+      "bytes": 76694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-084.png",
+      "sha256": "6ee56a62a59061e58d01b434fd03a7c8584206ea41135c1e576d755fc685d667",
+      "bytes": 95528,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-085.png",
+      "sha256": "8d5bc7df6fc302d47d0d077ae16ffaa0cfa7ccebeb5260fbfad3fec059bfc98e",
+      "bytes": 100259,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-086.png",
+      "sha256": "48e62f1b199f07cc0e2211b07835141f8cbd605f8a5dcb582f89428488647e30",
+      "bytes": 96837,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-087.png",
+      "sha256": "d413321ce8b96bb5c5945146b36328113bc035d81eb5fed37ca85f7ff55b73fd",
+      "bytes": 101610,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-088.png",
+      "sha256": "cc12f23882d0caa4a87f88c258b07ffcb2ecd491484c1ac36760c93bbea3cd1f",
+      "bytes": 99359,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-089.png",
+      "sha256": "4d356f958f68519367b5b5e65030cdc7835693604d0e9593d53457d6438025aa",
+      "bytes": 97756,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-090.png",
+      "sha256": "90a26a81256d4cf3bb52dd73db23ad03d9ca150d569d0c587082b57c1640f1ea",
+      "bytes": 83286,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-091.png",
+      "sha256": "20dcb3daf38448ba9aacda468ae61e9b3e169f2a47ecf1b62bb7ef540956a65e",
+      "bytes": 99955,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-092.png",
+      "sha256": "7890ac9ef59d9d2358e0796f58d22f55d331c4d15a24600de789187b344e2ce3",
+      "bytes": 101507,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-093.png",
+      "sha256": "9ba107efecb59cbf07ae2fe8936308608782679fbd74e9d6d4c68681b92acd90",
+      "bytes": 100273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-094.png",
+      "sha256": "7639a081822d79dbbdcf4bf49dfe17c8b4b2d60cde7d989eb9e41be075763ccc",
+      "bytes": 104769,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-095.png",
+      "sha256": "0217fa1ce7511e924f32867985a0daaa9291d84e25d24e607cc67cbb55a06ed6",
+      "bytes": 100967,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-096.png",
+      "sha256": "d2384635559f0c60798377af9863c1cfa21c40bcc542d31ba9f3fcbe3b5e6b5e",
+      "bytes": 105086,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-097.png",
+      "sha256": "cabf5be0fed3ac97cd2a4a5468ed1b7bc5fb90d202a319b965a2765cb71bdf8e",
+      "bytes": 102399,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-098.png",
+      "sha256": "3cb5df5b58705bef64110b150b92494af2e178ff44f0a37214091f43f636a238",
+      "bytes": 104112,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-099.png",
+      "sha256": "0b4540dc9f4d3d6fb40ddf62df4c6960713be860429e7231cbd13bf1e56629af",
+      "bytes": 102244,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-100.png",
+      "sha256": "a2bfef5e2eb0e63c03e15aa097f3825104011076d8eb7513537d167781ed47f2",
+      "bytes": 103455,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-101.png",
+      "sha256": "aa125a219c8f4083d8e2e215835d3e8a287fa20993d5ed4d4ce7d7d8bd8c7380",
+      "bytes": 98999,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-102.png",
+      "sha256": "844390231ddb728eebc609cd6f48bcf8a20193f56c452f01878fab96c7ca9260",
+      "bytes": 98493,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-103.png",
+      "sha256": "3f45eb64fb4232940e2108ff1a0090defce28589535eca4f2541b06c6e5f12a8",
+      "bytes": 100761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-104.png",
+      "sha256": "05d4a834355a891484c5d75fb0027982f31c04bcffbbfe5affa67a6b5f1e8ca3",
+      "bytes": 99484,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-105.png",
+      "sha256": "143bbe48f9b88c1d882cf17836695a7448ebf818fa138f52108af09524692186",
+      "bytes": 100197,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-106.png",
+      "sha256": "e5173f097b42ed9900f893bb739db4af68c934fc5d8af196254930eae4a316e8",
+      "bytes": 101111,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-107.png",
+      "sha256": "6d889356ea169b3256a479433facf11f3dcb0b79cdf2fb09389c24ee8d7212ab",
+      "bytes": 99522,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-108.png",
+      "sha256": "0b394d61bbf1671afcef6e532eaf5d47f2f1ab66e8dc9b2a8f98e52394e3a3ab",
+      "bytes": 104190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-109.png",
+      "sha256": "1900edf0f7f82445fd51701b322b139c8be1947988ccc8503eea26c4339640b7",
+      "bytes": 99865,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-110.png",
+      "sha256": "38376d478bee6ab32ac4dc5faa5fe547d69e2ad2686cd528aaf984a6d87a8213",
+      "bytes": 99483,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-111.png",
+      "sha256": "9ea70948641a6ca27f6101b92e88b88ddfc5e06b603ce8e0ec867f0fbaec9433",
+      "bytes": 90088,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-112.png",
+      "sha256": "2fefe22efed7c28add58a5a5c7a8285faaf132d11df24e8daf72066ee4814367",
+      "bytes": 91906,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-113.png",
+      "sha256": "049158db14ff8103c6a027764954c6d77624361e4348cff162a47c765dcc57c8",
+      "bytes": 93012,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-114.png",
+      "sha256": "2bc082957251302f7fa799fdfbed7f58ebfc357400d91cccc7f8db7b47011443",
+      "bytes": 94182,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-115.png",
+      "sha256": "d951cca4c22688a86b2eafbddc9ab88f3905caca8636a8a4cfd9f3d3373b4e0d",
+      "bytes": 91378,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-116.png",
+      "sha256": "090d96a0a7c157d59276777fc705cc73bd2cc24ce7ff5b0013c043c6f3574562",
+      "bytes": 91290,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-117.png",
+      "sha256": "7e315958c8284de90abe0f0c5bce65d053fbc9d8b6a772e6b1b63efce5207662",
+      "bytes": 94247,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-118.png",
+      "sha256": "35e50a72ed051097f2c1b2259c4c64ee05b734d71dafd6e6410687587b4c654e",
+      "bytes": 93441,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-119.png",
+      "sha256": "1b85d2179cab127cae604234c9747335eef261aa6dc30a0b9bd19a356611fda4",
+      "bytes": 93674,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-120.png",
+      "sha256": "6ce6c12990172070d43028ffff9c1a126fcc3fc98cd6a5b3ebb5965857227807",
+      "bytes": 96516,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-121.png",
+      "sha256": "330aa4ddd6b6866e91405dd7c5df70861ac262763f2fee7be10fe616c0b46550",
+      "bytes": 90765,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-122.png",
+      "sha256": "e62b83e8500a942d2b06727c2718faa1ea362b1a35111630d31db32c0a4c1331",
+      "bytes": 92144,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-123.png",
+      "sha256": "cfc8b1557a3aa1973fa316697200553d88d657c2670c39283b03e0c52246fcc0",
+      "bytes": 77630,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-124.png",
+      "sha256": "49a15358ec90c8886f83fc3f761d7cb0ab959a7d216255f247369d7905163271",
+      "bytes": 89831,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-125.png",
+      "sha256": "877fea7b852fc619baff196435bf423c20ac75ef7a246196adb053b0b04b5ff2",
+      "bytes": 93658,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-126.png",
+      "sha256": "2d583ae02a2dc79e5431012a601234931ba88730935a1bde4476436b3ebc1703",
+      "bytes": 92242,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-127.png",
+      "sha256": "8099a0144a03b447991955ccb1808ad2e7bddc8d97e2670baac2d54704703b44",
+      "bytes": 61207,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-128.png",
+      "sha256": "0bf30fbbecc37d47ca85a278a2a3943a625129b9a520395376c8dc392b3c788e",
+      "bytes": 92576,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-129.png",
+      "sha256": "3508b749e964547c55e494cf97edf8f4ceee85a1f1b482d34d3b9d5e78f3250c",
+      "bytes": 94620,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-130.png",
+      "sha256": "506dd65c2c5425cd9314430a725f7aacc70bb54ecea1c3dc4b6f14b93333821a",
+      "bytes": 94875,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-131.png",
+      "sha256": "671e0c8db7a8d9b2921541e2280fdb50a56f3e6f2f7e47a0fca7358645abe7bd",
+      "bytes": 95235,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-132.png",
+      "sha256": "3a90b3d7ee81ff8665b4ddfb673ef948d01db25b9871678b881a67656e7e7ee2",
+      "bytes": 94521,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-133.png",
+      "sha256": "244cb4a8b00dd6b6d0663493f3e269d1e86c94d5c83f1da85903b51b73184c5f",
+      "bytes": 98313,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-134.png",
+      "sha256": "ecc393f6a0eb81b501be7ec5a013f6823e980c5a80ccd7bd71a9c5a4a8fd4803",
+      "bytes": 93881,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-135.png",
+      "sha256": "e97507e4691544023ee5247e79f91344d4375a0f08ecde3d86868498efef4106",
+      "bytes": 95003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-136.png",
+      "sha256": "504cc15ebcdc513af544ae093864098336007b91789a90440bf9ed0a866f9216",
+      "bytes": 93740,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-137.png",
+      "sha256": "e3b9928a9d214ea9d0d2f1c299360dd2e834d879210175bcc2ea19ce01cf796f",
+      "bytes": 96371,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-138.png",
+      "sha256": "4ca637a2a8545403f191fc04c3d670ed41d33315b6f1a15848d7d14d5e0323a6",
+      "bytes": 94061,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-139.png",
+      "sha256": "5cd529b249187ad81712844c660674931b31fc25f3bb64c4f5749b7117659697",
+      "bytes": 97194,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-140.png",
+      "sha256": "4f063a4f38152dbeae58cbd1f62293a177dc54fb0ccd7bfc9803a86b3f3b641b",
+      "bytes": 95954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-141.png",
+      "sha256": "4306405ae3130abb8fd47e3ac5cd41d26f40c0bc33190e3f6e04ac206af5f60f",
+      "bytes": 95799,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-142.png",
+      "sha256": "979370e585b402c1bf6937e2b8aad5a43cff2470041fdf8f5bf6b0e415aafc9e",
+      "bytes": 99516,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-143.png",
+      "sha256": "6b77148f9d467de0da1918620815c232f7fa5cad53f26915403015e4dc926081",
+      "bytes": 93215,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-144.png",
+      "sha256": "d71881bb43873cdefbeb4dcfbeb4366a03d521dabb8701d99447453abd155f3d",
+      "bytes": 95306,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-145.png",
+      "sha256": "9a07d5371f9a596599e9720442a96b57601b7f3a02f1333993a993e1e439bd18",
+      "bytes": 94058,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-146.png",
+      "sha256": "cc9903f8b3d1ddd71a0a0f981acde46654d8c9cdaafcf87edcecb474b0db8d5a",
+      "bytes": 94732,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-147.png",
+      "sha256": "5c67520b1aa1c85c6a4afd5c8a54b186561a564ae36d90d950d3c57ad5bc32a2",
+      "bytes": 97288,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-148.png",
+      "sha256": "fcf07ed7879449504fdca1aaa85b7712cb2d7227d64ca794be434762d658e123",
+      "bytes": 98296,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-149.png",
+      "sha256": "3e9f95a0ee41741448d3f7671ff3253152e4f434c42cdfdec422da2022cff9df",
+      "bytes": 99086,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-150.png",
+      "sha256": "d97ec3a84ea1806aaaf18a260a60c433e97f16f4174ed3d67d2c61c69c335593",
+      "bytes": 98211,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-151.png",
+      "sha256": "bd7bd19b3fd0b8420f5be09593cf9f509360249848471fda3c8878b5b41e28a5",
+      "bytes": 100170,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-152.png",
+      "sha256": "fba084a3f563009d1ba5b79d5c6a25270ebccd5a2d51cd76ee4768f27dd75574",
+      "bytes": 99533,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-153.png",
+      "sha256": "4b04c6f71515c4647615b6c4d52c0b848b4fd4349da3b0862ec0f725f4cd0aea",
+      "bytes": 97931,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-154.png",
+      "sha256": "83f71f4ccb7c015897f8017a2694d73d0613b9a1cc4fcfc04cd8b7222a529af1",
+      "bytes": 102082,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-155.png",
+      "sha256": "422217ecb1d8b35252595fc721e77690caf200e02ac63792b8e52e4d626d5a9c",
+      "bytes": 98176,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-156.png",
+      "sha256": "143f69956a2948849f2a006136208beced81c5614cf9c90357aa5b3973ac9b01",
+      "bytes": 97931,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-157.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-158.png",
+      "sha256": "eb5f220116222f3ff3a3ce0148fb164c790d9a0e4097f27441e8dfe8c61a4c3b",
+      "bytes": 72967,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-159.png",
+      "sha256": "a51c7a563a3a8914a70251206cd8b8b0cadd3a6af1c340c09c085b8e12dd1892",
+      "bytes": 72080,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-160.png",
+      "sha256": "38c61bb9d91fb0ea8c2ddd31e3ee8bb64477ccf13e5571ee01f055ea8111817d",
+      "bytes": 74232,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-161.png",
+      "sha256": "7a8a74397d5f12b771ef1df6e5a463348b29ff1adfeb2d52ff81ede7cc18f727",
+      "bytes": 69950,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-162.png",
+      "sha256": "ce9343121e7089ecbc290ac81640bcc6335a27e1a44d1a7532f01341e17db440",
+      "bytes": 72197,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-163.png",
+      "sha256": "7f0554c622f134c7282bef86f9a0f777cc09eada61f8bd70d7dc7de04983079a",
+      "bytes": 72234,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-164.png",
+      "sha256": "7a494bd9216da2e37694e9f8d772a8cea6b4df81d542b1a8636e4e0f0d4a8413",
+      "bytes": 72407,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-165.png",
+      "sha256": "0ada6c200e73486a159c6174b622f2819bf06deb3371d40a77e2faea3e8acac2",
+      "bytes": 72272,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-166.png",
+      "sha256": "05bb39b5d12172fd589ec3f7743bff2a7a1b224ea183c6af16705ed68abe0381",
+      "bytes": 72369,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-167.png",
+      "sha256": "b8c4f40f6862eeaa7c9fe48f65f2f8085c953696786c335bba87260126e85dd6",
+      "bytes": 72377,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-168.png",
+      "sha256": "b8fe85e078d6cc41dcb3a68c4d001e74680364cde535c723e76a0bd6b5642e3c",
+      "bytes": 72122,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-169.png",
+      "sha256": "1ee2e9d6b662c8242f24dfc5c431940aba79211fdc4dc6be6b00130defe78491",
+      "bytes": 72429,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-camera-guide.png",
+      "sha256": "1edffb3b0c2cbcec13fca348ee7c153565e2550231ba5474f06743a6c2d0bf9e",
+      "bytes": 92771,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-export.png",
+      "sha256": "a4248b94703deab3d6050bcbad6c3bee6a9e9b4891798624c4052ea795d73569",
+      "bytes": 150413,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-highlight.png",
+      "sha256": "6e03b5a5435d9ca32fdd4c10a54c938a18720c7d2679b876ee8a36bcee9a5be9",
+      "bytes": 88356,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-menu.png",
+      "sha256": "8fd6be56836e660d1193cb5394d23ca1c15d60a2a9b3292cdb7f6607a6dbbfb7",
+      "bytes": 98332,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/saved-research-presentation.html",
+      "sha256": "f52bacc39ac02a9eca292091fc4a9cb857602f2599da6ce52ea8ae792ce4ae96",
+      "bytes": 2863125,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/test-failed-1.png",
+      "sha256": "67ed02d72599bfc19b457758d0da3da269620877277ae90870e266f604173569",
+      "bytes": 88507,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/trace.zip",
+      "sha256": "719520bac94832fbdc7b809957f51d1704ee30661faca683ad000b8b30d8c435",
+      "bytes": 14614350,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/capture-metadata.json",
+      "sha256": "0136b800b0033e80460553487bdc342a41a7da4da434614eb6c76b1c68c5932f",
+      "bytes": 227,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/junit.xml",
+      "sha256": "c165afc9233082b9de635bbdc8186e3ee878e314a389833c9cda20348c5bf599",
+      "bytes": 29632,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/privacy-derivation.json",
+      "sha256": "dd74309055920596e41405686e356dcf0dadb80b9e8d376901cda5710608bd44",
+      "bytes": 174503,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/results.json",
+      "sha256": "e595d4f0d7c538df0669c9beea8681eb3bb85ee0f8d03b92a3d7fd72f49f8f9b",
+      "bytes": 44163,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/runner-stderr.log",
+      "sha256": "1d62c33b5a56f3b13896295c63ed292b537d219b3ae723211cac520c0e23b734",
+      "bytes": 332,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T135115283446Z-offline-presenter-two-desktop-source-selection-and-offline-first-retry/browser/runner-stdout.log",
+      "sha256": "055f3dd5654d7f2c276fe7ea9182d0759a006e2e509f0df15f99f7085e2c52b8",
+      "bytes": 29123,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

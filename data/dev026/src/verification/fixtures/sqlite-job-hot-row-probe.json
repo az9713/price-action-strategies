@@ -1,0 +1,30 @@
+{
+  "scope": "Owned nonfinancial SQLite storage-layout/write-amplification probe only; no app tables, prices, numerical accounts, performance budgets or original evidence are changed.",
+  "payload_sizes": [
+    65536,
+    1048576,
+    16777216
+  ],
+  "layouts": [
+    "payload_before_live_fields",
+    "payload_after_live_fields",
+    "payload_before_live_fields_covering_index",
+    "payload_before_live_fields_covering_index_analyzed"
+  ],
+  "reads": 100,
+  "updates": 5,
+  "sqlite_journal_mode": "WAL",
+  "synchronous": "FULL",
+  "wal_autocheckpoint": 0,
+  "autocheckpoint_reason": "Disabled only in this owned probe to measure cumulative WAL bytes; not a proposed application durability change.",
+  "invariants": [
+    "Same row fields/values and complete payload bytes across layouts.",
+    "No skipped integrity check or simulated outcome; compare actual SELECT latency and UPDATE WAL bytes.",
+    "Restore/remove only the explicitly owned temporary probe directory."
+  ],
+  "references": [
+    "https://sqlite.org/fileformat.html",
+    "https://sqlite.org/lang_altertable.html",
+    "https://sqlite.org/lang_indexedby.html"
+  ]
+}

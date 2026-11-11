@@ -1,0 +1,127 @@
+{
+  "scope": "Prespecified historical portfolio workflow audit. No edge claim. Frozen before new acquisition or price inspection.",
+  "symbols": [
+    "SPY",
+    "QQQ"
+  ],
+  "acquisition": {
+    "start": "2022-11-01",
+    "end": "2023-03-15"
+  },
+  "study": {
+    "name": "Prespecified SPY QQQ joint study February2023",
+    "study_mode": "portfolio",
+    "discovery": {
+      "start": "2023-02-01",
+      "end": "2023-02-10"
+    },
+    "validation": {
+      "start": "2023-02-13",
+      "end": "2023-02-24"
+    },
+    "holdout": {
+      "start": "2023-02-27",
+      "end": "2023-03-15"
+    },
+    "configurations": [
+      {
+        "family": "break_of_structure",
+        "timeframe": "15m",
+        "trigger_timeframe": null,
+        "direction": "both",
+        "swing_strength": 3,
+        "level_tolerance": 0.25,
+        "min_touches": 1,
+        "level_shape": "line",
+        "level_age": 96,
+        "confirmation": "none",
+        "confirmation_window": 3,
+        "entry": "next_open",
+        "limit_expiry": 3,
+        "stop_reference": "swing",
+        "stop_kind": "hard",
+        "stop_buffer": 0.1,
+        "target": "2R",
+        "structure_exit": false,
+        "max_hold": 96,
+        "flat_at_close": false,
+        "trend_filter": "none",
+        "session_filter": "core",
+        "skip_run_days": 0,
+        "skip_choppy": false,
+        "fresh_breakout": false,
+        "news": "trade",
+        "sweep_required": false,
+        "sweep_depth": 0.0,
+        "reclaim_bars": 3,
+        "retest_window": 24,
+        "pullback_min": 0.0,
+        "pullback_max": 3.0,
+        "impulse_bars": 2,
+        "impulse_atr": 1.5,
+        "gap_confluence": false
+      },
+      {
+        "family": "change_of_character",
+        "timeframe": "1h",
+        "trigger_timeframe": null,
+        "direction": "both",
+        "swing_strength": 3,
+        "level_tolerance": 0.25,
+        "min_touches": 1,
+        "level_shape": "line",
+        "level_age": 96,
+        "confirmation": "none",
+        "confirmation_window": 3,
+        "entry": "next_open",
+        "limit_expiry": 3,
+        "stop_reference": "swing",
+        "stop_kind": "hard",
+        "stop_buffer": 0.1,
+        "target": "1R",
+        "structure_exit": false,
+        "max_hold": 96,
+        "flat_at_close": false,
+        "trend_filter": "none",
+        "session_filter": "core",
+        "skip_run_days": 0,
+        "skip_choppy": false,
+        "fresh_breakout": false,
+        "news": "trade",
+        "sweep_required": false,
+        "sweep_depth": 0.0,
+        "reclaim_bars": 3,
+        "retest_window": 24,
+        "pullback_min": 0.0,
+        "pullback_max": 3.0,
+        "impulse_bars": 2,
+        "impulse_atr": 1.5,
+        "gap_confluence": false
+      }
+    ],
+    "costs": {
+      "commission_per_share": 0.005,
+      "minimum_commission": 0,
+      "fixed_fee_per_order": 0,
+      "sell_fee_per_dollar": 0,
+      "spread_bps": 1,
+      "slippage_bps": 1,
+      "borrow_annual": 0.03,
+      "borrow_available": true,
+      "borrow_scenario": null
+    },
+    "portfolio": {
+      "capital": 100000,
+      "risk_fraction": 0.005,
+      "symbol_exposure": 0.25,
+      "total_exposure": 1,
+      "participation": 0.05,
+      "tick_size": 0.01
+    },
+    "seed": 42,
+    "minimum_trades": 1,
+    "minimum_sharpe": 0,
+    "news_calendar_id": null
+  },
+  "policy": "Use free SIP acquisition and actual corporate actions. Keep missing/unsupported data blocked; no silent filling/feed substitution. Protect final dates before any analysis. Execute the unchanged joint set in screening. A genuine no-candidate outcome is retained and forbids final access; never fabricate a passing portfolio. Final only if actual prespecified gates pass, then independent supplied-signal accounting in every evaluated window. Acquisition alone is not market-data certification."
+}

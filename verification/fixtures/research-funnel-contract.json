@@ -1,0 +1,18 @@
+{
+  "source": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "scope": "Remaining RES-005 era/instrument replication, all-version family aggregation and stability; original83/422/120 preserved",
+  "source_gates": {"discovery_signals":40,"discovery_trades":30,"discovery_sharpe":0.5,"replication_sharpe":0.3,"family_sharpe":0.5,"positive_profit_each_discovery_era":true},
+  "must_verify": [
+    "Two discovery eras are prespecified, ordered/disjoint and inside discovery; they are not chronological untouched validation",
+    "Replication uses another declared instrument/dataset during discovery and never claims ES parity for equities",
+    "All original configuration identities, source manifests, costs, borrowing and calendars are frozen before outcome access",
+    "Complete all-version family membership includes losses/zero/failed/undefined accounts; profitable subsets are refused",
+    "Family daily means use exact rational arithmetic on serialized finite original values, with independent hand/reference calculations",
+    "Primary marked-equity and source-compatible exit-day realized-P&L conventions remain separately labeled",
+    "Missing accounts or sessions remain incomplete, never padded as zero; complete no-trade sessions remain present",
+    "Signals/trades/versions/families/random-control occurrences have separate denominators",
+    "Stability uses prespecified actual neighbors with missingness/coverage; no invented source threshold or post-result winner selection",
+    "Actual original-account jobs/trials/parts and verified10000-set diagnostics bind to candidate identities before final unlock",
+    "Actual worker/UI/export/recovery/source-scale/mutation/95-90/global/final conformance remain separate mandatory proofs"
+  ]
+}

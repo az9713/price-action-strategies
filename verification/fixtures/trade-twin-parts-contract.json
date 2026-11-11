@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "scope": "Stock adaptation: original paired durable financial parts; authored before implementation.",
+  "source_trade_limit": 20000,
+  "sets_per_policy": 10000,
+  "policies": ["barrier_capped_elapsed_v1", "fixed_elapsed_v1"],
+  "partition": {
+    "version": 1,
+    "maximum_sets_per_part": 100,
+    "target_source_assignments_per_part": 1000,
+    "sets_per_part_formula": "max(1,min(100,1000//max(1,source_count)))",
+    "large_cohort": "Retain the entire original cohort even if one set exceeds the assignment target.",
+    "freeze": "In original child payload before candidate P&L; no caller amendment."
+  },
+  "serialization_limit_bytes": 536870912,
+  "decoded_part_cache": {"maximum_parts": 4, "maximum_canonical_bytes": 67108864},
+  "resource_scope": "Visible refusal/retention guards, not measured RSS, throughput or complete-envelope certification.",
+  "original_authorities": ["parent inputs/results/trials/attempts/events", "sealed outcome-blind preparation", "part commit event", "individual set start/computation/checkpoint attempts", "part bytes", "original book input descriptor and canonical financial hash"],
+  "cache_rules": ["Never choose assignments or eligibility from profit", "Bind parent/plan/data/actions/news/borrow/clock/rule/cost/account/quantity/policy/match", "Original committed part owns every reusable book", "Verify index bindings against original parts", "Do not adopt orphan files", "Check source and used-artifact authority before and after each unit", "Keep every repeated occurrence"],
+  "atomic_commit": ["all paired occurrence checkpoints", "original part commit event", "part metadata index", "original-book reference index"],
+  "retained_failures": ["failed candidate with no invented total", "system arithmetic/data failure", "partial computation diagnostic", "cancellation", "stale worker", "orphan attempt files", "actual interpreter death and retry history"],
+  "grading": "Canonical Decimal totals; no subsets; all10000 unique ordinals per policy; ties and strict499/500 remain unchanged.",
+  "ineligible": "Original sealed whole-cohort ineligibility permits zero financial executions and explicit ungenerated trials, never fabricated completed outcomes.",
+  "acceptance": "Original83 requirements,422 mandatory cases,120 combinations and remaining final product obligations are unchanged."
+}

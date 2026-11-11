@@ -1,0 +1,459 @@
+[
+  {
+    "path": "verification\\runs\\evaluation-cache-legacy-report-contract-tests.py",
+    "sha256": "5377345002088f668df2ad0f647086a973a665460d416ae0cdb043f681880d9a",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_legacy_direct_part_remains_exact_without_building_a_view",
+      "test_legacy_direct_request_rejects_bad_identity_window_and_artifact"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\research-funnel-small-positive-full.py",
+    "sha256": "09b51244accfc59f6476111d906bfc1b561253fae5534433241ffeeaf41d72ae",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_actual_full_both_policy_controls_candidate_freeze_and_both_final_instruments"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\spread-double-link-loss-authored.py",
+    "sha256": "43e8a057cac6882510220b7f73ca8cfd853ef48111c0c3d6176ce00e79649976",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_both_parent_side_relationship_records_lost_still_preserve_original_child",
+        "exact_ast_matches": [
+          "test_spread_orphan_reservation.py:test_both_parent_side_relationship_records_lost_still_preserve_original_child"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\spread-empty-and-interrupted-boundaries.py",
+    "sha256": "1e8af15606ac22e84cb31cdf5a5bd21c8ebc9b17194c21b862c700c97950261d",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_valid_empty_status_interrupted_batch_and_duplicate_trial_are_distinct",
+        "exact_ast_matches": [
+          "test_spread_transaction_boundaries.py:test_valid_empty_status_interrupted_batch_and_duplicate_trial_are_distinct"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\spread-link-repair-authored.py",
+    "sha256": "fe413830cd36841672d3b5ac65aa989e46ef33856cd74f32837894cafd900f47",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_missing_cache_repair_is_offline_idempotent_and_preserves_original_child",
+        "exact_ast_matches": [
+          "test_spread_link_repair.py:test_missing_cache_repair_is_offline_idempotent_and_preserves_original_child"
+        ]
+      },
+      {
+        "function": "test_repair_api_returns_only_original_child_without_accepting_override",
+        "exact_ast_matches": [
+          "test_spread_link_repair.py:test_repair_api_returns_only_original_child_without_accepting_override"
+        ]
+      },
+      {
+        "function": "test_dropped_cache_table_concurrent_repair_reuses_one_original_relationship",
+        "exact_ast_matches": [
+          "test_spread_link_repair.py:test_dropped_cache_table_concurrent_repair_reuses_one_original_relationship"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [
+      "test_repair_cannot_invent_originals_replace_accounts_or_hide_corruption"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\spread-public-schema-authored.py",
+    "sha256": "b472c06fbef67c4ae646163148b86a4147eed4dd7926f531a86709087b25516a",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_spread_schemas_are_published_in_saved_contract_and_live_schema"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\spread-read-repair-boundary-supplement.py",
+    "sha256": "d02e7c48c83ae9bc011c9c4b2325cbfe9b41569281701c9233f8b934d3298355",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_saved_status_projection_link_and_total_byte_boundaries",
+        "exact_ast_matches": [
+          "test_spread_saved_boundaries.py:test_saved_status_projection_link_and_total_byte_boundaries"
+        ]
+      },
+      {
+        "function": "test_selected_record_size_structure_index_and_request_boundaries",
+        "exact_ast_matches": [
+          "test_spread_saved_boundaries.py:test_selected_record_size_structure_index_and_request_boundaries"
+        ]
+      },
+      {
+        "function": "test_repair_wrong_kind_binding_missing_result_and_decode_boundaries",
+        "exact_ast_matches": [
+          "test_spread_saved_boundaries.py:test_repair_wrong_kind_binding_missing_result_and_decode_boundaries"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\spread-reverse-index-supplement.py",
+    "sha256": "bcfec82fea7b713bf9ee93a5482392c47e4bb92cb530110f908e3624b34fae47",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_reverse_index_rejects_malformed_child_id_before_any_account_work",
+        "exact_ast_matches": [
+          "test_spread_reverse_index.py:test_reverse_index_rejects_malformed_child_id_before_any_account_work"
+        ]
+      },
+      {
+        "function": "test_reverse_index_returns_at_most_two_child_reservations_from_a_larger_corrupt_set",
+        "exact_ast_matches": [
+          "test_spread_reverse_index.py:test_reverse_index_returns_at_most_two_child_reservations_from_a_larger_corrupt_set"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\spread_account_handoff_authored.py",
+    "sha256": "60fdafdd73eff7655f7c91b7c969e51ce34c84391155f8c7b3f6f769ea97c3fb",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_unqualified_or_corrupt_parent_creates_zero_financial_trials",
+        "exact_ast_matches": [
+          "test_spread_account_handoff.py:test_unqualified_or_corrupt_parent_creates_zero_financial_trials"
+        ]
+      },
+      {
+        "function": "test_repeated_and_concurrent_continuations_return_the_one_original_child",
+        "exact_ast_matches": [
+          "test_spread_account_handoff.py:test_repeated_and_concurrent_continuations_return_the_one_original_child"
+        ]
+      },
+      {
+        "function": "test_secondary_protected_dates_remain_unread_during_selected_accounts",
+        "exact_ast_matches": [
+          "test_spread_account_handoff.py:test_secondary_protected_dates_remain_unread_during_selected_accounts"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [
+      "test_complete_parent_freezes_all_selected_financial_trials_and_original_assumptions_before_pnl"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\spread_selection_paging_authored.py",
+    "sha256": "75a5d0c726bc39b7573f2a58da914d75b14eae40e60ab8a8248864721e34fd1b",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_actual_saved_selection_page_is_complete_and_never_opens_prices_or_root",
+        "exact_ast_matches": [
+          "test_spread_selection_pages.py:test_actual_saved_selection_page_is_complete_and_never_opens_prices_or_root"
+        ]
+      },
+      {
+        "function": "test_selection_pages_do_not_read_raw_inputs_or_unrelated_large_journal_bodies",
+        "exact_ast_matches": [
+          "test_spread_selection_pages.py:test_selection_pages_do_not_read_raw_inputs_or_unrelated_large_journal_bodies"
+        ]
+      },
+      {
+        "function": "test_changed_or_missing_selected_original_never_becomes_a_plausible_empty_page",
+        "exact_ast_matches": [
+          "test_spread_selection_pages.py:test_changed_or_missing_selected_original_never_becomes_a_plausible_empty_page"
+        ]
+      },
+      {
+        "function": "test_selection_page_has_a_real_partial_seek_index_and_rejects_its_loss",
+        "exact_ast_matches": [
+          "test_spread_selection_pages.py:test_selection_page_has_a_real_partial_seek_index_and_rejects_its_loss"
+        ]
+      },
+      {
+        "function": "test_selection_page_api_rejects_unbounded_requests",
+        "exact_ast_matches": [
+          "test_spread_selection_pages.py:test_selection_page_api_rejects_unbounded_requests"
+        ]
+      },
+      {
+        "function": "test_saved_parent_status_exposes_original_child_without_reverifying_prices",
+        "exact_ast_matches": [
+          "test_spread_selection_pages.py:test_saved_parent_status_exposes_original_child_without_reverifying_prices"
+        ]
+      },
+      {
+        "function": "test_parent_child_metadata_corruption_is_visible_and_cannot_offer_a_replacement",
+        "exact_ast_matches": [
+          "test_spread_selection_pages.py:test_parent_child_metadata_corruption_is_visible_and_cannot_offer_a_replacement"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\test_trade_twin_decimal_grading_prototype.py",
+    "sha256": "24fb6f2ed03150be430001b4698a6833a825bf1d71a2628566af6533258bd1e0",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_exact_large_profit_comparison_keeps_sub_float_differences",
+        "exact_ast_matches": [
+          "test_trade_twin_results.py:test_exact_large_profit_comparison_keeps_sub_float_differences"
+        ]
+      },
+      {
+        "function": "test_source_threshold_ties_and_conditional_interval_remain_exact",
+        "exact_ast_matches": [
+          "test_trade_twin_results.py:test_source_threshold_ties_and_conditional_interval_remain_exact"
+        ]
+      },
+      {
+        "function": "test_original_identity_and_failure_denominators_are_not_weakened",
+        "exact_ast_matches": [
+          "test_trade_twin_results.py:test_original_identity_and_failure_denominators_are_not_weakened"
+        ]
+      },
+      {
+        "function": "test_partial_and_cancelled_financial_results_cannot_pass",
+        "exact_ast_matches": [
+          "test_trade_twin_results.py:test_partial_and_cancelled_financial_results_cannot_pass"
+        ]
+      },
+      {
+        "function": "test_cohort_baseline_sum_does_not_depend_on_default_decimal_context",
+        "exact_ast_matches": [
+          "test_trade_twin_results.py:test_cohort_baseline_sum_does_not_depend_on_default_decimal_context"
+        ]
+      },
+      {
+        "function": "test_exact_finite_sum_retains_small_trades_and_cancellation",
+        "exact_ast_matches": [
+          "test_trade_twin_results.py:test_exact_finite_sum_retains_small_trades_and_cancellation"
+        ]
+      },
+      {
+        "function": "test_nonfinite_amount_cannot_enter_a_complete_sum",
+        "exact_ast_matches": [
+          "test_trade_twin_results.py:test_nonfinite_amount_cannot_enter_a_complete_sum"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [
+      "test_noncanonical_or_numeric_shortcuts_cannot_erase_precision"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\test_trade_twin_execution_draft.py",
+    "sha256": "bf35f167c1613340e666c499b15738fad151c7e0868c276cd9420edfa51a37ca",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_financial_twin_execution_is_implemented",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_financial_twin_execution_is_implemented"
+        ]
+      },
+      {
+        "function": "test_reference_has_no_production_numerical_imports",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_reference_has_no_production_numerical_imports"
+        ]
+      },
+      {
+        "function": "test_hand_elapsed_accounts",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_hand_elapsed_accounts"
+        ]
+      },
+      {
+        "function": "test_barrier_precedence_and_diagnostic_encounters",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_barrier_precedence_and_diagnostic_encounters"
+        ]
+      },
+      {
+        "function": "test_every_fee_and_transport_centered_on_cost_adjusted_entry",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_every_fee_and_transport_centered_on_cost_adjusted_entry"
+        ]
+      },
+      {
+        "function": "test_failed_candidates_are_preserved_and_never_resized",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_failed_candidates_are_preserved_and_never_resized"
+        ]
+      },
+      {
+        "function": "test_diagnostic_funding_and_participation_boundary",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_diagnostic_funding_and_participation_boundary"
+        ]
+      },
+      {
+        "function": "test_split_fractional_shares_dividend_entitlement_and_unpaid_cash",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_split_fractional_shares_dividend_entitlement_and_unpaid_cash"
+        ]
+      },
+      {
+        "function": "test_calendar_borrow_spans_weekend_and_dst_with_changing_rate",
+        "exact_ast_matches": [
+          "test_trade_twin_execution.py:test_calendar_borrow_spans_weekend_and_dst_with_changing_rate"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [
+      "test_short_recall_retains_liquidation_and_failed_duration"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\test_trade_twin_features_prototype.py",
+    "sha256": "4aa9327fa36c5c157f34c004c300bf9fc62142e3a915c69727fe619e0df8d42c",
+    "exact_test_ast_matches": [
+      {
+        "function": "test_setup_chart_completed_asof_and_independent_wilder",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_setup_chart_completed_asof_and_independent_wilder"
+        ]
+      },
+      {
+        "function": "test_random_ohlc_completed_wilder_and_future_suffix_invariance",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_random_ohlc_completed_wilder_and_future_suffix_invariance"
+        ]
+      },
+      {
+        "function": "test_setup_atr_not_trigger_atr_and_no_signal_or_news_filter",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_setup_atr_not_trigger_atr_and_no_signal_or_news_filter"
+        ]
+      },
+      {
+        "function": "test_split_units_at_next_open_are_known_before_new_chart_close",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_split_units_at_next_open_are_known_before_new_chart_close"
+        ]
+      },
+      {
+        "function": "test_dst_weekend_and_early_close_clock",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_dst_weekend_and_early_close_clock"
+        ]
+      },
+      {
+        "function": "test_refuse_unknown_or_corrupt_source_without_selecting_a_subset",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_refuse_unknown_or_corrupt_source_without_selecting_a_subset"
+        ]
+      },
+      {
+        "function": "test_cancel_before_symbol_during_minutes_and_before_return",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_cancel_before_symbol_during_minutes_and_before_return"
+        ]
+      },
+      {
+        "function": "test_empty_original_cohort_is_not_fabricated",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_empty_original_cohort_is_not_fabricated"
+        ]
+      },
+      {
+        "function": "test_long_setup_charts_have_positive_independently_verified_warmup",
+        "exact_ast_matches": [
+          "test_trade_twin_features.py:test_long_setup_charts_have_positive_independently_verified_warmup"
+        ]
+      }
+    ],
+    "unmatched_test_functions": [],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\twin-evidence-manifest-boundary-cases.py",
+    "sha256": "5770a1a7c2356b5c835aef01e27917812313101fd06fa77ad6275e351bd03297",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_complete_book_schema_cannot_be_replaced_by_a_partial_summary",
+      "test_actual_failed_liquidity_book_keeps_all_rejection_evidence",
+      "test_even_hash_consistent_bound_manifests_must_have_complete_financial_semantics",
+      "test_cancellation_during_chunking_and_after_complete_validation_returns_no_manifest"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\twin-owned-publication-authority-cases.py",
+    "sha256": "a31532c149cea2ded4c0658a8915142be311e5791040b7d1b933736727c1981f",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_owned_resume_never_replaces_missing_or_changed_original_publication"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\twin-publication-metadata-cases.py",
+    "sha256": "3eb3299f14f8952bb4a0121bb31d3b9da6cb6d1c501630f2742d8d64b21c9a8d",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_empty_unpublished_state_and_other_jobs_do_not_fabricate_publication",
+      "test_lost_atomic_publication_or_oversized_original_events_refuse_replacement",
+      "test_original_publication_shape_and_hashes_are_strict_and_not_coerced",
+      "test_original_pair_and_file_are_both_checked_against_the_frozen_marker",
+      "test_original_root_serialization_guard_checks_disk_and_expansion_before_json"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\twin-saved-evidence-guard-cases.py",
+    "sha256": "8e104517356e8e158961ede19b90a6925a48d2df74c4a869f10a8fcb53f0074c",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_hash_consistent_original_metadata_and_preparation_faults_cannot_authorize_a_view",
+      "test_derived_views_and_requested_rows_cannot_replace_the_complete_original",
+      "test_closing_guard_rejects_originals_changed_after_the_requested_row_was_verified",
+      "test_unknown_policy_and_array_refuse_before_any_original_or_cached_access"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\twin-saved-evidence-positive.py",
+    "sha256": "df3de12af5cd1467fcaa17df10a614052e6f7250dff05c17bc2d959d6a6444a8",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_all_20000_actual_original_outcomes_are_returned_in_bounded_api_pages",
+      "test_actual_members_and_every_array_match_complete_original_books",
+      "test_complete_positive_zip_csv_and_standalone_report_have_no_missing_originals",
+      "test_rehashed_derived_views_and_damaged_originals_are_refused"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  },
+  {
+    "path": "verification\\runs\\twin-saved-evidence-serialization-cases.py",
+    "sha256": "45df269d44c9b55cb16809439dca02f432b67a2bfbf385c95454d8c2763cb3db",
+    "exact_test_ast_matches": [],
+    "unmatched_test_functions": [
+      "test_original_compressed_file_size_hash_and_expansion_are_independent_requirements",
+      "test_cached_chunk_wrong_type_or_compressed_size_is_refused",
+      "test_cached_chunk_expansion_bound_and_complete_roundtrip",
+      "test_response_bound_retains_canonical_amounts_and_refuses_oversized_full_page",
+      "test_direct_saved_page_number_boundary_has_no_coercion"
+    ],
+    "classification": "pending fixture/module and assertion-scope review; matching bodies alone do not certify equivalence"
+  }
+]

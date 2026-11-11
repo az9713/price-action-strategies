@@ -1,0 +1,1526 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T100203771424Z-utf8-restored-full-701-backend-coverage",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T10:02:03.771765+00:00",
+  "finished_at_utc": "2026-11-08T10:06:38.690842+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "6e0ed28ca4c12eb166309613e27e5419b6d0f9441c75d361c89d5fd756cc2467",
+    "verification_plan_sha256": "6790863d2b3b8833e4dc0c02cf744b8319e667eeb9bd3417ce2d349d52c372b8",
+    "catalog_sha256": "8ff192fbe2b8acb1194a073fec1562596f3cd3e50773bb64aee0f11cbd14b096",
+    "source_files": {
+      "PLAN.md": "6e0ed28ca4c12eb166309613e27e5419b6d0f9441c75d361c89d5fd756cc2467",
+      "VERIFICATION_PLAN.md": "6790863d2b3b8833e4dc0c02cf744b8319e667eeb9bd3417ce2d349d52c372b8",
+      "RULEBOOK.md": "2945bc4f1e8680d650e74ff7abec96c1721c6a80e0c146127d5d2f7730e92e96",
+      "decisions.md": "5c61327575abc27b2cad1b6baefb6c5c7142aa581c6e72034438ddcf63db4682",
+      "README.md": "671f4b714066058a126503a4441fa6f1f5f71cd642ce67c7e1ab873b12efb9e6",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "8ff192fbe2b8acb1194a073fec1562596f3cd3e50773bb64aee0f11cbd14b096",
+      "verification/implementation-map.json": "bdd9f28be9fadc5bc1c2fdaf25b6a4fb7516616ce8313ec2b3030e67700c5e13",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "c3f9ffb86f1ad12786641fdd749212fa77d509c79ce950593d11f216e30a892e",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "449f0c4bc4a078d03d35f67c2b247438011b556b2b2f3d767d1231927a4d4be4",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "bd46c34e2d0ce022eb6c4136b9942a2c89588711b68f52b33610ea579ee8f8cc",
+      "backend/lab/signals.py": "c5132d046e7aa1e0c923a6a7f5b0ad1890122d0a075e75fbb8110fe30295670e",
+      "backend/lab/store.py": "812ee8aa68c2fc0d45d0fcbe5bc649eea831a0e240c955905e14f6eb80b6abda",
+      "backend/lab/worker.py": "417162b359cbafce1698961faca5a6e5c49a56d4c96dc1ff401b6c682cd484b4",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "4e8afbf6de15495c376f3ac5d2ec6411c09c42a4b880f3a50df9a63a88d95fbe",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "ff11d8ef9d50547b79630e1297c6f88dfa1ed1e9294ff5c670f658bbf1863cd6",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "7c0fbe1b6a2e3689da15b348c96467f12ac11e2631ee28702240936c473aa970",
+      "verification/check_behavior_browser.py": "2af862bd35d22563ac396e11a87e77339a50c6b60b6a6c2ddbfce6d4cebad9d1",
+      "verification/check_browser_outputs.py": "03007de821a6a045884836413205b257cc3b24a59e22a3c1bdb0c778bf97af32",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "ad210513bc337af346dc2312cd1fc906dfaba4de0ab8afa0023ddc82dddeebcb",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/frontend_check.py": "4e753e85952d263924d6fd3140bf8ddfdeb63f43e5964395fcaa2dcfe23490ca",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "5b4f624a41d8008b8749c3da80d93968dd6117f6fe89951172e644707c2241b1",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "fd3fdac04c1f3ad4de7ed3ad0f75ce66bc5cae08e83afa101833681d047a9694",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "1e22a19a14d3fa55be5fe35f4416c341975d925458548fc6d7044feb5b3dabfc",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "2945bc4f1e8680d650e74ff7abec96c1721c6a80e0c146127d5d2f7730e92e96"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/behavior-contract.json",
+        "sha256": "42c534ebf0c68724863ed5ae0d7a80f756ab91aee0e41f61a971940065dc6410"
+      },
+      {
+        "path": "verification/fixtures/benchmark-contract.json",
+        "sha256": "83acf2b95309e0e5cfb2f42e347668137b1f1f06e6d0dc379c75819ce2493ead"
+      },
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      },
+      {
+        "path": "verification/fixtures/execution-reference-contract.json",
+        "sha256": "2ce26087a4d3f18320960c7fbbdd5a8bc405d1a0bf88f4f0abeb4c4fc88d59fa"
+      },
+      {
+        "path": "verification/fixtures/family-boundaries.json",
+        "sha256": "39590c7cfcac361e2c3d7ac2ba5863c2195465d4e54761d8c54dddc0b10be39d"
+      },
+      {
+        "path": "verification/fixtures/overlap-priority.json",
+        "sha256": "9ed417c04e3c9aed2a52b6930fe1ce48fe1713f6bb7ec5905c111cda95bcbabf"
+      },
+      {
+        "path": "verification/fixtures/portfolio-contract.json",
+        "sha256": "c4af4f530fe086b919374e3502da9db1c8bb42d08efca8d22444c40513d08f7a"
+      },
+      {
+        "path": "verification/fixtures/prior351-catalog.json",
+        "sha256": "39074bd06fd140232d33537ac42d316c073132c2f4cedcfc15e06d147c8b055f"
+      },
+      {
+        "path": "verification/fixtures/random-controls-contract.json",
+        "sha256": "26c6a3c8bfc18f642ddf3f8f883fb5d351801671cb221b223e626c9aeb854218"
+      },
+      {
+        "path": "verification/fixtures/reference-exits-contract.json",
+        "sha256": "2da992ff80aeea8f6ebeb121d17440da0be7b8156993490c3176f8bd0cb1842c"
+      },
+      {
+        "path": "verification/fixtures/reference-random-domain.json",
+        "sha256": "5e87b118902ae878fe49c86210ef8c074a9b966345a5cad04128b5bd233384a2"
+      },
+      {
+        "path": "verification/fixtures/statistics-fixtures.json",
+        "sha256": "b55d2e81d5d52b1c411140a3a354e42488e1642c2711a10a9db6623213ca1003"
+      },
+      {
+        "path": "verification/fixtures/strategy-baselines.json",
+        "sha256": "c70313e231c02097a4d3782536da07897cc4fa3016544899e949fcb540dff05d"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--cov=backend/lab",
+      "--cov-branch",
+      "--cov-report=json:verification/runs/behavior-utf8-coverage.json",
+      "--junitxml=verification/runs/behavior-utf8-junit.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/stdout.log",
+      "sha256": "d218540fe4cef890bd7acfddd5df1112dd877777abd4b9a0d1c7c9d9c925713c",
+      "bytes": 2177,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/artifacts/verification/runs/behavior-utf8-coverage.json",
+      "sha256": "afead48ce3fab5f7d9b67b68de2f2e2c1ae6d1d79518df7317f6ce747af3e39e",
+      "bytes": 241788,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/artifacts/verification/runs/behavior-utf8-junit.xml",
+      "sha256": "eeae78e04cd43c3d106b0de8b16feb046b042d45446bc58958223d9c412abcbd",
+      "bytes": 90079,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-000.json",
+      "sha256": "3f3ac2b88146ba434844f755533de5002400d0c322e4e45db4386cde096e917e",
+      "bytes": 74463,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-001.json",
+      "sha256": "8a14761e218935dc461e65aaa74973c8e7b0dd914dd147c22de87afd32fb0de5",
+      "bytes": 83735,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-002.json",
+      "sha256": "7e51186a4c900c9d43e294984c3751fe43f0e14101e7bcb47f38b7a105d9290d",
+      "bytes": 76480,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-003.json",
+      "sha256": "015982f8b73558ff0dbf7941199871493ec8cee31449fa472f3bec5a6099b49b",
+      "bytes": 67540,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-004.json",
+      "sha256": "c226e296f34dcfd29b36cd45808c846b12c64a694360689ded095da6b409bdb3",
+      "bytes": 64221,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-005.json",
+      "sha256": "07c66059ba37f23ada0d37e7c8f25c9d2870badb433fe5a15208f6396bd3ae80",
+      "bytes": 64172,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-006.json",
+      "sha256": "e5fea2199efae8e065f5e615fdd9db3530402c88baf0d1fb8c54d7111db92556",
+      "bytes": 74284,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-007.json",
+      "sha256": "c36c9249b0dfb1a5e8203b167862586cde115a8fb57ade1a81580fc1e4f360dd",
+      "bytes": 67685,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-008.json",
+      "sha256": "934360bcc92fa66c28c4528baadcc3acf202f7e5e4ddf7b90bcc769412de6fde",
+      "bytes": 91347,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-009.json",
+      "sha256": "ff13050f34e137e301157149f7793a1bf516f28ac1feed986e8b3ae197663bf3",
+      "bytes": 87289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-010.json",
+      "sha256": "08dec3447973843aacf3c94e9212c107e7fd9f5cd9779aff0ce1cdfafe8c5d05",
+      "bytes": 100280,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-011.json",
+      "sha256": "b483b338b0fea9b4053ee5d80faf906bf14715f76642f0c6eda9f203c87a070d",
+      "bytes": 67615,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-012.json",
+      "sha256": "a9b52105caf4fa12038593c14951d6fa65c36489f26998ef3696448f9cc188bc",
+      "bytes": 117028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-013.json",
+      "sha256": "a800c9c8c56fbe10a5c6bca29ee1ddf4ed3092b106b493b2a17be5332cf8eea0",
+      "bytes": 81808,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-014.json",
+      "sha256": "0d240e44911d65e803849d351816a7a31622210e17a870b3ba63972018e95b1c",
+      "bytes": 77705,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-015.json",
+      "sha256": "0644da90b750bcb9fa7a84c1f8387ad5d40f748d857be4ce0c41c4bdca45ab52",
+      "bytes": 70671,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-016.json",
+      "sha256": "40fc1296d5eee710506933a3c5a1bd27f3cfc25a4efa519c48b5998ba2198c3d",
+      "bytes": 74291,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-017.json",
+      "sha256": "b9a8ad42a67654efc89896e6dbec2bf54fa2a0bf346f8eace895c3815f9f8a00",
+      "bytes": 67297,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-018.json",
+      "sha256": "874ac5873dce41aafd8084cc82919675dd5b4205f82d16a6e0744fb7aafce3f8",
+      "bytes": 84599,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-019.json",
+      "sha256": "0616c01aa6b64139a8d5a42695a793a8b767e2c092d1a3b4bb056d06a5788b0a",
+      "bytes": 86581,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-020.json",
+      "sha256": "d43983c1b8488de922b5abd66cab7aee3fb11103305336a2002a03b7092d746e",
+      "bytes": 151638,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-021.json",
+      "sha256": "9ce9c5c51e5c114341aaa394a30335c83be078483ddff4e8a8c557eb29c086fe",
+      "bytes": 77290,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-022.json",
+      "sha256": "70531cc27b9a54cb37acbb660062f72f22c4edabc8a8e82e98c3f3576d9e31ec",
+      "bytes": 67555,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-023.json",
+      "sha256": "084dab130dce5f51510cddbbff7b131eb18e5040b2acc8bfb4c16b84c6def331",
+      "bytes": 70927,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-024.json",
+      "sha256": "cf7a84f0bed1f8bc4e92f61079ebc021d63269cd6e52b9c553552a7bfecf8d11",
+      "bytes": 71031,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-025.json",
+      "sha256": "7d0d8ea50b9c4d7a4dc28a0dfa00cd736ba55214a7c0af43984b92411e4b146c",
+      "bytes": 96430,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-026.json",
+      "sha256": "8dddda4bcd7bb987e0f094ae7bddf479258f3a229a0e40f3b476b5346a3133c8",
+      "bytes": 74364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-027.json",
+      "sha256": "901577589436ff45eff3cf641b9ac069ae1a88364c8430aabd2f277f47170868",
+      "bytes": 84162,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-028.json",
+      "sha256": "82eff1f5f67519766197c3cb3bc2082a5d2cec1843ff48665b8558aa19a820e5",
+      "bytes": 84837,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-029.json",
+      "sha256": "143b37f43891a7278b0d705b0fddc068d1b789db9d7729d0734031015bc7d9ca",
+      "bytes": 82336,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-030.json",
+      "sha256": "b9e897aaceee1e7a2393cf613e7a71065657c86658c2c7e6fa3b4266619a7e16",
+      "bytes": 74184,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-031.json",
+      "sha256": "b36d0e66e269c4f7900b8d19f1244e0936f283e757460d1b3c4103663f724bcf",
+      "bytes": 67718,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-032.json",
+      "sha256": "54817a7a8e0c75999b6ee32cfe0b78e5870a0f9fff5afe427a3a0820a0a964f4",
+      "bytes": 71029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-033.json",
+      "sha256": "e1803cb992d8525bd02a630ba8b0151a71f32223a35e86d4b52bff7b8216a29b",
+      "bytes": 71185,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-034.json",
+      "sha256": "618b8f0e4eda2f77d5fe51c5245fabb0965c1a8781527f5696a4546b4a5c87aa",
+      "bytes": 67531,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-035.json",
+      "sha256": "3b6e2501d2b47b196974b62126be5f4c684d7ada76fb0589a78937bce60787fb",
+      "bytes": 70655,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-036.json",
+      "sha256": "f1a19e61bae4a3b2a05022d22915c0e52e2043d947f97ca4e4e715e467202324",
+      "bytes": 81008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-037.json",
+      "sha256": "31d11924eff6eaaa2c9d7aebdeb811d9893dd3e694ef24eb70b7d70f22961e8d",
+      "bytes": 94812,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-038.json",
+      "sha256": "ffeeb8e419c4c896ce179142e59ae18d6ff33ed937179c231d418f478c376b57",
+      "bytes": 74399,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-039.json",
+      "sha256": "caeafcd62da5e47ed9164689f97dc726951c4b6bc3b01362cba185e541aa6975",
+      "bytes": 105498,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-040.json",
+      "sha256": "2adda6c73da2ef5ab4e92538acdb498b6482b6f2b91c1676545b1e49e1f7a8ce",
+      "bytes": 117226,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-041.json",
+      "sha256": "ffaf362fdda2e5641f55ab3c7e1b0cdabf20374b49171bae3e9d2d54ee3106f6",
+      "bytes": 101196,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-042.json",
+      "sha256": "013b9b44505efec4aa8fbb2a3d0564eff3c43802300eec477604e48cf585e947",
+      "bytes": 116724,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-043.json",
+      "sha256": "4205a492bc87210b5b0326c15655e7a6740c3ebd31660fb4bbd32b492b8e7fcc",
+      "bytes": 118487,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-044.json",
+      "sha256": "8e6d321aecfe484d5c37be27f8946e1e855b08d99bd838c7b45d8e9ebc172aa6",
+      "bytes": 124766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-045.json",
+      "sha256": "335f662936154b779bf564e412bc435e3e61dcb6b037989117a76d34cd4f2c5f",
+      "bytes": 88390,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-046.json",
+      "sha256": "26d21fc450407cf2ca22104041e60e4cbff291299ae258b050206bf763322cac",
+      "bytes": 84207,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-047.json",
+      "sha256": "0a159d13d10464c10ccc06fe69491f26730680612cfd7355dec786e4e13081f6",
+      "bytes": 99518,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-048.json",
+      "sha256": "a511ab4dc8cbb1d8a6b56572564e82d3d1aa56678f073f1a32b139827df101c0",
+      "bytes": 108952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-049.json",
+      "sha256": "231b61e30f9a0c68f3726884c18faad9558669d8de6ce3294aed81c8a9841512",
+      "bytes": 74273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-050.json",
+      "sha256": "637dc0decb32926f850c9ed2f4a852b608fd8c06ca474bf94c6cd763a1f0836b",
+      "bytes": 101266,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-051.json",
+      "sha256": "49efe4a8dfab37705beb7e76e02cc29703cfb03699dabc78075238626dd31eb5",
+      "bytes": 73980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-052.json",
+      "sha256": "314dba50f76fb5eb4ce47548553eac10f7a50ccb85096896520385505799facc",
+      "bytes": 74397,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-053.json",
+      "sha256": "e8cb690be9306062d2777d9db2c31af0130b2429314db5e265457632af5068b0",
+      "bytes": 61030,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-054.json",
+      "sha256": "8d37b4b748a724b5566e8445686ffaf5f2ef6b20ee12633a896d387b48e72df9",
+      "bytes": 94516,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-055.json",
+      "sha256": "a3fff8c6d2c204a6ec1c65b5cb443515f4ad9803c616a45c7bc8fc51614ec1cc",
+      "bytes": 114342,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-056.json",
+      "sha256": "77255038deeeef5d669ff13b084359dd4783ad87f31ee096afa4cc18aff35302",
+      "bytes": 70789,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-057.json",
+      "sha256": "7018986af9c453a89149680d55ae70ea1ab7381994612e0f39b27c0fc669a9e7",
+      "bytes": 107405,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-058.json",
+      "sha256": "f16bf1e0605b9ca9478b188bbd0bea853150bc6b8696200151d77c60f1f1a09e",
+      "bytes": 84472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-059.json",
+      "sha256": "72e6c4700a389a564364f7e91a25cecf873df0920c528a48a0e3469085593c48",
+      "bytes": 64190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-060.json",
+      "sha256": "7be4cfb7688dde5d3b6a2b982e17ab366708ae2694451b9ded5d4af1e12d79d4",
+      "bytes": 124576,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-061.json",
+      "sha256": "20481d1868172cbbf23100aa2433ae188ae51b905f5b7c645bf87d6091955197",
+      "bytes": 76247,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-062.json",
+      "sha256": "89e2ee4840b5a3db8521f80008d708d2b719f4172d86b7828f0a41c9188b0a49",
+      "bytes": 98302,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-063.json",
+      "sha256": "18fd374ed0b66ee8be923459a42aaab22240b4938dfce2da91d278e9824dc0be",
+      "bytes": 89443,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-064.json",
+      "sha256": "fd527270a8ce4f8683e107f89eb68d4e6d6ba0db3193e3b910b2153a13bde5f2",
+      "bytes": 92587,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-065.json",
+      "sha256": "1f97b9d90324df89af49f8804db2aef1c01e793f33010d5131be6261908a8e05",
+      "bytes": 121338,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-066.json",
+      "sha256": "e3b630fc002a362150ef921e67664dce7a4ee3fdcf15e20c383f78ca5ebde5cf",
+      "bytes": 67526,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-067.json",
+      "sha256": "470b8b48cf0fd3762012b9e40dceb0b46b09a091f80d3fb9c5ae62a9405b7ad4",
+      "bytes": 67613,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-068.json",
+      "sha256": "9bb8fa42f8d7f3de6e663a27cf8a1ea11170f24164cd64eb7c34e539d20b694f",
+      "bytes": 77824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-069.json",
+      "sha256": "7779e6a7c6910ed2c558caee2053b88e9005b3554a34da86668c2d5dad655c35",
+      "bytes": 74359,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-070.json",
+      "sha256": "a227273e64796c53d5562d34368b9335d21e3dacd66053e4a0af509bc56c8b74",
+      "bytes": 93215,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-071.json",
+      "sha256": "7e5b741c265d1ab330f09ce9f3f8712dad1dde2c561a9d3cf78aca085c6da63f",
+      "bytes": 84574,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-072.json",
+      "sha256": "0d4c3fd3dacbded9ab304ab823fdca8974e5a85a9b90c8a572868786ce1e9750",
+      "bytes": 81156,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-073.json",
+      "sha256": "50eda51677bfc1f69e39c30e95d5932da323594722af700999af0c38484b45a6",
+      "bytes": 70780,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-074.json",
+      "sha256": "603581574ed8894b21bca5a1e6156f22d6d44634987b93763131aa6ec391b5f2",
+      "bytes": 96078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-075.json",
+      "sha256": "4e2ac6dc40ba1fa4aaf69aa68cb85de166ece0064b63bcc2c157dad49463b209",
+      "bytes": 107863,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-076.json",
+      "sha256": "18a27c64ce5399ff2fe1a3032f1b976d6de9bff544dd06d565232e87029a66a3",
+      "bytes": 114537,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-077.json",
+      "sha256": "d20628117383bb9fd59ef408c3353c3b894194955781205a586f805926b29f71",
+      "bytes": 130598,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-078.json",
+      "sha256": "4fa7d7ce0d447281e0b25481ae1db593c352b449aefc8b3cb666c0ae7d8801ee",
+      "bytes": 74101,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-079.json",
+      "sha256": "28fb0d162cee76e3bb6648a45ef8f51be1f6f847e7c6c331e56592635d945c86",
+      "bytes": 112956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-080.json",
+      "sha256": "ec8d5e7eb833b7e9cafcd3a45fc619af9d10402a2a4a908c9593c6fb31698d6b",
+      "bytes": 77505,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-081.json",
+      "sha256": "adc22ccb17b947c76c5e3d6d7048579241b321dbcd2e6c4af840ff27609b2468",
+      "bytes": 98423,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-082.json",
+      "sha256": "9aa03c2ff106d5ac9a47df79fcab5dc500365e66783397bc330531d10b51f717",
+      "bytes": 116461,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-083.json",
+      "sha256": "b964b96d74c3b92101c24f1be2aabbe6da1637c10b6f2d15f2a53b87be99e0e6",
+      "bytes": 77670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-084.json",
+      "sha256": "45c3399307ce1c98f66a2c592699dfa6810d42591845fec422b0e876ecce6b53",
+      "bytes": 75366,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-085.json",
+      "sha256": "3ebc1f24e4b49bed1c2dfe9e854ea91b4743b577254e8df815cbbc212fa41f79",
+      "bytes": 64139,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-086.json",
+      "sha256": "2a16de5dadc2f254d9b9a0a51b868cb10afc069ba4c1ec0e52356181e381df15",
+      "bytes": 119479,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-087.json",
+      "sha256": "660513c0e985f3e176f6d6fb582b683944df693cbae6758a35e237b67367e376",
+      "bytes": 93904,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-088.json",
+      "sha256": "cc4dbaf8f3e7cc6f39e9592cb389c2d7279f829e9ebde2d774aee949595c53c1",
+      "bytes": 142053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-089.json",
+      "sha256": "c3543d4614d017c57962135f7a86e674dd213a568d32530d6a28b9dd00411a1d",
+      "bytes": 87117,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-090.json",
+      "sha256": "79431b1bdcfadc44dc600f1391672a6e08fab979e1629478457df6e6d5a90a82",
+      "bytes": 67424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-091.json",
+      "sha256": "093f3105302daa256193150729f0d63545865f2e916724f3be4d45c0c6586405",
+      "bytes": 70852,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-092.json",
+      "sha256": "fbc828a26c34ecaa6692283d4b0106fd3bb06f8f1009b6370a131e974487d2cb",
+      "bytes": 122361,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-093.json",
+      "sha256": "7fbe57d65cd20054a2513f4dfd6365e7984af4da6f04ca2faa193920100f81e2",
+      "bytes": 117828,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-094.json",
+      "sha256": "fa85f4aea17195caa462b883cd988bc4a9c241313f77ec388641535d95cd9b94",
+      "bytes": 129078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/reference-properties/seed-095.json",
+      "sha256": "c2bf07a075d3d0eef2424d6b85e0dbe47fff7a759c753c4074bf23db8db0fe07",
+      "bytes": 101761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-15m-long.json",
+      "sha256": "6c502972b397a296d0ba0842d8e823d821ac9094a0720e0ac4e8ffb61f86ba67",
+      "bytes": 3028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-15m-short.json",
+      "sha256": "ea843d4bfbbceed5102961c301b8f76cb6785f15f40685c890a71f718c862f77",
+      "bytes": 3054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-1d-long.json",
+      "sha256": "5e81775a518f22c0c3f6961fe5ed18184c7079f2b1a421ed3e7a9c37b5ff04aa",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-1d-short.json",
+      "sha256": "b09841a3c0c56f7644986451f7653fafd2911d6a9053caf7517b1f54405b152c",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-1h-long.json",
+      "sha256": "d2e5b528e51195d8bde1f7783651fbfc0c3a9c1bb42176a3d431ae89e31bdb0a",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-1h-short.json",
+      "sha256": "c98f36074fa3d725915180f014955ed6de68694fe6bcb315d4f4c48b153d80b8",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-1m-long.json",
+      "sha256": "bdc2cea69c1d9d3c30bca30424df2fcceffe8a83a177864338f5441895b4bd71",
+      "bytes": 3024,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-1m-short.json",
+      "sha256": "250bae04f12f533c25805cecedd6bac205bf05d3f9ab10bfbb21a11d82ce39d1",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-4h-long.json",
+      "sha256": "71b6d38d0ef1d4a4811d165f67bb8e3eca3e93b70fd32ef930936439009ec356",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-4h-short.json",
+      "sha256": "c8426ce588f9814f3bc93a70be25e5e650331ee113326748ef7ad8a534e373a6",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-5m-long.json",
+      "sha256": "921aa604df5979e9748bf6501785cfeabde767346c1f12dae3c4bde8322ca4e3",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-break_of_structure-5m-short.json",
+      "sha256": "10ca560724ee180dfbcf471b06b5b6a53c37a97c4a253203b56f1a40050b72f4",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-15m-long.json",
+      "sha256": "e31d284b2e1d0d42c154c9beb25f022ae2b275a8d2dec25a8429e1edfc66a588",
+      "bytes": 2948,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-15m-short.json",
+      "sha256": "48a65515b5a1a36ec9487897d76baddc78e262d5ee906507a8030438bd6fd2dc",
+      "bytes": 2976,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-1d-long.json",
+      "sha256": "6b5503a1af2d1eeede0fd388477ce877e57a98561b5f1ba0cf0289258b4ec7b4",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-1d-short.json",
+      "sha256": "a5f14f141d6cc9728f399b89dd958fbc81de34206b1bb73dd83c7e54529c62c5",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-1h-long.json",
+      "sha256": "6fef4a7b7d03598e948e93bef238d4e09701ebcf3e6302296f5c49ff7b06cd53",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-1h-short.json",
+      "sha256": "6c1858a845801b0cc1e2729181e7327739f332baf03f88f0a78b2fbd87d09a03",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-1m-long.json",
+      "sha256": "7712f33564d1a47de8eb83ab3b81e1becd031a6239891f00eba37fc173bcff06",
+      "bytes": 2944,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-1m-short.json",
+      "sha256": "d84e2829d2d7d1f3d0fa2d0090bd28735ade4a901dc8c35785e3ef1fb709ba4c",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-4h-long.json",
+      "sha256": "a23a3c0e7a4804a015c2c15cedcbee634c5d6d98e5f4d05bc4055c09a272d7fa",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-4h-short.json",
+      "sha256": "14c5fabb588e73f6be8df1cc67162e696015f1b199177db1b1a5de341f5786df",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-5m-long.json",
+      "sha256": "1dcc522c9d86cdeba2634a9ccc81d5c0ce2fc928833261d67227ed4c625353bf",
+      "bytes": 2945,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-breakout-5m-short.json",
+      "sha256": "93341302c81e3f9bd11c0358bfc3b203c026d1edbca2c7c3b6b102763bf67914",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-15m-long.json",
+      "sha256": "22343f0d178606ca36000a3feb76fcbece27319b06f9e59d5024d29749fbc222",
+      "bytes": 2985,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-15m-short.json",
+      "sha256": "8018ef9325f0aaed62951361cdaf5600095ace72b51d899c923004bb4060783b",
+      "bytes": 3005,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-1d-long.json",
+      "sha256": "6be29c3dcba2515c2749d8936944caf59f8c42687b6749bc8eef1ab5b75efb6b",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-1d-short.json",
+      "sha256": "06f7137ffd1c73174db9c8b35d6f32df9bc388ef2866fc61edaba42758cb168f",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-1h-long.json",
+      "sha256": "3a9000ae5c6881115ed5b04a379317a753263dc525433d2a3ec025fc778385a0",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-1h-short.json",
+      "sha256": "28cb9d8f6af366ca05424ce8b3668d314d6df3e2135f068b315268c2cae17e11",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-1m-long.json",
+      "sha256": "80740b05b02d726a981c754efbaf70673c415a1ff8043c1080aafbcae1770f41",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-1m-short.json",
+      "sha256": "1a2bbab59a9de1b6f9ed12a4d09e0dea059f92523772c372968bb8b9bd959b46",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-4h-long.json",
+      "sha256": "8d2620721313a755e724052c8a25583aade95d61876ddb9e80c3ccbecc0702ed",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-4h-short.json",
+      "sha256": "c9f574d204409fb64933db6150c2592c3fc8e11f53901ecc8318bda6f1763757",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-5m-long.json",
+      "sha256": "fab053255f03bd8b3c735d496ce258cfb278d3e72ff51d0491b00ef1b7cc1f34",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-change_of_character-5m-short.json",
+      "sha256": "f351ca24d18c4342b7303f92baf66a8da738bdccb16d84c2af2783ef31c787c6",
+      "bytes": 3004,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-15m-long.json",
+      "sha256": "e8fb770eda3e5b115562ced36b6d8f1df8762eac68c40f5c23f97a6d3381eae0",
+      "bytes": 3020,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-15m-short.json",
+      "sha256": "9c30f687c7646d60621080446bf731508a936ed5b9135095e2b4acc50fa30073",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-1d-long.json",
+      "sha256": "469997ad045ae702bfd9ecd86fb34f0a3c07ac0c9ad0f3af1acba3106540083f",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-1d-short.json",
+      "sha256": "da18705a2d5a8637918b1d04b12431ce84dfce539a70f1ad290f7f4b54d80e6b",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-1h-long.json",
+      "sha256": "37a8c41930cf4ada548d9e2f8725b22c0116135c4fd175f2c4abaf23ee5dd17a",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-1h-short.json",
+      "sha256": "8cdf6b8ad007cda15d92ba2eb4a86e7bd01ec69d353b7b4c15a04cb415c2c4bc",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-1m-long.json",
+      "sha256": "910d1729b4a3966f898e01192b3f13b6bfda9fad89d4bdedee29254580d0604d",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-1m-short.json",
+      "sha256": "b28efc9725bcd2253a2a3ea34c5e940f6ccb661f91ddd1caaa319b2063e3ba29",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-4h-long.json",
+      "sha256": "f7c2fec5a7ecb2377b90a6be9d3d27ad0247460911fbdc9ab312e05a1ac0c931",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-4h-short.json",
+      "sha256": "38a76527a8f1e36ef90c0509a1f89e5beeb717a45e338520b93381fad2908e3e",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-5m-long.json",
+      "sha256": "1f7964fc9b25ac322ffe0961192bedf9ad7071a8a18f022be3adcd7f2bc55842",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-fair_value_gap-5m-short.json",
+      "sha256": "2dfadef84013f526363f94811fc7823985265e44cf5d46cdb05f23c9fbe56378",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-15m-long.json",
+      "sha256": "89af4b37c138f7c0dac1feaf5c0f7dfcf8d5692c6e6ca5072a22e3fb9d18f917",
+      "bytes": 2956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-15m-short.json",
+      "sha256": "948831121227c099a9a484293d4a804a5354ee23e3f89fe95b89d53a39429d27",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-1d-long.json",
+      "sha256": "734b3fb0702b56a8f919fb28509845ddbf3e0cf72d305a902fdf7beb7f96cc12",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-1d-short.json",
+      "sha256": "9a3ed3a8381dae55dd7db1bbbfc7c890856c0de732befd9724981abc9931eddf",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-1h-long.json",
+      "sha256": "512aff993c477aac91399cfcd929de154014a71e029fc7b66322ac4559b32670",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-1h-short.json",
+      "sha256": "09a837ca93c1e472980eca405765e188431e989f5caae1dbb3965efd01922812",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-1m-long.json",
+      "sha256": "501aa09e65929c3486939aaad2dbf0e7ccde9cec74fcbfe8d002c445fa98ff33",
+      "bytes": 2952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-1m-short.json",
+      "sha256": "939ba41a969ecfd0c2b0a2f59093ad31e277298b963b9c496c7dd02b610c4cf0",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-4h-long.json",
+      "sha256": "f2838cacea5a88f3d222c43a386e71c5e623566f775c7b8ea06b2325d64be70f",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-4h-short.json",
+      "sha256": "85025c6f7c184859a5224f03be82d0d65365ece9c400a30fcd62738be3294f87",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-5m-long.json",
+      "sha256": "e564accd690804b3b5895a0fd03c6f00c06649e2e02687ca776981a9579a882e",
+      "bytes": 2953,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-flip_zone-5m-short.json",
+      "sha256": "d86354d1253946c4e7f8ff67cb0af0acc66a25824ab1db96bb5c1c439a653c93",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-15m-long.json",
+      "sha256": "e71d4c6187b3538b821cb005d8697354df7429c6c3edfdc1ee101d9573cf23f7",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-15m-short.json",
+      "sha256": "dbda4dbdcba87f1028a3e8adb22ae8f0e9930593a54e2f42ae7c8cf423949320",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-1d-long.json",
+      "sha256": "461e11f347b307902731d68724d53004e1b674b95535bd6ead7d1db7cce0baf4",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-1d-short.json",
+      "sha256": "fb0f1827fd0e8d7ca4e01e3fd81b19b3ec18bd71ce35e2f4a078701a598e59dd",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-1h-long.json",
+      "sha256": "36b5f36cda5bf41642f96cd0ed7ee3292081a5115c4d3fe75dd5551c3c4c3e23",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-1h-short.json",
+      "sha256": "9f0ffb9bd594d655f9591400c7bd60125c25d41265e43320ac4ad44265ae80ab",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-1m-long.json",
+      "sha256": "76a6e4a8c80e5ed2d371c464482706c8bdfe1a33424f695084af2869449012bf",
+      "bytes": 2977,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-1m-short.json",
+      "sha256": "74f694fb2836b619513d74922a56f5ca45d4bc4308f2d63442b7fb886fa6e5a7",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-4h-long.json",
+      "sha256": "37360e215dfd23d4cb7987a2762dc733bd28b56d2e7abf7b27f7855db30c6942",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-4h-short.json",
+      "sha256": "a812e776746d2051160ff081432885a37c45645dae2c54c495ea883445b1a37f",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-5m-long.json",
+      "sha256": "eeba3e8b42117338302bfeebf7083f674b4660c61d4900daad609e9e0a7aae35",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-level_bounce-5m-short.json",
+      "sha256": "46dc5e2bd4d41daa215fc03a884642675144028983421e199a7385de633ba263",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-15m-long.json",
+      "sha256": "fc5bb5d9f3e87aac56ac770da92ee06ab4d7d408fce612dbaf8ee3c6da7bacdf",
+      "bytes": 3029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-15m-short.json",
+      "sha256": "96c3ba8db070fc49650b798c948c03388467eb725b24b4d815036f36f441d89c",
+      "bytes": 3056,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-1d-long.json",
+      "sha256": "a07145ff4d9a48717069732483d5831dff960bc802543cb5b5e1ba5391db64f6",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-1d-short.json",
+      "sha256": "bef9ef35891fc5ca630459ff33fc8190b8654a956539943b2c3a3bff84ae6606",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-1h-long.json",
+      "sha256": "7a12a9e3a7322de4fda56568ddbcf557525a41b4dbe3dd44e4e4d6235b3742b8",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-1h-short.json",
+      "sha256": "073f8470f01cf4deb832c893df6c4ed13df43fa030ab5cd2b716d635b9be8b2b",
+      "bytes": 3049,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-1m-long.json",
+      "sha256": "284dcb25350f99a2ffbe23941ad7584d349d90c32169d11a89a2ddd78c5f6603",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-1m-short.json",
+      "sha256": "7d10bf8dfdd09932575dc7ff4205f5d0ca94f4bf0a27714bac6987b339cb3e65",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-4h-long.json",
+      "sha256": "5873f998e853df1c23a7b9f03de97c46dc4ee8206f6c5f6e545d23945176c270",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-4h-short.json",
+      "sha256": "0e2a13266573833b072d8a9a4a73a63994b637b5496a4e77671471c18fcff719",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-5m-long.json",
+      "sha256": "60b77c11cde0beb9ca2724b53d2c16ff8bc2177f318e61c959c7fc7699591267",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-supply_demand-5m-short.json",
+      "sha256": "f1ce95b34e6fa928b0bb9263107d86f562f31a4e553bf4d1363489d27e46bba9",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-15m-long.json",
+      "sha256": "c363956e9a63ed0ac1c23edbde3c534c0e8d81f38c9323a71e8c3f15815a515e",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-15m-short.json",
+      "sha256": "d878a3394e7c05fc1255419b80b1628f5a80a30f6e8aa4f897957095e6daefce",
+      "bytes": 3008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-1d-long.json",
+      "sha256": "eacada6fa253c1c942fefd48da4316147b6f6b7422d0a0865651c6943e484044",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-1d-short.json",
+      "sha256": "bce83c1d109b2f6bd78ed7e8818fcc607db838863618f1154121d69d81c8992e",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-1h-long.json",
+      "sha256": "1bf6326a9772852152a04f5d020253a6bc05f6bd37f8d617951d265a55fdafaa",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-1h-short.json",
+      "sha256": "3df6d555aa4fc3e736f12213d283d6b52367bfafb29edcddc57e1908b34036fe",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-1m-long.json",
+      "sha256": "bb23198ad8b944502400b6848ba344e567d9df29ce7c54d64622884a3bb78a4a",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-1m-short.json",
+      "sha256": "92cfda27f8d257d9de3b2d51c54e2101c1461a3b42902aabcdfc89709d89b52e",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-4h-long.json",
+      "sha256": "df7842fdf8f5bce9dd3fadf9124a2bbdb750efda0111fe23669287e51a6d35c7",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-4h-short.json",
+      "sha256": "9142bec0ce8de22a01d78b8591861889922c443d6561d116106e03ee2a554445",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-5m-long.json",
+      "sha256": "c125d8f1222874fcbdfe59a1a0078a9ee1e402c6e7a430bd4c6c4c658a8e4e58",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-sweep_reclaim-5m-short.json",
+      "sha256": "d8b1d412addce06aae9b51dc419dee106b97a3d56f922b22989159bbaa97c1ed",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-15m-long.json",
+      "sha256": "92b41f91368521c21dd160219a07e1159c0b9f03798cef00201a9872a9606a1d",
+      "bytes": 2967,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-15m-short.json",
+      "sha256": "2f2acea0d651fe77ba3bb39e6f5fc31c961673810ec0f399088db9dc3c934183",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-1d-long.json",
+      "sha256": "031b97a7108b996976f202a811ef98d4cf84645af605a6adadd3443dbf427ed2",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-1d-short.json",
+      "sha256": "04352b94611477561fa1e615b3a93b443c5d8e885452cb0dc62fb8cd56eecd37",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-1h-long.json",
+      "sha256": "1c6a2c61e1714a9f92df4e1ea797059077d8f5e018b78969511a4d3071b4ac7a",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-1h-short.json",
+      "sha256": "793198f6a4e0a4417ad48121184b3529cbff942daaefd12bcc50db10c84c78b4",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-1m-long.json",
+      "sha256": "3b42655a3143356cd2ff3ca8e79e28d952d4edc48085bb39d3fc38a1f32baaf6",
+      "bytes": 2963,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-1m-short.json",
+      "sha256": "ff88c229883dae3e60cebe3d476c4fad7015a58c81836940506b5cfedf11f785",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-4h-long.json",
+      "sha256": "c77b0fcc4dfb39e9b1e8641b79efbed643fdf0683fd52974c4e5a843b2885d73",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-4h-short.json",
+      "sha256": "eadd875d8726f76e1202ffecefe5fb53170599edd02efb110cc0ada682425859",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-5m-long.json",
+      "sha256": "0b474930b80c2244be8ec1671ad0122d714eef08dbc27d4896d2962de32aafda",
+      "bytes": 2964,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_line-5m-short.json",
+      "sha256": "cb3cdd28c7a82b185faaf71cef743c5b961185785a0944da7cdfe4b1bfe3f47c",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-15m-long.json",
+      "sha256": "2b0719b3373cd31d74617c0f38d227930fcc9634212ca345b0c9e3e260cbf462",
+      "bytes": 3050,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-15m-short.json",
+      "sha256": "763037827edd548d5f9723ccb7502ee33db2e16c3fec69ddb2885eebc5fa4c9e",
+      "bytes": 3074,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-1d-long.json",
+      "sha256": "8675ac79509ba6c9e7b8b2c4a3c11f2c7c3a1a7385bba586a654587ae5773816",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-1d-short.json",
+      "sha256": "84ed4e8fe2b2b902b631f4a5a2c372df136516895b36693b74773c11c14f83c3",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-1h-long.json",
+      "sha256": "ea47f827cb9025a774a8e55dc250cf177bb40363eababe9a4760df0122d30b14",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-1h-short.json",
+      "sha256": "d7aac0dfa183b5b0181ecdb9e258d5522a63f9246e1a34e4e0e968cd073cc95c",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-1m-long.json",
+      "sha256": "59fe00b427bea3516baff889a19d59974c69520a7304bf9eb96dbc2e95ceb179",
+      "bytes": 3046,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-1m-short.json",
+      "sha256": "83d8b00dca88a21fea875916a930fd1d56ee6113aa98ee7e94f8f039bc0befb9",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-4h-long.json",
+      "sha256": "e1cf75f80bdfb0b1bd283319797eae2df57da3df096da08acf147d32d8de4d14",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-4h-short.json",
+      "sha256": "4a77c46663e4008890511762bf0e30f907aef7d7aea575a2de3ed33fdaa089fd",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-5m-long.json",
+      "sha256": "ea4e9c08bc37bd6bb7bac6c9268aede89423ea2af32f1180fadce6222fabdd03",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T100203771424Z-utf8-restored-full-701-backend-coverage/strategy-matrix/MATRIX-trend_pullback-5m-short.json",
+      "sha256": "58e7bb8e3488c12d42c56aeb2b917c8ecab96706b24bca21afcfd11ae445ba3d",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

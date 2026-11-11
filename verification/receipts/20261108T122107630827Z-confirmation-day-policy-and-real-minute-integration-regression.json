@@ -1,0 +1,910 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T12:21:07.631351+00:00",
+  "finished_at_utc": "2026-11-08T12:25:29.417978+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "e1db951ffab98fa95f1577ac07fabbabf03601036690de66a3f1000d4651faf4",
+    "verification_plan_sha256": "568e0dd546c05be0802c35982f56d7972e3999231b80da5425c26d530509bc91",
+    "catalog_sha256": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+    "source_files": {
+      "PLAN.md": "e1db951ffab98fa95f1577ac07fabbabf03601036690de66a3f1000d4651faf4",
+      "VERIFICATION_PLAN.md": "568e0dd546c05be0802c35982f56d7972e3999231b80da5425c26d530509bc91",
+      "RULEBOOK.md": "6cc0c3625e5df448732bff880bc202e0cdab9e2e2dccb404182ea1f8f4289f0f",
+      "decisions.md": "791763221ba5962b8f784746d54f8d233b7d03fc549138809adf9ddd6931909a",
+      "README.md": "47a66398d0488fb18a5f806349ee73af95111b0f78cbd7e4d061bd64b7db9169",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+      "verification/implementation-map.json": "109f5d14e78e0c9295d36a6af4b09e5d1a1002ec79789d3e52356d72c4c0bbcc",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "bd3c9ee49903523c30f3e931477b5d806eaeed0788d85a8639246f9bc5450341",
+      "backend/lab/api.py": "3615546ac0e0bc9dd57a01439c107a9b4514d765635cf6f85ff3e2c8ccc9d76f",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "6bb5736ac4967fcc90d65ba3d6bb790bdb8e5f091f5a7676d2bc0707927b8c2a",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "3e8b237e07c49eb02030dce8067a390b7152569064e5583d17c6937ac7ef0627",
+      "backend/lab/signals.py": "86b765196cd7b3321eb22b7d702bc3816c85298a7a491c0325e513c29180714d",
+      "backend/lab/store.py": "403243fef566a9643623e7b4e92c1a5cfe211a8a165ee76002eb27149df620a2",
+      "backend/lab/trials.py": "156fcd610ba232962ea2647d37cbd8aafa78383675759f52772d97fdc478afba",
+      "backend/lab/worker.py": "32b60b4761598f8fcb156161cab48d7eab070a1f2b5d0f3df2e7cbbc21310d21",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "a886581d65237b5de0db2391eaee52fe96a19163bb633ed3d3a507b75f8faeae",
+      "tests/test_confirmation_filters.py": "3b4c34ce630798c6cb5ea6a25ccbfa8521848c5b2ba0e6dbd111f487030d82ce",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "694ce459cecd19de0b52428e0e031b10fcef0bbf3f39739d81bc3685ef1ae8b2",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "a3765093ec276a5a92f2f45100ee5ed2f0611831f52b0a9242b5289971b3589e",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/frontend_check.py": "4e753e85952d263924d6fd3140bf8ddfdeb63f43e5964395fcaa2dcfe23490ca",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "5b4f624a41d8008b8749c3da80d93968dd6117f6fe89951172e644707c2241b1",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/Ablations.tsx": "6b3d0c37349cc2419070f851b4086269bf29555951be971ed681c670f5848ef3",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "d58828fec2d92f272296308859bd011abe976b95274950512671472f2de5d60b",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "1e22a19a14d3fa55be5fe35f4416c341975d925458548fc6d7044feb5b3dabfc",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "6cc0c3625e5df448732bff880bc202e0cdab9e2e2dccb404182ea1f8f4289f0f"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/confirmation-filter-contract.json",
+        "sha256": "41a3b4363bdff94a35e8290f41e468222ad45d67a9feffb03f80087428f5a76b"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      "./.venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_confirmation_filters.py",
+      "tests/test_rules.py",
+      "tests/test_family_boundaries.py",
+      "tests/test_strategy_matrix.py",
+      "tests/test_catalog_generation.py",
+      "--cov=backend/lab",
+      "--cov-branch",
+      "--cov-report=json:verification/runs/confirmation-filter-focused-coverage.json"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/stdout.log",
+      "sha256": "efe432541c6cc8efcce039d12949e1c94e90f42971df7d50c6379c000a4932f0",
+      "bytes": 774,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/artifacts/verification/runs/confirmation-filter-focused-coverage.json",
+      "sha256": "d60fae9aada530f295b6744623d42a873edb334c43224548a4e6efeb76fed815",
+      "bytes": 276846,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-15m-long.json",
+      "sha256": "3a72e19f5cf17e8c9c06154f97e4a25bd1f7f3e16b45852f99cc67cc936e79b4",
+      "bytes": 3028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-15m-short.json",
+      "sha256": "6720c04bcaf389dd1692a2b904f16707f1730e0efb18f973f765f6115ced2d39",
+      "bytes": 3054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-1d-long.json",
+      "sha256": "6e15cd7fd77d557e3909c125b6042604911286a5fb06cda96acb0f41583ec3de",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-1d-short.json",
+      "sha256": "5d541c1faf8f37f562179b74980df219d4654cb227e6e6bc243fbfbb15cfe82d",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-1h-long.json",
+      "sha256": "c1ad49f3d21d726e5560dcc7c969a6e2c88ce85537bbdd71e1c2a4220db5bc9b",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-1h-short.json",
+      "sha256": "94da9cec74fb4ee5c6702136fe56dce2fd06e4e2d4be0ede89387e14d9507a41",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-1m-long.json",
+      "sha256": "997a5733cfbd83eefeb74eda51c04790fabaa3623e59e4ae6edbccfe9abf1e07",
+      "bytes": 3024,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-1m-short.json",
+      "sha256": "f7be4062ceaf4566641a13358879f45804d8559b33e6ffb2ff17f4de48d430c7",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-4h-long.json",
+      "sha256": "4ca691c26010a2f86a9ba7907bb60a451a2f54e527bdebf124d245b4c19396ff",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-4h-short.json",
+      "sha256": "a0a9a4107a11d62a1fcb7a995661fc5a628803bee88f27293f8ed6c1f68261a2",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-5m-long.json",
+      "sha256": "f4bc46b0920b683740106ce86c8aa0e7c7fdc57fcd61c696949bb89926b29915",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-break_of_structure-5m-short.json",
+      "sha256": "c6820e79f24ded51d760631fc6aa6aecb151cde6df584328f55524f459cee698",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-15m-long.json",
+      "sha256": "7b56e342b500e5ee4af459b92b8289e580dfa726fcbe2f97923ff25e9cab911c",
+      "bytes": 2948,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-15m-short.json",
+      "sha256": "64245de6aa8058126795a679998fb4adc612346f202a9b2114c83173222ab1e2",
+      "bytes": 2976,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-1d-long.json",
+      "sha256": "bd871881ee134eee23d7867daf5cab99aa722b4462b008bb736dedeeae8aac7f",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-1d-short.json",
+      "sha256": "84f78b061b8954878084b52f6c81d73bc667846f90f125c79b7318ed62edeec8",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-1h-long.json",
+      "sha256": "59f3156eacf3067b3b28de210daf8cca19285bb6e42b79c3d281645bcceec054",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-1h-short.json",
+      "sha256": "744d73a32e008f96bc898d6c302a2bebe1f60e347d1aa513efa57da058cc4b0f",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-1m-long.json",
+      "sha256": "8fda8e8c6f69b599806c2bffe6343e0e6d506bf11de0eba3c7ed1507907fc4e0",
+      "bytes": 2944,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-1m-short.json",
+      "sha256": "896bd90fdd50af5e9e024f4f7f2f1fabb27534076bf2b5cad214b89d69ff7365",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-4h-long.json",
+      "sha256": "f3b61459e94acdf4c658857c4e5ba1388153a029d0ba658825900c11375c6b42",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-4h-short.json",
+      "sha256": "7f7250851c5c389e0c766b666c844320ee63afbc525603a573ac8b37d7ce6419",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-5m-long.json",
+      "sha256": "a15c3c18a60b2508aa19ff16c9e0e1701fab698e34e52d844277235dbc1bca6b",
+      "bytes": 2945,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-breakout-5m-short.json",
+      "sha256": "f5194d21ddccc324e5a59cac435030cdd01ed33c4f6eee03d84eb5137b73e7e8",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-15m-long.json",
+      "sha256": "32d7e25caef3422521db0a88e3fd8478a9cfb3a5abf3e5ded26a508dc62e639d",
+      "bytes": 2985,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-15m-short.json",
+      "sha256": "1cf14cee976296afc01e8c876d8fc5cb536132986fe29df0ea6cbf93416e9de8",
+      "bytes": 3005,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-1d-long.json",
+      "sha256": "adb230bb5ffe26ad81fd253feecce59f196355046688985721079764bd5f88aa",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-1d-short.json",
+      "sha256": "f0b372ed46e4ac9d2af8706efef35055ef5b901834344092220ca6d30d2db3cb",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-1h-long.json",
+      "sha256": "fb4268861bd6ebf1d280c2743ae4c3db4ef50fae0c0b9c117054c22613406142",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-1h-short.json",
+      "sha256": "3dc848f459c9e568f51f7deb302c5a938f6d7dcc1fbf4ceec73ffb3b81724a4b",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-1m-long.json",
+      "sha256": "46aa1adef70d1fea2858245d28892404c6a166fabe4d7317454568d6932b2eda",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-1m-short.json",
+      "sha256": "8cd6d676d92c75ae26757708c2006a34b72572569f5eabddc8f0d169e17dcb51",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-4h-long.json",
+      "sha256": "08cdb02fea37175f026b8de7397f67eb7e7b1ba4362e80b191b01afd156452ef",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-4h-short.json",
+      "sha256": "3a9ab7d09cee3882ea500f4b1ee58afce1edd7e27582251918dfa259b7c72d55",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-5m-long.json",
+      "sha256": "29d0b74d9e902a2c90cbe8d4bf039d87280c64851f7bd308f195d9eaf779b0f5",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-change_of_character-5m-short.json",
+      "sha256": "5a75963b23fdb75e717005cbfa0756cdbae9be70a38c5d9db28c1f3a6445dd89",
+      "bytes": 3004,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-15m-long.json",
+      "sha256": "045391404ba8a89a10f1e08daece2d4b70a8c83d573185b388fc48000474ab30",
+      "bytes": 3020,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-15m-short.json",
+      "sha256": "3f412f69de1be63056a5a85f13a4f6c929a2171413cffc50befb81ac63460085",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-1d-long.json",
+      "sha256": "943a6992d3a421639c903ac0681c05a6943b103bf0eae191b27ef4a967c27588",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-1d-short.json",
+      "sha256": "35a983b363ee5b7bccfd982179a64410c8e6559e7f014f9774b26f8a855c0fa6",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-1h-long.json",
+      "sha256": "9ec8872c430d64571716edaaa93e7778edcc4a3a10d50ada1b9a183861ef626a",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-1h-short.json",
+      "sha256": "b5dc9294d0cf25d3160fafcdcf057065fc86eeacc2e491c15db201955a851e35",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-1m-long.json",
+      "sha256": "ce04cabf539130d15c5fac775e3db1246743e2c9b995ab4a0a83db0cbbeb6e76",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-1m-short.json",
+      "sha256": "b5b66cb09cc2f459e8b3abf215993ea1f2918da964a3e9dbd1b2ccb482264d2b",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-4h-long.json",
+      "sha256": "81b78a59bfac329e8b087d384b42375bd07a49546649e7b2d6e43c20c027050b",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-4h-short.json",
+      "sha256": "adc0f05d171ea04bdc62ae0358d55d35278fba5221b625afb21a1aa2ddb1992f",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-5m-long.json",
+      "sha256": "7c000bb2ad4ffff1e5442fc6afff8f2f4152bd2569488fd8109da28553aabcf7",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-fair_value_gap-5m-short.json",
+      "sha256": "ffaa1c5926fc774091e13ea2e4fde2c4ddd0169e49a00185b8095a5bb8117b73",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-15m-long.json",
+      "sha256": "2e59ec2b341e84b6ef44ecce7b07c3f235c1e8c2daa01d6f0a80f6cffc71fa47",
+      "bytes": 2956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-15m-short.json",
+      "sha256": "833005257355e0f8f9823857cd770c86599f3cd786a8f29803f1eb448a4cd033",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-1d-long.json",
+      "sha256": "1ed3a4762a1bd16e3ed8633fb6d7036fbe5b20fa99a20d98778df250d4f1b336",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-1d-short.json",
+      "sha256": "2b65e06e1a52ebe53164bd0d1a6a429273d562982fbf408a5ac61dbf9a2951e3",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-1h-long.json",
+      "sha256": "4edeebfaadb848fd4c69239c80b530bc05cbdde5c19f630b1e6d0fc0f18ae9e9",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-1h-short.json",
+      "sha256": "de6eb461d0119c4e5499c72c3d02682f607f50547d6e62aa6c920e0fd7193120",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-1m-long.json",
+      "sha256": "4af29958ca9a84604a586b79dcfdd46c0b8c05bb307243068f771f24c7908ac3",
+      "bytes": 2952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-1m-short.json",
+      "sha256": "318f42fa64e7062083b4b0c2a6dcfc8bce495a0d01c72d32cbd703d26bbecafb",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-4h-long.json",
+      "sha256": "06cb0fd7e40691e63eea2ac745e4f00ae1b0cd2bd75ded6573ec759077217a3e",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-4h-short.json",
+      "sha256": "3f912f1a1ff8301a84e91b4ad60d5199445addc064181fba02971c5c3c77556c",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-5m-long.json",
+      "sha256": "5f6a27c5f90648353d8f3367985c3268f88707b3b913b8f37a613fc8080f0f94",
+      "bytes": 2953,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-flip_zone-5m-short.json",
+      "sha256": "fdfcb11b7f16fb05c616f860ce74bd1235ff88cf529af4367acbb54d92f66239",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-15m-long.json",
+      "sha256": "32087ae5b96bc78e10b7a112cf44ad649206f41a143a75f16cf55fb8c8ae6595",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-15m-short.json",
+      "sha256": "baf7d8d11466170a4de0c870ea028ab24b378ab9e13c5c1942ba1262003d07b1",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-1d-long.json",
+      "sha256": "93a50c9f43ed716a7beb56d2a516e0b166fd074a804686a2be279befb807ed03",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-1d-short.json",
+      "sha256": "492087cef29337983c294d3b764771535559d534a257d005cf4033db82dee2fa",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-1h-long.json",
+      "sha256": "02e031749cdaa238de2c153123f7c8e589cbec8ff55f47ec191fb28f194aabda",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-1h-short.json",
+      "sha256": "6f062d3766cfc41904b27cc49df68b6c008f961273864a782b26f8d53015d575",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-1m-long.json",
+      "sha256": "cc490be2ca8bea6cd6068ec97d8b144e751d714cd338dbd06c47cf5853d05b94",
+      "bytes": 2977,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-1m-short.json",
+      "sha256": "e91611d47354ecc4f4fdcaaece63f930778af592cc25a12e5ea5766364c809c3",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-4h-long.json",
+      "sha256": "8b7f243df1a53b95274fa783b24ba0369ffacddda542d77c3c1f7a7cf4b6219e",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-4h-short.json",
+      "sha256": "3fa9cf87d7320c4278dd969eeb014d82634852d4e9b41ca739afe77ca9ce7022",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-5m-long.json",
+      "sha256": "0affdb0d672413c8c1580766d6419b83de6308025bcbc445ae2b8274aa5987af",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-level_bounce-5m-short.json",
+      "sha256": "da62d8bbad42e2592330e01653d1954587b0829569ada094fbb0002146baab38",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-15m-long.json",
+      "sha256": "dedb448f946d1e3ec810479388caf4f4f167119a1a6653eb52eac2ec1c68834d",
+      "bytes": 3029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-15m-short.json",
+      "sha256": "2bfad2c982d1925768657b1483bb61b8f927c6182dfb8118f86d4a6385c90605",
+      "bytes": 3056,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-1d-long.json",
+      "sha256": "532c302c96074ccd3f56daaa1750993e9b48489ee00cc48794a1e465dbff9994",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-1d-short.json",
+      "sha256": "35036effa465aa9a761e8d5cf95ac7c57579239240fda49ec47e4794a5fa31b3",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-1h-long.json",
+      "sha256": "603bf15054dd55dde4ff1339e10e77e9b0d1bc79eb5467be194c1232172ed64d",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-1h-short.json",
+      "sha256": "0c755e9de21b2129159135c10a75c5ffcce7e4749ab2951bee2646481e010964",
+      "bytes": 3049,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-1m-long.json",
+      "sha256": "86a6386f76e3342e730c5f394a8d8dc2033ba680cb890153af85333cfc80929b",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-1m-short.json",
+      "sha256": "0bee6356540bdb2c1e16ff55d5b6215ae1fe0629fe0414fc0686d11c1f0d9574",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-4h-long.json",
+      "sha256": "51f4aa8dedcd1b8a23d88f15de10f5da9b67c8e31ee28c994506b2e7047d7609",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-4h-short.json",
+      "sha256": "f36a42c82c0922dba0d78e786da025f2af77ffaa772793a6d7d06c8f5ff4d7a4",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-5m-long.json",
+      "sha256": "da81fc8c4fe2d3ddd665b7527a2ab81659e51c630d0a3eb9e063484f34c79970",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-supply_demand-5m-short.json",
+      "sha256": "1b54e0de631178393d885c3e10e74219568a01aeca01052d092ea9c3018b76bb",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-15m-long.json",
+      "sha256": "4729d3fe86d5a54187b2341d92bde57dd2f11ed2230b5c946d48f720a43ea1f7",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-15m-short.json",
+      "sha256": "a2dcff6731bed30c8036b58c33d27fd42143dcab523a6b6f7022313380189fff",
+      "bytes": 3008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-1d-long.json",
+      "sha256": "48809e46f244ff19feb550f34e55b11b6c6c5dc7c9385c072bee8eb3de2331a0",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-1d-short.json",
+      "sha256": "64a8e498c512b00f21713f1b7f29b2b28e05bdad86c8a3d310372ba56423e666",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-1h-long.json",
+      "sha256": "bc2e4146a944cc3ade67ea9aadc6137015871223523cbf4d670b53b5acf94c6e",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-1h-short.json",
+      "sha256": "d10d75ed3cc62f5c7e887939aede32b78c6abdda163c8c5386d133cb9bc4db4b",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-1m-long.json",
+      "sha256": "14fc338cccfc0096564b268ddafb7417bae3f6ed671bfa187e365c8bf63d840c",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-1m-short.json",
+      "sha256": "533319b7e17d17b10b4ecfa1b18409f12e77202c13dfd27181132569eecf5a73",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-4h-long.json",
+      "sha256": "adbb63336f6e77e974d31176743e1342a47b904bbd6c9481d6b50a354108d92f",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-4h-short.json",
+      "sha256": "16235b0bca823390c5afc1b421678666917e3c311747f21ef6bacb154deaa5b4",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-5m-long.json",
+      "sha256": "bce37a8ebb158ed7db1bc3a7df63a20b91917a00d867682e9386500ae53cbc7d",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-sweep_reclaim-5m-short.json",
+      "sha256": "09149d7129c2d20ccb394747a105426c670c7ecdc2005231144dd3c6cdac8590",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-15m-long.json",
+      "sha256": "1dc74b012be5adf1b7d7cb96b9d416ba3695b788aa9e9039530634f3d21e1def",
+      "bytes": 2967,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-15m-short.json",
+      "sha256": "c0e1233964d724bd3b26898f7ae75e5170778ba3097393b7ad0031d5b0299b67",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-1d-long.json",
+      "sha256": "d04c33e75bfda81e078f9b0244259fa886a21da7227a98ca099804866bd5de5d",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-1d-short.json",
+      "sha256": "b008f6cbdc2008471919b78a301b82c8129b4034df9f133c3c17b35d0a2e0fe4",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-1h-long.json",
+      "sha256": "09253e7b949585ffab5abff585c10c944ae49dea2a112a513f27b9bdeb579db9",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-1h-short.json",
+      "sha256": "b0df6cde10499334c4756cdd95d951c75076671c69cc6775d2c2b9fb556b2614",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-1m-long.json",
+      "sha256": "4a5a3b62bf2e9212a9bc66da729cd6c1393165a3cbbc2586c4c3a1523be4df8d",
+      "bytes": 2963,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-1m-short.json",
+      "sha256": "8b459b8db0da9c57a81c9bd68cd4de8a61e3f5b0649e9d1b217350ed81c3eafe",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-4h-long.json",
+      "sha256": "c5e2aac1712f6e1e3becefec588718519597bb44487bfa1634286f12c1a7b19a",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-4h-short.json",
+      "sha256": "f723093e830741b9e5a7f356d87587ab88e289e9450a308794a240b5664a0cba",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-5m-long.json",
+      "sha256": "85cbd1f2dc11668bd6147eef7083595892686c3970a358afff46e78084359e26",
+      "bytes": 2964,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_line-5m-short.json",
+      "sha256": "97e7890264bc9a4798030b2b181ba0c9ee1c6589aa254c3308e2a889867f5c68",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-15m-long.json",
+      "sha256": "b0ae415771f46123e4e4bf8a461794af284c4ffe0b22834eec1ddeb97bac61a9",
+      "bytes": 3050,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-15m-short.json",
+      "sha256": "5fcd68f8d5ae9b4c963533bcb7d66b91135100050cb7414ee949d5663c66c4f3",
+      "bytes": 3074,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-1d-long.json",
+      "sha256": "e289db2073ac5468cc074a6b5187a37c69e344788e357bd55c910783c9b666ce",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-1d-short.json",
+      "sha256": "37ea889be17455a7443e611af5fc1a8dc2e688169d4c55c43c7675458b3b75c1",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-1h-long.json",
+      "sha256": "d6e584344dd46cb9415294715a039458a115e2da4a76a9a712c5b07949a65b59",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-1h-short.json",
+      "sha256": "d7868b78a1bb74568ea208a87ccbf1dce6e6746ee0ac38e4f9355b75443288ae",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-1m-long.json",
+      "sha256": "03e9fa84be79ab093f7fd34313cf74af26012bec024612e2a9451b33f330596c",
+      "bytes": 3046,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-1m-short.json",
+      "sha256": "a24399d810c1a690325fb7b5c662d363aa41fe1b8eafe88f4939934384686519",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-4h-long.json",
+      "sha256": "e2762cb61b8aeff2cace8d7eea245724c0daba08d60a6ed6b163dea602157407",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-4h-short.json",
+      "sha256": "d91502e3ed60112197fcdb77c498882f19edf62858efddc771851f252c40a1b4",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-5m-long.json",
+      "sha256": "10d99b26ded8694653a14db518f5359b0ca562847b2e1633052050b67fc1253b",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T122107630827Z-confirmation-day-policy-and-real-minute-integration-regression/strategy-matrix/MATRIX-trend_pullback-5m-short.json",
+      "sha256": "b936f6003e8fcc94fe3d8660949d0e761094847c5c4f03dbc2f05eb3da5cd8f6",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

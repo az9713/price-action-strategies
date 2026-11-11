@@ -1,0 +1,19 @@
+{
+  "scope": "Owned nonfinancial storage fixtures only; no prices, signals, trial plans, worker execution or financial accounts. Only the last selected part artifact is constructed. All root row and diagnostic projections are reconciled; other part artifacts and numerical throughput are not certified.",
+  "counts": [
+    10,
+    1000,
+    100000
+  ],
+  "budgets": {
+    "summary_bytes": 65536,
+    "page_bytes": 2097152,
+    "read_python_heap_bytes": 16777216,
+    "integrity_chunk_bytes": 65536
+  },
+  "prohibited_shortcuts": [
+    "No source root/input JSON materialization during measured reads",
+    "No size/mtime integrity substitute",
+    "No rewriting original root/selected part during repair"
+  ]
+}

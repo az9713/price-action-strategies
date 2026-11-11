@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T120202784117Z-current-twelve-suite-both-behavior-records-and-statistics-reference",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T12:02:02.784619+00:00",
+  "finished_at_utc": "2026-11-08T12:02:14.652905+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "9f21fc2dedc934d00bd5ab759d45d7abf30d0391931d90247172a258b1269ee8",
+    "verification_plan_sha256": "b09c73bd50a2ba55dbbaa7c54fe64f49d1d25ffff9d61415a3b5c7ea1f235290",
+    "catalog_sha256": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+    "source_files": {
+      "PLAN.md": "9f21fc2dedc934d00bd5ab759d45d7abf30d0391931d90247172a258b1269ee8",
+      "VERIFICATION_PLAN.md": "b09c73bd50a2ba55dbbaa7c54fe64f49d1d25ffff9d61415a3b5c7ea1f235290",
+      "RULEBOOK.md": "69ee54a026ed7a175d57c1ac894e477bfc1dc204f2f6705cc1d8bdb12ddb2118",
+      "decisions.md": "871b755d83b60fc32c64cc0b2c6401a4511613c4b3f944c2250f9003d2f45d3f",
+      "README.md": "47a66398d0488fb18a5f806349ee73af95111b0f78cbd7e4d061bd64b7db9169",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+      "verification/implementation-map.json": "109f5d14e78e0c9295d36a6af4b09e5d1a1002ec79789d3e52356d72c4c0bbcc",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "bd3c9ee49903523c30f3e931477b5d806eaeed0788d85a8639246f9bc5450341",
+      "backend/lab/api.py": "3615546ac0e0bc9dd57a01439c107a9b4514d765635cf6f85ff3e2c8ccc9d76f",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "6bb5736ac4967fcc90d65ba3d6bb790bdb8e5f091f5a7676d2bc0707927b8c2a",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "3e8b237e07c49eb02030dce8067a390b7152569064e5583d17c6937ac7ef0627",
+      "backend/lab/signals.py": "c5132d046e7aa1e0c923a6a7f5b0ad1890122d0a075e75fbb8110fe30295670e",
+      "backend/lab/store.py": "403243fef566a9643623e7b4e92c1a5cfe211a8a165ee76002eb27149df620a2",
+      "backend/lab/trials.py": "156fcd610ba232962ea2647d37cbd8aafa78383675759f52772d97fdc478afba",
+      "backend/lab/worker.py": "32b60b4761598f8fcb156161cab48d7eab070a1f2b5d0f3df2e7cbbc21310d21",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "aa774311a6a15a212c58a0dd2504abe5e22576c23a6034c97f03e8fddb596eb2",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "694ce459cecd19de0b52428e0e031b10fcef0bbf3f39739d81bc3685ef1ae8b2",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "a3765093ec276a5a92f2f45100ee5ed2f0611831f52b0a9242b5289971b3589e",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/frontend_check.py": "4e753e85952d263924d6fd3140bf8ddfdeb63f43e5964395fcaa2dcfe23490ca",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "5b4f624a41d8008b8749c3da80d93968dd6117f6fe89951172e644707c2241b1",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/Ablations.tsx": "6b3d0c37349cc2419070f851b4086269bf29555951be971ed681c670f5848ef3",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "d58828fec2d92f272296308859bd011abe976b95274950512671472f2de5d60b",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "1e22a19a14d3fa55be5fe35f4416c341975d925458548fc6d7044feb5b3dabfc",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "69ee54a026ed7a175d57c1ac894e477bfc1dc204f2f6705cc1d8bdb12ddb2118"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      "./.venv/Scripts/python.exe",
+      "-c",
+      "from pathlib import Path\nimport hashlib,json,os\nfrom backend.lab.service import Lab\nfrom backend.lab.research import core_hash\nfrom verification.behavior_reference_run import audit_tables\nroot=Path.cwd();lab=Lab(root);receipt=json.loads((root/'verification/receipts/20261108T115523895816Z-current-twelve-suite-exact-declared-behavior-order-reference.json').read_text(encoding='utf-8'))\nassert receipt['command']['exit_code']==0\nassert all(hashlib.sha256((root/p).read_bytes()).hexdigest()==h for p,h in receipt['subject']['source_files'].items() if p.startswith('backend/'))\nreference=lab.report('23cedd820dde4086bd16389c8981242c');parts=[lab.report('23cedd820dde4086bd16389c8981242c',i) for i in [0,1]]\njob_id='37ce9886b50245bab64b10a815ce2450';report=lab.report(job_id);other=[lab.report(job_id,i) for i in [0,1]]\nassert report==reference and other==parts and report['core_hash']==core_hash()\nresult=dict(status='pass',job_ids=['23cedd820dde4086bd16389c8981242c',job_id],all_records_equal_to_current_independently_audited_books=True,statistics=audit_tables(report,other),scope='Both actual current five-symbol/two-chart/two-stand-in reports exactly match the independently audited source records and current numerical backend; second report table statistics independently recalculated. Not detector/omitted-event completeness, full operating-envelope or final certification.')\n(Path(os.environ['PA_EVIDENCE_RUN_DIR'])/'both-behavior-report-reference-equality.json').write_text(json.dumps(result,indent=2),encoding='utf-8');print(json.dumps(result,indent=2))"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T120202784117Z-current-twelve-suite-both-behavior-records-and-statistics-reference/stdout.log",
+      "sha256": "09bce6355bf129c326ba4b869ecf7f38b71d071eabeaae90fe893b0305f3f63a",
+      "bytes": 617,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T120202784117Z-current-twelve-suite-both-behavior-records-and-statistics-reference/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T120202784117Z-current-twelve-suite-both-behavior-records-and-statistics-reference/both-behavior-report-reference-equality.json",
+      "sha256": "7f28f7c62f67dc451a627dbad4a6f2e169a75d4b2457c8437be8a5f7019ec89c",
+      "bytes": 615,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

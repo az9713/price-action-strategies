@@ -1,0 +1,6 @@
+{
+  "source": "data/dev027/research-src/backend/lab/worker.py",
+  "sha256": "299a639e8a13767869638d8f722b6a26c31e8e0c8022ad7f8ed0e79b5df9e400",
+  "source_core": "9040d7a4ef8d276efc6e1b8f9b6c57f585e97a1b7cf3030de5badfc5d9976474",
+  "failing_receipt": "20261110T213430522098Z-actual-main-progress-transient-writer-before-retry-fix"
+}

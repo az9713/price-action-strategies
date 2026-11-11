@@ -1,0 +1,2379 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T14:14:39.549530+00:00",
+  "finished_at_utc": "2026-11-08T14:16:54.501728+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "7e5d618883eb60e64ccbf1b50a80473f036ac477188871f9374dbf3362fb7b3b",
+    "verification_plan_sha256": "ab8776df81fb51ede94011964e2353185616329edc25bfcdca5ca1667ee438f4",
+    "catalog_sha256": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+    "source_files": {
+      "PLAN.md": "7e5d618883eb60e64ccbf1b50a80473f036ac477188871f9374dbf3362fb7b3b",
+      "VERIFICATION_PLAN.md": "ab8776df81fb51ede94011964e2353185616329edc25bfcdca5ca1667ee438f4",
+      "RULEBOOK.md": "44ce2bb9472b5e408bcd1d4854c3659b603f53f6d25c134f88349765daaf6643",
+      "decisions.md": "7b44b3352bb66f983be7906b7b27de250f256b5b1dcc722ba3dd87839da3595a",
+      "README.md": "2c2530fa2c68d5e11e916f17522bb505bef6dc746c9893ef650fb4a20e85d720",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+      "verification/implementation-map.json": "f7f690438eb5f410e76cfaab4888a0022bbbe2daa4b1bdcc2a01790eead0b102",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "bdd08fe7635697033f4498f918e59bd3f46161e1754bb73c7465b5bceb66a8d0",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "bd3c9ee49903523c30f3e931477b5d806eaeed0788d85a8639246f9bc5450341",
+      "backend/lab/api.py": "5933f8534beb7aee000b2ff41727a7318c8cd2cb2f329876c00f11b22ac77a84",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "bc7c7765d17018f30068bd68d6d7194ec486dad03af48e9e37d2a2b2e0ba02f9",
+      "backend/lab/presentation_audit.py": "19b3c2ee9656d941fc33d851a0c0c8fe79fd7766ca039a5b01f4699f7808752a",
+      "backend/lab/presenter.py": "762e086d4d15bddba8cf49e0233783c5dd4a68075c2c015facc7f07e8179b336",
+      "backend/lab/presenter_assets.py": "5818619b27374c0edaf3488229235a1b3bb8e2925d575504de2213493f84096c",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "cf58fb89ec7688d18b22078d9d6e9e3cecefbe2e1a712ff35ae04758e6f97834",
+      "backend/lab/signals.py": "86b765196cd7b3321eb22b7d702bc3816c85298a7a491c0325e513c29180714d",
+      "backend/lab/store.py": "403243fef566a9643623e7b4e92c1a5cfe211a8a165ee76002eb27149df620a2",
+      "backend/lab/trials.py": "156fcd610ba232962ea2647d37cbd8aafa78383675759f52772d97fdc478afba",
+      "backend/lab/worker.py": "32b60b4761598f8fcb156161cab48d7eab070a1f2b5d0f3df2e7cbbc21310d21",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "a7e288f94f459b5416f57ea2acccfacb9f5daf57f21355a408b244267d34f01a",
+      "tests/test_confirmation_filters.py": "dd45f55af7dd00bef2f4d273e439f1f4208c6762751995ac4d6fbd341da59a1a",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_data_service_boundaries.py": "35e020ccd1559c0e398302cbecb580169fc4051f98df4b61c684b66c5e045565",
+      "tests/test_evidence_recorder.py": "a9bc5bc156ac4910d007d042a16b28913dee479125655443baa39ae031240a6a",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_frontend_capture_privacy.py": "d7c1a4450d00db59e74b68555b66f12efd123cb392324839f8aae94793da33c2",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_presenter.py": "faaa77a3137090327df4e57a847edd8af78684a6590a2f19d350317ce34f0d68",
+      "tests/test_presenter_api.py": "d72aa8ebdbbc04c4013b373b8e5a317412c4d24902eb77596367d42a98db79f4",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_trace_privacy.py": "e3b961683f2f46d7ef9c87934bd47f6aacd10e6dc7f045f3e072165cbe647a00",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "694ce459cecd19de0b52428e0e031b10fcef0bbf3f39739d81bc3685ef1ae8b2",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "a3765093ec276a5a92f2f45100ee5ed2f0611831f52b0a9242b5289971b3589e",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/critical_signal_mutations.py": "78e211a657abd997d68b111bbd5d2968d2b90d86c2957152aa947c0bbfc744ee",
+      "verification/frontend_check.py": "b601066f5ff30a86efaa1420071c45c8c56caab8a8c418170d7899bca4b30c7a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/presenter_reference_run.py": "a70dc854626bc318a0ca1d7361094f4a00f8422fca06b8debe15f6d0cd197666",
+      "verification/real_reference_run.py": "b15fa2af1ce322c2eff6c1a187d8e0062c53c45470e4553169ba801c6959a70f",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "verification/trace_privacy.py": "2a13f99d022e285f49d98b4d3d963c501a61b3f2b9b12c05fe3c89e63add96dc",
+      "frontend/src/Ablations.tsx": "6b3d0c37349cc2419070f851b4086269bf29555951be971ed681c670f5848ef3",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "9d97a8d12eca374e1a5dab4700163dac88f5d7e1654ee303deb55b150a8d8e00",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/PresenterExport.tsx": "1d7e89bd9e71f0ecd8210d3dc0b7dd6c66a759992e9ad7278c62e868d73d1901",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/presenter.spec.ts": "8e80011871fc850154d48ed60973de62273e75799b82e2aa3477705639a0115c",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "e008b55d234807d1a58d8a26acbc515f0b7e0c4bff6a4a1b6f0d28c80ceb6e8e",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "44ce2bb9472b5e408bcd1d4854c3659b603f53f6d25c134f88349765daaf6643"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/presenter-contract.json",
+        "sha256": "0a55b56fa17d08ee5b8ff73e3902bc93b45ae0f4816d43e66f62328a867528e9"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      "./.venv/Scripts/python.exe",
+      "verification/frontend_check.py",
+      "browser",
+      "presenter.spec.ts"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/stdout.log",
+      "sha256": "fba37f1d82493ff5ae0a13909e10b6ec6bbb4debada3c2551a571b6cc21892f1",
+      "bytes": 586,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/stderr.log",
+      "sha256": "0dde63adf66c10ca7c3264d1ad822efb8295e96aafbb237330f06a6c270dd071",
+      "bytes": 332,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/.last-run.json",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "bytes": 45,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/downloaded-presentation-provenance.json",
+      "sha256": "d0535fb0b91320137432b1b1a4e41e9c55f47c061d48c937ed7979a5423d62cf",
+      "bytes": 2856471,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-001.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-002.png",
+      "sha256": "b97e49c2160d7965ad23edf4dc559078eb125d815286f228c1f1ff0cef818d75",
+      "bytes": 46570,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-003.png",
+      "sha256": "e343bccba238984544e49670454e0d2191bb4f5c64ccaaf8c297e1f4aae851b6",
+      "bytes": 31731,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-004.png",
+      "sha256": "f77bc1e87a751407e6e75dc61ab1e957c6992a02a0157e954d33b10b72b70805",
+      "bytes": 46253,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-005.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-006.png",
+      "sha256": "7d190a559c6b6cb361bfe22392221416146d251faf06b45d6bca476a63d9ec24",
+      "bytes": 50435,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-007.png",
+      "sha256": "872d0d284beb9a03a60ba65f335ce610009f481f86737295a600bbf9ab46d14d",
+      "bytes": 31227,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-008.png",
+      "sha256": "36328cbd4487765ae33e9c9624bc7892a917b5195b3aa659725e32b414342772",
+      "bytes": 49835,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-009.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-010.png",
+      "sha256": "8d902ae6cd5bd964c44e74c8f701274b63c280d191d194ca31233dec4eba2db4",
+      "bytes": 36121,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-011.png",
+      "sha256": "459260d62fdba282d844737e0eb4fa30f8b5a20679cf98fd33639571920c24ed",
+      "bytes": 29648,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-012.png",
+      "sha256": "5706943cfbd80830fdce0f52aed1f6e65e28346bb9f3496ff4f3e0d0383c3504",
+      "bytes": 37905,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-013.png",
+      "sha256": "3c2c50948f4f6f958e4bc5d59dd179262d051b5d0bb2bc511fe011d9b7fc1fc6",
+      "bytes": 47407,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-014.png",
+      "sha256": "9865af00e82b7f336b73595dbee87db793957299fb1467179aae1a884dac0b50",
+      "bytes": 30608,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-015.png",
+      "sha256": "4075edeea8c1d424344dab7a9b3347481eb7e38f6cf49693dc3e86c00adc97a2",
+      "bytes": 47520,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-016.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-017.png",
+      "sha256": "a56a5ca4ca5653d95c990f4531894865e7848044ff0d0b6238ab5a4d689d4f57",
+      "bytes": 39169,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-018.png",
+      "sha256": "6a29f2d0a3df987611777d7da6b05de801502914ce51fc93ebbe9c606b873cc5",
+      "bytes": 33432,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-019.png",
+      "sha256": "10e3d97cf28abdf57936dc5e8c2c254b3db57d95a2a2872bdae4f59f7686145b",
+      "bytes": 65604,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-020.png",
+      "sha256": "f78aa422af3f8a6d5a334e971289c114b21740ad26f25270399717b2f3aa52fc",
+      "bytes": 68267,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-021.png",
+      "sha256": "df31338ac028c83119844a18a90848573212c3ec545d826148f353ba5f9f37fd",
+      "bytes": 67635,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-022.png",
+      "sha256": "3582ef7ef12f470a5c7d9602741e0fd3ab7903f4c4f25550d82ad9a34109ece5",
+      "bytes": 69054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-023.png",
+      "sha256": "627b6f77a74bafa3e49937dd140033c4581b5add6a94a469987cd399f565c811",
+      "bytes": 67946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-024.png",
+      "sha256": "904284ddd3df131f4f3a33fc8388790da0bc6f52457046ca2e8a530c80a9ad57",
+      "bytes": 65293,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-025.png",
+      "sha256": "a6b380cc321d60f8f8b12120e729e2b974018b5f41e91370f4deac1c385dae5b",
+      "bytes": 67002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-026.png",
+      "sha256": "1882f641d3bf4b1c1e1e6ec07be1a5af62c3d1785f86232ad2c1b4121310fd4d",
+      "bytes": 67585,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-027.png",
+      "sha256": "20857ccb37c5ca23a8f61356b6b5dac8ffc46c2b88d90bbfe49bb6d110837b8c",
+      "bytes": 69002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-028.png",
+      "sha256": "d931b79759e3eb7ab35517392c770f625672570d930cd4bcc4e1887d92724e5a",
+      "bytes": 69170,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-029.png",
+      "sha256": "9978594253cc2a8054e7cfb218ad7495e9ef235bea2507c167d80d16d5561e51",
+      "bytes": 72354,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-030.png",
+      "sha256": "b8016f775b8bcce815cfbe81a73ae0006f49f6f5b22e8e38d072900516d5bdcf",
+      "bytes": 74369,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-031.png",
+      "sha256": "4089d93eddf40b236f5738e789d282162e5b33f69efac101b27233b023639153",
+      "bytes": 74676,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-032.png",
+      "sha256": "cb11a7eaa94cf8ea302840e9410dcfb5d0d6c5cfd187ad3f1dda169a745dbfe8",
+      "bytes": 74459,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-033.png",
+      "sha256": "87535dd7e24ce0c707ee640938df2f46cb1f197ad64d72b21adfc914f61a1b96",
+      "bytes": 47906,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-034.png",
+      "sha256": "cf66ae03df3534334d1ef91d4db31ff32436c5f471633fc0f92bfb4d0b41b6bc",
+      "bytes": 68808,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-035.png",
+      "sha256": "9e1f387e55a85903128061c0d3bcbae285ae3456fc796d25fa91301f272f0324",
+      "bytes": 70680,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-036.png",
+      "sha256": "851f4f107a7dbc7112f567495fca8704d9b91f57bc68eb51d083fa91f9ff5055",
+      "bytes": 70306,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-037.png",
+      "sha256": "3b93531d75ad8c7a4209362ed71bdb837b44d9fb1806b7266d8792da71e4b15f",
+      "bytes": 38088,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-038.png",
+      "sha256": "8b4f9c0f6be24115cfbe4aebfabf679c997f3378e3653abd7b745cf338ae232e",
+      "bytes": 60033,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-039.png",
+      "sha256": "fb273fedaf6e4081db3657216180975a8a6332c41e8a0f9bf4cee0be0f5739e6",
+      "bytes": 62784,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-040.png",
+      "sha256": "47c54d10d9f2f6145a407f21f88cd399877b5defcdd0b47a02e38261d8a5c7d2",
+      "bytes": 63626,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-041.png",
+      "sha256": "f0e1bf1028b8a73c343cb9a2baf5a77902479114f7d54278f8756f90eda0319a",
+      "bytes": 64558,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-042.png",
+      "sha256": "c9d859a4c2983d7b6d8b317bea306beb12fa080c91584f9888bc672d8aaee460",
+      "bytes": 61519,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-043.png",
+      "sha256": "8c109a877680445a56d7b9265fe860d0a522780ccdd7eed5596bef8e9d33c111",
+      "bytes": 62529,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-044.png",
+      "sha256": "ba5986778c407b9c11302470c0b690e4e3a423e6c3ef31b8b2143aa4c3fbcb65",
+      "bytes": 63938,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-045.png",
+      "sha256": "62eb3688470cf8ecc0e9810ab621a299096cfe906ac50e5dd784952b06778b9f",
+      "bytes": 67687,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-046.png",
+      "sha256": "447ce42a8a8541908673ea387b247d7ed15f0cbef7413e7c146974a497feda7b",
+      "bytes": 39839,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-047.png",
+      "sha256": "9b116b541728c8483c7990ebb5d063a69d521f74f06aabbf4f02e7bf73351d31",
+      "bytes": 60670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-048.png",
+      "sha256": "c1c993e4a2c1070cfe9e50a3f04a74fcfa35ce19bda02c1ab728982aa9005c98",
+      "bytes": 62921,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-049.png",
+      "sha256": "26aefcec709173acff59a8d145c798f4cf845e4395076f769a3790dc5a05807e",
+      "bytes": 62889,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-050.png",
+      "sha256": "d4dee5d1bb582a1fc2c721bb87988415eec58c34f92b60fed99d6218462240ce",
+      "bytes": 63695,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-051.png",
+      "sha256": "d32a1d270aa6cb0e38cf3a0f8ab5c69d99c7513e8f991825c03cea62e3efe6af",
+      "bytes": 65095,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-052.png",
+      "sha256": "386db370d7d677a6d914e0a70b5696db4efbdf6a50f7f97232f62111213fa5de",
+      "bytes": 64087,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-053.png",
+      "sha256": "445c9cd0adc0dde66d808d50c9e070d2a79ed6a02d0dd086c8cc1de8999019e6",
+      "bytes": 49749,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-054.png",
+      "sha256": "a1e282e71971e11daa4e592cd477e9cfba607f7c45eb8f8ba143a39695b4c2c5",
+      "bytes": 68504,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-055.png",
+      "sha256": "6f4c2a9c802f15141af6d639c8f40c2652cfb0ab4f8c97559fc993ae6df50a54",
+      "bytes": 69051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-056.png",
+      "sha256": "b853d4b7c075169aa22543e3d1e725c60b8faee532733af642aee6b3dc524941",
+      "bytes": 69100,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-057.png",
+      "sha256": "0f3c20b4d425d937b119dff32377ac1661ad85d3c8c55424dffab0b1cb1f71a6",
+      "bytes": 69187,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-058.png",
+      "sha256": "288daa2eaa33c8c311d43bfe708a738a6776d19ed8f9b147ed403b7d2b7c7d4d",
+      "bytes": 70311,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-059.png",
+      "sha256": "d968f4fb41f8dfd301672c1f861df563c02fe4309300ac80d55995d00702e991",
+      "bytes": 70456,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-060.png",
+      "sha256": "6b85e93f7afcde030725cf31becd81342de4a0f7b457edb4961fd24d57a9f2e9",
+      "bytes": 71681,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-061.png",
+      "sha256": "46f4ad9140017fc474a46a873f3f14508cf34455a8ac0bf5c2f58219e337d179",
+      "bytes": 70775,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-062.png",
+      "sha256": "0738fe2df1fb7877491f08a0367c3e43ff0debaf789e624691e9b51ebf88cc42",
+      "bytes": 71722,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-063.png",
+      "sha256": "5aa6dd4af1ea8b6486b886b8d1f80024e5ee0be0c2ffec2cce5fa21d2dc4c62c",
+      "bytes": 71460,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-064.png",
+      "sha256": "990eaa289e9c260bd00ce3e0685b70e5372a210f580cc66df3dd2ca43ba48947",
+      "bytes": 71776,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-065.png",
+      "sha256": "7a70794adda35008bdfa70628a434d12b70dcd0653edc06977ba679d27858a87",
+      "bytes": 71966,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-066.png",
+      "sha256": "32ce932ca2499db4908154f5a6e77e9f815fa99181c5fb5da73c5ce0b19b1221",
+      "bytes": 71445,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-067.png",
+      "sha256": "5c883e5723d7fab7604f1da390a8ad6bb776a16dbfb424a0bfb4ed6f1b13f29b",
+      "bytes": 71252,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-068.png",
+      "sha256": "76dd8bee9560d50ce537a07f70515a5fc0f3f90c23c61932991f34cec64ce0cd",
+      "bytes": 70778,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-069.png",
+      "sha256": "992df6c88389cce00bc2f9cb726f7766b08c000a5a9d6181449aabbeca44c8e8",
+      "bytes": 73870,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-070.png",
+      "sha256": "72a5698bb23da3765a9a722769d238a2d0926ae74187d759647d55c3483f2f49",
+      "bytes": 66120,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-071.png",
+      "sha256": "0fae0c7eec65eae9536d1b865fa6b624b944ae51d4aa5f459b5a780f2880a4a7",
+      "bytes": 71403,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-072.png",
+      "sha256": "6a55d54bc789a9fa715f496fa09ab7ff1ef2df79c46a9aa7a7dd0d92a3885be5",
+      "bytes": 70862,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-073.png",
+      "sha256": "e6cd7bda530d1228e97522620639ea510261264125c5820b8c2b166e5468cd6b",
+      "bytes": 47343,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-074.png",
+      "sha256": "8e00989ceea6a275e802962c9c3e963f391d78a59f281bd237cb0bd79690997a",
+      "bytes": 66437,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-075.png",
+      "sha256": "9ba246ccec7c5325aab55157c8a792adb1a1c421d486c33eb5fe34d00982f5c1",
+      "bytes": 67806,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-076.png",
+      "sha256": "94733286c7235fb46aa8a7101b3ca79b83eadb46748b711aca346ea70240b05f",
+      "bytes": 68614,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-077.png",
+      "sha256": "bf776aaa83e117a9e74b8e95276ad4030d9311dc98838ddf1585c2ac6ab42ca5",
+      "bytes": 69991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-078.png",
+      "sha256": "6796eff5e4fe2404b093b30e95d7c3be01cc4d5d017ed7fa0cd9af84f781f56b",
+      "bytes": 71217,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-079.png",
+      "sha256": "e3205f45b18c1323b18d9acebcee3f919e4d25b7d4aa5cb374e3bedde4e2145c",
+      "bytes": 75175,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-080.png",
+      "sha256": "1e60fc32f7db3fb0570632880502cbee156c6b2bd8c61cb67baff617a4eba60b",
+      "bytes": 75932,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-081.png",
+      "sha256": "7e44ad349eb2d25342e3746711689df07e9bed2daf75fcb64019f97fee7eeb0b",
+      "bytes": 76038,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-082.png",
+      "sha256": "f2d926b9d045248b85c9643b401e2fc757fad02191f73f94f79bc29dada7c462",
+      "bytes": 76546,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-083.png",
+      "sha256": "c438a89caa8938bb8de9a65ca7e4da4957ea815db682b1e619a7138991acb86a",
+      "bytes": 51206,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-084.png",
+      "sha256": "8f3646934271215f4dbb5eaef6be108f57ceca741f0d85640aab95e423ec456e",
+      "bytes": 66140,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-085.png",
+      "sha256": "a28d1f3680be284a8d5ac13daa734dc2abb8c99b17539c3fddc6842c5ba0f209",
+      "bytes": 71704,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-086.png",
+      "sha256": "36471621dc0e25074853aa6317dea15d9dc42f298d5d4f850a689de28dd053fb",
+      "bytes": 69203,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-087.png",
+      "sha256": "15a5602f8e0500ff1bcf2df448fadfae35c51e43217ebbec74d075462e8f4c5a",
+      "bytes": 73078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-088.png",
+      "sha256": "d40ccaa827a16e95d1adfb9c6d82e383dba8f6091ba2f819c6416fc74a93feed",
+      "bytes": 71403,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-089.png",
+      "sha256": "10b4b82b9d5ff8f6efee90b3365642ddab3c579c1de10b861568192c9f78d6cf",
+      "bytes": 68253,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-090.png",
+      "sha256": "35c3a53d0946d53be01bd53e7b3012dd7b9f205601e63b0ba29d9f5870a4cefd",
+      "bytes": 56038,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-091.png",
+      "sha256": "68bcb396e1e09139b7757712e55be4ef529a63f353f47bec43d30ae688c9c515",
+      "bytes": 70860,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-092.png",
+      "sha256": "c8f4224e327ba09147de70d3e892c8646a738e42e3d2d0c1f866e5f8d30238ff",
+      "bytes": 71528,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-093.png",
+      "sha256": "7c7efbae5ad8c6f64cb37a8a2bf20e25f2ac2b774566c1e72e502e36306e17a2",
+      "bytes": 70871,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-094.png",
+      "sha256": "b051004dc55a256ddd4be7b3f840b0fc43c83f7519e5161ff76cf8d30142f728",
+      "bytes": 75703,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-095.png",
+      "sha256": "eac9f08f5c60a45763ebbf02f681eff6a3a57f8d39c8acb80b0db1d3610263ee",
+      "bytes": 71437,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-096.png",
+      "sha256": "a9aaec86302fbe6056b67d0912765c022deee3c0b6dd55d7c1f4d537c51aa4c5",
+      "bytes": 74914,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-097.png",
+      "sha256": "74009a433a97f232964aa237dd2f1a68c459cb16e30bafcd2eb5126743abe06a",
+      "bytes": 74048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-098.png",
+      "sha256": "db20f4fe784498fe6f33d9c202fd5dda3e092a00ada48c56bacdda0e5ea25c0d",
+      "bytes": 74315,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-099.png",
+      "sha256": "55838446b130c61a418f7b91a440b74858ffa2e8563bbadc762853bd54c27db6",
+      "bytes": 71808,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-100.png",
+      "sha256": "77493dfbd048a32aa9e4727866aea7673803a234ccdefa6220818f28faa6508a",
+      "bytes": 75661,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-101.png",
+      "sha256": "37b1609f1b308623a434d444de1a6bae171c496efe5541ec501daecb87d01248",
+      "bytes": 68090,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-102.png",
+      "sha256": "e6c99fcd78191b8423be3cce203b2799e5049ae91e216461fdfb32187a9669bd",
+      "bytes": 68467,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-103.png",
+      "sha256": "9e8d673154bd17d39024eb3c9f57fdd7d81e7a682085bf7d852d94cf00dbc974",
+      "bytes": 69564,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-104.png",
+      "sha256": "5aaad63e9d718a29766c61e51a246e89736d8fa61e854f65be86b3fa6d4b6184",
+      "bytes": 69766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-105.png",
+      "sha256": "38bf0dcdfe6dae46f846628bf37ecd864110afc04c04682a9764c2592603e4f1",
+      "bytes": 70669,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-106.png",
+      "sha256": "4e28b913e2ad1a8cf6afdbadf18a1273006685657955e5841924d39d8485178b",
+      "bytes": 70972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-107.png",
+      "sha256": "39d84dc0e6077310a25c1a3a5c5e8d2d7235214cceae379de49fcd5d63c3a3e0",
+      "bytes": 69613,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-108.png",
+      "sha256": "9c26da818d4a21e52c6c2cbe00a7739007c233debc840a3291d1821c62d8015b",
+      "bytes": 73474,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-109.png",
+      "sha256": "6c89a74a74e5d4c40dc08f00d264a80f47f8dc810ba82fc22a3220483d24b026",
+      "bytes": 68970,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-110.png",
+      "sha256": "94c7b94763a32f914f9e012bf01944f2933ca4ceac76c77df4147741b3583258",
+      "bytes": 70040,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-111.png",
+      "sha256": "0005c288bc38534dd21dfd8a662acb0b01cfc26da2f3c5e2e03b458ab35378dd",
+      "bytes": 63513,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-112.png",
+      "sha256": "db3d82fefdc93e942edd1eb2c758caebd2af882af1f483f1b7a05a2191208146",
+      "bytes": 65884,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-113.png",
+      "sha256": "db56b46c093aaf8e3e836d083fcf94388e636bd81222ebeaae196c502d4e0f93",
+      "bytes": 66211,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-114.png",
+      "sha256": "d953994bb3ad8fafea71d52c6d0045238281a757b40d59d06ee4006a2ca28dd6",
+      "bytes": 68017,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-115.png",
+      "sha256": "5ecf6e58c4585f6cfd631d8412cc7b6fc3545e307743f7e3654e74c3b9f8bd05",
+      "bytes": 65893,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-116.png",
+      "sha256": "8d9d9472338bc7c3d41e7e874a2bd13fddc1821ccd4ef75058ddbac5bebc9d03",
+      "bytes": 66690,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-117.png",
+      "sha256": "90ffcb3fa9e5973c183c94a160f5a148dd013ea6d40821ed7c097d56bdb6ba2c",
+      "bytes": 68726,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-118.png",
+      "sha256": "b9e39cfd6f926a323aab9664bf3745d44bf1115ef434ccf7442fec6703d1049a",
+      "bytes": 68537,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-119.png",
+      "sha256": "77d29d7a95d1635a2a8b59ce3562c0f4bee9070585e73fb5a100024aff6e019a",
+      "bytes": 68152,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-120.png",
+      "sha256": "3f2a4674929e1874abb8c54ae5803eea5348620735f242bad2f874d419e214b8",
+      "bytes": 70906,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-121.png",
+      "sha256": "4d85161a3ffa6f06c8c41c48e294a559ef1206845e5451e8e8b960aed8cc5610",
+      "bytes": 64487,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-122.png",
+      "sha256": "bcac54957ca226317099ac2493f831ebb75ab54d1b1cd9705b77e90ae89223f8",
+      "bytes": 67451,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-123.png",
+      "sha256": "7c942c18023d07d0c51e4fb519a545c8266b6b770b085402ebfda8b94c9f0f0c",
+      "bytes": 53360,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-124.png",
+      "sha256": "51be22711e46ca2695415001521d4662733b805194a04dad90725b4af6663c1e",
+      "bytes": 61641,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-125.png",
+      "sha256": "8ae37d203ded9fa2b70491953583726a6cfa198159d1f5018eee91bbc604d360",
+      "bytes": 65761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-126.png",
+      "sha256": "be58e0394b09b855010679514aa614164d3f42bec01a36f4ff47bff48193e680",
+      "bytes": 65455,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-127.png",
+      "sha256": "376c760e071601c1d3086fd1f6b3ea815e55addec99bb65affa627f6ec53ab57",
+      "bytes": 37965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-128.png",
+      "sha256": "ac8c7966567042af445df9eee6ba6ad08ae6bfa5c81799c912b6902991ce73cf",
+      "bytes": 64964,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-129.png",
+      "sha256": "1e2c0e8cfc7a7b1420a7f7e3a2d7757d55800c85de2aec7e0c87e6f01370792b",
+      "bytes": 67337,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-130.png",
+      "sha256": "b9ba378b6bb3677c9b5e7f075270c1a1d3bdd1a379c7184e38e5486661a00129",
+      "bytes": 69129,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-131.png",
+      "sha256": "2fd7154f303aa3547501342c7eb404449fa79f85778884aa6e0427a5ae95fee2",
+      "bytes": 68466,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-132.png",
+      "sha256": "8af0a140fe77dc3cf720711a3bdcccf3f87b2589af1275bb2deafe6122eebb05",
+      "bytes": 69260,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-133.png",
+      "sha256": "70ab0707079b57b67300df29a88409b240c5f1083390395f6242d9835842931c",
+      "bytes": 71330,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-134.png",
+      "sha256": "1b93732efa6d5350f20d8b7b1627b3a4ba89dd4589c9b954453898170e2c2e30",
+      "bytes": 68339,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-135.png",
+      "sha256": "45b8c2f2b198f9f9ce13fd8e7b5cfeb7ccf309114333d8d2d0c7194d3043a642",
+      "bytes": 69237,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-136.png",
+      "sha256": "a6aa18eaca9e0bbaaf96d4caa638f24bb306f422fa797709a88fffef6bdbe1e0",
+      "bytes": 68866,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-137.png",
+      "sha256": "3c5421f26d80c301c5a2ff2d18961dd0028cb5e634bd6b7460b6a3e9025748b8",
+      "bytes": 70333,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-138.png",
+      "sha256": "37742d53c09c593ee07dfc34da9c88f755b004310b4a2b92bcd639c9347eefee",
+      "bytes": 68300,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-139.png",
+      "sha256": "644593451c6dc50a82767bbad77a2ebea7e9dde7fde67da1c76e4fcb6ff40aff",
+      "bytes": 71572,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-140.png",
+      "sha256": "8357fefadeb1f703af825b76dc5e53193a5b139a51e1768fd33900f620c84fc0",
+      "bytes": 70234,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-141.png",
+      "sha256": "0e70d0c918255121cafa609e52df0ccc8a43dcf1714c9bf01bbf8bc2b34a7ffe",
+      "bytes": 69864,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-142.png",
+      "sha256": "15bab56e89ef29f972ccdc4170a15e1bed48194084473c83f84e01c803d885dd",
+      "bytes": 72401,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-143.png",
+      "sha256": "7329fc6e4cf9b7e235f0dd1e4efc202d3de68a2900bfce78942c3987eeb3930b",
+      "bytes": 66726,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-144.png",
+      "sha256": "c2c2a44c2bac038cd2677b71affc352ea54c48f7f6d57fa645da71d8edf25064",
+      "bytes": 67232,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-145.png",
+      "sha256": "46de3a1190c6df30e48240b04668521f398094ded36c8d0e0df9ad734641c1ef",
+      "bytes": 69465,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-146.png",
+      "sha256": "0863542fd41f84a1d0c9ddc71e8621906374dedfb691393f24e9e4fc1a654c57",
+      "bytes": 70110,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-147.png",
+      "sha256": "3453e6e02ca0174873f3902ab5fad47cd0bf8b432da25c504158bdf0d94c80a5",
+      "bytes": 67526,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-148.png",
+      "sha256": "1ea432704771975137235e54efcf833bd5f17ab6049355a1d6f2ce3cde76e6ed",
+      "bytes": 68962,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-149.png",
+      "sha256": "ce3542b4e8082244bab4e87b14c5524760150b8f90d472e57d547b2437cc5af3",
+      "bytes": 69713,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-150.png",
+      "sha256": "25b39c7be45430550e8213b8b905021496c976c95b8925c5df5a8978c3ed9b82",
+      "bytes": 69587,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-151.png",
+      "sha256": "5e85f4768ec0569f8e94ef7cafd9d7893fc419e28a12cdf11851dce289fd9b07",
+      "bytes": 71323,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-152.png",
+      "sha256": "943d7c80ee684c730116a767426b6dddb32ebc93aeeb3942d4352c0d66a1bd5a",
+      "bytes": 69824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-153.png",
+      "sha256": "ebfce9081ac48bcc09efb037dd1bf7c75a058b1e19e3f15d03915ebeaca848e5",
+      "bytes": 69653,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-154.png",
+      "sha256": "e54a778e24b6c4ad21b21a0523c0859458cbf3ee8c5daa8a237d9e9079bab44a",
+      "bytes": 72570,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-155.png",
+      "sha256": "049dc44dc69062eea2709d36063b8d77ce84b4307b394bedecca699bad51b7b3",
+      "bytes": 69042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-156.png",
+      "sha256": "a12134561b436820692d0f892469ed611a49ca979e0149ad25b65d33dbb344bc",
+      "bytes": 69077,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-157.png",
+      "sha256": "4acdb558fd150e45ea34fe5782c777ad31482a6e5e1358a7e203a3ec5bb2e230",
+      "bytes": 42179,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-158.png",
+      "sha256": "9fc4b7d824887ee9a47962eb0a1fcab6287b998d34c6c6481f03699e468d368f",
+      "bytes": 38474,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-159.png",
+      "sha256": "5fc82ec7868b56007ffc34fad0f6858e5fe40f73a18e78dda6d08323a5901f96",
+      "bytes": 38137,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-160.png",
+      "sha256": "fd18e00ce0c58b0e1161c0d782a51861e2efee656aa571516f6b1265f9631b65",
+      "bytes": 38557,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-161.png",
+      "sha256": "2a4d8187f140779c0f68bf6cc78f0af4ede783d54472c7e29003f88b8094f82a",
+      "bytes": 37916,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-162.png",
+      "sha256": "c3d89f11749d1862c0ca4e6f36e1e700507534504ae5e3132cdb0a617418161b",
+      "bytes": 38174,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-163.png",
+      "sha256": "b9385e911a50d56812ca91fdcecbf822e463ea5194b29b36d92a242eb3ce89e4",
+      "bytes": 38214,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-164.png",
+      "sha256": "d9d78ff3160968234fed00dc3580609eb57fec032d1395ffb84f6d7f558c2eaf",
+      "bytes": 38158,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-165.png",
+      "sha256": "d85a5b2d4a2e628f832ee3ea63a6ed640379e2ed322c0bc2fba8683e5abc090e",
+      "bytes": 38261,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-166.png",
+      "sha256": "324828293b5a7d3e339759e3f45ef6536a9de23d395663038e979d5d0c1144d4",
+      "bytes": 38216,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-167.png",
+      "sha256": "39b0d0f9f02c67ebf04122dddb12be8cb3803262601d04afbab499c31499e472",
+      "bytes": 38238,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-168.png",
+      "sha256": "d5d70a1f4ebfdb81f9eba3fde449b74de3e51a667b0fb34da7af29341ef539ab",
+      "bytes": 38242,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/page-169.png",
+      "sha256": "db92e004ed36d52134318c33a859c179070c3648f2fa20fdf4e24df51a7761a9",
+      "bytes": 38174,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/presenter-camera-guide.png",
+      "sha256": "9be77aeea9b7f42fd216b7f108e80571c88f18e0496e653a87c24f34b303567c",
+      "bytes": 70972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/presenter-export.png",
+      "sha256": "5f65c9c8e431fdc79203f4dad51859276e27d63eff78596739aa7884bb099ddd",
+      "bytes": 149127,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/presenter-highlight.png",
+      "sha256": "f0c108bc4517dc706c6cae0f8e867afcd71d5b5909308334cea30c1bcb6c53c5",
+      "bytes": 68112,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/presenter-layouts.json",
+      "sha256": "f06d78db0b295d457a3e0b6caec98dfa3437ae2956219150beb0eb3f42c4e63c",
+      "bytes": 927951,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/presenter-menu.png",
+      "sha256": "86c9dde68887fb017eee405d56626f43c5be044558ce2d869a4e74afb560045d",
+      "bytes": 52688,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/presenter-observations.json",
+      "sha256": "02bda82ac41e65e67d948589ab6542a4511d1d9149a9eb88725f67f6b1bf8046",
+      "bytes": 1036760,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/saved-research-presentation.html",
+      "sha256": "36575da5c9b16c057b6b8e183a60d89d4c6b728071c88bf2f68616033a9c1e6e",
+      "bytes": 2871743,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/test-finished-1.png",
+      "sha256": "b26161164aebce7e0e9e465376e650c530a3029f368a37f27ca66b64902077a4",
+      "bytes": 68230,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1280/trace.zip",
+      "sha256": "d37e9d74b0a53699896aa9b3c2d272310a8879820ca29989b135a010848bf6ae",
+      "bytes": 15837454,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/downloaded-presentation-provenance.json",
+      "sha256": "d0535fb0b91320137432b1b1a4e41e9c55f47c061d48c937ed7979a5423d62cf",
+      "bytes": 2856471,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-001.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-002.png",
+      "sha256": "fcf050a86151f5384dd91a87303b48b222f156f1bdc29eead06146a386e29168",
+      "bytes": 83388,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-003.png",
+      "sha256": "fe9379d14024de4597dc83c0f15916e2a26d6def1b954ea2195cfe1822a9acaf",
+      "bytes": 58974,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-004.png",
+      "sha256": "7c432da1c97980ff681dd5a54bf9c1aeb3246ef94028791b203841079cc24d0d",
+      "bytes": 85764,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-005.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-006.png",
+      "sha256": "9f3b0d2d791b019379147e5679d2adeed7b60a110898393000cfc1aea208c2d6",
+      "bytes": 90511,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-007.png",
+      "sha256": "65c08b2765742e3056510aa3c113088abda589cc7addaa1f73699982dcaf0510",
+      "bytes": 59054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-008.png",
+      "sha256": "c8eaba481fc32e6993b7bf5a1e843133fb6be5f22d2553da88c9753cacfc64ac",
+      "bytes": 94069,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-009.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-010.png",
+      "sha256": "edde467f8c9dd15002438dbd1283ee94423f09b022c8fdc10ccf7f280f5a885b",
+      "bytes": 65243,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-011.png",
+      "sha256": "c81d3e98cccb23ab0a070a8e36babc83b28b3f947cd3e59ae98439b7514a3458",
+      "bytes": 56828,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-012.png",
+      "sha256": "bedbbf5e66e85837a47f9aa71779b4d2ab69a66217200f44b8f3d866efe94ffe",
+      "bytes": 72835,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-013.png",
+      "sha256": "79356ef5f86caec3d9e2420fef74aac7fabf0cd6ea46b945553125235e7bafc2",
+      "bytes": 84563,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-014.png",
+      "sha256": "95f0f5bfa790cc7e4a0f15c907b1145f660c645e7f6f5b91ac59000c010e3924",
+      "bytes": 58177,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-015.png",
+      "sha256": "8497b07d1ac9af545f309e379a9a22207b735767f27d5c37ece94185e8bb2c4c",
+      "bytes": 89873,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-016.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-017.png",
+      "sha256": "0b2d8d1cd53a5877e741c14fb63fce49731d504fdcf8d66253d00974e1c27e6f",
+      "bytes": 80986,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-018.png",
+      "sha256": "67d21deca09c42fb4a34496413b4dc79431568ea841a101cfcd6c0ec30b1e35d",
+      "bytes": 68472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-019.png",
+      "sha256": "bb543f23f58f6b9987090e45a03d6c655ec029574428070e53fcb9f6d824e8cc",
+      "bytes": 93761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-020.png",
+      "sha256": "e4e7f64b73a7976e27c68cde8ab57d576d29ce4ac0a93b9aaba49bfeca145b6c",
+      "bytes": 96197,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-021.png",
+      "sha256": "861caeb03bf64e7d73dd224e66eca77fdcba78d0894b51b75fe4c6d415b0671f",
+      "bytes": 95576,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-022.png",
+      "sha256": "2ed94a48aec38c742232c58756d419b9ea0c570992785892feaa6bf6cbe3ae8c",
+      "bytes": 96370,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-023.png",
+      "sha256": "dcdba0bfa6614dcd48bf58a69bf4f411826a60ed527f9ac601b0a3a223169f04",
+      "bytes": 95394,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-024.png",
+      "sha256": "3637c684cd3aaef3c3de96a47106f53973e44c6316a1cfac5b37546dfc2c76db",
+      "bytes": 95752,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-025.png",
+      "sha256": "07dc71112c4a05e0854edb547fa9101b0cec4574df502d09a608297874902f8d",
+      "bytes": 95848,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-026.png",
+      "sha256": "f21f42d12f329076308470f092bf748efada2d65d4d8412144853bb67b43a18f",
+      "bytes": 96497,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-027.png",
+      "sha256": "dbb9065ece86f41bf68c2bff3318b30b3dd6403ec1c3bde4a8c7ca23223fa94e",
+      "bytes": 97656,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-028.png",
+      "sha256": "e86b2ecdff6fc166facd9b793a1081e25e21de6a59deea578ac8b292904fb543",
+      "bytes": 97130,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-029.png",
+      "sha256": "eba2c1b082ba615560c994ba5170c841723f87ea7119b506c90ab1df674b773b",
+      "bytes": 100543,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-030.png",
+      "sha256": "965432743b41fad014c603a24eaa47f904fb352a99a50a243c57cbbc2ebf274a",
+      "bytes": 102696,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-031.png",
+      "sha256": "2d317edf888193426dcb96dc4e53a9f953ef796abb09a1a2e4effb04ea72651c",
+      "bytes": 101993,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-032.png",
+      "sha256": "d88224433036054f00542876ab8e5d017b270b859c65d0f581dd233c5b9448d3",
+      "bytes": 100870,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-033.png",
+      "sha256": "7b23f9645ce65f16b9c7421e7cfe0527c8471c22b1642e4707d29079a5f0d14a",
+      "bytes": 72460,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-034.png",
+      "sha256": "99cded6b287683bf855e032614374d73678609b61252c7573d3045bc17d23be0",
+      "bytes": 95136,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-035.png",
+      "sha256": "513d7e061cab44cd72dc5494f4db0c60a065eea16e5a9afa514c0b337fe1710e",
+      "bytes": 96871,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-036.png",
+      "sha256": "bf22d8add74a5be1757b5bd4b8e688c23ae8572a2de4db5ee859d34283f44b19",
+      "bytes": 96047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-037.png",
+      "sha256": "4cd1126877e9717829cc12cab6667f2fa096853d14fd5dbddf05c8cd86865c9c",
+      "bytes": 60903,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-038.png",
+      "sha256": "0f1ebc9fa42a1248a33b8db7866b78c36752f92ff26d86705637edb7f2be9f12",
+      "bytes": 88926,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-039.png",
+      "sha256": "6be31454e72893726bec86b8eb694d432bbdb7e0901980dce98a516933e933a0",
+      "bytes": 91156,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-040.png",
+      "sha256": "63b9b8dc2723b01716be1c36ae3168f06c3cb4025f97533bb2c5e4bda823a2fd",
+      "bytes": 91685,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-041.png",
+      "sha256": "efdce26f7a796eb0ab8ad5d11da8a9fea21f556576df62ad9ffbd815fb5d3d23",
+      "bytes": 92816,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-042.png",
+      "sha256": "a07783a1d0842f3c12664ca03183bdd4d529db6b1da2ed3a5b11de7f27ef5a6b",
+      "bytes": 90552,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-043.png",
+      "sha256": "a6d5a079db945f8505103062d8afa9da4e044d78d2d4b7627dfed4723f8c4cfc",
+      "bytes": 92381,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-044.png",
+      "sha256": "12a1aa500f9168df09f2394858d5eee2b46f2848074deee7cd7d2a1caf20dc4a",
+      "bytes": 93447,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-045.png",
+      "sha256": "885cae68d0c82ee6673ed1f9d780732fd9f14499b6d75d8709d5e46ec490aba2",
+      "bytes": 95756,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-046.png",
+      "sha256": "bc1b3bdcb71527ffe4a3db5d7eb6830af9269fac44e4a0263521ef1f69e99243",
+      "bytes": 63996,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-047.png",
+      "sha256": "d050ef21413d64e838dc3dbe32bc6a84510a61e3fd5e07839b627cf766ed6a35",
+      "bytes": 90528,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-048.png",
+      "sha256": "db32bf7901b27a7b92c1aee7e2d50ef305b2c99e7ae2bce835f6b85ebff28d02",
+      "bytes": 91670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-049.png",
+      "sha256": "ba5bdc19664fb3c8417da7218c5675535b0b1a5e355ac6d7ba4375c9e62c305f",
+      "bytes": 91305,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-050.png",
+      "sha256": "ebdd6e8c786c18d7bcb6287651fab5a44d5cba8b71516f6b865fc37a065bd534",
+      "bytes": 92546,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-051.png",
+      "sha256": "2427e92e1ab4eb2513fac5ca133ee0d2ea09003287b0e4a7045570986b797a19",
+      "bytes": 93015,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-052.png",
+      "sha256": "50bcb5ee0ac68399647b286f333a4ac75934b7bd57446c97f158b8ef59d5c630",
+      "bytes": 93123,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-053.png",
+      "sha256": "b96dec01ee691b0af1b1f2de979fed3e67531921804b755c2eefe341aa3a6563",
+      "bytes": 75772,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-054.png",
+      "sha256": "e09d7c4a5d3e283d1d12f27412f026a5023155b1d71a644a2475a25166e3bedc",
+      "bytes": 95890,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-055.png",
+      "sha256": "3d4680ed7f0cfcd42d99c70c7db961d5f4c8c952fb09655086b5d09ce9a08e92",
+      "bytes": 95032,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-056.png",
+      "sha256": "31a40b326f1f3185d003a7bdec2e36d30be204104ef6c48f305c20629ee46074",
+      "bytes": 96291,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-057.png",
+      "sha256": "a3c50326dfed1da65d5a5aa68a43aa4df00a0b9aeb33d97b0db2911ed71eb6a3",
+      "bytes": 96804,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-058.png",
+      "sha256": "8f19cad975f2b969a7e72b6fbc9c1128d1266593f04af0771a6ca193d400219c",
+      "bytes": 97531,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-059.png",
+      "sha256": "75e02aa75a3641b047e141ff68d58aa017278918adb5303d892cc06f7721ebb9",
+      "bytes": 98784,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-060.png",
+      "sha256": "21d50ad5ba8f068103c3a45bd7d02313323c228b1efadc2db49f1f7ff9314394",
+      "bytes": 98525,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-061.png",
+      "sha256": "cfa68bb39a2453b24557fdee3183ed1a05902f31d6defecdb2d0c7c23f29a53b",
+      "bytes": 96929,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-062.png",
+      "sha256": "ea087b1d9651a5922db9631517dc21d1858c304b89250b2b0f29c02612420c4e",
+      "bytes": 97545,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-063.png",
+      "sha256": "5268470a7906b6bed847f1dde6fd0f3f3796cd4b243fba04543e95e4f3f20932",
+      "bytes": 97916,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-064.png",
+      "sha256": "cb34f85e8f95c31d0bf535217bfe4be9fc8e5371882366f760812b0115035236",
+      "bytes": 98833,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-065.png",
+      "sha256": "c601ff18618393ae0e9b14e848ebc0258e02a6f812bcf961f5f4fbca82f23b71",
+      "bytes": 98063,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-066.png",
+      "sha256": "58f30d3f3f9dbbcbce3eb1741b8c883f16c7f6832ac9de4551c0b7a0d1efdb4d",
+      "bytes": 97895,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-067.png",
+      "sha256": "16e3ab3cfdd94653be87dde67b6722a16b40d865421393240f79dbd5ba759a0f",
+      "bytes": 97408,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-068.png",
+      "sha256": "29fe9e41c34675814cdeda16015ee8a9fb91c7796fb123cf226d51d5dc29a125",
+      "bytes": 96601,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-069.png",
+      "sha256": "b54b8bbeb977871889254253c0291fd9b240979d91b333c91acede5e72596494",
+      "bytes": 99666,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-070.png",
+      "sha256": "90e13e79410f82745c2a5ac76802ba1aaf66fbb90f325555584032fe7d98e25d",
+      "bytes": 93526,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-071.png",
+      "sha256": "00579675f09dee11c5fb6c17492ec940c5f06591de9dd1060878c24ee0a8a5e1",
+      "bytes": 97738,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-072.png",
+      "sha256": "c74825107064522421a50655a060b1f71e9891101feb061306eb3df367dff98a",
+      "bytes": 96625,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-073.png",
+      "sha256": "501b1ff2bbb0bd47b011088476a1cfcc98af0fb240025c50034e1ae1fc0ea8ae",
+      "bytes": 72561,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-074.png",
+      "sha256": "93a2710b01606e1900f6970bb17479c25b1a8b8302796c7b992626f0ae887ede",
+      "bytes": 96659,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-075.png",
+      "sha256": "7baf031e455698c70bb11045e90e1b899289888aada54ee0c20d0cc73afeeb1d",
+      "bytes": 97551,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-076.png",
+      "sha256": "58f6e71e66798e9609818d7ca7f8dd7a9bc6831bee0bb76a33c57f3155db0e3c",
+      "bytes": 97741,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-077.png",
+      "sha256": "35500b506ef8ef4eb7217850877ebfc1cec177d180e1c1491935bafc79501709",
+      "bytes": 99472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-078.png",
+      "sha256": "7ce9d6aff515de827c2937ddd69f2d151e745061557c49980ff9c4a05f6c17e1",
+      "bytes": 100208,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-079.png",
+      "sha256": "550fe22771cca4196d06382226bf3fb6163970f42b8ea9b5f4a8082895ea616b",
+      "bytes": 102319,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-080.png",
+      "sha256": "bceb17c5c9fc2e7ca7da47413070c1d1508db0661b5bdeab7161e69b1fb1f6d9",
+      "bytes": 102277,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-081.png",
+      "sha256": "8814db5be28f984ec138459761d1d62b8b49a98c0cedb8bafebc1459b93a9080",
+      "bytes": 102462,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-082.png",
+      "sha256": "1117127e2c47e786da9a713ee2fddc8422049da9640a9088f1b66ba30a1f75d3",
+      "bytes": 104107,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-083.png",
+      "sha256": "8898af17329fafd4520b6aeb0f32b316d8c70519bd074a18e118f218a158b56e",
+      "bytes": 76703,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-084.png",
+      "sha256": "b85fe836cb29abb1d261f3de31aa28b086f063f4f288ae23464fb7832ae4623e",
+      "bytes": 95557,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-085.png",
+      "sha256": "3ad3a5b9a4cc14818700a96be59aa2df5bafe2743d430a0d743683c375200054",
+      "bytes": 100279,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-086.png",
+      "sha256": "50e45772e1d262f0209fb77c74c6d756216783a3802e6ba0d857df7f8772cc22",
+      "bytes": 96858,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-087.png",
+      "sha256": "5885a7f5f1a6b6b797b6ec1fccb8e0c77b66284ae00c8ac6d16447ecc12d5dc9",
+      "bytes": 101632,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-088.png",
+      "sha256": "51a621f01bbfc98ee61a27cbb83ac09e65d981e36473c82b574baa2da4a458f8",
+      "bytes": 99387,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-089.png",
+      "sha256": "c14eca54c5c163fd4e5159f76fbce383339624a1d6838be4d81ba761bbdfff86",
+      "bytes": 97778,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-090.png",
+      "sha256": "bd30147025ea4db38cdfb9e8aa602dca0a3948ef7f1231378c9d19985ffb16c8",
+      "bytes": 83300,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-091.png",
+      "sha256": "40a74701f599268e55dfa739edd3f1f19cd8778f0c175dcf836805a2a1bea24b",
+      "bytes": 99984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-092.png",
+      "sha256": "d4bc3ffd30389ce5bacc58cc6c05181023aa6ada879bd182b4610333ccb018f7",
+      "bytes": 101528,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-093.png",
+      "sha256": "ccbb67bf868d99a77863efbd274252eaa141042639b68c2bf026b3d70825608f",
+      "bytes": 100285,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-094.png",
+      "sha256": "a95ac4863625518c51199106ad5472f695a317a2b3481bb41f5e8b79ad1fced3",
+      "bytes": 104798,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-095.png",
+      "sha256": "72296fd2226ff3842184b6817eaebb152a7d14d2e65af2bcc840272618bf769d",
+      "bytes": 100991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-096.png",
+      "sha256": "ed9efa69b24fe88e14fd410db56c3b5d52cfbd8e7f236ee17117da57cee702f2",
+      "bytes": 105123,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-097.png",
+      "sha256": "abb1c1090e28f4d06aea7057d43347ce70d6ba0cdde751e5649f78329100cd5c",
+      "bytes": 102424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-098.png",
+      "sha256": "3919bbf489bb54a1a344a3cfaccb072ee0086057fd88f95d5e57fd28cfce1273",
+      "bytes": 104132,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-099.png",
+      "sha256": "b14900bc2d82082c4c6fd44e12e47c88994c0521e00d0e6f69ae4ccd9da15811",
+      "bytes": 102271,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-100.png",
+      "sha256": "ffcb35ea7a7e39a0b0ca3c0077d3893f7d1b1e095ba2eb72d9ab2c7e5d533dd4",
+      "bytes": 103478,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-101.png",
+      "sha256": "50bfba2d6828049e0d5bb219e9ad624021f67b2a0a66b30f42991b2451df12c6",
+      "bytes": 99038,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-102.png",
+      "sha256": "fd71273bb7e522316c6e51be6e62c7b5f607667ead6ab30db7e9b220537873b2",
+      "bytes": 98510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-103.png",
+      "sha256": "78e1254535b14613a56ea86a7bb3317e07d7c73599879ad80f2d66b0661f581a",
+      "bytes": 100785,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-104.png",
+      "sha256": "cae50bb2b602d4f9560304d902147618be12bff16646768cfb0ac835f0377ed0",
+      "bytes": 99516,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-105.png",
+      "sha256": "f56dc7621d576674e43bb68e7acea3b6d85e6d1b5a0d9460d485c055e5513b9a",
+      "bytes": 100219,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-106.png",
+      "sha256": "adc7618ce4048ccbd2ba4ccf466f913c4b6f6ddcb5beb9d1875b63f91fb2280b",
+      "bytes": 101145,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-107.png",
+      "sha256": "531aa512a17549f5c60c5ed739cb8b1ea415d74001d2c50366256aab1d8078c7",
+      "bytes": 99552,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-108.png",
+      "sha256": "0aeb9b47a0114b7e72f398dab393ef0db1674ab0574bad153888717cfdc0ec46",
+      "bytes": 104202,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-109.png",
+      "sha256": "6c82b2d1a3220adcf68db27007bdb7f0e7571eff3b8a3b04af07ab58e56dff3d",
+      "bytes": 99894,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-110.png",
+      "sha256": "300e4fe96c71c9decbd34da064ab625e09855c25421b150022f875b8304e89b8",
+      "bytes": 99503,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-111.png",
+      "sha256": "5d6790ff9aa2e11f91f2eb280b17c86a09dbfce3156a03041b09988dbb8c2898",
+      "bytes": 90103,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-112.png",
+      "sha256": "e8902246b719d67e10a5f93ef3301fe752c3e93115c267b30bfa549c15181c59",
+      "bytes": 91937,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-113.png",
+      "sha256": "e03d99769a00183432c03a6e794ae8db4036c226f5671b24e492656abe7b5f4c",
+      "bytes": 93024,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-114.png",
+      "sha256": "04450cfd70f306a8208acf7aa42608745e6b3883fa82082ff8291cc256993d55",
+      "bytes": 94197,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-115.png",
+      "sha256": "2bf5a6825a6cf38be4ca319948de70fdac7b7ed0ad9f361ad9fb256c643cd944",
+      "bytes": 91425,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-116.png",
+      "sha256": "5cabcc6ec261a0a3eb5da3fe22d92d0bb83b728db4f781e99cb776513aa06a6b",
+      "bytes": 91310,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-117.png",
+      "sha256": "942d98625e8fd5fd757ef32d4aef8719f8a5153510bcb4e89cd6554f230fbcfb",
+      "bytes": 94266,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-118.png",
+      "sha256": "a6cbe4b8e6afe71c301f3ae6a9e03e3c6ae71eee1b3a12d86f41d574f1229219",
+      "bytes": 93484,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-119.png",
+      "sha256": "1b4ee2147cbb43015f27670493429d3d51ffe9bdd875f549257d0aa1543901eb",
+      "bytes": 93698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-120.png",
+      "sha256": "7fa00b38537b2fdf1c9c5ebf44a49112640ffbf7c3a14173474fd813d478cd63",
+      "bytes": 96546,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-121.png",
+      "sha256": "7dd99faa697f5c425fff8f13d7f5401c4e0283ab1b748d71799f5a2b15816fa1",
+      "bytes": 90802,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-122.png",
+      "sha256": "e2dfe36d4690fa3400fe39f2d6cbd907accad9f119e00d8d8c60a16d52b34169",
+      "bytes": 92167,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-123.png",
+      "sha256": "22e4cdcb76028897a39309fcd5496fc363c213c2609697e82c953132b4169b30",
+      "bytes": 77628,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-124.png",
+      "sha256": "67c3d1fa72792499fbeedf1aabe907db2232516137dbf43b903d1946fffd282f",
+      "bytes": 89855,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-125.png",
+      "sha256": "e8b21c63ca640eb1d4b31eb6499b72c2c9c928d1fc833f561b1e045199b44150",
+      "bytes": 93691,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-126.png",
+      "sha256": "145bde4647c6fba4cb75c6741d685ead51398baa39cc4e64279f4689b3f35797",
+      "bytes": 92273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-127.png",
+      "sha256": "d3f4c804d585db8a68358c291a14a7f967b60a24ad01cee44982c22ebdee208f",
+      "bytes": 61218,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-128.png",
+      "sha256": "3b83381fb1fdb27c51225b42974f02524897aaa1ea3f12ec94ead59674187e41",
+      "bytes": 92617,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-129.png",
+      "sha256": "2bdb990b2073c0469034e72db2e8a4f507e4106d81f02468cefa02bb1b8ffa66",
+      "bytes": 94641,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-130.png",
+      "sha256": "359f0ab2d95ad8f7bbdec2c6fb351088b4bbd16d5820ff1c599755f467c23a92",
+      "bytes": 94895,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-131.png",
+      "sha256": "5caf38e16325fb453436128ba8742e6d10643e8fe65bb801cfd384a61e20f34f",
+      "bytes": 95273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-132.png",
+      "sha256": "edfe851a729d0533dd0703614eb692540567adbe3d2859787e3e61ee2ee469a1",
+      "bytes": 94545,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-133.png",
+      "sha256": "39d9d1b1d2838ba85c853fce5a74cb4cb6d9d9cea8dd33a904b83ce007aa5636",
+      "bytes": 98330,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-134.png",
+      "sha256": "e32e20a797fc1997903ce8bf591f9f9b2ab89f57b17e7cc3337eebdb3769f744",
+      "bytes": 93914,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-135.png",
+      "sha256": "796d22161a656b1ca93965740c4624171d31b017073f64e39060e27d3180fb18",
+      "bytes": 95026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-136.png",
+      "sha256": "a05eb903cb10577111faa3a0fd16146b351e614cae13a5369a885635fd20f1b3",
+      "bytes": 93763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-137.png",
+      "sha256": "9cd4a834e8bd762e65295459845c29cf1010ebbef78fd8a040515e14f0b2fc25",
+      "bytes": 96391,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-138.png",
+      "sha256": "c4eef11d83e706b2f3f3fb0ada2d8fb13cd0194b5e0f55130375e99adfe5b6dc",
+      "bytes": 94099,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-139.png",
+      "sha256": "7b126143559343576b43e2b1061dad89227d35893b2c634e2801affdb1f3e5e6",
+      "bytes": 97234,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-140.png",
+      "sha256": "492cedbb05be8fdb3675f0187c0fb7761890e646a8fb72f9a75a79f91ecdeef2",
+      "bytes": 95965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-141.png",
+      "sha256": "ac76700288446300db8968da908116649ea0935ee807902952fa562ee41a4bfc",
+      "bytes": 95821,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-142.png",
+      "sha256": "acd869101f1f72ff4df61d8f528d6c9b4850433eab49716c77b5264b743ee0be",
+      "bytes": 99545,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-143.png",
+      "sha256": "4d4c75e5fb3ac2bb13b73b7401b8efa4147089faa521d5cb02e1107ba8fdf6ad",
+      "bytes": 93241,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-144.png",
+      "sha256": "5b696377ca320c8e7afac360e2c23eda473737761950931944d8cbce90592f6d",
+      "bytes": 95337,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-145.png",
+      "sha256": "5da3c99a3ebbd4d6b9c8510303c06add650c0e6db9df821008311a6b0d4907d0",
+      "bytes": 94089,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-146.png",
+      "sha256": "325d16b1b27290edcecbcb2d6f64c35207b300daef619b6e26035d81acf2592b",
+      "bytes": 94752,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-147.png",
+      "sha256": "abceaa079c2a9d85f13d0f83a4ee8038bc20d3e61056a2b517e96996b0b5d271",
+      "bytes": 97313,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-148.png",
+      "sha256": "4171efb2188d336963ea962bd393b2bc57a2033e8e61e052f13e72173b55db96",
+      "bytes": 98315,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-149.png",
+      "sha256": "e0675e989a66a84f28dc3fc926e76c34192d5ec934edb200425a0cc61f8be880",
+      "bytes": 99115,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-150.png",
+      "sha256": "471ac39091c3bd34da62f4ac9534885a3f92b8c073bdc27079abfbbae1993fb5",
+      "bytes": 98240,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-151.png",
+      "sha256": "a322d326a000e576d328c9f86c3744fa942460370e9bb5be88221d080e289d73",
+      "bytes": 100187,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-152.png",
+      "sha256": "09272fd10f0cbea046b322500d0f4ef01e8b16e2beda1e70223a10091209b823",
+      "bytes": 99559,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-153.png",
+      "sha256": "1f3cbe1a5158f3b2974d8a8f4bbc395de58f850b250965c4140fd8ecd72fb8db",
+      "bytes": 97959,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-154.png",
+      "sha256": "5808f8a41bb990720a8e99ed5858c1a0b01722aef9e9ebeff078ddbcc484a8a8",
+      "bytes": 102110,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-155.png",
+      "sha256": "d2cfb4775fd98615da94c7d82220b0ab446170a345e026f2f884c4ff4be5f70b",
+      "bytes": 98207,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-156.png",
+      "sha256": "5f680e2f1dc8593e35d84a11578e4fa15d37e3fc6d0ab4e2a434603e227476c5",
+      "bytes": 97954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-157.png",
+      "sha256": "6aa878fd76606989efc1118077b0665e451cab7dd5a031a4b1f646f25f02a2ae",
+      "bytes": 90649,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-158.png",
+      "sha256": "24aea3dfcb3256ac5afffce7073fb8b60f363dfc6ed3795efddccbde713c1bfc",
+      "bytes": 78278,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-159.png",
+      "sha256": "1814f4b7b2e8b742703defb139c3ee16532cd126a3831a4cac3f41c9c761ee88",
+      "bytes": 77024,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-160.png",
+      "sha256": "be463587bf88d4fb8171298180c83356f99c7cdb593152c167dde08212b535bc",
+      "bytes": 79510,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-161.png",
+      "sha256": "0caa44a806afa5eeb306b88836c258bb8c6feada6294e7060d32fdd1b254d1cb",
+      "bytes": 75276,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-162.png",
+      "sha256": "11e49e5cecf3173f9a7e6b37c3ecaa9be328b0b893e645cb9f24518f55ff79d7",
+      "bytes": 77489,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-163.png",
+      "sha256": "435f31561a5f803b83717f592a31442b66f52f14d512c60ea2a697bc04c86811",
+      "bytes": 77523,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-164.png",
+      "sha256": "800bc0a96848676a08444104072afdb99f94a859e66db22c3c8f4baf714cc61f",
+      "bytes": 77655,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-165.png",
+      "sha256": "d6c99ac93ec6bf3fc71a0b22aa2903ef6ba29994706dbb674442398ff4e1e7d0",
+      "bytes": 77538,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-166.png",
+      "sha256": "7eefdbed79c5757684c9e0c2645c616a698d181461e0cd82a3cc56efe43245c2",
+      "bytes": 77653,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-167.png",
+      "sha256": "7659f181dec4c43e6919e76794164ca0ffd3a3c0365c7b14ea72ce032437a047",
+      "bytes": 77678,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-168.png",
+      "sha256": "47e826c1e8ec205b16b04c481ed9846ad20bf4b235ef0e0c9b46b87c45d3b7c9",
+      "bytes": 77413,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/page-169.png",
+      "sha256": "c8a8402c29ea11e0ff007ca5121d048684f5c6c2de430e87510fedc22027370b",
+      "bytes": 77695,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-camera-guide.png",
+      "sha256": "bff11a29cedfc5afe996e234a8363db68ce3b2934139e9247706e5b523c4045d",
+      "bytes": 101972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-export.png",
+      "sha256": "5b39da12f26d811dcbbe2830570e6367947b7075068716cf734f3bfcdb453de0",
+      "bytes": 150414,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-highlight.png",
+      "sha256": "be969b2266c4d6199c6c5d76682dcc7675b6b846036afcaebdebea259d9aeff1",
+      "bytes": 97773,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-layouts.json",
+      "sha256": "b168e9f64f802e767a467d0da871c23919c3d0ad74a4301a92d610a802cebe03",
+      "bytes": 928120,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-menu.png",
+      "sha256": "8fd6be56836e660d1193cb5394d23ca1c15d60a2a9b3292cdb7f6607a6dbbfb7",
+      "bytes": 98332,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/presenter-observations.json",
+      "sha256": "48e6a6a3ed7c3dfb4d0fa69f0e5c07fc8ff7b53c8d4ba2b0edada7cae2f37ca3",
+      "bytes": 1036930,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/saved-research-presentation.html",
+      "sha256": "36575da5c9b16c057b6b8e183a60d89d4c6b728071c88bf2f68616033a9c1e6e",
+      "bytes": 2871743,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/test-finished-1.png",
+      "sha256": "3c1de78a4ba392237a0b8553f8860f983f4cbd703c82a0ce32b4f8b120a5d300",
+      "bytes": 97602,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/artifacts/presenter-actual-saved-out-b00e2-works-offline-on-every-page-desktop1920/trace.zip",
+      "sha256": "c32ced4c2bb840ace25c550c18a86e433fbce2b3be5ca43d6d47d957a379b78a",
+      "bytes": 14869661,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/capture-metadata.json",
+      "sha256": "fb30addd8a600db15e0e20c0950c827095a68b63a5e6e2bd8715c75173c1c1ef",
+      "bytes": 227,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/junit.xml",
+      "sha256": "4bd40a70c80a84a87559dbecd52e503c70d5be2e44f4aacd0d569d14476984e8",
+      "bytes": 1289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/privacy-derivation.json",
+      "sha256": "24f9e4aff4f088978ce7c589fb6918efb2f4f2c94c5931f42dad1dbc775cc177",
+      "bytes": 177142,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/results.json",
+      "sha256": "4471f98162dd125d17d74c0875e5c037f503e9f309bba7b0eec3a9c316548bbf",
+      "bytes": 5761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/runner-stderr.log",
+      "sha256": "0dde63adf66c10ca7c3264d1ad822efb8295e96aafbb237330f06a6c270dd071",
+      "bytes": 332,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T141439549029Z-presenter-signed-zero-and-expanded-controls-two-desktop-every-page/browser/runner-stdout.log",
+      "sha256": "84d1a275a6fa783ea02753cab5f6ef35af178e157c0d2d8e9d7a9b09fb349845",
+      "bytes": 351,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

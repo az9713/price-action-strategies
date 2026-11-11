@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "receipt_id": "2026-11-07-planning-verification-001-release",
+  "kind": "planning",
+  "started_at_utc": "2026-11-08T02:25:16.187215+00:00",
+  "finished_at_utc": "2026-11-08T02:25:16.623026+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+    "verification_plan_sha256": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+    "catalog_sha256": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+    "source_files": {
+      "PLAN.md": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+      "VERIFICATION_PLAN.md": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+      "decisions.md": "4a898bca50d7c7323ad21906d18b825f784e47894e90ac50ea7a813c9f3ede24",
+      "verification/build_catalog.py": "0a9243c13d63cfe2b3116ef160d78b7a435323d7accc8637aff6ab62deb48349",
+      "verification/check_evidence.py": "2c439b461b3e5907a7d33b4389f7c29686dc21fdbb932d33ac41db2f90df4a7d",
+      "verification/catalog.json": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+      "verification/coverage.csv": "0d07c92a3af4e74ea3a0a3686d19072416c75ee65b35571a54ab6041f9cb41f9",
+      "verification/implementation-map.json": "b6e4112b892fa5f7cd1ec72c9159e2c99da84bd0fc57fe80da7fd8f7af6bdb74",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/README.md": "eb80d592be4bc998b66e94a40e2a31d16cfbb456c4fa973ce9374a55d5abc40e"
+    },
+    "rulebook": null,
+    "dependency_locks": [],
+    "input_manifests": []
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/check_evidence.py",
+    "jsonschema": "Draft202012Validator"
+  },
+  "command": {
+    "argv": [
+      "python",
+      "verification/check_evidence.py",
+      "release"
+    ],
+    "cwd": ".",
+    "exit_code": 1,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/2026-11-07-planning-verification-001/release.stdout.json",
+      "sha256": "c5255f1bfb6d88c0bee20d599d136f8954defb52eedd827d1635f68aaf4dec9c",
+      "bytes": 14055,
+      "purpose": "Actual command stdout / JSON validation report"
+    },
+    {
+      "path": "verification/runs/2026-11-07-planning-verification-001/release.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command stderr log"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Planning checkpoint only; no product acceptance case executed or passed.",
+    "Release audit correctly returned NOT READY: all 330 mandatory product cases lack passing receipts and code/rulebook mappings."
+  ]
+}

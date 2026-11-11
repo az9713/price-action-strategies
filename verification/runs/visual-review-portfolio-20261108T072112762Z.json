@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "reviewed_at_utc": "2026-11-08T07:21:12.762Z",
+  "method": "Actual assistant inspection with view_image; automated assertions are in the linked browser receipt.",
+  "browser_receipt": "verification/receipts/20261108T071411342147Z-portfolio-browser-exact-capture-geometry.json",
+  "artifact_reread": "verification/receipts/20261108T071615577943Z-exact-geometry-browser-output-reread.json",
+  "bundle": "/assets/index-HlLncVb9.js",
+  "core_hash": "01345f0c72b6628c930708d8bcc25333d225fab2f08ddceec492cdf0f74a684d",
+  "status": "targeted_findings_resolved_with_broader_visual_acceptance_open",
+  "images": [
+    {
+      "path": "verification/runs/20261108T071411342147Z-portfolio-browser-exact-capture-geometry/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/chart-7632a5dbca.png",
+      "sha256": "efee8c65d44dcd91adf15911f2f34209e5b1f02bfa416e1eea73d35a7b739a1c",
+      "width": 934,
+      "height": 351,
+      "scope": "Actual chart element visually inspected."
+    },
+    {
+      "path": "verification/runs/20261108T071411342147Z-portfolio-browser-exact-capture-geometry/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/chart-bc36250c1f.png",
+      "sha256": "27441d183c080b5b061c68e346756a6cbbe27d463f532dc5f5d97c9e67a2430b",
+      "width": 934,
+      "height": 351,
+      "scope": "Actual chart element visually inspected."
+    },
+    {
+      "path": "verification/runs/20261108T071411342147Z-portfolio-browser-exact-capture-geometry/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/chart-7632a5dbca.png",
+      "sha256": "32970a106a7ff756f23bce249406807a2c94ca72ff8a48a4a61007c0b5bb33c9",
+      "width": 1474,
+      "height": 351,
+      "scope": "Actual chart element visually inspected."
+    },
+    {
+      "path": "verification/runs/20261108T071411342147Z-portfolio-browser-exact-capture-geometry/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/chart-bc36250c1f.png",
+      "sha256": "e937855de26cd4a3c81dd055a152b8f0ce6e6087abdd4432a7a823a835353d96",
+      "width": 1474,
+      "height": 351,
+      "scope": "Actual chart element visually inspected."
+    },
+    {
+      "path": "verification/runs/20261108T071411342147Z-portfolio-browser-exact-capture-geometry/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-results.png",
+      "sha256": "d362b981fae471656e5263db2f4b7f6307864707d4fc3b7dd2a6ba39adf08436",
+      "width": 1280,
+      "height": 2042,
+      "scope": "Actual portfolio results page visually inspected."
+    }
+  ],
+  "observations": [
+    "Entry,actual exit,stop and target labels are distinct in both1280 and1920 chart captures. The previously off-pane target is visible after fitting all trade levels.",
+    "Portfolio results identify two rule clocks, one account, actual attribution, daily marked equity, uncertainty and borrowing assumptions. No independently reset account return is labeled as portfolio attribution.",
+    "The native candle area remains350 CSS pixels high; recorded document geometry and Playwright enclosure explain351-pixel captures. Clean captures keep hover/crosshair text away from the saved execution labels.",
+    "Sticky trade headings and actual stop/target coordinates in the pane are asserted by both current desktop single-rule browser journeys. Broader mobile/keyboard/accessibility/recovery screens remain acceptance work."
+  ],
+  "resolved_findings": [
+    "VIS-001",
+    "VIS-002",
+    "VIS-003"
+  ],
+  "acceptance_cases_certified": []
+}

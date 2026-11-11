@@ -1,0 +1,8 @@
+{
+  "check": "planning_inventory",
+  "requirements": 80,
+  "acceptance_cases": 330,
+  "strategy_matrix_cases": 120,
+  "executed_product_tests": 0,
+  "errors": []
+}

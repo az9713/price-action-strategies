@@ -1,0 +1,1554 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T12:35:24.468001+00:00",
+  "finished_at_utc": "2026-11-08T12:44:53.571658+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "1d6d39220c5da4abc3b8254c8508bedb69643fdc344dd767dde3e663a229a7db",
+    "verification_plan_sha256": "c5bb3046c1759bcd160264307b9bff4868c176fb96afc60c06b6311e6648ce86",
+    "catalog_sha256": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+    "source_files": {
+      "PLAN.md": "1d6d39220c5da4abc3b8254c8508bedb69643fdc344dd767dde3e663a229a7db",
+      "VERIFICATION_PLAN.md": "c5bb3046c1759bcd160264307b9bff4868c176fb96afc60c06b6311e6648ce86",
+      "RULEBOOK.md": "6cc0c3625e5df448732bff880bc202e0cdab9e2e2dccb404182ea1f8f4289f0f",
+      "decisions.md": "ae2dbf0d40470972479b6e6ab2d4e57e3eda757a0fd5e746048304241c88e800",
+      "README.md": "53b696342ec2b1cc35e4bb94f96e63fbe65dc9f1c30ee9e8acb654f72151ceb0",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "f5852e9ac24e803a260de478c83e0a9c6c7f2e08f1d6f266ca03c751be3f83eb",
+      "verification/implementation-map.json": "dfc9e9abd5fa2077a80785dddbf1888a20b4ca10778d59f5ee9612589faf3088",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "bd3c9ee49903523c30f3e931477b5d806eaeed0788d85a8639246f9bc5450341",
+      "backend/lab/api.py": "3615546ac0e0bc9dd57a01439c107a9b4514d765635cf6f85ff3e2c8ccc9d76f",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "6bb5736ac4967fcc90d65ba3d6bb790bdb8e5f091f5a7676d2bc0707927b8c2a",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "cf58fb89ec7688d18b22078d9d6e9e3cecefbe2e1a712ff35ae04758e6f97834",
+      "backend/lab/signals.py": "86b765196cd7b3321eb22b7d702bc3816c85298a7a491c0325e513c29180714d",
+      "backend/lab/store.py": "403243fef566a9643623e7b4e92c1a5cfe211a8a165ee76002eb27149df620a2",
+      "backend/lab/trials.py": "156fcd610ba232962ea2647d37cbd8aafa78383675759f52772d97fdc478afba",
+      "backend/lab/worker.py": "32b60b4761598f8fcb156161cab48d7eab070a1f2b5d0f3df2e7cbbc21310d21",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "a886581d65237b5de0db2391eaee52fe96a19163bb633ed3d3a507b75f8faeae",
+      "tests/test_confirmation_filters.py": "dd45f55af7dd00bef2f4d273e439f1f4208c6762751995ac4d6fbd341da59a1a",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_data_service_boundaries.py": "35e020ccd1559c0e398302cbecb580169fc4051f98df4b61c684b66c5e045565",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "694ce459cecd19de0b52428e0e031b10fcef0bbf3f39739d81bc3685ef1ae8b2",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "a3765093ec276a5a92f2f45100ee5ed2f0611831f52b0a9242b5289971b3589e",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/critical_signal_mutations.py": "78e211a657abd997d68b111bbd5d2968d2b90d86c2957152aa947c0bbfc744ee",
+      "verification/frontend_check.py": "4e753e85952d263924d6fd3140bf8ddfdeb63f43e5964395fcaa2dcfe23490ca",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "b15fa2af1ce322c2eff6c1a187d8e0062c53c45470e4553169ba801c6959a70f",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/Ablations.tsx": "6b3d0c37349cc2419070f851b4086269bf29555951be971ed681c670f5848ef3",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "d58828fec2d92f272296308859bd011abe976b95274950512671472f2de5d60b",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "1e22a19a14d3fa55be5fe35f4416c341975d925458548fc6d7044feb5b3dabfc",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "6cc0c3625e5df448732bff880bc202e0cdab9e2e2dccb404182ea1f8f4289f0f"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/ablation-contract.json",
+        "sha256": "ed1d4901833a475b18cb3210d92e24a8af2869c48693e641ce2acf6fae4220d5"
+      },
+      {
+        "path": "verification/fixtures/behavior-contract.json",
+        "sha256": "42c534ebf0c68724863ed5ae0d7a80f756ab91aee0e41f61a971940065dc6410"
+      },
+      {
+        "path": "verification/fixtures/benchmark-contract.json",
+        "sha256": "83acf2b95309e0e5cfb2f42e347668137b1f1f06e6d0dc379c75819ce2493ead"
+      },
+      {
+        "path": "verification/fixtures/catalog-v4-original351.json",
+        "sha256": "da886c4b84a8f42ab68c34ec838d468188cefb7a6c955984e6656fff9499c86b"
+      },
+      {
+        "path": "verification/fixtures/catalog-v5-prior378.json",
+        "sha256": "8ff192fbe2b8acb1194a073fec1562596f3cd3e50773bb64aee0f11cbd14b096"
+      },
+      {
+        "path": "verification/fixtures/confirmation-filter-contract.json",
+        "sha256": "41a3b4363bdff94a35e8290f41e468222ad45d67a9feffb03f80087428f5a76b"
+      },
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      },
+      {
+        "path": "verification/fixtures/execution-reference-contract.json",
+        "sha256": "2ce26087a4d3f18320960c7fbbdd5a8bc405d1a0bf88f4f0abeb4c4fc88d59fa"
+      },
+      {
+        "path": "verification/fixtures/family-boundaries.json",
+        "sha256": "39590c7cfcac361e2c3d7ac2ba5863c2195465d4e54761d8c54dddc0b10be39d"
+      },
+      {
+        "path": "verification/fixtures/overlap-priority.json",
+        "sha256": "9ed417c04e3c9aed2a52b6930fe1ce48fe1713f6bb7ec5905c111cda95bcbabf"
+      },
+      {
+        "path": "verification/fixtures/portfolio-contract.json",
+        "sha256": "c4af4f530fe086b919374e3502da9db1c8bb42d08efca8d22444c40513d08f7a"
+      },
+      {
+        "path": "verification/fixtures/prior351-catalog.json",
+        "sha256": "39074bd06fd140232d33537ac42d316c073132c2f4cedcfc15e06d147c8b055f"
+      },
+      {
+        "path": "verification/fixtures/random-controls-contract.json",
+        "sha256": "26c6a3c8bfc18f642ddf3f8f883fb5d351801671cb221b223e626c9aeb854218"
+      },
+      {
+        "path": "verification/fixtures/reference-exits-contract.json",
+        "sha256": "2da992ff80aeea8f6ebeb121d17440da0be7b8156993490c3176f8bd0cb1842c"
+      },
+      {
+        "path": "verification/fixtures/reference-random-domain.json",
+        "sha256": "5e87b118902ae878fe49c86210ef8c074a9b966345a5cad04128b5bd233384a2"
+      },
+      {
+        "path": "verification/fixtures/statistics-fixtures.json",
+        "sha256": "b55d2e81d5d52b1c411140a3a354e42488e1642c2711a10a9db6623213ca1003"
+      },
+      {
+        "path": "verification/fixtures/strategy-baselines.json",
+        "sha256": "c70313e231c02097a4d3782536da07897cc4fa3016544899e949fcb540dff05d"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      "./.venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--cov=backend/lab",
+      "--cov-branch",
+      "--cov-report=json:verification/runs/confirmation-calendar-full-coverage.json",
+      "--junitxml=verification/runs/confirmation-calendar-full-junit.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/stdout.log",
+      "sha256": "088b6e1e1424ed68a01699aa06d353bea107684c9b549758a4d43baae9ace8a5",
+      "bytes": 2596,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/artifacts/verification/runs/confirmation-calendar-full-coverage.json",
+      "sha256": "2cfba20195124818a81c931b69f6981111e7223fa43ca179422c9dbba3445372",
+      "bytes": 280214,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/artifacts/verification/runs/confirmation-calendar-full-junit.xml",
+      "sha256": "0a256a08e33280a8e4482b2e7e856efb4ef82d11e9df3705b213d23a5777f06b",
+      "bytes": 145829,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-000.json",
+      "sha256": "3f3ac2b88146ba434844f755533de5002400d0c322e4e45db4386cde096e917e",
+      "bytes": 74463,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-001.json",
+      "sha256": "8a14761e218935dc461e65aaa74973c8e7b0dd914dd147c22de87afd32fb0de5",
+      "bytes": 83735,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-002.json",
+      "sha256": "7e51186a4c900c9d43e294984c3751fe43f0e14101e7bcb47f38b7a105d9290d",
+      "bytes": 76480,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-003.json",
+      "sha256": "015982f8b73558ff0dbf7941199871493ec8cee31449fa472f3bec5a6099b49b",
+      "bytes": 67540,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-004.json",
+      "sha256": "c226e296f34dcfd29b36cd45808c846b12c64a694360689ded095da6b409bdb3",
+      "bytes": 64221,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-005.json",
+      "sha256": "07c66059ba37f23ada0d37e7c8f25c9d2870badb433fe5a15208f6396bd3ae80",
+      "bytes": 64172,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-006.json",
+      "sha256": "e5fea2199efae8e065f5e615fdd9db3530402c88baf0d1fb8c54d7111db92556",
+      "bytes": 74284,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-007.json",
+      "sha256": "c36c9249b0dfb1a5e8203b167862586cde115a8fb57ade1a81580fc1e4f360dd",
+      "bytes": 67685,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-008.json",
+      "sha256": "934360bcc92fa66c28c4528baadcc3acf202f7e5e4ddf7b90bcc769412de6fde",
+      "bytes": 91347,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-009.json",
+      "sha256": "ff13050f34e137e301157149f7793a1bf516f28ac1feed986e8b3ae197663bf3",
+      "bytes": 87289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-010.json",
+      "sha256": "08dec3447973843aacf3c94e9212c107e7fd9f5cd9779aff0ce1cdfafe8c5d05",
+      "bytes": 100280,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-011.json",
+      "sha256": "b483b338b0fea9b4053ee5d80faf906bf14715f76642f0c6eda9f203c87a070d",
+      "bytes": 67615,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-012.json",
+      "sha256": "a9b52105caf4fa12038593c14951d6fa65c36489f26998ef3696448f9cc188bc",
+      "bytes": 117028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-013.json",
+      "sha256": "a800c9c8c56fbe10a5c6bca29ee1ddf4ed3092b106b493b2a17be5332cf8eea0",
+      "bytes": 81808,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-014.json",
+      "sha256": "0d240e44911d65e803849d351816a7a31622210e17a870b3ba63972018e95b1c",
+      "bytes": 77705,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-015.json",
+      "sha256": "0644da90b750bcb9fa7a84c1f8387ad5d40f748d857be4ce0c41c4bdca45ab52",
+      "bytes": 70671,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-016.json",
+      "sha256": "40fc1296d5eee710506933a3c5a1bd27f3cfc25a4efa519c48b5998ba2198c3d",
+      "bytes": 74291,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-017.json",
+      "sha256": "b9a8ad42a67654efc89896e6dbec2bf54fa2a0bf346f8eace895c3815f9f8a00",
+      "bytes": 67297,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-018.json",
+      "sha256": "874ac5873dce41aafd8084cc82919675dd5b4205f82d16a6e0744fb7aafce3f8",
+      "bytes": 84599,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-019.json",
+      "sha256": "0616c01aa6b64139a8d5a42695a793a8b767e2c092d1a3b4bb056d06a5788b0a",
+      "bytes": 86581,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-020.json",
+      "sha256": "d43983c1b8488de922b5abd66cab7aee3fb11103305336a2002a03b7092d746e",
+      "bytes": 151638,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-021.json",
+      "sha256": "9ce9c5c51e5c114341aaa394a30335c83be078483ddff4e8a8c557eb29c086fe",
+      "bytes": 77290,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-022.json",
+      "sha256": "70531cc27b9a54cb37acbb660062f72f22c4edabc8a8e82e98c3f3576d9e31ec",
+      "bytes": 67555,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-023.json",
+      "sha256": "084dab130dce5f51510cddbbff7b131eb18e5040b2acc8bfb4c16b84c6def331",
+      "bytes": 70927,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-024.json",
+      "sha256": "cf7a84f0bed1f8bc4e92f61079ebc021d63269cd6e52b9c553552a7bfecf8d11",
+      "bytes": 71031,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-025.json",
+      "sha256": "7d0d8ea50b9c4d7a4dc28a0dfa00cd736ba55214a7c0af43984b92411e4b146c",
+      "bytes": 96430,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-026.json",
+      "sha256": "8dddda4bcd7bb987e0f094ae7bddf479258f3a229a0e40f3b476b5346a3133c8",
+      "bytes": 74364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-027.json",
+      "sha256": "901577589436ff45eff3cf641b9ac069ae1a88364c8430aabd2f277f47170868",
+      "bytes": 84162,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-028.json",
+      "sha256": "82eff1f5f67519766197c3cb3bc2082a5d2cec1843ff48665b8558aa19a820e5",
+      "bytes": 84837,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-029.json",
+      "sha256": "143b37f43891a7278b0d705b0fddc068d1b789db9d7729d0734031015bc7d9ca",
+      "bytes": 82336,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-030.json",
+      "sha256": "b9e897aaceee1e7a2393cf613e7a71065657c86658c2c7e6fa3b4266619a7e16",
+      "bytes": 74184,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-031.json",
+      "sha256": "b36d0e66e269c4f7900b8d19f1244e0936f283e757460d1b3c4103663f724bcf",
+      "bytes": 67718,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-032.json",
+      "sha256": "54817a7a8e0c75999b6ee32cfe0b78e5870a0f9fff5afe427a3a0820a0a964f4",
+      "bytes": 71029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-033.json",
+      "sha256": "e1803cb992d8525bd02a630ba8b0151a71f32223a35e86d4b52bff7b8216a29b",
+      "bytes": 71185,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-034.json",
+      "sha256": "618b8f0e4eda2f77d5fe51c5245fabb0965c1a8781527f5696a4546b4a5c87aa",
+      "bytes": 67531,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-035.json",
+      "sha256": "3b6e2501d2b47b196974b62126be5f4c684d7ada76fb0589a78937bce60787fb",
+      "bytes": 70655,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-036.json",
+      "sha256": "f1a19e61bae4a3b2a05022d22915c0e52e2043d947f97ca4e4e715e467202324",
+      "bytes": 81008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-037.json",
+      "sha256": "31d11924eff6eaaa2c9d7aebdeb811d9893dd3e694ef24eb70b7d70f22961e8d",
+      "bytes": 94812,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-038.json",
+      "sha256": "ffeeb8e419c4c896ce179142e59ae18d6ff33ed937179c231d418f478c376b57",
+      "bytes": 74399,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-039.json",
+      "sha256": "caeafcd62da5e47ed9164689f97dc726951c4b6bc3b01362cba185e541aa6975",
+      "bytes": 105498,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-040.json",
+      "sha256": "2adda6c73da2ef5ab4e92538acdb498b6482b6f2b91c1676545b1e49e1f7a8ce",
+      "bytes": 117226,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-041.json",
+      "sha256": "ffaf362fdda2e5641f55ab3c7e1b0cdabf20374b49171bae3e9d2d54ee3106f6",
+      "bytes": 101196,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-042.json",
+      "sha256": "013b9b44505efec4aa8fbb2a3d0564eff3c43802300eec477604e48cf585e947",
+      "bytes": 116724,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-043.json",
+      "sha256": "4205a492bc87210b5b0326c15655e7a6740c3ebd31660fb4bbd32b492b8e7fcc",
+      "bytes": 118487,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-044.json",
+      "sha256": "8e6d321aecfe484d5c37be27f8946e1e855b08d99bd838c7b45d8e9ebc172aa6",
+      "bytes": 124766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-045.json",
+      "sha256": "335f662936154b779bf564e412bc435e3e61dcb6b037989117a76d34cd4f2c5f",
+      "bytes": 88390,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-046.json",
+      "sha256": "26d21fc450407cf2ca22104041e60e4cbff291299ae258b050206bf763322cac",
+      "bytes": 84207,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-047.json",
+      "sha256": "0a159d13d10464c10ccc06fe69491f26730680612cfd7355dec786e4e13081f6",
+      "bytes": 99518,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-048.json",
+      "sha256": "a511ab4dc8cbb1d8a6b56572564e82d3d1aa56678f073f1a32b139827df101c0",
+      "bytes": 108952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-049.json",
+      "sha256": "231b61e30f9a0c68f3726884c18faad9558669d8de6ce3294aed81c8a9841512",
+      "bytes": 74273,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-050.json",
+      "sha256": "637dc0decb32926f850c9ed2f4a852b608fd8c06ca474bf94c6cd763a1f0836b",
+      "bytes": 101266,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-051.json",
+      "sha256": "49efe4a8dfab37705beb7e76e02cc29703cfb03699dabc78075238626dd31eb5",
+      "bytes": 73980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-052.json",
+      "sha256": "314dba50f76fb5eb4ce47548553eac10f7a50ccb85096896520385505799facc",
+      "bytes": 74397,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-053.json",
+      "sha256": "e8cb690be9306062d2777d9db2c31af0130b2429314db5e265457632af5068b0",
+      "bytes": 61030,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-054.json",
+      "sha256": "8d37b4b748a724b5566e8445686ffaf5f2ef6b20ee12633a896d387b48e72df9",
+      "bytes": 94516,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-055.json",
+      "sha256": "a3fff8c6d2c204a6ec1c65b5cb443515f4ad9803c616a45c7bc8fc51614ec1cc",
+      "bytes": 114342,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-056.json",
+      "sha256": "77255038deeeef5d669ff13b084359dd4783ad87f31ee096afa4cc18aff35302",
+      "bytes": 70789,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-057.json",
+      "sha256": "7018986af9c453a89149680d55ae70ea1ab7381994612e0f39b27c0fc669a9e7",
+      "bytes": 107405,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-058.json",
+      "sha256": "f16bf1e0605b9ca9478b188bbd0bea853150bc6b8696200151d77c60f1f1a09e",
+      "bytes": 84472,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-059.json",
+      "sha256": "72e6c4700a389a564364f7e91a25cecf873df0920c528a48a0e3469085593c48",
+      "bytes": 64190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-060.json",
+      "sha256": "7be4cfb7688dde5d3b6a2b982e17ab366708ae2694451b9ded5d4af1e12d79d4",
+      "bytes": 124576,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-061.json",
+      "sha256": "20481d1868172cbbf23100aa2433ae188ae51b905f5b7c645bf87d6091955197",
+      "bytes": 76247,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-062.json",
+      "sha256": "89e2ee4840b5a3db8521f80008d708d2b719f4172d86b7828f0a41c9188b0a49",
+      "bytes": 98302,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-063.json",
+      "sha256": "18fd374ed0b66ee8be923459a42aaab22240b4938dfce2da91d278e9824dc0be",
+      "bytes": 89443,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-064.json",
+      "sha256": "fd527270a8ce4f8683e107f89eb68d4e6d6ba0db3193e3b910b2153a13bde5f2",
+      "bytes": 92587,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-065.json",
+      "sha256": "1f97b9d90324df89af49f8804db2aef1c01e793f33010d5131be6261908a8e05",
+      "bytes": 121338,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-066.json",
+      "sha256": "e3b630fc002a362150ef921e67664dce7a4ee3fdcf15e20c383f78ca5ebde5cf",
+      "bytes": 67526,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-067.json",
+      "sha256": "470b8b48cf0fd3762012b9e40dceb0b46b09a091f80d3fb9c5ae62a9405b7ad4",
+      "bytes": 67613,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-068.json",
+      "sha256": "9bb8fa42f8d7f3de6e663a27cf8a1ea11170f24164cd64eb7c34e539d20b694f",
+      "bytes": 77824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-069.json",
+      "sha256": "7779e6a7c6910ed2c558caee2053b88e9005b3554a34da86668c2d5dad655c35",
+      "bytes": 74359,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-070.json",
+      "sha256": "a227273e64796c53d5562d34368b9335d21e3dacd66053e4a0af509bc56c8b74",
+      "bytes": 93215,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-071.json",
+      "sha256": "7e5b741c265d1ab330f09ce9f3f8712dad1dde2c561a9d3cf78aca085c6da63f",
+      "bytes": 84574,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-072.json",
+      "sha256": "0d4c3fd3dacbded9ab304ab823fdca8974e5a85a9b90c8a572868786ce1e9750",
+      "bytes": 81156,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-073.json",
+      "sha256": "50eda51677bfc1f69e39c30e95d5932da323594722af700999af0c38484b45a6",
+      "bytes": 70780,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-074.json",
+      "sha256": "603581574ed8894b21bca5a1e6156f22d6d44634987b93763131aa6ec391b5f2",
+      "bytes": 96078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-075.json",
+      "sha256": "4e2ac6dc40ba1fa4aaf69aa68cb85de166ece0064b63bcc2c157dad49463b209",
+      "bytes": 107863,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-076.json",
+      "sha256": "18a27c64ce5399ff2fe1a3032f1b976d6de9bff544dd06d565232e87029a66a3",
+      "bytes": 114537,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-077.json",
+      "sha256": "d20628117383bb9fd59ef408c3353c3b894194955781205a586f805926b29f71",
+      "bytes": 130598,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-078.json",
+      "sha256": "4fa7d7ce0d447281e0b25481ae1db593c352b449aefc8b3cb666c0ae7d8801ee",
+      "bytes": 74101,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-079.json",
+      "sha256": "28fb0d162cee76e3bb6648a45ef8f51be1f6f847e7c6c331e56592635d945c86",
+      "bytes": 112956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-080.json",
+      "sha256": "ec8d5e7eb833b7e9cafcd3a45fc619af9d10402a2a4a908c9593c6fb31698d6b",
+      "bytes": 77505,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-081.json",
+      "sha256": "adc22ccb17b947c76c5e3d6d7048579241b321dbcd2e6c4af840ff27609b2468",
+      "bytes": 98423,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-082.json",
+      "sha256": "9aa03c2ff106d5ac9a47df79fcab5dc500365e66783397bc330531d10b51f717",
+      "bytes": 116461,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-083.json",
+      "sha256": "b964b96d74c3b92101c24f1be2aabbe6da1637c10b6f2d15f2a53b87be99e0e6",
+      "bytes": 77670,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-084.json",
+      "sha256": "45c3399307ce1c98f66a2c592699dfa6810d42591845fec422b0e876ecce6b53",
+      "bytes": 75366,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-085.json",
+      "sha256": "3ebc1f24e4b49bed1c2dfe9e854ea91b4743b577254e8df815cbbc212fa41f79",
+      "bytes": 64139,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-086.json",
+      "sha256": "2a16de5dadc2f254d9b9a0a51b868cb10afc069ba4c1ec0e52356181e381df15",
+      "bytes": 119479,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-087.json",
+      "sha256": "660513c0e985f3e176f6d6fb582b683944df693cbae6758a35e237b67367e376",
+      "bytes": 93904,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-088.json",
+      "sha256": "cc4dbaf8f3e7cc6f39e9592cb389c2d7279f829e9ebde2d774aee949595c53c1",
+      "bytes": 142053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-089.json",
+      "sha256": "c3543d4614d017c57962135f7a86e674dd213a568d32530d6a28b9dd00411a1d",
+      "bytes": 87117,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-090.json",
+      "sha256": "79431b1bdcfadc44dc600f1391672a6e08fab979e1629478457df6e6d5a90a82",
+      "bytes": 67424,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-091.json",
+      "sha256": "093f3105302daa256193150729f0d63545865f2e916724f3be4d45c0c6586405",
+      "bytes": 70852,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-092.json",
+      "sha256": "fbc828a26c34ecaa6692283d4b0106fd3bb06f8f1009b6370a131e974487d2cb",
+      "bytes": 122361,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-093.json",
+      "sha256": "7fbe57d65cd20054a2513f4dfd6365e7984af4da6f04ca2faa193920100f81e2",
+      "bytes": 117828,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-094.json",
+      "sha256": "fa85f4aea17195caa462b883cd988bc4a9c241313f77ec388641535d95cd9b94",
+      "bytes": 129078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/reference-properties/seed-095.json",
+      "sha256": "c2bf07a075d3d0eef2424d6b85e0dbe47fff7a759c753c4074bf23db8db0fe07",
+      "bytes": 101761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-15m-long.json",
+      "sha256": "f1a0c172e6e9777d150130c39d93fd5866e94844d14228c8d8ff7559b39f5e89",
+      "bytes": 3028,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-15m-short.json",
+      "sha256": "73356e55b1bae50c932d24690d51a419a869b4d73ef74137ee2ac4cd813db419",
+      "bytes": 3054,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-1d-long.json",
+      "sha256": "0f007d5d331e1ecf8c115c188983b11fc7f040d23cc67ba90a65398ebc924ff5",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-1d-short.json",
+      "sha256": "c0e1f9475bf3d652e12fb673f511ff787ab8f35f70bebcd214d0483844a1e9c9",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-1h-long.json",
+      "sha256": "d6869f6d73374bc34ca4158231252293c3470192910a43c214d26fe87df0b4e1",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-1h-short.json",
+      "sha256": "0026524997a7249ae5afc5b52d84ceca1db2de19070744957ef10aaf21e48fce",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-1m-long.json",
+      "sha256": "6408657dba130e580003468d20cbaf8f78e49802f38818c43ea1ea72147b74f1",
+      "bytes": 3024,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-1m-short.json",
+      "sha256": "c37e57d19e39e3d1a186ed09ccb7086c85dad7c71582d8ffa853c0db16589906",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-4h-long.json",
+      "sha256": "2fefd106f1f1944be2ddf285ff621b43aab57b49a7ebb7abdf6e0b671bcee72a",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-4h-short.json",
+      "sha256": "5b6b0f1133f6d4e1d82081f2b79c0205c5f11de1441c29ae45f05b86824f61d6",
+      "bytes": 3052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-5m-long.json",
+      "sha256": "a88086594a7a9ecf4e5d4e7ac949d72f131dc008a8b5964e90181923d378aab4",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-break_of_structure-5m-short.json",
+      "sha256": "9abdcb2570df4ad23018b98b168dab1c9e97eb7415f840d386e1a45f586831f8",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-15m-long.json",
+      "sha256": "e98d6737e39ef9daf71022911b4a6c4de4bcc39e0a0371cedb6a6f109c3fb8ad",
+      "bytes": 2948,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-15m-short.json",
+      "sha256": "ef3a42ab68ddb6cc2a8bbaee8995b3f60c8b63b3ac7f6daa61561c7ca0900d57",
+      "bytes": 2976,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-1d-long.json",
+      "sha256": "5dee183980f5a5b196d40b71c1c157f54dbe1880b72325ac8499e2ff9b474bde",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-1d-short.json",
+      "sha256": "7b55f7f3dfc11173f891e0ce283a95a861874edaf6cbc3ee420492659aeabcec",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-1h-long.json",
+      "sha256": "a413fb658de12eb5af83fa68a8a02c965debdef898dfbad36ad0660b4bc73c75",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-1h-short.json",
+      "sha256": "60a70b694e8248bce473e20c1e9cb4c981be4443c28d5fda2f4f73d7d5c2794c",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-1m-long.json",
+      "sha256": "de1d8f53c2c5d9b8c4b71ee7f12768345696dc565cb516b58ee6bb76b086a598",
+      "bytes": 2944,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-1m-short.json",
+      "sha256": "d8b4b0c009acd30aa5ec6e8b0d7287306057b878d42542ed0aaad077e52059bd",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-4h-long.json",
+      "sha256": "4f763134c8c7a60c4418dbe826bcfd76aaeffa9fb618dfb6c116018c7ba72f0c",
+      "bytes": 2946,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-4h-short.json",
+      "sha256": "2247d795f5aa83e61bc6445122140e86eaf3ff8aa51e74889f68309946736218",
+      "bytes": 2972,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-5m-long.json",
+      "sha256": "b8d54b1e806c067e4ca93c1d43623105be08d1142ff8a7acc0022eeeeda20efc",
+      "bytes": 2945,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-breakout-5m-short.json",
+      "sha256": "6f6ee8406a884c2ffd4aee680717a6a53a32adea14f8701823019f4b0528e76f",
+      "bytes": 2973,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-15m-long.json",
+      "sha256": "05a4ff3eb4ce509a89457d3cb23d4d546868b0fe8c60f38bcabf10acfea83c8b",
+      "bytes": 2985,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-15m-short.json",
+      "sha256": "0805b6ac8d96e909dc90718170032d0750ed5e239beee0d2828f9924c758d0ca",
+      "bytes": 3005,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-1d-long.json",
+      "sha256": "d6847593144aeac4ab9540075c57e400b2002993cdfd0168ecf5cd29b90c15e2",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-1d-short.json",
+      "sha256": "f084fb302081deaa238790a9cd66b12b61251afb471ab6be51e2f606098d0864",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-1h-long.json",
+      "sha256": "ec69281739e28cd8b073f77ae3cb20c64e8ecedf6876b4699cd35b8f6327d98f",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-1h-short.json",
+      "sha256": "1029c58bb09990cf63ed220683c9c8e578754ab909d5785d5f604a931b058472",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-1m-long.json",
+      "sha256": "2be3a743b18a45b8a32878ba0c7c6bef19e6715df3e99c8e16ddbdaf88794a5b",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-1m-short.json",
+      "sha256": "016f1eca9d119a7f65c2b44c962c50d1fe8e63035ef1c5370035b8ec44b938b3",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-4h-long.json",
+      "sha256": "918249e70c486d31e17f401cb0740c27e7525ae48e6df90c55d3a6cbd9e1bb6b",
+      "bytes": 2983,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-4h-short.json",
+      "sha256": "8df5ae4796e1fe6d3ab93b163d79501999352234d809798544e6adf03872af82",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-5m-long.json",
+      "sha256": "a291477a11287676bfebaa9d2c64d2e154eb5210abc5d2b7e005726f400c0a78",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-change_of_character-5m-short.json",
+      "sha256": "e0b2e147b139c182517639be2d31174bf801d34cc1bc66b6e2a5f16ffd15aaf0",
+      "bytes": 3004,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-15m-long.json",
+      "sha256": "29c01a80708e10d64c3ebbf9e15cf1d7931beaac178323aa20dfa30d314438b4",
+      "bytes": 3020,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-15m-short.json",
+      "sha256": "73bef5aab5cc8777f73e4261d7caeaa2e9184aebd4c3026e3ea1423a16686dec",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-1d-long.json",
+      "sha256": "582b41d97cfdb1cb197e46a5491a267e531476efd16fdae3d6c8accbedf76a06",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-1d-short.json",
+      "sha256": "59985a5bb7eef9704dcf5fa197c2e5941fb36cec2426a5bd659144574c153e9b",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-1h-long.json",
+      "sha256": "f6c79d453fcd511aa15f0958bc140143bff524ce48ebddd39b86061182585a1a",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-1h-short.json",
+      "sha256": "83f05fc6609b97bb5cf25769d2aebe65a62ecc3b6293a1950cc1c648c332fe76",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-1m-long.json",
+      "sha256": "616a3223d1077aadba90a6c965234aa7bdc0580317f0d4b84a74e6c844567dc5",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-1m-short.json",
+      "sha256": "4456d08c4549dca8dcdc839fb595ad848e08a27e590b99b55dae1bafa51df522",
+      "bytes": 3043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-4h-long.json",
+      "sha256": "70b6f12b19c2de492e75da003e107d8cbb909cd748a2daf51854bbc474dbdc0f",
+      "bytes": 3018,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-4h-short.json",
+      "sha256": "9725d0a48379a8174241f39e539cfd487f72c36a39339d987b04747f84b1afed",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-5m-long.json",
+      "sha256": "be20d9a48a397088aea5f90a8670ccdcb87b477002c721579133d22333503e24",
+      "bytes": 3016,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-fair_value_gap-5m-short.json",
+      "sha256": "cc9f56c04e8118bd1c01ba0621dd9b07349b66780d39620a95bb009c7bba90b2",
+      "bytes": 3042,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-15m-long.json",
+      "sha256": "a9143205789bb91f90e3216c32c52e8dc3c718217a248aa2dc35b37172488fe4",
+      "bytes": 2956,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-15m-short.json",
+      "sha256": "ba784859f03746e0e4480dd937e44320aab1db27a3626dc6ac9cc736c53bcb1e",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-1d-long.json",
+      "sha256": "1a4ee292f1c0fc3b165e2a106795be1956983c56f2703a4204f7b5051f4cdd32",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-1d-short.json",
+      "sha256": "09378ee559fa32e744a3861245761ea708b7b89ee97aa01169a9e7ef28e6cdd7",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-1h-long.json",
+      "sha256": "079de5177bcbf2efedda09fe80ec5c18b53f7b3f5831a5a71503b2c170428aa2",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-1h-short.json",
+      "sha256": "0013967ca4a29c1c7e53412def826882449b924e682f0719013002ecfb4d5b1f",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-1m-long.json",
+      "sha256": "a9d05c2a027ade0acba3fdae643a6a409c25c5af5fe57edc4f49c928bb160fc6",
+      "bytes": 2952,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-1m-short.json",
+      "sha256": "9980d1462e032275888d14b500b758c488111c11e1fa42ffac3f4a1fbb92837c",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-4h-long.json",
+      "sha256": "028775c55eec43407b3b84d339c1e41282498e18bdc0500c3262d81003bd1b1e",
+      "bytes": 2954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-4h-short.json",
+      "sha256": "df118cfbe6b8e7e048a30d703ae7cf958c2900ebbfa320321da32ecbe7d4a5d4",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-5m-long.json",
+      "sha256": "1ff0eb293bb8a371b392b6f04432c85b78feace3b93b3fb93cf1414dc0683512",
+      "bytes": 2953,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-flip_zone-5m-short.json",
+      "sha256": "c3f14fa25c3d8433f49b49e4b829d161af7a07e96a817172242f8b88df909ac2",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-15m-long.json",
+      "sha256": "6d30275b38c5868179b278d96a72c526433b49afba3d3254dda948d14fb3c0a9",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-15m-short.json",
+      "sha256": "6876f32d76607690dadc26a177111c3d03f116bcbe951f9f5ac16e02cdfd46d7",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-1d-long.json",
+      "sha256": "910708f2611b2589109612aaf243b3f3eb8b452aa3bf9f2fc3d0c1659be2a504",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-1d-short.json",
+      "sha256": "ce2835f446b737ec9e5adfc158b6e505c223773ef43afdfcd660e40a101ed2b9",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-1h-long.json",
+      "sha256": "8353a26876509f915e9c146c17478d3e24db53d463b449c8b81481e5b6876560",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-1h-short.json",
+      "sha256": "e5d241ba0a592ed0e4abac7809bf1f2664ab1ef47636301b3c826a58068a3d88",
+      "bytes": 3002,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-1m-long.json",
+      "sha256": "977e10cebc60130d2a08407902e00b75cd3ae84ecab8320e2a65fa89cdce51ea",
+      "bytes": 2977,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-1m-short.json",
+      "sha256": "8d836a6b60f8e91c6796ab97ee8040a9bc6fa90c6887d6dc9ebe8eccdec1db6e",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-4h-long.json",
+      "sha256": "2bf1409b93ef97f85a4c1de5b55ba5171318fcd7f9733dce200b69ba29adcbce",
+      "bytes": 2979,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-4h-short.json",
+      "sha256": "74842edb896fd4f4cf8f98d64db3203c91828ee552d39753872b743dc300e331",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-5m-long.json",
+      "sha256": "6768d66c5f9468ed06bfa2d5725068569470a75c73fc63ff1777e79a8f7911af",
+      "bytes": 2978,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-level_bounce-5m-short.json",
+      "sha256": "be4b3a632c4d489538749c0c638b8ae9e2dbe9779799f4a861299784634c96b5",
+      "bytes": 3003,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-15m-long.json",
+      "sha256": "2138d048af81197f94f86f5027b198d1e1f0f0c8eb352114e58b900dc040bee3",
+      "bytes": 3029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-15m-short.json",
+      "sha256": "a5f600e4575de79cc0727d76af4a14dca36b56495e8f01942c123a43fd8e5423",
+      "bytes": 3056,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-1d-long.json",
+      "sha256": "1c937399c1abe8df27b3ae04fdf94f13463b2283ecdd1ed3c27117a8c02a61bd",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-1d-short.json",
+      "sha256": "774b251a268d8091c2432b0fb69efe2c678d32f55beeaa1e9cef68ad4a16e24c",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-1h-long.json",
+      "sha256": "a00271d0be93c78b953fddf8ba28d54b68dcbebe2b8bc15091c264edb3366da9",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-1h-short.json",
+      "sha256": "de36a2a6d6f57543503bd28d26154e0d43804597befcc95bd07b99bf714b0679",
+      "bytes": 3049,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-1m-long.json",
+      "sha256": "c14d02e1864fe955f3f4274aed9d439464a8c628f1249397b40434b01498ba67",
+      "bytes": 3025,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-1m-short.json",
+      "sha256": "7b82a77312baf4de05f396e1db1c689cae36eac1125248dc25d0f7474ba327df",
+      "bytes": 3051,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-4h-long.json",
+      "sha256": "21b7d519a7ce2594faa1d540b7f52422d6a4b5cac0b174d592413c30a13c163d",
+      "bytes": 3027,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-4h-short.json",
+      "sha256": "b51ac2340d788635f3cebec54862cca11e5e668418921c9e239aca29cb4b2f30",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-5m-long.json",
+      "sha256": "4c6a77cfe8460552c19674323194abf00094f336ca4f65f41810f79ba5bbb188",
+      "bytes": 3026,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-supply_demand-5m-short.json",
+      "sha256": "86f279c90d9de410a0e86950b24402195974150ec37602fec00ef0a44521eeda",
+      "bytes": 3053,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-15m-long.json",
+      "sha256": "bc8e2edb6451933bc665ee304ecf71f61ff26b808bcc41a398623eea7efdea34",
+      "bytes": 2984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-15m-short.json",
+      "sha256": "de79f135aa7f33ca408900dfba511c5976a17420977f80e0e5951cbce6d68f66",
+      "bytes": 3008,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-1d-long.json",
+      "sha256": "39a19734e2a38d99951494e4cb334d33ab07f8e602c8f65ba812cbb4c32d2484",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-1d-short.json",
+      "sha256": "317ebcaa5b000515c7b92af26ef2d1ab54932c84814c4e29d26d16dd851de453",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-1h-long.json",
+      "sha256": "474d2d70c3019c371218ca6439e945f7300b899fdcfc3d40648680f4bd4b57e5",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-1h-short.json",
+      "sha256": "b1bdf93f79e43842e0d46cb43a9c83d40131888fd9daade102e267f19816c9ba",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-1m-long.json",
+      "sha256": "b3a89ff9d07253af27258b1a3df9ae9782bb13185845e08c43935f070ee25475",
+      "bytes": 2980,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-1m-short.json",
+      "sha256": "c43849a0a202705f45b2e0899a7d6b856cc23be93737d265fd95a0aec95d6130",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-4h-long.json",
+      "sha256": "9ebdd07cdeca9ff4278d3a3de391d3294f026675b17a13cea5bedaf76de4f859",
+      "bytes": 2982,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-4h-short.json",
+      "sha256": "2883d776f3212d8ec20f07a57e85723f3913ac35668f8648d9f46300996ffa46",
+      "bytes": 3006,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-5m-long.json",
+      "sha256": "74bb6a1f266156ac63db1ad4fda3a4312d7d7f2c88b21327a23a2c793fdbfb13",
+      "bytes": 2981,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-sweep_reclaim-5m-short.json",
+      "sha256": "b5da56747347f0d105670887ef1551dd1aae1c2bcce566e2e948228110a79093",
+      "bytes": 3007,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-15m-long.json",
+      "sha256": "6a6ec28ade239d23643caf61522916b6b91723c652b05c9cd88f7ad88d929bd2",
+      "bytes": 2967,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-15m-short.json",
+      "sha256": "296d20a8d51fb1f49769ea23ee23802e49f42708317e95329fe23d303c0de4cf",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-1d-long.json",
+      "sha256": "2559aa1be438a72f89fda635821794fce36a60a9e0c3384327e461d35cd1974b",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-1d-short.json",
+      "sha256": "ec4099a737c8398f1b5977f929c1418d9a6f7332cac91ac43386d03e17906a51",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-1h-long.json",
+      "sha256": "b6c6d131c2bce3162b88b85b48c118b32fe9fab0413f50b3ccf6dd2a52e67802",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-1h-short.json",
+      "sha256": "c0b9fe9cb41c57b45ca3419ca093f12e7ae01744b574f1e67d4024c416be75ab",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-1m-long.json",
+      "sha256": "0403d6de104539634b9c1b29c2654e7de22b12ae6f2432e8fa0db5894426e1b8",
+      "bytes": 2963,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-1m-short.json",
+      "sha256": "3bd519666799cd1da4b85c20dd6b26415d5d2ce4580feaf6eab5b716357bbf32",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-4h-long.json",
+      "sha256": "9afebc78c8dba522079ef22bda5adbfa1a7b9eaeefb49bf7812436d5040ad7e4",
+      "bytes": 2965,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-4h-short.json",
+      "sha256": "790f79d51639f18ac904e87c262b73b4621cdeb6f5aade98767704277e5bbd68",
+      "bytes": 2991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-5m-long.json",
+      "sha256": "c284b081bc2a2ece78a48f9fbad79680935b22d8f8c7652b417ad75a71acd65d",
+      "bytes": 2964,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_line-5m-short.json",
+      "sha256": "01ba311c62c027b42427cb9cee343e03d665255d429fc494fe5fad0697c20856",
+      "bytes": 2990,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-15m-long.json",
+      "sha256": "7b2df099895ab40d878e2c7d7f886f1d742a1c6e906d37c17288e4269d9d64ea",
+      "bytes": 3050,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-15m-short.json",
+      "sha256": "47335a9233852fbea4a8f880dd2778244949297640ad3697dd7321a191d31d3a",
+      "bytes": 3074,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-1d-long.json",
+      "sha256": "99a670802980b24be5a4c0788649e9e8ca8f887d8d5f6d974ab3925a60bd8078",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-1d-short.json",
+      "sha256": "b714e8aeb6c592dbd12d7a696ed8abc15518d7ec7764d584d21b85e2877a26cc",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-1h-long.json",
+      "sha256": "aae3ab521da988c164462ef53c928b052486d772ea84f0b2fb8481008bece4df",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-1h-short.json",
+      "sha256": "ac97b90551c759cd943c72b210f09ee1a1c9686b5a4311c9c9ace58bab10ce77",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-1m-long.json",
+      "sha256": "c6775d1fd6838fb70033eca018b12049a4ff28d7849d27f704340a8b082a3e13",
+      "bytes": 3046,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-1m-short.json",
+      "sha256": "6b65bc0cbb7b1392867d1d0cc205f8e78903ac0cefa0799f035ee8deb9e6dad0",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-4h-long.json",
+      "sha256": "5c0d77c6b2d160e989cb256cf658ec4ddb574297c63e98995c6c85ba291ca515",
+      "bytes": 3048,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-4h-short.json",
+      "sha256": "96cecab319063d8c9fe45da99aa4c02383ddee25d5d65dcea8dc36375fcd2d98",
+      "bytes": 3072,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-5m-long.json",
+      "sha256": "79a112504cab03acb7cc849637886f31d3bd6edb1193fe81ee85b1aa37c90fb1",
+      "bytes": 3047,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T123524467665Z-confirmation-calendar-and-input-guards-full-regression/strategy-matrix/MATRIX-trend_pullback-5m-short.json",
+      "sha256": "d10811abf7c672db2ef165a6d90ee0f7d2e7f851605f16744b48ecfd0cdfe676",
+      "bytes": 3073,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

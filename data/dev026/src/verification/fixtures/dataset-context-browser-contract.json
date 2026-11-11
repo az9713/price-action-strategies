@@ -1,0 +1,9 @@
+{
+  "revision": "D040",
+  "sessions": ["2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09"],
+  "symbols": {"desktop1920": "DCPA", "desktop1280": "DCPB"},
+  "unrelated_historical_dataset": "90f347229b2fb03ec112ee71",
+  "original_legacy_job": "4e851c9015634b7a9dbf06619770d894",
+  "search": {"count": 1, "seed": 42, "mode": "common_random", "family": "break_of_structure", "timeframe": "1m"},
+  "required": "Both desktops import declared synthetic geometry, run the prespecified actual worker search, show exact saved type/instrument/source/fingerprints, switch the UI selection to existing genuine historical data without executing it and retain the original synthetic label. Reread/export saved account and aggregate context and every CSV identity. Open an actual old source job and display not-recorded, without rewriting it. Download both offline decks and verify every page's bounds, zero network/runtime errors and screenshot evidence. No financial passing criterion, fabricated historical prices or final-data access."
+}

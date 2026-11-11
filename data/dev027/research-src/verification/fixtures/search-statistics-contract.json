@@ -1,0 +1,28 @@
+{
+  "revision": "D038 / RULEBOOK0.18",
+  "requirements": [
+    "RES-008",
+    "RES-004",
+    "RPT-001",
+    "RPT-002",
+    "UI-003"
+  ],
+  "source": "https://davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+  "scope": "Connect the existing DSR formula to complete saved parameter searches; a diagnostic, not a candidate gate or a substitute for the source-style trade-twin funnel.",
+  "policy": {
+    "effective_trials": "None resolves before queueing to powers of ten up to the raw search count plus that count. Custom1..16 distinct strict integers1..count; sorted canonically. These are assumptions, never estimated independence.",
+    "dispersion_mode": "empirical or assumed. Empirical sample SD of all finite per-session SRs across every evaluated configuration, including losses. At least two finite SRs required. Assumed requires an explicit finite nonnegative per-session SR SD. Empirical rejects an ignored supplied value.",
+    "returns": "Complete saved daily marked-equity percentage returns, zero risk-free assumption. Do not annualize inputs to the DSR formula. At least4 finite observations, positive sample return SD and finite bias-corrected skew/raw kurtosis. Preserve null/nonpositive-equity returns as undefined; never replace with zero.",
+    "single_trial": "N=1 uses zero rejection benchmark and needs no cross-trial dispersion; retain missing empirical dispersion explicitly.",
+    "limits": "No automatically inferred effective independent count. Scope is this search; undisclosed prior searches and serial dependence are not corrected. Zero dispersion is labeled as mechanically flat, not evidence against overfitting.",
+    "report": "Keep original account profit, sample/moment/dispersion counts, raw sampler counts, each configured assumption/score/undefined reason and original part hash. No pass/survived/profitable flag from DSR.",
+    "durability": "Freeze policy in original job payload before prices, include it in existing input/part/plan hashes; no root publication on summary failure. Cached recovery obeys existing authority."
+  },
+  "verification": [
+    "Independent stdlib moments and NormalDist oracle; positive/negative, fewer than4, null/nonfinite/bool returns, zero/overflow moments, one/zero/two valid accounts, assumed/empirical/zero dispersion, trial-count boundaries and monotonic sensitivity.",
+    "Actual API/worker search with preserved settings, complete row coverage, cancel/resume/corruption/source authority and guarded unsupported requests before prices.",
+    "Saved-only JSON/complete long CSV/offline presentation reads; forbid raw-price access during exports. Independently reread every statistic/fact and both browser profiles using actual nonempty historical search accounts; show undefined without invented scores.",
+    "Add search_statistics.py to unchanged95% statement/90% branch numerical gate, full current regression and relevant source mutations."
+  ],
+  "unchanged": "All83 requirements/422 cases/120 baseline combinations and original accounting tolerances remain binding. No host recipes, actual10000 twins, large-search performance, global independence estimate or final acceptance is claimed."
+}

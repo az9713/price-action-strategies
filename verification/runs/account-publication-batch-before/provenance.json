@@ -1,0 +1,17 @@
+{
+  "source_root": "data/dev027/research-src",
+  "source_core": "7ac7b05eba40515c896b4d23fd462545dd9e8942f56f404bf666eddaceca0c52",
+  "files": [
+    {
+      "path": "backend/lab/account_checkpoints.py",
+      "sha256": "53362a25de2c5e6466e3976448d796e71050caf8915e9c335a6d86c9204b136c"
+    },
+    {
+      "path": "backend/lab/worker.py",
+      "sha256": "4a841d9905b7235a3055ba78671e527f2f48acfe954fa0eb57270859c36830f4"
+    }
+  ],
+  "original10000_failed_receipt": "20261110T214811540835Z-main-retry-current-real-market-10000-capacity",
+  "red_batch_contract_receipt": "20261110T220349743154Z-bounded-account-publication-real-original-behavior-before-batch",
+  "source_only_no_credentials_or_market_data_copied": true
+}

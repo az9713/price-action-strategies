@@ -1,0 +1,27 @@
+{
+  "case_id": "PERF-001-C02",
+  "count": 100000,
+  "smoke_count": 60,
+  "worker_count": 1,
+  "seed": 42,
+  "dataset": {
+    "input_kind": "synthetic",
+    "session": "2026-10-05",
+    "symbol": "SPY",
+    "regular_minute_rows": 390,
+    "baseline_fixture": "verification/fixtures/strategy-baselines.json",
+    "base_price": 150,
+    "positive_start_minutes": [10, 130, 250],
+    "mirrored_start_minutes": [70, 190, 310]
+  },
+  "families": ["level_bounce", "breakout", "flip_zone", "trend_pullback", "trend_line", "break_of_structure", "change_of_character", "sweep_reclaim", "supply_demand", "fair_value_gap"],
+  "timeframes": ["1m", "5m", "15m", "1h", "4h", "1d"],
+  "sampling": "legacy",
+  "proof": {
+    "unique_complete_configurations": true,
+    "one_original_attempt_and_no_reuses_per_configuration": true,
+    "verify_every_part_report_digest_computation_digest_and_sidecar": true,
+    "verify_complete_original_root_and_terminal_commit": true,
+    "report_nonempty_trade_and_zero_trade_account_counts": true
+  }
+}

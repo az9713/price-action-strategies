@@ -1,0 +1,866 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T053515254574Z-full-strategy-matrix-first",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T05:35:15.255812+00:00",
+  "finished_at_utc": "2026-11-08T05:37:22.666363+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+    "verification_plan_sha256": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+    "catalog_sha256": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+    "source_files": {
+      "PLAN.md": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+      "VERIFICATION_PLAN.md": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+      "RULEBOOK.md": "9badfde31c1b6066033e4c58b762b0ccf79b55a896dd763973a46f2df44af780",
+      "decisions.md": "3b99c60fb3cfbb637cb27c105046a1e74cf3a8b202ca930c021b5de629785300",
+      "README.md": "8fede02caa0f65c6598275a0ba2f25ed7e521b302c509bb3d4948172294791d0",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7d8001366efca0e352d3c755f7006cc3d9cc07a157f17cfd87d88cce3289af44",
+      "verification/catalog.json": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+      "verification/implementation-map.json": "a95a532284674b0f603b0cab8f972bcbd034acf7c0f2c58be2eb901b60fcd712",
+      "verification/record_check.py": "9bb0807706f1e7bb9358a63c5fe5f566b6163f7e20d8d86bea8639d710d415cf",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "88062c68869f8aec5b2e5ad280d9a566720e463be728fdcdcdbbcda271484199",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "dfaddf81c1561e1d4743df0cb10ae2ba5f1aad3746459d7b78edaace0b7c8a42",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "c2e6470285adc09a1d4e1f47e364bfe66e4f8cc3bf7036a76968f5fcb55ceed3",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "f404420ad3f33585262f784000731d9f080c5511dc3c12b3adda7f7f2c42bfb2",
+      "backend/lab/models.py": "21a8d31403e2e71e4a4706cee0dd261cb21c2a30a4b43aafc2d3e8374ebc9dfd",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "f0351732f81e6c9df5a79c6fb52ebef3aa08cbd4d8423b69fb2958e47cc24c20",
+      "backend/lab/signals.py": "f2a115e2fbde7cfdb7be0abc9f11c9f2f7c7ed6c623fe6b0bf14a6816f2499b7",
+      "backend/lab/store.py": "6f971486b5a1f9e3eb4f4f376ab62e2db37d62616fc7d83cace0f83318ca3f09",
+      "backend/lab/worker.py": "e0da79e3cf02cb9562adf35f7cca7ecba10e6f0309df9b472d3c26835ab0a31e",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "dc27a09498b63f5e3c07f263fa4f7b5a95cfba63f314375fdb210dab1bd820f2",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "e8e73789cabb62947144d1848b1faf66b0aa0aac822c24d50c477fba4211d109",
+      "verification/build_catalog.py": "0a9243c13d63cfe2b3116ef160d78b7a435323d7accc8637aff6ab62deb48349",
+      "verification/check_browser_outputs.py": "f8e8c0617332169dbd0de4d07cfda5db3ae437c6a9ac5efb24bb92e049af6fd5",
+      "verification/check_evidence.py": "2c439b461b3e5907a7d33b4389f7c29686dc21fdbb932d33ac41db2f90df4a7d",
+      "verification/frontend_check.py": "7511aa0d086a7cf838ddca152e54daf1af28a689a4d615f4b466057f371cfb1a",
+      "verification/reference_execution.py": "dac3a0c80b55f91cf19962b5ef540615439df83be81dfeb5c2d9d2bc49ffa017",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "7e84930dc6de5a2387dbc370f808cad0024fb0440583955cb9589a1be37dcd83",
+      "frontend/src/Charts.tsx": "5d19e0570c717696efef822153c46cb7e37b232b5c14fd091483a2f0f5db12d7",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/style.css": "c4f3c1b3f7b3cd729a9ee71c36d555f434f7bf4076241b9e155e872b0bf72d04",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/research.spec.ts": "bdbcaba15c5a6ebf612acd64756f7972c5b5ac2b6e5aedc8144f24fc3fc1ab93",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "3a5f5af5b084890440e74ad9b8ce8e4c57b688e3b26aaeb613d9c2fa4deb3d44",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "9badfde31c1b6066033e4c58b762b0ccf79b55a896dd763973a46f2df44af780"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/strategy-baselines.json",
+        "sha256": "c70313e231c02097a4d3782536da07897cc4fa3016544899e949fcb540dff05d"
+      },
+      {
+        "path": "verification/fixtures/execution-reference-contract.json",
+        "sha256": "2ce26087a4d3f18320960c7fbbdd5a8bc405d1a0bf88f4f0abeb4c4fc88d59fa"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_strategy_matrix.py",
+      "--junitxml=verification/runs/full-strategy-matrix-first.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/stdout.log",
+      "sha256": "c5b36de1e93c4be736c3e78cc79e3b206d16f016a1004c44537272f7c3a38c64",
+      "bytes": 194,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/full-strategy-matrix-first.xml",
+      "sha256": "f1a66a64603c9943880f9c2e3e84e6088a0072eeb767a132a41659364c83f200",
+      "bytes": 16651,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-15m-long.json",
+      "sha256": "02225548b6dff42d701d11b1ce192253574670f0602f0eeceee56e28558e857a",
+      "bytes": 2744,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-15m-short.json",
+      "sha256": "ef4e40d8d2ff62a9dc923be073df0fd4f4fce1c0d38d5412554ec2a92ef81287",
+      "bytes": 2770,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-1d-long.json",
+      "sha256": "23ffb3943bbaec8ac215875da6510e1c56eebc390e8d06188d0049d9aaadff38",
+      "bytes": 2741,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-1d-short.json",
+      "sha256": "2261800ee6ad84ba751b3a1e75361d1576f95ed8209e9db028abfe486351bac8",
+      "bytes": 2766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-1h-long.json",
+      "sha256": "20980248749911ace59fef01929de0ac0c02d8d87b9806143471c81221ecc820",
+      "bytes": 2741,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-1h-short.json",
+      "sha256": "6f688b19da21362a6443de6f0e3e0edf8f08d02f1e3c92e42753a35e528f6271",
+      "bytes": 2766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-1m-long.json",
+      "sha256": "1e72e4240f4c99ab1db23bb3f965c63e56e4d14c03a9c835099ba69232275773",
+      "bytes": 2741,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-1m-short.json",
+      "sha256": "33bcaeebfb183e1f1a2657f49c71668fe0f178d035acbd65001f3e93c5c194e5",
+      "bytes": 2769,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-4h-long.json",
+      "sha256": "6234ac55313adfb81f7d6f5412474d0e3ad061502f4d4ed8830790d49185b6b7",
+      "bytes": 2741,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-4h-short.json",
+      "sha256": "10ec65a76a1d905449773e1fe2262bc77f921990d01d7668dba5a6c09d51ea1f",
+      "bytes": 2767,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-5m-long.json",
+      "sha256": "0fc1ef353061ce86743cda62a857657e84fc3ba86f2d1f30ebcc237388dd1d5d",
+      "bytes": 2741,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-break_of_structure-5m-short.json",
+      "sha256": "d507c9eeb38ab7154db8eff220bf1b13353bcf5e350f1f8ae44151bc37c81902",
+      "bytes": 2767,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-15m-long.json",
+      "sha256": "c955917a9114c861b3bd45df87bbf2f2bfb738348738d1040ef42a63c6011170",
+      "bytes": 2664,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-15m-short.json",
+      "sha256": "775e368339c3de4f4a32d3ac0388b1bfad6d3b35d65944cf1c80fe66c0513475",
+      "bytes": 2692,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-1d-long.json",
+      "sha256": "d9adf377b1378c129b8b4253215a961e6b6e3fbb41b26ea1c21bf3ccc72e1b48",
+      "bytes": 2661,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-1d-short.json",
+      "sha256": "019a99ea3b2cd8d12096937d82933bfac7920f140f3ee2c666919d488445d31a",
+      "bytes": 2687,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-1h-long.json",
+      "sha256": "47b51eb9ec2af73b5df9e03ed12d09a838bbdc9b9f2542dac4eca9aa45d1019a",
+      "bytes": 2661,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-1h-short.json",
+      "sha256": "f4ac38b25827e7f915978d757ab10e99be0f6a9c8fbd6e3884f54c87bec7b829",
+      "bytes": 2687,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-1m-long.json",
+      "sha256": "898abcf7d35f39a3db53a39bc405ae61bd204cd4dc108521a548c36fa6696be7",
+      "bytes": 2661,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-1m-short.json",
+      "sha256": "4ac7856918c42fa7c174341f6d8bab8486ff401370599e4a1d3835f7b5f59df3",
+      "bytes": 2690,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-4h-long.json",
+      "sha256": "89537fb20a9fe29847b9683f21a660fcd6ca86a9c670b26453e68dffecc803cf",
+      "bytes": 2661,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-4h-short.json",
+      "sha256": "ddecc7b3c36dcba4f0aeec3a13aaec2bb7da1239d796eb9f95ef495c5068a968",
+      "bytes": 2687,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-5m-long.json",
+      "sha256": "c7b2350c1e198ad8eeee3193d03ec8040d46bca138e282a79cc808648295e6ae",
+      "bytes": 2661,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-breakout-5m-short.json",
+      "sha256": "151f6791a652ef993a1bfd25fad10b312d0fd4358f377645f27973f42e655a2a",
+      "bytes": 2689,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-15m-long.json",
+      "sha256": "fe2d81e5bee7b1333a9960ccd694432161e885792920aacd37ba4336b965add9",
+      "bytes": 2701,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-15m-short.json",
+      "sha256": "590d494d2054cfd1eed3edc2a9aedd14afbc3d062787551ba66a4440693c5206",
+      "bytes": 2721,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-1d-long.json",
+      "sha256": "c0bef434c6b210a74d550ad0c714c319a66509849733dc569457be4da9f098d3",
+      "bytes": 2698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-1d-short.json",
+      "sha256": "dfab0aed04be5243858a3f1c468e7fe12b7a471cd517aab1b0333272ff7c1698",
+      "bytes": 2717,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-1h-long.json",
+      "sha256": "d120b81a488d9d86c91782ceccd176545b6de3c38bf3cfc2dd713d9d4fb9cf3d",
+      "bytes": 2698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-1h-short.json",
+      "sha256": "40a3087e2239719a6e91153c57469bed9dd095b21b2e7b7b95cbaa4d5c91e7c3",
+      "bytes": 2718,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-1m-long.json",
+      "sha256": "ea440f80fefde06cc75d152697c89f3dbd2f5cf369325096584901a43f9b66df",
+      "bytes": 2698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-1m-short.json",
+      "sha256": "0a92299ea38b952a4a4598439a3d6344e42180099c0fac943ca71aa02b86b108",
+      "bytes": 2719,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-4h-long.json",
+      "sha256": "7faef744ff82729f3a70400660e8dfb8389a3cad79ce60228d922cfa31e05641",
+      "bytes": 2698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-4h-short.json",
+      "sha256": "f20ec095b23705aaa82b1602e15bed2240ea355ebb2b18413369928df78e65f0",
+      "bytes": 2717,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-5m-long.json",
+      "sha256": "912b41828497983465c70cfb01ade0f0c324f40ccedf0b3ec3ac5fe6c25d1e91",
+      "bytes": 2698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-change_of_character-5m-short.json",
+      "sha256": "990d31e578e4b9084eb320f72b4afbb01facb5772fa83a332851304bfc773623",
+      "bytes": 2720,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-15m-long.json",
+      "sha256": "fae3ed67cc2d98cc0b6f9208da06303cce5db72824d0254d827dc7f0c7ea4f7b",
+      "bytes": 2736,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-15m-short.json",
+      "sha256": "5fba2467fcedbc9e1a1f3724ee2f902ffc28958859fbe4d44dd0fb1abdd17cfb",
+      "bytes": 2763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-1d-long.json",
+      "sha256": "4891f070f849ad54f0077e8c3c6e66f9317d9b535ac3ce8b65dba40cca601b9b",
+      "bytes": 2733,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-1d-short.json",
+      "sha256": "9135df9be19c188760e9f858e5bd442921402184b5614aaf40e59243815d3820",
+      "bytes": 2758,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-1h-long.json",
+      "sha256": "4e7608e21a8a7f4ca736ee254d738b3249c00a44ee88bf45e2c86728a7bb9c45",
+      "bytes": 2733,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-1h-short.json",
+      "sha256": "51679eda16b09fdb00b54141a3740b171da9e47da7b460a82c5c57850272d2d4",
+      "bytes": 2758,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-1m-long.json",
+      "sha256": "dedd046629e170bc23ef4be6ac07e5dcadee4724cee341f32d1fe39d0b75e81e",
+      "bytes": 2733,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-1m-short.json",
+      "sha256": "e837a9a584d703ef0f88581aab15ca919b9bd2650ecfbafca933106d9d2edf6d",
+      "bytes": 2760,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-4h-long.json",
+      "sha256": "22a4fe238415e809bc04d0085629ea1361f330101af42003da2486ec8e03e0d5",
+      "bytes": 2733,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-4h-short.json",
+      "sha256": "58d23dc18e3575647f2c5bf445a6a5efce9e4b2ddd415a2997564e0764326d9e",
+      "bytes": 2757,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-5m-long.json",
+      "sha256": "193c41729c703ae926754b38838ef74d11fbc9d54974fd698801ae0b0dea0260",
+      "bytes": 2733,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-fair_value_gap-5m-short.json",
+      "sha256": "2f575bedf96b5add3bbbff69de6478672ee10991b3fe88d5c09bb587e3f15cf2",
+      "bytes": 2759,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-15m-long.json",
+      "sha256": "e29690a3c8355d169a55eead09903ff4e2a864a9a39c70160aa62ae0dfb082a1",
+      "bytes": 2672,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-15m-short.json",
+      "sha256": "ba22b42d4d679422612e26dbb2f01ea424897dbb7620171510ba94deab914379",
+      "bytes": 2698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-1d-long.json",
+      "sha256": "3a32f4c4034212b0de7ba764bd24b6638fec582bae467b6b3a4abc3d10d8e9c5",
+      "bytes": 2669,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-1d-short.json",
+      "sha256": "ff19cc06e533898b8bf04f2ddc0f92e4a8fb9fd0415098ac3da769eb21a706a5",
+      "bytes": 2693,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-1h-long.json",
+      "sha256": "93c57271ce576fca77b49f8ae3de20da9b7c3a2f43d40f0519f6deb8b808da66",
+      "bytes": 2669,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-1h-short.json",
+      "sha256": "5ab897c88f7037168ed703114792d5bda8d3936514cc103ad457dbb6bffdb400",
+      "bytes": 2694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-1m-long.json",
+      "sha256": "d8da538a6af89bd62e2a613358ff4a6b248471dc241b2f8607c5ab8c84cc2709",
+      "bytes": 2669,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-1m-short.json",
+      "sha256": "291eed03899dfb9b1cb9f3ce201c2e9aa89ae6d74942bea5236a8a57c7104414",
+      "bytes": 2697,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-4h-long.json",
+      "sha256": "160dbf67f14c535b8953275b26b918cf947bb7e1de7d3ba8e412451bd8b4bd8c",
+      "bytes": 2669,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-4h-short.json",
+      "sha256": "788ad633acd9d642b4760af80efb34719e5e9ed9b021a923b0206bcf9cda8cb9",
+      "bytes": 2694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-5m-long.json",
+      "sha256": "3891901dcf462cd85820a315d5b7d2168b31d2804342e982d4961942bc6e7820",
+      "bytes": 2669,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-flip_zone-5m-short.json",
+      "sha256": "aa79e7b18f3d445d2770adef2395e62b2ecc7ef71e5b9afa6c8e115e832d3f7e",
+      "bytes": 2696,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-15m-long.json",
+      "sha256": "bf127766211a7ccda1f42442fa6fb70250d455f37804a9aa21d5ba59528949ff",
+      "bytes": 2697,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-15m-short.json",
+      "sha256": "b30d74d44b8da99cbe40f7544dd4b77b5320c8c9f3c534d5cea9185534a8c9e3",
+      "bytes": 2722,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-1d-long.json",
+      "sha256": "57ac342c057e439f25f6b9d96837b0a37ef2330bb639ba0d7e1dab6fb4af7a50",
+      "bytes": 2694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-1d-short.json",
+      "sha256": "c600f1ed95e401f84cad50b2e25c5424b4691905d8a68038582923f8b2b74399",
+      "bytes": 2717,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-1h-long.json",
+      "sha256": "519ac75a55639e088906a66377bb741725722ebe45756c03d0816fe7abd4216d",
+      "bytes": 2694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-1h-short.json",
+      "sha256": "fdcd7cf4cef40020168f0cf63bdbec8c53948fe0bf3efe4cf6f1987465b93bf4",
+      "bytes": 2717,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-1m-long.json",
+      "sha256": "4c0e5972b2c359690dec180132a9ab4e639fbd351498d92627da65a2e1f1f9e6",
+      "bytes": 2694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-1m-short.json",
+      "sha256": "cfa9f16f0cf8ed5a583d07899a1a526a30475ba4c9b8c04f09640d1d64b0ae04",
+      "bytes": 2720,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-4h-long.json",
+      "sha256": "9dcec51c053d70a4db738ce0f5dac830eeaa8d90b33611ef694f7dacb7650f6c",
+      "bytes": 2694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-4h-short.json",
+      "sha256": "c70c018fed1bc1dd3beee54164f475de313a052d2711ab17b1b7eef06e423a17",
+      "bytes": 2718,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-5m-long.json",
+      "sha256": "740eb07de08c47a95743aaaaef2e6cf3a2e394c4064c641f44a7a8075fca6c45",
+      "bytes": 2694,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-level_bounce-5m-short.json",
+      "sha256": "95272239801198a187ad13b7023518c69eb776c105ef95549383989b56257ee1",
+      "bytes": 2719,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-15m-long.json",
+      "sha256": "6561f0d48b0f1b8fb37fa42168ed34838ff19357bd3071c055dd9d35c2b91050",
+      "bytes": 2745,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-15m-short.json",
+      "sha256": "5539e6d57505a3918c4d57a6e9802720776943c727d5a7ff48b03acd99a51d4d",
+      "bytes": 2772,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-1d-long.json",
+      "sha256": "b680f4432c85b11833f435f4b440105436ee44371a01679ac2da3ff1e7219ca6",
+      "bytes": 2742,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-1d-short.json",
+      "sha256": "c3c94d21c53e1d1c875588e90da96d3495639b54f1cf9ce67d6bad618326f940",
+      "bytes": 2768,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-1h-long.json",
+      "sha256": "ab1aab1cdcd9a291090bb56992da95ca204b714d590317fbf7bc0c0dac7f3c99",
+      "bytes": 2742,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-1h-short.json",
+      "sha256": "f8abcbd1affc3ebbdcb48f59db806e24a7352a7e8d9aa8ff640e42ce3006747e",
+      "bytes": 2764,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-1m-long.json",
+      "sha256": "6f4ffacd2c64ce8149b8b5759e77174fb38efe9e6a94c07bdf3500f0681375a4",
+      "bytes": 2742,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-1m-short.json",
+      "sha256": "376646f4cc30bd232c28192729e3a23340da2fb590de6aa77ff6bedd017b3a4b",
+      "bytes": 2768,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-4h-long.json",
+      "sha256": "8bdaad754c5f8d1265a31659b783bb41c112531d8bc16b4cc1505f72cf71c39c",
+      "bytes": 2742,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-4h-short.json",
+      "sha256": "6468a8541b297c55946b5e1d7330169eb0c1f5f360450442e91e23d90b2c94e1",
+      "bytes": 2768,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-5m-long.json",
+      "sha256": "da9076b9e919fc15cbd6bba28f66b71c8730906597e36da490633f71d56f4039",
+      "bytes": 2742,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-supply_demand-5m-short.json",
+      "sha256": "92df5ad2f1b711dd194dbcde71573cd217f7cdbeda7a54877e5e92892cdef37f",
+      "bytes": 2769,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-15m-long.json",
+      "sha256": "a654100c302fc1425cd51bb96c71b45113d7bc637461d3b9da63349f3b6d9888",
+      "bytes": 2700,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-15m-short.json",
+      "sha256": "a9957c38a53c52b5101423fd889c21f02e67406c3523e256d131c39468d02f1c",
+      "bytes": 2724,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-1d-long.json",
+      "sha256": "b9ca92171ba80684d1efaf3175a317aec49cf78a508540ab6cd062b974127b49",
+      "bytes": 2697,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-1d-short.json",
+      "sha256": "5907b4e90de58c70d901e8132bd92c892d1b784e2d1f20c5a484a7bbd0b3c5c8",
+      "bytes": 2721,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-1h-long.json",
+      "sha256": "0ea900c440cf04bdb4459e31e784c56924e2c46e5125500a95d61680c190fed8",
+      "bytes": 2697,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-1h-short.json",
+      "sha256": "b6109880138c6ada36f3e28e1b10feb8bd29f7f476b16b3e7dd6fe55cf023a21",
+      "bytes": 2722,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-1m-long.json",
+      "sha256": "499cefebad79bb0516d6cbfc5938aac46e06cd5e661bcdbd57f04f5d9461f588",
+      "bytes": 2697,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-1m-short.json",
+      "sha256": "0432c8c26a5418c6cf6e1139467c130983cd92464d48d0acf410106098f78baf",
+      "bytes": 2724,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-4h-long.json",
+      "sha256": "c2dc1d8c8b1a22cb5942dc5a9dcdf1cc1378581255e0dd4e40d595bb38abb33e",
+      "bytes": 2697,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-4h-short.json",
+      "sha256": "b6c050cd209439e1d32c1a2bc22b9504bc03efe9ce2e7878d4929009140b6026",
+      "bytes": 2721,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-5m-long.json",
+      "sha256": "bb4b08869ea2603660aed70439c84c5f8fa647cf176dca373edf2e81bd944eb8",
+      "bytes": 2697,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-sweep_reclaim-5m-short.json",
+      "sha256": "d5dbb83760cba960b0033fba2bd335dee89feacc7341f604643bff015fabf446",
+      "bytes": 2723,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-15m-long.json",
+      "sha256": "a08645ca9ca95da818463cb413304d72ecae712b242ee2854eabd8bd129f840d",
+      "bytes": 2683,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-15m-short.json",
+      "sha256": "d19797a7866e978b6cf4d6e10aaae1829c40be2e8e3b1df684fc4cac3aae872b",
+      "bytes": 2707,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-1d-long.json",
+      "sha256": "d028eec16f433f1938aff8a62f85d493e8e2141449c6ec4f71a26db31c5feac3",
+      "bytes": 2680,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-1d-short.json",
+      "sha256": "b1f0d180d99d4bde847241a20e609ca2b5d647f2543b7e2399724a478a4d9f24",
+      "bytes": 2705,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-1h-long.json",
+      "sha256": "1e2fb6d42017f9cb7092fb21482eb403bfda2eed82cabf85f77a79ae1c0420e6",
+      "bytes": 2680,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-1h-short.json",
+      "sha256": "4f2ccd887eed0d5a80918850bb0ec129e690018c9586de142592520e8b39e2dd",
+      "bytes": 2705,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-1m-long.json",
+      "sha256": "7da8a6214cc64743581750a533517a6cbc67e77bccadcc8196a715a1a343976e",
+      "bytes": 2680,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-1m-short.json",
+      "sha256": "8245930685e9c1d1c32d420dfef824a6a3b6974517f73584e202e0fa101586ca",
+      "bytes": 2707,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-4h-long.json",
+      "sha256": "c9adb73c3c536b02e0889a69f14d894c5c4e1eb9f907aa4fbc1f749eb6d34f7e",
+      "bytes": 2680,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-4h-short.json",
+      "sha256": "f6513e84b6dfd705dfa319ddc1b1ceaa0284c28e3e877a8f35d67d3f9555b528",
+      "bytes": 2706,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-5m-long.json",
+      "sha256": "9669f91ce9d3f7442b7547c7f9d5c0ad6e2241e5f76990780def010193a4e077",
+      "bytes": 2680,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_line-5m-short.json",
+      "sha256": "b241b0a78f9010b24010b4954af5885f94c7efd6cca8f306b4ec2a5aefe77d2b",
+      "bytes": 2706,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-15m-long.json",
+      "sha256": "0586995932070d145ae81e842a5455d1d07cd1da703854afd093f94a1099e489",
+      "bytes": 2766,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-15m-short.json",
+      "sha256": "9ca3973e386b97aeb05d1cdc919bf15172b05844bf17d726943fceed50d57eab",
+      "bytes": 2790,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-1d-long.json",
+      "sha256": "ed771b4692ec6a9a3cfca5c4a784bf24a05d689f487540068bfc6de597bbd991",
+      "bytes": 2763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-1d-short.json",
+      "sha256": "e6ed2dc90313f80de264d1d171f16946f2c12e69043384ee578259d8e1afbea6",
+      "bytes": 2787,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-1h-long.json",
+      "sha256": "af2f5d07bd4cf9c87d6aaa35811738a1ce06ff9e6afdbd845c916ca80708d19d",
+      "bytes": 2763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-1h-short.json",
+      "sha256": "b03f608572df9063db11a5201f79aa727b6b29104d3d6433aa3e1d269a04243d",
+      "bytes": 2788,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-1m-long.json",
+      "sha256": "a5d3062a647b86b606e078b475c98a0a62ccdff03bbfcb4930572f4bbc78d4b7",
+      "bytes": 2763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-1m-short.json",
+      "sha256": "80c6147958dacbf9fdccc15d834cd5e07946b39898c9c71fb3f95d7954b3c119",
+      "bytes": 2790,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-4h-long.json",
+      "sha256": "4251c9c08c71835f04be1db4cbdb0dec41cda0e63ecc776b21ba8beffd91ac67",
+      "bytes": 2763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-4h-short.json",
+      "sha256": "04f898f7d905051239516d21d0613505cc1548cec315957b8f4b7c36dd258cba",
+      "bytes": 2787,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-5m-long.json",
+      "sha256": "afcdf96c6f7143a82cba0983b998813634e906244a11ecd8ebb36ad9052ad871",
+      "bytes": 2763,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T053515254574Z-full-strategy-matrix-first/artifacts/verification/runs/strategy-matrix/MATRIX-trend_pullback-5m-short.json",
+      "sha256": "96d5ad4aaa60e9f8238b3c49b23e0cc531b29b95929f69068c2f99c4f5d4dd3b",
+      "bytes": 2789,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

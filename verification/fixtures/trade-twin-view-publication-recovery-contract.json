@@ -1,0 +1,18 @@
+{
+  "scope": "D046 saved-view and original-result publication lifecycle; supplements unchanged83/422/120 acceptance",
+  "boundaries": ["after_view_file", "after_root_temp", "after_root_commit", "after_view_event", "after_generic_view"],
+  "real_interpreter_exit_codes": [81, 82, 83, 84, 85],
+  "atomic_transaction_boundaries": {"inside_root_transaction": 86, "inside_view_transaction": 87},
+  "atomic_transaction_controls": ["actual interpreter death", "shutdown before transaction commit"],
+  "additional_controls_at_every_boundary": ["cancel", "shutdown", "ownership_loss"],
+  "must_verify": [
+    "Actual subprocess exits at the declared original boundary, with marker and original file/event identities",
+    "Lease expiry is injected only after process termination is observed; actual Store.claim performs recovery",
+    "One original child and preparation attempt; preserved uncommitted view/temp artifacts",
+    "Original result remains unpublished before commit; one original result event and unchanged committed bytes after recovery",
+    "No original financial trial computation, source regeneration or replacement job during resumed empty-account work",
+    "Cancellation and stale owners cannot publish later evidence or complete the job",
+    "Resume completes and permits actual saved page and full export validation",
+    "Empty original yields20000 not-generated sets and zero financial attempts; never call this financial-set acceptance"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "source": [
+    "research/screenshots/prompt_page_08.png",
+    "research/screenshots/prompt_page_09.png"
+  ],
+  "touch_contract": {
+    "horizon": 50,
+    "hold": "A future candle reaches one touch-time prior ATR beyond the expected-side near boundary before a completed close is more than0.25ATR through the far boundary.",
+    "touch_bar": "No favorable excursion from the touch candle is credited. A close-through at that decision close is an immediate break.",
+    "same_future_bar": "Hold wins when favorable excursion and opposite close-through occur in the same future candle: the opposite closing price necessarily follows the favorable intrabar extreme. This is not execution stop/target priority.",
+    "censoring": "Primary outcomes require the full50 future completed candles inside the evaluation window, even when a partial path resolved early. Partial observed outcomes remain separately recorded. Complete but undecided paths are unresolved.",
+    "rate_denominator": "Primary hold fraction uses every full-horizon touch, including unresolved outcomes. Resolved-only hold rate is separately labeled."
+  },
+  "shift_contract": {
+    "distance_at_birth_atr": [
+      1,
+      3
+    ],
+    "minimum_real_feature_distance_at_birth_atr": 0.5,
+    "attempts": 128,
+    "seed_policy": "SHA-256 keyed by seed,feature identity,replica and attempt; no outcome input.",
+    "lifetime": "Same birth and scheduled expiry; parallel geometry updates. Each real/random feature has its own visits and close invalidation. Never copy real touch times. Later real features do not retroactively redraw an earlier shift.",
+    "matched_cohort": "A feature enters real-versus-random summaries only when every requested shifted replica is valid at birth. Full real observations and unshiftable reasons remain recorded.",
+    "birth_invalidation": "Each geometry already beyond the close-invalidation boundary at its birth is inactive forever; recovery cannot reopen it."
+  },
+  "tables": [
+    "levels_vs_shifted",
+    "touch_count",
+    "wall_target",
+    "shrinking_bounces",
+    "line_vs_zone",
+    "wick_vs_close",
+    "flip_zones",
+    "bos_forward",
+    "choch_forward",
+    "sweep_vs_close",
+    "sweep_started_trends",
+    "trend_lines",
+    "gap_hold_fill",
+    "supply_demand_returns",
+    "pullback_depth",
+    "engulfing_at_levels",
+    "rejection_at_levels"
+  ],
+  "forward_horizons": [
+    10,
+    20,
+    50
+  ],
+  "bootstrap": "2000 resamples of whole touch/event sessions, using the same session draws for real/control, including eligible sessions with no events. Difference is real event-weighted mean minus pooled random event-weighted mean. If any draw has a zero denominator, no nominal95% interval is claimed; show valid-draw counts. At least two distinct eligible sessions are required before attempting resampling.",
+  "tolerances": {
+    "price_absolute": 1e-09,
+    "statistic_absolute": 1e-10
+  }
+}

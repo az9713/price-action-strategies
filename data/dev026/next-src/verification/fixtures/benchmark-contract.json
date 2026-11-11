@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "provenance": "Hand-authored passive-account expectations; none obtained from production execution.",
+  "entry_policy": "One attempt per instrument at the earliest evaluation open with a preceding completed minute. No accumulation, stop, target or rebalance. Alphabetical simultaneous order priority.",
+  "allocation": "Equal initial notional weights capped by symbol and aggregate exposure, subject to actual marked-equity/cash/fee and prior-minute participation constraints. Exposure limits apply at entry. Passive drift is not rebalanced.",
+  "cash_policy": "Same initial capital and eligible session closes, zero interest, no trades or fees.",
+  "tolerances": {"money_absolute": 0.0000001, "quantity_absolute": 0.000000001},
+  "cases": {
+    "round_trip": {"capital": 1000, "entry_price": 100, "exit_price": 110, "quantity": 9, "commission_per_share": 1, "fees": 18, "net_profit": 72, "cash": 1072},
+    "action_path": {"capital": 1000, "entry_price": 100, "entry_quantity": 10, "split": 2, "dividend_per_post_split_share": 1, "dividend": 20, "exit_price": 55, "exit_quantity": 20, "net_profit": 120, "cash_before_payment": 1100, "receivable": 20, "equity": 1120},
+    "volume_cap": {"capital": 1000, "reference_volume": 7, "participation": 0.5, "quantity": 3, "entry_price": 100, "exit_price": 110, "net_profit": 30},
+    "equal_weights": {"capital": 1000, "symbols": ["AAA", "BBB"], "prices": [100, 50], "quantities": [5, 10], "exits": [110, 45], "net_profit": 0}
+  }
+}

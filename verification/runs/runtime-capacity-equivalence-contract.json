@@ -1,0 +1,13 @@
+{
+  "scope": "D037 exact complete saved-account equivalence on the unchanged prespecified historical capacity sample; no profitability inference.",
+  "baseline_core_hash": "d0d24e6e256499458f47ee45cfb070e782ace2777bc9b7905558bd9a18b53c9f",
+  "baseline_job_ids": {
+    "100": "59d39cde00a447b8a6af2d3a69220d9c",
+    "1000": "e15195ea1b854db59873151ea93762c5"
+  },
+  "allowed_report_differences": [
+    "core_hash",
+    "numerical_contract"
+  ],
+  "required": "Every other complete report field and every row configuration identity must compare exactly. No tolerance widening or metrics-only comparison. Both source fingerprints must match their actual source inventories."
+}

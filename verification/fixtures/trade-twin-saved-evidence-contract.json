@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "scope": "Bounded inspection and complete exports of original saved financial sets and books; no signal, candidate or financial recomputation.",
+  "existing_obligations": "Original83 requirements,422 mandatory cases,120 combinations, strict10000 ordinals per policy and complete original cohorts remain binding.",
+  "authority": [
+    "Original completed job inputs, result_saved artifact and frozen financial manifest",
+    "Original committed preparation and each part header/file digest",
+    "Original owned start, computation, attempt and checkpoint evidence for each requested set",
+    "Full original set-row digest, complete membership, deterministic assignments and exact amounts",
+    "Original member binds exact book inputs, complete-book digest and bounded inspection-manifest digest"
+  ],
+  "new_computation_event": "Record each new financial set-row digest, trial/attempt/ordinal/policy inside the owned computed transaction before its checkpoint. Never synthesize missing events in historical jobs.",
+  "book_inspection_manifest": "At original book computation, bind complete scalar evidence and flat ordered chunk digests/counts for ledger, equity, encounters and rejected rows. Bind the manifest digest in every original member reference. Check the manifest against the actual complete book before original part publication. This permits bounded pages without trusting a rehashed derived view or loading a full financial book per request.",
+  "derived_storage": "A rebuildable SQLite view may hold compressed set rows, manifest headers and individual bounded array chunks. Its own digest or view event alone never authorizes content. Requested content must match original computation/member/part/root authorities. View rebuilding does not produce new financial outcomes, trials or original result artifacts.",
+  "pages": {
+    "policies": ["barrier_capped_elapsed_v1", "fixed_elapsed_v1"],
+    "set_ordinals": "0 through9999, strict integers; default25/max100 set summaries",
+    "members": "Whole original source order; default25/max100 members, no hidden cohort filtering",
+    "book_arrays": "Default25/max100 requested records; complete counts, deterministic offsets and next-page metadata",
+    "chunk_records": 25,
+    "chunk_expansion_max_bytes": 2097152,
+    "maximum_page_response_bytes": 8388608,
+    "maximum_manifest_expansion_bytes": 16777216,
+    "amounts": "Canonical Decimal strings throughout; no JavaScript float conversion for comparisons or saved amounts"
+  },
+  "exports": "A complete streaming saved-evidence export includes original frozen inputs/source baseline, sealed plan, financial manifest, every set/draw/member, every unique complete or failed financial book, original trial/attempt/checkpoint bindings and provenance. Never label a summary or truncated page a full export. Reverify authority before streaming and fail explicitly if it changes during streaming.",
+  "legacy": "Continue to reopen original summaries and explicitly identified original artifact downloads. Missing new original computation/inspection evidence cannot be repaired by inventing historical originals; require a new compatible account/comparison for new bounded inspection.",
+  "verification": [
+    "Real API pages and complete download contents reconciled with original committed files and events",
+    "No prices, signals, execute_twin, new financial jobs or new trial attempts on inspection/export/rebuild",
+    "All20000 saved ordinals and every member/book retained in full export",
+    "First/last/empty pages, invalid policies/IDs/ordinals/limits, failed sets and all event-array kinds",
+    "Missing/corrupt/oversized original artifacts, event reordering/deletion, trial/attempt drift and orphan view files",
+    "Self-consistently rehashed derived view/header/chunk/metadata cannot replace an original set or financial record",
+    "Original member binding prevents a different book, manifest, source or policy from populating an inspector",
+    "Actual owned worker publication/retry/death/cancel behavior and view rebuild preserve original attempts/results",
+    "Desktop/mobile/keyboard paging, complete exports, reload and obsolete success/error responses after selection changes",
+    "Actual current-source10000-set workflow and resource measurements including peak worker memory"
+  ],
+  "acceptance": "These contracts extend the implementation route and evidence, not the original success scope; final completion still requires all plan-wide gates."
+}

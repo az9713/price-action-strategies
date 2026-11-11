@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "input_kind": "authored_synthetic_contract",
+  "scope": "Selector unit tests use explicitly supplied completed-context tables, not independently detected features. Separate real-minute fixtures exercise actual aggregation, detectors, confirmation, calendar weights and independent account execution. Neither layer alone certifies all detector options or every compatible pair.",
+  "clock": "Setup15m known2026-10-05T14:30:00Z. Trigger5m completed candles before/at/after that instant. Modes may use the candle closing at the same instant, never one earlier. Count1-24 available trigger candles inclusively from the first at/after setup availability.",
+  "confirmation": {
+    "none": "Use setup availability even when a later trigger candle differs.",
+    "close_back": "Strictly beyond level100 in the intended direction; equality does not qualify.",
+    "rejection": "A lower/upper wick occupying exactly half the full positive range qualifies for long/short. A zero-range candle or just-below-half wick does not.",
+    "engulfing": "Directional real body includes the preceding real body, equality at its boundaries allowed. Opposite direction, incomplete coverage or unavailable preceding body rejects.",
+    "either": "Wick-only and engulf-only fixtures each qualify; a failure of both rejects.",
+    "lower_bos": "Use a strictly lower chart and the first same-direction BOS within the waiting window; opposite or absent BOS rejects."
+  },
+  "filter_boundaries": "Efficiency0.3 is admitted and a smaller value rejected. Open-session interval is09:30 inclusive to11:00 exclusive New York, with both DST offsets exercised. Higher/daily trend uses only completed states available by the confirmation clock. Unknown/absent state rejects. Gap confluence accepts only a same-direction active/new gap; an opposite gap does not erase a simultaneous qualifying one. Fresh flips require a preceding same-direction breakout.",
+  "run_filter": "Compare the confirmation close to the third/fifth prior trading-session close relative to its New York confirmation date. Exclude a same-date completed daily candle. Reject only a strictly same-direction run, admit equality, require sufficient known history. Never use a future daily close.",
+  "calendar_day": "News and run filters use the New York date when the signal becomes known at confirmation, not the setup date or the later fill date. A supplied news date has skip/half/full eligibility and weight effects. The versioned calendar acquisition/UI flow remains separately required.",
+  "overnight_counterexample": "Monday2026-10-05 setup at20:00Z confirms Tuesday2026-10-06 at14:00Z. Known daily closes Thu100/Fri101/Mon102, Tuesday confirmation99 and long level98. Third-prior close is Thu100, so this is not a three-session upward run. Tuesday news must skip/half the signal; Monday news alone must not.",
+  "identity_and_risk": "Preserve setup and confirmation clocks, side, source index, known level/stop/target, weights and deterministic full-configuration identity. Use real-minute fixtures plus the independent Decimal engine for news weight/risk/exposure effects; integer/capital constraints need not make half weight exactly half the shares.",
+  "tolerances": {"price": 1e-9, "money": 1e-7, "dimensionless": 1e-10}
+}

@@ -1,0 +1,41 @@
+"""Document checked account continuation and explicitly preserve unfinished product/release requirements."""
+from pathlib import Path
+import hashlib,json,os,shutil
+root=Path.cwd();out=Path(os.environ['PA_EVIDENCE_RUN_DIR'])
+checkpoint_id='20261109T145117701638Z-spread-account-current-original-source-overlay-and-evidence-checkpoint'
+p=root/'verification/receipts'/(checkpoint_id+'.json');receipt=json.loads(p.read_text(encoding='utf-8'));assert receipt['command']['exit_code']==0
+for a in receipt['artifacts']:
+ q=root/a['path'];assert q.stat().st_size==a['bytes'] and hashlib.sha256(q.read_bytes()).hexdigest()==a['sha256']
+checkpoint=json.loads((root/next(a['path'] for a in receipt['artifacts'] if a['path'].endswith('/spread-account-checkpoint.json'))).read_text(encoding='utf-8'))
+ids={}
+for item in checkpoint['selected_receipts']:
+ r=json.loads((root/item['receipt']).read_text(encoding='utf-8'));label=r['receipt_id'].split('Z-',1)[1];ids[label]=r['receipt_id']
+def find(fragment):return next(v for k,v in ids.items() if fragment in k)
+ledger_path=root/'verification/defects.json';ledger=json.loads(ledger_path.read_text(encoding='utf-8'))
+areas=['Originally absent account continuation','Original link/event and continuation API','Independent audit expected contract at wrong root level','Strict seeds,40-signal floor and missing account exports','Mutation parser expected an absent JUnit type attribute','Mutation multiline target did not handle Windows CRLF','Unrounded account-module branch coverage below90%']
+for index,(failure,area) in enumerate(zip(checkpoint['historical_failures_retained'],areas),1):
+ existing=next((d for d in ledger['defects'] if d.get('initial_evidence')==failure['receipt']),None)
+ value=dict(status='isolated_account_component_corrected_checked_global_integration_pending',area=area,initial_evidence=failure['receipt'],current_component_checkpoint='verification/receipts/'+checkpoint_id+'.json',final_acceptance_certified=False)
+ if existing is not None:existing.update(value)
+ else:ledger['defects'].append(dict(id='D-SPREAD-ACCOUNT-'+str(index).zfill(3),**value))
+ledger_path.write_text(json.dumps(ledger,indent=2),encoding='utf-8');(out/'defects.json').write_bytes(ledger_path.read_bytes())
+def prefix(relative):
+ def link(fragment,label):return '['+label+']('+relative+find(fragment)+'.json)'
+ return '\n\n'.join([
+  '## D045 in progress — full-cohort account continuation checked in isolation',
+  'The project remains active and not ready for final release. The verified0.24 app remains at http://127.0.0.1:8767. New code is isolated in data/dev025/src; its account-continuation API is implemented, but bounded selected-rule pages, a saved-child link in parent status and the new UI are not. The running app has not received these changes.',
+  'Only a complete original qualified spread may freeze financial trials. The continuation replays original qualification and verifies its proposal/signal/root/journal artifacts; inherits every selected rule in order and the original primary/date/seed/cost/account/news/gate/statistics assumptions; and atomically links one original child. Repeated/concurrent requests return that child, including failed/canceled children for resume. Caller overrides and exhausted parents are rejected. Original authority is checked before new/reused account work and again before publication.',
+  link('current-48-continuation','48 combined continuation/API/export/recovery cases')+' pass, with '+link('frozen-news-identity','a targeted frozen-news identity check')+' and '+link('original-link-direct','two strengthened link-boundary checks')+'. '+link('existing-257-spread','257 existing spread cases on this backend')+' also pass. Counts overlap with targeted checks and mutation baselines; they are not independent market replications. Two actual owned financial-worker deaths retain distinct attempts and reuse exact committed parts. Strict integer master/settings seeds and a40-signal floor are enforced.',
+  link('five-module-source-checked','All five new module gates')+' meet the unchanged95% statement/90% branch minima; the account module has100% statements and91.67% branches. Coverage databases are independently matched to original recorded JSON before actual-hit union. The initial88.89% failure is retained. '+link('byte-preserved-preflighted','Seven actual account-handoff mutations')+' are assertion-killed against a19-case green baseline; Windows line endings are preserved and targets are preflighted. Original code remains unchanged by mutation execution.',
+  link('current-48-original-lineage','Independent original-byte/lineage and Decimal account audit')+' reconciles110 trades,220 ledger entries and10 daily marks. '+link('complete-csv-fields','A second complete supplied-signal Decimal account and every CSV field')+' also reconcile; both synthetic losses remain included. Original-byte lineage is audited on the first account; the second export case audits saved JSON/CSV values. These are supplied-signal accounting checks, not independent detectors, vendor certification, source-scale execution or evidence of a trading edge.',
+  'The [source/evidence recovery checkpoint]('+relative+checkpoint_id+'.json) checks165 artifacts, retains seven historical failures and supplies an explicit source overlay over the0.24 archive. The next staged selection/link tests are preserved with this documentation snapshot and have not been executed. Credentials, real cached prices, databases, raw traces/coverage DBs, video media and installed dependencies are excluded.',
+  link('managed-tree','Current native process/asset/store check')+' observes one healthy managed app tree and348 idle jobs; duplicate-store startup is refused and no separate obsolete project Python process is detected in the bounded inventory. All test workers have retired. No process was killed; no manual taskkill is needed.',
+  'Next follow [the UI/backend plan](' + ('runs/' if relative=='receipts/' else 'verification/runs/')+'spread-ui-next-plan.md): bounded selected-rule pages and original saved-child metadata; usable preview/primary/budget/news/progress/cancel/resume/reopen/export/account UI; browser/mobile/keyboard/source-fact evidence; RULEBOOK0.25/schema/mappings; and owned idle shutdown/integration/restart. Whole-file integrity hashing still covers all Parquet bytes; primary predicates exclude other instruments from research computation, charts and viewed-window records, not necessarily physical row-group I/O.',
+  'The current full global regression and all global numerical gates remain pending for integration; the earlier2036-case full isolated run predates account continuation. All83 requirements/422 mandatory cases/120 baseline combinations remain binding.10000 matched trade twins, era/instrument replication/stability/equal-family ensembles, actual bounded100000 numerical stress, remaining detector/dial/lifecycle/input/scale/security/privacy/accessibility/clean-reproduction cases and final plan-wide conformance remain mandatory. Source: [AI Pathways/Brendan video](https://www.youtube.com/watch?v=z97PnFIPoFg). Exact private recipes/grid/engine remain unknown; futures, forex and crypto remain later options. Earlier checkpoint entries below are historical.'
+ ])+'\n\n'
+for name,relative in [('STATUS.md','verification/receipts/'),('verification/evidence-index.md','receipts/')]:
+ p=root/name;old=p.read_text(encoding='utf-8');assert not old.startswith('## D045 in progress — full-cohort');p.write_text(prefix(relative)+old,encoding='utf-8');(out/p.name).write_bytes(p.read_bytes())
+for name in ['spread-ui-next-plan.md','spread-next-integration-notes.md','spread_selection_paging_authored.py']:
+ q=out/'next-work'/name;q.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(root/'verification/runs'/name,q)
+value=dict(scope=__doc__,source_checkpoint=checkpoint_id,retained_failures=len(checkpoint['historical_failures_retained']),account_continuation_api_implemented=True,main_app_source_replaced=False,ui_integrated=False,full_current_global_regression=False,final_acceptance_certified=False)
+(out/'spread-account-documentation.json').write_text(json.dumps(value,indent=2),encoding='utf-8');print(json.dumps(value,indent=2))

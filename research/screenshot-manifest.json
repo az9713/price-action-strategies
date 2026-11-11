@@ -1,0 +1,307 @@
+{
+  "source": "source/video.mkv",
+  "method": "FFmpeg accurate input seek; one unaltered decoded frame per screenshot",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "screenshots": [
+    {
+      "id": "concept_map",
+      "source_seconds_requested": 73,
+      "source_frame_index_approx": 2190,
+      "path": "screenshots/concept_map.png",
+      "sha256": "3f1065fdadc25bdb0293694257f00c243f0dd6891dd1ef059857d9e39af44729",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=73s"
+    },
+    {
+      "id": "ten_setups",
+      "source_seconds_requested": 208,
+      "source_frame_index_approx": 6240,
+      "path": "screenshots/ten_setups.png",
+      "sha256": "ac96b9a83162426b33bcfe8eb1ebc0468a8b083b45d30f809ed756599561466a",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=208s"
+    },
+    {
+      "id": "subjective_levels",
+      "source_seconds_requested": 258,
+      "source_frame_index_approx": 7740,
+      "path": "screenshots/subjective_levels.png",
+      "sha256": "99cf8797992eb8d480c9ed1263581c5a0080c4da96cbde9222c58da9f47e759e",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=258s"
+    },
+    {
+      "id": "methodology",
+      "source_seconds_requested": 304,
+      "source_frame_index_approx": 9120,
+      "path": "screenshots/methodology.png",
+      "sha256": "794bab097df8517e3696d10086a7a853a821142eba6a5d3e9cc90b7247ac0b68",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=304s"
+    },
+    {
+      "id": "funnel",
+      "source_seconds_requested": 425,
+      "source_frame_index_approx": 12750,
+      "path": "screenshots/funnel.png",
+      "sha256": "131ebd873e4b88890832dfc3ca82cbf04542637231bb854d5914df97162757d5",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=425s"
+    },
+    {
+      "id": "win_rate_profit",
+      "source_seconds_requested": 450,
+      "source_frame_index_approx": 13500,
+      "path": "screenshots/win_rate_profit.png",
+      "sha256": "946a9cc6ca4614fd97a895cba606c5e9eddfcf4094daf1886e5dc515a170a9ea",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=450s"
+    },
+    {
+      "id": "timeframe_costs",
+      "source_seconds_requested": 482,
+      "source_frame_index_approx": 14460,
+      "path": "screenshots/timeframe_costs.png",
+      "sha256": "be309bb476a7f0f1b78938f4b69d6c25cc9a6069514f721ec6f855e298669dd4",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=482s"
+    },
+    {
+      "id": "random_levels",
+      "source_seconds_requested": 516,
+      "source_frame_index_approx": 15480,
+      "path": "screenshots/random_levels.png",
+      "sha256": "5e79f2487a0214271e6d8dd0fd5f102bcb3ca4f7c0c46baf3bef2800aa36bbe2",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=516s"
+    },
+    {
+      "id": "touch_count",
+      "source_seconds_requested": 540,
+      "source_frame_index_approx": 16200,
+      "path": "screenshots/touch_count.png",
+      "sha256": "fd12f410faac2e195c834d2947aaf97a004d16fe364b20c2f689fed2e3c8e313",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=540s"
+    },
+    {
+      "id": "level_rule_effects",
+      "source_seconds_requested": 591,
+      "source_frame_index_approx": 17730,
+      "path": "screenshots/level_rule_effects.png",
+      "sha256": "b573daefb418479f8351bcbd9c809008d526325b02119e2d269dfc3d2206335c",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=591s"
+    },
+    {
+      "id": "structure_follow_through",
+      "source_seconds_requested": 614,
+      "source_frame_index_approx": 18420,
+      "path": "screenshots/structure_follow_through.png",
+      "sha256": "999fb212555ea47c5b7aa838507d58408eddedc9e4994b0233b0e112ef0e5d61",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=614s"
+    },
+    {
+      "id": "trend_families",
+      "source_seconds_requested": 620,
+      "source_frame_index_approx": 18600,
+      "path": "screenshots/trend_families.png",
+      "sha256": "3a85ec8867204ad3c940bfbbe9f78b880a2e2b9af3a8ceeab9c70a75ceda18b7",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=620s"
+    },
+    {
+      "id": "common_trend_rules",
+      "source_seconds_requested": 627,
+      "source_frame_index_approx": 18810,
+      "path": "screenshots/common_trend_rules.png",
+      "sha256": "c206c214584997c0f68d56cdf42f1edd6edb6f861da830bc3eb1ce5cbe91bf07",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=627s"
+    },
+    {
+      "id": "confirmation",
+      "source_seconds_requested": 641,
+      "source_frame_index_approx": 19230,
+      "path": "screenshots/confirmation.png",
+      "sha256": "ab5c43d062215088b4f4ab2abe08131bf5d7e404776a73cc2d06552bcdcd922e",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=641s"
+    },
+    {
+      "id": "stop_models",
+      "source_seconds_requested": 665,
+      "source_frame_index_approx": 19950,
+      "path": "screenshots/stop_models.png",
+      "sha256": "30cc75bb8d24e4fe4a798c674eed2249cb27e4e5c41187c97b4aea580821a13e",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=665s"
+    },
+    {
+      "id": "context_filters",
+      "source_seconds_requested": 683,
+      "source_frame_index_approx": 20490,
+      "path": "screenshots/context_filters.png",
+      "sha256": "431c279b23b620dd770a882f2c663a74815552c4e1db978758373498851e3fa0",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=683s"
+    },
+    {
+      "id": "cross_market_check",
+      "source_seconds_requested": 700,
+      "source_frame_index_approx": 21000,
+      "path": "screenshots/cross_market_check.png",
+      "sha256": "149e12b8d5cd54717c9ce08fd767cc07a4cc85b07a641bfcc2a8209f7aab620a",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=700s"
+    },
+    {
+      "id": "holdout_market",
+      "source_seconds_requested": 719,
+      "source_frame_index_approx": 21570,
+      "path": "screenshots/holdout_market.png",
+      "sha256": "eed4ebcd22fd9c8ee481e5c9b3b0ac0f9d44b592a7c3a23899cf12ad3ff589ce",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=719s"
+    },
+    {
+      "id": "holdout_timeframes",
+      "source_seconds_requested": 734,
+      "source_frame_index_approx": 22020,
+      "path": "screenshots/holdout_timeframes.png",
+      "sha256": "0815dee572933efaf4e7c451bed8ee284569e84394da9d8e047c830cf6dcf60c",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=734s"
+    },
+    {
+      "id": "selected_equity_curves",
+      "source_seconds_requested": 765,
+      "source_frame_index_approx": 22950,
+      "path": "screenshots/selected_equity_curves.png",
+      "sha256": "a8a3daa328187118c819bc2cac880ac843f5e1d2d2e0cb781ca990b619ca73b6",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=765s"
+    },
+    {
+      "id": "family_robustness",
+      "source_seconds_requested": 790,
+      "source_frame_index_approx": 23700,
+      "path": "screenshots/family_robustness.png",
+      "sha256": "0537ff88c61c3d2dbdf7a44c96f654840a8de4dfc44446cf21b1787fa6a57fda",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=790s"
+    },
+    {
+      "id": "example_trade",
+      "source_seconds_requested": 875,
+      "source_frame_index_approx": 26250,
+      "path": "screenshots/example_trade.png",
+      "sha256": "5249172b44c17be121e32c3b796c672792da2f65c8c07534b9114f61c26b8314",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=875s"
+    },
+    {
+      "id": "prompt_page_02",
+      "source_seconds_requested": 964.25,
+      "source_frame_index_approx": 28928,
+      "path": "screenshots/prompt_page_02.png",
+      "sha256": "f7686c878eb3e83fbd495c4c23c045b3d6b8fed97b23ec58bd8c453f840b6edc",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=964s"
+    },
+    {
+      "id": "prompt_page_03",
+      "source_seconds_requested": 971.25,
+      "source_frame_index_approx": 29138,
+      "path": "screenshots/prompt_page_03.png",
+      "sha256": "fe215e522f2e637b55ca50f1eb74d26ef02ab3d4a4d4a4f6839c0d3bdb03bf3a",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=971s"
+    },
+    {
+      "id": "prompt_page_04",
+      "source_seconds_requested": 972.25,
+      "source_frame_index_approx": 29168,
+      "path": "screenshots/prompt_page_04.png",
+      "sha256": "14dd1863e0edecfe895f115ab746ab3b553483f8149d6b676ab7539c38702804",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=972s"
+    },
+    {
+      "id": "prompt_page_05",
+      "source_seconds_requested": 973.25,
+      "source_frame_index_approx": 29198,
+      "path": "screenshots/prompt_page_05.png",
+      "sha256": "26f4d45514425e8f890f875657686d23d5ed14d2936c9bc27f611c27ef4201e2",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=973s"
+    },
+    {
+      "id": "prompt_page_06",
+      "source_seconds_requested": 975.25,
+      "source_frame_index_approx": 29258,
+      "path": "screenshots/prompt_page_06.png",
+      "sha256": "28ffb49d7b43d62d5f03b237f46e5774f3ab4cb5a1d80ca7f479a5b412c3aab8",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=975s"
+    },
+    {
+      "id": "prompt_page_07",
+      "source_seconds_requested": 977.25,
+      "source_frame_index_approx": 29318,
+      "path": "screenshots/prompt_page_07.png",
+      "sha256": "15cbd4a851040043117e66a0230a0709aa71de96d9c30d9413b2643bdd7b9fb1",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=977s"
+    },
+    {
+      "id": "prompt_page_08",
+      "source_seconds_requested": 979.25,
+      "source_frame_index_approx": 29378,
+      "path": "screenshots/prompt_page_08.png",
+      "sha256": "5d0961aa0b9c6af66f0a5e944b1a79add87ffe9cd25ea37a9994e26a0c50ae5f",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=979s"
+    },
+    {
+      "id": "prompt_page_09",
+      "source_seconds_requested": 981.25,
+      "source_frame_index_approx": 29438,
+      "path": "screenshots/prompt_page_09.png",
+      "sha256": "628d71dd29013ff70d8d1bf76279a5afbda32e07974a5972a0ab2a81a3053cf4",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=981s"
+    },
+    {
+      "id": "prompt_page_10",
+      "source_seconds_requested": 982.25,
+      "source_frame_index_approx": 29468,
+      "path": "screenshots/prompt_page_10.png",
+      "sha256": "b258dcf3147eaf428ce0d2c092371b71522589ff5c2808e4deda18f68f65a9fc",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=982s"
+    },
+    {
+      "id": "prompt_page_11",
+      "source_seconds_requested": 983.25,
+      "source_frame_index_approx": 29498,
+      "path": "screenshots/prompt_page_11.png",
+      "sha256": "b5fdcef478b7e001095136b0e107ccc00263833f851a9f57eefa50ba16ab0ece",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=983s"
+    },
+    {
+      "id": "prompt_page_12",
+      "source_seconds_requested": 985.25,
+      "source_frame_index_approx": 29558,
+      "path": "screenshots/prompt_page_12.png",
+      "sha256": "04244b05d37315efd7afad19c33995de42fe6bb7f2c4d5dd9a82d2d79bc8b811",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=985s"
+    },
+    {
+      "id": "prompt_page_13",
+      "source_seconds_requested": 987.25,
+      "source_frame_index_approx": 29618,
+      "path": "screenshots/prompt_page_13.png",
+      "sha256": "33c80d23eaf3f7afe2529b3afd4ebda0475abecd79ee0ec3ab01f2f31c953222",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=987s"
+    },
+    {
+      "id": "prompt_page_14",
+      "source_seconds_requested": 988.25,
+      "source_frame_index_approx": 29648,
+      "path": "screenshots/prompt_page_14.png",
+      "sha256": "511d7cfd62742cd87b0572ed6c7b231b026490f9109b752e8abff41248628ddd",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=988s"
+    },
+    {
+      "id": "prompt_page_15",
+      "source_seconds_requested": 989.25,
+      "source_frame_index_approx": 29678,
+      "path": "screenshots/prompt_page_15.png",
+      "sha256": "a381f1ec31cd53a8fa3f767ba0fb5a89a689b8a4fbde3614b898440a6d3ced09",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=989s"
+    },
+    {
+      "id": "prompt_page_16",
+      "source_seconds_requested": 991.25,
+      "source_frame_index_approx": 29738,
+      "path": "screenshots/prompt_page_16.png",
+      "sha256": "9da934e70e503f15cdd158fd20b78c810c6416f35a66581c38fc98915bd5fdeb",
+      "source_url": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=991s"
+    }
+  ],
+  "timestamp_note": "Requested times; nearest representable source frame, approximately within one frame. Not exact transition boundaries."
+}

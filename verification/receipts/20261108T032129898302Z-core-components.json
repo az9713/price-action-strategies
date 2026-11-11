@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T032129898302Z-core-components",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T03:21:29.899129+00:00",
+  "finished_at_utc": "2026-11-08T03:21:39.488751+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+    "verification_plan_sha256": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+    "catalog_sha256": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+    "source_files": {
+      "PLAN.md": "5b02d9384af0cd2560c69d22ca60d85b2362885ccceba2ddc45b45086b9ed086",
+      "VERIFICATION_PLAN.md": "56dccbf180ff20c1b51b256ef44f8dd36cfd7705977d882592f8af85c978f0dd",
+      "RULEBOOK.md": "35e2aab111fe55b3287385d9038286314cb997e8886e59d8b97368212e2eaf40",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "8e87f3c8fcb4a77f1e9c75e149bbe6dacc206c25f512552e7044f982d5a3fad7",
+      "verification/catalog.json": "680609047fe153bb32898d328bc8d6f9e49a7dd6eaea9c4eb6dc84ca0f91d931",
+      "verification/record_check.py": "09cafa8431a4d5a2862e89c89aeede1801266b8d4763d146505218210b97f23b",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/cli.py": "7db9b335481dd3467c02390806bedcb3e72a171c407c774bb7cd22503b063374",
+      "backend/lab/config.py": "c5bb9941debbc08cf0ffe1d3b826293b50ce39929eb89c4656b6892bfcf08d74",
+      "backend/lab/data.py": "1d441aac85e0cd32c17bc6918a59a182f63164d4b89c007ba83230ca717486e5",
+      "backend/lab/engine.py": "cfe1a081b56bc32d919b2ff1aa8d572d67f42533a9ba751a1be8b7acfcd3b2ab",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "f404420ad3f33585262f784000731d9f080c5511dc3c12b3adda7f7f2c42bfb2",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/signals.py": "d2c18e05755d725de93bdb1f3b66d5f7c7a426905e1d6982ddf7e94222753e5b",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_execution.py": "7c8032159866d79d746fbcfad730327341b5b7b71193f051b0c79235e4d137cd",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_rules.py": "292b3d29e7bdec06a87ec68cbeb56bd16f6cd2348014c8663365cda9b3ab7b25"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "35e2aab111fe55b3287385d9038286314cb997e8886e59d8b97368212e2eaf40"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/core-fixtures.json",
+        "sha256": "a381d0a4a2f92d4068cd72c65a349a341a73add441b97a001a6d8615ce561963"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "--junitxml=verification/runs/core-receipt-junit.xml"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T032129898302Z-core-components/stdout.log",
+      "sha256": "d5247495cf9767bbf43523ca79b2688541f3ca5cc51dfd104b9d2bdba8bf2786",
+      "bytes": 182,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T032129898302Z-core-components/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/core-receipt-junit.xml",
+      "sha256": "7bbdc24debb6578d7b4232d94dd0e607ea84fa2a3b94af0465d8083c1dbfa0b7",
+      "bytes": 8466,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

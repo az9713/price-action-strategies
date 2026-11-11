@@ -1,0 +1,87 @@
+import {test,expect} from '../../../frontend/node_modules/@playwright/test/index.mjs';
+import {readFile} from 'node:fs/promises';
+import {join} from 'node:path';
+import {pathToFileURL} from 'node:url';
+
+test('complete generated research registration qualification both-instrument final exports reload and source errors',async({page,browser},info)=>{
+  const fixtures=JSON.parse(process.env.PA_FUNNEL_DATASETS!),fixture=fixtures[info.project.name];
+  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  let evidenceReads=0;page.on('request',request=>{if(request.url().includes('/funnel-evidence/'))evidenceReads++;});
+  await page.goto('/');await page.getByRole('button',{name:/Research funnel$/}).click();
+  const form=page.getByRole('region',{name:'Complete research funnel',exact:true}),workflow=page.getByRole('region',{name:'Saved research workflow',exact:true});
+  await expect(form.getByRole('link',{name:'Source YouTube video',exact:true})).toHaveAttribute('href','https://www.youtube.com/watch?v=z97PnFIPoFg');
+  await form.getByRole('textbox',{name:'Research name',exact:true}).fill('Research <img src=x onerror=window.__injected=1>');
+  await form.getByRole('combobox',{name:'Primary dataset',exact:true}).selectOption(fixture.dataset_id);
+  await form.getByRole('textbox',{name:'Primary instrument',exact:true}).fill(fixture.symbols[0]);
+  await form.getByRole('textbox',{name:'Replication instrument',exact:true}).fill(fixture.symbols[1]);
+  const windows=[['Discovery','2026-11-02','2026-11-03'],['Earlier discovery era','2026-11-02','2026-11-02'],['Later discovery era','2026-11-03','2026-11-03'],['Later chronological check','2026-11-04','2026-11-04'],['Protected final test','2026-11-05','2026-11-06']];
+  for(const [label,start,end] of windows){await form.getByLabel(label+' start',{exact:true}).fill(start);await form.getByLabel(label+' end',{exact:true}).fill(end);}
+  await form.getByRole('spinbutton',{name:'Number of unique versions',exact:true}).fill('2');
+  await form.getByLabel('1h',{exact:true}).uncheck();await form.getByLabel('1d',{exact:true}).uncheck();await form.getByLabel('1m',{exact:true}).check();
+  const creation=page.waitForResponse(r=>r.url().endsWith('/api/funnel-studies/generated')&&r.request().method()==='POST');
+  await form.getByRole('button',{name:'Freeze and register complete research',exact:true}).click();
+  const created=await creation;expect(created.status()).toBe(201);const sid=(await created.json()).id;
+  await expect(workflow).toContainText('2 frozen versions');await expect(workflow).toContainText('protected; not consumed');
+  await form.screenshot({path:info.outputPath('frozen-research-form.png')});
+  const inputPending=page.waitForEvent('download');await workflow.getByRole('link',{name:'Download complete frozen study inputs',exact:true}).click();
+  const input=await inputPending,inputPath=join(process.env.PA_FUNNEL_PRIVATE_EXPORTS!,info.project.name+'-inputs.json');await input.saveAs(inputPath);
+  const original=JSON.parse(await readFile(inputPath,'utf8'));expect(original.study.spec.configurations).toHaveLength(2);expect(original.study.spec.cohort_generation.price_or_outcome_dependent).toBe(false);
+  await workflow.getByRole('button',{name:'Start complete qualification',exact:true}).click();
+  await expect(workflow.getByRole('button',{name:'Inspect saved qualification',exact:true})).toBeVisible({timeout:150000});
+  const status=await(await page.request.get('/api/studies/'+sid+'/funnel-workflow')).json(),qid=status.qualification_job_id;
+  await workflow.getByRole('button',{name:'Inspect saved qualification',exact:true}).click();
+  const output=workflow.getByTestId('research-funnel-output');await expect(output).toContainText('Original qualification results');await expect(output).toContainText('0 candidates selected before final evaluation');
+  const qp=page.waitForEvent('download');await output.getByRole('link',{name:'Download complete saved results JSON',exact:true}).click();
+  const qd=await qp;await qd.saveAs(join(process.env.PA_FUNNEL_PRIVATE_EXPORTS!,info.project.name+'-qualification.json'));
+  await workflow.getByRole('button',{name:'Reserve protected final evaluation',exact:true}).click();
+  await expect(workflow.getByRole('button',{name:'Inspect saved final evaluation',exact:true})).toBeVisible({timeout:150000});
+  await workflow.getByRole('button',{name:'Inspect saved final evaluation',exact:true}).click();
+  await expect(output).toContainText('Both-instrument final results');await expect(output).toContainText('Versions 1–2 of 2');
+  await expect(output.getByRole('link',{name:'Download account JSON',exact:true})).toHaveCount(4);
+  const finalPending=page.waitForEvent('download');await output.getByRole('link',{name:'Download complete saved results JSON',exact:true}).click();
+  const finalDownload=await finalPending,finalPath=join(process.env.PA_FUNNEL_PRIVATE_EXPORTS!,info.project.name+'-final.json');await finalDownload.saveAs(finalPath);
+  const final=JSON.parse(await readFile(finalPath,'utf8'));expect(final.rows).toHaveLength(2);expect(final.report.instrument_count).toBe(2);expect(final.rows.every((r:any)=>Object.keys(r.reports).length===2&&!r.candidate)).toBe(true);
+  const accountPending=page.waitForEvent('download');await output.getByRole('link',{name:'Download account JSON',exact:true}).first().click();
+  const account=await accountPending;await account.saveAs(join(process.env.PA_FUNNEL_PRIVATE_EXPORTS!,info.project.name+'-account.json'));
+  const evidence=output.getByRole('region',{name:'Complete cohort export tables',exact:true});
+  expect(evidenceReads).toBe(0);
+  await expect(evidence.getByRole('button',{name:'Reload complete evidence table',exact:true})).toBeDisabled();
+  await evidence.getByRole('combobox',{name:'Saved evidence table',exact:true}).selectOption('family_daily');
+  await expect(evidence).toContainText('Records 1 to 8 of 8.');
+  expect(evidenceReads).toBe(1);
+  for(const [name,suffix] of [['Download complete table CSV','family-daily.csv'],['Download complete cohort ZIP','bundle.zip'],['Download standalone offline report','offline.html']]){
+    const pending=page.waitForEvent('download');await evidence.getByRole('link',{name,exact:true}).click();
+    const download=await pending;await download.saveAs(join(process.env.PA_FUNNEL_PRIVATE_EXPORTS!,info.project.name+'-'+suffix));
+  }
+  const htmlPath=join(process.env.PA_FUNNEL_PRIVATE_EXPORTS!,info.project.name+'-offline.html');
+  const offlineContext=await browser.newContext({offline:true,viewport:info.project.use.viewport,colorScheme:'dark'});
+  try{
+    const offline=await offlineContext.newPage(),network:string[]=[];
+    offline.on('request',request=>{if(/^https?:/.test(request.url()))network.push(request.url());});
+    await offline.goto(pathToFileURL(htmlPath).href);
+    await expect(offline.locator('h1')).toHaveText('Research <img src=x onerror=window.__injected=1>');
+    await expect(offline.locator('#status')).toContainText('2 complete saved records.');
+    await offline.locator('#table').selectOption('family_daily');await expect(offline.locator('#status')).toContainText('8 complete saved records.');
+    await offline.locator('#query').fill('2026-11-06');await expect(offline.locator('#status')).toContainText('4 matching records');
+    await expect(offline.locator('img')).toHaveCount(0);expect(await offline.evaluate(()=>Object.hasOwn(window,'__injected'))).toBe(false);
+    expect(await offline.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+    expect(network).toEqual([]);await offline.screenshot({path:info.outputPath('network-disabled-offline-family-evidence.png'),fullPage:true});
+  }finally{await offlineContext.close();}
+  expect(await page.evaluate(()=>Object.hasOwn(window,'__injected'))).toBe(false);
+  let settledPolls=0;const countSettled=(request:any)=>{if(request.url().includes('/api/studies/'+sid+'/funnel-workflow'))settledPolls++;};page.on('request',countSettled);await page.waitForTimeout(4600);page.off('request',countSettled);expect(settledPolls).toBe(0);
+  await workflow.screenshot({path:info.outputPath('both-instrument-final-results.png')});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+  await page.reload();await page.getByRole('button',{name:/Research funnel$/}).click();
+  await expect(workflow.getByRole('textbox',{name:'Open study by ID',exact:true})).toHaveValue(sid);
+  await expect(workflow).toContainText('consumed by the original final job');
+  await workflow.getByRole('button',{name:'Inspect saved final evaluation',exact:true}).click();await expect(output).toContainText('Both-instrument final results');
+  let release:()=>void=()=>{},seen:()=>void=()=>{};const held=new Promise<void>(r=>{release=r;}),received=new Promise<void>(r=>{seen=r;});
+  const qurl='**/api/jobs/'+qid+'/funnel-summary';await page.route(qurl,async route=>{const response=await route.fetch();seen();await held;try{await route.fulfill({response});}catch{}});
+  await workflow.getByRole('button',{name:'Inspect saved qualification',exact:true}).click();await received;
+  await workflow.getByRole('button',{name:'Inspect saved final evaluation',exact:true}).click();await expect(output).toContainText('Both-instrument final results');release();await page.unroute(qurl);await expect(output).toContainText('Both-instrument final results');
+  const wurl='**/api/studies/'+sid+'/funnel-workflow?*';
+  await page.route(wurl,route=>route.fulfill({status:409,contentType:'application/json',body:JSON.stringify({detail:'Authored original workflow evidence unavailable'})}),{times:1});
+  await workflow.getByRole('button',{name:'Reload research evidence',exact:true}).click();await expect(workflow.getByRole('alert')).toContainText('Authored original workflow evidence unavailable');await expect(output).toHaveCount(0);
+  await page.unroute(wurl);await workflow.getByRole('button',{name:'Reload research evidence',exact:true}).click();await expect(workflow).toContainText('consumed by the original final job');
+  await workflow.getByRole('button',{name:'Inspect saved final evaluation',exact:true}).click();await expect(output).toContainText('Both-instrument final results');expect(errors).toEqual([]);
+});

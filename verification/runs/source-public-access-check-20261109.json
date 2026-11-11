@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-11-09T09:43:23.594847+00:00",
+  "scope": "Read-only public source-access check; no account, form, subscription, message or purchase",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "archived_description": "research/source/video.info.json",
+  "description_links": [
+    "https://www.aipathways.io/",
+    "https://www.skool.com/aipathways/about"
+  ],
+  "observations": [
+    "The archived video description links the author website and community, without a direct public code repository.",
+    "The checked public author site describes coaching/custom system building.",
+    "The checked community about page identifies it as private with a paid subscription. Its contents were not accessed.",
+    "These checked public pages do not establish complete definitions or exact membership of the six named source recipes, or provide the original engine/data."
+  ],
+  "limitations": "This is a bounded check of the linked public pages, not proof that no code exists elsewhere or that private membership contains the exact video project. No paid dependency is added to this app."
+}

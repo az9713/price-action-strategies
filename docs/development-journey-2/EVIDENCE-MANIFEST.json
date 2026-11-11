@@ -1,0 +1,1708 @@
+{
+  "cutoff_utc": "2026-11-10T02:45:57Z",
+  "previous_documents": [
+    {
+      "path": "DEVELOPMENT-JOURNEY.md",
+      "sha256": "af5492f1abbaf491d8aa9e67c6922394305ce1bf217964acab21f37d28965bfd",
+      "bytes": 66094
+    },
+    {
+      "path": "docs/development-journey/ACCOUNTING.json",
+      "sha256": "75e4fc0f3272bbf10370afada8cc7b96fad476fe53312eaeb6a2a08b94d39a19",
+      "bytes": 2567
+    },
+    {
+      "path": "docs/development-journey/EVIDENCE-MANIFEST.json",
+      "sha256": "5d44e1872dfa4c1e347ff48d150d9a7e8e7e9f8df2196435561df51ab41e44d3",
+      "bytes": 366599
+    },
+    {
+      "path": "docs/development-journey/FAILURE-LEDGER.md",
+      "sha256": "616089e86ae884bc42f611dcf47b34aa885eb4a4ce25782a906e292f393a9b5c",
+      "bytes": 183459
+    },
+    {
+      "path": "docs/development-journey/MILESTONE-TIMELINE.md",
+      "sha256": "5c90072b0ab8446874c818c338b950af21c955f15c7f3c97c83de182bed6f416",
+      "bytes": 211760
+    },
+    {
+      "path": "docs/development-journey/RECEIPT-LEDGER.md",
+      "sha256": "ab3ca559bae6777171ed64a2c0478241df852bbf3249e5e1df98f094c9c09951",
+      "bytes": 318254
+    },
+    {
+      "path": "docs/development-journey/WORK-CLOCK-AND-TOKENS.md",
+      "sha256": "0ef1296c431309840fa8db05c83c664b0460e01ccf5b6718bdf40e42f235fa77",
+      "bytes": 7776
+    }
+  ],
+  "receipts": [
+    {
+      "path": "verification/receipts/20261109T190019020262Z-development-journey-full-clock-response-ledger-receipt-log-link-and-privacy-verification.json",
+      "sha256": "8896bb5f94e9040b80b64323384cd756a0f4f6fd094e8be6d84a6bcb7f212d59",
+      "exit_code": 0,
+      "receipt_id": "20261109T190019020262Z-development-journey-full-clock-response-ledger-receipt-log-link-and-privacy-verification"
+    },
+    {
+      "path": "verification/receipts/20261109T190558345900Z-trade-twins-original-report-extractor-authored-absence-assertion.json",
+      "sha256": "ce00e13fb737566267daec9c5808a7f1f313d768b8b15f376747bc200d7ca0bb",
+      "exit_code": 1,
+      "receipt_id": "20261109T190558345900Z-trade-twins-original-report-extractor-authored-absence-assertion"
+    },
+    {
+      "path": "verification/receipts/20261109T190723737839Z-trade-twins-original-report-cohort-entry-signal-ledger-and-split-extraction-first-contracts.json",
+      "sha256": "31fdc4025504cbe33b0d4ff9ef403ee4a8f6fe85cba7bd2279f6258796f99d24",
+      "exit_code": 1,
+      "receipt_id": "20261109T190723737839Z-trade-twins-original-report-cohort-entry-signal-ledger-and-split-extraction-first-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T190901741351Z-trade-twins-original-report-raw-default-assumption-identity-preservation-and-complete-cohort-contracts.json",
+      "sha256": "5ce80780437a166256494e2f81d33b083f784936bc24dd213498c8d915a748a3",
+      "exit_code": 0,
+      "receipt_id": "20261109T190901741351Z-trade-twins-original-report-raw-default-assumption-identity-preservation-and-complete-cohort-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T191137143222Z-trade-twins-original-saved-store-authority-reader-authored-absence-assertion.json",
+      "sha256": "5ba896c1749e9006ea7e5e8c488c85cb19792e1ea0ad45eac52306b72f732167",
+      "exit_code": 1,
+      "receipt_id": "20261109T191137143222Z-trade-twins-original-saved-store-authority-reader-authored-absence-assertion"
+    },
+    {
+      "path": "verification/receipts/20261109T191257164751Z-trade-twins-first-original-saved-input-root-trial-attempt-view-and-source-authorization-contracts.json",
+      "sha256": "06e97226d18e5277d5b5f510ef51b3f0fa9849cdbfb7cc700ec677cb4ac4f2ed",
+      "exit_code": 1,
+      "receipt_id": "20261109T191257164751Z-trade-twins-first-original-saved-input-root-trial-attempt-view-and-source-authorization-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T191402286041Z-trade-twins-saved-source-original-input-index-owner-and-fault-contracts.json",
+      "sha256": "9702ffaf4e50496f8e2404a91224ab01b1e681d66fb846151c05482eab35285d",
+      "exit_code": 1,
+      "receipt_id": "20261109T191402286041Z-trade-twins-saved-source-original-input-index-owner-and-fault-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T191504304672Z-trade-twins-saved-source-completed-plan-checkpointed-attempt-lifecycle-and-original-authority.json",
+      "sha256": "bcfbff43b9a70cc83ca209667ee162349ee17d90ad563b66d03debf1ecf995fd",
+      "exit_code": 0,
+      "receipt_id": "20261109T191504304672Z-trade-twins-saved-source-completed-plan-checkpointed-attempt-lifecycle-and-original-authority"
+    },
+    {
+      "path": "verification/receipts/20261109T191625704451Z-trade-twins-late-price-manifest-authority-changes-authored-refusal-contract.json",
+      "sha256": "03fda7e62945964bbf0496a4f265fda745014eaa5ae2902d5016b6827bdf014d",
+      "exit_code": 1,
+      "receipt_id": "20261109T191625704451Z-trade-twins-late-price-manifest-authority-changes-authored-refusal-contract"
+    },
+    {
+      "path": "verification/receipts/20261109T191657718647Z-trade-twins-original-selected-search-parts-and-late-price-manifest-refusal-fix.json",
+      "sha256": "c0fefc3cce5d01e935c03a135427c99c3e51f87bf7db21cd2096c61b8ab8f4cd",
+      "exit_code": 0,
+      "receipt_id": "20261109T191657718647Z-trade-twins-original-selected-search-parts-and-late-price-manifest-refusal-fix"
+    },
+    {
+      "path": "verification/receipts/20261109T191901032510Z-trade-twins-original-source-single-search-spread-empty-short-and-late-guard-integration.json",
+      "sha256": "3b95a2d793e7c4cd9e666a6f2a610de5cd56d9c128dfdd421edc3333350299ae",
+      "exit_code": 0,
+      "receipt_id": "20261109T191901032510Z-trade-twins-original-source-single-search-spread-empty-short-and-late-guard-integration"
+    },
+    {
+      "path": "verification/receipts/20261109T192113779290Z-trade-twins-authored-original-trial-event-loss-with-intact-current-row-refusal.json",
+      "sha256": "a2612ecaa8c5447fb7223c3e6d3ad38b2b4360e5cd7dd100d258d93c04d7986e",
+      "exit_code": 1,
+      "receipt_id": "20261109T192113779290Z-trade-twins-authored-original-trial-event-loss-with-intact-current-row-refusal"
+    },
+    {
+      "path": "verification/receipts/20261109T192138958199Z-trade-twins-original-computation-checkpoint-events-and-late-source-verification-regression.json",
+      "sha256": "c4a25dacc8d4f4b024b63f735d00567d4c0f82d676ac3cc47a92f0fb4ece1462",
+      "exit_code": 0,
+      "receipt_id": "20261109T192138958199Z-trade-twins-original-computation-checkpoint-events-and-late-source-verification-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T192619985315Z-trade-twins-actual-owned-retry-with-original-checkpoint-history-authored-authority-contract.json",
+      "sha256": "4cf0a2dfa6994b3bfd2566019f9b14a56c9e72086ea26cff558faba5b389edb4",
+      "exit_code": 1,
+      "receipt_id": "20261109T192619985315Z-trade-twins-actual-owned-retry-with-original-checkpoint-history-authored-authority-contract"
+    },
+    {
+      "path": "verification/receipts/20261109T192703134210Z-trade-twins-current-attempt-event-range-original-history-and-source-regression.json",
+      "sha256": "68dd3b5c64f1f452585e0c8db163cc5bbf69d511db94b207cf575fd935c80e09",
+      "exit_code": 0,
+      "receipt_id": "20261109T192703134210Z-trade-twins-current-attempt-event-range-original-history-and-source-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T193107063179Z-trade-twins-typed-original-trade-direction-authored-refusal-counterexample.json",
+      "sha256": "d2d5bb91f9f88b4b9dd7ba3433bd09491f6002537a96f26f95e8300b71578871",
+      "exit_code": 1,
+      "receipt_id": "20261109T193107063179Z-trade-twins-typed-original-trade-direction-authored-refusal-counterexample"
+    },
+    {
+      "path": "verification/receipts/20261109T193338029128Z-trade-twins-source-typed-rows-original-events-rehashed-caches-and-retry-regression.json",
+      "sha256": "268fd55f1715bfba7ab2b91a60550485ad04a4a5eb9631962a7707f815faf611",
+      "exit_code": 0,
+      "receipt_id": "20261109T193338029128Z-trade-twins-source-typed-rows-original-events-rehashed-caches-and-retry-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T193837155714Z-trade-twins-source-explicit-guard-bodies-current-original-event-cache-and-typed-case-coverage.json",
+      "sha256": "cb34cb4071ebd17e9b4fe605f3a407168c864d1d6df149dd12745df7a0959827",
+      "exit_code": 0,
+      "receipt_id": "20261109T193837155714Z-trade-twins-source-explicit-guard-bodies-current-original-event-cache-and-typed-case-coverage"
+    },
+    {
+      "path": "verification/receipts/20261109T194226089159Z-trade-twins-current-source-extractor-full-component-independent-execution-cache-and-contract-regression.json",
+      "sha256": "029a55c4af0de0a5c3cd5e1b95325a5f5d78d3563212c2cc758ec12adfddd242",
+      "exit_code": 0,
+      "receipt_id": "20261109T194226089159Z-trade-twins-current-source-extractor-full-component-independent-execution-cache-and-contract-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations.json",
+      "sha256": "2d6f1728168496f9182d52c39a5bc2c0830ec8a6a22412f50628778deb9a0f22",
+      "exit_code": 1,
+      "receipt_id": "20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations"
+    },
+    {
+      "path": "verification/receipts/20261109T194937825191Z-trade-twins-ten-actual-source-authority-mutations-with-paired-price-manifest-replacement.json",
+      "sha256": "31ecbd68b2809f01a93081c158bbd833303d4990e8cdbef23529d5d1993b83d3",
+      "exit_code": 1,
+      "receipt_id": "20261109T194937825191Z-trade-twins-ten-actual-source-authority-mutations-with-paired-price-manifest-replacement"
+    },
+    {
+      "path": "verification/receipts/20261109T195035640748Z-trade-twins-ten-actual-source-authority-mutations-corrected-paired-byte-fixture.json",
+      "sha256": "a8cbaa15e989eda41844e3b26a5e17bcf9dee728833d48c2f75eda94c746ab77",
+      "exit_code": 0,
+      "receipt_id": "20261109T195035640748Z-trade-twins-ten-actual-source-authority-mutations-corrected-paired-byte-fixture"
+    },
+    {
+      "path": "verification/receipts/20261109T195308132303Z-trade-twins-current-550-source-entry-independent-execution-cache-and-contract-cases.json",
+      "sha256": "3fa31899a76932de6fa24c2e580d2c4550666d5555b4e1f5e25047d1288b5631",
+      "exit_code": 0,
+      "receipt_id": "20261109T195308132303Z-trade-twins-current-550-source-entry-independent-execution-cache-and-contract-cases"
+    },
+    {
+      "path": "verification/receipts/20261109T195827044228Z-trade-twins-reader-and-matching-current-source-actual-db-unrounded-95-90-gate.json",
+      "sha256": "2d8488e2f8aa7cec4b9a65b98879a81b71c1a8e2ad3a4319123ef1adac75aa68",
+      "exit_code": 0,
+      "receipt_id": "20261109T195827044228Z-trade-twins-reader-and-matching-current-source-actual-db-unrounded-95-90-gate"
+    },
+    {
+      "path": "verification/receipts/20261109T195837781741Z-trade-twins-financial-execution-authored-absence-assertion-before-kernel.json",
+      "sha256": "55b50309ddeb32802ea151ad881224df18f0a0fa6c9b079a9da68408dea973f7",
+      "exit_code": 1,
+      "receipt_id": "20261109T195837781741Z-trade-twins-financial-execution-authored-absence-assertion-before-kernel"
+    },
+    {
+      "path": "verification/receipts/20261109T200047466627Z-trade-twins-financial-kernel-first-independent-decimal-full-book-contracts.json",
+      "sha256": "83551fa71434cdce37f98ef5d18fb0b43b1361017c874ac7b57a078e1170f8ab",
+      "exit_code": 1,
+      "receipt_id": "20261109T200047466627Z-trade-twins-financial-kernel-first-independent-decimal-full-book-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T200129505924Z-trade-twins-financial-kernel-dividend-ledger-corrected-independent-complete-value-parity.json",
+      "sha256": "f9665f805213ed60516ce36dc796cdee7b9924c6ba4b3311e7376695d98e3a45",
+      "exit_code": 0,
+      "receipt_id": "20261109T200129505924Z-trade-twins-financial-kernel-dividend-ledger-corrected-independent-complete-value-parity"
+    },
+    {
+      "path": "verification/receipts/20261109T200235752667Z-trade-twins-financial-prior-volume-staleness-authored-counterexample.json",
+      "sha256": "eb3454590838ff5ba640e6563f0911fd4fa2626a8c8b57b2036eaef17db8e946",
+      "exit_code": 1,
+      "receipt_id": "20261109T200235752667Z-trade-twins-financial-prior-volume-staleness-authored-counterexample"
+    },
+    {
+      "path": "verification/receipts/20261109T200416865550Z-trade-twins-financial-complete-books-stale-liquidity-fix-clocks-faults-and-32-random-oracles.json",
+      "sha256": "9469ea501490ff7f47d81254662555fa45388ec89d3447053d36a65a89f1f30b",
+      "exit_code": 0,
+      "receipt_id": "20261109T200416865550Z-trade-twins-financial-complete-books-stale-liquidity-fix-clocks-faults-and-32-random-oracles"
+    },
+    {
+      "path": "verification/receipts/20261109T200650493967Z-trade-twins-financial-full-field-original-artifacts-hand-fees-weekend-dividends-and-30-module-declaration.json",
+      "sha256": "dedd8906c1bcfbe3bd91c9e1cf9a8c4ffcb0e2bd69603f219a78f1418eaa8f3d",
+      "exit_code": 1,
+      "receipt_id": "20261109T200650493967Z-trade-twins-financial-full-field-original-artifacts-hand-fees-weekend-dividends-and-30-module-declaration"
+    },
+    {
+      "path": "verification/receipts/20261109T200841194002Z-trade-twins-financial-complete-books-corrected-opening-mark-hand-total-and-exact-30-module-gate-declaration.json",
+      "sha256": "d214903f997a08e4308f249f726baedcaa24e749364a7479577eed7778ca83ed",
+      "exit_code": 0,
+      "receipt_id": "20261109T200841194002Z-trade-twins-financial-complete-books-corrected-opening-mark-hand-total-and-exact-30-module-gate-declaration"
+    },
+    {
+      "path": "verification/receipts/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations.json",
+      "sha256": "c3cfd828ca787cdfea503d483c4a52a5f17d6707d32067eb7117d62d06ee9586",
+      "exit_code": 1,
+      "receipt_id": "20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations"
+    },
+    {
+      "path": "verification/receipts/20261109T201009374946Z-trade-twins-current-complete-backend-regression-and-thirty-numerical-module-coverage.json",
+      "sha256": "49b8b8e9f9183bb243b26a4f3e0a08f93771b2f2cb6d1b3faaae447d6eb53483",
+      "exit_code": 1,
+      "receipt_id": "20261109T201009374946Z-trade-twins-current-complete-backend-regression-and-thirty-numerical-module-coverage"
+    },
+    {
+      "path": "verification/receipts/20261109T201055617736Z-trade-twins-eleven-financial-mutations-with-self-consistent-wrong-split-account.json",
+      "sha256": "705f52390526912420495c0c9e9e96d5ec51aca3f928588ee6564f5ef6cac8cc",
+      "exit_code": 0,
+      "receipt_id": "20261109T201055617736Z-trade-twins-eleven-financial-mutations-with-self-consistent-wrong-split-account"
+    },
+    {
+      "path": "verification/receipts/20261109T201249896282Z-trade-twins-original-financial-artifact-independent-replay-cash-fee-borrow-and-entitlement-audit.json",
+      "sha256": "82e5868de3881375b62226978281cab3915c132fb94e2d1f0dfff9abe1ae1daa",
+      "exit_code": 0,
+      "receipt_id": "20261109T201249896282Z-trade-twins-original-financial-artifact-independent-replay-cash-fee-borrow-and-entitlement-audit"
+    },
+    {
+      "path": "verification/receipts/20261109T201711881933Z-trade-twins-financial-stage-original-83-422-120-plan-inventory.json",
+      "sha256": "03aed8ce76ff49caa978cd5aa70e78fa1f50a8369a86b7db3609e35d5a8260f1",
+      "exit_code": 0,
+      "receipt_id": "20261109T201711881933Z-trade-twins-financial-stage-original-83-422-120-plan-inventory"
+    },
+    {
+      "path": "verification/receipts/20261109T202118194565Z-trade-twins-uninstalled-causal-setup-atr-feature-prototype-independent-asof-split-and-future-invariance.json",
+      "sha256": "3ff1f13d5875a49b93ff1db2cb838b94e1871ea9885906d3487a4922c8473fbf",
+      "exit_code": 2,
+      "receipt_id": "20261109T202118194565Z-trade-twins-uninstalled-causal-setup-atr-feature-prototype-independent-asof-split-and-future-invariance"
+    },
+    {
+      "path": "verification/receipts/20261109T202144373550Z-trade-twins-uninstalled-feature-prototype-explicit-staged-pytest-configuration.json",
+      "sha256": "9df4ea1906b627e55d96c2235f6f5d14fe421172efe4dca3d319855452ae9120",
+      "exit_code": 0,
+      "receipt_id": "20261109T202144373550Z-trade-twins-uninstalled-feature-prototype-explicit-staged-pytest-configuration"
+    },
+    {
+      "path": "verification/receipts/20261109T202353799660Z-trade-twins-uninstalled-feature-prototype-all-six-positive-warmup-timeframes-and-clean-float-fixtures.json",
+      "sha256": "993486833385011d5a06a6bc8a06e8154c8e983202fab4f6c108ececfaf82958",
+      "exit_code": 0,
+      "receipt_id": "20261109T202353799660Z-trade-twins-uninstalled-feature-prototype-all-six-positive-warmup-timeframes-and-clean-float-fixtures"
+    },
+    {
+      "path": "verification/receipts/20261109T202726676713Z-trade-twins-uninstalled-actual-10000-paired-financial-sets-from-original-synthetic-account.json",
+      "sha256": "7c6189d4de10b1d14f38bfdc8f1f06f9329d9d55705254248d7ef72871de2b10",
+      "exit_code": 0,
+      "receipt_id": "20261109T202726676713Z-trade-twins-uninstalled-actual-10000-paired-financial-sets-from-original-synthetic-account"
+    },
+    {
+      "path": "verification/receipts/20261109T203013788007Z-trade-twins-six-actual-uninstalled-feature-asof-future-atr-split-trigger-clock-cancel-mutations.json",
+      "sha256": "f55faa6b99db6a74e409ce71b856623c5460aa9c94e22f0f868a38c6610786fc",
+      "exit_code": 0,
+      "receipt_id": "20261109T203013788007Z-trade-twins-six-actual-uninstalled-feature-asof-future-atr-split-trigger-clock-cancel-mutations"
+    },
+    {
+      "path": "verification/receipts/20261109T203636149747Z-trade-twins-uninstalled-exact-decimal-financial-grading-below-float-resolution-ties-and-complete-denominators.json",
+      "sha256": "7aeeac6b8903632759568e8715ec031d868cf8f5028d145a2f8cc5554ab45b33",
+      "exit_code": 1,
+      "receipt_id": "20261109T203636149747Z-trade-twins-uninstalled-exact-decimal-financial-grading-below-float-resolution-ties-and-complete-denominators"
+    },
+    {
+      "path": "verification/receipts/20261109T203830004487Z-trade-twins-exact-grading-authored-default-decimal-context-cohort-sum-counterexample.json",
+      "sha256": "bfebae246f9f03057fda68092b7255f09e6f1af56d2705b4ca819d445e91483d",
+      "exit_code": 1,
+      "receipt_id": "20261109T203830004487Z-trade-twins-exact-grading-authored-default-decimal-context-cohort-sum-counterexample"
+    },
+    {
+      "path": "verification/receipts/20261109T203916532173Z-trade-twins-exact-grading-corrected-authored-cohort-sum-precision-counterexample.json",
+      "sha256": "e5f50cdd10bc5fdf4dfd7880b72d46d4b92e381b9a8d433078af265f7c7f3de6",
+      "exit_code": 1,
+      "receipt_id": "20261109T203916532173Z-trade-twins-exact-grading-corrected-authored-cohort-sum-precision-counterexample"
+    },
+    {
+      "path": "verification/receipts/20261109T203954399901Z-trade-twins-uninstalled-exact-financial-grading-with-exponent-span-safe-cohort-sums.json",
+      "sha256": "8408fc83c2437246191d9c4f9e9a61bbb1b01c4e29f083a5ab91f4651d9ed9a5",
+      "exit_code": 0,
+      "receipt_id": "20261109T203954399901Z-trade-twins-uninstalled-exact-financial-grading-with-exponent-span-safe-cohort-sums"
+    },
+    {
+      "path": "verification/receipts/20261109T204252231701Z-trade-twins-six-actual-exact-money-grading-roundtrip-sum-tie-threshold-denominator-and-identity-mutations.json",
+      "sha256": "dbdb4558e8ced6e89ef6f03c2e145ca276df7493ff89868f997468593333f4eb",
+      "exit_code": 0,
+      "receipt_id": "20261109T204252231701Z-trade-twins-six-actual-exact-money-grading-roundtrip-sum-tie-threshold-denominator-and-identity-mutations"
+    },
+    {
+      "path": "verification/receipts/20261109T204758419722Z-trade-twins-original-synthetic-source-authority-versus-draw-and-verified-cache-cost-profile.json",
+      "sha256": "ceb7a8f5540bc7752434a1c05016044c99a7f333ede35354ce496885b2bc10c2",
+      "exit_code": 0,
+      "receipt_id": "20261109T204758419722Z-trade-twins-original-synthetic-source-authority-versus-draw-and-verified-cache-cost-profile"
+    },
+    {
+      "path": "verification/receipts/20261109T205723083189Z-trade-twins-eight-hand-accounted-preceding-close-versus-exact-opening-cutoff-boundaries.json",
+      "sha256": "dd7e7aa73287c81b07eb92dd3053cc5437a88d7f7bfb7efb517e08c2164bb4c4",
+      "exit_code": 0,
+      "receipt_id": "20261109T205723083189Z-trade-twins-eight-hand-accounted-preceding-close-versus-exact-opening-cutoff-boundaries"
+    },
+    {
+      "path": "verification/receipts/20261109T210933177284Z-trade-twins-actual-live-full-regression-handle-and-unchanged-220-source-wait-snapshot.json",
+      "sha256": "ba7a250dad5cab4c0d5fd0532c23beb6952de640a4ca9cb4ad2939f2bb8865b7",
+      "exit_code": 0,
+      "receipt_id": "20261109T210933177284Z-trade-twins-actual-live-full-regression-handle-and-unchanged-220-source-wait-snapshot"
+    },
+    {
+      "path": "verification/receipts/20261109T211303519505Z-trade-twins-next-durable-stage-source-only-copy-with-original-regression-frozen.json",
+      "sha256": "459a43de37dfe71c74125879024e16f0e04d52c463641cf5568bc21a9b0147c0",
+      "exit_code": 0,
+      "receipt_id": "20261109T211303519505Z-trade-twins-next-durable-stage-source-only-copy-with-original-regression-frozen"
+    },
+    {
+      "path": "verification/receipts/20261109T211558078496Z-trade-twins-next-stage-production-component-absence-and-actual-original-profit-sum-red-contract.json",
+      "sha256": "d00e863445d6a5e8129f86d7a0465ab9f71c14e673359446a5f4c38b61b14bc7",
+      "exit_code": 1,
+      "receipt_id": "20261109T211558078496Z-trade-twins-next-stage-production-component-absence-and-actual-original-profit-sum-red-contract"
+    },
+    {
+      "path": "verification/receipts/20261109T211907144971Z-trade-twins-next-stage-recorded-production-feature-and-exact-money-prototype-install.json",
+      "sha256": "44f222df47e00f373ffab17622afe1fc92ef66dbfb73f047b1eda30114ac3d61",
+      "exit_code": 0,
+      "receipt_id": "20261109T211907144971Z-trade-twins-next-stage-recorded-production-feature-and-exact-money-prototype-install"
+    },
+    {
+      "path": "verification/receipts/20261109T211911285321Z-trade-twins-next-production-causal-features-exact-grading-and-actual-original-small-profit-fix.json",
+      "sha256": "67193f288db18403df9b99eb226f4a50ccc89857fe435354d73c062de6f198f2",
+      "exit_code": 0,
+      "receipt_id": "20261109T211911285321Z-trade-twins-next-production-causal-features-exact-grading-and-actual-original-small-profit-fix"
+    },
+    {
+      "path": "verification/receipts/20261109T212324826313Z-trade-twins-next-features-authored-bounded-validation-cancel-and-final-return-contracts.json",
+      "sha256": "0d7538fe02cff2a48d32cafff74d0b724314c6dfa29334503c6e2091b8c21bdb",
+      "exit_code": 1,
+      "receipt_id": "20261109T212324826313Z-trade-twins-next-features-authored-bounded-validation-cancel-and-final-return-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T212547601751Z-trade-twins-original-failed-spread-isolation-fixture-byte-preimage.json",
+      "sha256": "27c3ddcf090ca328d61aaaabc5135383e8e0cca6d84da1e73df0f70840ade23e",
+      "exit_code": 0,
+      "receipt_id": "20261109T212547601751Z-trade-twins-original-failed-spread-isolation-fixture-byte-preimage"
+    },
+    {
+      "path": "verification/receipts/20261109T212549227966Z-trade-twins-original-78-spread-case-followup-with-exact-current-source-isolation.json",
+      "sha256": "44197f86b67c9a7f6b4e322f206f46e401a60f972057c43fac536d3fd35ee14a",
+      "exit_code": 0,
+      "receipt_id": "20261109T212549227966Z-trade-twins-original-78-spread-case-followup-with-exact-current-source-isolation"
+    },
+    {
+      "path": "verification/receipts/20261109T212715877584Z-trade-twins-next-production-amount-bounds-causal-validation-cancel-and-original-reader-regression.json",
+      "sha256": "977971f7f2e247e9f88ab9b74e0fa1d028319438d1b6808783e7667df8fad500",
+      "exit_code": 0,
+      "receipt_id": "20261109T212715877584Z-trade-twins-next-production-amount-bounds-causal-validation-cancel-and-original-reader-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T213226103308Z-trade-twins-baseline-2642-actual-case-lineage-and-unchanged-numerical-source-coverage-reconciliation.json",
+      "sha256": "c4469438755c0c04df0d7eedb3176c5af7c47f7549addc84b091db815c3cb38b",
+      "exit_code": 1,
+      "receipt_id": "20261109T213226103308Z-trade-twins-baseline-2642-actual-case-lineage-and-unchanged-numerical-source-coverage-reconciliation"
+    },
+    {
+      "path": "verification/receipts/20261109T213438979415Z-spread-original-boundary-probes-added-to-normal-baseline-and-next-test-discovery.json",
+      "sha256": "694d5763afebbcc6a30d578d8a606fff500159215066d061baa4ef0319dbb587",
+      "exit_code": 0,
+      "receipt_id": "20261109T213438979415Z-spread-original-boundary-probes-added-to-normal-baseline-and-next-test-discovery"
+    },
+    {
+      "path": "verification/receipts/20261109T213440262549Z-trade-twins-baseline-actual-four-original-journal-status-selection-and-repair-boundaries.json",
+      "sha256": "beb86aa956e8248c5831e704125bf04ba3078f38df6f718e662a9a1694751e65",
+      "exit_code": 0,
+      "receipt_id": "20261109T213440262549Z-trade-twins-baseline-actual-four-original-journal-status-selection-and-repair-boundaries"
+    },
+    {
+      "path": "verification/receipts/20261109T213723096410Z-trade-twins-next-current-combined-preparation-financial-independent-execution-cache-and-original-boundary-regression.json",
+      "sha256": "41e395b1a4c057f60b96cd9a78de65b02531c22b97c3e5a3e81624024356ccb0",
+      "exit_code": 0,
+      "receipt_id": "20261109T213723096410Z-trade-twins-next-current-combined-preparation-financial-independent-execution-cache-and-original-boundary-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T213837719355Z-trade-twins-baseline-2646-actual-case-lineage-and-thirty-unchanged-numerical-source-gates.json",
+      "sha256": "7b9b3edbdffa7bc8fc5b3fd3a0833186e5bd4d5483802b189aeb37dc252604cd",
+      "exit_code": 0,
+      "receipt_id": "20261109T213837719355Z-trade-twins-baseline-2646-actual-case-lineage-and-thirty-unchanged-numerical-source-gates"
+    },
+    {
+      "path": "verification/receipts/20261109T214254955649Z-trade-twins-financial-baseline-case-lineage-thirty-gates-and-recoverable-source-checkpoint.json",
+      "sha256": "7840e48bf8148aafc2ffc0e0f28715d7ac78a5f411a5f527e8508848dc927b7b",
+      "exit_code": 0,
+      "receipt_id": "20261109T214254955649Z-trade-twins-financial-baseline-case-lineage-thirty-gates-and-recoverable-source-checkpoint"
+    },
+    {
+      "path": "verification/receipts/20261109T214340888441Z-trade-twins-financial-source-checkpoint-actual-fresh-directory-restoration-and-component-prototypes.json",
+      "sha256": "efdd3c523eab84bedce56d3d73e14f1a048c3de8ebe99b3d530eea95fda871d9",
+      "exit_code": 0,
+      "receipt_id": "20261109T214340888441Z-trade-twins-financial-source-checkpoint-actual-fresh-directory-restoration-and-component-prototypes"
+    },
+    {
+      "path": "verification/receipts/20261109T214552079485Z-trade-twins-current-next-source-six-component-actual-db-unrounded-95-90-gates.json",
+      "sha256": "15d863eebd453b6d6a4e5e6a985b73abd588a47dab5f2cdd5658a7c52e36febf",
+      "exit_code": 0,
+      "receipt_id": "20261109T214552079485Z-trade-twins-current-next-source-six-component-actual-db-unrounded-95-90-gates"
+    },
+    {
+      "path": "verification/receipts/20261109T214838099141Z-trade-twins-thirteen-actual-current-production-preparation-and-original-sum-mutations.json",
+      "sha256": "81d5e87887b8dc76cdb4ff9453238017bb092c3bf8c0cb88dbbe798a945a94fc",
+      "exit_code": 1,
+      "receipt_id": "20261109T214838099141Z-trade-twins-thirteen-actual-current-production-preparation-and-original-sum-mutations"
+    },
+    {
+      "path": "verification/receipts/20261109T215036902964Z-trade-twins-current-thirteen-production-mutations-with-exact-native-newline-preflight.json",
+      "sha256": "8a6c388ac5ae8bd09d98d4dd2e0db7ae33b955c533b98c151a38d1bdb2f12c50",
+      "exit_code": 0,
+      "receipt_id": "20261109T215036902964Z-trade-twins-current-thirteen-production-mutations-with-exact-native-newline-preflight"
+    },
+    {
+      "path": "verification/receipts/20261109T215612840026Z-trade-twins-current-production-unfinished-candle-causality-all-six-charts.json",
+      "sha256": "f910696ec3b23c2baa88850dd741a9bdbd1ba0fc82efaa84a0b4e6a47c33ec96",
+      "exit_code": 0,
+      "receipt_id": "20261109T215612840026Z-trade-twins-current-production-unfinished-candle-causality-all-six-charts"
+    },
+    {
+      "path": "verification/receipts/20261109T215623413957Z-trade-twins-fourteen-current-production-mutations-including-real-unfinished-candle-lookahead.json",
+      "sha256": "36ceab686987f2bf22be0d6b05551b5196a5aae257714d11deb5efcde9261b98",
+      "exit_code": 0,
+      "receipt_id": "20261109T215623413957Z-trade-twins-fourteen-current-production-mutations-including-real-unfinished-candle-lookahead"
+    },
+    {
+      "path": "verification/receipts/20261109T220826879601Z-trade-twins-durable-original-reservation-authored-absence-contract.json",
+      "sha256": "0245504fe8e5cfef41c07eb506e4382ffa91b58ff801af337ba3a9a1342988c6",
+      "exit_code": 1,
+      "receipt_id": "20261109T220826879601Z-trade-twins-durable-original-reservation-authored-absence-contract"
+    },
+    {
+      "path": "verification/receipts/20261109T220948795814Z-trade-twins-first-original-atomic-reservation-and-20001-frozen-occurrences.json",
+      "sha256": "ec0be94faa64f87bf8697f955c09e76e3d56e05082b8e7e823813932d62c1089",
+      "exit_code": 1,
+      "receipt_id": "20261109T220948795814Z-trade-twins-first-original-atomic-reservation-and-20001-frozen-occurrences"
+    },
+    {
+      "path": "verification/receipts/20261109T221257575131Z-trade-twins-atomic-reservation-existing-transaction-protected-scope-and-frozen-occurrences.json",
+      "sha256": "708a8a1ffbe5f76f71021ed1b68879033378900c832df9b15ea9acad544936f1",
+      "exit_code": 0,
+      "receipt_id": "20261109T221257575131Z-trade-twins-atomic-reservation-existing-transaction-protected-scope-and-frozen-occurrences"
+    },
+    {
+      "path": "verification/receipts/20261109T221411064643Z-trade-twins-authored-late-parent-and-protected-scope-revalidation-counterexamples.json",
+      "sha256": "2de2d8b1b48b74b0d4d23b7a5e5206c4f93dccfdc9ec484b97657bcb8700edd7",
+      "exit_code": 1,
+      "receipt_id": "20261109T221411064643Z-trade-twins-authored-late-parent-and-protected-scope-revalidation-counterexamples"
+    },
+    {
+      "path": "verification/receipts/20261109T221453097324Z-trade-twins-original-reservation-and-revalidation-late-state-scope-and-all-links.json",
+      "sha256": "b7b52589ea83abf5788f1e0c31108e9213c695f7fcc221e20a1113c3a6483787",
+      "exit_code": 4,
+      "receipt_id": "20261109T221453097324Z-trade-twins-original-reservation-and-revalidation-late-state-scope-and-all-links"
+    },
+    {
+      "path": "verification/receipts/20261109T221511244103Z-trade-twins-original-reservation-revalidation-and-existing-protected-study-regression.json",
+      "sha256": "082c58f669429e51beec35d21f911fab708b59a63c5108eb398673c393e781fc",
+      "exit_code": 0,
+      "receipt_id": "20261109T221511244103Z-trade-twins-original-reservation-revalidation-and-existing-protected-study-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T222013420903Z-trade-twins-expanded-original-reservation-rollback-selected-account-and-derived-metadata-contracts.json",
+      "sha256": "41fac032b3a3eedddce3013e53fc8a31a132c303d80beaaf4966298d92baaa74",
+      "exit_code": 0,
+      "receipt_id": "20261109T222013420903Z-trade-twins-expanded-original-reservation-rollback-selected-account-and-derived-metadata-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T222226499829Z-trade-twins-durable-reservation-current-main-managed-tree-and-test-retirement.json",
+      "sha256": "ec9d67b03c7261accd6893ddf3054ca8ffc24a76562346218d11cc59dab16686",
+      "exit_code": 0,
+      "receipt_id": "20261109T222226499829Z-trade-twins-durable-reservation-current-main-managed-tree-and-test-retirement"
+    },
+    {
+      "path": "verification/receipts/20261109T222401368557Z-trade-twins-original-reservation-final-metadata-sidecar-amendment-and-unrounded-gate-cases.json",
+      "sha256": "74ec7fae5d468ebfd76cbc7b9a72e4c05f7cf48ed9e074c9039ec6415ff3c4f7",
+      "exit_code": 0,
+      "receipt_id": "20261109T222401368557Z-trade-twins-original-reservation-final-metadata-sidecar-amendment-and-unrounded-gate-cases"
+    },
+    {
+      "path": "verification/receipts/20261109T222605687886Z-trade-twins-eight-actual-current-original-reservation-and-rollback-mutations.json",
+      "sha256": "7939e65b2f34f889b44d5cbeb676e69d568b29ae716555afdcd91757183d5d29",
+      "exit_code": 0,
+      "receipt_id": "20261109T222605687886Z-trade-twins-eight-actual-current-original-reservation-and-rollback-mutations"
+    },
+    {
+      "path": "verification/receipts/20261109T222652860359Z-trade-twins-current-reservation-actual-database-unrounded-95-90-gate.json",
+      "sha256": "8be2ca5a647b92eaa2bdb0866be06f8e1140ddffefca4e5b7aedf62886ef8e00",
+      "exit_code": 0,
+      "receipt_id": "20261109T222652860359Z-trade-twins-current-reservation-actual-database-unrounded-95-90-gate"
+    },
+    {
+      "path": "verification/receipts/20261109T222930510042Z-trade-twins-owned-durable-preparation-authored-absence-contract.json",
+      "sha256": "6930f1f7131c617e7e66af344d0688641e2b3e1d290a59f056d9ae08bc6e9d05",
+      "exit_code": 1,
+      "receipt_id": "20261109T222930510042Z-trade-twins-owned-durable-preparation-authored-absence-contract"
+    },
+    {
+      "path": "verification/receipts/20261109T223100776333Z-trade-twins-first-owned-original-plan-seal-resume-and-corruption-contracts.json",
+      "sha256": "dafae239b6cc9f66add66a740253817a44f619799da547492cce09f2fefd9fc6",
+      "exit_code": 0,
+      "receipt_id": "20261109T223100776333Z-trade-twins-first-owned-original-plan-seal-resume-and-corruption-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T223312917680Z-trade-twins-authored-real-corporate-action-and-closing-original-authority-preparation-counterexamples.json",
+      "sha256": "ce59ef4a0466bc2fa651159c347ff94260a58067b5e56690cef3479b0b26389e",
+      "exit_code": 1,
+      "receipt_id": "20261109T223312917680Z-trade-twins-authored-real-corporate-action-and-closing-original-authority-preparation-counterexamples"
+    },
+    {
+      "path": "verification/receipts/20261109T223427973904Z-trade-twins-owned-preparation-actions-closing-authority-atomic-seal-resume-and-trial-compatibility.json",
+      "sha256": "90343b940666081db522fbdc6a1f3d9841b7fe1f8e843b8132110868f63171ed",
+      "exit_code": 0,
+      "receipt_id": "20261109T223427973904Z-trade-twins-owned-preparation-actions-closing-authority-atomic-seal-resume-and-trial-compatibility"
+    },
+    {
+      "path": "verification/receipts/20261109T224135319592Z-trade-twins-owned-preparation-original-fault-boundaries-rehashed-plan-and-three-actual-interpreter-deaths.json",
+      "sha256": "a79b139786d4b165a02817e2a9fc4916be5360c1e03b6633f761aa219e6073a5",
+      "exit_code": 0,
+      "receipt_id": "20261109T224135319592Z-trade-twins-owned-preparation-original-fault-boundaries-rehashed-plan-and-three-actual-interpreter-deaths"
+    },
+    {
+      "path": "verification/receipts/20261109T224555920288Z-trade-twins-owned-preparation-actual-database-95-90-and-three-death-recovery-gate.json",
+      "sha256": "35b6cfd4b8bc4f2e9e6af3d693636aa88848b3b3f8845b0db860c9550d521d05",
+      "exit_code": 0,
+      "receipt_id": "20261109T224555920288Z-trade-twins-owned-preparation-actual-database-95-90-and-three-death-recovery-gate"
+    },
+    {
+      "path": "verification/receipts/20261109T224803451606Z-trade-twins-six-actual-owned-preparation-source-cohort-actions-plan-authority-and-atomic-seal-mutations.json",
+      "sha256": "f9cb6c0e8da4075bbb4a064c0548efc48d0def62abc85f72d520608800f663e4",
+      "exit_code": 1,
+      "receipt_id": "20261109T224803451606Z-trade-twins-six-actual-owned-preparation-source-cohort-actions-plan-authority-and-atomic-seal-mutations"
+    },
+    {
+      "path": "verification/receipts/20261109T225017851475Z-trade-twins-current-owned-foundation-source-only-archive-and-actual-restoration-with-process-death-checks.json",
+      "sha256": "80ccccd2d485c8af07b94af4713a13b090f1472a0c0cffc7e60c3b3484608d82",
+      "exit_code": 0,
+      "receipt_id": "20261109T225017851475Z-trade-twins-current-owned-foundation-source-only-archive-and-actual-restoration-with-process-death-checks"
+    },
+    {
+      "path": "verification/receipts/20261109T225220103325Z-trade-twins-six-owned-preparation-mutations-with-short-native-working-directories.json",
+      "sha256": "e3d1205d03c63a62ee05067c6b970dd2dc9f453ef15f059d387cd4f1aeccd0a6",
+      "exit_code": 0,
+      "receipt_id": "20261109T225220103325Z-trade-twins-six-owned-preparation-mutations-with-short-native-working-directories"
+    },
+    {
+      "path": "verification/receipts/20261109T225432194792Z-trade-twins-owned-foundation-final-managed-runtime-and-all-owned-test-processes-retired.json",
+      "sha256": "cb6d9e5f51b0014c39857dacf75e902a2500cbf0cf91d78d5c6cdb701ebae96f",
+      "exit_code": 0,
+      "receipt_id": "20261109T225432194792Z-trade-twins-owned-foundation-final-managed-runtime-and-all-owned-test-processes-retired"
+    },
+    {
+      "path": "verification/receipts/20261109T225746258835Z-trade-twins-owned-foundation-updated-plans-inventory-current-source-checkpoint-and-live-main-verification.json",
+      "sha256": "482a47216448ebefd0fbcb28db926dc614ef19175205dd22b71a3a89cd28c3eb",
+      "exit_code": 0,
+      "receipt_id": "20261109T225746258835Z-trade-twins-owned-foundation-updated-plans-inventory-current-source-checkpoint-and-live-main-verification"
+    },
+    {
+      "path": "verification/receipts/20261109T230348013448Z-trade-twins-paired-financial-parts-authored-missing-implementation-contract.json",
+      "sha256": "f6c62d3e3dd1c02c273d68fbeecfe700e8ea1ffe6a6bf96a27dec73e32e67e3c",
+      "exit_code": 1,
+      "receipt_id": "20261109T230348013448Z-trade-twins-paired-financial-parts-authored-missing-implementation-contract"
+    },
+    {
+      "path": "verification/receipts/20261109T230818417996Z-trade-twins-first-actual-paired-financial-part-original-book-and-atomic-trial-contracts.json",
+      "sha256": "a938ce8b6bb0375791354efb047c492b81c6f6c0169b63274d42a90af9378d12",
+      "exit_code": 0,
+      "receipt_id": "20261109T230818417996Z-trade-twins-first-actual-paired-financial-part-original-book-and-atomic-trial-contracts"
+    },
+    {
+      "path": "verification/receipts/20261109T231237941216Z-trade-twins-paired-parts-independent-complete-books-failed-candidates-retry-cache-and-trial-regression.json",
+      "sha256": "2388165344d7a5f281f292334b9d569d67c101e07f0222b4eb4b85a9a978e80c",
+      "exit_code": 0,
+      "receipt_id": "20261109T231237941216Z-trade-twins-paired-parts-independent-complete-books-failed-candidates-retry-cache-and-trial-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T232017136670Z-trade-twins-complete-owned-worker-authored-missing-dispatch-contract.json",
+      "sha256": "f241395ab94f70367ae551e80f28e9987b0c10c372ee6dd98f25ae239dfda62d",
+      "exit_code": 1,
+      "receipt_id": "20261109T232017136670Z-trade-twins-complete-owned-worker-authored-missing-dispatch-contract"
+    },
+    {
+      "path": "verification/receipts/20261109T232227427950Z-trade-twins-actual-owned-worker-ineligible-completion-shutdown-and-current-paired-part-regression.json",
+      "sha256": "c6d3c69dd773d09815e289d648fd3969c01a5609eb714f9195bc1256cc37a927",
+      "exit_code": 0,
+      "receipt_id": "20261109T232227427950Z-trade-twins-actual-owned-worker-ineligible-completion-shutdown-and-current-paired-part-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T232753268631Z-trade-twins-actual-current-first-two-paired-parts-and-original-authority-cost-profile.json",
+      "sha256": "7258c8f721d2db4cdf6bd09d24a77e3fc9b412d1e6b2e421605bd8a6f7fa962b",
+      "exit_code": 0,
+      "receipt_id": "20261109T232753268631Z-trade-twins-actual-current-first-two-paired-parts-and-original-authority-cost-profile"
+    },
+    {
+      "path": "verification/receipts/20261109T233216663791Z-trade-twins-authored-bounded-original-book-validation-and-midunit-authority-counterexamples.json",
+      "sha256": "5fa9ace6cbff15309987ba72edbbdcc086fd87410eccee8814f6f1d4b77fe7c7",
+      "exit_code": 1,
+      "receipt_id": "20261109T233216663791Z-trade-twins-authored-bounded-original-book-validation-and-midunit-authority-counterexamples"
+    },
+    {
+      "path": "verification/receipts/20261109T234027469629Z-trade-twins-verified-unit-cache-midwork-origin-refusal-and-independent-financial-regression.json",
+      "sha256": "f386b962b62450b31705686aa27c5199d3761cdb26b92bfcf98a82a838e2e00b",
+      "exit_code": 0,
+      "receipt_id": "20261109T234027469629Z-trade-twins-verified-unit-cache-midwork-origin-refusal-and-independent-financial-regression"
+    },
+    {
+      "path": "verification/receipts/20261109T235306560862Z-trade-twins-identical-original-and-random-cashflow-strict-baseline-precision-counterexamples.json",
+      "sha256": "43f50e79e28de8c7604f65213b1e052d31abbb34b7a0eb63c353747b48049077",
+      "exit_code": 1,
+      "receipt_id": "20261109T235306560862Z-trade-twins-identical-original-and-random-cashflow-strict-baseline-precision-counterexamples"
+    },
+    {
+      "path": "verification/receipts/20261110T000510462732Z-source-cashflow-auditor-authored-absence-before-canonical-baseline-implementation.json",
+      "sha256": "a85e7004b206020444fa261fbec2464ba6e722cabb1de42511dde91e42ff2d14",
+      "exit_code": 1,
+      "receipt_id": "20261110T000510462732Z-source-cashflow-auditor-authored-absence-before-canonical-baseline-implementation"
+    },
+    {
+      "path": "verification/receipts/20261110T001231583982Z-source-cashflows-first-canonical-original-audit-and-identical-financial-ties.json",
+      "sha256": "f6be7861f925c09a8dd1fd54814fd874778025fed96dfbf5d3e449e7e5d0bb22",
+      "exit_code": 1,
+      "receipt_id": "20261110T001231583982Z-source-cashflows-first-canonical-original-audit-and-identical-financial-ties"
+    },
+    {
+      "path": "verification/receipts/20261110T001252129978Z-source-cashflows-original-production-integration-and-exact-winning-losing-ties.json",
+      "sha256": "8b46f3bb6809bbee7d73c53e822bfdad8c79c7991210f6fa9c636a849b162ff0",
+      "exit_code": 0,
+      "receipt_id": "20261110T001252129978Z-source-cashflows-original-production-integration-and-exact-winning-losing-ties"
+    },
+    {
+      "path": "verification/receipts/20261110T001538766029Z-source-cashflows-independent-fees-actions-calendar-borrow-and-saved-audit-counterexamples.json",
+      "sha256": "e95592319b4efa8167a3cd71a416a34d708d7b5725504dce147ea309c7d8f7e7",
+      "exit_code": 0,
+      "receipt_id": "20261110T001538766029Z-source-cashflows-independent-fees-actions-calendar-borrow-and-saved-audit-counterexamples"
+    },
+    {
+      "path": "verification/receipts/20261110T001704179259Z-source-cashflows-full-component-boundaries-exact-baseline-grading-and-original-accounting.json",
+      "sha256": "31a0fc7dc620a4ebbf77c007860766277a2181aa830e8be8e3c2883fd8d39429",
+      "exit_code": 0,
+      "receipt_id": "20261110T001704179259Z-source-cashflows-full-component-boundaries-exact-baseline-grading-and-original-accounting"
+    },
+    {
+      "path": "verification/receipts/20261110T001925270510Z-current-owned-worker-10000-paired-financial-sets-original-checkpoints-independent-books-and-resources.json",
+      "sha256": "a566b1cf6fef854010f681827c0221b45535ef148b0d3aa4686e5d56ec1075e2",
+      "exit_code": 1,
+      "receipt_id": "20261110T001925270510Z-current-owned-worker-10000-paired-financial-sets-original-checkpoints-independent-books-and-resources"
+    },
+    {
+      "path": "verification/receipts/20261110T001935855967Z-source-cashflows-canonical-tampering-independent-components-and-production-baseline-current.json",
+      "sha256": "3b0cc0ae93fb0ec3b8ce2121aeb9f0e9da1d050359271622f15219a06957e757",
+      "exit_code": 0,
+      "receipt_id": "20261110T001935855967Z-source-cashflows-canonical-tampering-independent-components-and-production-baseline-current"
+    },
+    {
+      "path": "verification/receipts/20261110T002256806219Z-trade-twins-authored-api-route-absence-and-source-assumption-boundary.json",
+      "sha256": "2d4dde3134a9c8aa9b8bab029decff9d8522a4abcadd432c2a81fcd6d48ed391",
+      "exit_code": 1,
+      "receipt_id": "20261110T002256806219Z-trade-twins-authored-api-route-absence-and-source-assumption-boundary"
+    },
+    {
+      "path": "verification/receipts/20261110T002344621919Z-trade-twins-real-api-original-reservation-strict-inputs-and-local-session-boundary.json",
+      "sha256": "06a3ce9eac66c2963996c90a2f8c505ee7c6d7208166e33e53f82868fb9b9da6",
+      "exit_code": 0,
+      "receipt_id": "20261110T002344621919Z-trade-twins-real-api-original-reservation-strict-inputs-and-local-session-boundary"
+    },
+    {
+      "path": "verification/receipts/20261110T002550477221Z-canonical-original-cashflows-and-exact-grading-current-actual-database-95-90-gates.json",
+      "sha256": "25ee6b4f17591af3b2050af0fd9379a4612174d7f3539de433f155ec6015a968",
+      "exit_code": 0,
+      "receipt_id": "20261110T002550477221Z-canonical-original-cashflows-and-exact-grading-current-actual-database-95-90-gates"
+    },
+    {
+      "path": "verification/receipts/20261110T002805269938Z-trade-twins-staged-frontend-locked-dependency-reuse-and-real-typescript-production-build.json",
+      "sha256": "71ca1bb9115452058969cd119192f94a102a4278ab06b3f26bdd7ef693325f5d",
+      "exit_code": 0,
+      "receipt_id": "20261110T002805269938Z-trade-twins-staged-frontend-locked-dependency-reuse-and-real-typescript-production-build"
+    },
+    {
+      "path": "verification/receipts/20261110T003025012143Z-trade-twins-real-browser-source-continuation-cancel-resume-reopen-and-mobile-empty-cohort.json",
+      "sha256": "34b92b0cfc5cd1930765503a2ff2a92e6593fd32efe6952342d40a3366026b68",
+      "exit_code": 1,
+      "receipt_id": "20261110T003025012143Z-trade-twins-real-browser-source-continuation-cancel-resume-reopen-and-mobile-empty-cohort"
+    },
+    {
+      "path": "verification/receipts/20261110T003044742139Z-trade-twins-real-browser-explicit-locked-runner-cancel-resume-reopen-and-mobile-empty-cohort.json",
+      "sha256": "37184f371cf1045c1f4810d592f045bbdb824645456f5be21e4f93715d7c5086",
+      "exit_code": 1,
+      "receipt_id": "20261110T003044742139Z-trade-twins-real-browser-explicit-locked-runner-cancel-resume-reopen-and-mobile-empty-cohort"
+    },
+    {
+      "path": "verification/receipts/20261110T003215314961Z-original-cashflow-and-grading-eight-actual-mutations-with-green-assertion-baseline.json",
+      "sha256": "9105e00db68d12e20410eb53f423a70165612445d73450255660008c8ddee91f",
+      "exit_code": 1,
+      "receipt_id": "20261110T003215314961Z-original-cashflow-and-grading-eight-actual-mutations-with-green-assertion-baseline"
+    },
+    {
+      "path": "verification/receipts/20261110T003249342972Z-original-cashflow-eight-actual-assertion-mutations-with-required-independent-fixture.json",
+      "sha256": "b48176996502a73a56e26c9b63ff87026a5d4204db0367002250388b94f2a755",
+      "exit_code": 1,
+      "receipt_id": "20261110T003249342972Z-original-cashflow-eight-actual-assertion-mutations-with-required-independent-fixture"
+    },
+    {
+      "path": "verification/receipts/20261110T003314306920Z-trade-twins-actual-desktop-mobile-flow-cancel-resume-reopen-with-responsive-accessible-navigation.json",
+      "sha256": "5804d72bcd3a7ed47356fd811dc8a56d15e081ebbf731e462d70afee3c98207e",
+      "exit_code": 0,
+      "receipt_id": "20261110T003314306920Z-trade-twins-actual-desktop-mobile-flow-cancel-resume-reopen-with-responsive-accessible-navigation"
+    },
+    {
+      "path": "verification/receipts/20261110T003432123825Z-original-cashflow-eight-financial-assertion-mutations-and-independent-valid-account-probes.json",
+      "sha256": "72e6d1e5c410003c3dfc4df4a81479c53c6939c87d9f589f21ffbdc6febaaab6",
+      "exit_code": 0,
+      "receipt_id": "20261110T003432123825Z-original-cashflow-eight-financial-assertion-mutations-and-independent-valid-account-probes"
+    },
+    {
+      "path": "verification/receipts/20261110T003606554008Z-completed-owned-10000-paired-sets-original-events-attempts-independent-draws-and-complete-books.json",
+      "sha256": "390c5b5fd84f56408401c22f57013696f2a12c5a29e42c7c66bdf2a4c78d04b0",
+      "exit_code": 0,
+      "receipt_id": "20261110T003606554008Z-completed-owned-10000-paired-sets-original-events-attempts-independent-draws-and-complete-books"
+    },
+    {
+      "path": "verification/receipts/20261110T003731257785Z-trade-twins-desktop-mobile-actual-lifecycle-and-original-completed-10000-summary-reopening.json",
+      "sha256": "1813303cff7c998dd92ddeae8e904eeb563070778e294819600f8b6220533a84",
+      "exit_code": 0,
+      "receipt_id": "20261110T003731257785Z-trade-twins-desktop-mobile-actual-lifecycle-and-original-completed-10000-summary-reopening"
+    },
+    {
+      "path": "verification/receipts/20261110T004046159260Z-trade-twins-current-combined-matching-original-cashflows-finance-durability-api-and-exact-grading.json",
+      "sha256": "1dd98dee8d70bb8118bdd5e0f41b97c8caf1c4003c63620562b86c71352cd51d",
+      "exit_code": 1,
+      "receipt_id": "20261110T004046159260Z-trade-twins-current-combined-matching-original-cashflows-finance-durability-api-and-exact-grading"
+    },
+    {
+      "path": "verification/receipts/20261110T004056125499Z-trade-twins-keyboard-accessible-comparison-table-current-typescript-build.json",
+      "sha256": "830fa6910e0d14a2d7dc93a75e975e25bd3efc4155196a7d8946052d51f29a9a",
+      "exit_code": 0,
+      "receipt_id": "20261110T004056125499Z-trade-twins-keyboard-accessible-comparison-table-current-typescript-build"
+    },
+    {
+      "path": "verification/receipts/20261110T004122414734Z-trade-twins-current-desktop-mobile-reopen-and-keyboard-scrolling-complete-summary.json",
+      "sha256": "4e5a87fa881aa3a234f18d504cccfeb92150eccafa2fbd14a6b53612acf27caa",
+      "exit_code": 0,
+      "receipt_id": "20261110T004122414734Z-trade-twins-current-desktop-mobile-reopen-and-keyboard-scrolling-complete-summary"
+    },
+    {
+      "path": "verification/receipts/20261110T005237189034Z-trade-twins-saved-evidence-manifest-authored-absence-before-implementation.json",
+      "sha256": "40569114c2642c8b0aa304272032f2358e53b002038406520ad3711f49f39f68",
+      "exit_code": 1,
+      "receipt_id": "20261110T005237189034Z-trade-twins-saved-evidence-manifest-authored-absence-before-implementation"
+    },
+    {
+      "path": "verification/receipts/20261110T005405289192Z-trade-twins-original-book-flat-manifest-independent-chunks-tampering-and-bounds.json",
+      "sha256": "f9fd647e53f7b9d2005933887b9a5f84bde79c47e3688b4a438f61db3dd39b0a",
+      "exit_code": 0,
+      "receipt_id": "20261110T005405289192Z-trade-twins-original-book-flat-manifest-independent-chunks-tampering-and-bounds"
+    },
+    {
+      "path": "verification/receipts/20261110T005605730363Z-trade-twins-original-manifest-member-binding-computation-events-and-paired-part-regression.json",
+      "sha256": "7cce1f4f0883a725a46373b2ea79502a0112bf3ccbd8481dc65c6e9ba96b3db3",
+      "exit_code": 4,
+      "receipt_id": "20261110T005605730363Z-trade-twins-original-manifest-member-binding-computation-events-and-paired-part-regression"
+    },
+    {
+      "path": "verification/receipts/20261110T005626036153Z-trade-twins-original-evidence-member-computation-and-paired-owned-worker-regression.json",
+      "sha256": "29476bafabfd4b62288deaf2b8081c9dbd2c521473683c1bd888d21b81fb2352",
+      "exit_code": 4,
+      "receipt_id": "20261110T005626036153Z-trade-twins-original-evidence-member-computation-and-paired-owned-worker-regression"
+    },
+    {
+      "path": "verification/receipts/20261110T005648114464Z-trade-twins-original-financial-member-evidence-computation-and-existing-trial-registry.json",
+      "sha256": "7208643e3f12af85e70a1df0bbf0dab135113e823482a78f0b55aff18fa4547d",
+      "exit_code": 2,
+      "receipt_id": "20261110T005648114464Z-trade-twins-original-financial-member-evidence-computation-and-existing-trial-registry"
+    },
+    {
+      "path": "verification/receipts/20261110T010122539964Z-trade-twins-current-exact-thirty-eight-module-inventory-and-unchanged-gate-threshold-regression.json",
+      "sha256": "2a51ee3547053eab2ab0fbd15d052381d6a819df08edf7f789139fe5ad1c8ceb",
+      "exit_code": 0,
+      "receipt_id": "20261110T010122539964Z-trade-twins-current-exact-thirty-eight-module-inventory-and-unchanged-gate-threshold-regression"
+    },
+    {
+      "path": "verification/receipts/20261110T010321700433Z-protocol-two-original-book-manifests-computation-events-actual-10000-worker-and-retained-peak-memory.json",
+      "sha256": "eba97daa549b62d5d7e9fd7dc6e7fe4f7657f247294f1f549ad44e10988d9384",
+      "exit_code": 0,
+      "receipt_id": "20261110T010321700433Z-protocol-two-original-book-manifests-computation-events-actual-10000-worker-and-retained-peak-memory"
+    },
+    {
+      "path": "verification/receipts/20261110T011406925725Z-trade-twins-first-real-saved-view-pages-repair-complete-zip-no-recomputation-and-api-bounds.json",
+      "sha256": "c6b52ab5f40f1c9a6915de588f022639ecb9861a631cbfe744a87584ce7d132f",
+      "exit_code": 1,
+      "receipt_id": "20261110T011406925725Z-trade-twins-first-real-saved-view-pages-repair-complete-zip-no-recomputation-and-api-bounds"
+    },
+    {
+      "path": "verification/receipts/20261110T014907015802Z-trade-twins-saved-only-view-empty-source-zip-csv-offline-report-and-original-lifecycle.json",
+      "sha256": "f12d0d21b0fe7205dd7eb00cdbfa644a6b3143a279ffd691b93cef3cad4e061c",
+      "exit_code": 1,
+      "receipt_id": "20261110T014907015802Z-trade-twins-saved-only-view-empty-source-zip-csv-offline-report-and-original-lifecycle"
+    },
+    {
+      "path": "verification/receipts/20261110T015043280147Z-trade-twins-direct-original-saved-view-error-chain-before-http-envelope.json",
+      "sha256": "4ae9cd1b8b5576e617cd302c943a5ccd4b16bb90688a47d30bfb7447cdfdf437",
+      "exit_code": 1,
+      "receipt_id": "20261110T015043280147Z-trade-twins-direct-original-saved-view-error-chain-before-http-envelope"
+    },
+    {
+      "path": "verification/receipts/20261110T015202025786Z-trade-twins-empty-derived-header-commit-and-real-pages-repair-complete-export.json",
+      "sha256": "a2fa632c7ed937980dee9ca20e07aaa09d2ef2e9d195dfd29a50c6cfbca050f4",
+      "exit_code": 0,
+      "receipt_id": "20261110T015202025786Z-trade-twins-empty-derived-header-commit-and-real-pages-repair-complete-export"
+    },
+    {
+      "path": "verification/receipts/20261110T021154839695Z-trade-twins-actual-completed-positive-original-pages-books-full-export-and-tamper-counterexamples.json",
+      "sha256": "c4e79bf59a65b04dd8795af5f52b6640e45c545d5a4be9127b3396db138d9286",
+      "exit_code": 2,
+      "receipt_id": "20261110T021154839695Z-trade-twins-actual-completed-positive-original-pages-books-full-export-and-tamper-counterexamples"
+    },
+    {
+      "path": "verification/receipts/20261110T021201439012Z-trade-twins-current-inspector-typescript-build-and-locked-local-dependencies.json",
+      "sha256": "dc561e9049230ee8fdef13695fb7287d928921ad6e2c3aae3bdee85335e80aa6",
+      "exit_code": 0,
+      "receipt_id": "20261110T021201439012Z-trade-twins-current-inspector-typescript-build-and-locked-local-dependencies"
+    },
+    {
+      "path": "verification/receipts/20261110T021238116079Z-trade-twins-positive-saved-evidence-correct-staged-imports-all-pages-complete-export-and-origin-faults.json",
+      "sha256": "61d55309f7174045e2f3f9707bcf175c904d9c3d16d19e9052704e80920f2db0",
+      "exit_code": 2,
+      "receipt_id": "20261110T021238116079Z-trade-twins-positive-saved-evidence-correct-staged-imports-all-pages-complete-export-and-origin-faults"
+    },
+    {
+      "path": "verification/receipts/20261110T021327181166Z-trade-twins-positive-saved-evidence-explicit-stage-config-all-original-pages-zip-and-tampering.json",
+      "sha256": "826f67bf12befe80a5f37438e6ed6fe37bbd089d2eb0aa8bf6626e85aae967ba",
+      "exit_code": 1,
+      "receipt_id": "20261110T021327181166Z-trade-twins-positive-saved-evidence-explicit-stage-config-all-original-pages-zip-and-tampering"
+    },
+    {
+      "path": "verification/receipts/20261110T021554790354Z-trade-twins-real-desktop-mobile-original-set-book-inspector-full-zip-and-obsolete-response-ownership.json",
+      "sha256": "84d282fd744e365f251114b9eb272ceaf58bffb61f146ae7f6a1a8e4abc59351",
+      "exit_code": 1,
+      "receipt_id": "20261110T021554790354Z-trade-twins-real-desktop-mobile-original-set-book-inspector-full-zip-and-obsolete-response-ownership"
+    },
+    {
+      "path": "verification/receipts/20261110T021644867002Z-trade-twins-positive-original-all-20000-pages-complete-csv-zip-and-rehashed-view-faults.json",
+      "sha256": "5afa20babd3b40a90a41ec76a3b4c94ddfd891fe4b4256aab40d06facdc99e7b",
+      "exit_code": 1,
+      "receipt_id": "20261110T021644867002Z-trade-twins-positive-original-all-20000-pages-complete-csv-zip-and-rehashed-view-faults"
+    },
+    {
+      "path": "verification/receipts/20261110T022126792700Z-trade-twins-real-inspector-complete-verified-download-desktop-mobile-and-selection-ownership.json",
+      "sha256": "3b787b357635868b2dd9c1d845ee743e7f34c718d7f2fb2cce97c0920d6aa0dc",
+      "exit_code": 1,
+      "receipt_id": "20261110T022126792700Z-trade-twins-real-inspector-complete-verified-download-desktop-mobile-and-selection-ownership"
+    },
+    {
+      "path": "verification/receipts/20261110T022418931452Z-trade-twins-authored-original-preparation-manifest-and-publication-causality-counterexamples.json",
+      "sha256": "a3923dc6e44a46ffbf5acb2f31682f2af64bb2e68169ba9da89a16268739ee2e",
+      "exit_code": 1,
+      "receipt_id": "20261110T022418931452Z-trade-twins-authored-original-preparation-manifest-and-publication-causality-counterexamples"
+    },
+    {
+      "path": "verification/receipts/20261110T023025000612Z-trade-twins-original-publication-preparation-part-causality-fixed-and-real-empty-view-export-regression.json",
+      "sha256": "5c26b6861477619017dbb2526f1480311251a4d71c343d85bc235e2078ba58a9",
+      "exit_code": 2,
+      "receipt_id": "20261110T023025000612Z-trade-twins-original-publication-preparation-part-causality-fixed-and-real-empty-view-export-regression"
+    },
+    {
+      "path": "verification/receipts/20261110T023133995934Z-trade-twins-five-original-publication-order-faults-fixed-and-empty-complete-export.json",
+      "sha256": "299d90b70c26843cc6b5511370f70e847eefdebc4860a31fe2410a9e5e8e8812",
+      "exit_code": 0,
+      "receipt_id": "20261110T023133995934Z-trade-twins-five-original-publication-order-faults-fixed-and-empty-complete-export"
+    },
+    {
+      "path": "verification/receipts/20261110T023143842820Z-trade-twins-inspector-real-native-downloads-original-zip-audit-mobile-and-response-ownership.json",
+      "sha256": "4fc7937d0b9dbd0356c6eb9c1bc51699fe7b505e4a258029496eec97a311a6c1",
+      "exit_code": 0,
+      "receipt_id": "20261110T023143842820Z-trade-twins-inspector-real-native-downloads-original-zip-audit-mobile-and-response-ownership"
+    },
+    {
+      "path": "verification/receipts/20261110T023415845767Z-trade-twins-current-complete-saved-evidence-positive-20000-pages-zip-csv-offline-and-all-origin-faults.json",
+      "sha256": "81346c5aa271589c78878af5ee6c77d2eab9e85aa94ffab8816033ec606f620c",
+      "exit_code": 0,
+      "receipt_id": "20261110T023415845767Z-trade-twins-current-complete-saved-evidence-positive-20000-pages-zip-csv-offline-and-all-origin-faults"
+    }
+  ],
+  "quoted_logs": [
+    {
+      "path": "verification/runs/20261109T190558345900Z-trade-twins-original-report-extractor-authored-absence-assertion/stdout.log",
+      "sha256": "78880c793d65c118cb17f729648d3051ece376916a90fc79a0ebddf791fdb474",
+      "bytes": 1086
+    },
+    {
+      "path": "verification/runs/20261109T190558345900Z-trade-twins-original-report-extractor-authored-absence-assertion/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T190723737839Z-trade-twins-original-report-cohort-entry-signal-ledger-and-split-extraction-first-contracts/stdout.log",
+      "sha256": "2417896e40b0340b7ff51b51afcbedff6b346eb6dfe0036cc55a122a31b38f78",
+      "bytes": 6340
+    },
+    {
+      "path": "verification/runs/20261109T190723737839Z-trade-twins-original-report-cohort-entry-signal-ledger-and-split-extraction-first-contracts/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T191137143222Z-trade-twins-original-saved-store-authority-reader-authored-absence-assertion/stdout.log",
+      "sha256": "7df91c2f05c89d1ea8719f649b12497ba7edcb8003902c3ab3b0c794bc92b1c3",
+      "bytes": 1556
+    },
+    {
+      "path": "verification/runs/20261109T191137143222Z-trade-twins-original-saved-store-authority-reader-authored-absence-assertion/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T191257164751Z-trade-twins-first-original-saved-input-root-trial-attempt-view-and-source-authorization-contracts/stdout.log",
+      "sha256": "3821851ea559f6300997a40c592a2dda46307a54b33fe5f4c6aecdef8020b5c0",
+      "bytes": 61909
+    },
+    {
+      "path": "verification/runs/20261109T191257164751Z-trade-twins-first-original-saved-input-root-trial-attempt-view-and-source-authorization-contracts/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T191402286041Z-trade-twins-saved-source-original-input-index-owner-and-fault-contracts/stdout.log",
+      "sha256": "8afe7ce58726e00c32c9c937ddda429de37adfaed5e5c30ee66913340399efde",
+      "bytes": 7472
+    },
+    {
+      "path": "verification/runs/20261109T191402286041Z-trade-twins-saved-source-original-input-index-owner-and-fault-contracts/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T191625704451Z-trade-twins-late-price-manifest-authority-changes-authored-refusal-contract/stdout.log",
+      "sha256": "c3592f53f7739788dd7bc4fcb2a8d21377dce47e24489a3d1636f8b0435310b0",
+      "bytes": 4565
+    },
+    {
+      "path": "verification/runs/20261109T191625704451Z-trade-twins-late-price-manifest-authority-changes-authored-refusal-contract/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T192113779290Z-trade-twins-authored-original-trial-event-loss-with-intact-current-row-refusal/stdout.log",
+      "sha256": "c4007f29c9a1ccff88ee2ceb659f6000cccf4a6bfb6b51f394937dfe10b780f9",
+      "bytes": 3075
+    },
+    {
+      "path": "verification/runs/20261109T192113779290Z-trade-twins-authored-original-trial-event-loss-with-intact-current-row-refusal/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T192619985315Z-trade-twins-actual-owned-retry-with-original-checkpoint-history-authored-authority-contract/stdout.log",
+      "sha256": "4ce75c0b93c79b23073dde0087909a49fa2233abfa24cf312ae03a6959796aa2",
+      "bytes": 4880
+    },
+    {
+      "path": "verification/runs/20261109T192619985315Z-trade-twins-actual-owned-retry-with-original-checkpoint-history-authored-authority-contract/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T193107063179Z-trade-twins-typed-original-trade-direction-authored-refusal-counterexample/stdout.log",
+      "sha256": "6537419d2751f93881002bbabc6b02d11f4b3459474bfbccc6b51bc88fdb4ae2",
+      "bytes": 2854
+    },
+    {
+      "path": "verification/runs/20261109T193107063179Z-trade-twins-typed-original-trade-direction-authored-refusal-counterexample/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/stdout.log",
+      "sha256": "6c496dd61d2c3299702023a31918a323112c22634b09979f74ac3df2e6a98550",
+      "bytes": 1423
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/stderr.log",
+      "sha256": "78e9adbe4665024ddf29b4b0c8f77c32c3b5e4159261d2c41119f9ca2797e40e",
+      "bytes": 436
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/baseline/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/baseline/stdout.log",
+      "sha256": "587f3ac93e9b778a84a845177746a998ae40f58146457789048ae4fac2cedf47",
+      "bytes": 119
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/late-original-manifest/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/late-original-manifest/stdout.log",
+      "sha256": "f6673f833e303c3a36525c08c29ca64200d333ceecb76d3c81bf505f90b7f6dd",
+      "bytes": 118
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/late-original-price/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/late-original-price/stdout.log",
+      "sha256": "77c5cd230e3ebe1564ad7302ef444928250952cc999c4bbba83b6b15a3fd421c",
+      "bytes": 2502
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-attempt-output/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-attempt-output/stdout.log",
+      "sha256": "f69caea264795d980ba9d13bcdb253eae8505a0b8aab42c9e03a3c1b408a208d",
+      "bytes": 3877
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-cost-identity/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-cost-identity/stdout.log",
+      "sha256": "4073847cb193ec1ea30796676524ab8ec19964b3a921c9223234b5d7d0a137e1",
+      "bytes": 4424
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-entry-ledger/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-entry-ledger/stdout.log",
+      "sha256": "b37a6b4e8d8292d1a5d8d9d86b20a9b459ddb8be3736b172ee534e039c0f98ef",
+      "bytes": 4426
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-event-loss/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-event-loss/stdout.log",
+      "sha256": "fdf2e3896d98254a74bab329c22518a9a8b12497b21e64e81e5aeb0ad4ac48b8",
+      "bytes": 3230
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-signal-identity/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-signal-identity/stdout.log",
+      "sha256": "d840f137241854366737a44eddb2ab50e534c184bae0baa694bfaa8a204d175c",
+      "bytes": 4444
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-trial-output/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/original-trial-output/stdout.log",
+      "sha256": "398540fed5c44951892408d77a89daf6a35d24ff22c66842c67c0a9267a0f695",
+      "bytes": 3869
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/whole-executed-cohort/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194429774545Z-trade-twins-ten-actual-original-source-cohort-identity-event-trial-and-late-authority-mutations/whole-executed-cohort/stdout.log",
+      "sha256": "2bd236ebec157fbad5a8422461e9f01a573c8fc373f51269f95f7d43013de79d",
+      "bytes": 2997
+    },
+    {
+      "path": "verification/runs/20261109T194937825191Z-trade-twins-ten-actual-source-authority-mutations-with-paired-price-manifest-replacement/stdout.log",
+      "sha256": "0d67b5e74dbb01a3fde20d0fe35f16eca62543b7f42922a926a2974929197242",
+      "bytes": 131
+    },
+    {
+      "path": "verification/runs/20261109T194937825191Z-trade-twins-ten-actual-source-authority-mutations-with-paired-price-manifest-replacement/stderr.log",
+      "sha256": "f880f5cc772be7b9985229ac76baa199910e18df1d7abae8af772d97af953087",
+      "bytes": 412
+    },
+    {
+      "path": "verification/runs/20261109T194937825191Z-trade-twins-ten-actual-source-authority-mutations-with-paired-price-manifest-replacement/baseline/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T194937825191Z-trade-twins-ten-actual-source-authority-mutations-with-paired-price-manifest-replacement/baseline/stdout.log",
+      "sha256": "7e92f203dcc1c55582c6784025a11ff0ce466ca8f4d9f39f64f4f1e14bc800ad",
+      "bytes": 4630
+    },
+    {
+      "path": "verification/runs/20261109T195837781741Z-trade-twins-financial-execution-authored-absence-assertion-before-kernel/stdout.log",
+      "sha256": "2e401e32e1575408962ac33a6f68a7366a8c1ed6d2cda8928cf357a05c702fc3",
+      "bytes": 1105
+    },
+    {
+      "path": "verification/runs/20261109T195837781741Z-trade-twins-financial-execution-authored-absence-assertion-before-kernel/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200047466627Z-trade-twins-financial-kernel-first-independent-decimal-full-book-contracts/stdout.log",
+      "sha256": "a6ff17f51357b01af99a34b881bccc00e9cadd48ba229e4f95e136f0e1c215b8",
+      "bytes": 43539
+    },
+    {
+      "path": "verification/runs/20261109T200047466627Z-trade-twins-financial-kernel-first-independent-decimal-full-book-contracts/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200235752667Z-trade-twins-financial-prior-volume-staleness-authored-counterexample/stdout.log",
+      "sha256": "d7ff368c77335e9cf97e34ca8d6a86083a4385b4e2e62e4b5536d043249acf5a",
+      "bytes": 1342
+    },
+    {
+      "path": "verification/runs/20261109T200235752667Z-trade-twins-financial-prior-volume-staleness-authored-counterexample/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200650493967Z-trade-twins-financial-full-field-original-artifacts-hand-fees-weekend-dividends-and-30-module-declaration/stdout.log",
+      "sha256": "891566ba4c03e7628acbe5d9648124e537f01ddb218be4968db608ce520182f1",
+      "bytes": 3159
+    },
+    {
+      "path": "verification/runs/20261109T200650493967Z-trade-twins-financial-full-field-original-artifacts-hand-fees-weekend-dividends-and-30-module-declaration/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/stdout.log",
+      "sha256": "46d5a059838480b96dcd80edec10d045a39e0c68bb0eb81d85e1b3539d8cb539",
+      "bytes": 1123
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/stderr.log",
+      "sha256": "bb03a8e8e4a6b334fd3102e900a0359b15ca064f6a9ce8a9f932313d477915c7",
+      "bytes": 745
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/baseline/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/baseline/stdout.log",
+      "sha256": "2a0ae4b8c8253547a480a3f2367b2beb46897550ca2720e871cb5024d9a72b9f",
+      "bytes": 119
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/fixed-duration-barriers/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/fixed-duration-barriers/stdout.log",
+      "sha256": "dcaeadb91087f23bfa36ecdfa10ffc4f2029a85c88322b59c255f2b5c1f0bbbc",
+      "bytes": 19624
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/fractional-split-quantity/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/fractional-split-quantity/stdout.log",
+      "sha256": "14c83b67c2fafc9a846aca83262aa8ac987e9d9853b967dc4cca5b4862849441",
+      "bytes": 54784
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/one-tick-through/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/one-tick-through/stdout.log",
+      "sha256": "5b52992120a37ba9c7a9222be0a42d42df5c7cb094ebeebe94db3185cc67f3d9",
+      "bytes": 7719
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/opening-cutoff-priority/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/opening-cutoff-priority/stdout.log",
+      "sha256": "ebca09dfbd42647ba7d8823837a0a6803592e33ba4d6ef613b8fff0daf2720da",
+      "bytes": 5808
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/original-quantity/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/original-quantity/stdout.log",
+      "sha256": "2a6b1dcfec56b44b73ce6805d1b37b937f9957cbf2e54f3aa82994894eee9536",
+      "bytes": 24002
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/sell-value-fee/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/sell-value-fee/stdout.log",
+      "sha256": "865f5c7e7819234e7fc1e86dc40a3005f17e3f81adaf5a72548a89637c668901",
+      "bytes": 5584
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/stop-first-ambiguity/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T200906145927Z-trade-twins-eleven-actual-financial-accounting-clock-barrier-funding-and-liquidity-mutations/stop-first-ambiguity/stdout.log",
+      "sha256": "b80f7d47a7da8cb8b74621e995d482d20ef93de89f65146df970e70f0bdc60a8",
+      "bytes": 7412
+    },
+    {
+      "path": "verification/runs/20261109T201009374946Z-trade-twins-current-complete-backend-regression-and-thirty-numerical-module-coverage/stdout.log",
+      "sha256": "acb90c74f72b1fbd5cde55ea4be559f7da2fb1ce36ee3b3f6420726ec8d23ac4",
+      "bytes": 97682
+    },
+    {
+      "path": "verification/runs/20261109T201009374946Z-trade-twins-current-complete-backend-regression-and-thirty-numerical-module-coverage/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T202118194565Z-trade-twins-uninstalled-causal-setup-atr-feature-prototype-independent-asof-split-and-future-invariance/stdout.log",
+      "sha256": "3a0f872e2e17fd2491781b878c8c13fa381b273057a17c13771707e42e527cfd",
+      "bytes": 1476
+    },
+    {
+      "path": "verification/runs/20261109T202118194565Z-trade-twins-uninstalled-causal-setup-atr-feature-prototype-independent-asof-split-and-future-invariance/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T203636149747Z-trade-twins-uninstalled-exact-decimal-financial-grading-below-float-resolution-ties-and-complete-denominators/stdout.log",
+      "sha256": "a0f7ce9b4903ab8957067a6146638d1161c67a74a78e2e1ac0735c55a73e719a",
+      "bytes": 2976
+    },
+    {
+      "path": "verification/runs/20261109T203636149747Z-trade-twins-uninstalled-exact-decimal-financial-grading-below-float-resolution-ties-and-complete-denominators/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T203830004487Z-trade-twins-exact-grading-authored-default-decimal-context-cohort-sum-counterexample/stdout.log",
+      "sha256": "2ee14a49410998a20424430549e468abf96b38a32a52bacd6261d4c336fa5002",
+      "bytes": 1261
+    },
+    {
+      "path": "verification/runs/20261109T203830004487Z-trade-twins-exact-grading-authored-default-decimal-context-cohort-sum-counterexample/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T203916532173Z-trade-twins-exact-grading-corrected-authored-cohort-sum-precision-counterexample/stdout.log",
+      "sha256": "3983e13d69ce72130714e0e142c55995dbd56bd2f2943fc51fe4cc2a303b70ea",
+      "bytes": 1301
+    },
+    {
+      "path": "verification/runs/20261109T203916532173Z-trade-twins-exact-grading-corrected-authored-cohort-sum-precision-counterexample/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T211558078496Z-trade-twins-next-stage-production-component-absence-and-actual-original-profit-sum-red-contract/stdout.log",
+      "sha256": "ffadf5d4150f706d88230eb4abb3166b2305cd198e46d5af3b539d7739e09d8f",
+      "bytes": 6380
+    },
+    {
+      "path": "verification/runs/20261109T211558078496Z-trade-twins-next-stage-production-component-absence-and-actual-original-profit-sum-red-contract/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T212324826313Z-trade-twins-next-features-authored-bounded-validation-cancel-and-final-return-contracts/stdout.log",
+      "sha256": "37af14c9e94e8178befef12eafacc1f253c5cb611e7496dca6ff0034eab886ba",
+      "bytes": 1389
+    },
+    {
+      "path": "verification/runs/20261109T212324826313Z-trade-twins-next-features-authored-bounded-validation-cancel-and-final-return-contracts/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T213226103308Z-trade-twins-baseline-2642-actual-case-lineage-and-unchanged-numerical-source-coverage-reconciliation/stdout.log",
+      "sha256": "71f59c8e3b1f2ddb6b4ca7b29a24327b22583be130ef3834b7396305500eb1d8",
+      "bytes": 1599
+    },
+    {
+      "path": "verification/runs/20261109T213226103308Z-trade-twins-baseline-2642-actual-case-lineage-and-unchanged-numerical-source-coverage-reconciliation/stderr.log",
+      "sha256": "683a61e15d586b3f06403950f031aa0cb8f088ea2a4f80e3f633adff01ae1a87",
+      "bytes": 588
+    },
+    {
+      "path": "verification/runs/20261109T214838099141Z-trade-twins-thirteen-actual-current-production-preparation-and-original-sum-mutations/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T214838099141Z-trade-twins-thirteen-actual-current-production-preparation-and-original-sum-mutations/stderr.log",
+      "sha256": "aaa6d9d25382006294087b79e3e21c000a997b8ec3e6befd5c835bfc4a3cc2b8",
+      "bytes": 402
+    },
+    {
+      "path": "verification/runs/20261109T220826879601Z-trade-twins-durable-original-reservation-authored-absence-contract/stdout.log",
+      "sha256": "acdcdceff4a117548808bc8b106ffb11483868b48c1a3bd8b30c4fe06bbab4cd",
+      "bytes": 1085
+    },
+    {
+      "path": "verification/runs/20261109T220826879601Z-trade-twins-durable-original-reservation-authored-absence-contract/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T220948795814Z-trade-twins-first-original-atomic-reservation-and-20001-frozen-occurrences/stdout.log",
+      "sha256": "f572d621f902eeeb4ee7f82bbdab1c48a8e23b5b2504359804ac8893833d049e",
+      "bytes": 65087
+    },
+    {
+      "path": "verification/runs/20261109T220948795814Z-trade-twins-first-original-atomic-reservation-and-20001-frozen-occurrences/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T221411064643Z-trade-twins-authored-late-parent-and-protected-scope-revalidation-counterexamples/stdout.log",
+      "sha256": "963144379d7d398da948a578daf0c34ef9dd93886f2ce596a72c3efb7c019207",
+      "bytes": 4510
+    },
+    {
+      "path": "verification/runs/20261109T221411064643Z-trade-twins-authored-late-parent-and-protected-scope-revalidation-counterexamples/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T221453097324Z-trade-twins-original-reservation-and-revalidation-late-state-scope-and-all-links/stdout.log",
+      "sha256": "01f2f89caf73749b6cd8859470a1c2866f80282c505b0ecb266f0118f9bc1897",
+      "bytes": 25
+    },
+    {
+      "path": "verification/runs/20261109T221453097324Z-trade-twins-original-reservation-and-revalidation-late-state-scope-and-all-links/stderr.log",
+      "sha256": "186a962b73dd7346e350aab636cfb80d9511efb55eb5a471b130baad66ba47a2",
+      "bytes": 62
+    },
+    {
+      "path": "verification/runs/20261109T222930510042Z-trade-twins-owned-durable-preparation-authored-absence-contract/stdout.log",
+      "sha256": "2de67111024daa079bcf91e1df7bad1febba32972de220e6b101fb90c9e202c4",
+      "bytes": 1141
+    },
+    {
+      "path": "verification/runs/20261109T222930510042Z-trade-twins-owned-durable-preparation-authored-absence-contract/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T223312917680Z-trade-twins-authored-real-corporate-action-and-closing-original-authority-preparation-counterexamples/stdout.log",
+      "sha256": "0195524f1b3d250c4bb6fb219a6f76d402b30c4aed3a3b69421c289d8291c614",
+      "bytes": 6494
+    },
+    {
+      "path": "verification/runs/20261109T223312917680Z-trade-twins-authored-real-corporate-action-and-closing-original-authority-preparation-counterexamples/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T224803451606Z-trade-twins-six-actual-owned-preparation-source-cohort-actions-plan-authority-and-atomic-seal-mutations/stdout.log",
+      "sha256": "f166197311a1854be10f67a9b5ee8bbbe0d62c8e3d665fe07212afeeed1940e0",
+      "bytes": 394
+    },
+    {
+      "path": "verification/runs/20261109T224803451606Z-trade-twins-six-actual-owned-preparation-source-cohort-actions-plan-authority-and-atomic-seal-mutations/stderr.log",
+      "sha256": "4883e15dfb0986e44aab7c95d446c66cc7dd36062de6d3b168123be880fad2ee",
+      "bytes": 1878
+    },
+    {
+      "path": "verification/runs/20261109T230348013448Z-trade-twins-paired-financial-parts-authored-missing-implementation-contract/stdout.log",
+      "sha256": "751f28127c128382308e447494c2502680498c2244040cfd575b274f9e5157a9",
+      "bytes": 1095
+    },
+    {
+      "path": "verification/runs/20261109T230348013448Z-trade-twins-paired-financial-parts-authored-missing-implementation-contract/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T232017136670Z-trade-twins-complete-owned-worker-authored-missing-dispatch-contract/stdout.log",
+      "sha256": "f8945848b9a314f97357004c00036f640ff250d1675db245a91de0908adfa862",
+      "bytes": 1107
+    },
+    {
+      "path": "verification/runs/20261109T232017136670Z-trade-twins-complete-owned-worker-authored-missing-dispatch-contract/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T233216663791Z-trade-twins-authored-bounded-original-book-validation-and-midunit-authority-counterexamples/stdout.log",
+      "sha256": "cd0bedf26f0e997edca74ed5878f53a80ae2b1e65576bf4c4b6e30b03eac6a0b",
+      "bytes": 4228
+    },
+    {
+      "path": "verification/runs/20261109T233216663791Z-trade-twins-authored-bounded-original-book-validation-and-midunit-authority-counterexamples/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261109T235306560862Z-trade-twins-identical-original-and-random-cashflow-strict-baseline-precision-counterexamples/stdout.log",
+      "sha256": "e75e472124b09c51754d40dcbf6360eb0e0b1236fe7a11b7c383a174dfc1818a",
+      "bytes": 5407
+    },
+    {
+      "path": "verification/runs/20261109T235306560862Z-trade-twins-identical-original-and-random-cashflow-strict-baseline-precision-counterexamples/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T000510462732Z-source-cashflow-auditor-authored-absence-before-canonical-baseline-implementation/stdout.log",
+      "sha256": "7f03a73ceec0457a2b3eeee2d114d371ce734fd0b8252b28782e36b6c68fa7fc",
+      "bytes": 1114
+    },
+    {
+      "path": "verification/runs/20261110T000510462732Z-source-cashflow-auditor-authored-absence-before-canonical-baseline-implementation/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T001231583982Z-source-cashflows-first-canonical-original-audit-and-identical-financial-ties/stdout.log",
+      "sha256": "5790b13e58984d9bcba10698e6664660ef8629d259b502c21bdf2bb6611bd1c0",
+      "bytes": 51169
+    },
+    {
+      "path": "verification/runs/20261110T001231583982Z-source-cashflows-first-canonical-original-audit-and-identical-financial-ties/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T001925270510Z-current-owned-worker-10000-paired-financial-sets-original-checkpoints-independent-books-and-resources/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T001925270510Z-current-owned-worker-10000-paired-financial-sets-original-checkpoints-independent-books-and-resources/stderr.log",
+      "sha256": "659b074eab3f8ab89113340c218739fb4ba456b4542dfdc8c7ead2f6c00e009b",
+      "bytes": 271
+    },
+    {
+      "path": "verification/runs/20261110T002256806219Z-trade-twins-authored-api-route-absence-and-source-assumption-boundary/stdout.log",
+      "sha256": "1cd31c1abac40fd9b956a32002ad788f918612187b240f28c964071ef66778a7",
+      "bytes": 1600
+    },
+    {
+      "path": "verification/runs/20261110T002256806219Z-trade-twins-authored-api-route-absence-and-source-assumption-boundary/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T003025012143Z-trade-twins-real-browser-source-continuation-cancel-resume-reopen-and-mobile-empty-cohort/stdout.log",
+      "sha256": "09bdc96c0d79abc55db291af324376b76d6e757ea47d6457f3297a45fa7f2944",
+      "bytes": 982
+    },
+    {
+      "path": "verification/runs/20261110T003025012143Z-trade-twins-real-browser-source-continuation-cancel-resume-reopen-and-mobile-empty-cohort/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T003044742139Z-trade-twins-real-browser-explicit-locked-runner-cancel-resume-reopen-and-mobile-empty-cohort/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T003044742139Z-trade-twins-real-browser-explicit-locked-runner-cancel-resume-reopen-and-mobile-empty-cohort/stderr.log",
+      "sha256": "723a765d6f7e831ecc86324b9f9fd433f90a5d6666249058b50f2e5d9a2cb20f",
+      "bytes": 1042
+    },
+    {
+      "path": "verification/runs/20261110T003215314961Z-original-cashflow-and-grading-eight-actual-mutations-with-green-assertion-baseline/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T003215314961Z-original-cashflow-and-grading-eight-actual-mutations-with-green-assertion-baseline/stderr.log",
+      "sha256": "4edcf26632d51feb7c538baeb7d574982cbe7b0c3bc9e9d11a4974c738113609",
+      "bytes": 446
+    },
+    {
+      "path": "verification/runs/20261110T003249342972Z-original-cashflow-eight-actual-assertion-mutations-with-required-independent-fixture/stdout.log",
+      "sha256": "4f1d79813a3498dbc18deff962f32ead4254116e3b6ee311b9706422bac30b7b",
+      "bytes": 632
+    },
+    {
+      "path": "verification/runs/20261110T003249342972Z-original-cashflow-eight-actual-assertion-mutations-with-required-independent-fixture/stderr.log",
+      "sha256": "5f4b0b256022c5a8a86805d64eaa3325d8d55410bb4909f3f301d21803b6a1dd",
+      "bytes": 4657
+    },
+    {
+      "path": "verification/runs/20261110T004046159260Z-trade-twins-current-combined-matching-original-cashflows-finance-durability-api-and-exact-grading/stdout.log",
+      "sha256": "3fd9253318dd5f2f46cf8b421492495d323393b520ea29d1b148146506fdb6c2",
+      "bytes": 2964
+    },
+    {
+      "path": "verification/runs/20261110T004046159260Z-trade-twins-current-combined-matching-original-cashflows-finance-durability-api-and-exact-grading/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T005237189034Z-trade-twins-saved-evidence-manifest-authored-absence-before-implementation/stdout.log",
+      "sha256": "b6c22feeb00576eb73939223caf3c377c08c345d393410d6bead71e400e06ce7",
+      "bytes": 1121
+    },
+    {
+      "path": "verification/runs/20261110T005237189034Z-trade-twins-saved-evidence-manifest-authored-absence-before-implementation/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T005605730363Z-trade-twins-original-manifest-member-binding-computation-events-and-paired-part-regression/stdout.log",
+      "sha256": "e1925b372f3e5c32b23389d70255391bff5a483a368e4e95d410580637091b65",
+      "bytes": 25
+    },
+    {
+      "path": "verification/runs/20261110T005605730363Z-trade-twins-original-manifest-member-binding-computation-events-and-paired-part-regression/stderr.log",
+      "sha256": "91035203ef405aedde05705771d4ba8c6a9489d15bb780b0fbae842f0a517165",
+      "bytes": 66
+    },
+    {
+      "path": "verification/runs/20261110T005626036153Z-trade-twins-original-evidence-member-computation-and-paired-owned-worker-regression/stdout.log",
+      "sha256": "7681b153507d2c44b9b66b4a4f481b9b215eb78dce74931f3bde526b0a91b1ee",
+      "bytes": 25
+    },
+    {
+      "path": "verification/runs/20261110T005626036153Z-trade-twins-original-evidence-member-computation-and-paired-owned-worker-regression/stderr.log",
+      "sha256": "5ab4dffd834c00ff29e38bac70323ca94b0a628aa61e791dd125e528d2d22e53",
+      "bytes": 60
+    },
+    {
+      "path": "verification/runs/20261110T005648114464Z-trade-twins-original-financial-member-evidence-computation-and-existing-trial-registry/stdout.log",
+      "sha256": "88478dfa1cf2b70b156b5ef6b63cbd684deef122414789521e0238fa3ad41b1f",
+      "bytes": 194
+    },
+    {
+      "path": "verification/runs/20261110T005648114464Z-trade-twins-original-financial-member-evidence-computation-and-existing-trial-registry/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T011406925725Z-trade-twins-first-real-saved-view-pages-repair-complete-zip-no-recomputation-and-api-bounds/stdout.log",
+      "sha256": "b3c301293eada64a42d5729ea7b045ec0ae0f5db8f968180c9ecb03ab953cf14",
+      "bytes": 14966
+    },
+    {
+      "path": "verification/runs/20261110T011406925725Z-trade-twins-first-real-saved-view-pages-repair-complete-zip-no-recomputation-and-api-bounds/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T014907015802Z-trade-twins-saved-only-view-empty-source-zip-csv-offline-report-and-original-lifecycle/stdout.log",
+      "sha256": "44f70df3d07b7a83571c76cc2fa88d3b5b28545e0ac4a1c0a0dc40cb0a988f58",
+      "bytes": 2284
+    },
+    {
+      "path": "verification/runs/20261110T014907015802Z-trade-twins-saved-only-view-empty-source-zip-csv-offline-report-and-original-lifecycle/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T015043280147Z-trade-twins-direct-original-saved-view-error-chain-before-http-envelope/stdout.log",
+      "sha256": "410400f76d75ce34a9136bc45c5dbfe909a86621513234dfcaebf59d2d261117",
+      "bytes": 7410
+    },
+    {
+      "path": "verification/runs/20261110T015043280147Z-trade-twins-direct-original-saved-view-error-chain-before-http-envelope/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T021154839695Z-trade-twins-actual-completed-positive-original-pages-books-full-export-and-tamper-counterexamples/stdout.log",
+      "sha256": "916e41011ec268c5ed31aece110d75366a3c02b0693d1b93503b2b5db4e96eae",
+      "bytes": 1448
+    },
+    {
+      "path": "verification/runs/20261110T021154839695Z-trade-twins-actual-completed-positive-original-pages-books-full-export-and-tamper-counterexamples/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T021238116079Z-trade-twins-positive-saved-evidence-correct-staged-imports-all-pages-complete-export-and-origin-faults/stdout.log",
+      "sha256": "d80788e3a843e85432e880d331a02acf348f7c872c0ea8f2f61a6b6c9f0d07ce",
+      "bytes": 2097
+    },
+    {
+      "path": "verification/runs/20261110T021238116079Z-trade-twins-positive-saved-evidence-correct-staged-imports-all-pages-complete-export-and-origin-faults/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T021327181166Z-trade-twins-positive-saved-evidence-explicit-stage-config-all-original-pages-zip-and-tampering/stdout.log",
+      "sha256": "85194a78ffbca98639b7053beaab2c6a1b071daf6a8ca7e87b40b7aec798293c",
+      "bytes": 47034
+    },
+    {
+      "path": "verification/runs/20261110T021327181166Z-trade-twins-positive-saved-evidence-explicit-stage-config-all-original-pages-zip-and-tampering/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T021554790354Z-trade-twins-real-desktop-mobile-original-set-book-inspector-full-zip-and-obsolete-response-ownership/stdout.log",
+      "sha256": "e44add1db43df44237ff48f0522f6d27936b866937cd1b184c03bb0d4d330180",
+      "bytes": 11140
+    },
+    {
+      "path": "verification/runs/20261110T021554790354Z-trade-twins-real-desktop-mobile-original-set-book-inspector-full-zip-and-obsolete-response-ownership/stderr.log",
+      "sha256": "88cb10f15179d81ee6ab92b3732eb67a525dc2a9f4d6e55660f4575a117514ae",
+      "bytes": 498
+    },
+    {
+      "path": "verification/runs/20261110T021644867002Z-trade-twins-positive-original-all-20000-pages-complete-csv-zip-and-rehashed-view-faults/stdout.log",
+      "sha256": "9a948764a1d1205a388b2988ad8d5e84bff76bc57c4f7992739e359f9d0d6fde",
+      "bytes": 9176
+    },
+    {
+      "path": "verification/runs/20261110T021644867002Z-trade-twins-positive-original-all-20000-pages-complete-csv-zip-and-rehashed-view-faults/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T022126792700Z-trade-twins-real-inspector-complete-verified-download-desktop-mobile-and-selection-ownership/stdout.log",
+      "sha256": "353893c4a03f144f0eb152e47bb0d356643ee47489c971a9d81fc11553b32750",
+      "bytes": 10481
+    },
+    {
+      "path": "verification/runs/20261110T022126792700Z-trade-twins-real-inspector-complete-verified-download-desktop-mobile-and-selection-ownership/stderr.log",
+      "sha256": "d0fd671b36cbc71252611a780915d04070270a877d88cf32c1f61bc498a032e3",
+      "bytes": 498
+    },
+    {
+      "path": "verification/runs/20261110T022418931452Z-trade-twins-authored-original-preparation-manifest-and-publication-causality-counterexamples/stdout.log",
+      "sha256": "408ce276979df74532bd86c690cffff459bf4affb584615329f5a254b484d53f",
+      "bytes": 26409
+    },
+    {
+      "path": "verification/runs/20261110T022418931452Z-trade-twins-authored-original-preparation-manifest-and-publication-causality-counterexamples/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/runs/20261110T023025000612Z-trade-twins-original-publication-preparation-part-causality-fixed-and-real-empty-view-export-regression/stdout.log",
+      "sha256": "dbfd890e65947f37e15eb9bcdf727cdb8a84e348bb305388cd7b3ec18740fe03",
+      "bytes": 1219
+    },
+    {
+      "path": "verification/runs/20261110T023025000612Z-trade-twins-original-publication-preparation-part-causality-fixed-and-real-empty-view-export-regression/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "receipt_count": 145,
+  "nonzero_receipts": 60,
+  "public_messages": 111,
+  "scope": "Historical receipt JSON hashes and quoted log hashes; not every historical artifact revalidated. Original journey documents preserved."
+}

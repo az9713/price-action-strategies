@@ -1,0 +1,16 @@
+{
+  "job_id": "f293b72b96f84dcda41cb19413a0fab1",
+  "browser": "156.0.8078.81",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "bundle": "/assets/index-DgcN5fn3.js",
+  "dataset_id": "90f347229b2fb03ec112ee71",
+  "net_profit": 334.4222236168862,
+  "trades": 10,
+  "equity_points": 20,
+  "ledger_events": 410,
+  "consoleErrors": [],
+  "scope": "One real cached historical flow, not the entire acceptance catalog."
+}

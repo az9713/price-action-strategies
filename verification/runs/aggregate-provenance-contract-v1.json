@@ -1,0 +1,10 @@
+{
+  "revision": "D040 authored before implementation; does not certify D039",
+  "source_request_job": "994053c6967142baaa6c10c6dede7801",
+  "scope": "One fresh synthetic common-random search, count1/seed42/BOS1m/default discovery gates; preserve source dataset/window/costs/capital. No financial pass or final access requirement.",
+  "expected_context_keys": ["dataset_id", "dataset_manifest_hash", "input_kind", "source", "symbols"],
+  "required_locations": ["queued immutable payload", "saved aggregate root", "initial-screen CSV identity columns", "saved offline facts"],
+  "required_csv_columns": ["input_kind", "data_source", "symbols", "dataset_manifest_hash"],
+  "legacy_policy": "Do not rewrite old jobs or infer missing provenance from the UI's selected dataset. Show not-recorded/unknown explicitly.",
+  "future_coverage": "Extend to all aggregate analysis types, historical/user-import/unknown labels, corruption, recovery, dataset switching, complete CSV/JSON parity, offline saved-only rendering and protected future metadata. This one control alone is not sufficient acceptance."
+}

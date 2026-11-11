@@ -1,0 +1,113 @@
+{
+  "scope": "Static documentation rendering only; no trading-app verification or desktop takeover.",
+  "browser": "isolated headless Chromium",
+  "passed": true,
+  "observations": [
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page": "index.html",
+      "title": "Project paused — Price Action Research Lab",
+      "horizontal_overflow": false,
+      "html_sha256": "038a85fca14662c331c93e2fe29d4d50c18f1584a3bcd48a87aadfe41bfd44c3",
+      "screenshot": "desktop-index.png"
+    },
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page": "handoff.html",
+      "title": "Current handoff — Price Action Research Lab",
+      "horizontal_overflow": false,
+      "html_sha256": "f63b5982e8b243382cfc89315f9a7cd4cc955fa7e2806e71914ec5cb7de11eab",
+      "screenshot": "desktop-handoff.png"
+    },
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page": "development-journey.html",
+      "title": "Complete development journey — Price Action Research Lab",
+      "horizontal_overflow": false,
+      "html_sha256": "7b3fd22120a1405a3d40e7b4744ff264ef80d5f3c975d31acf006c82aaba8c17",
+      "screenshot": "desktop-development-journey.png",
+      "journal_sections": 4
+    },
+    {
+      "profile": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page": "verification-history.html",
+      "title": "Verification history — Price Action Research Lab",
+      "horizontal_overflow": false,
+      "html_sha256": "38f08a8401897e090025518f60d4e740a2eb1ddcedb4e19a7b62ba3ce72626a1",
+      "screenshot": "desktop-verification-history.png",
+      "all_entries": 1357,
+      "search_entries": 2,
+      "nonzero_entries": 383
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page": "index.html",
+      "title": "Project paused — Price Action Research Lab",
+      "horizontal_overflow": false,
+      "html_sha256": "038a85fca14662c331c93e2fe29d4d50c18f1584a3bcd48a87aadfe41bfd44c3",
+      "screenshot": "mobile-index.png"
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page": "handoff.html",
+      "title": "Current handoff — Price Action Research Lab",
+      "horizontal_overflow": false,
+      "html_sha256": "f63b5982e8b243382cfc89315f9a7cd4cc955fa7e2806e71914ec5cb7de11eab",
+      "screenshot": "mobile-handoff.png"
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page": "development-journey.html",
+      "title": "Complete development journey — Price Action Research Lab",
+      "horizontal_overflow": false,
+      "html_sha256": "7b3fd22120a1405a3d40e7b4744ff264ef80d5f3c975d31acf006c82aaba8c17",
+      "screenshot": "mobile-development-journey.png",
+      "journal_sections": 4
+    },
+    {
+      "profile": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page": "verification-history.html",
+      "title": "Verification history — Price Action Research Lab",
+      "horizontal_overflow": false,
+      "html_sha256": "38f08a8401897e090025518f60d4e740a2eb1ddcedb4e19a7b62ba3ce72626a1",
+      "screenshot": "mobile-verification-history.png",
+      "all_entries": 1357,
+      "search_entries": 2,
+      "nonzero_entries": 383
+    }
+  ],
+  "external_requests": 0,
+  "page_errors": 0
+}

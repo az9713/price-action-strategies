@@ -1,0 +1,35 @@
+import {test,expect} from '../../../frontend/node_modules/@playwright/test/index.mjs';
+test('obsolete preview success, current failure, keyboard retry and saved news selection',async({page},info)=>{
+  await page.goto('/');await page.waitForLoadState('networkidle');
+  await page.getByRole('navigation',{name:'Research sections'}).getByRole('button',{name:/^(03 )?Experiments$/}).click();
+  await page.getByRole('combobox',{name:'Dataset',exact:true}).selectOption(process.env.PA_SPREAD_DATASET!);
+  const form=page.getByRole('region',{name:'Balanced spread workflow',exact:true});let queued=0;
+  page.on('request',r=>{if(r.url().endsWith('/api/spreads')&&r.method()==='POST')queued++;});
+  let release!:()=>void;const barrier=new Promise<void>(resolve=>release=resolve);let captured=false;
+  await page.route('**/api/spreads/preview',async route=>{const response=await route.fetch();captured=true;await barrier;await route.fulfill({response});});
+  await form.getByRole('button',{name:'Use small functional run',exact:true}).click();
+  await form.getByRole('button',{name:'Preview spread work',exact:true}).click();await expect.poll(()=>captured).toBe(true);
+  await form.getByLabel('Spread versions per family',{exact:true}).fill('2');release();
+  await page.unroute('**/api/spreads/preview');await expect(form.getByLabel('Spread work preview')).toHaveCount(0);
+  await expect(form.getByRole('button',{name:'Freeze and qualify spread',exact:true})).toBeDisabled();
+  await page.route('**/api/spreads/preview',route=>route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({detail:'Owned preview failure: retry current inputs.'})}));
+  await form.getByRole('button',{name:'Preview spread work',exact:true}).click();await expect(form.getByRole('alert')).toContainText('Owned preview failure');
+  await page.unroute('**/api/spreads/preview');
+  await form.getByRole('button',{name:'Preview spread work',exact:true}).focus();await page.keyboard.press('Enter');
+  await expect(form.getByLabel('Spread work preview')).toContainText('2 selected versions requested');await expect(form.getByRole('alert')).toHaveCount(0);
+  const calendar=await page.evaluate(async name=>{
+    const token=(await(await fetch('/api/session')).json()).token;
+    const r=await fetch('/api/news-calendars',{method:'POST',headers:{'Content-Type':'application/json','X-Lab-Token':token},body:JSON.stringify({name,start:'2026-10-05',end:'2026-10-30',mode:'synthetic',kinds:['custom'],complete:true,events:[],note:'Owned UI scenario, explicitly empty complete calendar.'})});
+    if(r.status!==201)throw Error('Synthetic calendar creation failed: '+r.status);return r.json();
+  },'Owned news '+info.project.name);
+  await page.getByRole('button',{name:'Refresh workspace',exact:true}).click();
+  await page.getByRole('combobox',{name:'News calendar',exact:true}).selectOption(calendar.id);
+  await expect(form.getByLabel('Spread news variants',{exact:true})).toBeEnabled();await form.getByLabel('Spread news variants',{exact:true}).check();
+  await expect(form.getByRole('button',{name:'Freeze and qualify spread',exact:true})).toBeDisabled();
+  await form.getByRole('button',{name:'Preview spread work',exact:true}).click();await expect(form.getByLabel('Spread work preview')).toBeVisible();
+  await page.getByRole('combobox',{name:'News calendar',exact:true}).selectOption('');
+  await expect(form.getByRole('button',{name:'Freeze and qualify spread',exact:true})).toBeDisabled();
+  await form.getByRole('button',{name:'Preview spread work',exact:true}).click();await expect(form.getByRole('alert')).toContainText('Select a saved news calendar');
+  await form.getByLabel('Spread news variants',{exact:true}).uncheck();await expect(form.getByLabel('Spread news variants',{exact:true})).toBeDisabled();expect(queued).toBe(0);
+  await form.screenshot({path:info.outputPath('spread-current-retry-keyboard-and-news.png')});
+});

@@ -1,0 +1,19 @@
+{
+  "reviewed_at_utc": "2026-11-08T12:08:22.792691+00:00",
+  "method": "Actually viewed these two full-suite PNGs with view_image. No claim of manually viewing all52 captures.",
+  "observations": [
+    "1280 comparison panel:2R/3R defaults, saved baseline, separate-account metrics/descriptive interval, account selection, trades and entry/exit/stop/target chart labels.",
+    "1920 ledger panel:13 completed prespecified computations, one worker job attempt, final3 of13 rows and complete-job JSON/CSV links."
+  ],
+  "files": [
+    {
+      "path": "verification/runs/20261108T114807083201Z-paired-ledger-current-all-twelve-browser-journeys/browser/artifacts/ablations-paired-historica-7b3f3--exports-and-late-responses-desktop1280/ablation-panel.png",
+      "sha256": "094ee97ac4e6a9efc6d81b6edc09f091708860add0ebeb134d90367f68313cce"
+    },
+    {
+      "path": "verification/runs/20261108T114807083201Z-paired-ledger-current-all-twelve-browser-journeys/browser/artifacts/ablations-paired-historica-7b3f3--exports-and-late-responses-desktop1920/trial-ledger-panel.png",
+      "sha256": "e8d6dc474df35a53b1b55ad5a3668f91cbcfc09a89c82fd12ec7bd7b40ee9e98"
+    }
+  ],
+  "scope": "Targeted current desktop visual inspection; not mobile/accessibility/all-state acceptance."
+}

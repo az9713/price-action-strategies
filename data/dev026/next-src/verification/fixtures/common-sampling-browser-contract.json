@@ -1,0 +1,11 @@
+{
+  "revision": "D039 first actual two-desktop common-mode browser fixture",
+  "input_kind": "synthetic",
+  "symbols": {"desktop1920": "ZCGA", "desktop1280": "ZCGB"},
+  "sessions": ["2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-19", "2026-10-20"],
+  "bars": "390 regular minutes per session from13:30UTC. Close=1000+10*session_index-.1*minute+8*sin(2*pi*minute/64); open=close+.02, high=close+.2, low=close-.1, volume10000. Explicit authored synthetic prices, not market evidence.",
+  "common_grid": {"count": 48, "families": ["break_of_structure"], "timeframes": ["1m"], "include_news": false, "thresholds": [40,30,0.5]},
+  "common_random": {"count": 6, "seed": 42, "same_axes_and_defaults": true, "accepted_filter_counts": [3,2,1]},
+  "statistics": {"effective_trials": [1], "dispersion_mode": "empirical"},
+  "required": "Both profiles import/audit, preview full grid without prices, lock exact48 count, queue actual complete48-grid then actual6 random accounts. Full grid must have actual trades and signal-qualified accounts; no profitable-result or surviving-strategy requirement. Preserve all outcomes, settings/proposals/part hashes, exact JSON/CSV, every bounded offline page with no network/runtime/geometry errors. Independently reconcile every saved account and aggregate/source fact. No new frozen study or final consumption. No change to seed, counts, gates or validation rules after results. Retain failures."
+}

@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-11-08T08:06:43.221076+00:00",
+  "method": "Assistant actually viewed both unmodified current panel screenshots through view_image.",
+  "core_hash": "26e6daf0932cd65a2b269596807bc47f8945c9d8c26db23ca4e4e947cf72e36c",
+  "bundle": "index-nlEPeQec.js",
+  "images": [
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-panel.png",
+      "sha256": "516f9cd6ada4972320031fecb1785be6b7bcbbae3dadb25dc03eb42e50295f2a",
+      "viewport": "desktop1280"
+    },
+    {
+      "path": "verification/runs/20261108T080057668858Z-passive-comparison-compatible-and-incompatible-browser/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-panel.png",
+      "sha256": "f4126cd8b262b56f504c184a61e1f9cab75831f3d1c3c2e030348701f375fb49",
+      "viewport": "desktop1920"
+    }
+  ],
+  "observed": [
+    "Both profiles show the actual negative passive result and separate positive strategy-minus-passive difference with a risk/edge limitation.",
+    "Allocation quantities/notionals, capital/dates, chart axes, saved fingerprints disclosure and export controls are readable in the reviewed desktop captures.",
+    "Panel controls/columns have no overlap in these two captures."
+  ],
+  "limits": [
+    "Targeted desktop visual inspection only; complete mobile, keyboard, contrast and accessibility acceptance remains open."
+  ]
+}

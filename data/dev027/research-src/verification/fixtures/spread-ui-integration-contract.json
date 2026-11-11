@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "prepared_utc": "2026-11-09",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "scope": "D045 supplement; all83 requirements/422 mandatory cases/120 baseline combinations remain binding",
+  "release_certified": false,
+  "browser_viewports": ["1920x1080", "1280x720", "390x844"],
+  "required_browser_cases": [
+    "Video attribution, ten families, six charts,40000 target and32000000 proposal allowance; no silent source-scale queue",
+    "Small preset retains40 signals; changed inputs invalidate preview; invalid input never queues",
+    "Actual primary qualification, flat other-instrument exhaustion and no exhausted financial continuation",
+    "Whole selected cohort inherits original instrument/dates/costs/borrow/account/seed/news/gates/statistics despite current form changes",
+    "Empty continuation body; same original child on reopen; unavailable metadata cannot offer replacement",
+    "Selected rules, original inputs, complete reports, all-row CSV and standalone HTML after reopen",
+    "Actual cancel/resume preserves original job/input hash; generic saved history reopens qualification",
+    "Obsolete preview success, parent failure and selected-page success/failure cannot replace current ownership",
+    "Current failure/retry, keyboard Enter, news-calendar enable/removal and preview invalidation",
+    "Original-link verification restores UI after read failure without overrides",
+    "No page errors/mobile document overflow/standalone-presentation HTTP requests in declared flow",
+    "Private-capture sanitization retains first failures, actual child exit and review artifacts",
+    "Every owned HTTP server and numerical worker retires on success and failure"
+  ],
+  "required_backend_cases": [
+    "Selected pages default50/max100, seek cursor,16KiB original row/2MiB response; original envelope/input/configuration identity; no raw job payload/full root/prices",
+    "Actual partial selected-event index/count parity; corrupt/missing originals or index cannot become plausible empty success",
+    "10/1000/100000 selection-metadata fixtures with zero financial accounts and explicit heap/read bounds",
+    "Bounded saved-child status without engine/price replay",
+    "Offline/idempotent/concurrent missing forward-link repair from intact original parent/result/child only",
+    "Reject missing/malformed/duplicate/oversized/changed relationship or result, changed inputs, missing child summary, conflicting cache and absent continuation",
+    "Both parent-side records lost: original reverse reservation still refuses a second cohort",
+    "Verified reverse seek index, at most two bounded IDs, malformed IDs/index loss/wrong definition rejected; no original account plan reads for status",
+    "Saved public schemas and live API match actual Strategy/Costs/Portfolio/SpreadSettings/SpreadExperiment/empty SpreadContinuation",
+    "Full current-source regression, unchanged95/90 gates, original/account/export audits and critical mutations before integration"
+  ],
+  "evidence_rules": [
+    "Record exact source inputs, actual exit, JUnit/Playwright results and artifact hashes; no source drift",
+    "Disposable synthetic stores only; exclude credentials, real cached prices and live database from development and archives",
+    "Retain failures and distinguish fixture/product defects; overlapping counts are not independent replications",
+    "Remaining research/scale/security/privacy/accessibility/clean reproduction and coherent final acceptance remain mandatory"
+  ]
+}

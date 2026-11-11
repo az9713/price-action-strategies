@@ -1,0 +1,18 @@
+{
+  "input_kind": "synthetic",
+  "fixture_tag": "QA",
+  "date_sessions": [
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-12"
+  ],
+  "profiles": [
+    "desktop1920",
+    "desktop1280"
+  ],
+  "symbols_policy": "Twenty explicitly synthetic QAA01..20 or QAB01..20 instruments. New synthetic labels isolate this replay from previously consumed synthetic test windows; no real historical evidence is relabeled unseen.",
+  "geometry": "The canonical frontend/tests/portfolio-study.spec.ts and frozen portfolio-study contract define complete minute geometry and controls."
+}

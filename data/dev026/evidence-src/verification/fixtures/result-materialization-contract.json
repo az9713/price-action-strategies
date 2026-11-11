@@ -1,0 +1,64 @@
+{
+  "status": "Normative D043 contract; implementation and acceptance evidence pending",
+  "observed_gaps": [
+    "Lab.result reads the complete job input twice through result/output_path, hashes the full compressed root with read_bytes and decodes all root JSON.",
+    "Lab.report repeats that full root/input materialization for every selected part before loading the part file.",
+    "The Results table renders every root row and its selectors depend on the latest500 job feed. Older jobs need a separate browsing feed that preserves selected-report ownership.",
+    "Direct visual review found study-history nav controls inherit sidebar nav layout; address the scoped toolbar style with the next UI change, preserving both desktop error/repair controls."
+  ],
+  "scope": "Bound root summary/row-page and selected-part reads, retain explicit complete original result/input/report exports, and add independent older-job browsing without changing global report selector identity. Numerical throughput and source-style research funnel remain separate work.",
+  "existing_requirement_traceability": [
+    "SPEC-002",
+    "JOB-001",
+    "JOB-003",
+    "JOB-004",
+    "UI-003",
+    "UI-004",
+    "UI-005",
+    "UI-007",
+    "PERF-001",
+    "PERF-002",
+    "RPT-001",
+    "RPT-003",
+    "FAULT-001"
+  ],
+  "invariants": [
+    "Original compressed roots/parts, job payloads, frozen plan/result events, trial counters, financial numbers and protected-date policy remain unchanged.",
+    "Derived indexes are explicitly projections bound to original artifact and frozen input identities. Full originals remain available on demand, including every configuration/proposal/statistical account/row/universe member.",
+    "Do not replace content integrity with only file size/mtime. Same-length original input/root/part corruption and corrupt/missing derived indexes must not return certified financial values.",
+    "Current raw input integrity must still be checked. Stream exact original TEXT/BLOB bytes in a consistent SQLite snapshot without decoding the whole configuration JSON; distinguish raw-byte hashes from canonical frozen-input hashes.",
+    "New roots can index from the worker's already constructed output. Legacy building/repair must verify original result/input identity before deriving any rows. Decide and explicitly expose a legacy build operation rather than silently treating missing evidence as empty output.",
+    "Selected-part/report lookup must verify the requested job/part/window and original artifact without decoding all unrelated root rows or configurations. All kind-specific redirects/diagnostics/exports and old evidence provenance remain available.",
+    "Page labels, rows, report/part identity and exports are owned by the latest matching request. Stale success/failure cannot mix identities. Browsing history must not replace the selected report's metadata feed.",
+    "No new configuration, instrument, document or dataset limit; no recalculated strategies or resampled outcomes; no new paid service or live orders."
+  ],
+  "required_evidence": [
+    "Authored failing API/SQL/JSON-materialization/part-lookup contracts before implementation, including original input and root/part corruption.",
+    "Exact all-row/configuration/candidate/metric/diagnostic parity against original roots and complete exports, including portfolios, comparisons, legacy/no-context roots, losses, null statistics and empty results.",
+    "Actual worker completion, recovery/cancel/resume, cache publication failure and missing/corrupt index repair without rewriting original evidence.",
+    "Prespecified large summary/page/part byte and materialization measurements, separately labeled from numerical10000/100000 execution.",
+    "Both desktop older-history/page/inspect/export journeys, reversed requests, current errors/retry, keyboard/toolbar layout and original portfolio/final/data-context/report-ownership controls.",
+    "Independent full input/result/part/source-fact/account reconciliation; critical isolated mutations; full current regression/coverage and coherent source/evidence checkpoint."
+  ],
+  "references": [
+    "https://www.youtube.com/watch?v=z97PnFIPoFg",
+    "https://docs.python.org/3.13/library/sqlite3.html",
+    "https://www.sqlite.org/c3ref/blob_open.html"
+  ],
+  "revision": "D043 / RULEBOOK0.23",
+  "budgets": {
+    "result_summary_bytes": 65536,
+    "row_page_default": 50,
+    "row_page_maximum": 100,
+    "row_page_bytes": 2097152,
+    "integrity_stream_chunk_bytes": 65536
+  },
+  "decisions": [
+    "Use a separate content-addressed derived SQLite view file per saved root, anchored by a result-index event, so publishing100000 rows does not hold a long write transaction in the main job/lease database. Preserve original gzip roots/parts.",
+    "New worker outputs publish the derived view from their already constructed result. Missing legacy views expose a clear build-from-original operation; existing complete-result/report semantics remain available. Legacy construction verifies complete original identity first.",
+    "Verify original compressed root, derived file and exact raw input bytes with bounded streaming rather than size/mtime shortcuts. Bind canonical input identity separately when building. Selected parts validate their original artifact/window without decoding unrelated root arrays.",
+    "Keep bounded result rows and separately paged search-statistic/discovery accounts. Display explicit page/total/completeness, preserving every original diagnostic in complete downloads.",
+    "Keep older-job browsing separate from the selected job/report feed. Every page/report/part/window/export is owned by the latest matching request.",
+    "Use standard-library sqlite3 incremental TEXT/BLOB I/O, verified by the recorded owned-data probe; no new paid service or third-party dependency."
+  ]
+}

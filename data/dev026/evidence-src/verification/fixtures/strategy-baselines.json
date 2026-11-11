@@ -1,0 +1,26 @@
+{
+  "version":1,
+  "input_kind":"synthetic_fixture",
+  "start_session":"2026-10-05",
+  "mirror_about":300,
+  "common_closes":[100,101,103,105,102,100,103,106,110,112,108,105,108,114,118,120,116,111,115,122,126,128,123,116,120,125,119,110,100,96],
+  "common_candle":"open=close-0.02; high=close+0.1; low=close-0.1, all decimal construction before float conversion.",
+  "config":{"swing_strength":2,"confirmation":"none","entry":"next_open","stop_reference":"swing","stop_buffer":0.1,"target":"1R","stop_kind":"hard","max_hold":96},
+  "portfolio":{"capital":10000,"risk_fraction":0.01,"symbol_exposure":1,"total_exposure":1,"participation":1,"tick_size":0.01},
+  "costs":{"commission_per_share":0.005,"minimum_commission":0,"fixed_fee_per_order":0,"sell_fee_per_dollar":0,"spread_bps":1,"slippage_bps":1,"borrow_annual":0.03,"borrow_available":true},
+  "families":{
+    "level_bounce":{"base_side":1,"candidate_index":21,"level":110.9,"edits":{"20":{"open":113.98,"high":114.1,"low":113.9,"close":114},"21":{"open":113,"high":113.1,"low":110.95,"close":112}},"independent_reason":"Low17=110.9 is confirmed at19. Candle21 overlaps its band and closes112 above it; previous close114 is also above it."},
+    "breakout":{"base_side":1,"candidate_index":19,"level":120.1,"edits":{"18":{"open":118.98,"high":120.2,"low":118.9,"close":119}},"independent_reason":"High15=120.1 is confirmed at17, visited at18, then first closed through at19 (122 versus prior119)."},
+    "flip_zone":{"base_side":1,"candidate_index":20,"level":120.1,"edits":{"18":{"open":118.98,"high":120.2,"low":118.9,"close":119},"20":{"open":121.98,"high":122.2,"low":119.9,"close":122}},"independent_reason":"The visited120.1 level breaks at19;20 is its first later return and closes122 on the new support side."},
+    "trend_pullback":{"base_side":1,"candidate_index":20,"level":120.1,"edits":{"20":{"open":120.9,"high":121.7,"low":119.9,"close":121.5}},"independent_reason":"Rising confirmed highs/lows establish trend. The19 continuation resets eligibility;20 overlaps the known120.1 swing with a positive body and retreat within0–3ATR."},
+    "trend_line":{"base_side":1,"candidate_index":17,"level":109.9,"edits":{"17":{"low":109.95}},"independent_reason":"Known lows5=99.9 and11=104.9 project to109.9 at17; the109.95 wick overlaps its band and close111 is above the line."},
+    "break_of_structure":{"base_side":1,"candidate_index":19,"level":120.1,"edits":{},"independent_reason":"Trend is already rising; high15=120.1 confirms17 and the first subsequent close above it is122 at19. Earlier13 break precedes the first usable ATR."},
+    "change_of_character":{"base_side":-1,"candidate_index":27,"level":115.9,"edits":{},"independent_reason":"Rising trend persists. Low23=115.9 confirms25;27 closes110 below it, the first opposite close-break."},
+    "sweep_reclaim":{"base_side":1,"candidate_index":20,"level":110.9,"edits":{"20":{"open":111.3,"high":112,"low":110.5,"close":111.5}},"independent_reason":"Low17=110.9 confirms19.20 penetrates to110.5 and reclaims111.5 at its close; the signal cannot precede that reclaim."},
+    "supply_demand":{"base_side":1,"candidate_index":22,"level":121.9,"edits":{"19":{"open":122.02},"20":{"open":122,"high":128.2,"low":121.9,"close":128},"21":{"open":128,"high":135.2,"low":127.9,"close":135},"22":{"open":123,"high":124.2,"low":122,"close":124},"23":{"open":123.98,"high":125.1,"low":123.9,"close":125}},"independent_reason":"19 is a bearish base121.9–122.1. The20/21 two-body13-point impulse exceeds1.5 priorATR;22 first returns into that base without closing below121.9."},
+    "fair_value_gap":{"base_side":1,"candidate_index":16,"level":114.1,"edits":{"12":{"high":119.9},"17":{"open":115.98,"high":116.1,"low":115.9,"close":116}},"independent_reason":"The wide12 wick prevents an older14 gap.15 low119.9 exceeds13 high114.1;16 first returns into that three-candle gap and remains above its far boundary."}
+  },
+  "negative_control":"The same scheduled minutes at constant open=close100, high100.1, low99.9 have no unique pivots, gaps, directional impulses or qualifying setup. This control does not replace family-specific boundary cases.",
+  "minute_path":"For multi-minute candles, synthesize O→H→L→C at minute0, floor(n/3), floor(2n/3), n-1; repeated intermediate minute closes stay at the last value. Every minute has volume10000. A one-minute candle uses the specified OHLC directly.",
+  "execution_window":"Starts on the hand-specified candidate's session and ends two later setup candles after it. Earlier bars warm detectors; positive signal time/level and resulting trade identity must match, and execution must agree with the independent Decimal reference."
+}

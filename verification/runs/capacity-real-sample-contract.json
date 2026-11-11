@@ -1,0 +1,54 @@
+{
+  "scope": "PERF-001 measured capacity only; no profitability, detector-adequacy or full-history runtime claim. Fixed before execution.",
+  "source_dataset_id": "90f347229b2fb03ec112ee71",
+  "symbols": [
+    "SPY"
+  ],
+  "selection": {
+    "start": "2022-01-03",
+    "end": "2022-01-03"
+  },
+  "evaluation": {
+    "start": "2022-01-03",
+    "end": "2022-01-03"
+  },
+  "counts": [
+    100,
+    1000,
+    10000
+  ],
+  "pilot_count": 100,
+  "seed": 42,
+  "workers": 1,
+  "families": [
+    "level_bounce",
+    "breakout",
+    "flip_zone",
+    "trend_pullback",
+    "trend_line",
+    "break_of_structure",
+    "change_of_character",
+    "sweep_reclaim",
+    "supply_demand",
+    "fair_value_gap"
+  ],
+  "timeframes": [
+    "1m",
+    "5m",
+    "15m",
+    "1h",
+    "4h",
+    "1d"
+  ],
+  "budget": {
+    "wall_seconds_per_count": 900,
+    "peak_working_set_bytes": 3221225472,
+    "output_bytes_per_count": 2147483648
+  },
+  "limitations": [
+    "One complete historical SPY session,390 minute bars; no prior-session warmup. Longer charts and context filters can legitimately yield no signals.",
+    "This bounded capacity sample is separate from numerical/detector validation. Every selected configuration must actually execute through the production durable queue and saved parts.",
+    "Full1000/10000 claims require their own actual completed executions.100000 synthetic stress remains separately required."
+  ],
+  "determinism": "Same seed must produce identical complete configuration list; repeat100 search must produce identical report payloads/part bytes and row metrics on unchanged core/data."
+}

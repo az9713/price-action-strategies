@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-11-08T04:30:53.930778+00:00",
+  "os": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.5",
+  "logical_cpus": 12,
+  "memory": {
+    "load_percent": 68,
+    "total_bytes": 34011766784,
+    "available_bytes": 10630512640
+  },
+  "last_process_test_properties": [
+    {
+      "name": "worker_startup_seconds",
+      "value": "37.689958200004185"
+    },
+    {
+      "name": "three_session_job_seconds",
+      "value": "4.376464300003136"
+    }
+  ]
+}

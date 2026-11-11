@@ -1,0 +1,563 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T15:41:25.297105+00:00",
+  "finished_at_utc": "2026-11-08T15:43:20.493856+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "18932f3027b67923cf636f49742b5f347eace93dfda97c5c9256e307cc291575",
+    "verification_plan_sha256": "5faac4bb3bd21014509e8e8d7422b308f7d1c7f4dfd8136464c72d65d21ff55f",
+    "catalog_sha256": "803c571699f1eb9274a5d228b76222f1093ef52b1e9429937138b4a2e67fa857",
+    "source_files": {
+      "PLAN.md": "18932f3027b67923cf636f49742b5f347eace93dfda97c5c9256e307cc291575",
+      "VERIFICATION_PLAN.md": "5faac4bb3bd21014509e8e8d7422b308f7d1c7f4dfd8136464c72d65d21ff55f",
+      "RULEBOOK.md": "5b0eb1644a4783a766d7ceae0db79d092d13594cf9f9fab4814c64137e90322e",
+      "decisions.md": "08d90a70ca01428d3a6f113ead554eb6ea304ed2ab4dbe6683d224ee9441fb8a",
+      "README.md": "00c70db8fc8613ac0cdbae551300bfe6bbd580b39134db3ad9ae1e9c8463e8a1",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "803c571699f1eb9274a5d228b76222f1093ef52b1e9429937138b4a2e67fa857",
+      "verification/implementation-map.json": "fa0a307196cf992f0e4db1f29a5ee94bba679722182966a886241a870182c330",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "e0f48a9dae50ec3fefcd6d71a9ff6041524f9323cade250ec630b7f701c18bd3",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "9d7fca651dcc6e82dbb5514ee4ac6e3ac023c90ba0d368503624ffa7934a3202",
+      "backend/lab/api.py": "9ec2ebdedcc2be9e5e97c268a9376824da8066b0fda2ac1838458b72d0a3a05c",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "b1402b07f8d400af47b9b7fa6a8f39facb1e50666182f2a18ce9aabfb8918879",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "5a63f112c284313287c28087dc1c5e099647da121861f3cc647c9c1b054860eb",
+      "backend/lab/news.py": "445e8a74121ddb670b2941281272f81f3f3f23b9eb11dbcc2380465f6796064c",
+      "backend/lab/presentation_audit.py": "19b3c2ee9656d941fc33d851a0c0c8fe79fd7766ca039a5b01f4699f7808752a",
+      "backend/lab/presenter.py": "286f39fff004ad37f9f1dc9762b1d4d7598065c06068337260426c545b10be93",
+      "backend/lab/presenter_assets.py": "5818619b27374c0edaf3488229235a1b3bb8e2925d575504de2213493f84096c",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "ea2e88f36fd6d035eb8072713b0f45c8b152bee459c116798e6ba4d59dc8d188",
+      "backend/lab/service.py": "9b1142d4ebfb9daf080f8b857ca0989cdfd440c938aa2050c52772df9f389ea8",
+      "backend/lab/signals.py": "cffdbdee98486c28fa703d60471bf679de0b11af1c8f05803a222176b6b08aff",
+      "backend/lab/store.py": "164e94623a8f7dfcde0b6c7145c0bd52119cf5881f2f6451c194eb1a294646f7",
+      "backend/lab/trials.py": "cb8b53e4f794c1c06154678211fa322f92f72c6af8cea899ee7562b28f05fb51",
+      "backend/lab/worker.py": "cfebb0fe440d9b4edf926790fe166c020ab5f2ad6c5345f65f1541cfffc79d4a",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "ea7efc122b99b4afff75bfe772948bbf001c49673dce253234765426c5987841",
+      "tests/test_confirmation_filters.py": "dd45f55af7dd00bef2f4d273e439f1f4208c6762751995ac4d6fbd341da59a1a",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_data_service_boundaries.py": "35e020ccd1559c0e398302cbecb580169fc4051f98df4b61c684b66c5e045565",
+      "tests/test_evidence_recorder.py": "a9bc5bc156ac4910d007d042a16b28913dee479125655443baa39ae031240a6a",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_frontend_capture_privacy.py": "d7c1a4450d00db59e74b68555b66f12efd123cb392324839f8aae94793da33c2",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_news.py": "087a4b67386bcd42271bccef772491b7fe03dba41896d7634537f68d07e62285",
+      "tests/test_news_acquisition.py": "03529224d25beee545b3f73b186e26f8f786ba8a968fd8ee3d7c0a75950b3104",
+      "tests/test_news_faults.py": "420e7794a5279f02d740ac5ebee3fcf4156eaaed0d6478407f70ccd4c003516c",
+      "tests/test_news_integration.py": "82c0e04ed1e26e95f7ea654dbdb88c6c65e1211d0cc158ce8a0aae2ef6a0e73b",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_presenter.py": "faaa77a3137090327df4e57a847edd8af78684a6590a2f19d350317ce34f0d68",
+      "tests/test_presenter_api.py": "d72aa8ebdbbc04c4013b373b8e5a317412c4d24902eb77596367d42a98db79f4",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "259c69e8f27b665e2d93a4899fdc8c99775bdc7e3949466b8af7c0fd950931dc",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_trace_privacy.py": "e3b961683f2f46d7ef9c87934bd47f6aacd10e6dc7f045f3e072165cbe647a00",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "278b3c168a383289c67afde441e75ebf2247db17aaa0d77e6036922951489da4",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "65cb256b32af7cc465f08cfb6306cdbe0063352bcefdae9525b03decd3080bdf",
+      "verification/check_numerical_coverage.py": "6e532388687e5e3003cf80aa3f9001e94f2cc27cd63529aa2b9e0c44b8137e0d",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/critical_signal_mutations.py": "78e211a657abd997d68b111bbd5d2968d2b90d86c2957152aa947c0bbfc744ee",
+      "verification/frontend_check.py": "b601066f5ff30a86efaa1420071c45c8c56caab8a8c418170d7899bca4b30c7a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/presenter_reference_run.py": "a70dc854626bc318a0ca1d7361094f4a00f8422fca06b8debe15f6d0cd197666",
+      "verification/real_reference_run.py": "b15fa2af1ce322c2eff6c1a187d8e0062c53c45470e4553169ba801c6959a70f",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "verification/trace_privacy.py": "2a13f99d022e285f49d98b4d3d963c501a61b3f2b9b12c05fe3c89e63add96dc",
+      "frontend/src/Ablations.tsx": "de34081bf2c6fdce8cb0f3fcaddba4f4e8fd06f603b625bb1b05f9a7ade7ffb9",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "de5a402eafb7609c90f20eb6741115be6116464d650e6d5a7dd18fa8d3fe5ffa",
+      "frontend/src/Behavior.tsx": "78eb96b136ad9c8b5bbf8500f2f7989e5bbb894b43c64be4148da1202fb3729a",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/NewsCalendars.tsx": "78d92df0110f4c8d96ca7fe1fbf58857fcfa858dd728f80c3d342aa98cf6c1cb",
+      "frontend/src/PresenterExport.tsx": "e67b5d193af29e0410c0cd0194ee9ecd782928c8bbed3674bf6d758ff01a48ab",
+      "frontend/src/RandomControls.tsx": "315c9a6ebe8987d12cf2f3291f65eff09efa4d11cb7f54ae90cd5e9e36001f87",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/news.spec.ts": "0cd265574a4996a5b2c3e8d6e5741728545de9c0c11f7d866e94da0bbe223c7c",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/presenter.spec.ts": "8e80011871fc850154d48ed60973de62273e75799b82e2aa3477705639a0115c",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "e008b55d234807d1a58d8a26acbc515f0b7e0c4bff6a4a1b6f0d28c80ceb6e8e",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "5b0eb1644a4783a766d7ceae0db79d092d13594cf9f9fab4814c64137e90322e"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/fixtures/news-calendar-contract.json",
+        "sha256": "b78e8dd3b0bea29772beb207eb9f651d442e155ff97b4a7fecb333a802cf6826"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      "./.venv/Scripts/python.exe",
+      "verification/frontend_check.py",
+      "browser",
+      "news.spec.ts",
+      "research.spec.ts"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/stdout.log",
+      "sha256": "14d6339ff162852b6e94ea63dc48805f3a510113eb2b7f39443e78893f50c090",
+      "bytes": 889,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/stderr.log",
+      "sha256": "ee8394f309688f973511a3c83e619edcaf595b0922a6b20ab04fddaabdbd813f",
+      "bytes": 332,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/.last-run.json",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "bytes": 45,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/downloaded-news-account.json",
+      "sha256": "a84aef9704395b6b5f32efd574ee355eb34fdf6a3a6cf6029a666f819f8169d5",
+      "bytes": 240364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/downloaded-news-calendar.json",
+      "sha256": "1cc76be7027f3c4f7c90125bedcd77ba9ae5a0e349113c170476150b898b1f0e",
+      "bytes": 582,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-account-report.png",
+      "sha256": "51d39d7223a752d767c0a8b17230cc85d874ce892051fe727ab869175dbd078e",
+      "bytes": 163856,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-imported-scenario.png",
+      "sha256": "c27d0fc84a6d9ec18ab0772f7cbe2e68d587692006992982792da9efabe89ca7",
+      "bytes": 1136549,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-invalid-import.png",
+      "sha256": "4897c10567c6ecee4265876c9f3a29fb6a9b4ca5835520208fd02ba8d7a3b039",
+      "bytes": 1143751,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-observations.json",
+      "sha256": "20f6703b9ebc313e0154c7ca34ef413c0e546009517766bf25a90db6eea07173",
+      "bytes": 761,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-1.png",
+      "sha256": "46cae1b6e531b926025fc5545d34afea1320374b63561414ce29186bc902b437",
+      "bytes": 40883,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-2.png",
+      "sha256": "902b964d5471484d4d38b110d91877b401d4ed738682395ab2cce16acc1e310c",
+      "bytes": 33627,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-3.png",
+      "sha256": "f3c7a56f5cead3b870e7d01a6bd9eeea9519c8a22e0dfaa79cb834b25d574158",
+      "bytes": 45478,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-4.png",
+      "sha256": "f0e04fa07d06ea1c35e495084a595b5ec58662e1cabe96fab622158fb2ef7fd0",
+      "bytes": 31592,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation-5.png",
+      "sha256": "bf0c890807c897b1efc09e21f28d87f56d8d41e0d90c51e6cc706a6c2da2b7e7",
+      "bytes": 45094,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/news-presentation.html",
+      "sha256": "eba661a5153ed7045c001fba48af93c160b4d5dc71c5844654a072383251f6bc",
+      "bytes": 38747,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/official-news.png",
+      "sha256": "696431d93735cd2cec2cfc666b870cde3cc18fb6c387564ec3cd0b09fed08ddd",
+      "bytes": 1122816,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/test-finished-1.png",
+      "sha256": "bf0c890807c897b1efc09e21f28d87f56d8d41e0d90c51e6cc706a6c2da2b7e7",
+      "bytes": 45094,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1280/trace.zip",
+      "sha256": "ebc06a1bcc75c56bad60e8ad0f32ce09839563056dfd68129a4512592ad6ffdb",
+      "bytes": 3333244,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/downloaded-news-account.json",
+      "sha256": "fd7a5dd182b4ddeb4fb3f1af4a971a45f15befb35cf972ae9f5b550e5ba34df5",
+      "bytes": 240364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/downloaded-news-calendar.json",
+      "sha256": "a2831fd17474f203744e7135b3c5e5edd12271bd8882e93923f263ae7d897369",
+      "bytes": 582,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-account-report.png",
+      "sha256": "7ad28c0c5ded6b3185ba325d98d0b727789f0ae996713e2d96e691e59637cfc9",
+      "bytes": 164488,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-imported-scenario.png",
+      "sha256": "05d66efc66415e3a96c3bd4857ae968d94768fdd38f67898304d1fe846d95921",
+      "bytes": 1104971,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-invalid-import.png",
+      "sha256": "9498fdf93bbd7e5dd64054219e0784ecc2c8b01c23dd68af7e30beac24b4ce76",
+      "bytes": 1110893,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-observations.json",
+      "sha256": "4e8b2fd682ef2620c8ea771f1c03e2c21d179b26bc286a7599939f6d0c5e1d7c",
+      "bytes": 762,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-1.png",
+      "sha256": "beb5c5df68eca93162b69745b58cfff435876be6861dd6248d9589ce427cbd32",
+      "bytes": 87679,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-2.png",
+      "sha256": "8913e6c71776fb40aa1f51428293d0a252580b7602842d341960fef90d3aada4",
+      "bytes": 70754,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-3.png",
+      "sha256": "6dd19a3192614eb8d2aa013b05ae923cb7fb9f13057ce14a296e8f0fd02b0e76",
+      "bytes": 81698,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-4.png",
+      "sha256": "d9c79bdb366ea492ba97c8e12753cc7a6b364cb33a78d896fd40a152359339b1",
+      "bytes": 58200,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation-5.png",
+      "sha256": "7eac2948d2c1a6feac9f07ebfe3988d1038c9a735933cc5b63bb4776d71bf7de",
+      "bytes": 85723,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/news-presentation.html",
+      "sha256": "1493b150dc11063848f36d27c32e78ef7c2ddec9836f332a383aef84dff2de60",
+      "bytes": 38747,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/official-news.png",
+      "sha256": "8b649ceac1825019a3a395cc70d8d748e2c10aea496943fa24b2796476ba47be",
+      "bytes": 1089206,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/test-finished-1.png",
+      "sha256": "7eac2948d2c1a6feac9f07ebfe3988d1038c9a735933cc5b63bb4776d71bf7de",
+      "bytes": 85723,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/news-official-news-acquisi-f5e11--account-and-offline-report-desktop1920/trace.zip",
+      "sha256": "a41a5b96cec316d6b366910414c362e52a62295eb3f12e5d12496c64fe1dc3ed",
+      "bytes": 2382647,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/data.png",
+      "sha256": "f761af873000693e0d052d5d025f321d88f814eea84e4ace5649f2942f2a25f3",
+      "bytes": 1083522,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/downloaded-report.json",
+      "sha256": "23240ac52015f1f9edefe4f77d28014d63fc9b04f68039292d3d13549b16c5a2",
+      "bytes": 239741,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/experiment.png",
+      "sha256": "60dbff61cc078ff89f7976762a6c08a678b66eb88ea44dc44bad53e6c9c45934",
+      "bytes": 1250043,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/observations.json",
+      "sha256": "18fd566a3bb6fec1a10f3615ae3fde83396dc95c541459d4cf29c023b3817070",
+      "bytes": 822,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/reports.png",
+      "sha256": "03538615459ec05253a17c6fcb558f6a4dfcff46a33944b7f38000922de171bf",
+      "bytes": 154318,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/results.png",
+      "sha256": "a591d5a909832fa87516d8e64656be25e7259fe94d65fce3eaa62fcbb6cc5a53",
+      "bytes": 123203,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/strategies.png",
+      "sha256": "f714dc3d2e33080be63f449a23c9db7e0fe47f33d1959f877e747693f871dba5",
+      "bytes": 392268,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/test-finished-1.png",
+      "sha256": "04aa60c84169441aa69b375996413e3471355ec5729967a35be3362dd0326ba1",
+      "bytes": 80182,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trace.zip",
+      "sha256": "baa1ec32abcbd9bd4c53b111add60c2dbf263249c79f0f5ec61ee73f508a7d4f",
+      "bytes": 2672289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-chart.png",
+      "sha256": "dfee6c1dbf98bdecc825b1e9582169eab4d4ffcc0020b99570e8a92dbd757b46",
+      "bytes": 14177,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-inspector.png",
+      "sha256": "dc86399c40a85e1897cc1585d5587994759a5cc8c7cde8812cc449c91cf5a833",
+      "bytes": 141778,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/validation.png",
+      "sha256": "3060333a18b08bc5ca170acb17413167363704f0391fb3f82d05ade3ec727db1",
+      "bytes": 549228,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/data.png",
+      "sha256": "f2e5ef82322f21f745223c16fc0229654819e35a71718c6b0782a9235fe8c3e1",
+      "bytes": 1048878,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/downloaded-report.json",
+      "sha256": "23240ac52015f1f9edefe4f77d28014d63fc9b04f68039292d3d13549b16c5a2",
+      "bytes": 239741,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/experiment.png",
+      "sha256": "588fbfeeea9abae6e99dd535cff5fe945ef50aad1a36fd669a115d82081a999d",
+      "bytes": 1216078,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/observations.json",
+      "sha256": "b3f90e00904d9fc24961bef4a7698e58da275a6c29ac48f866701c1003f91b4d",
+      "bytes": 825,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/reports.png",
+      "sha256": "72e2a4cc34b1fb533ea3acf3d7722c26143481aa3184305005f116958a0c7c16",
+      "bytes": 154860,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/results.png",
+      "sha256": "d25166f0f06b870e2d9905d6fe7aa389e752b5c14ecc3fc6789ea3b0e1f04648",
+      "bytes": 133318,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/strategies.png",
+      "sha256": "abde0768b372edd4d7e0457520ff23e644bfc97d0731b106687012ec72ee4c2a",
+      "bytes": 299984,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/test-finished-1.png",
+      "sha256": "95984578af104e58649107af4d899d279f616e075a6b96c7bbfd3038cb2b8672",
+      "bytes": 107242,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trace.zip",
+      "sha256": "985143057a075cc9b53fe7084da42c171c62b3dcc6c123d8d293000b337d8491",
+      "bytes": 2010349,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-chart.png",
+      "sha256": "0d4b64445e7a83e384e03755fd571e88f8ac8e50c6784ab1a27d31968450af1f",
+      "bytes": 16203,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-inspector.png",
+      "sha256": "b63a4742f8914abf76a4503ea37d781308a99afc43b76ebb7500e20c4ba6dbf6",
+      "bytes": 147814,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/validation.png",
+      "sha256": "89b7dbf1182e192d5c680278fbf5fc42b8faa4131095d7810f4d67eeec21161d",
+      "bytes": 528620,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/capture-metadata.json",
+      "sha256": "60de7a26cd7b94a4b01d3ed7be045d6ef5bc2167fd7ee42b28140f86632c4e2b",
+      "bytes": 247,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/junit.xml",
+      "sha256": "a381f59a82b34a7a910125c9aec34bdba2f5d2d93da94da3ed00810fd15d2343",
+      "bytes": 2479,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/privacy-derivation.json",
+      "sha256": "14745910a5eac755be82f101a84b9327d33973faa7091a84a928feebc6171875",
+      "bytes": 29331,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/results.json",
+      "sha256": "75291d27fe63f9c9b3ea8a4aaeb492418273f942d531b3d884664cb83cd81217",
+      "bytes": 7869,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/runner-stderr.log",
+      "sha256": "ee8394f309688f973511a3c83e619edcaf595b0922a6b20ab04fddaabdbd813f",
+      "bytes": 332,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T154125296742Z-current-strict-calendar-and-real-research-four-browser-journeys/browser/runner-stdout.log",
+      "sha256": "941f6d56940705a599bf8524d9436eb1da0994a589b53345fec9c77c2a04ce6b",
+      "bytes": 657,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

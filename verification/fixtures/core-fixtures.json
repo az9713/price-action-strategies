@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "kind": "synthetic independent expected-value specification",
+  "source": "tests/conftest.py, tests/test_data_contract.py, tests/test_execution.py, tests/test_rules.py",
+  "cases": {
+    "calendar": {"normal_minutes":390,"2026-11-27_minutes":210,"2026-11-26_minutes":0},
+    "long_target": {"capital":10000,"risk_budget":100,"entry":100,"stop":98,"adverse_stop_tick":0.01,"quantity":49,"target":102,"net_pnl_zero_fees":98},
+    "long_ambiguous_stop": {"quantity":49,"entry":100,"exit":97.99,"expected_pnl":-98.49},
+    "long_gap_stop": {"quantity":49,"entry":100,"opening_gap":95,"exit":94.99,"expected_pnl":-245.49},
+    "short_borrow": {"quantity":49,"notional_per_share":100,"annual_rate":0.365,"held_minutes":3,"expected_formula":"49*100*0.365*3/(365*1440)"},
+    "split_distribution": {"original_shares":49,"split_ratio":2,"final_shares":98,"pre_split_price":100,"post_split_price":50,"distribution_per_new_share":1,"long_entitlement":98,"short_entitlement":-98},
+    "strict_pivot_reversal": {"strength":2,"prior_confirmed_low_index":23,"prior_confirmed_low":115.9,"low_available_index":25,"first_opposite_close_index":27,"first_opposite_close":110}
+  },
+  "scope": "Core component evidence only. Does not certify the full application, all 330 acceptance cases or the 120-case matrix."
+}

@@ -1,0 +1,140 @@
+{
+  "scope": "Two executed real browser flows and independent saved-output reread. Not full acceptance certification.",
+  "flows": [
+    {
+      "job_id": "da2d2107f5af4780a6b07f16ca1abd05",
+      "browser": "156.0.8078.81",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "bundle": "/assets/index-DgcN5fn3.js",
+      "dataset_id": "90f347229b2fb03ec112ee71",
+      "net_profit": 334.4222236168862,
+      "trades": 10,
+      "equity_points": 20,
+      "ledger_events": 410,
+      "consoleErrors": [],
+      "scope": "One real cached historical flow, not the entire acceptance catalog.",
+      "trade_net_total": 334.42222361677943,
+      "account_net_profit": 334.4222236168862,
+      "reconciliation_absolute_difference": 1.0675194062059745e-10,
+      "screenshots": [
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/data.png",
+          "sha256": "73bbb89e4a340d662f73b456b4daf0ff7fdd8bb1a03ad11261db4fad0b45d010",
+          "width": 1280,
+          "height": 1499
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/strategies.png",
+          "sha256": "e2b631c8ceec23af435c17c7d72b6bdd82d7cb041fb616ef242e6635c3831f2b",
+          "width": 1280,
+          "height": 1612
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/experiment.png",
+          "sha256": "0a97a252b4b08ba383e5fa7841332c9701c2ac3bf296efe426a36ad1e1be3088",
+          "width": 1280,
+          "height": 1734
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/results.png",
+          "sha256": "e97410e52d83395ee1921cb427c8945c8ad0c0eab011e68bbb7e2d10217e57c9",
+          "width": 1280,
+          "height": 1548
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-inspector.png",
+          "sha256": "acb30bb93d2ea113eaf0f8c63c6fa81f8f0e594cbb2bd9150b6eceb4ce70f680",
+          "width": 1280,
+          "height": 2072
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/validation.png",
+          "sha256": "caffd4060f4b4681635e02acf61871d18bf649704fa33346c1d44643fdea8994",
+          "width": 1280,
+          "height": 1343
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/reports.png",
+          "sha256": "3acfcc7de0b553bffc6874cc0059eb1d6939f2b748e896c3bf7847483bcf1606",
+          "width": 1280,
+          "height": 1446
+        }
+      ],
+      "trace": {
+        "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trace.zip",
+        "sha256": "09763a750bd0a2c02f676fa82aba2aeb4b1331320a1d5794e9b6c3a7c4474b4e"
+      }
+    },
+    {
+      "job_id": "f293b72b96f84dcda41cb19413a0fab1",
+      "browser": "156.0.8078.81",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bundle": "/assets/index-DgcN5fn3.js",
+      "dataset_id": "90f347229b2fb03ec112ee71",
+      "net_profit": 334.4222236168862,
+      "trades": 10,
+      "equity_points": 20,
+      "ledger_events": 410,
+      "consoleErrors": [],
+      "scope": "One real cached historical flow, not the entire acceptance catalog.",
+      "trade_net_total": 334.42222361677943,
+      "account_net_profit": 334.4222236168862,
+      "reconciliation_absolute_difference": 1.0675194062059745e-10,
+      "screenshots": [
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/data.png",
+          "sha256": "7a6841cf637b177ff68b7f8864ca7481199b2a84ed6ba93451ccfb3b522de8cf",
+          "width": 1920,
+          "height": 1366
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/strategies.png",
+          "sha256": "3064c697c54778a3fbeb84581d547199eb15a7c7b4b94046a040b593e566ba9a",
+          "width": 1920,
+          "height": 1597
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/experiment.png",
+          "sha256": "e5eda17ac60fa1a5d7c10747e1a9ff2cbff3f66203a2e4807da4d8eb63d66a10",
+          "width": 1920,
+          "height": 1665
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/results.png",
+          "sha256": "e8d0a672d37e144fc9c66dba5d8e99c76e9d07c2cd306d830b41d13ffeed835d",
+          "width": 1920,
+          "height": 1566
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-inspector.png",
+          "sha256": "1c66520d515368e0801946d5d8a4612e3b15068f28f4a956ada078bf1ba9a781",
+          "width": 1920,
+          "height": 2091
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/validation.png",
+          "sha256": "5804cdc1eaef5e4fe23ba7e48ae3112bcf058c752a5c0d234ea167312a1c0e19",
+          "width": 1920,
+          "height": 1256
+        },
+        {
+          "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/reports.png",
+          "sha256": "605f0cf070e66c01635558281a04c930b7a5938d923670ca6bb5766de449a095",
+          "width": 1920,
+          "height": 1378
+        }
+      ],
+      "trace": {
+        "path": "verification/runs/browser-local-regression/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trace.zip",
+        "sha256": "178d150c19d7861945e4a0bdf46361767baceba2a37f956fecab7d7f88fa5752"
+      }
+    }
+  ],
+  "input_manifest": "data/datasets/90f347229b2fb03ec112ee71/manifest.json"
+}

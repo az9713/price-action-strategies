@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Price Action Lab evidence receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "receipt_id", "kind", "started_at_utc", "finished_at_utc", "timezone", "subject", "environment", "command", "artifacts", "results"],
+  "properties": {
+    "version": {"const": 1},
+    "receipt_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]+$"},
+    "kind": {"enum": ["planning", "implementation", "verification"]},
+    "started_at_utc": {"type": "string", "format": "date-time"},
+    "finished_at_utc": {"type": "string", "format": "date-time"},
+    "timezone": {"type": "string", "minLength": 1},
+    "subject": {
+      "type": "object", "additionalProperties": false,
+      "required": ["plan_sha256", "verification_plan_sha256", "catalog_sha256", "source_files", "rulebook", "dependency_locks", "input_manifests"],
+      "properties": {
+        "plan_sha256": {"$ref": "#/$defs/hash"},
+        "verification_plan_sha256": {"$ref": "#/$defs/hash"},
+        "catalog_sha256": {"$ref": "#/$defs/hash"},
+        "source_files": {"type": "object", "minProperties": 1, "additionalProperties": {"$ref": "#/$defs/hash"}},
+        "rulebook": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/file"}]},
+        "dependency_locks": {"type": "array", "items": {"$ref": "#/$defs/file"}},
+        "input_manifests": {"type": "array", "items": {"$ref": "#/$defs/file"}}
+      }
+    },
+    "environment": {
+      "type": "object", "required": ["os", "python", "runner"],
+      "properties": {
+        "os": {"type": "string", "minLength": 1},
+        "python": {"type": "string", "minLength": 1},
+        "runner": {"type": "string", "minLength": 1},
+        "node": {"type": ["string", "null"]},
+        "browser": {"type": ["string", "null"]}
+      }, "additionalProperties": {"type": ["string", "number", "boolean", "null"]}
+    },
+    "command": {
+      "type": "object", "additionalProperties": false,
+      "required": ["argv", "cwd", "exit_code", "seed"],
+      "properties": {
+        "argv": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "cwd": {"type": "string", "minLength": 1},
+        "exit_code": {"type": "integer"},
+        "seed": {"type": ["integer", "null"]}
+      }
+    },
+    "artifacts": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["path", "sha256", "bytes", "purpose"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"$ref": "#/$defs/hash"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "purpose": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["case_id", "status", "expected", "observed", "assertions", "artifact_paths"],
+        "properties": {
+          "case_id": {"type": "string", "minLength": 1},
+          "status": {"enum": ["pass", "fail", "blocked", "not_run", "inconclusive", "stale"]},
+          "expected": {"type": "string", "minLength": 1},
+          "observed": {"type": "string", "minLength": 1},
+          "assertions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "artifact_paths": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+        }
+      }
+    },
+    "supersedes": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "allOf": [{
+    "if": {"properties": {"kind": {"const": "verification"}}},
+    "then": {
+      "properties": {
+        "results": {"minItems": 1},
+        "subject": {"properties": {
+          "rulebook": {"$ref": "#/$defs/file"},
+          "dependency_locks": {"minItems": 1},
+          "input_manifests": {"minItems": 1}
+        }}
+      }
+    }
+  }],
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "file": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256"],
+      "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/hash"}}
+    }
+  }
+}

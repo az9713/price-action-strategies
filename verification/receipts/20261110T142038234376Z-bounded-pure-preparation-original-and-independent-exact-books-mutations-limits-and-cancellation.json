@@ -1,0 +1,997 @@
+{
+  "version": 1,
+  "receipt_id": "20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-10T14:20:38.238173+00:00",
+  "finished_at_utc": "2026-11-10T14:23:36.295764+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "5edfbd449726d8cf9826a2beb28542516a8bc901aa4e0d5dc990aac43ca92943",
+    "verification_plan_sha256": "677852529e1dae2c986756740df657235b60ccab3adb89d0be4dbee7485446c7",
+    "catalog_sha256": "7b651e3c1c1b505c7d265862f80e39d32616d62d99535b6a95b6b37381a362ad",
+    "source_files": {
+      "PLAN.md": "5edfbd449726d8cf9826a2beb28542516a8bc901aa4e0d5dc990aac43ca92943",
+      "VERIFICATION_PLAN.md": "677852529e1dae2c986756740df657235b60ccab3adb89d0be4dbee7485446c7",
+      "RULEBOOK.md": "49941c9c46c4aca2ca449d0f69a2424cf0acd2d55615dd86e655be7f5df66e7d",
+      "decisions.md": "4441e9ffc3ef00b2c4c6989050885dc2451bd36d64c2b0c966d08399b3ccda36",
+      "README.md": "e86e297188cb8be0a364941f2ae2bc13d138c924a83c82903ee9ee6e07a784ea",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "11d3d875ca3ed8fe2f3945443cbae01a892717058fb4fd65648635da1791eaba",
+      "verification/catalog.json": "7b651e3c1c1b505c7d265862f80e39d32616d62d99535b6a95b6b37381a362ad",
+      "verification/implementation-map.json": "2bd234d9d063b713ee0aec1ba4cbc5cff2d037d493babf12ffab662df755325d",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "e0f48a9dae50ec3fefcd6d71a9ff6041524f9323cade250ec630b7f701c18bd3",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/ablations.py": "9d7fca651dcc6e82dbb5514ee4ac6e3ac023c90ba0d368503624ffa7934a3202",
+      "backend/lab/api.py": "9462286313887b07bd8a08cf64141272f3e2fb81651cf23c95d3ceac00a5ee4f",
+      "backend/lab/behavior.py": "8c68bcc6d05f5221b21236fda1ab9bdaef2d466d9dc2eb27c09482b8c5e2cf9d",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/borrow.py": "761e6c44eeb6b555285a7af8f2b8848fe0b4483010bd081077baee5b03cce328",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "68ee337ee2706584c1818413afc406b35f37b26df6293c612f25ab81dc002458",
+      "backend/lab/controls.py": "b1402b07f8d400af47b9b7fa6a8f39facb1e50666182f2a18ce9aabfb8918879",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/dataset_context.py": "fdb61f3bf9310f01e453f168c07e090c19a7a63090189d5a3d2c22ef376cebc7",
+      "backend/lab/engine.py": "7eb37ab94d5c9c4cdb1b0408a8fad992c65dd1276a0a5d1576e01c1f83347d70",
+      "backend/lab/evaluation_cache.py": "2911934f26e8df8740665b550f5c3e81efaf6a78a345680706381b1af4a29199",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/job_index.py": "206d62066e2f86155f54af432d76fbdd00a7178c1b24e41bdffc2cdc2cd0683f",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "33f7dec52c605c54d13604a9ea8801304b5abca7086a50074fd72a16c20293d6",
+      "backend/lab/news.py": "445e8a74121ddb670b2941281272f81f3f3f23b9eb11dbcc2380465f6796064c",
+      "backend/lab/presentation_audit.py": "4da906ddf7e1cbff33b91a04000176c9fd8f756ffce6ada86be545324df80c7d",
+      "backend/lab/presenter.py": "c8238611af96e95e96a5cf84ce343719ef81b287a1205dc51b5ae32cebbc686d",
+      "backend/lab/presenter_assets.py": "5818619b27374c0edaf3488229235a1b3bb8e2925d575504de2213493f84096c",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "710e2adc8417aa2f32d1f6c5fe958799bc5c3cc878e99d56b6f14d18b43423b4",
+      "backend/lab/result_index.py": "7f006674d5e8f16166a6a7e031a5450e8b918e6a918c6a604c1b1cc5d1f72aaf",
+      "backend/lab/runtime.py": "53aa610a91c61a7e4ddeab2fb8c3429d84a6b21e0983090d546858de88259386",
+      "backend/lab/sampling.py": "f5f809cf3efca296c3e87a0919572609e97f86ae6177a77bdbf6a45a5458bf88",
+      "backend/lab/search_statistics.py": "c2f5ea6fdafae752520891edd30477a575d4ff6fad4978db6080e623b521873f",
+      "backend/lab/sensitivity.py": "b9b8eee5e228eed82acb9526ef278083ece1ebc04282c665ebb3de375a620e08",
+      "backend/lab/service.py": "4335f91dd443350b43544582a6d55b4d6267471e047cecfad34835e12426a646",
+      "backend/lab/signals.py": "8697747968c597dc9d061dab40d86fe4319ee0d0ebf7a499c25806fff010b5a2",
+      "backend/lab/spread.py": "d0d450da915aef24a0a27bc8b3f38b301dcf06969377b9b0639725e6126a7180",
+      "backend/lab/spread_accounts.py": "b3e7a304a493f657ad74ea19c7d16099831ebd83acdaac185a2f3816cea6222e",
+      "backend/lab/spread_jobs.py": "32c043607696aca2e3e89c5801a534acfe02faa95d448e4b6749c3f965dddea9",
+      "backend/lab/spread_preparation.py": "1bd53cf17a6be5fcae5db7e4b7a0a4770c67e0910df44595411bc02cae8c0c46",
+      "backend/lab/spread_worker.py": "f24989d050862251f1b6e14a64bc51235fd673abe11abc05713256e686a2b67a",
+      "backend/lab/store.py": "e0f75290eb974d9544c5a05a561abb3ac47db364547c53e9d4c53b5ab9f6cafe",
+      "backend/lab/study_index.py": "4ca3a05cdbc0cf24fcaa7542077cadc25b77db8398032637349d08cdd4c45836",
+      "backend/lab/trials.py": "e24687297e8bedd74995397862489e4134dc195a579efd7d7e3b017a9cbf0071",
+      "backend/lab/worker.py": "61aadd2a19c97b9d3023b773ea362b28da0b204cd540588a0ae7ff31be04c1aa",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_ablations.py": "eddf279c9c0f0c80ad5f5709b1e708f3832534dd82aaa63714c76a5bb915c2cd",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_behavior.py": "0ba34e3af0d14e4a629cd2a020597ade7b815126fdad70500c9c9661613b65c1",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_borrow.py": "b9bf4101f0447927269a9a153c9ceb5ee3201a1a6f99b90c913d6c766647c23b",
+      "tests/test_borrow_integration.py": "5d26da810461382ae4b8afc6109ec37f1e616971713ce81a429a9e2837c93020",
+      "tests/test_borrow_properties.py": "ec659e2f796b88423772cf5a1fc0551041724db4f40f7a0d04f6c33c3c10742d",
+      "tests/test_borrow_sensitivity.py": "5125550badba231e86360c007cd02ddf933446d8f1953caa280e3707ba8c0b66",
+      "tests/test_borrow_sensitivity_integration.py": "f247d0482d32e3b3707d5d618d1ff841f3239c6c5a10b4171816ca158d7fd71c",
+      "tests/test_borrow_sensitivity_presenter.py": "c11788f09687edfaccc53c3b747bcd1659be2cb009385bfd68706eb499176ad1",
+      "tests/test_catalog_generation.py": "60a053726584f7a874ab6b493ba82b46bbcd946306691a44e853c96a9a66902c",
+      "tests/test_common_sampling.py": "31ea59d6c5740479720814b142dc86f6ece8f19869adcd5feca621c9827858d3",
+      "tests/test_common_sampling_integration.py": "8c2f2821dc14cec74dd4f0ff016b5883f8240e2d6d8e3928d11d2e607825ae9d",
+      "tests/test_confirmation_filters.py": "dd45f55af7dd00bef2f4d273e439f1f4208c6762751995ac4d6fbd341da59a1a",
+      "tests/test_control_reader.py": "4e61931f537f1a399016b559e3a658549a08947af8a1a70d7e1b0154562e818a",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_data_service_boundaries.py": "35e020ccd1559c0e398302cbecb580169fc4051f98df4b61c684b66c5e045565",
+      "tests/test_dataset_context.py": "67650316f721e34a5d4821cf9783122ac810d482a2c77acb2fc0097bd9e031b0",
+      "tests/test_evaluation_cache.py": "af60553ce5c3e369471e7baa5a12382971f1d1a6857977cd7a4743efceb7877f",
+      "tests/test_evidence_recorder.py": "a9bc5bc156ac4910d007d042a16b28913dee479125655443baa39ae031240a6a",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_execution_capacity.py": "c6900e93d7a810e0fd8f3da62970710a264685362cb89ee16416cce819e23d6c",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_frontend_capture_privacy.py": "5599d664fddefc24da0a7ee5191f7326bf39392aaf0dd150f28c7d1a425f1375",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_import_responsiveness.py": "9e3d0f9c5036eb4b1c4d5d4266693cea42fdf0ae4a3532e4fbeeab1341566b0f",
+      "tests/test_job_status_index.py": "657f759960740681645d0a1269e52e2264c181817b6def83c130d3c9279bc45e",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_news.py": "087a4b67386bcd42271bccef772491b7fe03dba41896d7634537f68d07e62285",
+      "tests/test_news_acquisition.py": "03529224d25beee545b3f73b186e26f8f786ba8a968fd8ee3d7c0a75950b3104",
+      "tests/test_news_faults.py": "420e7794a5279f02d740ac5ebee3fcf4156eaaed0d6478407f70ccd4c003516c",
+      "tests/test_news_integration.py": "82c0e04ed1e26e95f7ea654dbdb88c6c65e1211d0cc158ce8a0aae2ef6a0e73b",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_portfolio_studies.py": "c3b878a348fc05dedbe3d668e25f8a344c64920fa7110898b7187937d4546ed4",
+      "tests/test_portfolio_study_api.py": "a49bdcc49396c3484a47f4cafa3c8d7be9755d838e3ecaced19f9ca85f6ae586",
+      "tests/test_portfolio_study_recovery.py": "e6412015750fd64b8e0b2f3636721ab1b1ed91b5d8d5a55c79c42525059a3502",
+      "tests/test_presenter.py": "b45942780d2a72dc472a47d89b57300ab45e02fcf58e52033664b9057c40d2bd",
+      "tests/test_presenter_api.py": "bbf9378912e1879975f961b2604740b7ed96d2626b7257162871d44ca8a14328",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "3409d177452d235b469078c5aa3d70b16ac9144a980f0e18ff98c47c9055f938",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "259c69e8f27b665e2d93a4899fdc8c99775bdc7e3949466b8af7c0fd950931dc",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_result_materialization.py": "f4011290c83bb2c496867e902d582e30263a030429c6ae3edcb1ad3a926336ff",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_runtime_ownership.py": "9132036507d0d3fb82eb625a62a2ceb9c3152bcba03db27ed6f602ce6f281358",
+      "tests/test_search_statistics.py": "78a8ce21958cf4371c9235ee3237b90e51f1b8ffa40201b8567493f27bccf6b5",
+      "tests/test_search_statistics_integration.py": "bde264f58b78bfb6b0b0a33c5fd8af0d639fd5270371a61463218289bd2fef06",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_spread.py": "719f232c452e496367838091068830f64479ff5e6b734678cc6b431cd447e1d6",
+      "tests/test_spread_account_authority.py": "9cef1c3f26f5e1a90d2c6abbf1cf73ac87e6a4590d7df4e1d6e072c9e659125a",
+      "tests/test_spread_account_exports.py": "194faf369b67aeab566e5da63b420269df3104ecd61f5e0f78339fb351ae0bd4",
+      "tests/test_spread_account_faults.py": "9e568d88ee548d7133e38745277c519a662b9501cffc7250e8f56ea1675c26e5",
+      "tests/test_spread_account_handoff.py": "60caf8a281aac29cb1b5ac6118903385cb1d396091c6fd53c4b03e79d7e1bdef",
+      "tests/test_spread_account_process_recovery.py": "417f27b079c018a56081f7c1064ecfae907451531251cd969a2c02e6b233bc86",
+      "tests/test_spread_api.py": "104b6c46e289a6c4c81532baa6e9f0070678613cdd6bf537235b74475071acab",
+      "tests/test_spread_faults.py": "06b9822b84938757e98af2462b4bcdf6a7c4ae4341bb9ee80db09072e366ec83",
+      "tests/test_spread_integrity_faults.py": "628b2775f26116957acf90b78bbf0b241fe310c0626ee60b203aace5c854401a",
+      "tests/test_spread_journal.py": "1b045abf795b7da4e9b0c39be93b42b7e8a4fba9f998a6c4e67f3ba989d2425c",
+      "tests/test_spread_link_repair.py": "dcca1208fdb1801ee67232b4670323441c192d5555f1ad78187429071624420d",
+      "tests/test_spread_orphan_reservation.py": "20292300248c8f032c6d9abbf9f41a865c5666378c105bde4dd5c6335e2a3096",
+      "tests/test_spread_preparation.py": "dbf18ad49e5441cb86c4fc8e2d41476175cdf83dbfd816dc2d486e637d9b72de",
+      "tests/test_spread_preparation_faults.py": "23ace0290a1b29e592e55e6efdc53fb31aefe21e6cd4f62340499ef332c09677",
+      "tests/test_spread_probe.py": "5ee7fea33cd5f8ccda851c2e8dfdd7ad5e0016bea8f4feebdd01c90d65e10fbe",
+      "tests/test_spread_process_recovery.py": "e88f704cc163b84bd9971f0b26e1dc296010baa9757c90319f438811635ffd7e",
+      "tests/test_spread_public_schema.py": "6ef141d6187ff866d362be754c8ed78f1155dd53424af75395cb4c53f3c97b42",
+      "tests/test_spread_reverse_index.py": "bcfec82fea7b713bf9ee93a5482392c47e4bb92cb530110f908e3624b34fae47",
+      "tests/test_spread_scope.py": "17b7377692283fb4eac8994ecdf147e17cbcbd78687b1eb0a3bcf9677827de82",
+      "tests/test_spread_selection_pages.py": "75a5d0c726bc39b7573f2a58da914d75b14eae40e60ab8a8248864721e34fd1b",
+      "tests/test_spread_selection_scale.py": "4ea424e64803646056ecf3e3a9ed87cd566e0e7155afa2bfb8800e551f7a9c26",
+      "tests/test_spread_streaming.py": "67afbfd8bc009c2e4c51e6c23cdfdcaa4793a9c6c603a9a9899887b67b6d80c9",
+      "tests/test_spread_worker.py": "20288538fed7e67e63971ea8c0ef2d93957cf4e2e3fe1764960b744f8cb8cb91",
+      "tests/test_spread_worker_faults.py": "9578d5a40aa3b06552fca186a80713bfb24af8f7f496f373b43cc8c904306374",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "tests/test_study_authority.py": "d436fa721c4e81e95d601834c44b9bbfbc751e8a3c780ae17f91d426ae6b57d0",
+      "tests/test_study_gates.py": "9f65fb2714b495e264fd615b79868294fe5359927072ce1e43022a78d23f879c",
+      "tests/test_study_status_index.py": "bfd962f88e579450c776fb887d19c4296af40358f924f3726e74ebdd7e0985a8",
+      "tests/test_trace_privacy.py": "e3b961683f2f46d7ef9c87934bd47f6aacd10e6dc7f045f3e072165cbe647a00",
+      "tests/test_trial_registry.py": "c4d37fa2708f65eeb8b7dbe03458608add7acf98dc39046ac9a57393bc72e398",
+      "verification/ablation_reference_run.py": "dd17721fac71d9359f13652c76ec1edc8c12b117086391c9ce7bc1f5d0972e29",
+      "verification/behavior_reference_run.py": "57a067979cb9b491461f4961ae16fe42400b18d6b13a27e7f76787b91b3160cb",
+      "verification/build_catalog.py": "ff56c5802b49ce6b342c7a442f01701eeaab33d0d8df5124faa10db849dbdb37",
+      "verification/check_ablation_browser.py": "6580beda2e16b1de47060b3cddd2d8ba8f140dcf098c6e6257e6bf08510ca7cf",
+      "verification/check_behavior_browser.py": "81ec374485eb8f41c06b68284f0a55d3350e6716d6e5371a871d43c720e8a2d6",
+      "verification/check_browser_outputs.py": "2bb603bfd57210168ab0cc61268be8c9a688513b2163999d656c9ef6d51b5c3e",
+      "verification/check_evidence.py": "65cb256b32af7cc465f08cfb6306cdbe0063352bcefdae9525b03decd3080bdf",
+      "verification/check_numerical_coverage.py": "5681cc51df3de11ba111c862d4b627292b6d27e7135dc7e51cb999f20687e682",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/critical_borrow_mutations.py": "b7b6c10212da2bb90a6aef883a3657887de8e1b32d7a491cc4bd978d3cbfa82c",
+      "verification/critical_sensitivity_mutations.py": "9bf3267ac51b9c835e614964be4b5ccf4f3888d8fc765633d46fe649afaf5725",
+      "verification/critical_signal_mutations.py": "78e211a657abd997d68b111bbd5d2968d2b90d86c2957152aa947c0bbfc744ee",
+      "verification/critical_study_mutations.py": "325e6e39e07233102fc8db68fd4c94a009d8c4de506b44439ecc41c748d2ca5e",
+      "verification/frontend_check.py": "e57b381f9cad12f8f093c52d925e3d59ec8c75c7edc9cf4cdbd308b24dda8244",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/presenter_reference_run.py": "a70dc854626bc318a0ca1d7361094f4a00f8422fca06b8debe15f6d0cd197666",
+      "verification/real_reference_run.py": "b15fa2af1ce322c2eff6c1a187d8e0062c53c45470e4553169ba801c6959a70f",
+      "verification/reference_execution.py": "7f45a52422d0538f91fb0cdc79b04bbd9a0fbae66a5e572fac69fe528936fecf",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "verification/trace_privacy.py": "2a13f99d022e285f49d98b4d3d963c501a61b3f2b9b12c05fe3c89e63add96dc",
+      "frontend/src/Ablations.tsx": "f02dc6cd27c0fd821eb46a972cefc51bd033e7b23b37642ea271ba8615e07b5d",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "8ac17e3b33299dc94e71da69b4dae68cf404138c095c90c0c03200c3306ee87a",
+      "frontend/src/Behavior.tsx": "2b77da5ea4df35df6426720bfa2891b9609435bdc0113b2de7568628685291c2",
+      "frontend/src/Benchmarks.tsx": "a5a0145e4c94bfc8f2c1fca225ff10a2d308faab3fbe5db44e18dcdae0d9a7e7",
+      "frontend/src/Borrowing.tsx": "54c7e6687905fae3cd821841fef3ed0dd90ae67f7aa29d730f71a74a85c1f099",
+      "frontend/src/BorrowSensitivity.tsx": "d8a7ec0d803a5b6d281d3f72474c9f0ce33c2bfba1a61c8055228e39b7e9768c",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/DatasetContext.tsx": "57e1da81f3337b0b24554a979140d54546222cf7e0e6b0c8493a7f94f2681b1f",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/NewsCalendars.tsx": "78d92df0110f4c8d96ca7fe1fbf58857fcfa858dd728f80c3d342aa98cf6c1cb",
+      "frontend/src/PresenterExport.tsx": "e67b5d193af29e0410c0cd0194ee9ecd782928c8bbed3674bf6d758ff01a48ab",
+      "frontend/src/RandomControls.tsx": "cad6bb58261cb24f77c3e5c3d764f0d7152d50a97e080f7320922a22f84a415c",
+      "frontend/src/SavedPages.tsx": "70fce67189f1cf09ccd05956787951eec59508b0a89a3577f77fb5836e4595fd",
+      "frontend/src/SearchSampling.tsx": "dee2ad7b5ae909b297aea5eb888834408e88931e902fa8dc3f62edbf73580c7f",
+      "frontend/src/SearchStatistics.tsx": "cecf6c9be25e9290902974fe8163556898ff6bde2d2f1c1442c0ae1f1f79a7ca",
+      "frontend/src/SpreadFlow.tsx": "7e620a528c7d43779f0bc0afb54912b3ba6406143fe22d9405c56cfe621a33ab",
+      "frontend/src/StudyFlow.tsx": "793b653a55b9e6aadffad7b94de4e7c038c04d55ff49169bfdfeb3ecbe6a45d7",
+      "frontend/src/style.css": "20f62305d9d60f168afe5ff63fbfe310891c2f0aede3a523b6483300e7176d7b",
+      "frontend/src/TrialLedger.tsx": "27896a71ae0882d0935287683c577bac16d67c6db6f2f995876b2e75c58d7dba",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/ablations.spec.ts": "790c7e235c979bb6228be6fbe4b79e8e68c086688e2bb806a4d6a7f81a202f48",
+      "frontend/tests/behavior.spec.ts": "5c63143b3fd7caeae2207a559ad524ec6bf1a159033bf296f79d58083d1cb348",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/borrow-sensitivity.spec.ts": "eed50e8d0c39187392359a39a4a938fe2ad5818d7257c6f9d10fd6aeafc329c8",
+      "frontend/tests/borrowing.spec.ts": "57cb2ab116ed23debf515cc7d96b667699077d9ca9b79bee8f00d3879f8377ab",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/common-sampling.spec.ts": "d504e20f4b1511e41e8f1d6832d3cc37a6970bb968b2768f51976bad722c877a",
+      "frontend/tests/controls.spec.ts": "ef9940b8e85db9ff9d73bae6b694030bc766983457219d69e5243f3be94b3950",
+      "frontend/tests/dataset-context-universe.spec.ts": "52a977175c2e82a6b515a3e08bcf465937820f8ea243db2e5ca66e88438b5db0",
+      "frontend/tests/dataset-context.spec.ts": "29b9b12b79569aa73ad879c264a55ca95b5f1eabf934241d03d28d3050ed9381",
+      "frontend/tests/job-status.spec.ts": "ec9f47aba0ad3e3863403665551dba095956b946850a8228389d3009f90d6435",
+      "frontend/tests/news.spec.ts": "32da553c6dcc99894f6ab5f3d70502e16cf94f2242b0feac0eea681539b90af5",
+      "frontend/tests/portfolio-study.spec.ts": "7c75ef461db1f9615aedf925b23279478db77e950bd92bdc341aa3faa71d8edd",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/presenter.spec.ts": "8e80011871fc850154d48ed60973de62273e75799b82e2aa3477705639a0115c",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/tests/result-materialization.spec.ts": "961a0067add7f9e130949e9541f3474bbf6ea59e6af19e76019c7266ac031931",
+      "frontend/tests/result-ownership.spec.ts": "9e8cee992fb4f760ff18b1a349e2f13c17009565a89be18d16c5a66f34a3fa88",
+      "frontend/tests/search-statistics.spec.ts": "b98c90fada116997e183820324732f981459a36b1840c268a2dfe8ed3b572fb1",
+      "frontend/tests/study-status.spec.ts": "8872973232712ca8c1f9c344413eae20616f234cf59febfd3ad63c10ec70c245",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "e008b55d234807d1a58d8a26acbc515f0b7e0c4bff6a4a1b6f0d28c80ceb6e8e",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "49941c9c46c4aca2ca449d0f69a2424cf0acd2d55615dd86e655be7f5df66e7d"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "verification/runs/trade-twin-preparation-cache-contracts.py",
+        "sha256": "39f1b3a318fc3c7b7431fc00816e814f26d4cf9a4d48ce23ac7c44bd4a364ceb"
+      },
+      {
+        "path": "verification/runs/trade-twin-execution-before-preparation-optimization.py",
+        "sha256": "75c673b1eebad3d2dee64c350153575cd8b8190d13989d2fff35f756cf5fc55d"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".\\.venv\\Scripts\\python.exe",
+      "verification/runs/check-research-funnel-stage.py",
+      "-c",
+      "pyproject.toml",
+      "../../../verification/runs/trade-twin-preparation-cache-contracts.py",
+      "tests/test_trade_twin_execution.py",
+      "--import-mode=importlib",
+      "--cov=backend.lab.trade_twin_execution",
+      "--cov-branch",
+      "--cov-report=json:@RUN@/twin-preparation-execution-coverage.json",
+      "-W",
+      "error::ResourceWarning",
+      "-W",
+      "error::pytest.PytestUnraisableExceptionWarning"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/stdout.log",
+      "sha256": "9079457c272528f865084b7a0a34d7ff0f9a3dbe1a01ec35129c5060052a8828",
+      "bytes": 661,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/00f35eae3bf2eec6e9fc3874425320214b988943757270639aab2548eaa44887.json",
+      "sha256": "e21cd59a40807e4b42757a6ed9e1036d8bf536d340e2d58020b83614c86bf93b",
+      "bytes": 304077,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/00ff1e266014ee360eea61fa22f6dd4aa20d0d4feec2a412b5abbe2120986db3.json",
+      "sha256": "21f1aaab5729ce7af5e122e7414aea229a9e044f989d9011384b8724b8ec1e92",
+      "bytes": 157150,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/02fcae354694e2692baf90bd0538790883286efd2b03edf653e137ba2bd338e0.json",
+      "sha256": "71298dd7e6b5d0e318e9b95af4ed77462656e0d5b4f78e8088ddd324b49c26b6",
+      "bytes": 175234,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/098651f9a2be512d90339cef2b74e0c40ac6f81a24f3dcf5eac93a5bef30f8c4.json",
+      "sha256": "bcdfe25854048624c47235f5da065770dcbd836d8a70939ed763e976139f0cf7",
+      "bytes": 157057,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/09a80474edca8b5d58baed2a1b7c2b43b097b133afc2bbdbc3ec7fd8237d3bb1.json",
+      "sha256": "76f2c79f7345b7a7dae39034ae50eaf76fd478e756afe3b4b71dcc6d45c55c07",
+      "bytes": 157142,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/0ece11ce746d522abb8ea774bf208a4f591f8bbea43bc731849cd36db3be9fbd.json",
+      "sha256": "c40f387d2f574f4fb473d8885c96333ac4f31aafd5a46d7b33c7d2afaf1b4978",
+      "bytes": 157358,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/1010c6cda060d7c5f7cdea0c42924bf336ddef53745b4f3999395ee408bd097b.json",
+      "sha256": "282ca98fac4eed8b6751ffbb1e395ebda16b7abd6f9791d4ee53a1524a384107",
+      "bytes": 156903,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/114ebbcdf145b0d707910ce39f4e0e1f226d88fe58df1594455c90f67886851f.json",
+      "sha256": "6b358bf1f64882abc7c1fbf8f6c24cf358a33ac3c32a82d90c0fb4e5add3a347",
+      "bytes": 154323,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/116d435c700d6da1b71e5cb33456d30098c3ad5cbf088b983a337e1caacf77d0.json",
+      "sha256": "2b4c65fbd1a13da95001ca1b6cb66098c0f4c061ed7aa1b4f7c8375df7d0cdab",
+      "bytes": 157045,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/1c03cc3a619257d4e8c37ff1880377087460bd6164a6a7f94f44e50827201765.json",
+      "sha256": "7a1fdb42bed50f91b332962b0c2ceeaabc8ea2f776a7dd7661a4f38156c50be5",
+      "bytes": 157019,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/1d687c28a792d9f2fe1ef0192850b84346f7b75f40807c212ed0053383090965.json",
+      "sha256": "fa7004996c787be3eedb46c8e3a694cd70b476b317dff60990b8e37088b1a2f7",
+      "bytes": 157163,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/1e9d69cba8dffe42f846dbbe1bc4816dff8ee992e45524449c647104c6c90bbb.json",
+      "sha256": "f5eb44b1d5e86a873855cf12b9cf3be5c374d43dc619a6bce85a3fa76605ea3c",
+      "bytes": 157104,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/2113c2286b1122089885adcee8d1d1dec938ef72cc4dc7982bf75ffbab1153bb.json",
+      "sha256": "895ed690eb4d3398123209b049e0a016e54a3267c8413a01f8d8a7a83cf46204",
+      "bytes": 157363,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/2421aa977b42a4034847f3030aa8f93f7f1262d70d5df02f000189ab4b81e884.json",
+      "sha256": "a9c2752ab5109d0159ea405740c3de5e9638e69fc81dcf55e17c855e2bcbc62e",
+      "bytes": 308850,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/247feed411da2c1c9533407116c2629ac561a6a8e6c6118be22762b627db4b0e.json",
+      "sha256": "a6e73095317f04e88e40ca5cff0730fa4c1ec1a642fa2c48fec450f31b63dfd7",
+      "bytes": 156962,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/24abe6a89cd3ef2c12682b9ccc7b340a102539157470dc23933bba5eb6bec328.json",
+      "sha256": "7ac01c6753537433ec3cab90edc335fd8da26a140fd367941291d93445677162",
+      "bytes": 312859,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/2fa89d03874b6272ff9b803c3457860a14d8ff3a267e281231f3dcc6b8d63899.json",
+      "sha256": "3e60bada5e80add56eb8bf5ccfa0e3197dddcc90fcb0f515c08980799c38ea16",
+      "bytes": 175254,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/330132db7df8bd6d70ed7122c83765d38c0288aba66cc64fbec6a6a8954ba98a.json",
+      "sha256": "7b86204f77019cff410b81e793c9e60ed228e20a750b2e9135054ec5f85ec1a9",
+      "bytes": 157170,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/3da639041f39266d276aa2f9755f288eb5e7d47bba0f281b9c8fd27a763de44b.json",
+      "sha256": "a9a9092cbdea25d96d67447b7bb67d57dce145d6adfd34a41ff1dcb85717323c",
+      "bytes": 307039,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/3dd8213638e5333d9a57bef2f44a8aeadc56c1e6c292917ee055e83f37a9d990.json",
+      "sha256": "016d596d14fdef2e2034b6025a655ffbf87041354d83b806aa0a31cd6556fcbe",
+      "bytes": 157153,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/439c997b3a7c94125c2ee894ff886b9805796f4c720555407fa84623314743f3.json",
+      "sha256": "fb86bce555eb867abe62ba34e5cfc5c09f24ae0d2352dcc3210b6cd10a2692b3",
+      "bytes": 304076,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/4456ec46001899564b74c3df3ca9dc193077ae55189526496c63dbb18743e58a.json",
+      "sha256": "44c735304eb9849b88bc9ad5643de93c8545e2c57a8bb34d651798a111e1e9bf",
+      "bytes": 156873,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/45249b984069f06ff53c4c0c8fb13ba249d23cb84f80bb28cfae39512c260a34.json",
+      "sha256": "86d9f06d0db3bd9254ab80de2b108331b6226fe50a59960badeff8c80e191c57",
+      "bytes": 317173,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/46b46ba5824227e878327ca5d4972450c26a33595bfaeb39c29a0375134e5658.json",
+      "sha256": "5b95fb67bcd35b8ff03cc1af8a9763afebe44dd0a66216c5fed1c809443276f9",
+      "bytes": 156880,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/47bfbe28fe98f5fdde2eacad25238a052e3a9bdeba7175f71cb039560a3f7299.json",
+      "sha256": "1650ea7e182c2c8b29e67f474be8960450eaf427d6d62d48542a8753a5fe2ccc",
+      "bytes": 157410,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/47ded96fd03543a36cb1cf2235995604c91df6a41929044725047462c0ea55c8.json",
+      "sha256": "ba3edb2e89ca2e66c9d94b4a0c79ac9b1ae769f943a24b9073409a09f0da7f80",
+      "bytes": 157227,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/4a157c7fa3bddb7d901f231fce20ba986a385504eca196072eeb76cf6ffc1eee.json",
+      "sha256": "781808aab539190d1b0a9e43de33e14e122c142b857c9370effd6ef10fb1842c",
+      "bytes": 157019,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/4a7b7724204d784fe20950d773edcc3633fec8994db9b5fe31c95f10d4514152.json",
+      "sha256": "259119b5dc142a8f816e984822044870fb0784cb384efa8d90376424a33dcf90",
+      "bytes": 157205,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/4aadce300e82abe1e7bb7acc08f2d3f5f03674ee697013237e7cb4463b081168.json",
+      "sha256": "0336c691975c9fc572d877363068ff43437e031dc482597d902e061e1b8bd20f",
+      "bytes": 157011,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/4bb4461144b2b6f3a57fe5e769554d568a147d432028a50d5bf364123cc22346.json",
+      "sha256": "ba10cf6e4c8ac01762f291f047b7a4e0d164e75f44a804025864acaf48461c35",
+      "bytes": 156899,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/4dadf43a720e56a821e0bf20df78c0bf257aeb80d68f6234baac5914a2554c71.json",
+      "sha256": "3df88f633cdf41c1bf97a43bd2804ef21003d6ebaed7ec8071967252bf15798a",
+      "bytes": 156905,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/4dfa081ec61950a950a008e439ac6dc4ca2966acf32b794dfbd6eae1be5eb039.json",
+      "sha256": "0812fe7d45b736b2dff69e5a515d651a1176366456018f4d9d61022c1502b273",
+      "bytes": 156942,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/4fdef67299893fc95591e0a56b51f25d5002696da38d8d4a6cbcc73e35a57d99.json",
+      "sha256": "eae5ee9f7b9f6bfda883ea59b2268d001445174b3361a66c5ab3982a34aadfc8",
+      "bytes": 156882,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/507fdab5a5624955fb67c0df99cfa50cd911723f6d78b30066e11781916c0c13.json",
+      "sha256": "f7f22889ff0745858d1e0d6681b9c22e1682ba20b35ea60b9870eff3f681521a",
+      "bytes": 157151,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/53f089e0ccad73e80cd04f2d7708d22dc1b6b702e98cd857b9feeedd5464c9b4.json",
+      "sha256": "d712c6050b181f3f551f23aa0f716ee1e948c64290f653ea8af766101c631fe1",
+      "bytes": 157191,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/540d9d478a41390f08d0c2108c0e1279365ff326c49b23de7fee80cdc48891db.json",
+      "sha256": "b622f3da05befd1d1fe59cc78f7872ca1be411dd17dc289719d80c14d32e4003",
+      "bytes": 309266,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/54e81726b734fd30b3131c052a46393ab467cf09c8d081db74d845b621cff2e7.json",
+      "sha256": "317c0a65e091042e3c41735c8b51b7ac3a7996a8f9ccf860caee1300c32e43a9",
+      "bytes": 157138,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/58d5772fada8db915d770a726348eb8589d13b4f4f75c534cb9867a692eb4486.json",
+      "sha256": "24bb3b4f1e82c7e0937873d6912777da0ab8fc29c50a48813d1c920050d2a183",
+      "bytes": 157105,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/58ff0fb1979e737ee0a2004f81316437e066905d9a5282d20c0356f24c8ff6cb.json",
+      "sha256": "a06615dbf70067d57c054edda8c55f398e4ee61eb2d4057db719570480dd0ec3",
+      "bytes": 157401,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/599fae72118ccb0de1ed6723edfcd96957c51a85a912b6d4ba5ea72e81b1425a.json",
+      "sha256": "04189d27d0b674418252d5d9803ecb49c63d2a024403b70c63ba65f931b6f8da",
+      "bytes": 153926,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/5fdc2cb9cc4894c8055898d86facd050f7e5dcd63bc9db26fa26b58dbfa99ec8.json",
+      "sha256": "d8e0222d66da2f620e17a032db1212fe7ba9c86c47dce9d65f6797fe65c7e910",
+      "bytes": 157070,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/62d09a118a07138f29cdf33ad9fd09c3caae1dc1f7d81779ab049ae3777bda9d.json",
+      "sha256": "f36251d1c970d32b0b660da859f3f7ca48af22f135c0bb547d2230db1d6eb9b9",
+      "bytes": 154364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/66d3dffe1c04d2667fb1292d64b7864e709fd6e37ae2d44f92db2b7093b68914.json",
+      "sha256": "81ad0c2d645dcfadaf4da56ef828f526c8893bd619f87769990009aafb2a2271",
+      "bytes": 459452,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/690151a8ac4b6e8a10727be87c2cb6714c200ced2d94f1a48b4a9fc881f0ee92.json",
+      "sha256": "32409b6c65926383f82e6ca08e808fa3984badb600098733eef48843af26d5f2",
+      "bytes": 238367,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/6c2775d4db81e4f594c9fdd92bdc864ff811db439b3f2081630036d223df4b50.json",
+      "sha256": "875e8789b22b04c22ef8b5dc2f31bae162378d0332db6219cba6559e73c4b6d4",
+      "bytes": 154279,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/6c61394393528641f6b0f352e4216a52513bc1ca38fa209d7f7ec01cdafd686a.json",
+      "sha256": "6977cd2b96572c432776507037adca470cb6152de1701d4f050e274fe29da1ef",
+      "bytes": 156876,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/6cd0a483b5375c91d2f41532cbe2ec658e11e58f7353ab19cb4c29ce271628f2.json",
+      "sha256": "c23158537bc3e81629b4382d7c9f9e352b3bd9c20e61e6f71bc623d0635d0cf8",
+      "bytes": 175954,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/6ced16e9a0bd779ef8744646a85022019345ea7db52f3bd83a65454a8754bc4f.json",
+      "sha256": "10553952fe4e8aae6f81d28c9c455250e639c347205e03f8b8d02cefedf48b10",
+      "bytes": 157389,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/6fd0ab7f4a3912d15d0c77d72f729cf92426ce6a299d75d3f1c7c1b5462fdce5.json",
+      "sha256": "b0ac87c06307dc75a79bed0de14118557f714a0264894980ef297d28a55a0b70",
+      "bytes": 157189,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/7045d8e2b9b8cf3da13ce2e4c746ae2852aaa3b42946cb36101e889526bd233d.json",
+      "sha256": "49a0afe1bc88745ee1671b7b231cb48e50b3b51fd55092779d8661d139ddf51a",
+      "bytes": 156894,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/708582e70561483d8e33f65efafdb4a730045666a68274d7fc6787bc9744e7cf.json",
+      "sha256": "8272a58be8132c4de8d9a27f4ea52e88080f9f366273977b00898138d14f8f75",
+      "bytes": 157143,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/73a081ef691e5e8c957651dc0f5a42dc0054500364528b3730fe5731ba2abacb.json",
+      "sha256": "14215a521ffd42de90052dd783066995da204b0aaf3d5c56d53ce5bd8e0d78de",
+      "bytes": 312865,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/754ecc0ce9e0856981ce51d12ae798d6915da13cf89f5048c55809e9d2f0b8f6.json",
+      "sha256": "b3a74f79070cf25177059f175396c31b27280dd02fa0ef5c64f565d8bcb83e51",
+      "bytes": 238344,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/758285049ee12aef10a1ed20d5441215af7f66d1d68bd26305e00ae1497c8771.json",
+      "sha256": "467453be9e80172dfe4767704e79ff904dd12e6fe18ff4736c50489e640e6122",
+      "bytes": 154377,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/7723ebbb27add394d8c817c0d877a94af6ba80b8cc5c670c001782cf6152b914.json",
+      "sha256": "ef65b08f7293c19b9c3fd06a8efaefe29d7ab69c9b334bd950fa49b3dabf8ac7",
+      "bytes": 157913,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/78250be294fed7ab9c51f0445de3ce615f3d5f9e7a2afdc8b2cb2373df6322e2.json",
+      "sha256": "604f2c076c48f57b2b7d21782ed225690a6784f57485191848ed05895d732dca",
+      "bytes": 157383,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/81540ae05d1d66361cd84a8a83f90fd1d2dc613f74095de08f87c2fdb3f76eaf.json",
+      "sha256": "a4d25775167a9d5d6b0191b454d0bbdf2e1bb8690e73a5eb7d2f190db029ffa2",
+      "bytes": 156908,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/830b99be955cecdcbb84d323b9eba2431ea8d2126dcc4f82bf5ab098bd13d817.json",
+      "sha256": "22b383eb3da63772f28d095e84cd3e84343b9b98f58f228e54be8bb6b2c3dfc0",
+      "bytes": 153927,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/84132f818c3fda4a3a4fdbf1ac619051ff0ca4ff59dbf8487f6da0f31a623d56.json",
+      "sha256": "1b685cad12deef59d48cdb4fa6b1a64942a52287b83fdc96cf04febd0f87796e",
+      "bytes": 157186,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/85a910cfae48da2ec52fa8d88aea67a1df614aa82f850011edb9e141146ae70d.json",
+      "sha256": "a5d6a66ce010fab2f5342b7efe9fc5ca25dbf20684511f446fd7150a4ce58b35",
+      "bytes": 156987,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/86105f4bdc897c5639e0e3663002100ab35ebe6b894337736e950cff8bf98e24.json",
+      "sha256": "a581676bb2456f9c218368a967ba8937d3d87362acd95e50e92dac4583acc46e",
+      "bytes": 174387,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/880ac4d92c42e6b2cd1a61179a8b2bc8c5bb8c7f0b076b7a9194f80f9c5d770e.json",
+      "sha256": "4cc4df777a27549173004670c678708cffa22cb6b7aefa323981a83f596a4292",
+      "bytes": 160690,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/8968c1fb4755d06613a33d00095d9dfc47cb792585c088f70f860c9118a6002d.json",
+      "sha256": "f2e72b258a72c78e10453aadaaf59115d9a74fd7aaceb2c37fb202dbb920a7ff",
+      "bytes": 157041,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/8ae80fd46ff87ff80edea56c6f98938d1e71bfc18065b07f28ae0fe06ab4875f.json",
+      "sha256": "a3cc5674e95d21abfae68cbceb8eeb376d525d3529eea6f0763ec1e6ea8b2be7",
+      "bytes": 154324,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/8c6cb13ae3d067228e54b575ae4ba0ee0f1acbb388e255b78489210f7ed65b25.json",
+      "sha256": "c3344c827f65e741f5b39c7c4e6ada0405c7e1ba3ca2843552da7b73f8b23268",
+      "bytes": 157172,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/91c608eabb49c03e2ef9144dc696ce26b274374c496b8e0026e0fac4e4e38b1a.json",
+      "sha256": "7741c0edb902d9d324628bd5a3db70afec318a90cf9b69e2c3710c01b5b53893",
+      "bytes": 157372,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/96d1486bbb9f3b75bd50f86483f61c532ce9678be60d117040d73eb556ff0084.json",
+      "sha256": "6adfec7fceaba0482e02f47522453fd017a0b3ab7d9a7c55c3c19c910e6182bc",
+      "bytes": 157135,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/98c683e47e10484b94773a9f5ed7b767a2ea879b3b6ee81430653f3dd66b9a67.json",
+      "sha256": "61a03cdb237a98a4a33f5783d14d8544e6f7e64ab4a2eeb050bfa21d31408aae",
+      "bytes": 157372,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/9c838aecbc7e3fca932e9d9bb1cf850f135ecedbc2dbf38f997128d6c7dacac5.json",
+      "sha256": "f5bcb0709f2c0d018a915ba31b12ea2a607e93d7c225e9c73b5a1628cdec45ac",
+      "bytes": 157809,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/9c85b491eb254a757e5cd3d470cac6766131bd3ff6c0af2e98a2786c7d302d86.json",
+      "sha256": "3fc0e044aa4ee804d9f94ec7e997928de97fe108f03f5c42b752dd63c617ecbc",
+      "bytes": 157120,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/9cf46627f19e45ea07afe1366954c68e0eb80fd053d853c559e82fbf0eb07d32.json",
+      "sha256": "9bb2f8a0ee2830edf5c09630802856c78a8fe25edd213c9ae2ef202421135098",
+      "bytes": 156889,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/9d4ff8f5e6f84537b1ed9ce36b3c6f9b9e6cf4dff220bb6d5d1da4c78d625177.json",
+      "sha256": "91cfd350733a7e61a64b16e63b229ce9ec6e64d2b37c7021df24d3fc69fe84b8",
+      "bytes": 157039,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/9dca93ce5fc441fe2942d3cc66a92d942cc553012f65ca4a084ed8e48defc4bd.json",
+      "sha256": "b1d3a3312e4a456992acf0e4abeb672fe131a2593092ccd2d4ea2003e074b94d",
+      "bytes": 157145,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/a0de1b15efb3a827703726a37e18ae0f006a8473e1a679f5750d90af1a208063.json",
+      "sha256": "9de7427c35ff39dc59b58b30b5ccfad54fc3c59756bcc4d6cbe8ced8ff2e00e6",
+      "bytes": 156899,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/a243d2aa83ebdec8367a6a4a6e91efdcc1feb1792d71d283631ed7faab29bbf2.json",
+      "sha256": "86867bc7e3ae4a891f9594db71d2e3421a93de95e412be2f08522526c2ec83b3",
+      "bytes": 157138,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/a3c4d81b3e8b51b71a820bbc99e4618c45ccb231674e0da363831b5e45dba22d.json",
+      "sha256": "638ba921661040b9d9b1ae6f277250cc9709cd00a5d0c3a24269e59a947e3771",
+      "bytes": 157065,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/ae741f56512f29d36899453854662d8e0befef85423d117c4f4517052b2c05f1.json",
+      "sha256": "e9f536101bbd80ade6e91ec1e582586ed7e6712d593e071f708cdaaeff9e24b8",
+      "bytes": 157143,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/afa2463311849aa73b016bac5271b4933541cddb7be64b5b2bcf3775947df9ef.json",
+      "sha256": "d5e35ec42007879a9ee8d92424c9aed73f2938d3a7dfd001c102f5d2db5183e2",
+      "bytes": 157139,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/afb41b58938d34e7026d30aec479f7020e0174098178dda85d451568614c7f8f.json",
+      "sha256": "6396a9c453089e700c7cd97d7591baffbf078711b593bcbfa6afe7b775149d16",
+      "bytes": 157211,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/b2766f929d1f442d6433defbfec88e96023f588314e9e54eee4a3bb615df4871.json",
+      "sha256": "d815a4c95ef1cf0a053dd9bc3fa2f8cd012646f935dd3c3e37167d55b7ac1a94",
+      "bytes": 157873,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/b3431abc345bb7faac40db770963652a646291b3ac926a2fd5b40484b4fbd744.json",
+      "sha256": "10fa755d277c04984cfb146b2cb3bbdbb32b3cc238592e0f8675dd560a767c00",
+      "bytes": 174494,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/b6505d0dce2e5613d936eb8d75599c7090857a0b380faa5be57a893e9e85b89e.json",
+      "sha256": "1f6d0b5c0d4946bf64e9e7d447f7af813a60de0b1e3a335e3596d633eb4bf6e7",
+      "bytes": 156914,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/b66486ff6d7c61fd92faf81101066cb5d097fde86389efc4b493ce907e128f3f.json",
+      "sha256": "40dcb8b8437d2ff32d89b8817ad5d42561dfe1dea4c03e64cf04357a11e106c7",
+      "bytes": 157412,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/b91245031a8d59153df153925ffe6f2b31ca94658597f2e577a978d2e41b2bcc.json",
+      "sha256": "35b625f16dee8159983baa95d0bb3ceacfb9d37632d0785e2a56c1aa41ecdbcb",
+      "bytes": 157345,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/b9e669fd1c772716b9483096976cf3d993331e010e66131b1ca8d9daad00746b.json",
+      "sha256": "d28b4f3b21d32729a7008fa20659ce3f6be76f0fe32b7a782ab89be92d45510e",
+      "bytes": 157437,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/ba7dabc9e32087e27673ad828aa289c7d7d2fec6c0374d1740cac09b5089035b.json",
+      "sha256": "e419f3fc2f230a7abb82c2e073fbbe3a2efa97f64e0e91fe5dc0d36010b4b6a3",
+      "bytes": 156893,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/bcea4fc630ef8492f79f13b3591ccd31dab74c2fd256029421657cde1577dbe9.json",
+      "sha256": "828c626f7a853f7647b0f8ad21f41b61161944715fb48c67cde598b651d2b0e8",
+      "bytes": 157165,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/bd32cb3a5811488a89a46f065d4559aa9efb1e5aafbbd6e5348f5b0aa89fced1.json",
+      "sha256": "8f23bfc1f6ffc77924d188afa9b46bf4621f64be5ccce5831724b8ba5e95e83e",
+      "bytes": 154363,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/bfbe5b2d3842c38d77285dcc3831076bb9a5205a34341170309a4f134cb2ba8c.json",
+      "sha256": "42265b85ceefab1642721bc81909e0e47b5087e0f08dc13d9149252f032a0abb",
+      "bytes": 157029,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/c1c881d503ca5c4275ce0c75a97e5beb320dcd06cd521dbed5917e1f21a62612.json",
+      "sha256": "1885c8198b18d92ae822e2ae0b06ad05ae9a6dcfec91c77516a8ab354d59cc3d",
+      "bytes": 157416,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/c1d94d224d31c7694215ef4b42a13067a023df722a3787d57058e1824c772fbf.json",
+      "sha256": "74bc856f7b5760e38c5aead3a2f547a53bcd3520bae4a1073dc2e481afeb702b",
+      "bytes": 157133,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/c5ada2576427c72afdb4e6cc59846ffa3aa3a865e283e3df79bb9345518d33d7.json",
+      "sha256": "8885804d41586100bcee507fd1a49324c6e68d7924afed11cc304a1b3c042a75",
+      "bytes": 157391,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/c6c148ee08dad4624e87bd04ee03e948c96cd9d284b4e2ddcb98138e873634db.json",
+      "sha256": "140efdc7918766684b2bd8df2a3f1e5c5e731e0ff406cea0a83da1466b1b3507",
+      "bytes": 156889,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/c9e5bb959940a0cde6aff584bfcb3cb09eaa7f6544efbfa721567da6e400ab6c.json",
+      "sha256": "6ffba365ea2a3a7aaf684519e5973d10fe7117d43e0b90d742ce3c81e8516f34",
+      "bytes": 157130,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/ca7611ec003a9ee5d6005f819b50dde5ea4d2ec38aedac01bcfd7ff5cb599ae8.json",
+      "sha256": "d97429e29d576b14e7e8e6f58d3f8b5314b822b36ca6e2b9d00409100b175015",
+      "bytes": 316467,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/cd2e040633fc3dac9a591e056367286d53915f0a2598b893f296cc0cb9d09dd1.json",
+      "sha256": "7bb897bbaca5bc0cc1eb6d8829eb808962e293834980b0272a1af65ed5441b88",
+      "bytes": 175217,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/cf74147f5d9d984780237eb7d04a33c4afe37d9bf32cff46d4e4d9d400d1cc55.json",
+      "sha256": "97ebc3d67f5d5924b3f1c548b4f73523aa64b6234a55fbfb558cd85f8686b850",
+      "bytes": 156880,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/de0ade58673bc71eadb5e4fe96a42eae8d99354a205edd1ab747a8af5821ffd4.json",
+      "sha256": "8a7f46f8457941b3853828279982922cd214c8e40bb89328f617ca0ac9602517",
+      "bytes": 157198,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/de168ae33dccca56f81040d4a65eeab3f4911e666e07a9693057b535e6c85ad6.json",
+      "sha256": "1bdae7333b233a0e3847e620ef800cc6b759bbf9810bb742601b58b4a3f813ca",
+      "bytes": 459403,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/de22ff12dc416af085e3b5e6bf2e45be90cfb07351a475ce94fd0f658efc1f62.json",
+      "sha256": "033aad772fbef64ceb0124660c3139f4abe142631a0b6e27a70dac861cd09189",
+      "bytes": 157168,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/deb69f955e50339e97f357a61feb581e2c8c0d9034351b67d75a3b4080edbd75.json",
+      "sha256": "a46fe3df0965bb5a2f52931c36ca247eb3c21243f3a1a455ba9cec9c6d028685",
+      "bytes": 156885,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/e27c7312513e4a0eb3a181023594697bd1e48a0f18c3c62996e04ce299e06645.json",
+      "sha256": "2c8841f48cc56a96a46980c34c823153a26372b140a37f1635e3dc8013f95042",
+      "bytes": 157076,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/ea57aa2dcbefc2cdd56f45d7d8140075f633a6a53786cd2bf8a51295aa05c45b.json",
+      "sha256": "6d827dae7f543849fbc6b61891a7cfbe53c2fa0617ecd3fc7e49c7c07c40bb24",
+      "bytes": 157146,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/ed2b003f2ca916fbbee006be26c4a2a2d4b3c941311b7cf0133d43fd5f284fa3.json",
+      "sha256": "b86a03d0bdcf296ddfaef70ab8e01276de885c48ebe90ab148052111d290d1b5",
+      "bytes": 157162,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/ee9f0bf1efbffad17e45e5d62c8bc99c9e8097a2412bdedb2256b46b61593914.json",
+      "sha256": "62ed732c370524c522efad61963960b5eb228a114b669437132b17d86322a2d0",
+      "bytes": 154376,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/f1dc805b490b4ba9b55acadabf58cc2ccac5c64b89a5b6bc3c7dfb9b2d2f6fd4.json",
+      "sha256": "ae97e83f376a1d42890ce61f51804a3d34da410106ada42dbe6521202b7e6eed",
+      "bytes": 176450,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/f5646ab4589b904619c43b5f9b3af9230efe000d2526d2a1767090270c7b8976.json",
+      "sha256": "32853a9c1542d0e9d450b179142730d4812cead77fec15dd4d59ddee98db98a7",
+      "bytes": 157124,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/f683a2279ab2b1278113cd736a076c9655ddfdb6115b6c4a061c0da5604e3da4.json",
+      "sha256": "2384b173d14b7672a4348f8619cde497e4f996a502c8999bb6df1fcbbd1c369e",
+      "bytes": 174447,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/f6b1be3f4f4e0ec7d5ee601f52c3e929b409ea06dc635bf1a0b3d557d037ba4e.json",
+      "sha256": "edec4e50b6f5d20fd1260623bf56d2edf171b5dc537f4378e6308bf7b24347b8",
+      "bytes": 307058,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/f82060eb8019d8accc89ba85a2d28b88a9a4dfe8115e3c93b12fdc3d631401bc.json",
+      "sha256": "7ff15aead09101091d39b182cf169177f8d2ff07d7453fec9485d775c11b824a",
+      "bytes": 156963,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/fb34e3409fda5db6aa0a1cc973ee0f8eda509b00d553258fb935e1b3dc846077.json",
+      "sha256": "80abe05ff087e11a7bdb471e860882daeb135e22d121e8be95b0de2b149b815b",
+      "bytes": 157834,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/fc46854da396123344ad6661a35542dafa122a025a30f36d425381e6e93a5fe8.json",
+      "sha256": "fa011763981fdebc86c0056058f05b23beed618859bc3bc975c13c1402034be7",
+      "bytes": 156908,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/fd08d9eaa907ff475c00d64290ffbccbe81c24d3b475ef03d546be2b55e03534.json",
+      "sha256": "cd9ddb1edd3467e075dd0e266c4c3848ba6fb07fb297a3e16c7f7436d14eefd1",
+      "bytes": 157157,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/financial-books/fe35365f950261a640335e62aa89f050b4915ffc7794c4d1ff8ec6518d951b00.json",
+      "sha256": "c0e920ed5cab81fc4ec32962b891116a2b5341a816687376bad4de153d6d4f04",
+      "bytes": 157105,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/research-stage-junit.xml",
+      "sha256": "100a27d0a89922fde47128cb5870cfbaa875cecd65904e5bf2d941700f241248",
+      "bytes": 31517,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/research-stage-subject.json",
+      "sha256": "c3e08bea018db2b323ebb111af647a49b93083d5e8ff8e37b52280cad8b10d41",
+      "bytes": 28881,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261110T142038234376Z-bounded-pure-preparation-original-and-independent-exact-books-mutations-limits-and-cancellation/twin-preparation-execution-coverage.json",
+      "sha256": "6f951481e434e94d6ed9a2aa4803a828904e41c3ce083ae190a74075cb80c002",
+      "bytes": 21206,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Current0.24 clean locked installation and full backend regression reproduction; component evidence, not final422-case acceptance.",
+  "source_checkpoint_receipt": "20261109T100124899109Z-evaluation-cache-current-fifteen-receipt-source-fixture-build-and-capacity-recovery-checkpoint",
+  "core_hash": "e25126a77ca89ae2c7301d50d4551cdadee9c43dd88f011b4bd4569f97ba395d",
+  "baseline": {"python": "3.13.5", "node": "v22.22.0", "npm": "9.9.4"},
+  "isolation": "New owned source folder and venv with system-site-packages false. Extract only verified checkpoint entries; four prior catalog receipts are explicit test inputs. No installed packages, node_modules, credentials, app database or cached prices copied. Package-manager download caches may be warm: not a cold-network benchmark.",
+  "commands": ["python -m venv <fresh-venv>", "<fresh-python> -m pip install -r requirements.lock", "<fresh-python> -m pip check", "npm ci --ignore-scripts", "npm run build", "<fresh-python> -m pytest -q --junitxml=<evidence>"],
+  "assertions": ["Every archive entry has expected size/hash and remains under the owned extraction root; refuse links/traversal/env entries.", "Fresh Python site imports come from the owned venv; every locked distribution version matches; all numerical runtime versions and full core hash equal the existing checkpoint.", "Fresh frontend uses the exact original package lock, no copied node_modules or dist; compare all emitted asset names/bytes with checkpoint build, report nondeterminism rather than ignoring it.", "Run all1893 currently collected backend tests without deselection/skips; retain actual JUnit/logs. Supplemental legacy direct-report tests remain separately identified.", "Do not change production source or infer the final83/422 inventory from a full-suite pass. Main managed server and original data remain unchanged."],
+  "limits": "1800sec overall dependency installation/full regression allowance; terminate only exact subprocess objects created by this helper on failure, retain owned folder and actual logs. No broad PID termination.",
+  "remaining": ["Full final release suite and all-case conformance", "Actual graphical clean-install journey and offline restart", "Uncached install network availability and provider-entitlement check", "Dependency license/security inventory"]
+}

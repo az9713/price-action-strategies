@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-11-08T08:48:36.728171+00:00",
+  "method": "Assistant actually viewed both unmodified current panels through view_image.",
+  "core_hash": "05e6f63e9699dc2b372ab39f1224b5ec2f48dcf6684f27313974bab549839f8b",
+  "bundle": "index-D-B3rjDP.js",
+  "images": [
+    {
+      "path": "verification/runs/20261108T084153985533Z-all-eight-current-control-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/controls-panel.png",
+      "sha256": "83f06d7ec865cac6b78ce865e9239a90021037d58e323001f28523396d0e4a28",
+      "profile": "desktop1920"
+    },
+    {
+      "path": "verification/runs/20261108T084153985533Z-all-eight-current-control-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/controls-panel.png",
+      "sha256": "8f8c7532b7f730d0d8d502245212a5e96212be018ff68cc6d1dac4d05db7642e",
+      "profile": "desktop1280"
+    }
+  ],
+  "observations": [
+    "Matched/unmatched signal counts are separate from actual trades, and full-real context is separate from matched-real comparison.",
+    "Both visible random accounts outperform the displayed real account in this two-replica UI fixture; the negative difference remains visible without a favorable badge.",
+    "Selected account equity, trade table and actual entry/exit/stop/target chart labels are readable in both desktop captures; table scrolling is intentional.",
+    "Retrospective/non-tradable and non-global-significance limitations and exported book controls are visible."
+  ],
+  "limits": [
+    "Targeted desktop visual review only; mobile/keyboard/contrast and full accessibility acceptance remain unfinished."
+  ]
+}

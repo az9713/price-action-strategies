@@ -1,0 +1,20 @@
+{
+  "status": "Visual-source clarification for subsequent spread implementation; no production behavior or frozen running capacity subject changed",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "source_screenshot": "research/screenshots/prompt_page_10.png",
+  "source_screenshot_sha256": "b258dcf3147eaf428ce0d2c092371b71522589ff5c2808e4deda18f68f65a9fc",
+  "observations": {
+    "final_spread_target": 40000,
+    "per_setup_target": 4000,
+    "greedy_proposal_batch": 400,
+    "minimum_discovery_signals": 40,
+    "master_seed_required": true,
+    "selection_objective": "Greedily improve conditional dial shares relative to the prespecified random-draw targets."
+  },
+  "correction": "An earlier compressed working note incorrectly described400 as a selected-pool size. Page10 uses400 as the candidates drawn at each greedy choice; the desired spread set is40000 total/4000 per setup. PLAN.md already records the40000 source pool. Do not implement the erroneous working-note interpretation.",
+  "open_adaptation_details": [
+    "Exact target metric/weights, tie breaking and proposal/eligibility exhaustion are not specified by this screenshot.",
+    "Signal qualification is price-dependent; freeze policy and every proposal before its own probe, and explicitly define when selected account versions are frozen relative to subsequent P&L calculations.",
+    "Keep complete proposal classifications, primary scope, actual counts and all failure/zero/loss rows; no final dates may be consumed during spread sampling."
+  ]
+}

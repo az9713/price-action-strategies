@@ -1,0 +1,48 @@
+{
+  "scope": "Entire owning project chat up to the documentation request; later documentation tokens are excluded.",
+  "build_cutoff_utc": "2026-11-09T18:36:32.512Z",
+  "thread_created_at_utc": "2026-11-08T00:32:52.534Z",
+  "last_usage_at_utc": "2026-11-09T18:36:31.116Z",
+  "clock": {
+    "calendar_elapsed_seconds": 151419.978,
+    "calendar_elapsed": "1d 18h 03m 40s",
+    "recorded_turn_union_seconds": 147749.941,
+    "recorded_turn_union": "1d 17h 02m 30s",
+    "recorded_completed_or_aborted_turns": 35,
+    "goal_snapshot": {
+      "observed_at_utc": "2026-11-09T18:36:39.311Z",
+      "created_at_utc": "2026-11-08T02:55:25Z",
+      "elapsed_seconds": 142874,
+      "tokens_used": 7993870,
+      "observation_artifact_sha256": "b9c4398c84859ec04fca746dc7b5faac70159384a021bed358f1d2d8b3367050",
+      "provenance": "Observed get_goal response at the beginning of documentation; narrower scope than the full primary response ledger. It is not added to that ledger."
+    },
+    "limitation": "Wall/turn/goal clocks include tool waits and can include host standby. They are not CPU time, uninterrupted attention or human person-hours."
+  },
+  "tokens": {
+    "input_tokens": 640077823,
+    "cached_input_tokens": 635467136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3835647,
+    "reasoning_output_tokens": 2216009,
+    "total_tokens": 643913470,
+    "uncached_input_tokens": 4610687,
+    "uncached_input_plus_output_tokens": 8446334
+  },
+  "response_records": 2818,
+  "duplicate_response_ids": 0,
+  "sum_matches_cumulative_thread_ledger": true,
+  "model_identifiers": {
+    "gpt-6.1-sol": 53
+  },
+  "compacted_records": 17,
+  "dollar_cost": null,
+  "dollar_cost_status": "Not available: no project invoice, credit debits or applicable Codex rate allocation in the evidence. No API price substituted.",
+  "primary_response_ledger_sha256": "9430ab58bad465305dda837db2ed284e961c1a512a0719bf113a826e2120ac41",
+  "accounting_notes": [
+    "Primary per-response ledger is summed once per response_id and exactly matches its last cumulative thread ledger before the documentation request.",
+    "Cached input is already included in input tokens; reasoning output is already included in output tokens. Neither is added again.",
+    "Elapsed goal/task/receipt wall time includes waits and can include host standby. No CPU/person-hours/invoice equivalence is asserted.",
+    "The shared account usage-limits tool does not establish a project-specific bill. No API price was substituted for Codex billing."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "bounded_tool_observation_not_a_subprocess_receipt",
+  "old_managed_session": 38835,
+  "stop_tool_exit_code": 1,
+  "application_reported_shutdown_complete": true,
+  "old_http_worker_pids_observed_absent": [
+    21088,
+    18404
+  ],
+  "store_lease_reacquisition_observed": true,
+  "new_managed_session": 35409,
+  "new_health": {
+    "status": "ok",
+    "credentials_configured": true,
+    "core_hash": "a3eb52616e294d6fe770dec5b8efc6cfc33e2bae9b7ad70da51adf1ef4876b91",
+    "source_current": true,
+    "release_status": "Implementation in progress; final conformance not verified.",
+    "worker_enabled": true,
+    "worker_alive": true,
+    "worker_ready": true,
+    "server_pid": 46448,
+    "worker_pid": 31904,
+    "store_lease_held": true,
+    "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg"
+  },
+  "scope": "Actual managed Ctrl+C, native owned-process checks and context-manager lease postconditions; no OS-wide closed-port certificate."
+}

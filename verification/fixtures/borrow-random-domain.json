@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "scope": "Seeded finite synthetic execution paths; no market edge or all-path proof.",
+  "base_prices_signals_accounts": "reference-random-domain.json and tests/test_reference_properties.py:generated_case",
+  "seeds_inclusive": [0, 23],
+  "lending_rng_seed": "7000 + path seed",
+  "event_offsets_minutes": [0, 5, 11, 19, 31, 41],
+  "annual_rates": [0, 0.03, 0.1, 0.3, 0.365],
+  "states": "Independent full-state choices per symbol/offset; recalled implies unavailable. Initial costs remain the existing finite-domain input.",
+  "oracle": "Independent stdlib Decimal execution; exact discrete decisions, frozen price/quantity1e-9 and monetary1e-7 tolerances. Save each complete input and comparison."
+}

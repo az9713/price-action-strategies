@@ -1,0 +1,34 @@
+{
+  "cutoff_utc": "2026-11-11T04:17:17+00:00",
+  "previous_cutoff_utc": "2026-11-10T02:45:57+00:00",
+  "thread_created_at_utc": "2026-11-08T00:32:52.534000+00:00",
+  "last_usage_utc": "2026-11-11T04:17:09.483000+00:00",
+  "calendar_seconds": 272664.466,
+  "completed_or_aborted_turn_union_seconds": 258403.573,
+  "recorded_turn_envelope_seconds": 268991.99,
+  "completed_or_aborted_intervals": 80,
+  "open_intervals_at_cutoff": 2,
+  "tokens": {
+    "input_tokens": 1156472421,
+    "cached_input_tokens": 1147371904,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 6622327,
+    "reasoning_output_tokens": 3928437,
+    "total_tokens": 1163094748
+  },
+  "change_since_previous": {
+    "input_tokens": 386996868,
+    "cached_input_tokens": 383772416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1880962,
+    "reasoning_output_tokens": 1165687,
+    "total_tokens": 388877830
+  },
+  "uncached_input_tokens": 9100517,
+  "uncached_input_plus_output_tokens": 15722844,
+  "unique_response_records": 4950,
+  "previous_totals_reconciled": true,
+  "cumulative_totals_reconciled": true,
+  "dollar_cost": null,
+  "dollar_cost_reason": "No attributable invoice or credit ledger in the usage records."
+}

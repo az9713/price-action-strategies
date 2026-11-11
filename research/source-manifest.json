@@ -1,0 +1,105 @@
+{
+  "id": "youtube-z97PnFIPoFg",
+  "original_input": "https://www.youtube.com/watch?v=z97PnFIPoFg&t=6s",
+  "canonical_url": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "media_type": "video",
+  "title": "Claude Tested 100,000 Price Action Strategies (Here’s What Works)",
+  "channel": "AI Pathways",
+  "upload_date": "20261028",
+  "review_date_client": "2026-11-07",
+  "manifest_recorded_at_utc": "2026-11-08T01:28:11.210528+00:00",
+  "status": "analyzed-with-explicit-coverage-limits",
+  "scope": "Entire video including first six seconds",
+  "representations": [
+    {
+      "path": "source/video.mkv",
+      "size_bytes": 194754456,
+      "sha256": "8fd37efeb999ad7da016b399d435680afe00348fc5f6cea0a1ae0a398afaf933",
+      "mtime_utc": "2026-11-08T00:35:04.610671+00:00"
+    },
+    {
+      "path": "source/review1080.mp4",
+      "size_bytes": 40109687,
+      "sha256": "986a0a13c7a4918c52fc3f4d3e74ec9c060e742f836d61a4a3649f1d5196b4be",
+      "mtime_utc": "2026-11-08T00:37:50.619351+00:00"
+    },
+    {
+      "path": "source/video.en-orig.vtt",
+      "size_bytes": 186350,
+      "sha256": "466d4a2c0b89099842bd95635740cf7c553af1f7ab3aad0de9a95fa739d16873",
+      "mtime_utc": "2026-11-08T00:36:17.238345+00:00"
+    }
+  ],
+  "review_video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "decoded_frame_count": 30920,
+    "duration_seconds": 1030.666667
+  },
+  "extraction": {
+    "full_frame_change_detection": "ffmpeg scene detection after 960px scaling, threshold 0.16",
+    "one_second_samples": 1031,
+    "contact_sheets": 21,
+    "prompt_half_second_samples": 80,
+    "prompt_pages_read": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "caption_track": "YouTube en-orig automatic captions; timestamped deduplicated text retained locally",
+    "scene_change_frames": 18,
+    "focused_4k_screenshots": 37,
+    "screenshot_manifest": "screenshot-manifest.json"
+  },
+  "coverage": {
+    "identity": "full",
+    "textual": "substantial",
+    "visual": "substantial",
+    "audio": "partial; represented by automatic captions, not word-for-word independently audited",
+    "temporal": "full automated decoding; one-second visual sampling and denser prompt review",
+    "citation": "timestamp-addressable",
+    "verification": "Source features checked against prompt images; financial results not reproduced; provider documentation checked; eight read-only Alpaca historical-data requests succeeded, with sample SIP access verified"
+  },
+  "limitations": [
+    "Not manual inspection of each of the 30920 video frames",
+    "Original code, datasets and saved results unavailable",
+    "Main presenter shows 66- and 67-page totals across scenes; full deck not exposed",
+    "Numerical results and source implementation unverified"
+  ],
+  "artifacts": [
+    {
+      "path": "../PLAN.md",
+      "purpose": "Implementation plan adapted to confirmed user requirements"
+    },
+    {
+      "path": "../VIDEO_REVIEW.md",
+      "purpose": "Observed behavior, technical evidence and replication gaps"
+    },
+    {
+      "path": "../SCREENSHOT_FINDINGS.md",
+      "purpose": "Focused screenshot evidence, closed gaps and revised requirements"
+    },
+    {
+      "path": "screenshots/README.md",
+      "purpose": "Timestamped index of 37 full-resolution screenshots"
+    },
+    {
+      "path": "alpaca_probe/README.md",
+      "purpose": "Verified historical-data access, sample coverage and remaining limitations"
+    }
+  ],
+  "redistribution": "Local research only; do not publish original video, captions or frame collections"
+}

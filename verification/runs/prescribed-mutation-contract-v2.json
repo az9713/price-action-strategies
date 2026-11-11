@@ -1,0 +1,84 @@
+{
+  "scope": "Prescribed causal/order/fees/borrow/distribution/provider/holdout/persistence mutation domains; targeted mutation checks supplement complete acceptance.",
+  "tests": [
+    "tests/test_rules.py",
+    "tests/test_execution.py",
+    "tests/test_reference_execution.py",
+    "tests/test_provider.py",
+    "tests/test_store.py",
+    "tests/test_research_service.py",
+    "tests/test_family_boundaries.py",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-level_bounce-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-level_bounce-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-breakout-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-breakout-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-flip_zone-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-flip_zone-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-trend_pullback-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-trend_pullback-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-trend_line-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-trend_line-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-break_of_structure-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-break_of_structure-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-change_of_character-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-change_of_character-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-sweep_reclaim-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-sweep_reclaim-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-supply_demand-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-supply_demand-1m-short]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-fair_value_gap-1m-long]",
+    "tests/test_strategy_matrix.py::test_full_baseline_strategy_matrix[MATRIX-fair_value_gap-1m-short]"
+  ],
+  "mutations": [
+    {
+      "name": "future-pivot-availability",
+      "path": "backend/lab/signals.py",
+      "before": "j=i-k",
+      "after": "j=i"
+    },
+    {
+      "name": "target-before-ambiguous-stop",
+      "path": "backend/lab/engine.py",
+      "before": "if stopped and position.cfg.stop_kind=='hard': close(key,position.stop,'stop',close_time,stop=True)\n            elif targeted and not new_limit: close(key,position.target,'target',close_time,limit=True)",
+      "after": "if targeted and not new_limit: close(key,position.target,'target',close_time,limit=True)\n            elif stopped and position.cfg.stop_kind=='hard': close(key,position.stop,'stop',close_time,stop=True)"
+    },
+    {
+      "name": "omitted-commissions",
+      "path": "backend/lab/engine.py",
+      "before": "return max(costs.minimum_commission,quantity*costs.commission_per_share)+costs.fixed_fee_per_order+(quantity*price*costs.sell_fee_per_dollar if transaction_side==-1 else 0)",
+      "after": "return 0."
+    },
+    {
+      "name": "omitted-borrow-financing",
+      "path": "backend/lab/engine.py",
+      "before": "charge=position.quantity*position.borrow_mark*rate_seconds/86400/365",
+      "after": "charge=0."
+    },
+    {
+      "name": "wrong-short-dividend-sign",
+      "path": "backend/lab/engine.py",
+      "before": "amount=position.signal.side*position.quantity*action.value",
+      "after": "amount=position.quantity*action.value"
+    },
+    {
+      "name": "truncated-provider-pagination",
+      "path": "backend/lab/provider.py",
+      "before": "token=body.get('next_page_token')",
+      "after": "token=None"
+    },
+    {
+      "name": "protected-date-bypass",
+      "path": "backend/lab/research.py",
+      "before": "if not permitted:",
+      "after": "if False:"
+    },
+    {
+      "name": "unpersisted-completed-status",
+      "path": "backend/lab/store.py",
+      "before": "(status,error,1 if status=='completed' else row['progress'],time.time(),job_id)",
+      "after": "('running',error,1 if status=='completed' else row['progress'],time.time(),job_id)"
+    }
+  ],
+  "expected": "Unmodified full selected baseline passes. Each isolated single actual source mutation must fail assertions with same collected test count, no errors/skips; source originals unchanged.",
+  "selection_revision": "The first101-case selected baseline did not detect j=i future-pivot mutation. Retain that failure. Add existing20 authored minute-level matrix cases and family boundaries; no production or test assertion changed."
+}

@@ -1,0 +1,13 @@
+{
+  "version":1,
+  "input_kind":"synthetic_fixture",
+  "seed_range_inclusive":[0,95],
+  "symbols":["AAA","BBB"],
+  "minutes_per_symbol":48,
+  "price_domain":"Positive cent-valued OHLC paths around100 with independently sampled gaps, ranges and volumes; provided signals use the prior completed close.",
+  "coverage":"Independent execution/accounting on supplied signals. All six setup clocks, valid trigger mappings, three entries, hard/close stops, all targets, costs/borrow/availability, weights, exposure/participation and mixed configuration competition are sampled. This is not detector, full dial or exhaustive pairwise certification.",
+  "money_tolerance_dollars":1e-7,
+  "price_and_quantity_tolerance":1e-9,
+  "discrete_decisions":"exact",
+  "expected_values":"Calculated by verification/reference_execution.py; never copied from production. Per-seed input and comparison records are retained."
+}

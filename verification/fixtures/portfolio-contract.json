@@ -1,0 +1,19 @@
+{
+  "version":1,
+  "input_kind":"synthetic_fixture",
+  "source_geometry":"strategy-baselines.json common_closes, no family edits; Decimal open=close-0.02/high=close+0.1/low=close-0.1 for first30 candles; remaining360 candles have open=close96/high96.1/low95.9, volume10000 throughout.",
+  "date":"2026-10-05",
+  "configurations":"BOS,1m,long,strength2,level stop,zero buffer,next-open,no timeout; targets1R and5R are distinct strategies.",
+  "costs":"Zero fees,spread,slippage,borrow; the declared hard-stop extra tick still applies.",
+  "account":"10000 initial capital,0.1 risk fraction,1 symbol/total gross cap,1 participation,0.01 tick.",
+  "expected":{
+    "signals":2,
+    "shared_trades":1,
+    "entry_quantity":79,
+    "entry_price":"125.98",
+    "exit_price":"115.97",
+    "net_profit":"-790.79",
+    "independent_sum":"-1581.58"
+  },
+  "independent_reason":"A rising trend already exists. The known120.1 swing is first closed through at19. Both rule versions signal at that close and enter at20 open125.98;79 shares spend9952.42, leaving47.58, so no additional whole share can be funded at that price. Neither1R nor5R target is reached.23 opens115.98 through stop120.1, and conservative hard-stop execution is115.97 including the extra adverse tick.79*(115.97-125.98)=-790.79. Running two separately reset accounts would instead sum two such losses. Configuration-hash priority determines which version receives the one fill."
+}

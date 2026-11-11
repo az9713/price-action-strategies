@@ -1,0 +1,15 @@
+{
+  "scope": "Model visual inspection of these two displayed screenshots only. Separate automated layout checks cover every exported aggregate page; this note is not all-page manual inspection or full acceptance.",
+  "screenshots": [
+    {
+      "path": "verification/runs/20261108T173118594123Z-four-rate-current-saved-comparison-screen-review-capture/comparison-screen.png",
+      "sha256": "b6d2430748249269c26790f318cff73200b577e2ff601344251bbf468f4f842c",
+      "observation": "Visually inspected the saved comparison region: four annual rates, absolute net profit, difference, charges, trade counts, inspection and exports are legible; saved and new-run inputs are distinguished."
+    },
+    {
+      "path": "verification/runs/20261108T172614238723Z-four-rate-real-cancel-resume-four-account-and-offline-two-desktop-journeys/browser/artifacts/borrow-sensitivity-four-re-40110-t-exports-and-offline-facts-desktop1280/sensitivity-presentation-13.png",
+      "sha256": "f45f30d915db349d59845229a21a614b24d8d44efdb61205902b6120edacaa7c",
+      "observation": "Visually inspected this representative cost-assumption page at the smaller profile: text fits, the annual override is visible and the lower camera area is clear."
+    }
+  ]
+}

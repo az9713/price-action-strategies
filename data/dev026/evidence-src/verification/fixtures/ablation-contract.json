@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "source": "research/screenshots/prompt_page_12.png; PLAN.md comparison/research-discipline requirements",
+  "arms": "Baseline plus1\u201332 unique validated alternative values of exactly one public Strategy field. All other declared configuration, data, costs, account and dates remain frozen. Derived trigger changes must be disclosed. News alternatives require the versioned calendar contract.",
+  "comparison": "Independent full account per arm, actual regenerated causal signals and fills. Pair daily marked dollar P&L by the complete identical session calendar, alternative minus baseline; do not pair different executed trade lists by row/ID.",
+  "uncertainty": "Circular five-session2000-draw bootstrap of paired daily dollar differences, seed fixed before results,95% linear quantiles. Require at least six sessions (more than one five-session circular block) and executed trades in both arms. Negative or zero differences are valid; no global-significance claim.",
+  "overlap": "Report real signal/trade counts and exact decision-time/symbol/side signal overlaps separately; changed eligibility is part of the effect.",
+  "guard": "Reject any sealed warm-up/evaluation date before raw reads. Verify frozen payload/study identity and saved hashes before reuse.",
+  "registry": "Atomic pre-execution plans for every logical analysis/chart/account/window; separate strategy,portfolio,benchmark,random-control and behavior roles. Append computation attempts, interruptions, retries and verified cache reuse. Legacy plans are explicitly post-hoc/unverified.",
+  "registry_counts": "All rows/history, not the most recent500 jobs. Repeated occurrences and unique configs are separate; neither equals independent trial count. Preserve generator proposals/duplicates/rejections. Registry listing/export never reads market prices.",
+  "tolerances": {
+    "price": 1e-09,
+    "money": 1e-07,
+    "statistic": 1e-10
+  },
+  "seed_policy": "Per-pair SHA-256 of policy1/master seed/baseline/alternative/field: first32 bits modulo2^31; exact browser-safe integer, invariant to arm order."
+}

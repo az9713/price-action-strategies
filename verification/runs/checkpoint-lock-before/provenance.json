@@ -1,0 +1,22 @@
+{
+  "original_subject_receipt": "20261110T182818630881Z-part-projections-current-original-financial-parts-manifest-and-control-regression",
+  "files": [
+    {
+      "path": "backend/lab/trials.py",
+      "sha256": "b4f87dd9aa71dc0aee22cabc6aaa0b344f20bf47c25987e54f08b69a4d4d484a"
+    },
+    {
+      "path": "backend/lab/worker.py",
+      "sha256": "4b4eb688d1086104e49d10ed2b7fa69bc765e609ce0ba8dafc265474951638e9"
+    },
+    {
+      "path": "backend/lab/store.py",
+      "sha256": "9e86853ed338b1cf21a460e87e14efd7012cc0edc57fcec39ea1dda918318e9b"
+    },
+    {
+      "path": "backend/lab/trade_twin_parts.py",
+      "sha256": "c08612534d324eb4d6329b382ab8a275b1d38e03c3d109f35ef172cce42707c8"
+    }
+  ],
+  "actual_before_change_bytes": true
+}

@@ -1,0 +1,3589 @@
+{
+  "status": "partial_implementation_not_verified",
+  "requirements": [
+    {
+      "id": "SPEC-001",
+      "implementation": [
+        {
+          "path": "RULEBOOK.md",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_spread_public_schema.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ]
+    },
+    {
+      "id": "SPEC-002",
+      "implementation": [
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Bounded saved-result views and older-job browsing - D043 / version0.23"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "ENV-001",
+      "implementation": [],
+      "tests": [],
+      "rulebook_sections": []
+    },
+    {
+      "id": "ENV-002",
+      "implementation": [
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "start.ps1",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/runtime.py",
+          "symbol": "StoreLease"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "create_app.lifespan"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "cancellation_requested/heartbeat"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "run_once/_many/run_worker"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate timestamp iteration"
+        },
+        {
+          "path": "backend/lab/dataset_context.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_parent_liveness.py",
+          "scope": "Actual forced-parent-death and worker-exit regression; not complete recovery acceptance."
+        },
+        {
+          "path": "tests/test_runtime_ownership.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_execution_capacity.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_dataset_context.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_import_responsiveness.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/dataset-context.spec.ts",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Runtime ownership and execution iteration",
+        "Verified job-scoped evaluation cache - D044 / version0.24"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "ENV-003",
+      "implementation": [
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/data.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "ENV-004",
+      "implementation": [],
+      "tests": [],
+      "rulebook_sections": []
+    },
+    {
+      "id": "DATA-001",
+      "implementation": [
+        {
+          "path": "backend/lab/provider.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_provider.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-002",
+      "implementation": [
+        {
+          "path": "backend/lab/provider.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_provider.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-003",
+      "implementation": [
+        {
+          "path": "backend/lab/provider.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_provider.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices",
+        "Verified job-scoped evaluation cache - D044 / version0.24"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-004",
+      "implementation": [
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices",
+        "Verified job-scoped evaluation cache - D044 / version0.24"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-005",
+      "implementation": [
+        {
+          "path": "backend/lab/data.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_data_contract.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-006",
+      "implementation": [
+        {
+          "path": "backend/lab/data.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_data_contract.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-007",
+      "implementation": [
+        {
+          "path": "backend/lab/data.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_data_contract.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-008",
+      "implementation": [
+        {
+          "path": "backend/lab/data.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_data_contract.py",
+          "scope": "component tests only; not full acceptance certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-009",
+      "implementation": [
+        {
+          "path": "backend/lab/provider.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_provider.py",
+          "scope": "component tests only; not full acceptance certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "DATA-010",
+      "implementation": [
+        {
+          "path": "backend/lab/data.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_data_contract.py",
+          "scope": "component tests only; not full acceptance certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Time and prices"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RULE-001",
+      "implementation": [
+        {
+          "path": "backend/lab/config.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_rules.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_source_identity.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Confirmed structure and levels"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RULE-002",
+      "implementation": [
+        {
+          "path": "backend/lab/signals.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_rules.py",
+          "scope": "component tests only; not full acceptance certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Confirmed structure and levels"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RULE-003",
+      "implementation": [
+        {
+          "path": "backend/lab/config.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_rules.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_confirmation_filters.py",
+          "symbol": "Authored selector clocks/filters and real-minute/daily-hourly/reference execution; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": [
+        "Confirmation and filters"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RULE-004",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_confirmation_filters.py",
+          "symbol": "Authored selector clocks/filters and real-minute/daily-hourly/reference execution; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-001",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-002",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-003",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-004",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-005",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-006",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-007",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-008",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-009",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-010",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-011",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_confirmation_filters.py",
+          "symbol": "Authored selector clocks/filters and real-minute/daily-hourly/reference execution; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "STR-012",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_strategy_matrix.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_family_boundaries.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_overlap_priority.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_confirmation_filters.py",
+          "symbol": "Authored selector clocks/filters and real-minute/daily-hourly/reference execution; partial acceptance coverage"
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "EXEC-001",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Orders and costs"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "EXEC-002",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Orders and costs"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "EXEC-003",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Orders and costs"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "EXEC-004",
+      "implementation": [],
+      "tests": [
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "EXEC-005",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Orders and costs"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "EXEC-006",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Orders and costs"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "ACCT-001",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "ACCT-002",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/service.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/api.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "frontend/src/Charts.tsx",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "verify_inputs/verify_candidates/verify_final_reservation/begin_final"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "portfolio selection units and complete screen/final accounts"
+        },
+        {
+          "path": "frontend/src/StudyFlow.tsx",
+          "symbol": "StudyUnit/StudyContext exact selection and phase"
+        },
+        {
+          "path": "backend/lab/runtime.py",
+          "symbol": "StoreLease"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "create_app.lifespan"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "cancellation_requested/heartbeat"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "run_once/_many/run_worker"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate timestamp iteration"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_portfolio.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "tests/test_portfolio_liquidity.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "frontend/tests/portfolio.spec.ts",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "verification/portfolio_reference_run.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "tests/test_portfolio_studies.py",
+          "symbol": "real joint screening/final, independent accounts and genuine no-candidate controls"
+        },
+        {
+          "path": "tests/test_portfolio_study_recovery.py",
+          "symbol": "actual cancellation/shutdown/corruption/orphan/root/ownership guards"
+        },
+        {
+          "path": "tests/test_portfolio_study_api.py",
+          "symbol": "API exports, complete rule facts, original/candidate/source guards"
+        },
+        {
+          "path": "frontend/tests/portfolio-study.spec.ts",
+          "symbol": "actual synthetic import/freeze/screen/final/cancel/resume/inspection/offline both desktops"
+        },
+        {
+          "path": "tests/test_study_gates.py",
+          "symbol": "authored two-window strict profit/count/defined finite Sharpe truth table"
+        },
+        {
+          "path": "verification/critical_study_mutations.py",
+          "symbol": "five isolated actual registration/member/final-window/profit/either-window source mutations"
+        },
+        {
+          "path": "tests/test_runtime_ownership.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_execution_capacity.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions",
+        "Shared-capital portfolio experiments",
+        "Aggregate entry participation",
+        "Runtime ownership and execution iteration"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "ACCT-003",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "ACCT-004",
+      "implementation": [
+        {
+          "path": "backend/lab/borrow.py",
+          "symbol": "BorrowScenario,BorrowEvent,BorrowSchedule"
+        },
+        {
+          "path": "backend/lab/config.py",
+          "symbol": "Costs.borrow_scenario"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate/accrue/enter and opening recall stage"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "borrow_input and account/study freezing/pre-price guards"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "pre-cache/final borrowing validation"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "validate_borrow_scenario"
+        },
+        {
+          "path": "frontend/src/Borrowing.tsx",
+          "symbol": "BorrowEditor,BorrowAssumptions"
+        },
+        {
+          "path": "backend/lab/presenter.py",
+          "symbol": "Builder.assumptions full borrowing-state projection"
+        },
+        {
+          "path": "backend/lab/sensitivity.py",
+          "symbol": "cost_arms,summarize_accounts complete four-rate accounts"
+        },
+        {
+          "path": "frontend/src/BorrowSensitivity.tsx",
+          "symbol": "BorrowSensitivity saved accounts, daily differences and global inspection"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_borrow.py",
+          "symbol": "authored clock/schema/minute/weekend/recall/action/shared-capital cases"
+        },
+        {
+          "path": "tests/test_borrow_properties.py",
+          "symbol": "24 saved seeded varying-state independent-account paths"
+        },
+        {
+          "path": "tests/test_borrow_integration.py",
+          "symbol": "API/scope/job freeze/nonempty accounts/final/recovery/presenter cases"
+        },
+        {
+          "path": "frontend/tests/borrowing.spec.ts",
+          "symbol": "actual editor/import/error/run/recall/ledger/JSON/offline both desktops"
+        },
+        {
+          "path": "verification/critical_borrow_mutations.py",
+          "symbol": "five isolated actual source mutations"
+        },
+        {
+          "path": "tests/test_borrow_sensitivity.py",
+          "symbol": "nonlinear 50/49-share hand arithmetic and independent Decimal accounts"
+        },
+        {
+          "path": "tests/test_borrow_sensitivity_integration.py",
+          "symbol": "actual API, worker, registry, pre-price guards and recovery"
+        },
+        {
+          "path": "tests/test_borrow_sensitivity_presenter.py",
+          "symbol": "saved projection, exact small-fee formatting and independent provenance audit"
+        },
+        {
+          "path": "frontend/tests/borrow-sensitivity.spec.ts",
+          "symbol": "actual four accounts, cancel/resume, global trade inspection, reload and offline pages at both desktops"
+        },
+        {
+          "path": "verification/critical_sensitivity_mutations.py",
+          "symbol": "four isolated actual fixed-rate/difference source mutations"
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions",
+        "Time-varying short-borrow scenarios",
+        "Flat borrowing-cost sensitivity"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "ACCT-005",
+      "implementation": [
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_execution.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "ACCT-006",
+      "implementation": [
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_reference_execution.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_exits.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_reference_properties.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "verification/real_reference_run.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Verified job-scoped evaluation cache - D044 / version0.24"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "MET-001",
+      "implementation": [
+        {
+          "path": "backend/lab/metrics.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_metrics.py",
+          "scope": "component tests only; not full acceptance certification"
+        },
+        {
+          "path": "tests/test_statistics_contract.py",
+          "symbol": "partial implementation; final conformance still required"
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions",
+        "Marked metrics and statistical assumptions"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "MET-002",
+      "implementation": [
+        {
+          "path": "backend/lab/metrics.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_metrics.py",
+          "scope": "component tests only; not full acceptance certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "MET-003",
+      "implementation": [
+        {
+          "path": "backend/lab/benchmarks.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "frontend/src/Benchmarks.tsx",
+          "symbol": "partial implementation; final conformance still required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_benchmarks.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "frontend/tests/benchmarks.spec.ts",
+          "symbol": "partial implementation; final conformance still required"
+        }
+      ],
+      "rulebook_sections": [
+        "Cash and passive equity benchmarks"
+      ]
+    },
+    {
+      "id": "MET-004",
+      "implementation": [],
+      "tests": [],
+      "rulebook_sections": []
+    },
+    {
+      "id": "MET-005",
+      "implementation": [
+        {
+          "path": "backend/lab/metrics.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_metrics.py",
+          "scope": "component tests only; not full acceptance certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Capital, short positions and distributions"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RES-001",
+      "implementation": [
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "verify_inputs/verify_candidates/verify_final_reservation/begin_final"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "portfolio selection units and complete screen/final accounts"
+        },
+        {
+          "path": "frontend/src/StudyFlow.tsx",
+          "symbol": "StudyUnit/StudyContext exact selection and phase"
+        },
+        {
+          "path": "backend/lab/spread_accounts.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        },
+        {
+          "path": "tests/test_portfolio_studies.py",
+          "symbol": "real joint screening/final, independent accounts and genuine no-candidate controls"
+        },
+        {
+          "path": "tests/test_portfolio_study_recovery.py",
+          "symbol": "actual cancellation/shutdown/corruption/orphan/root/ownership guards"
+        },
+        {
+          "path": "tests/test_portfolio_study_api.py",
+          "symbol": "API exports, complete rule facts, original/candidate/source guards"
+        },
+        {
+          "path": "frontend/tests/portfolio-study.spec.ts",
+          "symbol": "actual synthetic import/freeze/screen/final/cancel/resume/inspection/offline both desktops"
+        },
+        {
+          "path": "tests/test_study_gates.py",
+          "symbol": "authored two-window strict profit/count/defined finite Sharpe truth table"
+        },
+        {
+          "path": "verification/critical_study_mutations.py",
+          "symbol": "five isolated actual registration/member/final-window/profit/either-window source mutations"
+        },
+        {
+          "path": "tests/test_spread_account_handoff.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_account_authority.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RES-002",
+      "implementation": [
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/cli.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "verify_inputs/verify_candidates/verify_final_reservation/begin_final"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "portfolio selection units and complete screen/final accounts"
+        },
+        {
+          "path": "frontend/src/StudyFlow.tsx",
+          "symbol": "StudyUnit/StudyContext exact selection and phase"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        },
+        {
+          "path": "tests/test_portfolio_studies.py",
+          "symbol": "real joint screening/final, independent accounts and genuine no-candidate controls"
+        },
+        {
+          "path": "tests/test_portfolio_study_recovery.py",
+          "symbol": "actual cancellation/shutdown/corruption/orphan/root/ownership guards"
+        },
+        {
+          "path": "tests/test_portfolio_study_api.py",
+          "symbol": "API exports, complete rule facts, original/candidate/source guards"
+        },
+        {
+          "path": "frontend/tests/portfolio-study.spec.ts",
+          "symbol": "actual synthetic import/freeze/screen/final/cancel/resume/inspection/offline both desktops"
+        },
+        {
+          "path": "tests/test_study_gates.py",
+          "symbol": "authored two-window strict profit/count/defined finite Sharpe truth table"
+        },
+        {
+          "path": "verification/critical_study_mutations.py",
+          "symbol": "five isolated actual registration/member/final-window/profit/either-window source mutations"
+        }
+      ],
+      "rulebook_sections": [],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RES-003",
+      "implementation": [
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "verify_inputs/verify_candidates/verify_final_reservation/begin_final"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "portfolio selection units and complete screen/final accounts"
+        },
+        {
+          "path": "frontend/src/StudyFlow.tsx",
+          "symbol": "StudyUnit/StudyContext exact selection and phase"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_data_service_boundaries.py",
+          "symbol": "Declared malformed-input, exposure migration, queue and artifact boundaries; partial acceptance coverage"
+        },
+        {
+          "path": "tests/test_portfolio_studies.py",
+          "symbol": "real joint screening/final, independent accounts and genuine no-candidate controls"
+        },
+        {
+          "path": "tests/test_portfolio_study_recovery.py",
+          "symbol": "actual cancellation/shutdown/corruption/orphan/root/ownership guards"
+        },
+        {
+          "path": "tests/test_portfolio_study_api.py",
+          "symbol": "API exports, complete rule facts, original/candidate/source guards"
+        },
+        {
+          "path": "frontend/tests/portfolio-study.spec.ts",
+          "symbol": "actual synthetic import/freeze/screen/final/cancel/resume/inspection/offline both desktops"
+        },
+        {
+          "path": "tests/test_study_gates.py",
+          "symbol": "authored two-window strict profit/count/defined finite Sharpe truth table"
+        },
+        {
+          "path": "verification/critical_study_mutations.py",
+          "symbol": "five isolated actual registration/member/final-window/profit/either-window source mutations"
+        }
+      ],
+      "rulebook_sections": [],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RES-004",
+      "implementation": [
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/trials.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "frontend/src/TrialLedger.tsx",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "verify_inputs/verify_candidates/verify_final_reservation/begin_final"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "portfolio selection units and complete screen/final accounts"
+        },
+        {
+          "path": "frontend/src/StudyFlow.tsx",
+          "symbol": "StudyUnit/StudyContext exact selection and phase"
+        },
+        {
+          "path": "backend/lab/search_statistics.py",
+          "symbol": "summarize_search_statistics; D038 diagnostic, pending execution"
+        },
+        {
+          "path": "frontend/src/SearchStatistics.tsx",
+          "symbol": "prespecified controls and saved sensitivity table; pending execution"
+        },
+        "backend/lab/sampling.py",
+        "backend/lab/models.py",
+        "backend/lab/api.py",
+        "backend/lab/worker.py",
+        "frontend/src/SearchSampling.tsx",
+        {
+          "path": "backend/lab/spread.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/spread_preparation.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/spread_jobs.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/spread_worker.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/spread_accounts.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_trial_registry.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "frontend/tests/ablations.spec.ts",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "verification/check_ablation_browser.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "tests/test_portfolio_studies.py",
+          "symbol": "real joint screening/final, independent accounts and genuine no-candidate controls"
+        },
+        {
+          "path": "tests/test_portfolio_study_recovery.py",
+          "symbol": "actual cancellation/shutdown/corruption/orphan/root/ownership guards"
+        },
+        {
+          "path": "tests/test_portfolio_study_api.py",
+          "symbol": "API exports, complete rule facts, original/candidate/source guards"
+        },
+        {
+          "path": "frontend/tests/portfolio-study.spec.ts",
+          "symbol": "actual synthetic import/freeze/screen/final/cancel/resume/inspection/offline both desktops"
+        },
+        {
+          "path": "tests/test_study_gates.py",
+          "symbol": "authored two-window strict profit/count/defined finite Sharpe truth table"
+        },
+        {
+          "path": "verification/critical_study_mutations.py",
+          "symbol": "five isolated actual registration/member/final-window/profit/either-window source mutations"
+        },
+        {
+          "path": "tests/test_search_statistics.py",
+          "scope": "D038 independent moment/probability and input boundary contract"
+        },
+        {
+          "path": "tests/test_search_statistics_integration.py",
+          "scope": "D038 actual API/worker/saved-only export contract"
+        },
+        "tests/test_common_sampling.py",
+        "tests/test_common_sampling_integration.py",
+        "frontend/tests/common-sampling.spec.ts",
+        {
+          "path": "tests/test_spread.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_worker.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_account_handoff.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_orphan_reservation.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Search-aware sensitivity policy",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RES-005",
+      "implementation": [
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; partial implementation"
+        },
+        "backend/lab/sampling.py",
+        "backend/lab/models.py",
+        "backend/lab/api.py",
+        "backend/lab/worker.py",
+        "frontend/src/SearchSampling.tsx",
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/spread.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/spread_accounts.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        "tests/test_common_sampling.py",
+        "tests/test_common_sampling_integration.py",
+        "frontend/tests/common-sampling.spec.ts",
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_spread_probe.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_account_exports.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Verified job-scoped evaluation cache - D044 / version0.24",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RES-006",
+      "implementation": [
+        {
+          "path": "backend/lab/controls.py",
+          "symbol": "matched-entry controls only; shifted levels and final acceptance remain open"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "symbol": "matched-entry controls only; shifted levels and final acceptance remain open"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "matched-entry controls only; shifted levels and final acceptance remain open"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "matched-entry controls only; shifted levels and final acceptance remain open"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "matched-entry controls only; shifted levels and final acceptance remain open"
+        },
+        {
+          "path": "frontend/src/RandomControls.tsx",
+          "symbol": "matched-entry controls only; shifted levels and final acceptance remain open"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_random_controls.py",
+          "symbol": "matched-entry controls only; shifted levels and final acceptance remain open"
+        },
+        {
+          "path": "frontend/tests/controls.spec.ts",
+          "symbol": "matched-entry controls only; shifted levels and final acceptance remain open"
+        }
+      ],
+      "rulebook_sections": [
+        "Conditional matched random-entry comparisons"
+      ]
+    },
+    {
+      "id": "RES-007",
+      "implementation": [],
+      "tests": [],
+      "rulebook_sections": []
+    },
+    {
+      "id": "RES-008",
+      "implementation": [
+        {
+          "path": "backend/lab/metrics.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "backend/lab/search_statistics.py",
+          "symbol": "summarize_search_statistics; D038 diagnostic, pending execution"
+        },
+        {
+          "path": "frontend/src/SearchStatistics.tsx",
+          "symbol": "prespecified controls and saved sensitivity table; pending execution"
+        },
+        {
+          "path": "backend/lab/spread_accounts.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "frontend/src/SearchStatistics.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_statistics_contract.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "verification/reference_statistics.py",
+          "symbol": "partial implementation; final conformance still required"
+        },
+        {
+          "path": "tests/test_search_statistics.py",
+          "scope": "D038 independent moment/probability and input boundary contract"
+        },
+        {
+          "path": "tests/test_search_statistics_integration.py",
+          "scope": "D038 actual API/worker/saved-only export contract"
+        },
+        {
+          "path": "tests/test_spread_account_exports.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Marked metrics and statistical assumptions",
+        "Search-aware sensitivity policy",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RES-009",
+      "implementation": [],
+      "tests": [],
+      "rulebook_sections": []
+    },
+    {
+      "id": "JOB-001",
+      "implementation": [
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/runtime.py",
+          "symbol": "StoreLease"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "create_app.lifespan"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "cancellation_requested/heartbeat"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "run_once/_many/run_worker"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate timestamp iteration"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/spread_jobs.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/spread_worker.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_store.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_runtime_ownership.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_execution_capacity.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_spread_api.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_selection_pages.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_link_repair.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Orders and costs",
+        "Runtime ownership and execution iteration",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23",
+        "Verified job-scoped evaluation cache - D044 / version0.24",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "JOB-002",
+      "implementation": [
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/runtime.py",
+          "symbol": "StoreLease"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "create_app.lifespan"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "cancellation_requested/heartbeat"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "run_once/_many/run_worker"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate timestamp iteration"
+        },
+        {
+          "path": "backend/lab/spread_preparation.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/spread_jobs.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/spread_accounts.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_store.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_parent_liveness.py",
+          "scope": "Actual forced-parent-death and worker-exit regression; not complete recovery acceptance."
+        },
+        {
+          "path": "tests/test_runtime_ownership.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_execution_capacity.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_spread_account_handoff.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_orphan_reservation.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_reverse_index.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Orders and costs",
+        "Runtime ownership and execution iteration",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "JOB-003",
+      "implementation": [
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/runtime.py",
+          "symbol": "StoreLease"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "create_app.lifespan"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "cancellation_requested/heartbeat"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "run_once/_many/run_worker"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate timestamp iteration"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/spread_worker.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_store.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_runtime_ownership.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_execution_capacity.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_spread_worker.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Orders and costs",
+        "Runtime ownership and execution iteration",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23",
+        "Verified job-scoped evaluation cache - D044 / version0.24",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "JOB-004",
+      "implementation": [
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/runtime.py",
+          "symbol": "StoreLease"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "create_app.lifespan"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "cancellation_requested/heartbeat"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "run_once/_many/run_worker"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate timestamp iteration"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_store.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_research_service.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_runtime_ownership.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_execution_capacity.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Runtime ownership and execution iteration",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23",
+        "Verified job-scoped evaluation cache - D044 / version0.24"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "UI-001",
+      "implementation": [
+        {
+          "path": "frontend/src/App.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "frontend/src/Charts.tsx",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "frontend/tests/research.spec.ts",
+          "symbol": "partial regression coverage; not full case certification"
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "UI-002",
+      "implementation": [
+        {
+          "path": "frontend/src/App.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "frontend/src/Charts.tsx",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "frontend/tests/research.spec.ts",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "frontend/tests/result-ownership.spec.ts",
+          "symbol": "real overlapping global result successes/failures and atomic account/export identity"
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "UI-003",
+      "implementation": [
+        {
+          "path": "frontend/src/App.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "frontend/src/Charts.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/service.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/api.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/search_statistics.py",
+          "symbol": "summarize_search_statistics; D038 diagnostic, pending execution"
+        },
+        {
+          "path": "frontend/src/SearchStatistics.tsx",
+          "symbol": "prespecified controls and saved sensitivity table; pending execution"
+        },
+        "backend/lab/sampling.py",
+        "backend/lab/models.py",
+        "backend/lab/api.py",
+        "backend/lab/worker.py",
+        "frontend/src/SearchSampling.tsx",
+        {
+          "path": "backend/lab/dataset_context.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "frontend/tests/research.spec.ts",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_portfolio.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "tests/test_portfolio_liquidity.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "frontend/tests/portfolio.spec.ts",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "verification/portfolio_reference_run.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "frontend/tests/result-ownership.spec.ts",
+          "symbol": "real overlapping global result successes/failures and atomic account/export identity"
+        },
+        {
+          "path": "tests/test_search_statistics.py",
+          "scope": "D038 independent moment/probability and input boundary contract"
+        },
+        {
+          "path": "tests/test_search_statistics_integration.py",
+          "scope": "D038 actual API/worker/saved-only export contract"
+        },
+        "tests/test_common_sampling.py",
+        "tests/test_common_sampling_integration.py",
+        "frontend/tests/common-sampling.spec.ts",
+        {
+          "path": "tests/test_dataset_context.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_import_responsiveness.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/dataset-context.spec.ts",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_spread_api.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Shared-capital portfolio experiments",
+        "Aggregate entry participation",
+        "Search-aware sensitivity policy",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "UI-004",
+      "implementation": [
+        {
+          "path": "frontend/src/App.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "frontend/src/Charts.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/service.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/api.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/research.py",
+          "symbol": "verify_inputs/verify_candidates/verify_final_reservation/begin_final"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "portfolio selection units and complete screen/final accounts"
+        },
+        {
+          "path": "frontend/src/StudyFlow.tsx",
+          "symbol": "StudyUnit/StudyContext exact selection and phase"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "frontend/tests/research.spec.ts",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_portfolio.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "tests/test_portfolio_liquidity.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "frontend/tests/portfolio.spec.ts",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "verification/portfolio_reference_run.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "tests/test_portfolio_studies.py",
+          "symbol": "real joint screening/final, independent accounts and genuine no-candidate controls"
+        },
+        {
+          "path": "tests/test_portfolio_study_recovery.py",
+          "symbol": "actual cancellation/shutdown/corruption/orphan/root/ownership guards"
+        },
+        {
+          "path": "tests/test_portfolio_study_api.py",
+          "symbol": "API exports, complete rule facts, original/candidate/source guards"
+        },
+        {
+          "path": "frontend/tests/portfolio-study.spec.ts",
+          "symbol": "actual synthetic import/freeze/screen/final/cancel/resume/inspection/offline both desktops"
+        },
+        {
+          "path": "frontend/tests/result-ownership.spec.ts",
+          "symbol": "real overlapping global result successes/failures and atomic account/export identity"
+        },
+        {
+          "path": "tests/test_study_gates.py",
+          "symbol": "authored two-window strict profit/count/defined finite Sharpe truth table"
+        },
+        {
+          "path": "verification/critical_study_mutations.py",
+          "symbol": "five isolated actual registration/member/final-window/profit/either-window source mutations"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Shared-capital portfolio experiments",
+        "Aggregate entry participation",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "UI-005",
+      "implementation": [
+        {
+          "path": "frontend/src/App.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "frontend/src/Charts.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/service.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/api.py",
+          "scope": "Portfolio/inspection implementation under acceptance verification."
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "frontend/tests/research.spec.ts",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_portfolio.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "tests/test_portfolio_liquidity.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "frontend/tests/portfolio.spec.ts",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "verification/portfolio_reference_run.py",
+          "scope": "Executed component/browser/reference coverage; not final acceptance certification."
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Shared-capital portfolio experiments",
+        "Aggregate entry participation",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "UI-006",
+      "implementation": [
+        {
+          "path": "frontend/src/App.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "frontend/src/Charts.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "frontend/tests/research.spec.ts",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_spread_public_schema.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ]
+    },
+    {
+      "id": "UI-007",
+      "implementation": [
+        {
+          "path": "frontend/src/App.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "frontend/src/Charts.tsx",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "frontend/tests/research.spec.ts",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_spread_selection_pages.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Bounded saved-result views and older-job browsing - D043 / version0.23",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RPT-001",
+      "implementation": [
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/presenter.py",
+          "symbol": "build_deck, render_html"
+        },
+        {
+          "path": "backend/lab/presentation_audit.py",
+          "symbol": "audit_deck, independent_format"
+        },
+        {
+          "path": "backend/lab/presenter_assets.py",
+          "symbol": "CSS, RUNTIME"
+        },
+        {
+          "path": "frontend/src/PresenterExport.tsx",
+          "symbol": "PresenterExport"
+        },
+        {
+          "path": "backend/lab/search_statistics.py",
+          "symbol": "summarize_search_statistics; D038 diagnostic, pending execution"
+        },
+        {
+          "path": "frontend/src/SearchStatistics.tsx",
+          "symbol": "prespecified controls and saved sensitivity table; pending execution"
+        },
+        "backend/lab/sampling.py",
+        "backend/lab/models.py",
+        "backend/lab/api.py",
+        "backend/lab/worker.py",
+        "frontend/src/SearchSampling.tsx",
+        {
+          "path": "backend/lab/dataset_context.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "verification/check_browser_outputs.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_presenter.py",
+          "symbol": "authored provenance/adapter/fault cases"
+        },
+        {
+          "path": "tests/test_presenter_api.py",
+          "symbol": "actual API/worker saved-output cases"
+        },
+        {
+          "path": "frontend/tests/presenter.spec.ts",
+          "symbol": "both desktop every-page offline controls and layout"
+        },
+        {
+          "path": "verification/presenter_reference_run.py",
+          "symbol": "actual saved historical source derivations"
+        },
+        {
+          "path": "tests/test_search_statistics.py",
+          "scope": "D038 independent moment/probability and input boundary contract"
+        },
+        {
+          "path": "tests/test_search_statistics_integration.py",
+          "scope": "D038 actual API/worker/saved-only export contract"
+        },
+        "tests/test_common_sampling.py",
+        "tests/test_common_sampling_integration.py",
+        "frontend/tests/common-sampling.spec.ts",
+        {
+          "path": "tests/test_dataset_context.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_import_responsiveness.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/dataset-context.spec.ts",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Saved-output presentation",
+        "Search-aware sensitivity policy",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RPT-002",
+      "implementation": [
+        {
+          "path": "backend/lab/presenter.py",
+          "symbol": "build_deck, render_html"
+        },
+        {
+          "path": "backend/lab/presentation_audit.py",
+          "symbol": "audit_deck, independent_format"
+        },
+        {
+          "path": "backend/lab/presenter_assets.py",
+          "symbol": "CSS, RUNTIME"
+        },
+        {
+          "path": "frontend/src/PresenterExport.tsx",
+          "symbol": "PresenterExport"
+        },
+        {
+          "path": "backend/lab/search_statistics.py",
+          "symbol": "summarize_search_statistics; D038 diagnostic, pending execution"
+        },
+        {
+          "path": "frontend/src/SearchStatistics.tsx",
+          "symbol": "prespecified controls and saved sensitivity table; pending execution"
+        },
+        "backend/lab/sampling.py",
+        "backend/lab/models.py",
+        "backend/lab/api.py",
+        "backend/lab/worker.py",
+        "frontend/src/SearchSampling.tsx",
+        {
+          "path": "backend/lab/dataset_context.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/presenter.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_presenter.py",
+          "symbol": "authored provenance/adapter/fault cases"
+        },
+        {
+          "path": "tests/test_presenter_api.py",
+          "symbol": "actual API/worker saved-output cases"
+        },
+        {
+          "path": "frontend/tests/presenter.spec.ts",
+          "symbol": "both desktop every-page offline controls and layout"
+        },
+        {
+          "path": "verification/presenter_reference_run.py",
+          "symbol": "actual saved historical source derivations"
+        },
+        {
+          "path": "tests/test_search_statistics.py",
+          "scope": "D038 independent moment/probability and input boundary contract"
+        },
+        {
+          "path": "tests/test_search_statistics_integration.py",
+          "scope": "D038 actual API/worker/saved-only export contract"
+        },
+        "tests/test_common_sampling.py",
+        "tests/test_common_sampling_integration.py",
+        "frontend/tests/common-sampling.spec.ts",
+        {
+          "path": "tests/test_dataset_context.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_import_responsiveness.py",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/dataset-context.spec.ts",
+          "symbol": "D040 partial implementation/verification; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_spread_account_exports.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Saved-output presentation",
+        "Search-aware sensitivity policy",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RPT-003",
+      "implementation": [
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/presenter.py",
+          "symbol": "build_deck, render_html"
+        },
+        {
+          "path": "backend/lab/presentation_audit.py",
+          "symbol": "audit_deck, independent_format"
+        },
+        {
+          "path": "backend/lab/presenter_assets.py",
+          "symbol": "CSS, RUNTIME"
+        },
+        {
+          "path": "frontend/src/PresenterExport.tsx",
+          "symbol": "PresenterExport"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/spread_jobs.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "frontend/src/SpreadFlow.tsx",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_presenter.py",
+          "symbol": "authored provenance/adapter/fault cases"
+        },
+        {
+          "path": "tests/test_presenter_api.py",
+          "symbol": "actual API/worker saved-output cases"
+        },
+        {
+          "path": "frontend/tests/presenter.spec.ts",
+          "symbol": "both desktop every-page offline controls and layout"
+        },
+        {
+          "path": "verification/presenter_reference_run.py",
+          "symbol": "actual saved historical source derivations"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_spread_selection_pages.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_selection_scale.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        },
+        {
+          "path": "tests/test_spread_link_repair.py",
+          "scope": "D045 component reference under verification; not final case certification"
+        }
+      ],
+      "rulebook_sections": [
+        "Saved-output presentation",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23",
+        "Balanced spread and frozen account continuation \u2014 D045 / version0.25"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "SEC-001",
+      "implementation": [
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "start.ps1",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_http_boundary.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "SEC-002",
+      "implementation": [
+        {
+          "path": "backend/lab/provider.py",
+          "symbol": "module; partial implementation"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_provider.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_http_boundary.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "SEC-003",
+      "implementation": [
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; partial implementation"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_api.py",
+          "symbol": "partial regression coverage; not full case certification"
+        },
+        {
+          "path": "tests/test_http_boundary.py",
+          "scope": "Executed component/reference coverage; acceptance cases remain uncertified."
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "PERF-001",
+      "implementation": [
+        {
+          "path": "backend/lab/runtime.py",
+          "symbol": "StoreLease"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "create_app.lifespan"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "cancellation_requested/heartbeat"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "run_once/_many/run_worker"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate timestamp iteration"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_runtime_ownership.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_execution_capacity.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Runtime ownership and execution iteration",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23",
+        "Verified job-scoped evaluation cache - D044 / version0.24"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "PERF-002",
+      "implementation": [
+        {
+          "path": "backend/lab/runtime.py",
+          "symbol": "StoreLease"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "create_app.lifespan"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "cancellation_requested/heartbeat"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "run_once/_many/run_worker"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "simulate timestamp iteration"
+        },
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_runtime_ownership.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_execution_capacity.py",
+          "scope": "D037 authored contract execution; component evidence, not final acceptance"
+        },
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Runtime ownership and execution iteration",
+        "Bounded saved-result views and older-job browsing - D043 / version0.23",
+        "Verified job-scoped evaluation cache - D044 / version0.24"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "REPRO-001",
+      "implementation": [
+        {
+          "path": "backend/lab/evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/store.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "backend/lab/engine.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_evaluation_cache.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        },
+        {
+          "path": "tests/test_control_reader.py",
+          "symbol": "D044 scoped verified input/base-chart cache and fresh read-only worker controls; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Verified job-scoped evaluation cache - D044 / version0.24"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "REPRO-002",
+      "implementation": [],
+      "tests": [],
+      "rulebook_sections": []
+    },
+    {
+      "id": "FAULT-001",
+      "implementation": [
+        {
+          "path": "backend/lab/result_index.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/src/SavedPages.tsx",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_result_materialization.py",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        },
+        {
+          "path": "frontend/tests/result-materialization.spec.ts",
+          "symbol": "D043 scoped saved-result materialization; final acceptance remains required"
+        }
+      ],
+      "rulebook_sections": [
+        "Bounded saved-result views and older-job browsing - D043 / version0.23"
+      ],
+      "status": "partial_not_certified"
+    },
+    {
+      "id": "RES-010",
+      "implementation": [
+        {
+          "path": "backend/lab/behavior.py",
+          "scope": "Behavior implementation; final acceptance remains uncertified."
+        },
+        {
+          "path": "backend/lab/signals.py",
+          "scope": "Behavior implementation; final acceptance remains uncertified."
+        },
+        {
+          "path": "backend/lab/models.py",
+          "scope": "Behavior implementation; final acceptance remains uncertified."
+        },
+        {
+          "path": "backend/lab/service.py",
+          "scope": "Behavior implementation; final acceptance remains uncertified."
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "scope": "Behavior implementation; final acceptance remains uncertified."
+        },
+        {
+          "path": "backend/lab/api.py",
+          "scope": "Behavior implementation; final acceptance remains uncertified."
+        },
+        {
+          "path": "frontend/src/Behavior.tsx",
+          "scope": "Behavior implementation; final acceptance remains uncertified."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "scope": "Behavior implementation; final acceptance remains uncertified."
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_behavior.py",
+          "scope": "Component/reference/browser checks, not final certification."
+        },
+        {
+          "path": "verification/behavior_reference_run.py",
+          "scope": "Component/reference/browser checks, not final certification."
+        },
+        {
+          "path": "frontend/tests/behavior.spec.ts",
+          "scope": "Component/reference/browser checks, not final certification."
+        }
+      ],
+      "rulebook_sections": [
+        "Price behavior experiments - source page09; equity adaptation"
+      ]
+    },
+    {
+      "id": "RES-011",
+      "implementation": [
+        {
+          "path": "backend/lab/ablations.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "backend/lab/trials.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "frontend/src/Ablations.tsx",
+          "symbol": "module; component implementation under verification"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_ablations.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "frontend/tests/ablations.spec.ts",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "verification/ablation_reference_run.py",
+          "symbol": "module; component implementation under verification"
+        },
+        {
+          "path": "verification/check_ablation_browser.py",
+          "symbol": "module; component implementation under verification"
+        }
+      ],
+      "rulebook_sections": []
+    },
+    {
+      "id": "DATA-011",
+      "implementation": [
+        {
+          "path": "backend/lab/news.py",
+          "symbol": "NewsCalendar,NewsStore,NewsClock,acquire_calendar,validate_source"
+        },
+        {
+          "path": "backend/lab/models.py",
+          "symbol": "calendar request validation"
+        },
+        {
+          "path": "backend/lab/service.py",
+          "symbol": "freeze_news,news_input,evaluate,evaluate_portfolio,control_context"
+        },
+        {
+          "path": "backend/lab/worker.py",
+          "symbol": "news document commits/recovery and pre-price/final guards"
+        },
+        {
+          "path": "backend/lab/api.py",
+          "symbol": "calendar acquisition/import/export routes"
+        },
+        {
+          "path": "backend/lab/signals.py",
+          "symbol": "confirmation-time news weights"
+        },
+        {
+          "path": "backend/lab/controls.py",
+          "symbol": "news-regime matched candidate eligibility"
+        },
+        {
+          "path": "frontend/src/NewsCalendars.tsx",
+          "symbol": "version management,selector,knowledge assumptions"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "symbol": "frozen-calendar workflow and late-result navigation"
+        },
+        {
+          "path": "backend/lab/presenter.py",
+          "symbol": "saved calendar assumptions in offline export"
+        }
+      ],
+      "tests": [
+        {
+          "path": "tests/test_news.py",
+          "symbol": "authored immutable/date/knowledge/import/parser cases"
+        },
+        {
+          "path": "tests/test_news_acquisition.py",
+          "symbol": "bounded official HTTP/parser/cancel/checkpoint cases"
+        },
+        {
+          "path": "tests/test_news_faults.py",
+          "symbol": "input/metadata/junction/concurrency/corruption cases"
+        },
+        {
+          "path": "tests/test_news_integration.py",
+          "symbol": "API/worker/accounts/controls/paired/portfolio/study/final/recovery"
+        },
+        {
+          "path": "frontend/tests/news.spec.ts",
+          "symbol": "actual official acquisition,reviewed imports,account,delayed navigation,JSON,offline pages at both desktops"
+        }
+      ],
+      "rulebook_sections": [
+        "Versioned scheduled-news calendars"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "scope": "Canonical comparison baseline from the original executed fills; no strategy, order, quantity or account-allocation rerun.",
+  "counterexample_receipt": "20261109T235306560862Z-trade-twins-identical-original-and-random-cashflow-strict-baseline-precision-counterexamples",
+  "problem": "Original float profit -4.8999999999997215 and Decimal twin profit -4.900 represent identical fills but fail a strict tie comparison.",
+  "production_point": "Create the source cash-flow audit inside the original account computation, before its immutable report is saved and before any twin study exists.",
+  "preserve": ["all original trades and traces", "actual original entry/exit filled prices and whole initial quantity", "original exit clock and order role", "legacy float metrics and fields", "original report/part/attempt/result authority", "rejected/unfilled source signals"],
+  "arithmetic": {"per_trade_decimal_precision": 80, "cohort_total": "lossless exponent-span-safe exact_total", "fees": "original fee settings applied to original fills and action-adjusted quantities", "actions": "original authoritative splits and dividend entitlements", "borrow": "original known raw marks and calendar-time piecewise rates"},
+  "reconciliation": "Per-component comparison to legacy reported fields uses the existing absolute1e-7 accounting tolerance. Never use that tolerance in exceedance grading. Refuse an unreconciled source.",
+  "baseline": "Every production source trade carries canonical audited net profit. Preserve the original serialized closed sum separately. Freeze the audited baseline before candidate assignments/P&L; no caller override.",
+  "ties": "Exact equal cash-flow values count as ties; no blanket epsilon and no rounding away genuine small profits.",
+  "legacy": "Older reports remain readable. Do not invent audit fields in historical artifacts; new comparisons require a compatible new explicitly identified source account.",
+  "verification": ["actual original/twin identical winning and losing fills", "independent Fraction/Decimal hand totals", "every original fee", "long/short and changing borrow rates", "open/close clocks, overnight/weekends/DST", "splits/fractional shares/dividend entitlements", "zero-duration/empty sources", "lossless large-plus-tiny cohort sums", "tampered/missing/rehashed audit fields", "immutable original-source authority and no regenerated signals"],
+  "acceptance": "Original83 requirements,422 mandatory cases,120 combinations and all existing strict499/500/tie/10000-set obligations remain unchanged."
+}

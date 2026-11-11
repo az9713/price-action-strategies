@@ -1,0 +1,25 @@
+{
+  "revision": "D045 selected-account continuation, authored before implementation",
+  "source_video": "https://www.youtube.com/watch?v=z97PnFIPoFg",
+  "scope": "Complete the existing qualified-spread workflow. Original83 requirements,422 cases and120 combinations remain mandatory. No private host engine or recipe parity is claimed.",
+  "authority": [
+    "Only a completed, fully qualified parent with the complete successful selected manifest can authorize account simulations. Exhausted, canceled, failed, missing, corrupt or incomplete parents authorize zero financial trials.",
+    "Read the complete original parent payload, immutable root, sealed proposal plan, original journal and committed signal artifacts. Verify byte hashes, context, source and exact selected order before creating or executing a child. A self-rehashed derived cache or modified selection is insufficient authority.",
+    "The caller supplies only the parent identifier. The child inherits every selected configuration in original order, primary instrument, dates, seed, costs, portfolio, versioned news, minimum trade/Sharpe gates and search-statistics assumptions from the original parent payload. No subset, replacement configuration, amended date or overridden cost is accepted.",
+    "Freeze the entire selected financial plan and the parent payload/result/selected-set identities before any account P&L. Keep qualification probes and subsequent strategy-account occurrences distinct in the trial registry. Qualification failures remain retained.",
+    "Repeated and concurrent continuation requests return the one original linked child. The parent-child link and frozen child plan must commit atomically. A failed/canceled child is resumed, never silently replaced with a newly selected cohort."
+  ],
+  "execution": [
+    "Use existing account formulas, financial tolerances and part checkpoints. Evaluate and validate borrowing only on the frozen primary instrument. Preserve full source-dataset context separately from the actual evaluated-symbol scope; an unrelated instrument's protected dates must remain unread.",
+    "Before new/reused prices, verify current code, original dataset/news/source hashes and protected dates. Recheck original parent authority before final publication. Retain complete losing, zero-trade and undefined-score accounts. Never select only the best-performing subset.",
+    "Publish complete per-rule accounts, original selected-set lineage, frozen initial trade/net-profit/Sharpe gate outcomes and search-statistics sensitivity for the full cohort. Label discovery results as selected research outcomes. Later matched twins, era/replication/stability/ensemble stages remain separate unfinished obligations.",
+    "Cancellation, actual process death, lease recovery and part reuse retain distinct attempts and exact committed part bytes. Saved report viewing and exports do not reopen protected/raw prices."
+  ],
+  "verification": [
+    "Authored first-failing tests for absent continuation, exhausted/incomplete/corrupt parent rejection, full immutable inherited assumptions, primary-only scope, all-selected financial plan before the first simulate call, and idempotent/concurrent original-child creation.",
+    "Actual synthetic qualified parent followed by account P&L with both signal and financial evidence. Independently reconcile complete supplied-signal Decimal accounts and all account/CSV/source facts, including any losses or no-trade rules. This is not an independent detector implementation or trading-edge claim.",
+    "Corrupt original signal/proposal/root/journal/selection or change source/news/primary protection before continuation, worker execution, checkpoint reuse and publication; require fail-closed behavior and no unauthorized new financial accounts.",
+    "Actual cancellation/process-crash/recovery, bounded API/UI state and selection paging, registry lineage/export, desktop/mobile/keyboard/offline/source-fact journeys, critical source mutations and unchanged95% statement/90% branch gates.",
+    "Run coherent full integrated regression after implementation freezes. Preserve first failures and original artifacts. Small synthetic cases and metadata-only fixtures do not certify40000 source-qualified versions,100000 numerical stress or final422-case conformance."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "status": "Draft for the next implementation step; not a current implementation or acceptance claim",
+  "observed_gaps": [
+    "Workspace refresh GET /api/studies parses every full study spec, including all configurations, and the closed inputs details still stringify all specs in the browser.",
+    "Protected-date access checks fetch every active full study spec.",
+    "Old-schema TrialLedger reconstruction already iterates a streaming SQLite cursor, but one malformed/unreconstructible original input can abort the transaction and startup; per-job rollback/isolation is missing."
+  ],
+  "scope": "Bound study monitoring and protected-scope reads, preserve explicit complete verified inputs, and stream legacy trial reconstruction without inventing successful plans for unreadable originals. Large result loading remains a separate step.",
+  "invariants": [
+    "Original study specs, trial/job payloads, saved results, registration/candidate/final-reservation events and financial rules remain authoritative and unchanged.",
+    "Study-list/UI summaries are explicitly projections; full original inputs stay available on demand after registration-hash verification.",
+    "No new configuration, instrument, date, upload or input-document limit is introduced.",
+    "Every scope participating in protected-date checks is verified; missing/corrupt derived scope fails closed, never silently allows access.",
+    "Current lifecycle, abandonment and final reservation are read transactionally; a cached status cannot authorize raw final access.",
+    "The exact existing instrument-intersection/date-overlap and permitted final-job conditions are preserved, including copies of the same data.",
+    "Preserve the existing one-raw-job-at-a-time reconstruction cursor. Roll back incomplete per-job derived plans on malformed/unreconstructible input; valid neighbors remain usable, original bytes stay unchanged, and no prespecified provenance or computation attempts are fabricated.",
+    "Legacy reconstruction handles one raw job at a time and rolls back incomplete per-job derived plans on any malformed/unreconstructible input. Valid neighbors remain usable; original bytes are retained; no prespecified provenance or computation attempts are fabricated."
+  ],
+  "proposed_budgets_to_freeze_in_plan_before_implementation": {
+    "single_study_status_bytes": 65536,
+    "list_maximum_records": 500,
+    "list_maximum_bytes": 2097152,
+    "monitor_and_protected_access_raw_study_spec_reads": 0,
+    "legacy_migration_simultaneously_materialized_raw_job_plans": 1
+  },
+  "required_evidence": [
+    "Authored API/SQL-authorizer contracts fail against the current full-study monitoring and access paths before implementation.",
+    "Actual 10/1000/100000-configuration study registration and list/status/complete HTTP input measurements; clearly separate metadata from numerical throughput.",
+    "Maximum-size history pagination and bounded UTF-8 responses; exact large-universe on-demand inputs; no hidden truncation.",
+    "Original registration/candidate tampering cannot export verified inputs, screen, reserve or consume a final test; bad derived cache remains visible and repairable only from verified originals.",
+    "Protected-date parity across same/different symbols, overlapping/disjoint boundaries, date equality, unrelated/abandoned studies, reserved/completed/failed finals, wrong final IDs and copied data.",
+    "Cache corruption/missing cache during protected checks fails before any raw price read or viewed-window write.",
+    "Concurrent lifecycle/final reservation/access uses one consistent transactional snapshot and retains prior exactly-once final consumption semantics.",
+    "Mixed valid/unreadable/malformed-strategy original legacy rows reconstruct independently and retain original bytes, trial counts/provenance and zero fabricated attempts; reruns stay idempotent.",
+    "Actual desktop on-demand input download and screen/final control journeys; selection ownership, stale response, errors, screenshots and keyboard controls.",
+    "Independent input fingerprints/projection and complete original export reconciliation, isolated critical mutations, full current regression/coverage and coherent source/evidence checkpoint."
+  ],
+  "source_boundary": "This is an operational improvement around the declared equity adaptation of https://www.youtube.com/watch?v=z97PnFIPoFg . It does not reproduce the unavailable private engine/grid/complete named recipes or complete remaining research-funnel requirements.",
+  "existing_requirement_traceability": [
+    "SPEC-002",
+    "RES-001",
+    "RES-002",
+    "RES-003",
+    "RES-004",
+    "JOB-001",
+    "JOB-002",
+    "JOB-004",
+    "UI-003",
+    "UI-005",
+    "PERF-001",
+    "PERF-002",
+    "RPT-001",
+    "RPT-003",
+    "FAULT-001"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "Bounded tool observations, not a subprocess receipt or OS-wide process inventory certificate.",
+  "old_managed_session": 35409,
+  "before_stop": {"server_pid": 46448, "worker_pid": 31904, "source_current": true, "pending_jobs": []},
+  "observed_stop": {"tool_exit_code": 1, "log": ["Shutting down", "Application shutdown complete.", "Finished server process [46448]"], "interpretation": "Managed Ctrl+C interruption; not relabeled exit0."},
+  "native_pid_check": {"result": "inconclusive", "detail": "An ad hoc OpenProcess/WaitForSingleObject check failed its old-PID assertion with last_error0; subsequent targeted Get-Process printed no rows. Do not infer OS-wide absence or lease reacquisition from those native queries. No forced kill was attempted."},
+  "new_managed_session": 88381,
+  "new_http_observation": {"server_pid": 47480, "worker_pid": 51524, "core_hash": "23d8b7c996f3a961ae61ed73976adba7a536f097bf4f963082f641f2557d7d3a", "source_current": true, "worker_ready": true, "worker_alive": true, "store_lease_held": true},
+  "ownership_evidence": "Successful actual worker-enabled startup and fresh /api/health. The new API holds StoreLease; this is the evidence that the store is available, rather than the failed ad hoc native query."
+}

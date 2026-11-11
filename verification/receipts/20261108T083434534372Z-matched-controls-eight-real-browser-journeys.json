@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "receipt_id": "20261108T083434534372Z-matched-controls-eight-real-browser-journeys",
+  "kind": "implementation",
+  "started_at_utc": "2026-11-08T08:34:34.534717+00:00",
+  "finished_at_utc": "2026-11-08T08:37:47.471438+00:00",
+  "timezone": "America/Los_Angeles",
+  "subject": {
+    "plan_sha256": "cc4887fceeb68cab2bb679a7188dc213f276770f95db51142fbdfcb7f670f9ef",
+    "verification_plan_sha256": "afeee0f6b168c939c30be94aaf48f35061e9c9aed4c501bf033bd1354918dd4f",
+    "catalog_sha256": "da886c4b84a8f42ab68c34ec838d468188cefb7a6c955984e6656fff9499c86b",
+    "source_files": {
+      "PLAN.md": "cc4887fceeb68cab2bb679a7188dc213f276770f95db51142fbdfcb7f670f9ef",
+      "VERIFICATION_PLAN.md": "afeee0f6b168c939c30be94aaf48f35061e9c9aed4c501bf033bd1354918dd4f",
+      "RULEBOOK.md": "d798e1759122fbe8302ebca2c9f52c3a5c424aeed51ca3a33601c1ebe34cfcce",
+      "decisions.md": "0e352c0d4040f46837e68df1e1fa7ca3f7b49505cebe00fa1cf4743a245f5d52",
+      "README.md": "4d7a133690c34ca4354ec1221a005c1da6415d720b46863218a49f082f1d2c4e",
+      "THIRD_PARTY_NOTICES.md": "0287a24f1157112d996c3d6e5bf4cfe04b0a46d9ea15035a89cc31b822d91f3c",
+      "pyproject.toml": "541b301b3a8aebe5300a9f1b36f15198fb30b5153f31590e78ee6c6872b330b0",
+      "requirements.lock": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e",
+      "strategy.schema.json": "7460b0c2115b8b7d9edfe9ccc07be8d0fffaa7c6b8c3e8af68638014d88baf33",
+      "verification/catalog.json": "da886c4b84a8f42ab68c34ec838d468188cefb7a6c955984e6656fff9499c86b",
+      "verification/implementation-map.json": "956d79a96f355ffd372ac73c4adfeb861139d141c4c3fbc4537418057e616d8a",
+      "verification/receipt.schema.json": "3d7b6b1982744e9ff86a59f085dc16d2f57950531b3212517c989986525b5834",
+      "verification/record_check.py": "add66d47ca68471cbd050506d91744d4db1ad23c32dd65adadf2ee8054643ff4",
+      "backend/__init__.py": "685244fe57e473d77f1500218cc5ada776123ca70dad56ad4c21b9c69c68a158",
+      "backend/lab/__init__.py": "efaaf0dc8b24e1b7853475b817f2c270efdfbc84def33eb6eec49a4ff08d2d90",
+      "backend/lab/api.py": "d3dceccfcad1b688dccd80cd882d05f6b76f8c200f9b06e52342ef05165d0240",
+      "backend/lab/benchmarks.py": "1d096a1e08bc05a95584dceecfbe396880136a7af79d339c339de2f9fefd1fe9",
+      "backend/lab/cli.py": "8809a1c4c4860584abe66d801454f6ea3a37842cf295bea7bc3ea4f285318163",
+      "backend/lab/config.py": "d61ab34083f6647175e9ff3bc7dbe3cce2c382cc3dfeef50473dae83a755ef5e",
+      "backend/lab/controls.py": "41d95e607f356899132c4dbcb2eea49bac86bfb79015bb118258ac3ffe9e6777",
+      "backend/lab/data.py": "fe488a08236d67e8be9a250fae35751f2356fe8dfdcc0c99d4616be956c20576",
+      "backend/lab/engine.py": "f544235eb054b8a045f10a0bd5ece93bb81850a47672a83e06b74547bc39aae6",
+      "backend/lab/http_boundary.py": "c398591eb10c74374bdab441bc044d0449a8dd477e16d0ca388c498e2e667d20",
+      "backend/lab/ingest.py": "02df4d95beaaf06e5f512403c8299a2780678aec4217b53a2351db361b96ea43",
+      "backend/lab/metrics.py": "0aac5e68fd4c9df7d1f066c122c38d07a383dc39036c332644e338dceef28057",
+      "backend/lab/models.py": "867975a4ea5cce9cf823008350bc9a5fd4875bbbe51bdc346303393c14f15292",
+      "backend/lab/provider.py": "5f0dee73e041c5f6f5872adf272899b1a1478278d5f43ffb6452f91714a56ac8",
+      "backend/lab/research.py": "2e868f1012afb2f7edaf53aeda2fc9e31426c8df7476b5a907859dd7e76688c8",
+      "backend/lab/service.py": "54acc5a21d44955548b19262ada9d61d743380f876173c3d24d7e3cba8308a2a",
+      "backend/lab/signals.py": "5c73050b477d2223b39ddfea3573a906029bfa0971bc7bcc56d1c9267179d7c9",
+      "backend/lab/store.py": "812ee8aa68c2fc0d45d0fcbe5bc649eea831a0e240c955905e14f6eb80b6abda",
+      "backend/lab/worker.py": "afd23514fe8026abd4c61f90a313ef98b03f1dcc9ad6f5610c3d251d9d138c5a",
+      "tests/conftest.py": "6069da6b63db3560e4fed9e5093fafa801242be24d0b9fac74f2e0f542bbe1df",
+      "tests/test_api.py": "daef5a3a9a866795a79b212a3131c493aa91a376bc15242e172e2a278c8cfd38",
+      "tests/test_benchmarks.py": "42f371844a6387e2d321d90c7961a2c7f5d13e42f56d6c90e6a0d8a108f5c0a1",
+      "tests/test_catalog_generation.py": "fa0c9b1d8a2e8a89f62f4075c9781104c2deb6ac4f45aec880a07f2d88745518",
+      "tests/test_coverage_gate.py": "ed7353b2f42e2fb88de8b388556925ba262760e52d234aa6d48077b468272cc3",
+      "tests/test_data_contract.py": "36b680f822f2db9441121da9a9fa952f2226fafa32300aaa3dd93094daef8c09",
+      "tests/test_evidence_recorder.py": "476e7b90fe1175321dcd5b4951d5601f2ea517bfe5263bfd5848bc8272af63a0",
+      "tests/test_execution.py": "839a5d636bb40b18530e92538b74930301567836541b7052eafc276b4dc8fb73",
+      "tests/test_family_boundaries.py": "f4ba52e8e0bfb56401f2c94b73f894401973cf0ef369fb7edbea913e217abea5",
+      "tests/test_http_boundary.py": "206dc25ac284788f6c1e9c50addf5a431be5d93eb009e43aa0e66a89e9c6a682",
+      "tests/test_metrics.py": "9c331daebf7f1d83e7868afb3368e073d60b1219657292416542bb807365a240",
+      "tests/test_overlap_priority.py": "e1dd9da82cf6f9254801716f3019fb7faa90b518f7b43ca01bb30abc08f6f469",
+      "tests/test_parent_liveness.py": "605655d990c4b24642774fc417fb245038c1565ddfd2d000880cd221434ae1c1",
+      "tests/test_portfolio.py": "87be25e495cb233239ab115a0ae57973e338b6f9161328aee81034b0eb3c358c",
+      "tests/test_portfolio_liquidity.py": "4cd2d8f84706d796a82dbd1e22a92d04db7fb15a894303a2e34bdb2645c370e9",
+      "tests/test_provider.py": "8462ae9fb070b18bd5efd824c7add3e642f7edb105524b2a208b18ce732c2e21",
+      "tests/test_random_controls.py": "ff11d8ef9d50547b79630e1297c6f88dfa1ed1e9294ff5c670f658bbf1863cd6",
+      "tests/test_reference_execution.py": "7e6a71b2f8d655433b2c038c160c985db172a369fb519ad2b780cae0a2e5507f",
+      "tests/test_reference_exits.py": "488dc3a8bdd9f1f4097650c8de7332ff1d987b3d003b60bd14094e173300136b",
+      "tests/test_reference_properties.py": "7abca39b2a470a29ecfffe49bb6a16f458a4292d6ece3f654add04d70e32dda7",
+      "tests/test_release_evidence.py": "021b8e80331869d4e5e460910abdbc0ec62975ff16a7f58e70ca5497c3453f52",
+      "tests/test_research_service.py": "a617a23a97930bf9c7873497c4a93a55063db461457b92362c6b5c67e88e8e0d",
+      "tests/test_rules.py": "940e9bdf7bbc26f115bddc4c23d60aba1e4c5e8b09cc09baac5847b2ab2cd6fb",
+      "tests/test_source_identity.py": "364d6fd6d2bf990db45cdb5397f6ba66e052f388bad03c4c5b26479a0657572c",
+      "tests/test_statistics_contract.py": "b88d276d79d4f23ccd102750b35be45616d5a4bbcf5e30cef657b427530d883c",
+      "tests/test_store.py": "968d279c4b56f1d28b4329cda6a66cdba8e3c9dfe0324a38d00d07d9b2a1ab58",
+      "tests/test_strategy_matrix.py": "1c3ac1734bfacda8eda71d203206b6d4d8c896f65309466b083b8cc3634a74d9",
+      "verification/build_catalog.py": "4a0d30404b71ea49c7c8ca23cf19ded6b4536d1e2a1e09e2657ab8d8370a3139",
+      "verification/check_browser_outputs.py": "fa9006d5b1993d5dbfea799d47e67e7000cb06c098591c73ad11512badb4788f",
+      "verification/check_evidence.py": "7476f5e0042479252edb60f84966219c62cfa1ebd5185dd5f6d55750757696be",
+      "verification/check_numerical_coverage.py": "223b0a1412b845382ff6da0d6aa9123ad654dd720651589c2b254a7212260282",
+      "verification/control_reference_run.py": "ad1f3ff8c63b6af0d7b46e4f509260c14e6c7577e56f048193e7481b78a3a640",
+      "verification/frontend_check.py": "7511aa0d086a7cf838ddca152e54daf1af28a689a4d615f4b466057f371cfb1a",
+      "verification/portfolio_reference_run.py": "66ee87690558bb270994c59c2bf4a7483fb4aa8b244cda16176c614981081625",
+      "verification/real_reference_run.py": "5b4f624a41d8008b8749c3da80d93968dd6117f6fe89951172e644707c2241b1",
+      "verification/reference_execution.py": "01a1ae1f8a8156a5a9ffbb3d6620f4eb66b42e14228174667720a6600e77e82c",
+      "verification/reference_statistics.py": "8069f0b53a4de9f2e61f4070a4fe397725114d3c84d36730703ed0446f1494ec",
+      "verification/strategy_fixtures.py": "f3fe22b96c03596215749c16e9f9ed98942d6151c25b5f6892a81c79fdf63f37",
+      "verification/system_probe.py": "751f132ee79030750d5f44b473224a3ca7bad60e35d5521c8a0ab20149574e1a",
+      "frontend/src/api.ts": "43b7f77cbf62bec9ce5297d637e8b5c4a5b8969c9e447d7b05a21bf3f354399a",
+      "frontend/src/App.tsx": "1a661367e8cd84c21f51489e879469cdd7ce8bb44ba44c029710fdf86290ee57",
+      "frontend/src/Benchmarks.tsx": "8b3b24610915a523a9f244cf78d13660358d8b7e4f082e7997c11bb40c22c6be",
+      "frontend/src/Charts.tsx": "fca94eac7b49d90cd58688c84110ee0d97d5b98241aab273736e70cd3ae60f18",
+      "frontend/src/main.tsx": "ecadc6a5afd9d62544e9dceaf30b6e99514d9ef94b94b878f8fc3d4ad2850b7d",
+      "frontend/src/RandomControls.tsx": "eac7d348e83e5e1bc5d34a28aece313af323cfeeb19155f9244f3815ae916ddd",
+      "frontend/src/style.css": "7f7a28554dc3ea59943e5f50db620c4030da62f6ba6171f0ff6cbb258c7ec03d",
+      "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "frontend/tests/benchmarks.spec.ts": "6f9bbec6fbe2e30bd275f20e0a81a4bbdc4fd0936cc7d0171d5f1a77e078a4e9",
+      "frontend/tests/chartCapture.ts": "f88f163e311bd947f1aa11d76b5172c9b90e2f3bc94cacaa59b4e89215ccf965",
+      "frontend/tests/controls.spec.ts": "2d624dd640610bcf0dbf4896c01596fe5e83103275ddd86da41141920067496a",
+      "frontend/tests/portfolio.spec.ts": "2261d97de60bb24e8367ce37defb793a978bf3d4a993d4e21e69bffe137d3fb0",
+      "frontend/tests/research.spec.ts": "47c47d8d5402ef1ee085ca7ae361bfb3530a4b868a9272f580b68316be5a04dd",
+      "frontend/package.json": "ecd884f783dcbec226b4d2cfe36c0ccfa7897811f59f7dd37a8654e95dbb57b2",
+      "frontend/package-lock.json": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8",
+      "frontend/tsconfig.json": "00a90bf9114a512a850aa5d354917e211ca64f7f1e354430b7b6e361cf991b61",
+      "frontend/vite.config.ts": "d0aad78b8273676dbe6bdcaf8cc49cb81b6b469e3892ac93e7fe9fe97f0f0154",
+      "frontend/playwright.config.ts": "1e22a19a14d3fa55be5fe35f4416c341975d925458548fc6d7044feb5b3dabfc",
+      "frontend/index.html": "c58d0651a031f762eaa758d84e362a51ced05b87b87b7b647a3a1e6bf397390c",
+      "start.ps1": "dc9054498204beb878148515f5e61d13db04a7c30462b72d551120cd99af4590"
+    },
+    "rulebook": {
+      "path": "RULEBOOK.md",
+      "sha256": "d798e1759122fbe8302ebca2c9f52c3a5c424aeed51ca3a33601c1ebe34cfcce"
+    },
+    "dependency_locks": [
+      {
+        "path": "requirements.lock",
+        "sha256": "4c5ddb45fd9263dc296633808a8188fa3c49674416112e7e706ce93b0a8f8d3e"
+      },
+      {
+        "path": "frontend/package-lock.json",
+        "sha256": "386c9b70781c85d60d969862e609dc7ee7f7487600f6fa3d28feab9cc6aca3a8"
+      }
+    ],
+    "input_manifests": [
+      {
+        "path": "data/datasets/90f347229b2fb03ec112ee71/manifest.json",
+        "sha256": "bcbff02ea4930a68abcc4c92a6170cfd7ff98379638460cd6fb696ff102fde0f"
+      }
+    ]
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.5",
+    "runner": "verification/record_check.py"
+  },
+  "command": {
+    "argv": [
+      ".\\.venv\\Scripts\\python.exe",
+      "verification/frontend_check.py",
+      "browser"
+    ],
+    "cwd": ".",
+    "exit_code": 1,
+    "seed": null
+  },
+  "artifacts": [
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/stdout.log",
+      "sha256": "191d888f1a463d6e95c70cdc34e48415a9b44bcf69d0f68bc056f52eaf779837",
+      "bytes": 7484,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/stderr.log",
+      "sha256": "ea57fef3918ea5dcdaf66ce7d66588dc6e28f0f51a04cc693fe857b20b689a82",
+      "bytes": 662,
+      "purpose": "Actual command log"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/.last-run.json",
+      "sha256": "1d1b047897e85c0cdc8cbe5c49bef4998d917a3c972082a2e0dc84a140d944ea",
+      "bytes": 145,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-panel.png",
+      "sha256": "50268e5598d177d5285fc24ec56b6744b507f34c50a14755ec87e48955abd75b",
+      "bytes": 101837,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-report.json",
+      "sha256": "f163c6d510a1fed38a36202c15326bc4026377fdf9abd94e44e717438d69d150",
+      "bytes": 19052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-trades.csv",
+      "sha256": "514c1561ef6daf1f534b53ce17321010c9fdbe8a359157af1fd7499b7f0806c6",
+      "bytes": 1069,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/benchmark-validation.png",
+      "sha256": "64cbd7a20bbef661268f8bed0ebaa0cf1c1f9d053475c6d61a4727d26e92a1a4",
+      "bytes": 243062,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/incompatible-report.json",
+      "sha256": "b5d290fb7d5863e7e99004410f076f66298bd66071a03f6d39ae547ffebe1717",
+      "bytes": 27508,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/observations.json",
+      "sha256": "dfab4ad232ff4ab9b581754231943dae42d8df1843a6812543e145754a56ddbc",
+      "bytes": 813,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/test-finished-1.png",
+      "sha256": "f5906bf364c040c5bcd362326502591a3310596e526689de1f57ce0b283a0481",
+      "bytes": 61809,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1280/trace.zip",
+      "sha256": "ad3fe25161fd11faa9f63c85152351175dfc857a6f0df8e9966a6db863693c9c",
+      "bytes": 2223068,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-panel.png",
+      "sha256": "f448ebd3cc1ce75988549d0ccf53292dfd59d587f11691cf0ebcc0369f2f13c0",
+      "bytes": 108408,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-report.json",
+      "sha256": "f163c6d510a1fed38a36202c15326bc4026377fdf9abd94e44e717438d69d150",
+      "bytes": 19052,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-trades.csv",
+      "sha256": "514c1561ef6daf1f534b53ce17321010c9fdbe8a359157af1fd7499b7f0806c6",
+      "bytes": 1069,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/benchmark-validation.png",
+      "sha256": "242b3e24c4e861de9ab48a421b5f7189afea44008c66b80d80467bf788ec7fa1",
+      "bytes": 251988,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/incompatible-report.json",
+      "sha256": "b5d290fb7d5863e7e99004410f076f66298bd66071a03f6d39ae547ffebe1717",
+      "bytes": 27508,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/observations.json",
+      "sha256": "7cadf12331d8c836aff974d41c5f5ecdbdf1f97ef4341aeb94fa0d14614ae6d1",
+      "bytes": 814,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/test-finished-1.png",
+      "sha256": "f4509dc60ab94f20b4e1c0532afbc8a5ebba2de6f186d6e5b1893ac7dae437fe",
+      "bytes": 89962,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/benchmarks-historical-stra-f8a10-ings-through-saved-evidence-desktop1920/trace.zip",
+      "sha256": "db98a10b5bab1f090a4af12dd60df2f8e4545ff32ff28422d71205b83bfa25d9",
+      "bytes": 1933162,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/error-context.md",
+      "sha256": "6cf1a19ca052ee00bcbf3a85dafc9e46fe57fafd89a5ba7d55ad0d2faefd268f",
+      "bytes": 16260,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/test-failed-1.png",
+      "sha256": "65f4c726cca2fb8dafcf950faf8a3dd69a98c995d0227c98d5056be15c6a6bef",
+      "bytes": 62304,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1280/trace.zip",
+      "sha256": "d1adc7229449d93e979a251dba9d11dd09306ef242eadecf3eee0ad92f99ed41",
+      "bytes": 386927,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/error-context.md",
+      "sha256": "c232135945f69b380a2c60133fd594a1aa51ae9051b2472516969ca4f5e0bb3b",
+      "bytes": 16106,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/test-failed-1.png",
+      "sha256": "fe376d9074a6c5608633dbc765e1c4c5c5e68ec21d1013e98ad53f9835b6cc25",
+      "bytes": 90497,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/controls-matched-historica-e4566-xpose-actual-trade-evidence-desktop1920/trace.zip",
+      "sha256": "97983c6857ecbc8dab626626911c7d7ab8b248fb1e37079db0daa90590a57ba8",
+      "bytes": 364389,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/chart-7632a5dbca.png",
+      "sha256": "efee8c65d44dcd91adf15911f2f34209e5b1f02bfa416e1eea73d35a7b739a1c",
+      "bytes": 14635,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/chart-bc36250c1f.png",
+      "sha256": "27441d183c080b5b061c68e346756a6cbbe27d463f532dc5f5d97c9e67a2430b",
+      "bytes": 13040,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/downloaded-report.json",
+      "sha256": "04722eb620693292c245cb7289e1bd88942303f192b78235d4bcfbe9b2df89fb",
+      "bytes": 3439628,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/downloaded-trades.csv",
+      "sha256": "4db6358bb2b65d1c4c28a0db906351cb479f48380ce975b44b83801ab1d9c91c",
+      "bytes": 20756,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/observations.json",
+      "sha256": "3be86d201d0ec57ce5567e8b955c172bf2310a1dcc38508305bd9bddd64bd98c",
+      "bytes": 1365,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-inputs.png",
+      "sha256": "0b042eada95781ca95fc6cc8c399be2b0760df84032ef59bbde13b79f22fe40d",
+      "bytes": 577535,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-reports.png",
+      "sha256": "07d167ae878b886eb967596a432795467e24425285ba9fea34c687ac0dc02be4",
+      "bytes": 118490,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-results.png",
+      "sha256": "f574554c0bb320f8ec0764f76d1eb8c14ba9a09aa60ab3dcdd7df13ebecb9b27",
+      "bytes": 157518,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-trade-7632a5dbca.png",
+      "sha256": "054a5011a3322b0c395a7daa5d70875342b543264d676ad9d57e557b6b7c6ca6",
+      "bytes": 284041,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/portfolio-trade-bc36250c1f.png",
+      "sha256": "b8aa2f3483698a49edee4f5aec182f1c0eba8ae68f757167807e3bff58735ffe",
+      "bytes": 282602,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/test-finished-1.png",
+      "sha256": "fbe2a688314f6d9663c8f28243dfec509ff395e17a5de5ec68e1d2e818fd2496",
+      "bytes": 70320,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1280/trace.zip",
+      "sha256": "b0b56d8003a493e0580a0c6da7b802c992d33a5a5e792951dcaa4dbbc784c162",
+      "bytes": 3288674,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/chart-7632a5dbca.png",
+      "sha256": "32970a106a7ff756f23bce249406807a2c94ca72ff8a48a4a61007c0b5bb33c9",
+      "bytes": 16702,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/chart-bc36250c1f.png",
+      "sha256": "e937855de26cd4a3c81dd055a152b8f0ce6e6087abdd4432a7a823a835353d96",
+      "bytes": 15969,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/downloaded-report.json",
+      "sha256": "04722eb620693292c245cb7289e1bd88942303f192b78235d4bcfbe9b2df89fb",
+      "bytes": 3439628,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/downloaded-trades.csv",
+      "sha256": "4db6358bb2b65d1c4c28a0db906351cb479f48380ce975b44b83801ab1d9c91c",
+      "bytes": 20756,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/observations.json",
+      "sha256": "acb0871284777ee158f65ce87e8767554d948c9051041a7d3a276b0a4acd93d9",
+      "bytes": 1371,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-inputs.png",
+      "sha256": "00f91efccb8a0f0379c3f2ce55b3f7cae3944625cef50740128cf451a09bcc1a",
+      "bytes": 532512,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-reports.png",
+      "sha256": "516e1abe20511256167091ac863bd10f69ed6076bc60830e1974d2d1a09398ec",
+      "bytes": 119951,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-results.png",
+      "sha256": "da381f46d6504910c8d17aaf6103a29ef902a40701daa1135effe3575618ea3d",
+      "bytes": 167819,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-trade-7632a5dbca.png",
+      "sha256": "7e58994ee6e6e782180803bb50002dc17a4bc2dd4f30c571eab14ad380d2e8d9",
+      "bytes": 297461,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/portfolio-trade-bc36250c1f.png",
+      "sha256": "033b033d8e4d358e5ca22ee3a5df1dd19b655e79f483d66bf1899eb033461dc2",
+      "bytes": 296826,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/test-finished-1.png",
+      "sha256": "4730612f67aaa583afd6ad11b83222b44e4190c7e357d52eb2553ffabc3a0a59",
+      "bytes": 98031,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/portfolio-two-saved-rules--a5c1b-istorical-portfolio-account-desktop1920/trace.zip",
+      "sha256": "d2f6b165507fa5eab0ebd52999904a3dc3722290d50dbba96c956509c0800f56",
+      "bytes": 2787289,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/data.png",
+      "sha256": "a70e3aab773d15840ef7a3a48c76d32c9b508308fdf1c55602d1bacd1db2c2b4",
+      "bytes": 434474,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/downloaded-report.json",
+      "sha256": "ce0027bbd2b1c292c4e90c790343dd7fd971d39e37f5058d5c2af5b1c87ef328",
+      "bytes": 239055,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/experiment.png",
+      "sha256": "21bca5afefb8ba5b86ff780617a4b4cb4f2bd020940af9372c9f16b2afc8fccf",
+      "bytes": 565414,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/observations.json",
+      "sha256": "98960bd1766a3ccdc16aa285626c3117b75f71705137b6255fe3196a142e1d1b",
+      "bytes": 821,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/reports.png",
+      "sha256": "9e8e69946090e7f666670e8af0126f1f6fa935e0fe94fb62c846e2348120561b",
+      "bytes": 118262,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/results.png",
+      "sha256": "705aca29aad4dae712fbd74337b6fb181f3b6ac21da8c5b8e297ad4dfa594f65",
+      "bytes": 122936,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/strategies.png",
+      "sha256": "0c8e9bf006c9b322aa620b2ac9670f9d6bd3285ecd8216e2a9e9b0684da2a673",
+      "bytes": 276882,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/test-finished-1.png",
+      "sha256": "85e20b4112ac8bef5eaa4d26c29aa879274a9f68ee664ebe023b4f473e63ac39",
+      "bytes": 70103,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trace.zip",
+      "sha256": "9b31a9f1f2a763acfc65aebce440dc06090b53330a8d37b03fa0e2b580e4e5d1",
+      "bytes": 2291463,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-chart.png",
+      "sha256": "dfee6c1dbf98bdecc825b1e9582169eab4d4ffcc0020b99570e8a92dbd757b46",
+      "bytes": 14177,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/trade-inspector.png",
+      "sha256": "f0c00ea5148046fe6713d8a5e77381d5bb11591fd2063348e94fdadee0a9cdee",
+      "bytes": 141527,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1280/validation.png",
+      "sha256": "10ee8b52ce46c73c955ed68e54e09bb9351500a73c8905883973c5979efe7444",
+      "bytes": 158190,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/data.png",
+      "sha256": "aed1f85c9d7ca8165d8dcf03d7bfee77750ecd4db0d4852ae5b1f0542d82ff56",
+      "bytes": 398683,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/downloaded-report.json",
+      "sha256": "ce0027bbd2b1c292c4e90c790343dd7fd971d39e37f5058d5c2af5b1c87ef328",
+      "bytes": 239055,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/experiment.png",
+      "sha256": "6557d23c532a6ecbde0f52c6b6bd8d7393ae80d7b5a4f02002ccde2eb89c694d",
+      "bytes": 528364,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/observations.json",
+      "sha256": "7d8bf5db2c430901ffa5c618c49f685d9f52da3fe49f08548834b3253212707a",
+      "bytes": 824,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/reports.png",
+      "sha256": "b6538d7a8b2c3b5ce1ab9a646bb6301045466e51643c1a76044a8d4d7251f31c",
+      "bytes": 119368,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/results.png",
+      "sha256": "f1fea8e7e12429bdf5f3c33f834837306ec986d1df55ef9988a10c4420fba221",
+      "bytes": 132925,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/strategies.png",
+      "sha256": "6ab49d00407c7327d8fef3713052890e72c630bb6fc1ee164cfe88b16a67a420",
+      "bytes": 223618,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/test-finished-1.png",
+      "sha256": "97f3e81dce3dc3aaa307e5c244aca89d4acf836122ea64308ab9ddbf9289a3a2",
+      "bytes": 97477,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trace.zip",
+      "sha256": "34e687a2e6bca5020e678f8d7ca589484bf01233c541de048b5cfeb8f2d49685",
+      "bytes": 1547991,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-chart.png",
+      "sha256": "0d4b64445e7a83e384e03755fd571e88f8ac8e50c6784ab1a27d31968450af1f",
+      "bytes": 16203,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/trade-inspector.png",
+      "sha256": "db2594c2863cefff4a171a1b304ea42f3be04dd5caacf4e8ecbb2bec3925c0e2",
+      "bytes": 147418,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/artifacts/research-cached-historical-793dc-trade-inspector-and-exports-desktop1920/validation.png",
+      "sha256": "fcc6a41383313d898b89adf0906788d71889d8d8ccc39e62e0ebf42e67ff841d",
+      "bytes": 158695,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/junit.xml",
+      "sha256": "f4a1e552428573e4fc98d1fdb8d0f3cae06373e397d39029a4720366651c4321",
+      "bytes": 11282,
+      "purpose": "Check output artifact"
+    },
+    {
+      "path": "verification/runs/20261108T083434534372Z-matched-controls-eight-real-browser-journeys/browser/results.json",
+      "sha256": "d65c52f0bca16ec86b0ac2878b02b98a6b318a2a857cb2b58b8f8314a1cb91df",
+      "bytes": 31147,
+      "purpose": "Check output artifact"
+    }
+  ],
+  "results": [],
+  "notes": [
+    "Actual component/integration execution; not full acceptance certification."
+  ]
+}
