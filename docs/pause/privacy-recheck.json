@@ -1,0 +1,138 @@
+{
+  "scope": "Follow-up audit of public snapshot, all reachable Git history, screenshot metadata and live Pages; email explicitly permitted.",
+  "audited_at_utc": "2026-11-11T06:47:50.535259+00:00",
+  "audited_head": "16764296afa66c9b4d04dacf4c82e8a7336f195d",
+  "tracked_files": 3697,
+  "remaining_owner_name_matches": 0,
+  "remaining_private_network_address_matches": 0,
+  "remaining_personal_phone_matches": 0,
+  "remaining_private_key_matches": 0,
+  "live_credential_and_known_private_value_audit": {
+    "passed": true,
+    "scope": "All actual staged blobs plus all reachable Git objects",
+    "audited_at_utc": "2026-11-11T06:47:40.408901+00:00",
+    "staged_files": 3697,
+    "unique_blob_objects": 2619,
+    "total_blob_bytes": 79820918,
+    "reachable_commit_count": 2,
+    "reachable_commits": [
+      "16764296afa66c9b4d04dacf4c82e8a7336f195d",
+      "9c7f92f14f99472e457387e3f1a77f7050452b1c"
+    ],
+    "generic_git_author_and_committer": true,
+    "emails_permitted": true,
+    "populated_env_read_only_for_in_memory_matching": true,
+    "populated_env_copied_hashed_or_reported": false,
+    "live_credentials_or_known_private_identifiers_found": 0,
+    "forbidden_data_paths_found": 0,
+    "limitations": [
+      "Known-value and structural checks, not a proof against arbitrary undisclosed private facts.",
+      "Authored synthetic credentials/user paths and public license/source attribution remain."
+    ]
+  },
+  "png_screenshots": [
+    {
+      "path": "docs/pause/browser/desktop-development-journey.png",
+      "sha256": "3a04a17116fad3f95402ece4a97cbb2136ccb88a4f3b8ce51647732fc714f58d",
+      "metadata_chunk_types": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "docs/pause/browser/desktop-handoff.png",
+      "sha256": "565323e9a7f198a8ca63a5690e3660229fbbd77d057785b9b1469ceff945f5a4",
+      "metadata_chunk_types": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "docs/pause/browser/desktop-index.png",
+      "sha256": "76b4f02389ea2ffd01f96681a6570dcb557b277f30006d2bf3ba29d7dda76e34",
+      "metadata_chunk_types": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "docs/pause/browser/desktop-verification-history.png",
+      "sha256": "e1d918200f6bd21358ac50835616f600ee022c4bf4e5906a74570e9189d08b1f",
+      "metadata_chunk_types": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "docs/pause/browser/mobile-development-journey.png",
+      "sha256": "1ce678daa492c21f31a0bf29e36bd7bb4a05c3ea7359cafc6227e5dabaed51c4",
+      "metadata_chunk_types": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "docs/pause/browser/mobile-handoff.png",
+      "sha256": "0952c60f71f1b3ff58adc02cea659293861b0fd41684a51014d109c20ff23d98",
+      "metadata_chunk_types": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "docs/pause/browser/mobile-index.png",
+      "sha256": "0952c60f71f1b3ff58adc02cea659293861b0fd41684a51014d109c20ff23d98",
+      "metadata_chunk_types": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "docs/pause/browser/mobile-verification-history.png",
+      "sha256": "10380f3f2f6085aeff47a4bc3d5647c2f6ef515bb4454217ec8500d3bbafe591",
+      "metadata_chunk_types": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    }
+  ],
+  "personal_metadata_chunks_found": 0,
+  "live_pages": [
+    {
+      "url": "https://az9713.github.io/price-action-strategies/",
+      "status": 200,
+      "matches_audited_copy": true,
+      "sha256": "038a85fca14662c331c93e2fe29d4d50c18f1584a3bcd48a87aadfe41bfd44c3"
+    },
+    {
+      "url": "https://az9713.github.io/price-action-strategies/handoff.html",
+      "status": 200,
+      "matches_audited_copy": true,
+      "sha256": "f63b5982e8b243382cfc89315f9a7cd4cc955fa7e2806e71914ec5cb7de11eab"
+    },
+    {
+      "url": "https://az9713.github.io/price-action-strategies/development-journey.html",
+      "status": 200,
+      "matches_audited_copy": true,
+      "sha256": "7b3fd22120a1405a3d40e7b4744ff264ef80d5f3c975d31acf006c82aaba8c17"
+    },
+    {
+      "url": "https://az9713.github.io/price-action-strategies/verification-history.html",
+      "status": 200,
+      "matches_audited_copy": true,
+      "sha256": "38f08a8401897e090025518f60d4e740a2eb1ddcedb4e19a7b62ba3ce72626a1"
+    }
+  ],
+  "email_addresses_preserved": true,
+  "synthetic_fixture_paths_and_public_agency_content": "Reviewed; not owner personal information. Public attribution and license notices remain.",
+  "application_goal": "paused; no application source changes",
+  "unclassified_structured_credential_contexts_found": 0
+}

@@ -1,7 +1,7 @@
 {
   "status": "passed automated allowlist and known-personal-value checks",
   "generated_at_utc": "2026-11-11T04:43:00.583150+00:00",
-  "files": 3693,
+  "files": 3698,
   "redaction_counts": {
     "personal_name_occurrences": 1463,
     "temporary_username_occurrences": 6,
@@ -65,5 +65,18 @@
     "scope_note": "Recorded before the following documentation-only audit commit; final entire-history recheck is performed before push."
   },
   "original_research_numerical_core_preserved_in_public_snapshot": true,
-  "public_research_core": "010175e4f595a2ff53a8306a85a097d4448bfbf2bbd6d6981dec318ec311b1ac"
+  "public_research_core": "010175e4f595a2ff53a8306a85a097d4448bfbf2bbd6d6981dec318ec311b1ac",
+  "followup_audit": {
+    "audited_at_utc": "2026-11-11T06:47:50.535259+00:00",
+    "record": "docs/pause/privacy-recheck.json",
+    "tracked_files_before_evidence_update": 3697,
+    "all_reachable_commits_checked": 2,
+    "png_metadata_checked": 8,
+    "live_pages_checked": 4,
+    "known_personal_information_findings": 0,
+    "unclassified_structured_credential_contexts": 0,
+    "email_addresses_preserved": true,
+    "history_rewrite_required": false
+  },
+  "file_count_scope": "All tracked files including generated evidence and publication manifest."
 }

@@ -29562,6 +29562,14 @@
       "original_bytes": 857,
       "published_bytes": 857,
       "privacy_changed": false
+    },
+    {
+      "path": "docs/pause/privacy-recheck.json",
+      "original_sha256": "17b3f881931aae8cb6ab9aac1698e85f316528bfc627f5d376376ac2bd0df59f",
+      "published_sha256": "17b3f881931aae8cb6ab9aac1698e85f316528bfc627f5d376376ac2bd0df59f",
+      "original_bytes": 4862,
+      "published_bytes": 4862,
+      "privacy_changed": false
     }
   ]
 }
